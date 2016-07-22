@@ -17,7 +17,7 @@ files_generic = [
     'data/browser-action/css/materialdesignicons.min.css',
     'data/browser-action/css/materialdesignicons.min.css.map',
     'data/browser-action/fonts/*',
-    'data/browser-action/js/*',
+    'data/browser-action/js/script.js',
     'data/browser-action/vendor/jquery-2.2.3.min.js',
     'data/browser-action/index.html',
 
