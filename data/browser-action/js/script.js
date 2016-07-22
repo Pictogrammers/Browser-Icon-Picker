@@ -29,7 +29,8 @@
                     className: $('#icon-class').find('span')
                 },
                 footer: {
-                    openInMaterialdesignIcons: $('#action-open-in-materialdesignicons')
+                    openInMaterialdesignIcons: $('#action-open-in-materialdesignicons'),
+                    refresh: $('#action-refresh')
                 }
             };
 
@@ -56,6 +57,14 @@
                 .addClass('tooltip')
                 .hide()
                 .appendTo($('body'));
+
+            this.ui.footer.refresh.click(function(e) {
+                e.preventDefault();
+
+                // Clear localStorage
+                localStorage.clear();
+                location.reload();
+            });
         },
 
         retrieveIconsList: function() {
