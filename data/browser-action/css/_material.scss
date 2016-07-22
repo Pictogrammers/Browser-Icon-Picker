@@ -1,0 +1,61 @@
+/**
+ * Material-Freebox-OS
+ * Material variables & classes
+ */
+
+// Font
+$roboto:                Roboto, sans-serif;
+
+
+// Colors
+$color-red: (           500: #F44336, 600: #E53935, 700: #D32F2F, 800: #C62828, 900: #B71C1C );
+$color-pink: (          500: #E91E63, 600: #D81B60, 700: #C2185B, 800: #AD1457, 900: #880E4F );
+$color-purple: (        500: #9C27B0, 600: #8E24AA, 700: #7B1FA2, 800: #6A1B9A, 900: #4A148C );
+$color-deep-purple: (   500: #673AB7, 600: #5E35B1, 700: #512DA8, 800: #4527A0, 900: #311B92 );
+$color-indigo: (        500: #3F51B5, 600: #3949AB, 700: #303F9F, 800: #283593, 900: #1A237E );
+$color-blue: (          500: #2196F3, 600: #1E88E5, 700: #1976D2, 800: #1565C0, 900: #0D47A1 );
+$color-light-blue: (    500: #03A9F4, 600: #039BE5, 700: #0288D1, 800: #0277BD, 900: #01579B );
+$color-cyan: (          500: #00BCD4, 600: #00ACC1, 700: #0097A7, 800: #00838F, 900: #006064 );
+$color-teal: (          500: #009688, 600: #00897B, 700: #00796B, 800: #00695C, 900: #004D40 );
+$color-green: (         500: #4CAF50, 600: #43A047, 700: #388E3C, 800: #2E7D32, 900: #1B5E20 );
+$color-light-green: (   500: #8BC34A, 600: #7CB342, 700: #689F38, 800: #558B2F, 900: #33691E );
+$color-lime: (          500: #CDDC39, 600: #C0CA33, 700: #AFB42B, 800: #9E9D24, 900: #827717 );
+$color-yellow: (        500: #FFEB3B, 600: #FDD835, 700: #FBC02D, 800: #F9A825, 900: #F57F17 );
+$color-amber: (         500: #FFC107, 600: #FFB300, 700: #FFA000, 800: #FF8F00, 900: #FF6F00 );
+$color-orange: (        500: #FF9800, 600: #FB8C00, 700: #F57C00, 800: #EF6C00, 900: #E65100 );
+$color-deep-orange: (   500: #FF5722, 600: #F4511E, 700: #E64A19, 800: #D84315, 900: #BF360C );
+$color-brown: (         500: #795548, 600: #6D4C41, 700: #5D4037, 800: #4E342E, 900: #3E2723 );
+$color-grey: (          500: #9E9E9E, 600: #757575, 700: #616161, 800: #424242, 900: #212121 );
+$color-blue-grey: (     500: #607D8B, 600: #546E7A, 700: #455A64, 800: #37474F, 900: #263238 );
+
+@function material-color($color, $hue:500) {
+    @return map-get($color, $hue);
+}
+
+
+$color-dark:            #303030;
+$color-text-dark:       rgba(#000, 0.87);
+
+// Elevation
+$elevation-tiny: 0 1px 1px rgba(0,0,0,0.1);
+$elevation-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$elevation-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$elevation-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$elevation-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$elevation-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+$elevation-negative: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+.elevation-tiny                  { box-shadow: $elevation-tiny; }
+.elevation-1, .elevation-lowest  { box-shadow: $elevation-1; }
+.elevation-2, .elevation-low     { box-shadow: $elevation-2; }
+.elevation-3, .elevation-medium  { box-shadow: $elevation-3; }
+.elevation-4, .elevation-high    { box-shadow: $elevation-4; }
+.elevation-5, .elevation-highest { box-shadow: $elevation-5; }
+.elevation-negative              { box-shadow: $elevation-negative; }
+.elevation-none                  { box-shadow: none; }
+
+
+// Animations duration
+$timing-short:          150ms;
+$timing-medium:         250ms;
+$timing-long:           350ms;

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Material Freebox OS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+</head>
+<body>
+<header>
+    <h1>MaterialDesignIcons Picker</h1>
+    <input id="filter" type="text" placeholder="Filter" />
+</header>
+
+<div class="content">
+    <div id="icons-list" class="icons"></div>
+</div>
+
+<footer>
+    <div id="icon-properties" class="inactive">
+        <i id="icon-icon"></i>
+
+        <div class="properties">
+            <span id="icon-name"></span>
+            <pre id="icon-class">mdi <span></span></pre>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="bar">
+        <div class="left">
+            <a id="action-open-in-materialdesignicons" class="btn-sm-round" href="#" target="_blank">
+                <i class="mdi mdi-open-in-new"></i>
+            </a>
+        </div>
+        <div class="right">
+            <a class="btn" href="https://www.s-quent.in" target="_blank">
+                <i class="mdi mdi-account"></i>
+                <span class="x-btn-inner">Quentin S.</span>
+            </a>
+            <a class="btn" href="https://github.com/chteuchteu/MaterialDesignIcons-Picker" target="_blank">
+                <i class="mdi mdi-github-circle"></i>
+                <span class="x-btn-inner">GitHub</span>
+            </a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</footer>
+
+<script src="vendor/jquery-2.2.3.min.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+
+    "name": "MaterialDesignIcons-Picker",
+    "description": "Quick & easy icon picker",
+    "version": "1.1.0",
+    "icons": {
+        "16": "data/img/icon-16x16.png",
+        "32": "data/img/icon-32x32.png",
+        "48": "data/img/icon-48x48.png",
+        "64": "data/img/icon-64x64.png",
+        "90": "data/img/icon-90x90.png",
+        "128": "data/img/icon-128x128.png",
+        "256": "data/img/icon-256x256.png"
+    },
+    "author": "Quentin S.",
+
+    "applications": {
+        "gecko": {
+            "id": "materialdesignicons-picker@s-quent.in",
+            "strict_min_version": "45.0a1"
+        }
+    },
+
+    "browser_action": {
+        "default_popup": "data/browser-action/index.html",
+        "default_icon": {
+            "18": "data/img/icon-18x18.png",
+            "19": "data/img/icon-19x19.png",
+            "32": "data/img/icon-32x32.png",
+            "36": "data/img/icon-36x36.png",
+            "38": "data/img/icon-38x38.png",
+            "64": "data/img/icon-64x64.png"
+        }
+    }
+}
