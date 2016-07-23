@@ -3,6 +3,8 @@
  * Browser action script
  */
 (function($, window) {
+    const cols = 6;
+
     var MaterialDesignIconsPicker = function(options) {
         this.options = options;
     };
@@ -65,6 +67,56 @@
                 localStorage.clear();
                 location.reload();
             });
+
+            // Bind arrow keys
+            $(document).keydown(function(e) {
+                if (self.ui.filter.is(':focus'))
+                    return;
+
+                var iconWrap = self.ui.icons.icons.filter('.active'),
+                    rows = Math.floor(self.ui.icons.icons.length/cols),
+                    index = iconWrap.index();
+
+                // Nothing's selected
+                if (index == -1)
+                    return;
+
+                var row = iconWrap.data('row'),
+                    col = iconWrap.data('col');
+
+                switch(e.which) {
+                    case 37: // left
+                        col--;
+                        break;
+                    case 38: // up
+                        row--;
+                        break;
+                    case 39: // right
+                        col++;
+                        break;
+                    case 40: // down
+                        row++;
+                        break;
+                    default: return;
+                }
+
+                if (col == 0 && row != 1) {
+                    col = cols;
+                    row--;
+                } else if (col == cols+1 && row != rows) {
+                    col = 1;
+                    row++;
+                }
+
+                if (row == 0 || row > rows
+                    || col == 0 || col > cols)
+                    return;
+
+                var newIndex = (row-1) * cols + col - 1;
+                self.setActiveIcon($(self.ui.icons.icons[newIndex]), false, true);
+
+                e.preventDefault();
+            });
         },
 
         retrieveIconsList: function() {
@@ -107,18 +159,28 @@
 
             // Inflate icons list
             var iconWrap = $('<div />').addClass('icon-wrap');
+            var index = 0,
+                row = 1;
             this.materialDesignIcons.forEach(function(icon) {
+                var col = (index % cols)+1;
+
                 iconWrap
                     .clone()
                     .data('icon', icon)
+                    .data('col', col)
+                    .data('row', row)
                     .append(
                         $('<i />')
                             .addClass('mdi ' + icon)
                     )
                     .click(function() {
-                        self.setActiveIcon($(this), false);
+                        self.setActiveIcon($(this));
                     })
                     .appendTo(self.ui.icons.list);
+
+                if (col == cols)
+                    row++;
+                index++;
             });
             self.ui.icons.icons = self.ui.icons.list.children();
 
@@ -157,7 +219,10 @@
             this.ui.icons.icons.filter('.active').removeClass('active');
         },
 
-        setActiveIcon: function(iconElem, fake) {
+        setActiveIcon: function(iconElem, fake, ensureVisible) {
+            fake = fake || false;
+            ensureVisible = ensureVisible || false;
+
             var className = iconElem.data('icon');
             this.ui.icons.icons.filter('.active').removeClass('active');
 
@@ -170,6 +235,21 @@
             this.ui.properties.icon[0].classList = 'mdi ' + className;
             this.ui.footer.openInMaterialdesignIcons.attr('href',
                 'https://materialdesignicons.com/icon/' + className.substr('mdi-'.length));
+
+            if (ensureVisible) {
+                var offset = iconElem.offset().top - iconElem.parent().position().top;
+                var iconElemHeight = iconElem.outerHeight(true);
+
+                var scrollTop = iconElem.parent().scrollTop(),
+                    initialScrollTop = scrollTop;
+                if (offset - 5 < 0)
+                    scrollTop = iconElem.parent().scrollTop() + offset - 5;
+                else if (offset + iconElemHeight > iconElem.parent().height())
+                    scrollTop = scrollTop + offset + iconElem.outerHeight(true) - iconElem.parent().height();
+
+                if (scrollTop != initialScrollTop)
+                    iconElem.parent().scrollTop(scrollTop);
+            }
         }
     };
 
