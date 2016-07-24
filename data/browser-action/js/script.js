@@ -13,7 +13,8 @@
         ui: {},
         defaults: {
             upstreamSource: 'http://cdn.materialdesignicons.com/1.5.54/meta.json',
-            upstreamIgnoredKeys: ['id', 'codepoint']
+            upstreamIgnoredKeys: ['id', 'codepoint'],
+            cacheDuration: 5
         },
         materialDesignIcons: [],
 
@@ -135,9 +136,13 @@
 
         retrieveIconsList: function() {
             var self = this,
-                cachedIcons = localStorage.icons;
+                cachedIcons = localStorage.icons,
+                lastRetrieval = localStorage.lastRetrieval;
 
-            if (cachedIcons !== undefined) {
+            lastRetrieval = lastRetrieval || 0;
+            var cacheAge = Math.ceil(Math.abs(Date.now() - lastRetrieval) / (1000 * 3600 * 24));
+
+            if (cacheAge < this.settings.cacheDuration) {
                 this.materialDesignIcons = JSON.parse(cachedIcons);
                 this.inflateUI();
             }
@@ -156,6 +161,7 @@
                         });
 
                         localStorage.icons = JSON.stringify(self.materialDesignIcons);
+                        localStorage.lastRetrieval = Date.now();
                         self.inflateUI();
                     },
                     error: function(result) {
