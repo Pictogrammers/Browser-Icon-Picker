@@ -62,7 +62,7 @@
                 var value = $(this).val();
 
                 self.materialDesignIcons.forEach(function(icon) {
-                    icon.uiElem.toggle(
+                    icon.domElem.toggle(
                         self.filterMatches(icon, value)
                     );
                 });
@@ -274,8 +274,8 @@
 })($, window);
 
 $(document).ready(function() {
-    var picker = new MaterialDesignIconsPicker();
-    picker.init();
+    window.picker = new MaterialDesignIconsPicker();
+    window.picker.init();
 });
 
 function randomInt(min, max) {
