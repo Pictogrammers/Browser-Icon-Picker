@@ -11,7 +11,10 @@
 
     MaterialDesignIconsPicker.prototype = {
         ui: {},
-        defaults: {},
+        defaults: {
+            upstreamSource: 'http://cdn.materialdesignicons.com/1.5.54/meta.json',
+            upstreamIgnoredKeys: ['id', 'codepoint']
+        },
         materialDesignIcons: [],
 
         init: function() {
@@ -40,6 +43,17 @@
             this.retrieveIconsList();
         },
 
+        filterMatches: function(icon, filterVal) {
+            if (icon.name.indexOf(filterVal) != -1)
+                return true;
+
+            for (var i=0; i<icon.aliases.length; i++) {
+                if (icon.aliases[i].indexOf(filterVal) != -1)
+                    return true;
+            }
+            return false;
+        },
+
         prepareUI: function() {
             var self = this;
 
@@ -47,9 +61,9 @@
             this.ui.filter.on('keyup', function() {
                 var value = $(this).val();
 
-                self.ui.icons.icons.each(function() {
-                    $(this).toggle(
-                        $(this).data('icon').indexOf(value) != -1
+                self.materialDesignIcons.forEach(function(icon) {
+                    icon.uiElem.toggle(
+                        self.filterMatches(icon, value)
                     );
                 });
             });
@@ -128,15 +142,18 @@
                 this.inflateUI();
             }
             else {
-                const upstreamSource = 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss';
                 $.ajax({
-                    url: upstreamSource,
+                    url: self.settings.upstreamSource,
+                    dataType: 'json',
                     success: function(result) {
-                        var regex = /    "(.*)": (F[A-F0-9]*),?/g,
-                            match;
+                        self.materialDesignIcons = result;
 
-                        while (match = regex.exec(result))
-                            self.materialDesignIcons.push('mdi-' + match[1]);
+                        // Ignore keys (avoid filling localStorage with unneeded information)
+                        self.settings.upstreamIgnoredKeys.forEach(function(key) {
+                            self.materialDesignIcons.forEach(function(icon) {
+                                delete icon[key];
+                            });
+                        });
 
                         localStorage.icons = JSON.stringify(self.materialDesignIcons);
                         self.inflateUI();
@@ -164,14 +181,14 @@
             this.materialDesignIcons.forEach(function(icon) {
                 var col = (index % cols)+1;
 
-                iconWrap
+                icon.domElem = iconWrap
                     .clone()
                     .data('icon', icon)
                     .data('col', col)
                     .data('row', row)
                     .append(
                         $('<i />')
-                            .addClass('mdi ' + icon)
+                            .addClass('mdi mdi-' + icon.name)
                     )
                     .click(function() {
                         self.setActiveIcon($(this));
@@ -190,7 +207,7 @@
                     tooltip = self.ui.tooltip;
 
                 // Update label
-                tooltip.text(icon.data('icon'));
+                tooltip.text(icon.data('icon').name);
 
                 // Show tooltip so we can get its width
                 tooltip.show();
@@ -223,7 +240,7 @@
             fake = fake || false;
             ensureVisible = ensureVisible || false;
 
-            var className = iconElem.data('icon');
+            var className = iconElem.data('icon').name;
             this.ui.icons.icons.filter('.active').removeClass('active');
 
             if (!fake) {
@@ -231,10 +248,10 @@
                 this.ui.properties.wrap.removeClass('inactive');
             }
             this.ui.properties.name.text(className);
-            this.ui.properties.className.text(className);
-            this.ui.properties.icon[0].classList = 'mdi ' + className;
+            this.ui.properties.className.text('mdi-' + className);
+            this.ui.properties.icon[0].classList = 'mdi mdi-' + className;
             this.ui.footer.openInMaterialdesignIcons.attr('href',
-                'https://materialdesignicons.com/icon/' + className.substr('mdi-'.length));
+                'https://materialdesignicons.com/icon/' + className);
 
             if (ensureVisible) {
                 var offset = iconElem.offset().top - iconElem.parent().position().top;
