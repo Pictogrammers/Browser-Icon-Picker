@@ -41,7 +41,6 @@ var params = {
             this.settings = $.extend({}, this.defaults, this.options);
 
             this.ui = {
-                tooltip: null,
                 filter: $('#filter'),
                 icons: {
                     list: $('#icons-list'),
@@ -87,12 +86,6 @@ var params = {
                     );
                 });
             });
-
-            // Prepare tooltip
-            this.ui.tooltip = $('<div />')
-                .addClass('tooltip')
-                .hide()
-                .appendTo($('body'));
 
             this.ui.footer.refresh.click(function(e) {
                 e.preventDefault();
@@ -293,32 +286,11 @@ var params = {
             });
             self.ui.icons.icons = self.ui.icons.list.children();
 
-            // Register tooltip mouseenter / mouseleave events
-            self.ui.icons.icons.mouseenter(function() {
-                var icon = $(this),
-                    tooltip = self.ui.tooltip;
-
-                // Update label
-                tooltip.text(icon.data('icon').name);
-
-                // Show tooltip so we can get its width
-                tooltip.show();
-
-                // Compute position
-                var top = icon.position().top + icon.outerHeight(true),
-                    left = icon.position().left + icon.outerWidth(true)/2 - tooltip.outerWidth(true) / 2;
-
-                tooltip
-                    .css('top', top)
-                    .css('left', left);
-
-                // Check if tooltip is out of viewport
-                if (left < 0)
-                    tooltip.css('left', 5);
-                else if (left + tooltip.outerWidth(true) > $('body').width())
-                    tooltip.css('left', $('body').width() - tooltip.outerWidth(true) - 5);
-            }).mouseleave(function() {
-                self.ui.tooltip.hide();
+            // Add tooltips
+            self.ui.icons.icons.tooltip({
+                text: function(icon) {
+                    return icon.data('icon').name;
+                }
             });
 
             // Set random icon as selected
