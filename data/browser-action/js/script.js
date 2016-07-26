@@ -33,7 +33,7 @@ var params = {
             jsonUpstreamIgnoredKeys: ['id', 'codepoint'],
             cacheDuration: 5,
 
-            storage: 'html5LocalStorage' // html5LocalStorage|chromeStorage
+            storage: 'chromeStorage' // html5LocalStorage|chromeStorage
         },
         materialDesignIcons: [],
 
