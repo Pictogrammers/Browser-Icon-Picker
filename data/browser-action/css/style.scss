@@ -174,31 +174,19 @@ footer {
         .left { float: left; }
         .right { float: right; }
 
-        .btn, .btn-sm-round {
+        .btn-sm-round {
             cursor: default;
             color: #fff;
             display: inline-block;
             text-decoration: none;
+            border-radius: 50%;
+            margin-right: 2px;
+            padding: 7px;
 
             &:hover {
                 color: $color-primary;
                 background-color: rgba(#fff, 0.95);
             }
-        }
-        .btn {
-            padding: 3px 5px;
-            margin: 4px 0;
-            font-size: 13px;
-            border-radius: 2px;
-
-            i {
-                vertical-align: middle;
-            }
-        }
-        .btn-sm-round {
-            border-radius: 50%;
-            margin-right: 2px;
-            padding: 7px;
         }
     }
 }

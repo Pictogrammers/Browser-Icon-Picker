@@ -145,25 +145,17 @@ footer .bar {
     float: left; }
   footer .bar .right {
     float: right; }
-  footer .bar .btn, footer .bar .btn-sm-round {
+  footer .bar .btn-sm-round {
     cursor: default;
     color: #fff;
     display: inline-block;
-    text-decoration: none; }
-    footer .bar .btn:hover, footer .bar .btn-sm-round:hover {
-      color: #2196F3;
-      background-color: rgba(255, 255, 255, 0.95); }
-  footer .bar .btn {
-    padding: 3px 5px;
-    margin: 4px 0;
-    font-size: 13px;
-    border-radius: 2px; }
-    footer .bar .btn i {
-      vertical-align: middle; }
-  footer .bar .btn-sm-round {
+    text-decoration: none;
     border-radius: 50%;
     margin-right: 2px;
     padding: 7px; }
+    footer .bar .btn-sm-round:hover {
+      color: #2196F3;
+      background-color: rgba(255, 255, 255, 0.95); }
 
 .tooltip {
   position: fixed;

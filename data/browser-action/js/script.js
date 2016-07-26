@@ -54,7 +54,9 @@ var params = {
                 },
                 footer: {
                     openInMaterialdesignIcons: $('#action-open-in-materialdesignicons'),
-                    refresh: $('#action-refresh')
+                    refresh: $('#action-refresh'),
+                    author: $('#action-author'),
+                    github: $('#action-github')
                 }
             };
 
@@ -87,6 +89,7 @@ var params = {
                 });
             });
 
+            // Refresh button
             this.ui.footer.refresh.click(function(e) {
                 e.preventDefault();
 
@@ -144,6 +147,12 @@ var params = {
 
                 e.preventDefault();
             });
+
+            // Footer tooltips
+            this.ui.footer.openInMaterialdesignIcons.tooltip({text: 'Open in MaterialDesignIcons.com'});
+            this.ui.footer.refresh.tooltip({text: 'Refresh'});
+            this.ui.footer.author.tooltip({text: 'Quentin S.'});
+            this.ui.footer.github.tooltip({text: 'GitHub'});
         },
 
         retrieveIconsList: function() {
