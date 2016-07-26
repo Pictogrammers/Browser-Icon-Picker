@@ -326,6 +326,8 @@ var params = {
                 randomInt(0, this.ui.icons.icons.length-1)
             )), true);
             this.ui.icons.icons.filter('.active').removeClass('active');
+
+            this.ui.filter.focus();
         },
 
         setActiveIcon: function(iconElem, fake, ensureVisible) {
