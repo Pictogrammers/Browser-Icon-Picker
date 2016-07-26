@@ -4,7 +4,8 @@
  */
 
 var params = {
-    upstreamSource: 'scss'
+    upstreamSource: 'scss',
+    storage: 'chromeStorage'
 };
 
 (function($, window) {
@@ -28,8 +29,11 @@ var params = {
                     dataType: 'text'
                 }
             },
-            upstreamIgnoredKeys: ['id', 'codepoint'],
-            cacheDuration: 5
+
+            jsonUpstreamIgnoredKeys: ['id', 'codepoint'],
+            cacheDuration: 5,
+
+            storage: 'html5LocalStorage' // html5LocalStorage|chromeStorage
         },
         materialDesignIcons: [],
 
@@ -150,15 +154,17 @@ var params = {
         },
 
         retrieveIconsList: function() {
-            var cachedIcons = localStorage.icons,
+            var that = this,
                 lastRetrieval = localStorage.lastRetrieval;
 
             lastRetrieval = lastRetrieval || 0;
             var cacheAge = Math.ceil(Math.abs(Date.now() - lastRetrieval) / (1000 * 3600 * 24));
 
             if (cacheAge < this.settings.cacheDuration) {
-                this.materialDesignIcons = JSON.parse(cachedIcons);
-                this.inflateUI();
+                this.retrieveLocalCache(function(icons) {
+                    that.materialDesignIcons = icons;
+                    that.inflateUI();
+                });
             }
             else
                 this.downloadIconsList();
@@ -180,7 +186,7 @@ var params = {
                         self.materialDesignIcons = result;
 
                         // Ignore keys (avoid filling localStorage with unneeded information)
-                        self.settings.upstreamIgnoredKeys.forEach(function (key) {
+                        self.settings.jsonUpstreamIgnoredKeys.forEach(function (key) {
                             self.materialDesignIcons.forEach(function (icon) {
                                 delete icon[key];
                             });
@@ -213,7 +219,7 @@ var params = {
                 success: function(result) {
                     parser(result);
 
-                    localStorage.icons = JSON.stringify(self.materialDesignIcons);
+                    self.writeToLocalCache();
                     localStorage.lastRetrieval = Date.now();
                     self.inflateUI();
                 },
@@ -227,6 +233,34 @@ var params = {
 
         onIconsRetrievalError: function(humanReadableError) {
             // TODO
+        },
+
+        writeToLocalCache: function() {
+            switch (this.settings.storage) {
+                case 'html5LocalStorage':
+                    localStorage['icons'] = JSON.stringify(this.materialDesignIcons);
+                    break;
+                case 'chromeStorage':
+                    chrome.storage.local.set({'icons': this.materialDesignIcons});
+                    break;
+                default:
+                    throw new Error('Unknown storage method ' + this.settings.storage);
+            }
+        },
+
+        retrieveLocalCache: function(callback) {
+            switch (this.settings.storage) {
+                case 'html5LocalStorage':
+                    callback(JSON.parse(localStorage['icons']));
+                    break;
+                case 'chromeStorage':
+                    chrome.storage.local.get('icons', function(storage) {
+                        callback(storage.icons);
+                    });
+                    break;
+                default:
+                    throw new Error('Unknown storage method ' + this.settings.storage);
+            }
         },
 
         inflateUI: function() {

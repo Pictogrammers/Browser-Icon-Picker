@@ -32,5 +32,9 @@
             "38": "data/img/icon-38x38.png",
             "64": "data/img/icon-64x64.png"
         }
-    }
+    },
+
+    "permissions": [
+        "storage"
+    ]
 }
