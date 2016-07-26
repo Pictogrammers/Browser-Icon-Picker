@@ -2,6 +2,11 @@
  * MaterialDesignIcons-Picker
  * Browser action script
  */
+
+var params = {
+    upstreamSource: 'scss'
+};
+
 (function($, window) {
     const cols = 6;
 
@@ -12,7 +17,17 @@
     MaterialDesignIconsPicker.prototype = {
         ui: {},
         defaults: {
-            upstreamSource: 'http://cdn.materialdesignicons.com/1.5.54/meta.json',
+            upstreamSource: 'scss', // json|scss
+            upstreamSources: {
+                json: {
+                    url: 'http://cdn.materialdesignicons.com/1.5.54/meta.json',
+                    dataType: 'json'
+                },
+                scss: {
+                    url: 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss',
+                    dataType: 'text'
+                }
+            },
             upstreamIgnoredKeys: ['id', 'codepoint'],
             cacheDuration: 5
         },
@@ -135,8 +150,7 @@
         },
 
         retrieveIconsList: function() {
-            var self = this,
-                cachedIcons = localStorage.icons,
+            var cachedIcons = localStorage.icons,
                 lastRetrieval = localStorage.lastRetrieval;
 
             lastRetrieval = lastRetrieval || 0;
@@ -146,31 +160,69 @@
                 this.materialDesignIcons = JSON.parse(cachedIcons);
                 this.inflateUI();
             }
-            else {
-                $.ajax({
-                    url: self.settings.upstreamSource,
-                    dataType: 'json',
-                    success: function(result) {
+            else
+                this.downloadIconsList();
+        },
+
+        /**
+         * Fetch icons list (ajax request) from upstream source
+         */
+        downloadIconsList: function() {
+            var upstreamSource = this.settings.upstreamSource,
+                upstreamSourceInfos = this.settings.upstreamSources[this.settings.upstreamSource],
+                self = this;
+
+            // Prepare parser
+            var parser = null;
+            switch (upstreamSource) {
+                case 'json':
+                    parser = function(result) {
                         self.materialDesignIcons = result;
 
                         // Ignore keys (avoid filling localStorage with unneeded information)
-                        self.settings.upstreamIgnoredKeys.forEach(function(key) {
-                            self.materialDesignIcons.forEach(function(icon) {
+                        self.settings.upstreamIgnoredKeys.forEach(function (key) {
+                            self.materialDesignIcons.forEach(function (icon) {
                                 delete icon[key];
                             });
                         });
+                    };
+                    break;
+                case 'scss':
+                    parser = function(result) {
+                        self.materialDesignIcons = [];
+                        var regex = /    "(.*)": (F[A-F0-9]*),?/g,
+                            match;
 
-                        localStorage.icons = JSON.stringify(self.materialDesignIcons);
-                        localStorage.lastRetrieval = Date.now();
-                        self.inflateUI();
-                    },
-                    error: function(result) {
-                        console.error(result);
-
-                        self.onIconsRetrievalError("Could not connect to MaterialDesignIcons's repository")
-                    }
-                });
+                        while (match = regex.exec(result)) {
+                            var name = match[1];
+                            self.materialDesignIcons.push({
+                                name: name,
+                                aliases: []
+                            });
+                        }
+                    };
+                    break;
+                default:
+                    throw new Error('Unknown upstreamSource ' + upstreamSource);
             }
+
+            // LET'S DO THIS
+            $.ajax({
+                url: upstreamSourceInfos.url,
+                dataType: upstreamSourceInfos.dataType,
+                success: function(result) {
+                    parser(result);
+
+                    localStorage.icons = JSON.stringify(self.materialDesignIcons);
+                    localStorage.lastRetrieval = Date.now();
+                    self.inflateUI();
+                },
+                error: function (result) {
+                    console.error(result);
+
+                    self.onIconsRetrievalError("Could not connect to MaterialDesignIcons's repository")
+                }
+            });
         },
 
         onIconsRetrievalError: function(humanReadableError) {
@@ -280,7 +332,7 @@
 })($, window);
 
 $(document).ready(function() {
-    window.picker = new MaterialDesignIconsPicker();
+    window.picker = new MaterialDesignIconsPicker(params);
     window.picker.init();
 });
 
