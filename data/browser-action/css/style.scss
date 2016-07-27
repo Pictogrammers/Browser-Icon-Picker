@@ -4,13 +4,21 @@
 
 @import 'material';
 
+$roboto: Roboto, Arial, sans-serif;
 $color-primary: material-color($color-blue, 500);
 $color-accent: material-color($color-orange, 500);
-$icons-color: rgba(#000, 0.7);
-$icons-color-hover: rgba(#fff, 0.95);
+$icons-color: #565656;
+$icons-color-hover: #fff;
+$background: #fafafa;
+$icon-size: 24px;
+$icon-margin: 5px;
+$icon-padding: 12px;
+$icon-border: 1px;
+$iconsList-height: 5.5 * ($icon-size + 2*($icon-margin+$icon-border+$icon-padding));
 
+// Chrome popup default font style
 body {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: $roboto;
     font-size: 75%;
 }
 
@@ -39,63 +47,87 @@ body {
 }
 
 header {
+    color: #fff;
     padding: 5px 10px;
-    background-color: #fff;
+    background-color: $color-primary;
     position: relative;
     z-index: 1;
-    @extend .elevation-lowest;
+    @extend .elevation-low;
 
     h1 {
         font-weight: normal;
         margin: 5px 0;
+        display: inline-block;
+
+        i.mdi {
+            vertical-align: baseline;
+            margin: 0 10px 0 5px;
+        }
+    }
+
+    #version {
+        margin-left: 5px;
+        opacity: 0.7;
     }
 
     #filter {
-        width: 100%;
-        margin: 5px 0;
-        padding: 0 8px;
-        height: 28px;
+        $left-margin: 45px;
+        width: calc(100% - #{$left-margin});
+        margin: 5px 0 5px $left-margin;
+        padding: 6px 2px;
+        font-family: $roboto;
+        font-size: 15px;
+        color: #fff;
         outline: none;
-        border-radius: 2px;
-        border: 1px solid rgba(#000, 0.2);
-        transition-duration: $timing-short;
+        border: 0;
+        background: transparent;
+        transition-duration: $timing-medium;
+        box-shadow: 0 1px rgba(#ffffff, 0.7);
 
         &:active, &:focus {
-            border-color: #9E9E9E;
+            box-shadow: 0 2px rgba(#ffffff, 0.9);
         }
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: #fff;
+        opacity: 0.7;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+        opacity: 0.7;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+        opacity: 0.7;
     }
 }
 
 .icons {
     font-size: 0;
     overflow-y: scroll;
-    height: 300px;
+    height: $iconsList-height;
 
-    background: rgb(231,231,231);
-    background: -moz-linear-gradient(top,  rgba(231,231,231,1) 0%, rgba(226,226,226,1) 100%);
-    background: -webkit-linear-gradient(top,  rgba(231,231,231,1) 0%,rgba(226,226,226,1) 100%);
-    background: linear-gradient(to bottom,  rgba(231,231,231,1) 0%,rgba(226,226,226,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#e2e2e2',GradientType=0 );
+    background: $background;
 
     .icon-wrap {
         display: inline-block;
-        margin: 5px;
-        padding: 12px;
-        border: 1px solid transparent;
+        margin: $icon-margin;
+        padding: $icon-padding;
+        border: $icon-border solid transparent;
         border-radius: 2px;
         transition-duration: $timing-short;
 
         .mdi {
             color: $icons-color;
-            font-size: 24px;
-            width: 24px;
-            height: 24px;
+            font-size: $icon-size;
+            width: $icon-size;
+            height: $icon-size;
             overflow: hidden;
             transition-duration: $timing-short;
         }
 
         &:hover, &.active {
-            border-color: rgba(#000, 0.2);
+            border-color: rgba(#000, 0.1);
             background-color: $color-accent;
 
             .mdi {

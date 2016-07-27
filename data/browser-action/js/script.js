@@ -14,13 +14,15 @@
         ui: {},
         defaults: {
         },
-        materialDesignIcons: [],
 
         init: function() {
             this.settings = $.extend({}, this.defaults, this.options);
 
             this.ui = {
-                filter: $('#filter'),
+                header: {
+                    filter: $('#filter'),
+                    version: $('#version')
+                },
                 icons: {
                     list: $('#icons-list'),
                     icons: null
@@ -57,10 +59,10 @@
             var self = this;
 
             // Filter keyup event
-            this.ui.filter.on('keyup', function() {
+            this.ui.header.filter.on('keyup', function() {
                 var value = $(this).val();
 
-                self.materialDesignIcons.forEach(function(icon) {
+                window.MaterialDesignIcons.icons.forEach(function(icon) {
                     icon.domElem.toggle(
                         self.filterMatches(icon, value)
                     );
@@ -69,7 +71,7 @@
 
             // Bind arrow keys
             $(document).keydown(function(e) {
-                if (self.ui.filter.is(':focus'))
+                if (self.ui.header.filter.is(':focus'))
                     return;
 
                 var iconWrap = self.ui.icons.icons.filter('.active'),
@@ -160,13 +162,15 @@
                 }
             });
 
+            this.ui.header.version.text('v' + window.MaterialDesignIcons.version);
+
             // Set random icon as selected
             this.setActiveIcon($(this.ui.icons.icons.get(
                 randomInt(0, this.ui.icons.icons.length-1)
             )), true);
             this.ui.icons.icons.filter('.active').removeClass('active');
 
-            this.ui.filter.focus();
+            this.ui.header.filter.focus();
         },
 
         setActiveIcon: function(iconElem, fake, ensureVisible) {
