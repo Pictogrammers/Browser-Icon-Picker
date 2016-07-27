@@ -2,6603 +2,8253 @@ window.MaterialDesignIcons = {
     "icons": [
         {
             "aliases": [],
-            "name": "access-point"
+            "name": "access-point",
+            "searchable": "access point"
         },
         {
             "aliases": [],
-            "name": "access-point-network"
+            "name": "access-point-network",
+            "searchable": "access point network"
         },
         {
             "aliases": [],
-            "name": "account"
+            "name": "account",
+            "searchable": "account"
         },
         {
             "aliases": [],
-            "name": "account-alert"
+            "name": "account-alert",
+            "searchable": "account alert"
         },
         {
             "aliases": [],
-            "name": "account-box"
+            "name": "account-box",
+            "searchable": "account box"
         },
         {
             "aliases": [],
-            "name": "account-box-outline"
+            "name": "account-box-outline",
+            "searchable": "account box outline"
         },
         {
             "aliases": [],
-            "name": "account-card-details"
+            "name": "account-card-details",
+            "searchable": "account card details"
         },
         {
             "aliases": [],
-            "name": "account-check"
+            "name": "account-check",
+            "searchable": "account check"
         },
         {
             "aliases": [],
-            "name": "account-circle"
+            "name": "account-circle",
+            "searchable": "account circle"
         },
         {
             "aliases": [],
-            "name": "account-convert"
+            "name": "account-convert",
+            "searchable": "account convert"
         },
         {
             "aliases": [],
-            "name": "account-key"
+            "name": "account-key",
+            "searchable": "account key"
         },
         {
             "aliases": [],
-            "name": "account-location"
+            "name": "account-location",
+            "searchable": "account location"
         },
         {
             "aliases": [],
-            "name": "account-minus"
+            "name": "account-minus",
+            "searchable": "account minus"
         },
         {
             "aliases": [],
-            "name": "account-multiple"
+            "name": "account-multiple",
+            "searchable": "account multiple"
         },
         {
             "aliases": [],
-            "name": "account-multiple-minus"
+            "name": "account-multiple-minus",
+            "searchable": "account multiple minus"
         },
         {
             "aliases": [],
-            "name": "account-multiple-outline"
+            "name": "account-multiple-outline",
+            "searchable": "account multiple outline"
         },
         {
             "aliases": [],
-            "name": "account-multiple-plus"
+            "name": "account-multiple-plus",
+            "searchable": "account multiple plus"
         },
         {
             "aliases": [],
-            "name": "account-network"
+            "name": "account-network",
+            "searchable": "account network"
         },
         {
             "aliases": [],
-            "name": "account-off"
+            "name": "account-off",
+            "searchable": "account off"
         },
         {
             "aliases": [],
-            "name": "account-outline"
+            "name": "account-outline",
+            "searchable": "account outline"
         },
         {
             "aliases": [],
-            "name": "account-plus"
+            "name": "account-plus",
+            "searchable": "account plus"
         },
         {
             "aliases": [],
-            "name": "account-remove"
+            "name": "account-remove",
+            "searchable": "account remove"
         },
         {
             "aliases": [],
-            "name": "account-search"
+            "name": "account-search",
+            "searchable": "account search"
         },
         {
             "aliases": [],
-            "name": "account-settings"
+            "name": "account-settings",
+            "searchable": "account settings"
         },
         {
             "aliases": [],
-            "name": "account-settings-variant"
+            "name": "account-settings-variant",
+            "searchable": "account settings variant"
         },
         {
             "aliases": [],
-            "name": "account-star"
+            "name": "account-star",
+            "searchable": "account star"
         },
         {
             "aliases": [],
-            "name": "account-star-variant"
+            "name": "account-star-variant",
+            "searchable": "account star variant"
         },
         {
             "aliases": [],
-            "name": "account-switch"
+            "name": "account-switch",
+            "searchable": "account switch"
         },
         {
             "aliases": [],
-            "name": "adjust"
+            "name": "adjust",
+            "searchable": "adjust"
         },
         {
             "aliases": [],
-            "name": "air-conditioner"
+            "name": "air-conditioner",
+            "searchable": "air conditioner"
         },
         {
             "aliases": [],
-            "name": "airballoon"
+            "name": "airballoon",
+            "searchable": "airballoon"
         },
         {
             "aliases": [],
-            "name": "airplane"
+            "name": "airplane",
+            "searchable": "airplane"
         },
         {
             "aliases": [],
-            "name": "airplane-landing"
+            "name": "airplane-landing",
+            "searchable": "airplane landing"
         },
         {
             "aliases": [],
-            "name": "airplane-off"
+            "name": "airplane-off",
+            "searchable": "airplane off"
         },
         {
             "aliases": [],
-            "name": "airplane-takeoff"
+            "name": "airplane-takeoff",
+            "searchable": "airplane takeoff"
         },
         {
             "aliases": [],
-            "name": "airplay"
+            "name": "airplay",
+            "searchable": "airplay"
         },
         {
             "aliases": [],
-            "name": "alarm"
+            "name": "alarm",
+            "searchable": "alarm"
         },
         {
             "aliases": [],
-            "name": "alarm-check"
+            "name": "alarm-check",
+            "searchable": "alarm check"
         },
         {
             "aliases": [],
-            "name": "alarm-multiple"
+            "name": "alarm-multiple",
+            "searchable": "alarm multiple"
         },
         {
             "aliases": [],
-            "name": "alarm-off"
+            "name": "alarm-off",
+            "searchable": "alarm off"
         },
         {
             "aliases": [],
-            "name": "alarm-plus"
+            "name": "alarm-plus",
+            "searchable": "alarm plus"
         },
         {
             "aliases": [],
-            "name": "album"
+            "name": "album",
+            "searchable": "album"
         },
         {
             "aliases": [],
-            "name": "alert"
+            "name": "alert",
+            "searchable": "alert"
         },
         {
             "aliases": [],
-            "name": "alert-box"
+            "name": "alert-box",
+            "searchable": "alert box"
         },
         {
             "aliases": [],
-            "name": "alert-circle"
+            "name": "alert-circle",
+            "searchable": "alert circle"
         },
         {
             "aliases": [],
-            "name": "alert-circle-outline"
+            "name": "alert-circle-outline",
+            "searchable": "alert circle outline"
         },
         {
             "aliases": [],
-            "name": "alert-octagon"
+            "name": "alert-octagon",
+            "searchable": "alert octagon"
         },
         {
             "aliases": [],
-            "name": "alert-outline"
+            "name": "alert-outline",
+            "searchable": "alert outline"
         },
         {
             "aliases": [],
-            "name": "alpha"
+            "name": "alpha",
+            "searchable": "alpha"
         },
         {
             "aliases": [],
-            "name": "alphabetical"
+            "name": "alphabetical",
+            "searchable": "alphabetical"
         },
         {
             "aliases": [],
-            "name": "altimeter"
+            "name": "altimeter",
+            "searchable": "altimeter"
         },
         {
             "aliases": [],
-            "name": "amazon"
+            "name": "amazon",
+            "searchable": "amazon"
         },
         {
             "aliases": [],
-            "name": "amazon-clouddrive"
+            "name": "amazon-clouddrive",
+            "searchable": "amazon clouddrive"
         },
         {
             "aliases": [],
-            "name": "ambulance"
+            "name": "ambulance",
+            "searchable": "ambulance"
         },
         {
             "aliases": [],
-            "name": "amplifier"
+            "name": "amplifier",
+            "searchable": "amplifier"
         },
         {
             "aliases": [],
-            "name": "anchor"
+            "name": "anchor",
+            "searchable": "anchor"
         },
         {
             "aliases": [],
-            "name": "android"
+            "name": "android",
+            "searchable": "android"
         },
         {
             "aliases": [],
-            "name": "android-debug-bridge"
+            "name": "android-debug-bridge",
+            "searchable": "android debug bridge"
         },
         {
             "aliases": [],
-            "name": "android-studio"
+            "name": "android-studio",
+            "searchable": "android studio"
         },
         {
             "aliases": [],
-            "name": "animation"
+            "name": "animation",
+            "searchable": "animation"
         },
         {
             "aliases": [],
-            "name": "apple"
+            "name": "apple",
+            "searchable": "apple"
         },
         {
             "aliases": [],
-            "name": "apple-finder"
+            "name": "apple-finder",
+            "searchable": "apple finder"
         },
         {
             "aliases": [],
-            "name": "apple-ios"
+            "name": "apple-ios",
+            "searchable": "apple ios"
         },
         {
             "aliases": [],
-            "name": "apple-keyboard-caps"
+            "name": "apple-keyboard-caps",
+            "searchable": "apple keyboard caps"
         },
         {
             "aliases": [],
-            "name": "apple-keyboard-command"
+            "name": "apple-keyboard-command",
+            "searchable": "apple keyboard command"
         },
         {
             "aliases": [],
-            "name": "apple-keyboard-control"
+            "name": "apple-keyboard-control",
+            "searchable": "apple keyboard control"
         },
         {
             "aliases": [],
-            "name": "apple-keyboard-option"
+            "name": "apple-keyboard-option",
+            "searchable": "apple keyboard option"
         },
         {
             "aliases": [],
-            "name": "apple-keyboard-shift"
+            "name": "apple-keyboard-shift",
+            "searchable": "apple keyboard shift"
         },
         {
             "aliases": [],
-            "name": "apple-mobileme"
+            "name": "apple-mobileme",
+            "searchable": "apple mobileme"
         },
         {
             "aliases": [],
-            "name": "apple-safari"
+            "name": "apple-safari",
+            "searchable": "apple safari"
         },
         {
             "aliases": [],
-            "name": "application"
+            "name": "application",
+            "searchable": "application"
         },
         {
             "aliases": [],
-            "name": "appnet"
+            "name": "appnet",
+            "searchable": "appnet"
         },
         {
             "aliases": [],
-            "name": "apps"
+            "name": "apps",
+            "searchable": "apps"
         },
         {
             "aliases": [],
-            "name": "archive"
+            "name": "archive",
+            "searchable": "archive"
         },
         {
             "aliases": [],
-            "name": "arrange-bring-forward"
+            "name": "arrange-bring-forward",
+            "searchable": "arrange bring forward"
         },
         {
             "aliases": [],
-            "name": "arrange-bring-to-front"
+            "name": "arrange-bring-to-front",
+            "searchable": "arrange bring to front"
         },
         {
             "aliases": [],
-            "name": "arrange-send-backward"
+            "name": "arrange-send-backward",
+            "searchable": "arrange send backward"
         },
         {
             "aliases": [],
-            "name": "arrange-send-to-back"
+            "name": "arrange-send-to-back",
+            "searchable": "arrange send to back"
         },
         {
             "aliases": [],
-            "name": "arrow-all"
+            "name": "arrow-all",
+            "searchable": "arrow all"
         },
         {
             "aliases": [],
-            "name": "arrow-bottom-left"
+            "name": "arrow-bottom-left",
+            "searchable": "arrow bottom left"
         },
         {
             "aliases": [],
-            "name": "arrow-bottom-right"
+            "name": "arrow-bottom-right",
+            "searchable": "arrow bottom right"
         },
         {
             "aliases": [],
-            "name": "arrow-compress"
+            "name": "arrow-compress",
+            "searchable": "arrow compress"
         },
         {
             "aliases": [],
-            "name": "arrow-compress-all"
+            "name": "arrow-compress-all",
+            "searchable": "arrow compress all"
         },
         {
             "aliases": [],
-            "name": "arrow-down"
+            "name": "arrow-down",
+            "searchable": "arrow down"
         },
         {
             "aliases": [],
-            "name": "arrow-down-bold"
+            "name": "arrow-down-bold",
+            "searchable": "arrow down bold"
         },
         {
             "aliases": [],
-            "name": "arrow-down-bold-circle"
+            "name": "arrow-down-bold-circle",
+            "searchable": "arrow down bold circle"
         },
         {
             "aliases": [],
-            "name": "arrow-down-bold-circle-outline"
+            "name": "arrow-down-bold-circle-outline",
+            "searchable": "arrow down bold circle outline"
         },
         {
             "aliases": [],
-            "name": "arrow-down-bold-hexagon-outline"
+            "name": "arrow-down-bold-hexagon-outline",
+            "searchable": "arrow down bold hexagon outline"
         },
         {
             "aliases": [],
-            "name": "arrow-down-drop-circle"
+            "name": "arrow-down-drop-circle",
+            "searchable": "arrow down drop circle"
         },
         {
             "aliases": [],
-            "name": "arrow-down-drop-circle-outline"
+            "name": "arrow-down-drop-circle-outline",
+            "searchable": "arrow down drop circle outline"
         },
         {
             "aliases": [],
-            "name": "arrow-expand"
+            "name": "arrow-expand",
+            "searchable": "arrow expand"
         },
         {
             "aliases": [],
-            "name": "arrow-expand-all"
+            "name": "arrow-expand-all",
+            "searchable": "arrow expand all"
         },
         {
             "aliases": [],
-            "name": "arrow-left"
+            "name": "arrow-left",
+            "searchable": "arrow left"
         },
         {
             "aliases": [],
-            "name": "arrow-left-bold"
+            "name": "arrow-left-bold",
+            "searchable": "arrow left bold"
         },
         {
             "aliases": [],
-            "name": "arrow-left-bold-circle"
+            "name": "arrow-left-bold-circle",
+            "searchable": "arrow left bold circle"
         },
         {
             "aliases": [],
-            "name": "arrow-left-bold-circle-outline"
+            "name": "arrow-left-bold-circle-outline",
+            "searchable": "arrow left bold circle outline"
         },
         {
             "aliases": [],
-            "name": "arrow-left-bold-hexagon-outline"
+            "name": "arrow-left-bold-hexagon-outline",
+            "searchable": "arrow left bold hexagon outline"
         },
         {
             "aliases": [],
-            "name": "arrow-left-drop-circle"
+            "name": "arrow-left-drop-circle",
+            "searchable": "arrow left drop circle"
         },
         {
             "aliases": [],
-            "name": "arrow-left-drop-circle-outline"
+            "name": "arrow-left-drop-circle-outline",
+            "searchable": "arrow left drop circle outline"
         },
         {
             "aliases": [],
-            "name": "arrow-right"
+            "name": "arrow-right",
+            "searchable": "arrow right"
         },
         {
             "aliases": [],
-            "name": "arrow-right-bold"
+            "name": "arrow-right-bold",
+            "searchable": "arrow right bold"
         },
         {
             "aliases": [],
-            "name": "arrow-right-bold-circle"
+            "name": "arrow-right-bold-circle",
+            "searchable": "arrow right bold circle"
         },
         {
             "aliases": [],
-            "name": "arrow-right-bold-circle-outline"
+            "name": "arrow-right-bold-circle-outline",
+            "searchable": "arrow right bold circle outline"
         },
         {
             "aliases": [],
-            "name": "arrow-right-bold-hexagon-outline"
+            "name": "arrow-right-bold-hexagon-outline",
+            "searchable": "arrow right bold hexagon outline"
         },
         {
             "aliases": [],
-            "name": "arrow-right-drop-circle"
+            "name": "arrow-right-drop-circle",
+            "searchable": "arrow right drop circle"
         },
         {
             "aliases": [],
-            "name": "arrow-right-drop-circle-outline"
+            "name": "arrow-right-drop-circle-outline",
+            "searchable": "arrow right drop circle outline"
         },
         {
             "aliases": [],
-            "name": "arrow-top-left"
+            "name": "arrow-top-left",
+            "searchable": "arrow top left"
         },
         {
             "aliases": [],
-            "name": "arrow-top-right"
+            "name": "arrow-top-right",
+            "searchable": "arrow top right"
         },
         {
             "aliases": [],
-            "name": "arrow-up"
+            "name": "arrow-up",
+            "searchable": "arrow up"
         },
         {
             "aliases": [],
-            "name": "arrow-up-bold"
+            "name": "arrow-up-bold",
+            "searchable": "arrow up bold"
         },
         {
             "aliases": [],
-            "name": "arrow-up-bold-circle"
+            "name": "arrow-up-bold-circle",
+            "searchable": "arrow up bold circle"
         },
         {
             "aliases": [],
-            "name": "arrow-up-bold-circle-outline"
+            "name": "arrow-up-bold-circle-outline",
+            "searchable": "arrow up bold circle outline"
         },
         {
             "aliases": [],
-            "name": "arrow-up-bold-hexagon-outline"
+            "name": "arrow-up-bold-hexagon-outline",
+            "searchable": "arrow up bold hexagon outline"
         },
         {
             "aliases": [],
-            "name": "arrow-up-drop-circle"
+            "name": "arrow-up-drop-circle",
+            "searchable": "arrow up drop circle"
         },
         {
             "aliases": [],
-            "name": "arrow-up-drop-circle-outline"
+            "name": "arrow-up-drop-circle-outline",
+            "searchable": "arrow up drop circle outline"
         },
         {
             "aliases": [],
-            "name": "assistant"
+            "name": "assistant",
+            "searchable": "assistant"
         },
         {
             "aliases": [],
-            "name": "at"
+            "name": "at",
+            "searchable": "at"
         },
         {
             "aliases": [],
-            "name": "attachment"
+            "name": "attachment",
+            "searchable": "attachment"
         },
         {
             "aliases": [],
-            "name": "audiobook"
+            "name": "audiobook",
+            "searchable": "audiobook"
         },
         {
             "aliases": [],
-            "name": "auto-fix"
+            "name": "auto-fix",
+            "searchable": "auto fix"
         },
         {
             "aliases": [],
-            "name": "auto-upload"
+            "name": "auto-upload",
+            "searchable": "auto upload"
         },
         {
             "aliases": [],
-            "name": "autorenew"
+            "name": "autorenew",
+            "searchable": "autorenew"
         },
         {
             "aliases": [],
-            "name": "av-timer"
+            "name": "av-timer",
+            "searchable": "av timer"
         },
         {
             "aliases": [],
-            "name": "baby"
+            "name": "baby",
+            "searchable": "baby"
         },
         {
             "aliases": [],
-            "name": "backburger"
+            "name": "backburger",
+            "searchable": "backburger"
         },
         {
             "aliases": [],
-            "name": "backspace"
+            "name": "backspace",
+            "searchable": "backspace"
         },
         {
             "aliases": [],
-            "name": "backup-restore"
+            "name": "backup-restore",
+            "searchable": "backup restore"
         },
         {
             "aliases": [],
-            "name": "bank"
+            "name": "bank",
+            "searchable": "bank"
         },
         {
             "aliases": [],
-            "name": "barcode"
+            "name": "barcode",
+            "searchable": "barcode"
         },
         {
             "aliases": [],
-            "name": "barcode-scan"
+            "name": "barcode-scan",
+            "searchable": "barcode scan"
         },
         {
             "aliases": [],
-            "name": "barley"
+            "name": "barley",
+            "searchable": "barley"
         },
         {
             "aliases": [],
-            "name": "barrel"
+            "name": "barrel",
+            "searchable": "barrel"
         },
         {
             "aliases": [],
-            "name": "basecamp"
+            "name": "basecamp",
+            "searchable": "basecamp"
         },
         {
             "aliases": [],
-            "name": "basket"
+            "name": "basket",
+            "searchable": "basket"
         },
         {
             "aliases": [],
-            "name": "basket-fill"
+            "name": "basket-fill",
+            "searchable": "basket fill"
         },
         {
             "aliases": [],
-            "name": "basket-unfill"
+            "name": "basket-unfill",
+            "searchable": "basket unfill"
         },
         {
             "aliases": [],
-            "name": "battery"
+            "name": "battery",
+            "searchable": "battery"
         },
         {
             "aliases": [],
-            "name": "battery-10"
+            "name": "battery-10",
+            "searchable": "battery 10"
         },
         {
             "aliases": [],
-            "name": "battery-20"
+            "name": "battery-20",
+            "searchable": "battery 20"
         },
         {
             "aliases": [],
-            "name": "battery-30"
+            "name": "battery-30",
+            "searchable": "battery 30"
         },
         {
             "aliases": [],
-            "name": "battery-40"
+            "name": "battery-40",
+            "searchable": "battery 40"
         },
         {
             "aliases": [],
-            "name": "battery-50"
+            "name": "battery-50",
+            "searchable": "battery 50"
         },
         {
             "aliases": [],
-            "name": "battery-60"
+            "name": "battery-60",
+            "searchable": "battery 60"
         },
         {
             "aliases": [],
-            "name": "battery-70"
+            "name": "battery-70",
+            "searchable": "battery 70"
         },
         {
             "aliases": [],
-            "name": "battery-80"
+            "name": "battery-80",
+            "searchable": "battery 80"
         },
         {
             "aliases": [],
-            "name": "battery-90"
+            "name": "battery-90",
+            "searchable": "battery 90"
         },
         {
             "aliases": [],
-            "name": "battery-alert"
+            "name": "battery-alert",
+            "searchable": "battery alert"
         },
         {
             "aliases": [],
-            "name": "battery-charging"
+            "name": "battery-charging",
+            "searchable": "battery charging"
         },
         {
             "aliases": [],
-            "name": "battery-charging-100"
+            "name": "battery-charging-100",
+            "searchable": "battery charging 100"
         },
         {
             "aliases": [],
-            "name": "battery-charging-20"
+            "name": "battery-charging-20",
+            "searchable": "battery charging 20"
         },
         {
             "aliases": [],
-            "name": "battery-charging-30"
+            "name": "battery-charging-30",
+            "searchable": "battery charging 30"
         },
         {
             "aliases": [],
-            "name": "battery-charging-40"
+            "name": "battery-charging-40",
+            "searchable": "battery charging 40"
         },
         {
             "aliases": [],
-            "name": "battery-charging-60"
+            "name": "battery-charging-60",
+            "searchable": "battery charging 60"
         },
         {
             "aliases": [],
-            "name": "battery-charging-80"
+            "name": "battery-charging-80",
+            "searchable": "battery charging 80"
         },
         {
             "aliases": [],
-            "name": "battery-charging-90"
+            "name": "battery-charging-90",
+            "searchable": "battery charging 90"
         },
         {
             "aliases": [],
-            "name": "battery-minus"
+            "name": "battery-minus",
+            "searchable": "battery minus"
         },
         {
             "aliases": [],
-            "name": "battery-negative"
+            "name": "battery-negative",
+            "searchable": "battery negative"
         },
         {
             "aliases": [],
-            "name": "battery-outline"
+            "name": "battery-outline",
+            "searchable": "battery outline"
         },
         {
             "aliases": [],
-            "name": "battery-plus"
+            "name": "battery-plus",
+            "searchable": "battery plus"
         },
         {
             "aliases": [],
-            "name": "battery-positive"
+            "name": "battery-positive",
+            "searchable": "battery positive"
         },
         {
             "aliases": [],
-            "name": "battery-unknown"
+            "name": "battery-unknown",
+            "searchable": "battery unknown"
         },
         {
             "aliases": [],
-            "name": "beach"
+            "name": "beach",
+            "searchable": "beach"
         },
         {
             "aliases": [],
-            "name": "beats"
+            "name": "beats",
+            "searchable": "beats"
         },
         {
             "aliases": [],
-            "name": "beer"
+            "name": "beer",
+            "searchable": "beer"
         },
         {
             "aliases": [],
-            "name": "behance"
+            "name": "behance",
+            "searchable": "behance"
         },
         {
             "aliases": [],
-            "name": "bell"
+            "name": "bell",
+            "searchable": "bell"
         },
         {
             "aliases": [],
-            "name": "bell-off"
+            "name": "bell-off",
+            "searchable": "bell off"
         },
         {
             "aliases": [],
-            "name": "bell-outline"
+            "name": "bell-outline",
+            "searchable": "bell outline"
         },
         {
             "aliases": [],
-            "name": "bell-plus"
+            "name": "bell-plus",
+            "searchable": "bell plus"
         },
         {
             "aliases": [],
-            "name": "bell-ring"
+            "name": "bell-ring",
+            "searchable": "bell ring"
         },
         {
             "aliases": [],
-            "name": "bell-ring-outline"
+            "name": "bell-ring-outline",
+            "searchable": "bell ring outline"
         },
         {
             "aliases": [],
-            "name": "bell-sleep"
+            "name": "bell-sleep",
+            "searchable": "bell sleep"
         },
         {
             "aliases": [],
-            "name": "beta"
+            "name": "beta",
+            "searchable": "beta"
         },
         {
             "aliases": [],
-            "name": "bible"
+            "name": "bible",
+            "searchable": "bible"
         },
         {
             "aliases": [],
-            "name": "bike"
+            "name": "bike",
+            "searchable": "bike"
         },
         {
             "aliases": [],
-            "name": "bing"
+            "name": "bing",
+            "searchable": "bing"
         },
         {
             "aliases": [],
-            "name": "binoculars"
+            "name": "binoculars",
+            "searchable": "binoculars"
         },
         {
             "aliases": [],
-            "name": "bio"
+            "name": "bio",
+            "searchable": "bio"
         },
         {
             "aliases": [],
-            "name": "biohazard"
+            "name": "biohazard",
+            "searchable": "biohazard"
         },
         {
             "aliases": [],
-            "name": "bitbucket"
+            "name": "bitbucket",
+            "searchable": "bitbucket"
         },
         {
             "aliases": [],
-            "name": "black-mesa"
+            "name": "black-mesa",
+            "searchable": "black mesa"
         },
         {
             "aliases": [],
-            "name": "blackberry"
+            "name": "blackberry",
+            "searchable": "blackberry"
         },
         {
             "aliases": [],
-            "name": "blender"
+            "name": "blender",
+            "searchable": "blender"
         },
         {
             "aliases": [],
-            "name": "blinds"
+            "name": "blinds",
+            "searchable": "blinds"
         },
         {
             "aliases": [],
-            "name": "block-helper"
+            "name": "block-helper",
+            "searchable": "block helper"
         },
         {
             "aliases": [],
-            "name": "blogger"
+            "name": "blogger",
+            "searchable": "blogger"
         },
         {
             "aliases": [],
-            "name": "bluetooth"
+            "name": "bluetooth",
+            "searchable": "bluetooth"
         },
         {
             "aliases": [],
-            "name": "bluetooth-audio"
+            "name": "bluetooth-audio",
+            "searchable": "bluetooth audio"
         },
         {
             "aliases": [],
-            "name": "bluetooth-connect"
+            "name": "bluetooth-connect",
+            "searchable": "bluetooth connect"
         },
         {
             "aliases": [],
-            "name": "bluetooth-off"
+            "name": "bluetooth-off",
+            "searchable": "bluetooth off"
         },
         {
             "aliases": [],
-            "name": "bluetooth-settings"
+            "name": "bluetooth-settings",
+            "searchable": "bluetooth settings"
         },
         {
             "aliases": [],
-            "name": "bluetooth-transfer"
+            "name": "bluetooth-transfer",
+            "searchable": "bluetooth transfer"
         },
         {
             "aliases": [],
-            "name": "blur"
+            "name": "blur",
+            "searchable": "blur"
         },
         {
             "aliases": [],
-            "name": "blur-linear"
+            "name": "blur-linear",
+            "searchable": "blur linear"
         },
         {
             "aliases": [],
-            "name": "blur-off"
+            "name": "blur-off",
+            "searchable": "blur off"
         },
         {
             "aliases": [],
-            "name": "blur-radial"
+            "name": "blur-radial",
+            "searchable": "blur radial"
         },
         {
             "aliases": [],
-            "name": "bone"
+            "name": "bone",
+            "searchable": "bone"
         },
         {
             "aliases": [],
-            "name": "book"
+            "name": "book",
+            "searchable": "book"
         },
         {
             "aliases": [],
-            "name": "book-minus"
+            "name": "book-minus",
+            "searchable": "book minus"
         },
         {
             "aliases": [],
-            "name": "book-multiple"
+            "name": "book-multiple",
+            "searchable": "book multiple"
         },
         {
             "aliases": [],
-            "name": "book-multiple-variant"
+            "name": "book-multiple-variant",
+            "searchable": "book multiple variant"
         },
         {
             "aliases": [],
-            "name": "book-open"
+            "name": "book-open",
+            "searchable": "book open"
         },
         {
             "aliases": [],
-            "name": "book-open-page-variant"
+            "name": "book-open-page-variant",
+            "searchable": "book open page variant"
         },
         {
             "aliases": [],
-            "name": "book-open-variant"
+            "name": "book-open-variant",
+            "searchable": "book open variant"
         },
         {
             "aliases": [],
-            "name": "book-plus"
+            "name": "book-plus",
+            "searchable": "book plus"
         },
         {
             "aliases": [],
-            "name": "book-variant"
+            "name": "book-variant",
+            "searchable": "book variant"
         },
         {
             "aliases": [],
-            "name": "bookmark"
+            "name": "bookmark",
+            "searchable": "bookmark"
         },
         {
             "aliases": [],
-            "name": "bookmark-check"
+            "name": "bookmark-check",
+            "searchable": "bookmark check"
         },
         {
             "aliases": [],
-            "name": "bookmark-music"
+            "name": "bookmark-music",
+            "searchable": "bookmark music"
         },
         {
             "aliases": [],
-            "name": "bookmark-outline"
+            "name": "bookmark-outline",
+            "searchable": "bookmark outline"
         },
         {
             "aliases": [],
-            "name": "bookmark-plus"
+            "name": "bookmark-plus",
+            "searchable": "bookmark plus"
         },
         {
             "aliases": [],
-            "name": "bookmark-plus-outline"
+            "name": "bookmark-plus-outline",
+            "searchable": "bookmark plus outline"
         },
         {
             "aliases": [],
-            "name": "bookmark-remove"
+            "name": "bookmark-remove",
+            "searchable": "bookmark remove"
         },
         {
             "aliases": [],
-            "name": "boombox"
+            "name": "boombox",
+            "searchable": "boombox"
         },
         {
             "aliases": [],
-            "name": "border-all"
+            "name": "border-all",
+            "searchable": "border all"
         },
         {
             "aliases": [],
-            "name": "border-bottom"
+            "name": "border-bottom",
+            "searchable": "border bottom"
         },
         {
             "aliases": [],
-            "name": "border-color"
+            "name": "border-color",
+            "searchable": "border color"
         },
         {
             "aliases": [],
-            "name": "border-horizontal"
+            "name": "border-horizontal",
+            "searchable": "border horizontal"
         },
         {
             "aliases": [],
-            "name": "border-inside"
+            "name": "border-inside",
+            "searchable": "border inside"
         },
         {
             "aliases": [],
-            "name": "border-left"
+            "name": "border-left",
+            "searchable": "border left"
         },
         {
             "aliases": [],
-            "name": "border-none"
+            "name": "border-none",
+            "searchable": "border none"
         },
         {
             "aliases": [],
-            "name": "border-outside"
+            "name": "border-outside",
+            "searchable": "border outside"
         },
         {
             "aliases": [],
-            "name": "border-right"
+            "name": "border-right",
+            "searchable": "border right"
         },
         {
             "aliases": [],
-            "name": "border-style"
+            "name": "border-style",
+            "searchable": "border style"
         },
         {
             "aliases": [],
-            "name": "border-top"
+            "name": "border-top",
+            "searchable": "border top"
         },
         {
             "aliases": [],
-            "name": "border-vertical"
+            "name": "border-vertical",
+            "searchable": "border vertical"
         },
         {
             "aliases": [],
-            "name": "bowl"
+            "name": "bowl",
+            "searchable": "bowl"
         },
         {
             "aliases": [],
-            "name": "bowling"
+            "name": "bowling",
+            "searchable": "bowling"
         },
         {
             "aliases": [],
-            "name": "box"
+            "name": "box",
+            "searchable": "box"
         },
         {
             "aliases": [],
-            "name": "box-cutter"
+            "name": "box-cutter",
+            "searchable": "box cutter"
         },
         {
             "aliases": [],
-            "name": "box-shadow"
+            "name": "box-shadow",
+            "searchable": "box shadow"
         },
         {
             "aliases": [],
-            "name": "bridge"
+            "name": "bridge",
+            "searchable": "bridge"
         },
         {
             "aliases": [],
-            "name": "briefcase"
+            "name": "briefcase",
+            "searchable": "briefcase"
         },
         {
             "aliases": [],
-            "name": "briefcase-check"
+            "name": "briefcase-check",
+            "searchable": "briefcase check"
         },
         {
             "aliases": [],
-            "name": "briefcase-download"
+            "name": "briefcase-download",
+            "searchable": "briefcase download"
         },
         {
             "aliases": [],
-            "name": "briefcase-upload"
+            "name": "briefcase-upload",
+            "searchable": "briefcase upload"
         },
         {
             "aliases": [],
-            "name": "brightness-1"
+            "name": "brightness-1",
+            "searchable": "brightness 1"
         },
         {
             "aliases": [],
-            "name": "brightness-2"
+            "name": "brightness-2",
+            "searchable": "brightness 2"
         },
         {
             "aliases": [],
-            "name": "brightness-3"
+            "name": "brightness-3",
+            "searchable": "brightness 3"
         },
         {
             "aliases": [],
-            "name": "brightness-4"
+            "name": "brightness-4",
+            "searchable": "brightness 4"
         },
         {
             "aliases": [],
-            "name": "brightness-5"
+            "name": "brightness-5",
+            "searchable": "brightness 5"
         },
         {
             "aliases": [],
-            "name": "brightness-6"
+            "name": "brightness-6",
+            "searchable": "brightness 6"
         },
         {
             "aliases": [],
-            "name": "brightness-7"
+            "name": "brightness-7",
+            "searchable": "brightness 7"
         },
         {
             "aliases": [],
-            "name": "brightness-auto"
+            "name": "brightness-auto",
+            "searchable": "brightness auto"
         },
         {
             "aliases": [],
-            "name": "broom"
+            "name": "broom",
+            "searchable": "broom"
         },
         {
             "aliases": [],
-            "name": "brush"
+            "name": "brush",
+            "searchable": "brush"
         },
         {
             "aliases": [],
-            "name": "buffer"
+            "name": "buffer",
+            "searchable": "buffer"
         },
         {
             "aliases": [],
-            "name": "bug"
+            "name": "bug",
+            "searchable": "bug"
         },
         {
             "aliases": [],
-            "name": "bulletin-board"
+            "name": "bulletin-board",
+            "searchable": "bulletin board"
         },
         {
             "aliases": [],
-            "name": "bullhorn"
+            "name": "bullhorn",
+            "searchable": "bullhorn"
         },
         {
             "aliases": [],
-            "name": "bullseye"
+            "name": "bullseye",
+            "searchable": "bullseye"
         },
         {
             "aliases": [],
-            "name": "burst-mode"
+            "name": "burst-mode",
+            "searchable": "burst mode"
         },
         {
             "aliases": [],
-            "name": "bus"
+            "name": "bus",
+            "searchable": "bus"
         },
         {
             "aliases": [],
-            "name": "cached"
+            "name": "cached",
+            "searchable": "cached"
         },
         {
             "aliases": [],
-            "name": "cake"
+            "name": "cake",
+            "searchable": "cake"
         },
         {
             "aliases": [],
-            "name": "cake-layered"
+            "name": "cake-layered",
+            "searchable": "cake layered"
         },
         {
             "aliases": [],
-            "name": "cake-variant"
+            "name": "cake-variant",
+            "searchable": "cake variant"
         },
         {
             "aliases": [],
-            "name": "calculator"
+            "name": "calculator",
+            "searchable": "calculator"
         },
         {
             "aliases": [],
-            "name": "calendar"
+            "name": "calendar",
+            "searchable": "calendar"
         },
         {
             "aliases": [],
-            "name": "calendar-blank"
+            "name": "calendar-blank",
+            "searchable": "calendar blank"
         },
         {
             "aliases": [],
-            "name": "calendar-check"
+            "name": "calendar-check",
+            "searchable": "calendar check"
         },
         {
             "aliases": [],
-            "name": "calendar-clock"
+            "name": "calendar-clock",
+            "searchable": "calendar clock"
         },
         {
             "aliases": [],
-            "name": "calendar-multiple"
+            "name": "calendar-multiple",
+            "searchable": "calendar multiple"
         },
         {
             "aliases": [],
-            "name": "calendar-multiple-check"
+            "name": "calendar-multiple-check",
+            "searchable": "calendar multiple check"
         },
         {
             "aliases": [],
-            "name": "calendar-plus"
+            "name": "calendar-plus",
+            "searchable": "calendar plus"
         },
         {
             "aliases": [],
-            "name": "calendar-remove"
+            "name": "calendar-remove",
+            "searchable": "calendar remove"
         },
         {
             "aliases": [],
-            "name": "calendar-text"
+            "name": "calendar-text",
+            "searchable": "calendar text"
         },
         {
             "aliases": [],
-            "name": "calendar-today"
+            "name": "calendar-today",
+            "searchable": "calendar today"
         },
         {
             "aliases": [],
-            "name": "call-made"
+            "name": "call-made",
+            "searchable": "call made"
         },
         {
             "aliases": [],
-            "name": "call-merge"
+            "name": "call-merge",
+            "searchable": "call merge"
         },
         {
             "aliases": [],
-            "name": "call-missed"
+            "name": "call-missed",
+            "searchable": "call missed"
         },
         {
             "aliases": [],
-            "name": "call-received"
+            "name": "call-received",
+            "searchable": "call received"
         },
         {
             "aliases": [],
-            "name": "call-split"
+            "name": "call-split",
+            "searchable": "call split"
         },
         {
             "aliases": [],
-            "name": "camcorder"
+            "name": "camcorder",
+            "searchable": "camcorder"
         },
         {
             "aliases": [],
-            "name": "camcorder-box"
+            "name": "camcorder-box",
+            "searchable": "camcorder box"
         },
         {
             "aliases": [],
-            "name": "camcorder-box-off"
+            "name": "camcorder-box-off",
+            "searchable": "camcorder box off"
         },
         {
             "aliases": [],
-            "name": "camcorder-off"
+            "name": "camcorder-off",
+            "searchable": "camcorder off"
         },
         {
             "aliases": [],
-            "name": "camera"
+            "name": "camera",
+            "searchable": "camera"
         },
         {
             "aliases": [],
-            "name": "camera-enhance"
+            "name": "camera-enhance",
+            "searchable": "camera enhance"
         },
         {
             "aliases": [],
-            "name": "camera-front"
+            "name": "camera-front",
+            "searchable": "camera front"
         },
         {
             "aliases": [],
-            "name": "camera-front-variant"
+            "name": "camera-front-variant",
+            "searchable": "camera front variant"
         },
         {
             "aliases": [],
-            "name": "camera-iris"
+            "name": "camera-iris",
+            "searchable": "camera iris"
         },
         {
             "aliases": [],
-            "name": "camera-off"
+            "name": "camera-off",
+            "searchable": "camera off"
         },
         {
             "aliases": [],
-            "name": "camera-party-mode"
+            "name": "camera-party-mode",
+            "searchable": "camera party mode"
         },
         {
             "aliases": [],
-            "name": "camera-rear"
+            "name": "camera-rear",
+            "searchable": "camera rear"
         },
         {
             "aliases": [],
-            "name": "camera-rear-variant"
+            "name": "camera-rear-variant",
+            "searchable": "camera rear variant"
         },
         {
             "aliases": [],
-            "name": "camera-switch"
+            "name": "camera-switch",
+            "searchable": "camera switch"
         },
         {
             "aliases": [],
-            "name": "camera-timer"
+            "name": "camera-timer",
+            "searchable": "camera timer"
         },
         {
             "aliases": [],
-            "name": "candle"
+            "name": "candle",
+            "searchable": "candle"
         },
         {
             "aliases": [],
-            "name": "candycane"
+            "name": "candycane",
+            "searchable": "candycane"
         },
         {
             "aliases": [],
-            "name": "car"
+            "name": "car",
+            "searchable": "car"
         },
         {
             "aliases": [],
-            "name": "car-battery"
+            "name": "car-battery",
+            "searchable": "car battery"
         },
         {
             "aliases": [],
-            "name": "car-connected"
+            "name": "car-connected",
+            "searchable": "car connected"
         },
         {
             "aliases": [],
-            "name": "car-wash"
+            "name": "car-wash",
+            "searchable": "car wash"
         },
         {
             "aliases": [],
-            "name": "cards"
+            "name": "cards",
+            "searchable": "cards"
         },
         {
             "aliases": [],
-            "name": "cards-outline"
+            "name": "cards-outline",
+            "searchable": "cards outline"
         },
         {
             "aliases": [],
-            "name": "cards-playing-outline"
+            "name": "cards-playing-outline",
+            "searchable": "cards playing outline"
         },
         {
             "aliases": [],
-            "name": "carrot"
+            "name": "carrot",
+            "searchable": "carrot"
         },
         {
             "aliases": [],
-            "name": "cart"
+            "name": "cart",
+            "searchable": "cart"
         },
         {
             "aliases": [],
-            "name": "cart-off"
+            "name": "cart-off",
+            "searchable": "cart off"
         },
         {
             "aliases": [],
-            "name": "cart-outline"
+            "name": "cart-outline",
+            "searchable": "cart outline"
         },
         {
             "aliases": [],
-            "name": "cart-plus"
+            "name": "cart-plus",
+            "searchable": "cart plus"
         },
         {
             "aliases": [],
-            "name": "case-sensitive-alt"
+            "name": "case-sensitive-alt",
+            "searchable": "case sensitive alt"
         },
         {
             "aliases": [],
-            "name": "cash"
+            "name": "cash",
+            "searchable": "cash"
         },
         {
             "aliases": [],
-            "name": "cash-100"
+            "name": "cash-100",
+            "searchable": "cash 100"
         },
         {
             "aliases": [],
-            "name": "cash-multiple"
+            "name": "cash-multiple",
+            "searchable": "cash multiple"
         },
         {
             "aliases": [],
-            "name": "cash-usd"
+            "name": "cash-usd",
+            "searchable": "cash usd"
         },
         {
             "aliases": [],
-            "name": "cast"
+            "name": "cast",
+            "searchable": "cast"
         },
         {
             "aliases": [],
-            "name": "cast-connected"
+            "name": "cast-connected",
+            "searchable": "cast connected"
         },
         {
             "aliases": [],
-            "name": "castle"
+            "name": "castle",
+            "searchable": "castle"
         },
         {
             "aliases": [],
-            "name": "cat"
+            "name": "cat",
+            "searchable": "cat"
         },
         {
             "aliases": [],
-            "name": "cellphone"
+            "name": "cellphone",
+            "searchable": "cellphone"
         },
         {
             "aliases": [],
-            "name": "cellphone-android"
+            "name": "cellphone-android",
+            "searchable": "cellphone android"
         },
         {
             "aliases": [],
-            "name": "cellphone-basic"
+            "name": "cellphone-basic",
+            "searchable": "cellphone basic"
         },
         {
             "aliases": [],
-            "name": "cellphone-dock"
+            "name": "cellphone-dock",
+            "searchable": "cellphone dock"
         },
         {
             "aliases": [],
-            "name": "cellphone-iphone"
+            "name": "cellphone-iphone",
+            "searchable": "cellphone iphone"
         },
         {
             "aliases": [],
-            "name": "cellphone-link"
+            "name": "cellphone-link",
+            "searchable": "cellphone link"
         },
         {
             "aliases": [],
-            "name": "cellphone-link-off"
+            "name": "cellphone-link-off",
+            "searchable": "cellphone link off"
         },
         {
             "aliases": [],
-            "name": "cellphone-settings"
+            "name": "cellphone-settings",
+            "searchable": "cellphone settings"
         },
         {
             "aliases": [],
-            "name": "certificate"
+            "name": "certificate",
+            "searchable": "certificate"
         },
         {
             "aliases": [],
-            "name": "chair-school"
+            "name": "chair-school",
+            "searchable": "chair school"
         },
         {
             "aliases": [],
-            "name": "chart-arc"
+            "name": "chart-arc",
+            "searchable": "chart arc"
         },
         {
             "aliases": [],
-            "name": "chart-areaspline"
+            "name": "chart-areaspline",
+            "searchable": "chart areaspline"
         },
         {
             "aliases": [],
-            "name": "chart-bar"
+            "name": "chart-bar",
+            "searchable": "chart bar"
         },
         {
             "aliases": [],
-            "name": "chart-bubble"
+            "name": "chart-bubble",
+            "searchable": "chart bubble"
         },
         {
             "aliases": [],
-            "name": "chart-gantt"
+            "name": "chart-gantt",
+            "searchable": "chart gantt"
         },
         {
             "aliases": [],
-            "name": "chart-histogram"
+            "name": "chart-histogram",
+            "searchable": "chart histogram"
         },
         {
             "aliases": [],
-            "name": "chart-line"
+            "name": "chart-line",
+            "searchable": "chart line"
         },
         {
             "aliases": [],
-            "name": "chart-pie"
+            "name": "chart-pie",
+            "searchable": "chart pie"
         },
         {
             "aliases": [],
-            "name": "chart-scatterplot-hexbin"
+            "name": "chart-scatterplot-hexbin",
+            "searchable": "chart scatterplot hexbin"
         },
         {
             "aliases": [],
-            "name": "chart-timeline"
+            "name": "chart-timeline",
+            "searchable": "chart timeline"
         },
         {
             "aliases": [],
-            "name": "check"
+            "name": "check",
+            "searchable": "check"
         },
         {
             "aliases": [],
-            "name": "check-all"
+            "name": "check-all",
+            "searchable": "check all"
         },
         {
             "aliases": [],
-            "name": "check-circle"
+            "name": "check-circle",
+            "searchable": "check circle"
         },
         {
             "aliases": [],
-            "name": "check-circle-outline"
+            "name": "check-circle-outline",
+            "searchable": "check circle outline"
         },
         {
             "aliases": [],
-            "name": "checkbox-blank"
+            "name": "checkbox-blank",
+            "searchable": "checkbox blank"
         },
         {
             "aliases": [],
-            "name": "checkbox-blank-circle"
+            "name": "checkbox-blank-circle",
+            "searchable": "checkbox blank circle"
         },
         {
             "aliases": [],
-            "name": "checkbox-blank-circle-outline"
+            "name": "checkbox-blank-circle-outline",
+            "searchable": "checkbox blank circle outline"
         },
         {
             "aliases": [],
-            "name": "checkbox-blank-outline"
+            "name": "checkbox-blank-outline",
+            "searchable": "checkbox blank outline"
         },
         {
             "aliases": [],
-            "name": "checkbox-marked"
+            "name": "checkbox-marked",
+            "searchable": "checkbox marked"
         },
         {
             "aliases": [],
-            "name": "checkbox-marked-circle"
+            "name": "checkbox-marked-circle",
+            "searchable": "checkbox marked circle"
         },
         {
             "aliases": [],
-            "name": "checkbox-marked-circle-outline"
+            "name": "checkbox-marked-circle-outline",
+            "searchable": "checkbox marked circle outline"
         },
         {
             "aliases": [],
-            "name": "checkbox-marked-outline"
+            "name": "checkbox-marked-outline",
+            "searchable": "checkbox marked outline"
         },
         {
             "aliases": [],
-            "name": "checkbox-multiple-blank"
+            "name": "checkbox-multiple-blank",
+            "searchable": "checkbox multiple blank"
         },
         {
             "aliases": [],
-            "name": "checkbox-multiple-blank-circle"
+            "name": "checkbox-multiple-blank-circle",
+            "searchable": "checkbox multiple blank circle"
         },
         {
             "aliases": [],
-            "name": "checkbox-multiple-blank-circle-outline"
+            "name": "checkbox-multiple-blank-circle-outline",
+            "searchable": "checkbox multiple blank circle outline"
         },
         {
             "aliases": [],
-            "name": "checkbox-multiple-blank-outline"
+            "name": "checkbox-multiple-blank-outline",
+            "searchable": "checkbox multiple blank outline"
         },
         {
             "aliases": [],
-            "name": "checkbox-multiple-marked"
+            "name": "checkbox-multiple-marked",
+            "searchable": "checkbox multiple marked"
         },
         {
             "aliases": [],
-            "name": "checkbox-multiple-marked-circle"
+            "name": "checkbox-multiple-marked-circle",
+            "searchable": "checkbox multiple marked circle"
         },
         {
             "aliases": [],
-            "name": "checkbox-multiple-marked-circle-outline"
+            "name": "checkbox-multiple-marked-circle-outline",
+            "searchable": "checkbox multiple marked circle outline"
         },
         {
             "aliases": [],
-            "name": "checkbox-multiple-marked-outline"
+            "name": "checkbox-multiple-marked-outline",
+            "searchable": "checkbox multiple marked outline"
         },
         {
             "aliases": [],
-            "name": "checkerboard"
+            "name": "checkerboard",
+            "searchable": "checkerboard"
         },
         {
             "aliases": [],
-            "name": "chemical-weapon"
+            "name": "chemical-weapon",
+            "searchable": "chemical weapon"
         },
         {
             "aliases": [],
-            "name": "chevron-double-down"
+            "name": "chevron-double-down",
+            "searchable": "chevron double down"
         },
         {
             "aliases": [],
-            "name": "chevron-double-left"
+            "name": "chevron-double-left",
+            "searchable": "chevron double left"
         },
         {
             "aliases": [],
-            "name": "chevron-double-right"
+            "name": "chevron-double-right",
+            "searchable": "chevron double right"
         },
         {
             "aliases": [],
-            "name": "chevron-double-up"
+            "name": "chevron-double-up",
+            "searchable": "chevron double up"
         },
         {
             "aliases": [],
-            "name": "chevron-down"
+            "name": "chevron-down",
+            "searchable": "chevron down"
         },
         {
             "aliases": [],
-            "name": "chevron-left"
+            "name": "chevron-left",
+            "searchable": "chevron left"
         },
         {
             "aliases": [],
-            "name": "chevron-right"
+            "name": "chevron-right",
+            "searchable": "chevron right"
         },
         {
             "aliases": [],
-            "name": "chevron-up"
+            "name": "chevron-up",
+            "searchable": "chevron up"
         },
         {
             "aliases": [],
-            "name": "chip"
+            "name": "chip",
+            "searchable": "chip"
         },
         {
             "aliases": [],
-            "name": "church"
+            "name": "church",
+            "searchable": "church"
         },
         {
             "aliases": [],
-            "name": "cisco-webex"
+            "name": "cisco-webex",
+            "searchable": "cisco webex"
         },
         {
             "aliases": [],
-            "name": "city"
+            "name": "city",
+            "searchable": "city"
         },
         {
             "aliases": [],
-            "name": "clipboard"
+            "name": "clipboard",
+            "searchable": "clipboard"
         },
         {
             "aliases": [],
-            "name": "clipboard-account"
+            "name": "clipboard-account",
+            "searchable": "clipboard account"
         },
         {
             "aliases": [],
-            "name": "clipboard-alert"
+            "name": "clipboard-alert",
+            "searchable": "clipboard alert"
         },
         {
             "aliases": [],
-            "name": "clipboard-arrow-down"
+            "name": "clipboard-arrow-down",
+            "searchable": "clipboard arrow down"
         },
         {
             "aliases": [],
-            "name": "clipboard-arrow-left"
+            "name": "clipboard-arrow-left",
+            "searchable": "clipboard arrow left"
         },
         {
             "aliases": [],
-            "name": "clipboard-check"
+            "name": "clipboard-check",
+            "searchable": "clipboard check"
         },
         {
             "aliases": [],
-            "name": "clipboard-outline"
+            "name": "clipboard-outline",
+            "searchable": "clipboard outline"
         },
         {
             "aliases": [],
-            "name": "clipboard-text"
+            "name": "clipboard-text",
+            "searchable": "clipboard text"
         },
         {
             "aliases": [],
-            "name": "clippy"
+            "name": "clippy",
+            "searchable": "clippy"
         },
         {
             "aliases": [],
-            "name": "clock"
+            "name": "clock",
+            "searchable": "clock"
         },
         {
             "aliases": [],
-            "name": "clock-alert"
+            "name": "clock-alert",
+            "searchable": "clock alert"
         },
         {
             "aliases": [],
-            "name": "clock-end"
+            "name": "clock-end",
+            "searchable": "clock end"
         },
         {
             "aliases": [],
-            "name": "clock-fast"
+            "name": "clock-fast",
+            "searchable": "clock fast"
         },
         {
             "aliases": [],
-            "name": "clock-in"
+            "name": "clock-in",
+            "searchable": "clock in"
         },
         {
             "aliases": [],
-            "name": "clock-out"
+            "name": "clock-out",
+            "searchable": "clock out"
         },
         {
             "aliases": [],
-            "name": "clock-start"
+            "name": "clock-start",
+            "searchable": "clock start"
         },
         {
             "aliases": [],
-            "name": "close"
+            "name": "close",
+            "searchable": "close"
         },
         {
             "aliases": [],
-            "name": "close-box"
+            "name": "close-box",
+            "searchable": "close box"
         },
         {
             "aliases": [],
-            "name": "close-box-outline"
+            "name": "close-box-outline",
+            "searchable": "close box outline"
         },
         {
             "aliases": [],
-            "name": "close-circle"
+            "name": "close-circle",
+            "searchable": "close circle"
         },
         {
             "aliases": [],
-            "name": "close-circle-outline"
+            "name": "close-circle-outline",
+            "searchable": "close circle outline"
         },
         {
             "aliases": [],
-            "name": "close-network"
+            "name": "close-network",
+            "searchable": "close network"
         },
         {
             "aliases": [],
-            "name": "close-octagon"
+            "name": "close-octagon",
+            "searchable": "close octagon"
         },
         {
             "aliases": [],
-            "name": "close-octagon-outline"
+            "name": "close-octagon-outline",
+            "searchable": "close octagon outline"
         },
         {
             "aliases": [],
-            "name": "closed-caption"
+            "name": "closed-caption",
+            "searchable": "closed caption"
         },
         {
             "aliases": [],
-            "name": "cloud"
+            "name": "cloud",
+            "searchable": "cloud"
         },
         {
             "aliases": [],
-            "name": "cloud-check"
+            "name": "cloud-check",
+            "searchable": "cloud check"
         },
         {
             "aliases": [],
-            "name": "cloud-circle"
+            "name": "cloud-circle",
+            "searchable": "cloud circle"
         },
         {
             "aliases": [],
-            "name": "cloud-download"
+            "name": "cloud-download",
+            "searchable": "cloud download"
         },
         {
             "aliases": [],
-            "name": "cloud-outline"
+            "name": "cloud-outline",
+            "searchable": "cloud outline"
         },
         {
             "aliases": [],
-            "name": "cloud-outline-off"
+            "name": "cloud-outline-off",
+            "searchable": "cloud outline off"
         },
         {
             "aliases": [],
-            "name": "cloud-print"
+            "name": "cloud-print",
+            "searchable": "cloud print"
         },
         {
             "aliases": [],
-            "name": "cloud-print-outline"
+            "name": "cloud-print-outline",
+            "searchable": "cloud print outline"
         },
         {
             "aliases": [],
-            "name": "cloud-sync"
+            "name": "cloud-sync",
+            "searchable": "cloud sync"
         },
         {
             "aliases": [],
-            "name": "cloud-upload"
+            "name": "cloud-upload",
+            "searchable": "cloud upload"
         },
         {
             "aliases": [],
-            "name": "code-array"
+            "name": "code-array",
+            "searchable": "code array"
         },
         {
             "aliases": [],
-            "name": "code-braces"
+            "name": "code-braces",
+            "searchable": "code braces"
         },
         {
             "aliases": [],
-            "name": "code-brackets"
+            "name": "code-brackets",
+            "searchable": "code brackets"
         },
         {
             "aliases": [],
-            "name": "code-equal"
+            "name": "code-equal",
+            "searchable": "code equal"
         },
         {
             "aliases": [],
-            "name": "code-greater-than"
+            "name": "code-greater-than",
+            "searchable": "code greater than"
         },
         {
             "aliases": [],
-            "name": "code-greater-than-or-equal"
+            "name": "code-greater-than-or-equal",
+            "searchable": "code greater than or equal"
         },
         {
             "aliases": [],
-            "name": "code-less-than"
+            "name": "code-less-than",
+            "searchable": "code less than"
         },
         {
             "aliases": [],
-            "name": "code-less-than-or-equal"
+            "name": "code-less-than-or-equal",
+            "searchable": "code less than or equal"
         },
         {
             "aliases": [],
-            "name": "code-not-equal"
+            "name": "code-not-equal",
+            "searchable": "code not equal"
         },
         {
             "aliases": [],
-            "name": "code-not-equal-variant"
+            "name": "code-not-equal-variant",
+            "searchable": "code not equal variant"
         },
         {
             "aliases": [],
-            "name": "code-parentheses"
+            "name": "code-parentheses",
+            "searchable": "code parentheses"
         },
         {
             "aliases": [],
-            "name": "code-string"
+            "name": "code-string",
+            "searchable": "code string"
         },
         {
             "aliases": [],
-            "name": "code-tags"
+            "name": "code-tags",
+            "searchable": "code tags"
         },
         {
             "aliases": [],
-            "name": "codepen"
+            "name": "codepen",
+            "searchable": "codepen"
         },
         {
             "aliases": [],
-            "name": "coffee"
+            "name": "coffee",
+            "searchable": "coffee"
         },
         {
             "aliases": [],
-            "name": "coffee-to-go"
+            "name": "coffee-to-go",
+            "searchable": "coffee to go"
         },
         {
             "aliases": [],
-            "name": "coin"
+            "name": "coin",
+            "searchable": "coin"
         },
         {
             "aliases": [],
-            "name": "collage"
+            "name": "collage",
+            "searchable": "collage"
         },
         {
             "aliases": [],
-            "name": "color-helper"
+            "name": "color-helper",
+            "searchable": "color helper"
         },
         {
             "aliases": [],
-            "name": "comment"
+            "name": "comment",
+            "searchable": "comment"
         },
         {
             "aliases": [],
-            "name": "comment-account"
+            "name": "comment-account",
+            "searchable": "comment account"
         },
         {
             "aliases": [],
-            "name": "comment-account-outline"
+            "name": "comment-account-outline",
+            "searchable": "comment account outline"
         },
         {
             "aliases": [],
-            "name": "comment-alert"
+            "name": "comment-alert",
+            "searchable": "comment alert"
         },
         {
             "aliases": [],
-            "name": "comment-alert-outline"
+            "name": "comment-alert-outline",
+            "searchable": "comment alert outline"
         },
         {
             "aliases": [],
-            "name": "comment-check"
+            "name": "comment-check",
+            "searchable": "comment check"
         },
         {
             "aliases": [],
-            "name": "comment-check-outline"
+            "name": "comment-check-outline",
+            "searchable": "comment check outline"
         },
         {
             "aliases": [],
-            "name": "comment-multiple-outline"
+            "name": "comment-multiple-outline",
+            "searchable": "comment multiple outline"
         },
         {
             "aliases": [],
-            "name": "comment-outline"
+            "name": "comment-outline",
+            "searchable": "comment outline"
         },
         {
             "aliases": [],
-            "name": "comment-plus-outline"
+            "name": "comment-plus-outline",
+            "searchable": "comment plus outline"
         },
         {
             "aliases": [],
-            "name": "comment-processing"
+            "name": "comment-processing",
+            "searchable": "comment processing"
         },
         {
             "aliases": [],
-            "name": "comment-processing-outline"
+            "name": "comment-processing-outline",
+            "searchable": "comment processing outline"
         },
         {
             "aliases": [],
-            "name": "comment-question-outline"
+            "name": "comment-question-outline",
+            "searchable": "comment question outline"
         },
         {
             "aliases": [],
-            "name": "comment-remove-outline"
+            "name": "comment-remove-outline",
+            "searchable": "comment remove outline"
         },
         {
             "aliases": [],
-            "name": "comment-text"
+            "name": "comment-text",
+            "searchable": "comment text"
         },
         {
             "aliases": [],
-            "name": "comment-text-outline"
+            "name": "comment-text-outline",
+            "searchable": "comment text outline"
         },
         {
             "aliases": [],
-            "name": "compare"
+            "name": "compare",
+            "searchable": "compare"
         },
         {
             "aliases": [],
-            "name": "compass"
+            "name": "compass",
+            "searchable": "compass"
         },
         {
             "aliases": [],
-            "name": "compass-outline"
+            "name": "compass-outline",
+            "searchable": "compass outline"
         },
         {
             "aliases": [],
-            "name": "console"
+            "name": "console",
+            "searchable": "console"
         },
         {
             "aliases": [],
-            "name": "contact-mail"
+            "name": "contact-mail",
+            "searchable": "contact mail"
         },
         {
             "aliases": [],
-            "name": "content-copy"
+            "name": "content-copy",
+            "searchable": "content copy"
         },
         {
             "aliases": [],
-            "name": "content-cut"
+            "name": "content-cut",
+            "searchable": "content cut"
         },
         {
             "aliases": [],
-            "name": "content-duplicate"
+            "name": "content-duplicate",
+            "searchable": "content duplicate"
         },
         {
             "aliases": [],
-            "name": "content-paste"
+            "name": "content-paste",
+            "searchable": "content paste"
         },
         {
             "aliases": [],
-            "name": "content-save"
+            "name": "content-save",
+            "searchable": "content save"
         },
         {
             "aliases": [],
-            "name": "content-save-all"
+            "name": "content-save-all",
+            "searchable": "content save all"
         },
         {
             "aliases": [],
-            "name": "content-save-settings"
+            "name": "content-save-settings",
+            "searchable": "content save settings"
         },
         {
             "aliases": [],
-            "name": "contrast"
+            "name": "contrast",
+            "searchable": "contrast"
         },
         {
             "aliases": [],
-            "name": "contrast-box"
+            "name": "contrast-box",
+            "searchable": "contrast box"
         },
         {
             "aliases": [],
-            "name": "contrast-circle"
+            "name": "contrast-circle",
+            "searchable": "contrast circle"
         },
         {
             "aliases": [],
-            "name": "cookie"
+            "name": "cookie",
+            "searchable": "cookie"
         },
         {
             "aliases": [],
-            "name": "copyright"
+            "name": "copyright",
+            "searchable": "copyright"
         },
         {
             "aliases": [],
-            "name": "counter"
+            "name": "counter",
+            "searchable": "counter"
         },
         {
             "aliases": [],
-            "name": "cow"
+            "name": "cow",
+            "searchable": "cow"
         },
         {
             "aliases": [],
-            "name": "credit-card"
+            "name": "credit-card",
+            "searchable": "credit card"
         },
         {
             "aliases": [],
-            "name": "credit-card-multiple"
+            "name": "credit-card-multiple",
+            "searchable": "credit card multiple"
         },
         {
             "aliases": [],
-            "name": "credit-card-off"
+            "name": "credit-card-off",
+            "searchable": "credit card off"
         },
         {
             "aliases": [],
-            "name": "credit-card-scan"
+            "name": "credit-card-scan",
+            "searchable": "credit card scan"
         },
         {
             "aliases": [],
-            "name": "crop"
+            "name": "crop",
+            "searchable": "crop"
         },
         {
             "aliases": [],
-            "name": "crop-free"
+            "name": "crop-free",
+            "searchable": "crop free"
         },
         {
             "aliases": [],
-            "name": "crop-landscape"
+            "name": "crop-landscape",
+            "searchable": "crop landscape"
         },
         {
             "aliases": [],
-            "name": "crop-portrait"
+            "name": "crop-portrait",
+            "searchable": "crop portrait"
         },
         {
             "aliases": [],
-            "name": "crop-square"
+            "name": "crop-square",
+            "searchable": "crop square"
         },
         {
             "aliases": [],
-            "name": "crosshairs"
+            "name": "crosshairs",
+            "searchable": "crosshairs"
         },
         {
             "aliases": [],
-            "name": "crosshairs-gps"
+            "name": "crosshairs-gps",
+            "searchable": "crosshairs gps"
         },
         {
             "aliases": [],
-            "name": "crown"
+            "name": "crown",
+            "searchable": "crown"
         },
         {
             "aliases": [],
-            "name": "cube"
+            "name": "cube",
+            "searchable": "cube"
         },
         {
             "aliases": [],
-            "name": "cube-outline"
+            "name": "cube-outline",
+            "searchable": "cube outline"
         },
         {
             "aliases": [],
-            "name": "cube-send"
+            "name": "cube-send",
+            "searchable": "cube send"
         },
         {
             "aliases": [],
-            "name": "cube-unfolded"
+            "name": "cube-unfolded",
+            "searchable": "cube unfolded"
         },
         {
             "aliases": [],
-            "name": "cup"
+            "name": "cup",
+            "searchable": "cup"
         },
         {
             "aliases": [],
-            "name": "cup-off"
+            "name": "cup-off",
+            "searchable": "cup off"
         },
         {
             "aliases": [],
-            "name": "cup-water"
+            "name": "cup-water",
+            "searchable": "cup water"
         },
         {
             "aliases": [],
-            "name": "currency-btc"
+            "name": "currency-btc",
+            "searchable": "currency btc"
         },
         {
             "aliases": [],
-            "name": "currency-eur"
+            "name": "currency-eur",
+            "searchable": "currency eur"
         },
         {
             "aliases": [],
-            "name": "currency-gbp"
+            "name": "currency-gbp",
+            "searchable": "currency gbp"
         },
         {
             "aliases": [],
-            "name": "currency-inr"
+            "name": "currency-inr",
+            "searchable": "currency inr"
         },
         {
             "aliases": [],
-            "name": "currency-ngn"
+            "name": "currency-ngn",
+            "searchable": "currency ngn"
         },
         {
             "aliases": [],
-            "name": "currency-rub"
+            "name": "currency-rub",
+            "searchable": "currency rub"
         },
         {
             "aliases": [],
-            "name": "currency-try"
+            "name": "currency-try",
+            "searchable": "currency try"
         },
         {
             "aliases": [],
-            "name": "currency-usd"
+            "name": "currency-usd",
+            "searchable": "currency usd"
         },
         {
             "aliases": [],
-            "name": "cursor-default"
+            "name": "cursor-default",
+            "searchable": "cursor default"
         },
         {
             "aliases": [],
-            "name": "cursor-default-outline"
+            "name": "cursor-default-outline",
+            "searchable": "cursor default outline"
         },
         {
             "aliases": [],
-            "name": "cursor-move"
+            "name": "cursor-move",
+            "searchable": "cursor move"
         },
         {
             "aliases": [],
-            "name": "cursor-pointer"
+            "name": "cursor-pointer",
+            "searchable": "cursor pointer"
         },
         {
             "aliases": [],
-            "name": "cursor-text"
+            "name": "cursor-text",
+            "searchable": "cursor text"
         },
         {
             "aliases": [],
-            "name": "database"
+            "name": "database",
+            "searchable": "database"
         },
         {
             "aliases": [],
-            "name": "database-minus"
+            "name": "database-minus",
+            "searchable": "database minus"
         },
         {
             "aliases": [],
-            "name": "database-plus"
+            "name": "database-plus",
+            "searchable": "database plus"
         },
         {
             "aliases": [],
-            "name": "debug-step-into"
+            "name": "debug-step-into",
+            "searchable": "debug step into"
         },
         {
             "aliases": [],
-            "name": "debug-step-out"
+            "name": "debug-step-out",
+            "searchable": "debug step out"
         },
         {
             "aliases": [],
-            "name": "debug-step-over"
+            "name": "debug-step-over",
+            "searchable": "debug step over"
         },
         {
             "aliases": [],
-            "name": "decimal-decrease"
+            "name": "decimal-decrease",
+            "searchable": "decimal decrease"
         },
         {
             "aliases": [],
-            "name": "decimal-increase"
+            "name": "decimal-increase",
+            "searchable": "decimal increase"
         },
         {
             "aliases": [],
-            "name": "delete"
+            "name": "delete",
+            "searchable": "delete"
         },
         {
             "aliases": [],
-            "name": "delete-forever"
+            "name": "delete-forever",
+            "searchable": "delete forever"
         },
         {
             "aliases": [],
-            "name": "delete-sweep"
+            "name": "delete-sweep",
+            "searchable": "delete sweep"
         },
         {
             "aliases": [],
-            "name": "delete-variant"
+            "name": "delete-variant",
+            "searchable": "delete variant"
         },
         {
             "aliases": [],
-            "name": "delta"
+            "name": "delta",
+            "searchable": "delta"
         },
         {
             "aliases": [],
-            "name": "deskphone"
+            "name": "deskphone",
+            "searchable": "deskphone"
         },
         {
             "aliases": [],
-            "name": "desktop-mac"
+            "name": "desktop-mac",
+            "searchable": "desktop mac"
         },
         {
             "aliases": [],
-            "name": "desktop-tower"
+            "name": "desktop-tower",
+            "searchable": "desktop tower"
         },
         {
             "aliases": [],
-            "name": "details"
+            "name": "details",
+            "searchable": "details"
         },
         {
             "aliases": [],
-            "name": "deviantart"
+            "name": "deviantart",
+            "searchable": "deviantart"
         },
         {
             "aliases": [],
-            "name": "dialpad"
+            "name": "dialpad",
+            "searchable": "dialpad"
         },
         {
             "aliases": [],
-            "name": "diamond"
+            "name": "diamond",
+            "searchable": "diamond"
         },
         {
             "aliases": [],
-            "name": "dice-1"
+            "name": "dice-1",
+            "searchable": "dice 1"
         },
         {
             "aliases": [],
-            "name": "dice-2"
+            "name": "dice-2",
+            "searchable": "dice 2"
         },
         {
             "aliases": [],
-            "name": "dice-3"
+            "name": "dice-3",
+            "searchable": "dice 3"
         },
         {
             "aliases": [],
-            "name": "dice-4"
+            "name": "dice-4",
+            "searchable": "dice 4"
         },
         {
             "aliases": [],
-            "name": "dice-5"
+            "name": "dice-5",
+            "searchable": "dice 5"
         },
         {
             "aliases": [],
-            "name": "dice-6"
+            "name": "dice-6",
+            "searchable": "dice 6"
         },
         {
             "aliases": [],
-            "name": "dice-d20"
+            "name": "dice-d20",
+            "searchable": "dice d20"
         },
         {
             "aliases": [],
-            "name": "dice-d4"
+            "name": "dice-d4",
+            "searchable": "dice d4"
         },
         {
             "aliases": [],
-            "name": "dice-d6"
+            "name": "dice-d6",
+            "searchable": "dice d6"
         },
         {
             "aliases": [],
-            "name": "dice-d8"
+            "name": "dice-d8",
+            "searchable": "dice d8"
         },
         {
             "aliases": [],
-            "name": "dictionary"
+            "name": "dictionary",
+            "searchable": "dictionary"
         },
         {
             "aliases": [],
-            "name": "directions"
+            "name": "directions",
+            "searchable": "directions"
         },
         {
             "aliases": [],
-            "name": "directions-fork"
+            "name": "directions-fork",
+            "searchable": "directions fork"
         },
         {
             "aliases": [],
-            "name": "discord"
+            "name": "discord",
+            "searchable": "discord"
         },
         {
             "aliases": [],
-            "name": "disk"
+            "name": "disk",
+            "searchable": "disk"
         },
         {
             "aliases": [],
-            "name": "disk-alert"
+            "name": "disk-alert",
+            "searchable": "disk alert"
         },
         {
             "aliases": [],
-            "name": "disqus"
+            "name": "disqus",
+            "searchable": "disqus"
         },
         {
             "aliases": [],
-            "name": "disqus-outline"
+            "name": "disqus-outline",
+            "searchable": "disqus outline"
         },
         {
             "aliases": [],
-            "name": "division"
+            "name": "division",
+            "searchable": "division"
         },
         {
             "aliases": [],
-            "name": "division-box"
+            "name": "division-box",
+            "searchable": "division box"
         },
         {
             "aliases": [],
-            "name": "dns"
+            "name": "dns",
+            "searchable": "dns"
         },
         {
             "aliases": [],
-            "name": "domain"
+            "name": "domain",
+            "searchable": "domain"
         },
         {
             "aliases": [],
-            "name": "dots-horizontal"
+            "name": "dots-horizontal",
+            "searchable": "dots horizontal"
         },
         {
             "aliases": [],
-            "name": "dots-vertical"
+            "name": "dots-vertical",
+            "searchable": "dots vertical"
         },
         {
             "aliases": [],
-            "name": "download"
+            "name": "download",
+            "searchable": "download"
         },
         {
             "aliases": [],
-            "name": "drag"
+            "name": "drag",
+            "searchable": "drag"
         },
         {
             "aliases": [],
-            "name": "drag-horizontal"
+            "name": "drag-horizontal",
+            "searchable": "drag horizontal"
         },
         {
             "aliases": [],
-            "name": "drag-vertical"
+            "name": "drag-vertical",
+            "searchable": "drag vertical"
         },
         {
             "aliases": [],
-            "name": "drawing"
+            "name": "drawing",
+            "searchable": "drawing"
         },
         {
             "aliases": [],
-            "name": "drawing-box"
+            "name": "drawing-box",
+            "searchable": "drawing box"
         },
         {
             "aliases": [],
-            "name": "dribbble"
+            "name": "dribbble",
+            "searchable": "dribbble"
         },
         {
             "aliases": [],
-            "name": "dribbble-box"
+            "name": "dribbble-box",
+            "searchable": "dribbble box"
         },
         {
             "aliases": [],
-            "name": "drone"
+            "name": "drone",
+            "searchable": "drone"
         },
         {
             "aliases": [],
-            "name": "dropbox"
+            "name": "dropbox",
+            "searchable": "dropbox"
         },
         {
             "aliases": [],
-            "name": "drupal"
+            "name": "drupal",
+            "searchable": "drupal"
         },
         {
             "aliases": [],
-            "name": "duck"
+            "name": "duck",
+            "searchable": "duck"
         },
         {
             "aliases": [],
-            "name": "dumbbell"
+            "name": "dumbbell",
+            "searchable": "dumbbell"
         },
         {
             "aliases": [],
-            "name": "earth"
+            "name": "earth",
+            "searchable": "earth"
         },
         {
             "aliases": [],
-            "name": "earth-off"
+            "name": "earth-off",
+            "searchable": "earth off"
         },
         {
             "aliases": [],
-            "name": "edge"
+            "name": "edge",
+            "searchable": "edge"
         },
         {
             "aliases": [],
-            "name": "eject"
+            "name": "eject",
+            "searchable": "eject"
         },
         {
             "aliases": [],
-            "name": "elevation-decline"
+            "name": "elevation-decline",
+            "searchable": "elevation decline"
         },
         {
             "aliases": [],
-            "name": "elevation-rise"
+            "name": "elevation-rise",
+            "searchable": "elevation rise"
         },
         {
             "aliases": [],
-            "name": "elevator"
+            "name": "elevator",
+            "searchable": "elevator"
         },
         {
             "aliases": [],
-            "name": "email"
+            "name": "email",
+            "searchable": "email"
         },
         {
             "aliases": [],
-            "name": "email-open"
+            "name": "email-open",
+            "searchable": "email open"
         },
         {
             "aliases": [],
-            "name": "email-open-outline"
+            "name": "email-open-outline",
+            "searchable": "email open outline"
         },
         {
             "aliases": [],
-            "name": "email-outline"
+            "name": "email-outline",
+            "searchable": "email outline"
         },
         {
             "aliases": [],
-            "name": "email-secure"
+            "name": "email-secure",
+            "searchable": "email secure"
         },
         {
             "aliases": [],
-            "name": "email-variant"
+            "name": "email-variant",
+            "searchable": "email variant"
         },
         {
             "aliases": [],
-            "name": "emoticon"
+            "name": "emoticon",
+            "searchable": "emoticon"
         },
         {
             "aliases": [],
-            "name": "emoticon-cool"
+            "name": "emoticon-cool",
+            "searchable": "emoticon cool"
         },
         {
             "aliases": [],
-            "name": "emoticon-devil"
+            "name": "emoticon-devil",
+            "searchable": "emoticon devil"
         },
         {
             "aliases": [],
-            "name": "emoticon-happy"
+            "name": "emoticon-happy",
+            "searchable": "emoticon happy"
         },
         {
             "aliases": [],
-            "name": "emoticon-neutral"
+            "name": "emoticon-neutral",
+            "searchable": "emoticon neutral"
         },
         {
             "aliases": [],
-            "name": "emoticon-poop"
+            "name": "emoticon-poop",
+            "searchable": "emoticon poop"
         },
         {
             "aliases": [],
-            "name": "emoticon-sad"
+            "name": "emoticon-sad",
+            "searchable": "emoticon sad"
         },
         {
             "aliases": [],
-            "name": "emoticon-tongue"
+            "name": "emoticon-tongue",
+            "searchable": "emoticon tongue"
         },
         {
             "aliases": [],
-            "name": "engine"
+            "name": "engine",
+            "searchable": "engine"
         },
         {
             "aliases": [],
-            "name": "engine-outline"
+            "name": "engine-outline",
+            "searchable": "engine outline"
         },
         {
             "aliases": [],
-            "name": "equal"
+            "name": "equal",
+            "searchable": "equal"
         },
         {
             "aliases": [],
-            "name": "equal-box"
+            "name": "equal-box",
+            "searchable": "equal box"
         },
         {
             "aliases": [],
-            "name": "eraser"
+            "name": "eraser",
+            "searchable": "eraser"
         },
         {
             "aliases": [],
-            "name": "eraser-variant"
+            "name": "eraser-variant",
+            "searchable": "eraser variant"
         },
         {
             "aliases": [],
-            "name": "escalator"
+            "name": "escalator",
+            "searchable": "escalator"
         },
         {
             "aliases": [],
-            "name": "ethernet"
+            "name": "ethernet",
+            "searchable": "ethernet"
         },
         {
             "aliases": [],
-            "name": "ethernet-cable"
+            "name": "ethernet-cable",
+            "searchable": "ethernet cable"
         },
         {
             "aliases": [],
-            "name": "ethernet-cable-off"
+            "name": "ethernet-cable-off",
+            "searchable": "ethernet cable off"
         },
         {
             "aliases": [],
-            "name": "etsy"
+            "name": "etsy",
+            "searchable": "etsy"
         },
         {
             "aliases": [],
-            "name": "ev-station"
+            "name": "ev-station",
+            "searchable": "ev station"
         },
         {
             "aliases": [],
-            "name": "evernote"
+            "name": "evernote",
+            "searchable": "evernote"
         },
         {
             "aliases": [],
-            "name": "exclamation"
+            "name": "exclamation",
+            "searchable": "exclamation"
         },
         {
             "aliases": [],
-            "name": "exit-to-app"
+            "name": "exit-to-app",
+            "searchable": "exit to app"
         },
         {
             "aliases": [],
-            "name": "export"
+            "name": "export",
+            "searchable": "export"
         },
         {
             "aliases": [],
-            "name": "eye"
+            "name": "eye",
+            "searchable": "eye"
         },
         {
             "aliases": [],
-            "name": "eye-off"
+            "name": "eye-off",
+            "searchable": "eye off"
         },
         {
             "aliases": [],
-            "name": "eyedropper"
+            "name": "eyedropper",
+            "searchable": "eyedropper"
         },
         {
             "aliases": [],
-            "name": "eyedropper-variant"
+            "name": "eyedropper-variant",
+            "searchable": "eyedropper variant"
         },
         {
             "aliases": [],
-            "name": "face"
+            "name": "face",
+            "searchable": "face"
         },
         {
             "aliases": [],
-            "name": "face-profile"
+            "name": "face-profile",
+            "searchable": "face profile"
         },
         {
             "aliases": [],
-            "name": "facebook"
+            "name": "facebook",
+            "searchable": "facebook"
         },
         {
             "aliases": [],
-            "name": "facebook-box"
+            "name": "facebook-box",
+            "searchable": "facebook box"
         },
         {
             "aliases": [],
-            "name": "facebook-messenger"
+            "name": "facebook-messenger",
+            "searchable": "facebook messenger"
         },
         {
             "aliases": [],
-            "name": "factory"
+            "name": "factory",
+            "searchable": "factory"
         },
         {
             "aliases": [],
-            "name": "fan"
+            "name": "fan",
+            "searchable": "fan"
         },
         {
             "aliases": [],
-            "name": "fast-forward"
+            "name": "fast-forward",
+            "searchable": "fast forward"
         },
         {
             "aliases": [],
-            "name": "fax"
+            "name": "fax",
+            "searchable": "fax"
         },
         {
             "aliases": [],
-            "name": "ferry"
+            "name": "ferry",
+            "searchable": "ferry"
         },
         {
             "aliases": [],
-            "name": "file"
+            "name": "file",
+            "searchable": "file"
         },
         {
             "aliases": [],
-            "name": "file-chart"
+            "name": "file-chart",
+            "searchable": "file chart"
         },
         {
             "aliases": [],
-            "name": "file-check"
+            "name": "file-check",
+            "searchable": "file check"
         },
         {
             "aliases": [],
-            "name": "file-cloud"
+            "name": "file-cloud",
+            "searchable": "file cloud"
         },
         {
             "aliases": [],
-            "name": "file-delimited"
+            "name": "file-delimited",
+            "searchable": "file delimited"
         },
         {
             "aliases": [],
-            "name": "file-document"
+            "name": "file-document",
+            "searchable": "file document"
         },
         {
             "aliases": [],
-            "name": "file-document-box"
+            "name": "file-document-box",
+            "searchable": "file document box"
         },
         {
             "aliases": [],
-            "name": "file-excel"
+            "name": "file-excel",
+            "searchable": "file excel"
         },
         {
             "aliases": [],
-            "name": "file-excel-box"
+            "name": "file-excel-box",
+            "searchable": "file excel box"
         },
         {
             "aliases": [],
-            "name": "file-export"
+            "name": "file-export",
+            "searchable": "file export"
         },
         {
             "aliases": [],
-            "name": "file-find"
+            "name": "file-find",
+            "searchable": "file find"
         },
         {
             "aliases": [],
-            "name": "file-hidden"
+            "name": "file-hidden",
+            "searchable": "file hidden"
         },
         {
             "aliases": [],
-            "name": "file-image"
+            "name": "file-image",
+            "searchable": "file image"
         },
         {
             "aliases": [],
-            "name": "file-import"
+            "name": "file-import",
+            "searchable": "file import"
         },
         {
             "aliases": [],
-            "name": "file-lock"
+            "name": "file-lock",
+            "searchable": "file lock"
         },
         {
             "aliases": [],
-            "name": "file-multiple"
+            "name": "file-multiple",
+            "searchable": "file multiple"
         },
         {
             "aliases": [],
-            "name": "file-music"
+            "name": "file-music",
+            "searchable": "file music"
         },
         {
             "aliases": [],
-            "name": "file-outline"
+            "name": "file-outline",
+            "searchable": "file outline"
         },
         {
             "aliases": [],
-            "name": "file-pdf"
+            "name": "file-pdf",
+            "searchable": "file pdf"
         },
         {
             "aliases": [],
-            "name": "file-pdf-box"
+            "name": "file-pdf-box",
+            "searchable": "file pdf box"
         },
         {
             "aliases": [],
-            "name": "file-powerpoint"
+            "name": "file-powerpoint",
+            "searchable": "file powerpoint"
         },
         {
             "aliases": [],
-            "name": "file-powerpoint-box"
+            "name": "file-powerpoint-box",
+            "searchable": "file powerpoint box"
         },
         {
             "aliases": [],
-            "name": "file-presentation-box"
+            "name": "file-presentation-box",
+            "searchable": "file presentation box"
         },
         {
             "aliases": [],
-            "name": "file-restore"
+            "name": "file-restore",
+            "searchable": "file restore"
         },
         {
             "aliases": [],
-            "name": "file-send"
+            "name": "file-send",
+            "searchable": "file send"
         },
         {
             "aliases": [],
-            "name": "file-tree"
+            "name": "file-tree",
+            "searchable": "file tree"
         },
         {
             "aliases": [],
-            "name": "file-video"
+            "name": "file-video",
+            "searchable": "file video"
         },
         {
             "aliases": [],
-            "name": "file-word"
+            "name": "file-word",
+            "searchable": "file word"
         },
         {
             "aliases": [],
-            "name": "file-word-box"
+            "name": "file-word-box",
+            "searchable": "file word box"
         },
         {
             "aliases": [],
-            "name": "file-xml"
+            "name": "file-xml",
+            "searchable": "file xml"
         },
         {
             "aliases": [],
-            "name": "film"
+            "name": "film",
+            "searchable": "film"
         },
         {
             "aliases": [],
-            "name": "filmstrip"
+            "name": "filmstrip",
+            "searchable": "filmstrip"
         },
         {
             "aliases": [],
-            "name": "filmstrip-off"
+            "name": "filmstrip-off",
+            "searchable": "filmstrip off"
         },
         {
             "aliases": [],
-            "name": "filter"
+            "name": "filter",
+            "searchable": "filter"
         },
         {
             "aliases": [],
-            "name": "filter-outline"
+            "name": "filter-outline",
+            "searchable": "filter outline"
         },
         {
             "aliases": [],
-            "name": "filter-remove"
+            "name": "filter-remove",
+            "searchable": "filter remove"
         },
         {
             "aliases": [],
-            "name": "filter-remove-outline"
+            "name": "filter-remove-outline",
+            "searchable": "filter remove outline"
         },
         {
             "aliases": [],
-            "name": "filter-variant"
+            "name": "filter-variant",
+            "searchable": "filter variant"
         },
         {
             "aliases": [],
-            "name": "fingerprint"
+            "name": "fingerprint",
+            "searchable": "fingerprint"
         },
         {
             "aliases": [],
-            "name": "fire"
+            "name": "fire",
+            "searchable": "fire"
         },
         {
             "aliases": [],
-            "name": "firefox"
+            "name": "firefox",
+            "searchable": "firefox"
         },
         {
             "aliases": [],
-            "name": "fish"
+            "name": "fish",
+            "searchable": "fish"
         },
         {
             "aliases": [],
-            "name": "flag"
+            "name": "flag",
+            "searchable": "flag"
         },
         {
             "aliases": [],
-            "name": "flag-checkered"
+            "name": "flag-checkered",
+            "searchable": "flag checkered"
         },
         {
             "aliases": [],
-            "name": "flag-outline"
+            "name": "flag-outline",
+            "searchable": "flag outline"
         },
         {
             "aliases": [],
-            "name": "flag-outline-variant"
+            "name": "flag-outline-variant",
+            "searchable": "flag outline variant"
         },
         {
             "aliases": [],
-            "name": "flag-triangle"
+            "name": "flag-triangle",
+            "searchable": "flag triangle"
         },
         {
             "aliases": [],
-            "name": "flag-variant"
+            "name": "flag-variant",
+            "searchable": "flag variant"
         },
         {
             "aliases": [],
-            "name": "flash"
+            "name": "flash",
+            "searchable": "flash"
         },
         {
             "aliases": [],
-            "name": "flash-auto"
+            "name": "flash-auto",
+            "searchable": "flash auto"
         },
         {
             "aliases": [],
-            "name": "flash-off"
+            "name": "flash-off",
+            "searchable": "flash off"
         },
         {
             "aliases": [],
-            "name": "flashlight"
+            "name": "flashlight",
+            "searchable": "flashlight"
         },
         {
             "aliases": [],
-            "name": "flashlight-off"
+            "name": "flashlight-off",
+            "searchable": "flashlight off"
         },
         {
             "aliases": [],
-            "name": "flask"
+            "name": "flask",
+            "searchable": "flask"
         },
         {
             "aliases": [],
-            "name": "flask-empty"
+            "name": "flask-empty",
+            "searchable": "flask empty"
         },
         {
             "aliases": [],
-            "name": "flask-empty-outline"
+            "name": "flask-empty-outline",
+            "searchable": "flask empty outline"
         },
         {
             "aliases": [],
-            "name": "flask-outline"
+            "name": "flask-outline",
+            "searchable": "flask outline"
         },
         {
             "aliases": [],
-            "name": "flattr"
+            "name": "flattr",
+            "searchable": "flattr"
         },
         {
             "aliases": [],
-            "name": "flip-to-back"
+            "name": "flip-to-back",
+            "searchable": "flip to back"
         },
         {
             "aliases": [],
-            "name": "flip-to-front"
+            "name": "flip-to-front",
+            "searchable": "flip to front"
         },
         {
             "aliases": [],
-            "name": "floppy"
+            "name": "floppy",
+            "searchable": "floppy"
         },
         {
             "aliases": [],
-            "name": "flower"
+            "name": "flower",
+            "searchable": "flower"
         },
         {
             "aliases": [],
-            "name": "folder"
+            "name": "folder",
+            "searchable": "folder"
         },
         {
             "aliases": [],
-            "name": "folder-account"
+            "name": "folder-account",
+            "searchable": "folder account"
         },
         {
             "aliases": [],
-            "name": "folder-download"
+            "name": "folder-download",
+            "searchable": "folder download"
         },
         {
             "aliases": [],
-            "name": "folder-google-drive"
+            "name": "folder-google-drive",
+            "searchable": "folder google drive"
         },
         {
             "aliases": [],
-            "name": "folder-image"
+            "name": "folder-image",
+            "searchable": "folder image"
         },
         {
             "aliases": [],
-            "name": "folder-lock"
+            "name": "folder-lock",
+            "searchable": "folder lock"
         },
         {
             "aliases": [],
-            "name": "folder-lock-open"
+            "name": "folder-lock-open",
+            "searchable": "folder lock open"
         },
         {
             "aliases": [],
-            "name": "folder-move"
+            "name": "folder-move",
+            "searchable": "folder move"
         },
         {
             "aliases": [],
-            "name": "folder-multiple"
+            "name": "folder-multiple",
+            "searchable": "folder multiple"
         },
         {
             "aliases": [],
-            "name": "folder-multiple-image"
+            "name": "folder-multiple-image",
+            "searchable": "folder multiple image"
         },
         {
             "aliases": [],
-            "name": "folder-multiple-outline"
+            "name": "folder-multiple-outline",
+            "searchable": "folder multiple outline"
         },
         {
             "aliases": [],
-            "name": "folder-outline"
+            "name": "folder-outline",
+            "searchable": "folder outline"
         },
         {
             "aliases": [],
-            "name": "folder-plus"
+            "name": "folder-plus",
+            "searchable": "folder plus"
         },
         {
             "aliases": [],
-            "name": "folder-remove"
+            "name": "folder-remove",
+            "searchable": "folder remove"
         },
         {
             "aliases": [],
-            "name": "folder-upload"
+            "name": "folder-upload",
+            "searchable": "folder upload"
         },
         {
             "aliases": [],
-            "name": "food"
+            "name": "food",
+            "searchable": "food"
         },
         {
             "aliases": [],
-            "name": "food-apple"
+            "name": "food-apple",
+            "searchable": "food apple"
         },
         {
             "aliases": [],
-            "name": "food-fork-drink"
+            "name": "food-fork-drink",
+            "searchable": "food fork drink"
         },
         {
             "aliases": [],
-            "name": "food-off"
+            "name": "food-off",
+            "searchable": "food off"
         },
         {
             "aliases": [],
-            "name": "food-variant"
+            "name": "food-variant",
+            "searchable": "food variant"
         },
         {
             "aliases": [],
-            "name": "football"
+            "name": "football",
+            "searchable": "football"
         },
         {
             "aliases": [],
-            "name": "football-australian"
+            "name": "football-australian",
+            "searchable": "football australian"
         },
         {
             "aliases": [],
-            "name": "football-helmet"
+            "name": "football-helmet",
+            "searchable": "football helmet"
         },
         {
             "aliases": [],
-            "name": "format-align-center"
+            "name": "format-align-center",
+            "searchable": "format align center"
         },
         {
             "aliases": [],
-            "name": "format-align-justify"
+            "name": "format-align-justify",
+            "searchable": "format align justify"
         },
         {
             "aliases": [],
-            "name": "format-align-left"
+            "name": "format-align-left",
+            "searchable": "format align left"
         },
         {
             "aliases": [],
-            "name": "format-align-right"
+            "name": "format-align-right",
+            "searchable": "format align right"
         },
         {
             "aliases": [],
-            "name": "format-annotation-plus"
+            "name": "format-annotation-plus",
+            "searchable": "format annotation plus"
         },
         {
             "aliases": [],
-            "name": "format-bold"
+            "name": "format-bold",
+            "searchable": "format bold"
         },
         {
             "aliases": [],
-            "name": "format-clear"
+            "name": "format-clear",
+            "searchable": "format clear"
         },
         {
             "aliases": [],
-            "name": "format-color-fill"
+            "name": "format-color-fill",
+            "searchable": "format color fill"
         },
         {
             "aliases": [],
-            "name": "format-float-center"
+            "name": "format-float-center",
+            "searchable": "format float center"
         },
         {
             "aliases": [],
-            "name": "format-float-left"
+            "name": "format-float-left",
+            "searchable": "format float left"
         },
         {
             "aliases": [],
-            "name": "format-float-none"
+            "name": "format-float-none",
+            "searchable": "format float none"
         },
         {
             "aliases": [],
-            "name": "format-float-right"
+            "name": "format-float-right",
+            "searchable": "format float right"
         },
         {
             "aliases": [],
-            "name": "format-header-1"
+            "name": "format-header-1",
+            "searchable": "format header 1"
         },
         {
             "aliases": [],
-            "name": "format-header-2"
+            "name": "format-header-2",
+            "searchable": "format header 2"
         },
         {
             "aliases": [],
-            "name": "format-header-3"
+            "name": "format-header-3",
+            "searchable": "format header 3"
         },
         {
             "aliases": [],
-            "name": "format-header-4"
+            "name": "format-header-4",
+            "searchable": "format header 4"
         },
         {
             "aliases": [],
-            "name": "format-header-5"
+            "name": "format-header-5",
+            "searchable": "format header 5"
         },
         {
             "aliases": [],
-            "name": "format-header-6"
+            "name": "format-header-6",
+            "searchable": "format header 6"
         },
         {
             "aliases": [],
-            "name": "format-header-decrease"
+            "name": "format-header-decrease",
+            "searchable": "format header decrease"
         },
         {
             "aliases": [],
-            "name": "format-header-equal"
+            "name": "format-header-equal",
+            "searchable": "format header equal"
         },
         {
             "aliases": [],
-            "name": "format-header-increase"
+            "name": "format-header-increase",
+            "searchable": "format header increase"
         },
         {
             "aliases": [],
-            "name": "format-header-pound"
+            "name": "format-header-pound",
+            "searchable": "format header pound"
         },
         {
             "aliases": [],
-            "name": "format-horizontal-align-center"
+            "name": "format-horizontal-align-center",
+            "searchable": "format horizontal align center"
         },
         {
             "aliases": [],
-            "name": "format-horizontal-align-left"
+            "name": "format-horizontal-align-left",
+            "searchable": "format horizontal align left"
         },
         {
             "aliases": [],
-            "name": "format-horizontal-align-right"
+            "name": "format-horizontal-align-right",
+            "searchable": "format horizontal align right"
         },
         {
             "aliases": [],
-            "name": "format-indent-decrease"
+            "name": "format-indent-decrease",
+            "searchable": "format indent decrease"
         },
         {
             "aliases": [],
-            "name": "format-indent-increase"
+            "name": "format-indent-increase",
+            "searchable": "format indent increase"
         },
         {
             "aliases": [],
-            "name": "format-italic"
+            "name": "format-italic",
+            "searchable": "format italic"
         },
         {
             "aliases": [],
-            "name": "format-line-spacing"
+            "name": "format-line-spacing",
+            "searchable": "format line spacing"
         },
         {
             "aliases": [],
-            "name": "format-line-style"
+            "name": "format-line-style",
+            "searchable": "format line style"
         },
         {
             "aliases": [],
-            "name": "format-line-weight"
+            "name": "format-line-weight",
+            "searchable": "format line weight"
         },
         {
             "aliases": [],
-            "name": "format-list-bulleted"
+            "name": "format-list-bulleted",
+            "searchable": "format list bulleted"
         },
         {
             "aliases": [],
-            "name": "format-list-bulleted-type"
+            "name": "format-list-bulleted-type",
+            "searchable": "format list bulleted type"
         },
         {
             "aliases": [],
-            "name": "format-list-numbers"
+            "name": "format-list-numbers",
+            "searchable": "format list numbers"
         },
         {
             "aliases": [],
-            "name": "format-paint"
+            "name": "format-paint",
+            "searchable": "format paint"
         },
         {
             "aliases": [],
-            "name": "format-paragraph"
+            "name": "format-paragraph",
+            "searchable": "format paragraph"
         },
         {
             "aliases": [],
-            "name": "format-quote"
+            "name": "format-quote",
+            "searchable": "format quote"
         },
         {
             "aliases": [],
-            "name": "format-size"
+            "name": "format-size",
+            "searchable": "format size"
         },
         {
             "aliases": [],
-            "name": "format-strikethrough"
+            "name": "format-strikethrough",
+            "searchable": "format strikethrough"
         },
         {
             "aliases": [],
-            "name": "format-strikethrough-variant"
+            "name": "format-strikethrough-variant",
+            "searchable": "format strikethrough variant"
         },
         {
             "aliases": [],
-            "name": "format-subscript"
+            "name": "format-subscript",
+            "searchable": "format subscript"
         },
         {
             "aliases": [],
-            "name": "format-superscript"
+            "name": "format-superscript",
+            "searchable": "format superscript"
         },
         {
             "aliases": [],
-            "name": "format-text"
+            "name": "format-text",
+            "searchable": "format text"
         },
         {
             "aliases": [],
-            "name": "format-textdirection-l-to-r"
+            "name": "format-textdirection-l-to-r",
+            "searchable": "format textdirection l to r"
         },
         {
             "aliases": [],
-            "name": "format-textdirection-r-to-l"
+            "name": "format-textdirection-r-to-l",
+            "searchable": "format textdirection r to l"
         },
         {
             "aliases": [],
-            "name": "format-title"
+            "name": "format-title",
+            "searchable": "format title"
         },
         {
             "aliases": [],
-            "name": "format-underline"
+            "name": "format-underline",
+            "searchable": "format underline"
         },
         {
             "aliases": [],
-            "name": "format-vertical-align-bottom"
+            "name": "format-vertical-align-bottom",
+            "searchable": "format vertical align bottom"
         },
         {
             "aliases": [],
-            "name": "format-vertical-align-center"
+            "name": "format-vertical-align-center",
+            "searchable": "format vertical align center"
         },
         {
             "aliases": [],
-            "name": "format-vertical-align-top"
+            "name": "format-vertical-align-top",
+            "searchable": "format vertical align top"
         },
         {
             "aliases": [],
-            "name": "format-wrap-inline"
+            "name": "format-wrap-inline",
+            "searchable": "format wrap inline"
         },
         {
             "aliases": [],
-            "name": "format-wrap-square"
+            "name": "format-wrap-square",
+            "searchable": "format wrap square"
         },
         {
             "aliases": [],
-            "name": "format-wrap-tight"
+            "name": "format-wrap-tight",
+            "searchable": "format wrap tight"
         },
         {
             "aliases": [],
-            "name": "format-wrap-top-bottom"
+            "name": "format-wrap-top-bottom",
+            "searchable": "format wrap top bottom"
         },
         {
             "aliases": [],
-            "name": "forum"
+            "name": "forum",
+            "searchable": "forum"
         },
         {
             "aliases": [],
-            "name": "forward"
+            "name": "forward",
+            "searchable": "forward"
         },
         {
             "aliases": [],
-            "name": "foursquare"
+            "name": "foursquare",
+            "searchable": "foursquare"
         },
         {
             "aliases": [],
-            "name": "fridge"
+            "name": "fridge",
+            "searchable": "fridge"
         },
         {
             "aliases": [],
-            "name": "fridge-filled"
+            "name": "fridge-filled",
+            "searchable": "fridge filled"
         },
         {
             "aliases": [],
-            "name": "fridge-filled-bottom"
+            "name": "fridge-filled-bottom",
+            "searchable": "fridge filled bottom"
         },
         {
             "aliases": [],
-            "name": "fridge-filled-top"
+            "name": "fridge-filled-top",
+            "searchable": "fridge filled top"
         },
         {
             "aliases": [],
-            "name": "fullscreen"
+            "name": "fullscreen",
+            "searchable": "fullscreen"
         },
         {
             "aliases": [],
-            "name": "fullscreen-exit"
+            "name": "fullscreen-exit",
+            "searchable": "fullscreen exit"
         },
         {
             "aliases": [],
-            "name": "function"
+            "name": "function",
+            "searchable": "function"
         },
         {
             "aliases": [],
-            "name": "gamepad"
+            "name": "gamepad",
+            "searchable": "gamepad"
         },
         {
             "aliases": [],
-            "name": "gamepad-variant"
+            "name": "gamepad-variant",
+            "searchable": "gamepad variant"
         },
         {
             "aliases": [],
-            "name": "gas-cylinder"
+            "name": "gas-cylinder",
+            "searchable": "gas cylinder"
         },
         {
             "aliases": [],
-            "name": "gas-station"
+            "name": "gas-station",
+            "searchable": "gas station"
         },
         {
             "aliases": [],
-            "name": "gate"
+            "name": "gate",
+            "searchable": "gate"
         },
         {
             "aliases": [],
-            "name": "gauge"
+            "name": "gauge",
+            "searchable": "gauge"
         },
         {
             "aliases": [],
-            "name": "gavel"
+            "name": "gavel",
+            "searchable": "gavel"
         },
         {
             "aliases": [],
-            "name": "gender-female"
+            "name": "gender-female",
+            "searchable": "gender female"
         },
         {
             "aliases": [],
-            "name": "gender-male"
+            "name": "gender-male",
+            "searchable": "gender male"
         },
         {
             "aliases": [],
-            "name": "gender-male-female"
+            "name": "gender-male-female",
+            "searchable": "gender male female"
         },
         {
             "aliases": [],
-            "name": "gender-transgender"
+            "name": "gender-transgender",
+            "searchable": "gender transgender"
         },
         {
             "aliases": [],
-            "name": "ghost"
+            "name": "ghost",
+            "searchable": "ghost"
         },
         {
             "aliases": [],
-            "name": "gift"
+            "name": "gift",
+            "searchable": "gift"
         },
         {
             "aliases": [],
-            "name": "git"
+            "name": "git",
+            "searchable": "git"
         },
         {
             "aliases": [],
-            "name": "github-box"
+            "name": "github-box",
+            "searchable": "github box"
         },
         {
             "aliases": [],
-            "name": "github-circle"
+            "name": "github-circle",
+            "searchable": "github circle"
         },
         {
             "aliases": [],
-            "name": "glass-flute"
+            "name": "glass-flute",
+            "searchable": "glass flute"
         },
         {
             "aliases": [],
-            "name": "glass-mug"
+            "name": "glass-mug",
+            "searchable": "glass mug"
         },
         {
             "aliases": [],
-            "name": "glass-stange"
+            "name": "glass-stange",
+            "searchable": "glass stange"
         },
         {
             "aliases": [],
-            "name": "glass-tulip"
+            "name": "glass-tulip",
+            "searchable": "glass tulip"
         },
         {
             "aliases": [],
-            "name": "glassdoor"
+            "name": "glassdoor",
+            "searchable": "glassdoor"
         },
         {
             "aliases": [],
-            "name": "glasses"
+            "name": "glasses",
+            "searchable": "glasses"
         },
         {
             "aliases": [],
-            "name": "gmail"
+            "name": "gmail",
+            "searchable": "gmail"
         },
         {
             "aliases": [],
-            "name": "gnome"
+            "name": "gnome",
+            "searchable": "gnome"
         },
         {
             "aliases": [],
-            "name": "google"
+            "name": "google",
+            "searchable": "google"
         },
         {
             "aliases": [],
-            "name": "google-cardboard"
+            "name": "google-cardboard",
+            "searchable": "google cardboard"
         },
         {
             "aliases": [],
-            "name": "google-chrome"
+            "name": "google-chrome",
+            "searchable": "google chrome"
         },
         {
             "aliases": [],
-            "name": "google-circles"
+            "name": "google-circles",
+            "searchable": "google circles"
         },
         {
             "aliases": [],
-            "name": "google-circles-communities"
+            "name": "google-circles-communities",
+            "searchable": "google circles communities"
         },
         {
             "aliases": [],
-            "name": "google-circles-extended"
+            "name": "google-circles-extended",
+            "searchable": "google circles extended"
         },
         {
             "aliases": [],
-            "name": "google-circles-group"
+            "name": "google-circles-group",
+            "searchable": "google circles group"
         },
         {
             "aliases": [],
-            "name": "google-controller"
+            "name": "google-controller",
+            "searchable": "google controller"
         },
         {
             "aliases": [],
-            "name": "google-controller-off"
+            "name": "google-controller-off",
+            "searchable": "google controller off"
         },
         {
             "aliases": [],
-            "name": "google-drive"
+            "name": "google-drive",
+            "searchable": "google drive"
         },
         {
             "aliases": [],
-            "name": "google-earth"
+            "name": "google-earth",
+            "searchable": "google earth"
         },
         {
             "aliases": [],
-            "name": "google-glass"
+            "name": "google-glass",
+            "searchable": "google glass"
         },
         {
             "aliases": [],
-            "name": "google-maps"
+            "name": "google-maps",
+            "searchable": "google maps"
         },
         {
             "aliases": [],
-            "name": "google-nearby"
+            "name": "google-nearby",
+            "searchable": "google nearby"
         },
         {
             "aliases": [],
-            "name": "google-pages"
+            "name": "google-pages",
+            "searchable": "google pages"
         },
         {
             "aliases": [],
-            "name": "google-physical-web"
+            "name": "google-physical-web",
+            "searchable": "google physical web"
         },
         {
             "aliases": [],
-            "name": "google-play"
+            "name": "google-play",
+            "searchable": "google play"
         },
         {
             "aliases": [],
-            "name": "google-plus"
+            "name": "google-plus",
+            "searchable": "google plus"
         },
         {
             "aliases": [],
-            "name": "google-plus-box"
+            "name": "google-plus-box",
+            "searchable": "google plus box"
         },
         {
             "aliases": [],
-            "name": "google-translate"
+            "name": "google-translate",
+            "searchable": "google translate"
         },
         {
             "aliases": [],
-            "name": "google-wallet"
+            "name": "google-wallet",
+            "searchable": "google wallet"
         },
         {
             "aliases": [],
-            "name": "grease-pencil"
+            "name": "grease-pencil",
+            "searchable": "grease pencil"
         },
         {
             "aliases": [],
-            "name": "grid"
+            "name": "grid",
+            "searchable": "grid"
         },
         {
             "aliases": [],
-            "name": "grid-off"
+            "name": "grid-off",
+            "searchable": "grid off"
         },
         {
             "aliases": [],
-            "name": "group"
+            "name": "group",
+            "searchable": "group"
         },
         {
             "aliases": [],
-            "name": "guitar-electric"
+            "name": "guitar-electric",
+            "searchable": "guitar electric"
         },
         {
             "aliases": [],
-            "name": "guitar-pick"
+            "name": "guitar-pick",
+            "searchable": "guitar pick"
         },
         {
             "aliases": [],
-            "name": "guitar-pick-outline"
+            "name": "guitar-pick-outline",
+            "searchable": "guitar pick outline"
         },
         {
             "aliases": [],
-            "name": "hackernews"
+            "name": "hackernews",
+            "searchable": "hackernews"
         },
         {
             "aliases": [],
-            "name": "hand-pointing-right"
+            "name": "hand-pointing-right",
+            "searchable": "hand pointing right"
         },
         {
             "aliases": [],
-            "name": "hanger"
+            "name": "hanger",
+            "searchable": "hanger"
         },
         {
             "aliases": [],
-            "name": "hangouts"
+            "name": "hangouts",
+            "searchable": "hangouts"
         },
         {
             "aliases": [],
-            "name": "harddisk"
+            "name": "harddisk",
+            "searchable": "harddisk"
         },
         {
             "aliases": [],
-            "name": "headphones"
+            "name": "headphones",
+            "searchable": "headphones"
         },
         {
             "aliases": [],
-            "name": "headphones-box"
+            "name": "headphones-box",
+            "searchable": "headphones box"
         },
         {
             "aliases": [],
-            "name": "headphones-settings"
+            "name": "headphones-settings",
+            "searchable": "headphones settings"
         },
         {
             "aliases": [],
-            "name": "headset"
+            "name": "headset",
+            "searchable": "headset"
         },
         {
             "aliases": [],
-            "name": "headset-dock"
+            "name": "headset-dock",
+            "searchable": "headset dock"
         },
         {
             "aliases": [],
-            "name": "headset-off"
+            "name": "headset-off",
+            "searchable": "headset off"
         },
         {
             "aliases": [],
-            "name": "heart"
+            "name": "heart",
+            "searchable": "heart"
         },
         {
             "aliases": [],
-            "name": "heart-box"
+            "name": "heart-box",
+            "searchable": "heart box"
         },
         {
             "aliases": [],
-            "name": "heart-box-outline"
+            "name": "heart-box-outline",
+            "searchable": "heart box outline"
         },
         {
             "aliases": [],
-            "name": "heart-broken"
+            "name": "heart-broken",
+            "searchable": "heart broken"
         },
         {
             "aliases": [],
-            "name": "heart-outline"
+            "name": "heart-outline",
+            "searchable": "heart outline"
         },
         {
             "aliases": [],
-            "name": "heart-pulse"
+            "name": "heart-pulse",
+            "searchable": "heart pulse"
         },
         {
             "aliases": [],
-            "name": "help"
+            "name": "help",
+            "searchable": "help"
         },
         {
             "aliases": [],
-            "name": "help-circle"
+            "name": "help-circle",
+            "searchable": "help circle"
         },
         {
             "aliases": [],
-            "name": "help-circle-outline"
+            "name": "help-circle-outline",
+            "searchable": "help circle outline"
         },
         {
             "aliases": [],
-            "name": "hexagon"
+            "name": "hexagon",
+            "searchable": "hexagon"
         },
         {
             "aliases": [],
-            "name": "hexagon-outline"
+            "name": "hexagon-outline",
+            "searchable": "hexagon outline"
         },
         {
             "aliases": [],
-            "name": "highway"
+            "name": "highway",
+            "searchable": "highway"
         },
         {
             "aliases": [],
-            "name": "history"
+            "name": "history",
+            "searchable": "history"
         },
         {
             "aliases": [],
-            "name": "hololens"
+            "name": "hololens",
+            "searchable": "hololens"
         },
         {
             "aliases": [],
-            "name": "home"
+            "name": "home",
+            "searchable": "home"
         },
         {
             "aliases": [],
-            "name": "home-map-marker"
+            "name": "home-map-marker",
+            "searchable": "home map marker"
         },
         {
             "aliases": [],
-            "name": "home-modern"
+            "name": "home-modern",
+            "searchable": "home modern"
         },
         {
             "aliases": [],
-            "name": "home-variant"
+            "name": "home-variant",
+            "searchable": "home variant"
         },
         {
             "aliases": [],
-            "name": "hops"
+            "name": "hops",
+            "searchable": "hops"
         },
         {
             "aliases": [],
-            "name": "hospital"
+            "name": "hospital",
+            "searchable": "hospital"
         },
         {
             "aliases": [],
-            "name": "hospital-building"
+            "name": "hospital-building",
+            "searchable": "hospital building"
         },
         {
             "aliases": [],
-            "name": "hospital-marker"
+            "name": "hospital-marker",
+            "searchable": "hospital marker"
         },
         {
             "aliases": [],
-            "name": "hotel"
+            "name": "hotel",
+            "searchable": "hotel"
         },
         {
             "aliases": [],
-            "name": "houzz"
+            "name": "houzz",
+            "searchable": "houzz"
         },
         {
             "aliases": [],
-            "name": "houzz-box"
+            "name": "houzz-box",
+            "searchable": "houzz box"
         },
         {
             "aliases": [],
-            "name": "human"
+            "name": "human",
+            "searchable": "human"
         },
         {
             "aliases": [],
-            "name": "human-child"
+            "name": "human-child",
+            "searchable": "human child"
         },
         {
             "aliases": [],
-            "name": "human-female"
+            "name": "human-female",
+            "searchable": "human female"
         },
         {
             "aliases": [],
-            "name": "human-greeting"
+            "name": "human-greeting",
+            "searchable": "human greeting"
         },
         {
             "aliases": [],
-            "name": "human-handsdown"
+            "name": "human-handsdown",
+            "searchable": "human handsdown"
         },
         {
             "aliases": [],
-            "name": "human-handsup"
+            "name": "human-handsup",
+            "searchable": "human handsup"
         },
         {
             "aliases": [],
-            "name": "human-male"
+            "name": "human-male",
+            "searchable": "human male"
         },
         {
             "aliases": [],
-            "name": "human-male-female"
+            "name": "human-male-female",
+            "searchable": "human male female"
         },
         {
             "aliases": [],
-            "name": "human-pregnant"
+            "name": "human-pregnant",
+            "searchable": "human pregnant"
         },
         {
             "aliases": [],
-            "name": "image"
+            "name": "image",
+            "searchable": "image"
         },
         {
             "aliases": [],
-            "name": "image-album"
+            "name": "image-album",
+            "searchable": "image album"
         },
         {
             "aliases": [],
-            "name": "image-area"
+            "name": "image-area",
+            "searchable": "image area"
         },
         {
             "aliases": [],
-            "name": "image-area-close"
+            "name": "image-area-close",
+            "searchable": "image area close"
         },
         {
             "aliases": [],
-            "name": "image-broken"
+            "name": "image-broken",
+            "searchable": "image broken"
         },
         {
             "aliases": [],
-            "name": "image-broken-variant"
+            "name": "image-broken-variant",
+            "searchable": "image broken variant"
         },
         {
             "aliases": [],
-            "name": "image-filter"
+            "name": "image-filter",
+            "searchable": "image filter"
         },
         {
             "aliases": [],
-            "name": "image-filter-black-white"
+            "name": "image-filter-black-white",
+            "searchable": "image filter black white"
         },
         {
             "aliases": [],
-            "name": "image-filter-center-focus"
+            "name": "image-filter-center-focus",
+            "searchable": "image filter center focus"
         },
         {
             "aliases": [],
-            "name": "image-filter-center-focus-weak"
+            "name": "image-filter-center-focus-weak",
+            "searchable": "image filter center focus weak"
         },
         {
             "aliases": [],
-            "name": "image-filter-drama"
+            "name": "image-filter-drama",
+            "searchable": "image filter drama"
         },
         {
             "aliases": [],
-            "name": "image-filter-frames"
+            "name": "image-filter-frames",
+            "searchable": "image filter frames"
         },
         {
             "aliases": [],
-            "name": "image-filter-hdr"
+            "name": "image-filter-hdr",
+            "searchable": "image filter hdr"
         },
         {
             "aliases": [],
-            "name": "image-filter-none"
+            "name": "image-filter-none",
+            "searchable": "image filter none"
         },
         {
             "aliases": [],
-            "name": "image-filter-tilt-shift"
+            "name": "image-filter-tilt-shift",
+            "searchable": "image filter tilt shift"
         },
         {
             "aliases": [],
-            "name": "image-filter-vintage"
+            "name": "image-filter-vintage",
+            "searchable": "image filter vintage"
         },
         {
             "aliases": [],
-            "name": "image-multiple"
+            "name": "image-multiple",
+            "searchable": "image multiple"
         },
         {
             "aliases": [],
-            "name": "import"
+            "name": "import",
+            "searchable": "import"
         },
         {
             "aliases": [],
-            "name": "inbox"
+            "name": "inbox",
+            "searchable": "inbox"
         },
         {
             "aliases": [],
-            "name": "incognito"
+            "name": "incognito",
+            "searchable": "incognito"
         },
         {
             "aliases": [],
-            "name": "information"
+            "name": "information",
+            "searchable": "information"
         },
         {
             "aliases": [],
-            "name": "information-outline"
+            "name": "information-outline",
+            "searchable": "information outline"
         },
         {
             "aliases": [],
-            "name": "information-variant"
+            "name": "information-variant",
+            "searchable": "information variant"
         },
         {
             "aliases": [],
-            "name": "instagram"
+            "name": "instagram",
+            "searchable": "instagram"
         },
         {
             "aliases": [],
-            "name": "instapaper"
+            "name": "instapaper",
+            "searchable": "instapaper"
         },
         {
             "aliases": [],
-            "name": "internet-explorer"
+            "name": "internet-explorer",
+            "searchable": "internet explorer"
         },
         {
             "aliases": [],
-            "name": "invert-colors"
+            "name": "invert-colors",
+            "searchable": "invert colors"
         },
         {
             "aliases": [],
-            "name": "jeepney"
+            "name": "jeepney",
+            "searchable": "jeepney"
         },
         {
             "aliases": [],
-            "name": "jira"
+            "name": "jira",
+            "searchable": "jira"
         },
         {
             "aliases": [],
-            "name": "jsfiddle"
+            "name": "jsfiddle",
+            "searchable": "jsfiddle"
         },
         {
             "aliases": [],
-            "name": "json"
+            "name": "json",
+            "searchable": "json"
         },
         {
             "aliases": [],
-            "name": "keg"
+            "name": "keg",
+            "searchable": "keg"
         },
         {
             "aliases": [],
-            "name": "kettle"
+            "name": "kettle",
+            "searchable": "kettle"
         },
         {
             "aliases": [],
-            "name": "key"
+            "name": "key",
+            "searchable": "key"
         },
         {
             "aliases": [],
-            "name": "key-change"
+            "name": "key-change",
+            "searchable": "key change"
         },
         {
             "aliases": [],
-            "name": "key-minus"
+            "name": "key-minus",
+            "searchable": "key minus"
         },
         {
             "aliases": [],
-            "name": "key-plus"
+            "name": "key-plus",
+            "searchable": "key plus"
         },
         {
             "aliases": [],
-            "name": "key-remove"
+            "name": "key-remove",
+            "searchable": "key remove"
         },
         {
             "aliases": [],
-            "name": "key-variant"
+            "name": "key-variant",
+            "searchable": "key variant"
         },
         {
             "aliases": [],
-            "name": "keyboard"
+            "name": "keyboard",
+            "searchable": "keyboard"
         },
         {
             "aliases": [],
-            "name": "keyboard-backspace"
+            "name": "keyboard-backspace",
+            "searchable": "keyboard backspace"
         },
         {
             "aliases": [],
-            "name": "keyboard-caps"
+            "name": "keyboard-caps",
+            "searchable": "keyboard caps"
         },
         {
             "aliases": [],
-            "name": "keyboard-close"
+            "name": "keyboard-close",
+            "searchable": "keyboard close"
         },
         {
             "aliases": [],
-            "name": "keyboard-off"
+            "name": "keyboard-off",
+            "searchable": "keyboard off"
         },
         {
             "aliases": [],
-            "name": "keyboard-return"
+            "name": "keyboard-return",
+            "searchable": "keyboard return"
         },
         {
             "aliases": [],
-            "name": "keyboard-tab"
+            "name": "keyboard-tab",
+            "searchable": "keyboard tab"
         },
         {
             "aliases": [],
-            "name": "keyboard-variant"
+            "name": "keyboard-variant",
+            "searchable": "keyboard variant"
         },
         {
             "aliases": [],
-            "name": "kodi"
+            "name": "kodi",
+            "searchable": "kodi"
         },
         {
             "aliases": [],
-            "name": "label"
+            "name": "label",
+            "searchable": "label"
         },
         {
             "aliases": [],
-            "name": "label-outline"
+            "name": "label-outline",
+            "searchable": "label outline"
         },
         {
             "aliases": [],
-            "name": "lambda"
+            "name": "lambda",
+            "searchable": "lambda"
         },
         {
             "aliases": [],
-            "name": "lan"
+            "name": "lan",
+            "searchable": "lan"
         },
         {
             "aliases": [],
-            "name": "lan-connect"
+            "name": "lan-connect",
+            "searchable": "lan connect"
         },
         {
             "aliases": [],
-            "name": "lan-disconnect"
+            "name": "lan-disconnect",
+            "searchable": "lan disconnect"
         },
         {
             "aliases": [],
-            "name": "lan-pending"
+            "name": "lan-pending",
+            "searchable": "lan pending"
         },
         {
             "aliases": [],
-            "name": "language-c"
+            "name": "language-c",
+            "searchable": "language c"
         },
         {
             "aliases": [],
-            "name": "language-cpp"
+            "name": "language-cpp",
+            "searchable": "language cpp"
         },
         {
             "aliases": [],
-            "name": "language-csharp"
+            "name": "language-csharp",
+            "searchable": "language csharp"
         },
         {
             "aliases": [],
-            "name": "language-css3"
+            "name": "language-css3",
+            "searchable": "language css3"
         },
         {
             "aliases": [],
-            "name": "language-html5"
+            "name": "language-html5",
+            "searchable": "language html5"
         },
         {
             "aliases": [],
-            "name": "language-javascript"
+            "name": "language-javascript",
+            "searchable": "language javascript"
         },
         {
             "aliases": [],
-            "name": "language-php"
+            "name": "language-php",
+            "searchable": "language php"
         },
         {
             "aliases": [],
-            "name": "language-python"
+            "name": "language-python",
+            "searchable": "language python"
         },
         {
             "aliases": [],
-            "name": "language-python-text"
+            "name": "language-python-text",
+            "searchable": "language python text"
         },
         {
             "aliases": [],
-            "name": "laptop"
+            "name": "laptop",
+            "searchable": "laptop"
         },
         {
             "aliases": [],
-            "name": "laptop-chromebook"
+            "name": "laptop-chromebook",
+            "searchable": "laptop chromebook"
         },
         {
             "aliases": [],
-            "name": "laptop-mac"
+            "name": "laptop-mac",
+            "searchable": "laptop mac"
         },
         {
             "aliases": [],
-            "name": "laptop-windows"
+            "name": "laptop-windows",
+            "searchable": "laptop windows"
         },
         {
             "aliases": [],
-            "name": "lastfm"
+            "name": "lastfm",
+            "searchable": "lastfm"
         },
         {
             "aliases": [],
-            "name": "launch"
+            "name": "launch",
+            "searchable": "launch"
         },
         {
             "aliases": [],
-            "name": "layers"
+            "name": "layers",
+            "searchable": "layers"
         },
         {
             "aliases": [],
-            "name": "layers-off"
+            "name": "layers-off",
+            "searchable": "layers off"
         },
         {
             "aliases": [],
-            "name": "lead-pencil"
+            "name": "lead-pencil",
+            "searchable": "lead pencil"
         },
         {
             "aliases": [],
-            "name": "leaf"
+            "name": "leaf",
+            "searchable": "leaf"
         },
         {
             "aliases": [],
-            "name": "led-off"
+            "name": "led-off",
+            "searchable": "led off"
         },
         {
             "aliases": [],
-            "name": "led-on"
+            "name": "led-on",
+            "searchable": "led on"
         },
         {
             "aliases": [],
-            "name": "led-outline"
+            "name": "led-outline",
+            "searchable": "led outline"
         },
         {
             "aliases": [],
-            "name": "led-variant-off"
+            "name": "led-variant-off",
+            "searchable": "led variant off"
         },
         {
             "aliases": [],
-            "name": "led-variant-on"
+            "name": "led-variant-on",
+            "searchable": "led variant on"
         },
         {
             "aliases": [],
-            "name": "led-variant-outline"
+            "name": "led-variant-outline",
+            "searchable": "led variant outline"
         },
         {
             "aliases": [],
-            "name": "library"
+            "name": "library",
+            "searchable": "library"
         },
         {
             "aliases": [],
-            "name": "library-books"
+            "name": "library-books",
+            "searchable": "library books"
         },
         {
             "aliases": [],
-            "name": "library-music"
+            "name": "library-music",
+            "searchable": "library music"
         },
         {
             "aliases": [],
-            "name": "library-plus"
+            "name": "library-plus",
+            "searchable": "library plus"
         },
         {
             "aliases": [],
-            "name": "lightbulb"
+            "name": "lightbulb",
+            "searchable": "lightbulb"
         },
         {
             "aliases": [],
-            "name": "lightbulb-outline"
+            "name": "lightbulb-outline",
+            "searchable": "lightbulb outline"
         },
         {
             "aliases": [],
-            "name": "link"
+            "name": "link",
+            "searchable": "link"
         },
         {
             "aliases": [],
-            "name": "link-off"
+            "name": "link-off",
+            "searchable": "link off"
         },
         {
             "aliases": [],
-            "name": "link-variant"
+            "name": "link-variant",
+            "searchable": "link variant"
         },
         {
             "aliases": [],
-            "name": "link-variant-off"
+            "name": "link-variant-off",
+            "searchable": "link variant off"
         },
         {
             "aliases": [],
-            "name": "linkedin"
+            "name": "linkedin",
+            "searchable": "linkedin"
         },
         {
             "aliases": [],
-            "name": "linkedin-box"
+            "name": "linkedin-box",
+            "searchable": "linkedin box"
         },
         {
             "aliases": [],
-            "name": "linux"
+            "name": "linux",
+            "searchable": "linux"
         },
         {
             "aliases": [],
-            "name": "lock"
+            "name": "lock",
+            "searchable": "lock"
         },
         {
             "aliases": [],
-            "name": "lock-open"
+            "name": "lock-open",
+            "searchable": "lock open"
         },
         {
             "aliases": [],
-            "name": "lock-open-outline"
+            "name": "lock-open-outline",
+            "searchable": "lock open outline"
         },
         {
             "aliases": [],
-            "name": "lock-outline"
+            "name": "lock-outline",
+            "searchable": "lock outline"
         },
         {
             "aliases": [],
-            "name": "lock-plus"
+            "name": "lock-plus",
+            "searchable": "lock plus"
         },
         {
             "aliases": [],
-            "name": "login"
+            "name": "login",
+            "searchable": "login"
         },
         {
             "aliases": [],
-            "name": "login-variant"
+            "name": "login-variant",
+            "searchable": "login variant"
         },
         {
             "aliases": [],
-            "name": "logout"
+            "name": "logout",
+            "searchable": "logout"
         },
         {
             "aliases": [],
-            "name": "logout-variant"
+            "name": "logout-variant",
+            "searchable": "logout variant"
         },
         {
             "aliases": [],
-            "name": "looks"
+            "name": "looks",
+            "searchable": "looks"
         },
         {
             "aliases": [],
-            "name": "loupe"
+            "name": "loupe",
+            "searchable": "loupe"
         },
         {
             "aliases": [],
-            "name": "lumx"
+            "name": "lumx",
+            "searchable": "lumx"
         },
         {
             "aliases": [],
-            "name": "magnet"
+            "name": "magnet",
+            "searchable": "magnet"
         },
         {
             "aliases": [],
-            "name": "magnet-on"
+            "name": "magnet-on",
+            "searchable": "magnet on"
         },
         {
             "aliases": [],
-            "name": "magnify"
+            "name": "magnify",
+            "searchable": "magnify"
         },
         {
             "aliases": [],
-            "name": "magnify-minus"
+            "name": "magnify-minus",
+            "searchable": "magnify minus"
         },
         {
             "aliases": [],
-            "name": "magnify-plus"
+            "name": "magnify-plus",
+            "searchable": "magnify plus"
         },
         {
             "aliases": [],
-            "name": "mail-ru"
+            "name": "mail-ru",
+            "searchable": "mail ru"
         },
         {
             "aliases": [],
-            "name": "map"
+            "name": "map",
+            "searchable": "map"
         },
         {
             "aliases": [],
-            "name": "map-marker"
+            "name": "map-marker",
+            "searchable": "map marker"
         },
         {
             "aliases": [],
-            "name": "map-marker-circle"
+            "name": "map-marker-circle",
+            "searchable": "map marker circle"
         },
         {
             "aliases": [],
-            "name": "map-marker-minus"
+            "name": "map-marker-minus",
+            "searchable": "map marker minus"
         },
         {
             "aliases": [],
-            "name": "map-marker-multiple"
+            "name": "map-marker-multiple",
+            "searchable": "map marker multiple"
         },
         {
             "aliases": [],
-            "name": "map-marker-off"
+            "name": "map-marker-off",
+            "searchable": "map marker off"
         },
         {
             "aliases": [],
-            "name": "map-marker-plus"
+            "name": "map-marker-plus",
+            "searchable": "map marker plus"
         },
         {
             "aliases": [],
-            "name": "map-marker-radius"
+            "name": "map-marker-radius",
+            "searchable": "map marker radius"
         },
         {
             "aliases": [],
-            "name": "margin"
+            "name": "margin",
+            "searchable": "margin"
         },
         {
             "aliases": [],
-            "name": "markdown"
+            "name": "markdown",
+            "searchable": "markdown"
         },
         {
             "aliases": [],
-            "name": "marker"
+            "name": "marker",
+            "searchable": "marker"
         },
         {
             "aliases": [],
-            "name": "marker-check"
+            "name": "marker-check",
+            "searchable": "marker check"
         },
         {
             "aliases": [],
-            "name": "martini"
+            "name": "martini",
+            "searchable": "martini"
         },
         {
             "aliases": [],
-            "name": "material-ui"
+            "name": "material-ui",
+            "searchable": "material ui"
         },
         {
             "aliases": [],
-            "name": "math-compass"
+            "name": "math-compass",
+            "searchable": "math compass"
         },
         {
             "aliases": [],
-            "name": "matrix"
+            "name": "matrix",
+            "searchable": "matrix"
         },
         {
             "aliases": [],
-            "name": "maxcdn"
+            "name": "maxcdn",
+            "searchable": "maxcdn"
         },
         {
             "aliases": [],
-            "name": "medium"
+            "name": "medium",
+            "searchable": "medium"
         },
         {
             "aliases": [],
-            "name": "memory"
+            "name": "memory",
+            "searchable": "memory"
         },
         {
             "aliases": [],
-            "name": "menu"
+            "name": "menu",
+            "searchable": "menu"
         },
         {
             "aliases": [],
-            "name": "menu-down"
+            "name": "menu-down",
+            "searchable": "menu down"
         },
         {
             "aliases": [],
-            "name": "menu-left"
+            "name": "menu-left",
+            "searchable": "menu left"
         },
         {
             "aliases": [],
-            "name": "menu-right"
+            "name": "menu-right",
+            "searchable": "menu right"
         },
         {
             "aliases": [],
-            "name": "menu-up"
+            "name": "menu-up",
+            "searchable": "menu up"
         },
         {
             "aliases": [],
-            "name": "message"
+            "name": "message",
+            "searchable": "message"
         },
         {
             "aliases": [],
-            "name": "message-alert"
+            "name": "message-alert",
+            "searchable": "message alert"
         },
         {
             "aliases": [],
-            "name": "message-draw"
+            "name": "message-draw",
+            "searchable": "message draw"
         },
         {
             "aliases": [],
-            "name": "message-image"
+            "name": "message-image",
+            "searchable": "message image"
         },
         {
             "aliases": [],
-            "name": "message-outline"
+            "name": "message-outline",
+            "searchable": "message outline"
         },
         {
             "aliases": [],
-            "name": "message-plus"
+            "name": "message-plus",
+            "searchable": "message plus"
         },
         {
             "aliases": [],
-            "name": "message-processing"
+            "name": "message-processing",
+            "searchable": "message processing"
         },
         {
             "aliases": [],
-            "name": "message-reply"
+            "name": "message-reply",
+            "searchable": "message reply"
         },
         {
             "aliases": [],
-            "name": "message-reply-text"
+            "name": "message-reply-text",
+            "searchable": "message reply text"
         },
         {
             "aliases": [],
-            "name": "message-text"
+            "name": "message-text",
+            "searchable": "message text"
         },
         {
             "aliases": [],
-            "name": "message-text-outline"
+            "name": "message-text-outline",
+            "searchable": "message text outline"
         },
         {
             "aliases": [],
-            "name": "message-video"
+            "name": "message-video",
+            "searchable": "message video"
         },
         {
             "aliases": [],
-            "name": "meteor"
+            "name": "meteor",
+            "searchable": "meteor"
         },
         {
             "aliases": [],
-            "name": "microphone"
+            "name": "microphone",
+            "searchable": "microphone"
         },
         {
             "aliases": [],
-            "name": "microphone-off"
+            "name": "microphone-off",
+            "searchable": "microphone off"
         },
         {
             "aliases": [],
-            "name": "microphone-outline"
+            "name": "microphone-outline",
+            "searchable": "microphone outline"
         },
         {
             "aliases": [],
-            "name": "microphone-settings"
+            "name": "microphone-settings",
+            "searchable": "microphone settings"
         },
         {
             "aliases": [],
-            "name": "microphone-variant"
+            "name": "microphone-variant",
+            "searchable": "microphone variant"
         },
         {
             "aliases": [],
-            "name": "microphone-variant-off"
+            "name": "microphone-variant-off",
+            "searchable": "microphone variant off"
         },
         {
             "aliases": [],
-            "name": "microscope"
+            "name": "microscope",
+            "searchable": "microscope"
         },
         {
             "aliases": [],
-            "name": "microsoft"
+            "name": "microsoft",
+            "searchable": "microsoft"
         },
         {
             "aliases": [],
-            "name": "minecraft"
+            "name": "minecraft",
+            "searchable": "minecraft"
         },
         {
             "aliases": [],
-            "name": "minus"
+            "name": "minus",
+            "searchable": "minus"
         },
         {
             "aliases": [],
-            "name": "minus-box"
+            "name": "minus-box",
+            "searchable": "minus box"
         },
         {
             "aliases": [],
-            "name": "minus-circle"
+            "name": "minus-circle",
+            "searchable": "minus circle"
         },
         {
             "aliases": [],
-            "name": "minus-circle-outline"
+            "name": "minus-circle-outline",
+            "searchable": "minus circle outline"
         },
         {
             "aliases": [],
-            "name": "minus-network"
+            "name": "minus-network",
+            "searchable": "minus network"
         },
         {
             "aliases": [],
-            "name": "mixcloud"
+            "name": "mixcloud",
+            "searchable": "mixcloud"
         },
         {
             "aliases": [],
-            "name": "monitor"
+            "name": "monitor",
+            "searchable": "monitor"
         },
         {
             "aliases": [],
-            "name": "monitor-multiple"
+            "name": "monitor-multiple",
+            "searchable": "monitor multiple"
         },
         {
             "aliases": [],
-            "name": "more"
+            "name": "more",
+            "searchable": "more"
         },
         {
             "aliases": [],
-            "name": "motorbike"
+            "name": "motorbike",
+            "searchable": "motorbike"
         },
         {
             "aliases": [],
-            "name": "mouse"
+            "name": "mouse",
+            "searchable": "mouse"
         },
         {
             "aliases": [],
-            "name": "mouse-off"
+            "name": "mouse-off",
+            "searchable": "mouse off"
         },
         {
             "aliases": [],
-            "name": "mouse-variant"
+            "name": "mouse-variant",
+            "searchable": "mouse variant"
         },
         {
             "aliases": [],
-            "name": "mouse-variant-off"
+            "name": "mouse-variant-off",
+            "searchable": "mouse variant off"
         },
         {
             "aliases": [],
-            "name": "move-resize"
+            "name": "move-resize",
+            "searchable": "move resize"
         },
         {
             "aliases": [],
-            "name": "move-resize-variant"
+            "name": "move-resize-variant",
+            "searchable": "move resize variant"
         },
         {
             "aliases": [],
-            "name": "movie"
+            "name": "movie",
+            "searchable": "movie"
         },
         {
             "aliases": [],
-            "name": "multiplication"
+            "name": "multiplication",
+            "searchable": "multiplication"
         },
         {
             "aliases": [],
-            "name": "multiplication-box"
+            "name": "multiplication-box",
+            "searchable": "multiplication box"
         },
         {
             "aliases": [],
-            "name": "music-box"
+            "name": "music-box",
+            "searchable": "music box"
         },
         {
             "aliases": [],
-            "name": "music-box-outline"
+            "name": "music-box-outline",
+            "searchable": "music box outline"
         },
         {
             "aliases": [],
-            "name": "music-circle"
+            "name": "music-circle",
+            "searchable": "music circle"
         },
         {
             "aliases": [],
-            "name": "music-note"
+            "name": "music-note",
+            "searchable": "music note"
         },
         {
             "aliases": [],
-            "name": "music-note-bluetooth"
+            "name": "music-note-bluetooth",
+            "searchable": "music note bluetooth"
         },
         {
             "aliases": [],
-            "name": "music-note-bluetooth-off"
+            "name": "music-note-bluetooth-off",
+            "searchable": "music note bluetooth off"
         },
         {
             "aliases": [],
-            "name": "music-note-eighth"
+            "name": "music-note-eighth",
+            "searchable": "music note eighth"
         },
         {
             "aliases": [],
-            "name": "music-note-half"
+            "name": "music-note-half",
+            "searchable": "music note half"
         },
         {
             "aliases": [],
-            "name": "music-note-off"
+            "name": "music-note-off",
+            "searchable": "music note off"
         },
         {
             "aliases": [],
-            "name": "music-note-quarter"
+            "name": "music-note-quarter",
+            "searchable": "music note quarter"
         },
         {
             "aliases": [],
-            "name": "music-note-sixteenth"
+            "name": "music-note-sixteenth",
+            "searchable": "music note sixteenth"
         },
         {
             "aliases": [],
-            "name": "music-note-whole"
+            "name": "music-note-whole",
+            "searchable": "music note whole"
         },
         {
             "aliases": [],
-            "name": "nature"
+            "name": "nature",
+            "searchable": "nature"
         },
         {
             "aliases": [],
-            "name": "nature-people"
+            "name": "nature-people",
+            "searchable": "nature people"
         },
         {
             "aliases": [],
-            "name": "navigation"
+            "name": "navigation",
+            "searchable": "navigation"
         },
         {
             "aliases": [],
-            "name": "near-me"
+            "name": "near-me",
+            "searchable": "near me"
         },
         {
             "aliases": [],
-            "name": "needle"
+            "name": "needle",
+            "searchable": "needle"
         },
         {
             "aliases": [],
-            "name": "nest-protect"
+            "name": "nest-protect",
+            "searchable": "nest protect"
         },
         {
             "aliases": [],
-            "name": "nest-thermostat"
+            "name": "nest-thermostat",
+            "searchable": "nest thermostat"
         },
         {
             "aliases": [],
-            "name": "new-box"
+            "name": "new-box",
+            "searchable": "new box"
         },
         {
             "aliases": [],
-            "name": "newspaper"
+            "name": "newspaper",
+            "searchable": "newspaper"
         },
         {
             "aliases": [],
-            "name": "nfc"
+            "name": "nfc",
+            "searchable": "nfc"
         },
         {
             "aliases": [],
-            "name": "nfc-tap"
+            "name": "nfc-tap",
+            "searchable": "nfc tap"
         },
         {
             "aliases": [],
-            "name": "nfc-variant"
+            "name": "nfc-variant",
+            "searchable": "nfc variant"
         },
         {
             "aliases": [],
-            "name": "nodejs"
+            "name": "nodejs",
+            "searchable": "nodejs"
         },
         {
             "aliases": [],
-            "name": "note"
+            "name": "note",
+            "searchable": "note"
         },
         {
             "aliases": [],
-            "name": "note-outline"
+            "name": "note-outline",
+            "searchable": "note outline"
         },
         {
             "aliases": [],
-            "name": "note-plus"
+            "name": "note-plus",
+            "searchable": "note plus"
         },
         {
             "aliases": [],
-            "name": "note-plus-outline"
+            "name": "note-plus-outline",
+            "searchable": "note plus outline"
         },
         {
             "aliases": [],
-            "name": "note-text"
+            "name": "note-text",
+            "searchable": "note text"
         },
         {
             "aliases": [],
-            "name": "notification-clear-all"
+            "name": "notification-clear-all",
+            "searchable": "notification clear all"
         },
         {
             "aliases": [],
-            "name": "numeric"
+            "name": "numeric",
+            "searchable": "numeric"
         },
         {
             "aliases": [],
-            "name": "numeric-0-box"
+            "name": "numeric-0-box",
+            "searchable": "numeric 0 box"
         },
         {
             "aliases": [],
-            "name": "numeric-0-box-multiple-outline"
+            "name": "numeric-0-box-multiple-outline",
+            "searchable": "numeric 0 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-0-box-outline"
+            "name": "numeric-0-box-outline",
+            "searchable": "numeric 0 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-1-box"
+            "name": "numeric-1-box",
+            "searchable": "numeric 1 box"
         },
         {
             "aliases": [],
-            "name": "numeric-1-box-multiple-outline"
+            "name": "numeric-1-box-multiple-outline",
+            "searchable": "numeric 1 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-1-box-outline"
+            "name": "numeric-1-box-outline",
+            "searchable": "numeric 1 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-2-box"
+            "name": "numeric-2-box",
+            "searchable": "numeric 2 box"
         },
         {
             "aliases": [],
-            "name": "numeric-2-box-multiple-outline"
+            "name": "numeric-2-box-multiple-outline",
+            "searchable": "numeric 2 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-2-box-outline"
+            "name": "numeric-2-box-outline",
+            "searchable": "numeric 2 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-3-box"
+            "name": "numeric-3-box",
+            "searchable": "numeric 3 box"
         },
         {
             "aliases": [],
-            "name": "numeric-3-box-multiple-outline"
+            "name": "numeric-3-box-multiple-outline",
+            "searchable": "numeric 3 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-3-box-outline"
+            "name": "numeric-3-box-outline",
+            "searchable": "numeric 3 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-4-box"
+            "name": "numeric-4-box",
+            "searchable": "numeric 4 box"
         },
         {
             "aliases": [],
-            "name": "numeric-4-box-multiple-outline"
+            "name": "numeric-4-box-multiple-outline",
+            "searchable": "numeric 4 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-4-box-outline"
+            "name": "numeric-4-box-outline",
+            "searchable": "numeric 4 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-5-box"
+            "name": "numeric-5-box",
+            "searchable": "numeric 5 box"
         },
         {
             "aliases": [],
-            "name": "numeric-5-box-multiple-outline"
+            "name": "numeric-5-box-multiple-outline",
+            "searchable": "numeric 5 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-5-box-outline"
+            "name": "numeric-5-box-outline",
+            "searchable": "numeric 5 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-6-box"
+            "name": "numeric-6-box",
+            "searchable": "numeric 6 box"
         },
         {
             "aliases": [],
-            "name": "numeric-6-box-multiple-outline"
+            "name": "numeric-6-box-multiple-outline",
+            "searchable": "numeric 6 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-6-box-outline"
+            "name": "numeric-6-box-outline",
+            "searchable": "numeric 6 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-7-box"
+            "name": "numeric-7-box",
+            "searchable": "numeric 7 box"
         },
         {
             "aliases": [],
-            "name": "numeric-7-box-multiple-outline"
+            "name": "numeric-7-box-multiple-outline",
+            "searchable": "numeric 7 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-7-box-outline"
+            "name": "numeric-7-box-outline",
+            "searchable": "numeric 7 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-8-box"
+            "name": "numeric-8-box",
+            "searchable": "numeric 8 box"
         },
         {
             "aliases": [],
-            "name": "numeric-8-box-multiple-outline"
+            "name": "numeric-8-box-multiple-outline",
+            "searchable": "numeric 8 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-8-box-outline"
+            "name": "numeric-8-box-outline",
+            "searchable": "numeric 8 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-9-box"
+            "name": "numeric-9-box",
+            "searchable": "numeric 9 box"
         },
         {
             "aliases": [],
-            "name": "numeric-9-box-multiple-outline"
+            "name": "numeric-9-box-multiple-outline",
+            "searchable": "numeric 9 box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-9-box-outline"
+            "name": "numeric-9-box-outline",
+            "searchable": "numeric 9 box outline"
         },
         {
             "aliases": [],
-            "name": "numeric-9-plus-box"
+            "name": "numeric-9-plus-box",
+            "searchable": "numeric 9 plus box"
         },
         {
             "aliases": [],
-            "name": "numeric-9-plus-box-multiple-outline"
+            "name": "numeric-9-plus-box-multiple-outline",
+            "searchable": "numeric 9 plus box multiple outline"
         },
         {
             "aliases": [],
-            "name": "numeric-9-plus-box-outline"
+            "name": "numeric-9-plus-box-outline",
+            "searchable": "numeric 9 plus box outline"
         },
         {
             "aliases": [],
-            "name": "nutrition"
+            "name": "nutrition",
+            "searchable": "nutrition"
         },
         {
             "aliases": [],
-            "name": "octagon"
+            "name": "octagon",
+            "searchable": "octagon"
         },
         {
             "aliases": [],
-            "name": "octagon-outline"
+            "name": "octagon-outline",
+            "searchable": "octagon outline"
         },
         {
             "aliases": [],
-            "name": "odnoklassniki"
+            "name": "odnoklassniki",
+            "searchable": "odnoklassniki"
         },
         {
             "aliases": [],
-            "name": "office"
+            "name": "office",
+            "searchable": "office"
         },
         {
             "aliases": [],
-            "name": "oil"
+            "name": "oil",
+            "searchable": "oil"
         },
         {
             "aliases": [],
-            "name": "oil-temperature"
+            "name": "oil-temperature",
+            "searchable": "oil temperature"
         },
         {
             "aliases": [],
-            "name": "omega"
+            "name": "omega",
+            "searchable": "omega"
         },
         {
             "aliases": [],
-            "name": "onedrive"
+            "name": "onedrive",
+            "searchable": "onedrive"
         },
         {
             "aliases": [],
-            "name": "opacity"
+            "name": "opacity",
+            "searchable": "opacity"
         },
         {
             "aliases": [],
-            "name": "open-in-app"
+            "name": "open-in-app",
+            "searchable": "open in app"
         },
         {
             "aliases": [],
-            "name": "open-in-new"
+            "name": "open-in-new",
+            "searchable": "open in new"
         },
         {
             "aliases": [],
-            "name": "openid"
+            "name": "openid",
+            "searchable": "openid"
         },
         {
             "aliases": [],
-            "name": "opera"
+            "name": "opera",
+            "searchable": "opera"
         },
         {
             "aliases": [],
-            "name": "ornament"
+            "name": "ornament",
+            "searchable": "ornament"
         },
         {
             "aliases": [],
-            "name": "ornament-variant"
+            "name": "ornament-variant",
+            "searchable": "ornament variant"
         },
         {
             "aliases": [],
-            "name": "outbox"
+            "name": "outbox",
+            "searchable": "outbox"
         },
         {
             "aliases": [],
-            "name": "owl"
+            "name": "owl",
+            "searchable": "owl"
         },
         {
             "aliases": [],
-            "name": "package"
+            "name": "package",
+            "searchable": "package"
         },
         {
             "aliases": [],
-            "name": "package-down"
+            "name": "package-down",
+            "searchable": "package down"
         },
         {
             "aliases": [],
-            "name": "package-up"
+            "name": "package-up",
+            "searchable": "package up"
         },
         {
             "aliases": [],
-            "name": "package-variant"
+            "name": "package-variant",
+            "searchable": "package variant"
         },
         {
             "aliases": [],
-            "name": "package-variant-closed"
+            "name": "package-variant-closed",
+            "searchable": "package variant closed"
         },
         {
             "aliases": [],
-            "name": "page-first"
+            "name": "page-first",
+            "searchable": "page first"
         },
         {
             "aliases": [],
-            "name": "page-last"
+            "name": "page-last",
+            "searchable": "page last"
         },
         {
             "aliases": [],
-            "name": "palette"
+            "name": "palette",
+            "searchable": "palette"
         },
         {
             "aliases": [],
-            "name": "palette-advanced"
+            "name": "palette-advanced",
+            "searchable": "palette advanced"
         },
         {
             "aliases": [],
-            "name": "panda"
+            "name": "panda",
+            "searchable": "panda"
         },
         {
             "aliases": [],
-            "name": "pandora"
+            "name": "pandora",
+            "searchable": "pandora"
         },
         {
             "aliases": [],
-            "name": "panorama"
+            "name": "panorama",
+            "searchable": "panorama"
         },
         {
             "aliases": [],
-            "name": "panorama-fisheye"
+            "name": "panorama-fisheye",
+            "searchable": "panorama fisheye"
         },
         {
             "aliases": [],
-            "name": "panorama-horizontal"
+            "name": "panorama-horizontal",
+            "searchable": "panorama horizontal"
         },
         {
             "aliases": [],
-            "name": "panorama-vertical"
+            "name": "panorama-vertical",
+            "searchable": "panorama vertical"
         },
         {
             "aliases": [],
-            "name": "panorama-wide-angle"
+            "name": "panorama-wide-angle",
+            "searchable": "panorama wide angle"
         },
         {
             "aliases": [],
-            "name": "paper-cut-vertical"
+            "name": "paper-cut-vertical",
+            "searchable": "paper cut vertical"
         },
         {
             "aliases": [],
-            "name": "paperclip"
+            "name": "paperclip",
+            "searchable": "paperclip"
         },
         {
             "aliases": [],
-            "name": "parking"
+            "name": "parking",
+            "searchable": "parking"
         },
         {
             "aliases": [],
-            "name": "pause"
+            "name": "pause",
+            "searchable": "pause"
         },
         {
             "aliases": [],
-            "name": "pause-circle"
+            "name": "pause-circle",
+            "searchable": "pause circle"
         },
         {
             "aliases": [],
-            "name": "pause-circle-outline"
+            "name": "pause-circle-outline",
+            "searchable": "pause circle outline"
         },
         {
             "aliases": [],
-            "name": "pause-octagon"
+            "name": "pause-octagon",
+            "searchable": "pause octagon"
         },
         {
             "aliases": [],
-            "name": "pause-octagon-outline"
+            "name": "pause-octagon-outline",
+            "searchable": "pause octagon outline"
         },
         {
             "aliases": [],
-            "name": "paw"
+            "name": "paw",
+            "searchable": "paw"
         },
         {
             "aliases": [],
-            "name": "paw-off"
+            "name": "paw-off",
+            "searchable": "paw off"
         },
         {
             "aliases": [],
-            "name": "pen"
+            "name": "pen",
+            "searchable": "pen"
         },
         {
             "aliases": [],
-            "name": "pencil"
+            "name": "pencil",
+            "searchable": "pencil"
         },
         {
             "aliases": [],
-            "name": "pencil-box"
+            "name": "pencil-box",
+            "searchable": "pencil box"
         },
         {
             "aliases": [],
-            "name": "pencil-box-outline"
+            "name": "pencil-box-outline",
+            "searchable": "pencil box outline"
         },
         {
             "aliases": [],
-            "name": "pencil-lock"
+            "name": "pencil-lock",
+            "searchable": "pencil lock"
         },
         {
             "aliases": [],
-            "name": "pencil-off"
+            "name": "pencil-off",
+            "searchable": "pencil off"
         },
         {
             "aliases": [],
-            "name": "percent"
+            "name": "percent",
+            "searchable": "percent"
         },
         {
             "aliases": [],
-            "name": "pharmacy"
+            "name": "pharmacy",
+            "searchable": "pharmacy"
         },
         {
             "aliases": [],
-            "name": "phone"
+            "name": "phone",
+            "searchable": "phone"
         },
         {
             "aliases": [],
-            "name": "phone-bluetooth"
+            "name": "phone-bluetooth",
+            "searchable": "phone bluetooth"
         },
         {
             "aliases": [],
-            "name": "phone-classic"
+            "name": "phone-classic",
+            "searchable": "phone classic"
         },
         {
             "aliases": [],
-            "name": "phone-forward"
+            "name": "phone-forward",
+            "searchable": "phone forward"
         },
         {
             "aliases": [],
-            "name": "phone-hangup"
+            "name": "phone-hangup",
+            "searchable": "phone hangup"
         },
         {
             "aliases": [],
-            "name": "phone-in-talk"
+            "name": "phone-in-talk",
+            "searchable": "phone in talk"
         },
         {
             "aliases": [],
-            "name": "phone-incoming"
+            "name": "phone-incoming",
+            "searchable": "phone incoming"
         },
         {
             "aliases": [],
-            "name": "phone-locked"
+            "name": "phone-locked",
+            "searchable": "phone locked"
         },
         {
             "aliases": [],
-            "name": "phone-log"
+            "name": "phone-log",
+            "searchable": "phone log"
         },
         {
             "aliases": [],
-            "name": "phone-minus"
+            "name": "phone-minus",
+            "searchable": "phone minus"
         },
         {
             "aliases": [],
-            "name": "phone-missed"
+            "name": "phone-missed",
+            "searchable": "phone missed"
         },
         {
             "aliases": [],
-            "name": "phone-outgoing"
+            "name": "phone-outgoing",
+            "searchable": "phone outgoing"
         },
         {
             "aliases": [],
-            "name": "phone-paused"
+            "name": "phone-paused",
+            "searchable": "phone paused"
         },
         {
             "aliases": [],
-            "name": "phone-plus"
+            "name": "phone-plus",
+            "searchable": "phone plus"
         },
         {
             "aliases": [],
-            "name": "phone-settings"
+            "name": "phone-settings",
+            "searchable": "phone settings"
         },
         {
             "aliases": [],
-            "name": "phone-voip"
+            "name": "phone-voip",
+            "searchable": "phone voip"
         },
         {
             "aliases": [],
-            "name": "pi"
+            "name": "pi",
+            "searchable": "pi"
         },
         {
             "aliases": [],
-            "name": "pi-box"
+            "name": "pi-box",
+            "searchable": "pi box"
         },
         {
             "aliases": [],
-            "name": "pig"
+            "name": "pig",
+            "searchable": "pig"
         },
         {
             "aliases": [],
-            "name": "pill"
+            "name": "pill",
+            "searchable": "pill"
         },
         {
             "aliases": [],
-            "name": "pin"
+            "name": "pin",
+            "searchable": "pin"
         },
         {
             "aliases": [],
-            "name": "pin-off"
+            "name": "pin-off",
+            "searchable": "pin off"
         },
         {
             "aliases": [],
-            "name": "pine-tree"
+            "name": "pine-tree",
+            "searchable": "pine tree"
         },
         {
             "aliases": [],
-            "name": "pine-tree-box"
+            "name": "pine-tree-box",
+            "searchable": "pine tree box"
         },
         {
             "aliases": [],
-            "name": "pinterest"
+            "name": "pinterest",
+            "searchable": "pinterest"
         },
         {
             "aliases": [],
-            "name": "pinterest-box"
+            "name": "pinterest-box",
+            "searchable": "pinterest box"
         },
         {
             "aliases": [],
-            "name": "pizza"
+            "name": "pizza",
+            "searchable": "pizza"
         },
         {
             "aliases": [],
-            "name": "play"
+            "name": "play",
+            "searchable": "play"
         },
         {
             "aliases": [],
-            "name": "play-box-outline"
+            "name": "play-box-outline",
+            "searchable": "play box outline"
         },
         {
             "aliases": [],
-            "name": "play-circle"
+            "name": "play-circle",
+            "searchable": "play circle"
         },
         {
             "aliases": [],
-            "name": "play-circle-outline"
+            "name": "play-circle-outline",
+            "searchable": "play circle outline"
         },
         {
             "aliases": [],
-            "name": "play-pause"
+            "name": "play-pause",
+            "searchable": "play pause"
         },
         {
             "aliases": [],
-            "name": "play-protected-content"
+            "name": "play-protected-content",
+            "searchable": "play protected content"
         },
         {
             "aliases": [],
-            "name": "playlist-check"
+            "name": "playlist-check",
+            "searchable": "playlist check"
         },
         {
             "aliases": [],
-            "name": "playlist-minus"
+            "name": "playlist-minus",
+            "searchable": "playlist minus"
         },
         {
             "aliases": [],
-            "name": "playlist-play"
+            "name": "playlist-play",
+            "searchable": "playlist play"
         },
         {
             "aliases": [],
-            "name": "playlist-plus"
+            "name": "playlist-plus",
+            "searchable": "playlist plus"
         },
         {
             "aliases": [],
-            "name": "playlist-remove"
+            "name": "playlist-remove",
+            "searchable": "playlist remove"
         },
         {
             "aliases": [],
-            "name": "playstation"
+            "name": "playstation",
+            "searchable": "playstation"
         },
         {
             "aliases": [],
-            "name": "plus"
+            "name": "plus",
+            "searchable": "plus"
         },
         {
             "aliases": [],
-            "name": "plus-box"
+            "name": "plus-box",
+            "searchable": "plus box"
         },
         {
             "aliases": [],
-            "name": "plus-circle"
+            "name": "plus-circle",
+            "searchable": "plus circle"
         },
         {
             "aliases": [],
-            "name": "plus-circle-multiple-outline"
+            "name": "plus-circle-multiple-outline",
+            "searchable": "plus circle multiple outline"
         },
         {
             "aliases": [],
-            "name": "plus-circle-outline"
+            "name": "plus-circle-outline",
+            "searchable": "plus circle outline"
         },
         {
             "aliases": [],
-            "name": "plus-network"
+            "name": "plus-network",
+            "searchable": "plus network"
         },
         {
             "aliases": [],
-            "name": "plus-one"
+            "name": "plus-one",
+            "searchable": "plus one"
         },
         {
             "aliases": [],
-            "name": "pocket"
+            "name": "pocket",
+            "searchable": "pocket"
         },
         {
             "aliases": [],
-            "name": "pokeball"
+            "name": "pokeball",
+            "searchable": "pokeball"
         },
         {
             "aliases": [],
-            "name": "polaroid"
+            "name": "polaroid",
+            "searchable": "polaroid"
         },
         {
             "aliases": [],
-            "name": "poll"
+            "name": "poll",
+            "searchable": "poll"
         },
         {
             "aliases": [],
-            "name": "poll-box"
+            "name": "poll-box",
+            "searchable": "poll box"
         },
         {
             "aliases": [],
-            "name": "polymer"
+            "name": "polymer",
+            "searchable": "polymer"
         },
         {
             "aliases": [],
-            "name": "pool"
+            "name": "pool",
+            "searchable": "pool"
         },
         {
             "aliases": [],
-            "name": "popcorn"
+            "name": "popcorn",
+            "searchable": "popcorn"
         },
         {
             "aliases": [],
-            "name": "pot"
+            "name": "pot",
+            "searchable": "pot"
         },
         {
             "aliases": [],
-            "name": "pot-mix"
+            "name": "pot-mix",
+            "searchable": "pot mix"
         },
         {
             "aliases": [],
-            "name": "pound"
+            "name": "pound",
+            "searchable": "pound"
         },
         {
             "aliases": [],
-            "name": "pound-box"
+            "name": "pound-box",
+            "searchable": "pound box"
         },
         {
             "aliases": [],
-            "name": "power"
+            "name": "power",
+            "searchable": "power"
         },
         {
             "aliases": [],
-            "name": "power-settings"
+            "name": "power-settings",
+            "searchable": "power settings"
         },
         {
             "aliases": [],
-            "name": "power-socket"
+            "name": "power-socket",
+            "searchable": "power socket"
         },
         {
             "aliases": [],
-            "name": "presentation"
+            "name": "presentation",
+            "searchable": "presentation"
         },
         {
             "aliases": [],
-            "name": "presentation-play"
+            "name": "presentation-play",
+            "searchable": "presentation play"
         },
         {
             "aliases": [],
-            "name": "printer"
+            "name": "printer",
+            "searchable": "printer"
         },
         {
             "aliases": [],
-            "name": "printer-3d"
+            "name": "printer-3d",
+            "searchable": "printer 3d"
         },
         {
             "aliases": [],
-            "name": "printer-alert"
+            "name": "printer-alert",
+            "searchable": "printer alert"
         },
         {
             "aliases": [],
-            "name": "priority-high"
+            "name": "priority-high",
+            "searchable": "priority high"
         },
         {
             "aliases": [],
-            "name": "priority-low"
+            "name": "priority-low",
+            "searchable": "priority low"
         },
         {
             "aliases": [],
-            "name": "professional-hexagon"
+            "name": "professional-hexagon",
+            "searchable": "professional hexagon"
         },
         {
             "aliases": [],
-            "name": "projector"
+            "name": "projector",
+            "searchable": "projector"
         },
         {
             "aliases": [],
-            "name": "projector-screen"
+            "name": "projector-screen",
+            "searchable": "projector screen"
         },
         {
             "aliases": [],
-            "name": "pulse"
+            "name": "pulse",
+            "searchable": "pulse"
         },
         {
             "aliases": [],
-            "name": "puzzle"
+            "name": "puzzle",
+            "searchable": "puzzle"
         },
         {
             "aliases": [],
-            "name": "qqchat"
+            "name": "qqchat",
+            "searchable": "qqchat"
         },
         {
             "aliases": [],
-            "name": "qrcode"
+            "name": "qrcode",
+            "searchable": "qrcode"
         },
         {
             "aliases": [],
-            "name": "qrcode-scan"
+            "name": "qrcode-scan",
+            "searchable": "qrcode scan"
         },
         {
             "aliases": [],
-            "name": "quadcopter"
+            "name": "quadcopter",
+            "searchable": "quadcopter"
         },
         {
             "aliases": [],
-            "name": "quality-high"
+            "name": "quality-high",
+            "searchable": "quality high"
         },
         {
             "aliases": [],
-            "name": "quicktime"
+            "name": "quicktime",
+            "searchable": "quicktime"
         },
         {
             "aliases": [],
-            "name": "radar"
+            "name": "radar",
+            "searchable": "radar"
         },
         {
             "aliases": [],
-            "name": "radiator"
+            "name": "radiator",
+            "searchable": "radiator"
         },
         {
             "aliases": [],
-            "name": "radio"
+            "name": "radio",
+            "searchable": "radio"
         },
         {
             "aliases": [],
-            "name": "radio-handheld"
+            "name": "radio-handheld",
+            "searchable": "radio handheld"
         },
         {
             "aliases": [],
-            "name": "radio-tower"
+            "name": "radio-tower",
+            "searchable": "radio tower"
         },
         {
             "aliases": [],
-            "name": "radioactive"
+            "name": "radioactive",
+            "searchable": "radioactive"
         },
         {
             "aliases": [],
-            "name": "radiobox-blank"
+            "name": "radiobox-blank",
+            "searchable": "radiobox blank"
         },
         {
             "aliases": [],
-            "name": "radiobox-marked"
+            "name": "radiobox-marked",
+            "searchable": "radiobox marked"
         },
         {
             "aliases": [],
-            "name": "raspberrypi"
+            "name": "raspberrypi",
+            "searchable": "raspberrypi"
         },
         {
             "aliases": [],
-            "name": "ray-end"
+            "name": "ray-end",
+            "searchable": "ray end"
         },
         {
             "aliases": [],
-            "name": "ray-end-arrow"
+            "name": "ray-end-arrow",
+            "searchable": "ray end arrow"
         },
         {
             "aliases": [],
-            "name": "ray-start"
+            "name": "ray-start",
+            "searchable": "ray start"
         },
         {
             "aliases": [],
-            "name": "ray-start-arrow"
+            "name": "ray-start-arrow",
+            "searchable": "ray start arrow"
         },
         {
             "aliases": [],
-            "name": "ray-start-end"
+            "name": "ray-start-end",
+            "searchable": "ray start end"
         },
         {
             "aliases": [],
-            "name": "ray-vertex"
+            "name": "ray-vertex",
+            "searchable": "ray vertex"
         },
         {
             "aliases": [],
-            "name": "rdio"
+            "name": "rdio",
+            "searchable": "rdio"
         },
         {
             "aliases": [],
-            "name": "read"
+            "name": "read",
+            "searchable": "read"
         },
         {
             "aliases": [],
-            "name": "readability"
+            "name": "readability",
+            "searchable": "readability"
         },
         {
             "aliases": [],
-            "name": "receipt"
+            "name": "receipt",
+            "searchable": "receipt"
         },
         {
             "aliases": [],
-            "name": "record"
+            "name": "record",
+            "searchable": "record"
         },
         {
             "aliases": [],
-            "name": "record-rec"
+            "name": "record-rec",
+            "searchable": "record rec"
         },
         {
             "aliases": [],
-            "name": "recycle"
+            "name": "recycle",
+            "searchable": "recycle"
         },
         {
             "aliases": [],
-            "name": "reddit"
+            "name": "reddit",
+            "searchable": "reddit"
         },
         {
             "aliases": [],
-            "name": "redo"
+            "name": "redo",
+            "searchable": "redo"
         },
         {
             "aliases": [],
-            "name": "redo-variant"
+            "name": "redo-variant",
+            "searchable": "redo variant"
         },
         {
             "aliases": [],
-            "name": "refresh"
+            "name": "refresh",
+            "searchable": "refresh"
         },
         {
             "aliases": [],
-            "name": "regex"
+            "name": "regex",
+            "searchable": "regex"
         },
         {
             "aliases": [],
-            "name": "relative-scale"
+            "name": "relative-scale",
+            "searchable": "relative scale"
         },
         {
             "aliases": [],
-            "name": "reload"
+            "name": "reload",
+            "searchable": "reload"
         },
         {
             "aliases": [],
-            "name": "remote"
+            "name": "remote",
+            "searchable": "remote"
         },
         {
             "aliases": [],
-            "name": "rename-box"
+            "name": "rename-box",
+            "searchable": "rename box"
         },
         {
             "aliases": [],
-            "name": "repeat"
+            "name": "repeat",
+            "searchable": "repeat"
         },
         {
             "aliases": [],
-            "name": "repeat-off"
+            "name": "repeat-off",
+            "searchable": "repeat off"
         },
         {
             "aliases": [],
-            "name": "repeat-once"
+            "name": "repeat-once",
+            "searchable": "repeat once"
         },
         {
             "aliases": [],
-            "name": "replay"
+            "name": "replay",
+            "searchable": "replay"
         },
         {
             "aliases": [],
-            "name": "reply"
+            "name": "reply",
+            "searchable": "reply"
         },
         {
             "aliases": [],
-            "name": "reply-all"
+            "name": "reply-all",
+            "searchable": "reply all"
         },
         {
             "aliases": [],
-            "name": "reproduction"
+            "name": "reproduction",
+            "searchable": "reproduction"
         },
         {
             "aliases": [],
-            "name": "resize-bottom-right"
+            "name": "resize-bottom-right",
+            "searchable": "resize bottom right"
         },
         {
             "aliases": [],
-            "name": "responsive"
+            "name": "responsive",
+            "searchable": "responsive"
         },
         {
             "aliases": [],
-            "name": "rewind"
+            "name": "rewind",
+            "searchable": "rewind"
         },
         {
             "aliases": [],
-            "name": "ribbon"
+            "name": "ribbon",
+            "searchable": "ribbon"
         },
         {
             "aliases": [],
-            "name": "road"
+            "name": "road",
+            "searchable": "road"
         },
         {
             "aliases": [],
-            "name": "road-variant"
+            "name": "road-variant",
+            "searchable": "road variant"
         },
         {
             "aliases": [],
-            "name": "rocket"
+            "name": "rocket",
+            "searchable": "rocket"
         },
         {
             "aliases": [],
-            "name": "rotate-3d"
+            "name": "rotate-3d",
+            "searchable": "rotate 3d"
         },
         {
             "aliases": [],
-            "name": "rotate-left"
+            "name": "rotate-left",
+            "searchable": "rotate left"
         },
         {
             "aliases": [],
-            "name": "rotate-left-variant"
+            "name": "rotate-left-variant",
+            "searchable": "rotate left variant"
         },
         {
             "aliases": [],
-            "name": "rotate-right"
+            "name": "rotate-right",
+            "searchable": "rotate right"
         },
         {
             "aliases": [],
-            "name": "rotate-right-variant"
+            "name": "rotate-right-variant",
+            "searchable": "rotate right variant"
         },
         {
             "aliases": [],
-            "name": "rounded-corner"
+            "name": "rounded-corner",
+            "searchable": "rounded corner"
         },
         {
             "aliases": [],
-            "name": "router-wireless"
+            "name": "router-wireless",
+            "searchable": "router wireless"
         },
         {
             "aliases": [],
-            "name": "routes"
+            "name": "routes",
+            "searchable": "routes"
         },
         {
             "aliases": [],
-            "name": "rowing"
+            "name": "rowing",
+            "searchable": "rowing"
         },
         {
             "aliases": [],
-            "name": "rss"
+            "name": "rss",
+            "searchable": "rss"
         },
         {
             "aliases": [],
-            "name": "rss-box"
+            "name": "rss-box",
+            "searchable": "rss box"
         },
         {
             "aliases": [],
-            "name": "ruler"
+            "name": "ruler",
+            "searchable": "ruler"
         },
         {
             "aliases": [],
-            "name": "run"
+            "name": "run",
+            "searchable": "run"
         },
         {
             "aliases": [],
-            "name": "sale"
+            "name": "sale",
+            "searchable": "sale"
         },
         {
             "aliases": [],
-            "name": "satellite"
+            "name": "satellite",
+            "searchable": "satellite"
         },
         {
             "aliases": [],
-            "name": "satellite-variant"
+            "name": "satellite-variant",
+            "searchable": "satellite variant"
         },
         {
             "aliases": [],
-            "name": "saxophone"
+            "name": "saxophone",
+            "searchable": "saxophone"
         },
         {
             "aliases": [],
-            "name": "scale"
+            "name": "scale",
+            "searchable": "scale"
         },
         {
             "aliases": [],
-            "name": "scale-balance"
+            "name": "scale-balance",
+            "searchable": "scale balance"
         },
         {
             "aliases": [],
-            "name": "scale-bathroom"
+            "name": "scale-bathroom",
+            "searchable": "scale bathroom"
         },
         {
             "aliases": [],
-            "name": "school"
+            "name": "school",
+            "searchable": "school"
         },
         {
             "aliases": [],
-            "name": "screen-rotation"
+            "name": "screen-rotation",
+            "searchable": "screen rotation"
         },
         {
             "aliases": [],
-            "name": "screen-rotation-lock"
+            "name": "screen-rotation-lock",
+            "searchable": "screen rotation lock"
         },
         {
             "aliases": [],
-            "name": "screwdriver"
+            "name": "screwdriver",
+            "searchable": "screwdriver"
         },
         {
             "aliases": [],
-            "name": "script"
+            "name": "script",
+            "searchable": "script"
         },
         {
             "aliases": [],
-            "name": "sd"
+            "name": "sd",
+            "searchable": "sd"
         },
         {
             "aliases": [],
-            "name": "seal"
+            "name": "seal",
+            "searchable": "seal"
         },
         {
             "aliases": [],
-            "name": "seat-flat"
+            "name": "seat-flat",
+            "searchable": "seat flat"
         },
         {
             "aliases": [],
-            "name": "seat-flat-angled"
+            "name": "seat-flat-angled",
+            "searchable": "seat flat angled"
         },
         {
             "aliases": [],
-            "name": "seat-individual-suite"
+            "name": "seat-individual-suite",
+            "searchable": "seat individual suite"
         },
         {
             "aliases": [],
-            "name": "seat-legroom-extra"
+            "name": "seat-legroom-extra",
+            "searchable": "seat legroom extra"
         },
         {
             "aliases": [],
-            "name": "seat-legroom-normal"
+            "name": "seat-legroom-normal",
+            "searchable": "seat legroom normal"
         },
         {
             "aliases": [],
-            "name": "seat-legroom-reduced"
+            "name": "seat-legroom-reduced",
+            "searchable": "seat legroom reduced"
         },
         {
             "aliases": [],
-            "name": "seat-recline-extra"
+            "name": "seat-recline-extra",
+            "searchable": "seat recline extra"
         },
         {
             "aliases": [],
-            "name": "seat-recline-normal"
+            "name": "seat-recline-normal",
+            "searchable": "seat recline normal"
         },
         {
             "aliases": [],
-            "name": "security"
+            "name": "security",
+            "searchable": "security"
         },
         {
             "aliases": [],
-            "name": "security-network"
+            "name": "security-network",
+            "searchable": "security network"
         },
         {
             "aliases": [],
-            "name": "select"
+            "name": "select",
+            "searchable": "select"
         },
         {
             "aliases": [],
-            "name": "select-all"
+            "name": "select-all",
+            "searchable": "select all"
         },
         {
             "aliases": [],
-            "name": "select-inverse"
+            "name": "select-inverse",
+            "searchable": "select inverse"
         },
         {
             "aliases": [],
-            "name": "select-off"
+            "name": "select-off",
+            "searchable": "select off"
         },
         {
             "aliases": [],
-            "name": "selection"
+            "name": "selection",
+            "searchable": "selection"
         },
         {
             "aliases": [],
-            "name": "send"
+            "name": "send",
+            "searchable": "send"
         },
         {
             "aliases": [],
-            "name": "serial-port"
+            "name": "serial-port",
+            "searchable": "serial port"
         },
         {
             "aliases": [],
-            "name": "server"
+            "name": "server",
+            "searchable": "server"
         },
         {
             "aliases": [],
-            "name": "server-minus"
+            "name": "server-minus",
+            "searchable": "server minus"
         },
         {
             "aliases": [],
-            "name": "server-network"
+            "name": "server-network",
+            "searchable": "server network"
         },
         {
             "aliases": [],
-            "name": "server-network-off"
+            "name": "server-network-off",
+            "searchable": "server network off"
         },
         {
             "aliases": [],
-            "name": "server-off"
+            "name": "server-off",
+            "searchable": "server off"
         },
         {
             "aliases": [],
-            "name": "server-plus"
+            "name": "server-plus",
+            "searchable": "server plus"
         },
         {
             "aliases": [],
-            "name": "server-remove"
+            "name": "server-remove",
+            "searchable": "server remove"
         },
         {
             "aliases": [],
-            "name": "server-security"
+            "name": "server-security",
+            "searchable": "server security"
         },
         {
             "aliases": [],
-            "name": "settings"
+            "name": "settings",
+            "searchable": "settings"
         },
         {
             "aliases": [],
-            "name": "settings-box"
+            "name": "settings-box",
+            "searchable": "settings box"
         },
         {
             "aliases": [],
-            "name": "shape-circle-plus"
+            "name": "shape-circle-plus",
+            "searchable": "shape circle plus"
         },
         {
             "aliases": [],
-            "name": "shape-plus"
+            "name": "shape-plus",
+            "searchable": "shape plus"
         },
         {
             "aliases": [],
-            "name": "shape-polygon-plus"
+            "name": "shape-polygon-plus",
+            "searchable": "shape polygon plus"
         },
         {
             "aliases": [],
-            "name": "shape-rectangle-plus"
+            "name": "shape-rectangle-plus",
+            "searchable": "shape rectangle plus"
         },
         {
             "aliases": [],
-            "name": "shape-square-plus"
+            "name": "shape-square-plus",
+            "searchable": "shape square plus"
         },
         {
             "aliases": [],
-            "name": "share"
+            "name": "share",
+            "searchable": "share"
         },
         {
             "aliases": [],
-            "name": "share-variant"
+            "name": "share-variant",
+            "searchable": "share variant"
         },
         {
             "aliases": [],
-            "name": "shield"
+            "name": "shield",
+            "searchable": "shield"
         },
         {
             "aliases": [],
-            "name": "shield-outline"
+            "name": "shield-outline",
+            "searchable": "shield outline"
         },
         {
             "aliases": [],
-            "name": "shopping"
+            "name": "shopping",
+            "searchable": "shopping"
         },
         {
             "aliases": [],
-            "name": "shopping-music"
+            "name": "shopping-music",
+            "searchable": "shopping music"
         },
         {
             "aliases": [],
-            "name": "shredder"
+            "name": "shredder",
+            "searchable": "shredder"
         },
         {
             "aliases": [],
-            "name": "shuffle"
+            "name": "shuffle",
+            "searchable": "shuffle"
         },
         {
             "aliases": [],
-            "name": "shuffle-disabled"
+            "name": "shuffle-disabled",
+            "searchable": "shuffle disabled"
         },
         {
             "aliases": [],
-            "name": "shuffle-variant"
+            "name": "shuffle-variant",
+            "searchable": "shuffle variant"
         },
         {
             "aliases": [],
-            "name": "sigma"
+            "name": "sigma",
+            "searchable": "sigma"
         },
         {
             "aliases": [],
-            "name": "sigma-lower"
+            "name": "sigma-lower",
+            "searchable": "sigma lower"
         },
         {
             "aliases": [],
-            "name": "sign-caution"
+            "name": "sign-caution",
+            "searchable": "sign caution"
         },
         {
             "aliases": [],
-            "name": "signal"
+            "name": "signal",
+            "searchable": "signal"
         },
         {
             "aliases": [],
-            "name": "signal-variant"
+            "name": "signal-variant",
+            "searchable": "signal variant"
         },
         {
             "aliases": [],
-            "name": "silverware"
+            "name": "silverware",
+            "searchable": "silverware"
         },
         {
             "aliases": [],
-            "name": "silverware-fork"
+            "name": "silverware-fork",
+            "searchable": "silverware fork"
         },
         {
             "aliases": [],
-            "name": "silverware-spoon"
+            "name": "silverware-spoon",
+            "searchable": "silverware spoon"
         },
         {
             "aliases": [],
-            "name": "silverware-variant"
+            "name": "silverware-variant",
+            "searchable": "silverware variant"
         },
         {
             "aliases": [],
-            "name": "sim"
+            "name": "sim",
+            "searchable": "sim"
         },
         {
             "aliases": [],
-            "name": "sim-alert"
+            "name": "sim-alert",
+            "searchable": "sim alert"
         },
         {
             "aliases": [],
-            "name": "sim-off"
+            "name": "sim-off",
+            "searchable": "sim off"
         },
         {
             "aliases": [],
-            "name": "sitemap"
+            "name": "sitemap",
+            "searchable": "sitemap"
         },
         {
             "aliases": [],
-            "name": "skip-backward"
+            "name": "skip-backward",
+            "searchable": "skip backward"
         },
         {
             "aliases": [],
-            "name": "skip-forward"
+            "name": "skip-forward",
+            "searchable": "skip forward"
         },
         {
             "aliases": [],
-            "name": "skip-next"
+            "name": "skip-next",
+            "searchable": "skip next"
         },
         {
             "aliases": [],
-            "name": "skip-next-circle"
+            "name": "skip-next-circle",
+            "searchable": "skip next circle"
         },
         {
             "aliases": [],
-            "name": "skip-next-circle-outline"
+            "name": "skip-next-circle-outline",
+            "searchable": "skip next circle outline"
         },
         {
             "aliases": [],
-            "name": "skip-previous"
+            "name": "skip-previous",
+            "searchable": "skip previous"
         },
         {
             "aliases": [],
-            "name": "skip-previous-circle"
+            "name": "skip-previous-circle",
+            "searchable": "skip previous circle"
         },
         {
             "aliases": [],
-            "name": "skip-previous-circle-outline"
+            "name": "skip-previous-circle-outline",
+            "searchable": "skip previous circle outline"
         },
         {
             "aliases": [],
-            "name": "skype"
+            "name": "skype",
+            "searchable": "skype"
         },
         {
             "aliases": [],
-            "name": "skype-business"
+            "name": "skype-business",
+            "searchable": "skype business"
         },
         {
             "aliases": [],
-            "name": "slack"
+            "name": "slack",
+            "searchable": "slack"
         },
         {
             "aliases": [],
-            "name": "sleep"
+            "name": "sleep",
+            "searchable": "sleep"
         },
         {
             "aliases": [],
-            "name": "sleep-off"
+            "name": "sleep-off",
+            "searchable": "sleep off"
         },
         {
             "aliases": [],
-            "name": "smoking"
+            "name": "smoking",
+            "searchable": "smoking"
         },
         {
             "aliases": [],
-            "name": "smoking-off"
+            "name": "smoking-off",
+            "searchable": "smoking off"
         },
         {
             "aliases": [],
-            "name": "snapchat"
+            "name": "snapchat",
+            "searchable": "snapchat"
         },
         {
             "aliases": [],
-            "name": "snowman"
+            "name": "snowman",
+            "searchable": "snowman"
         },
         {
             "aliases": [],
-            "name": "soccer"
+            "name": "soccer",
+            "searchable": "soccer"
         },
         {
             "aliases": [],
-            "name": "sofa"
+            "name": "sofa",
+            "searchable": "sofa"
         },
         {
             "aliases": [],
-            "name": "sort"
+            "name": "sort",
+            "searchable": "sort"
         },
         {
             "aliases": [],
-            "name": "sort-alphabetical"
+            "name": "sort-alphabetical",
+            "searchable": "sort alphabetical"
         },
         {
             "aliases": [],
-            "name": "sort-ascending"
+            "name": "sort-ascending",
+            "searchable": "sort ascending"
         },
         {
             "aliases": [],
-            "name": "sort-descending"
+            "name": "sort-descending",
+            "searchable": "sort descending"
         },
         {
             "aliases": [],
-            "name": "sort-numeric"
+            "name": "sort-numeric",
+            "searchable": "sort numeric"
         },
         {
             "aliases": [],
-            "name": "sort-variant"
+            "name": "sort-variant",
+            "searchable": "sort variant"
         },
         {
             "aliases": [],
-            "name": "soundcloud"
+            "name": "soundcloud",
+            "searchable": "soundcloud"
         },
         {
             "aliases": [],
-            "name": "source-branch"
+            "name": "source-branch",
+            "searchable": "source branch"
         },
         {
             "aliases": [],
-            "name": "source-fork"
+            "name": "source-fork",
+            "searchable": "source fork"
         },
         {
             "aliases": [],
-            "name": "source-merge"
+            "name": "source-merge",
+            "searchable": "source merge"
         },
         {
             "aliases": [],
-            "name": "source-pull"
+            "name": "source-pull",
+            "searchable": "source pull"
         },
         {
             "aliases": [],
-            "name": "speaker"
+            "name": "speaker",
+            "searchable": "speaker"
         },
         {
             "aliases": [],
-            "name": "speaker-off"
+            "name": "speaker-off",
+            "searchable": "speaker off"
         },
         {
             "aliases": [],
-            "name": "speedometer"
+            "name": "speedometer",
+            "searchable": "speedometer"
         },
         {
             "aliases": [],
-            "name": "spellcheck"
+            "name": "spellcheck",
+            "searchable": "spellcheck"
         },
         {
             "aliases": [],
-            "name": "spotify"
+            "name": "spotify",
+            "searchable": "spotify"
         },
         {
             "aliases": [],
-            "name": "spotlight"
+            "name": "spotlight",
+            "searchable": "spotlight"
         },
         {
             "aliases": [],
-            "name": "spotlight-beam"
+            "name": "spotlight-beam",
+            "searchable": "spotlight beam"
         },
         {
             "aliases": [],
-            "name": "spray"
+            "name": "spray",
+            "searchable": "spray"
         },
         {
             "aliases": [],
-            "name": "square-inc"
+            "name": "square-inc",
+            "searchable": "square inc"
         },
         {
             "aliases": [],
-            "name": "square-inc-cash"
+            "name": "square-inc-cash",
+            "searchable": "square inc cash"
         },
         {
             "aliases": [],
-            "name": "stackexchange"
+            "name": "stackexchange",
+            "searchable": "stackexchange"
         },
         {
             "aliases": [],
-            "name": "stackoverflow"
+            "name": "stackoverflow",
+            "searchable": "stackoverflow"
         },
         {
             "aliases": [],
-            "name": "stairs"
+            "name": "stairs",
+            "searchable": "stairs"
         },
         {
             "aliases": [],
-            "name": "star"
+            "name": "star",
+            "searchable": "star"
         },
         {
             "aliases": [],
-            "name": "star-circle"
+            "name": "star-circle",
+            "searchable": "star circle"
         },
         {
             "aliases": [],
-            "name": "star-half"
+            "name": "star-half",
+            "searchable": "star half"
         },
         {
             "aliases": [],
-            "name": "star-off"
+            "name": "star-off",
+            "searchable": "star off"
         },
         {
             "aliases": [],
-            "name": "star-outline"
+            "name": "star-outline",
+            "searchable": "star outline"
         },
         {
             "aliases": [],
-            "name": "steam"
+            "name": "steam",
+            "searchable": "steam"
         },
         {
             "aliases": [],
-            "name": "steering"
+            "name": "steering",
+            "searchable": "steering"
         },
         {
             "aliases": [],
-            "name": "step-backward"
+            "name": "step-backward",
+            "searchable": "step backward"
         },
         {
             "aliases": [],
-            "name": "step-backward-2"
+            "name": "step-backward-2",
+            "searchable": "step backward 2"
         },
         {
             "aliases": [],
-            "name": "step-forward"
+            "name": "step-forward",
+            "searchable": "step forward"
         },
         {
             "aliases": [],
-            "name": "step-forward-2"
+            "name": "step-forward-2",
+            "searchable": "step forward 2"
         },
         {
             "aliases": [],
-            "name": "stethoscope"
+            "name": "stethoscope",
+            "searchable": "stethoscope"
         },
         {
             "aliases": [],
-            "name": "sticker"
+            "name": "sticker",
+            "searchable": "sticker"
         },
         {
             "aliases": [],
-            "name": "stocking"
+            "name": "stocking",
+            "searchable": "stocking"
         },
         {
             "aliases": [],
-            "name": "stop"
+            "name": "stop",
+            "searchable": "stop"
         },
         {
             "aliases": [],
-            "name": "stop-circle"
+            "name": "stop-circle",
+            "searchable": "stop circle"
         },
         {
             "aliases": [],
-            "name": "stop-circle-outline"
+            "name": "stop-circle-outline",
+            "searchable": "stop circle outline"
         },
         {
             "aliases": [],
-            "name": "store"
+            "name": "store",
+            "searchable": "store"
         },
         {
             "aliases": [],
-            "name": "store-24-hour"
+            "name": "store-24-hour",
+            "searchable": "store 24 hour"
         },
         {
             "aliases": [],
-            "name": "stove"
+            "name": "stove",
+            "searchable": "stove"
         },
         {
             "aliases": [],
-            "name": "subdirectory-arrow-left"
+            "name": "subdirectory-arrow-left",
+            "searchable": "subdirectory arrow left"
         },
         {
             "aliases": [],
-            "name": "subdirectory-arrow-right"
+            "name": "subdirectory-arrow-right",
+            "searchable": "subdirectory arrow right"
         },
         {
             "aliases": [],
-            "name": "subway"
+            "name": "subway",
+            "searchable": "subway"
         },
         {
             "aliases": [],
-            "name": "sunglasses"
+            "name": "sunglasses",
+            "searchable": "sunglasses"
         },
         {
             "aliases": [],
-            "name": "surround-sound"
+            "name": "surround-sound",
+            "searchable": "surround sound"
         },
         {
             "aliases": [],
-            "name": "swap-horizontal"
+            "name": "swap-horizontal",
+            "searchable": "swap horizontal"
         },
         {
             "aliases": [],
-            "name": "swap-vertical"
+            "name": "swap-vertical",
+            "searchable": "swap vertical"
         },
         {
             "aliases": [],
-            "name": "swim"
+            "name": "swim",
+            "searchable": "swim"
         },
         {
             "aliases": [],
-            "name": "switch"
+            "name": "switch",
+            "searchable": "switch"
         },
         {
             "aliases": [],
-            "name": "sword"
+            "name": "sword",
+            "searchable": "sword"
         },
         {
             "aliases": [],
-            "name": "sync"
+            "name": "sync",
+            "searchable": "sync"
         },
         {
             "aliases": [],
-            "name": "sync-alert"
+            "name": "sync-alert",
+            "searchable": "sync alert"
         },
         {
             "aliases": [],
-            "name": "sync-off"
+            "name": "sync-off",
+            "searchable": "sync off"
         },
         {
             "aliases": [],
-            "name": "tab"
+            "name": "tab",
+            "searchable": "tab"
         },
         {
             "aliases": [],
-            "name": "tab-unselected"
+            "name": "tab-unselected",
+            "searchable": "tab unselected"
         },
         {
             "aliases": [],
-            "name": "table"
+            "name": "table",
+            "searchable": "table"
         },
         {
             "aliases": [],
-            "name": "table-column-plus-after"
+            "name": "table-column-plus-after",
+            "searchable": "table column plus after"
         },
         {
             "aliases": [],
-            "name": "table-column-plus-before"
+            "name": "table-column-plus-before",
+            "searchable": "table column plus before"
         },
         {
             "aliases": [],
-            "name": "table-column-remove"
+            "name": "table-column-remove",
+            "searchable": "table column remove"
         },
         {
             "aliases": [],
-            "name": "table-column-width"
+            "name": "table-column-width",
+            "searchable": "table column width"
         },
         {
             "aliases": [],
-            "name": "table-edit"
+            "name": "table-edit",
+            "searchable": "table edit"
         },
         {
             "aliases": [],
-            "name": "table-large"
+            "name": "table-large",
+            "searchable": "table large"
         },
         {
             "aliases": [],
-            "name": "table-row-height"
+            "name": "table-row-height",
+            "searchable": "table row height"
         },
         {
             "aliases": [],
-            "name": "table-row-plus-after"
+            "name": "table-row-plus-after",
+            "searchable": "table row plus after"
         },
         {
             "aliases": [],
-            "name": "table-row-plus-before"
+            "name": "table-row-plus-before",
+            "searchable": "table row plus before"
         },
         {
             "aliases": [],
-            "name": "table-row-remove"
+            "name": "table-row-remove",
+            "searchable": "table row remove"
         },
         {
             "aliases": [],
-            "name": "tablet"
+            "name": "tablet",
+            "searchable": "tablet"
         },
         {
             "aliases": [],
-            "name": "tablet-android"
+            "name": "tablet-android",
+            "searchable": "tablet android"
         },
         {
             "aliases": [],
-            "name": "tablet-ipad"
+            "name": "tablet-ipad",
+            "searchable": "tablet ipad"
         },
         {
             "aliases": [],
-            "name": "tag"
+            "name": "tag",
+            "searchable": "tag"
         },
         {
             "aliases": [],
-            "name": "tag-faces"
+            "name": "tag-faces",
+            "searchable": "tag faces"
         },
         {
             "aliases": [],
-            "name": "tag-multiple"
+            "name": "tag-multiple",
+            "searchable": "tag multiple"
         },
         {
             "aliases": [],
-            "name": "tag-outline"
+            "name": "tag-outline",
+            "searchable": "tag outline"
         },
         {
             "aliases": [],
-            "name": "tag-text-outline"
+            "name": "tag-text-outline",
+            "searchable": "tag text outline"
         },
         {
             "aliases": [],
-            "name": "target"
+            "name": "target",
+            "searchable": "target"
         },
         {
             "aliases": [],
-            "name": "taxi"
+            "name": "taxi",
+            "searchable": "taxi"
         },
         {
             "aliases": [],
-            "name": "teamviewer"
+            "name": "teamviewer",
+            "searchable": "teamviewer"
         },
         {
             "aliases": [],
-            "name": "telegram"
+            "name": "telegram",
+            "searchable": "telegram"
         },
         {
             "aliases": [],
-            "name": "television"
+            "name": "television",
+            "searchable": "television"
         },
         {
             "aliases": [],
-            "name": "television-guide"
+            "name": "television-guide",
+            "searchable": "television guide"
         },
         {
             "aliases": [],
-            "name": "temperature-celsius"
+            "name": "temperature-celsius",
+            "searchable": "temperature celsius"
         },
         {
             "aliases": [],
-            "name": "temperature-fahrenheit"
+            "name": "temperature-fahrenheit",
+            "searchable": "temperature fahrenheit"
         },
         {
             "aliases": [],
-            "name": "temperature-kelvin"
+            "name": "temperature-kelvin",
+            "searchable": "temperature kelvin"
         },
         {
             "aliases": [],
-            "name": "tennis"
+            "name": "tennis",
+            "searchable": "tennis"
         },
         {
             "aliases": [],
-            "name": "tent"
+            "name": "tent",
+            "searchable": "tent"
         },
         {
             "aliases": [],
-            "name": "terrain"
+            "name": "terrain",
+            "searchable": "terrain"
         },
         {
             "aliases": [],
-            "name": "test-tube"
+            "name": "test-tube",
+            "searchable": "test tube"
         },
         {
             "aliases": [],
-            "name": "text-shadow"
+            "name": "text-shadow",
+            "searchable": "text shadow"
         },
         {
             "aliases": [],
-            "name": "text-to-speech"
+            "name": "text-to-speech",
+            "searchable": "text to speech"
         },
         {
             "aliases": [],
-            "name": "text-to-speech-off"
+            "name": "text-to-speech-off",
+            "searchable": "text to speech off"
         },
         {
             "aliases": [],
-            "name": "textbox"
+            "name": "textbox",
+            "searchable": "textbox"
         },
         {
             "aliases": [],
-            "name": "texture"
+            "name": "texture",
+            "searchable": "texture"
         },
         {
             "aliases": [],
-            "name": "theater"
+            "name": "theater",
+            "searchable": "theater"
         },
         {
             "aliases": [],
-            "name": "theme-light-dark"
+            "name": "theme-light-dark",
+            "searchable": "theme light dark"
         },
         {
             "aliases": [],
-            "name": "thermometer"
+            "name": "thermometer",
+            "searchable": "thermometer"
         },
         {
             "aliases": [],
-            "name": "thermometer-lines"
+            "name": "thermometer-lines",
+            "searchable": "thermometer lines"
         },
         {
             "aliases": [],
-            "name": "thumb-down"
+            "name": "thumb-down",
+            "searchable": "thumb down"
         },
         {
             "aliases": [],
-            "name": "thumb-down-outline"
+            "name": "thumb-down-outline",
+            "searchable": "thumb down outline"
         },
         {
             "aliases": [],
-            "name": "thumb-up"
+            "name": "thumb-up",
+            "searchable": "thumb up"
         },
         {
             "aliases": [],
-            "name": "thumb-up-outline"
+            "name": "thumb-up-outline",
+            "searchable": "thumb up outline"
         },
         {
             "aliases": [],
-            "name": "thumbs-up-down"
+            "name": "thumbs-up-down",
+            "searchable": "thumbs up down"
         },
         {
             "aliases": [],
-            "name": "ticket"
+            "name": "ticket",
+            "searchable": "ticket"
         },
         {
             "aliases": [],
-            "name": "ticket-account"
+            "name": "ticket-account",
+            "searchable": "ticket account"
         },
         {
             "aliases": [],
-            "name": "ticket-confirmation"
+            "name": "ticket-confirmation",
+            "searchable": "ticket confirmation"
         },
         {
             "aliases": [],
-            "name": "tie"
+            "name": "tie",
+            "searchable": "tie"
         },
         {
             "aliases": [],
-            "name": "timelapse"
+            "name": "timelapse",
+            "searchable": "timelapse"
         },
         {
             "aliases": [],
-            "name": "timer"
+            "name": "timer",
+            "searchable": "timer"
         },
         {
             "aliases": [],
-            "name": "timer-10"
+            "name": "timer-10",
+            "searchable": "timer 10"
         },
         {
             "aliases": [],
-            "name": "timer-3"
+            "name": "timer-3",
+            "searchable": "timer 3"
         },
         {
             "aliases": [],
-            "name": "timer-off"
+            "name": "timer-off",
+            "searchable": "timer off"
         },
         {
             "aliases": [],
-            "name": "timer-sand"
+            "name": "timer-sand",
+            "searchable": "timer sand"
         },
         {
             "aliases": [],
-            "name": "timetable"
+            "name": "timetable",
+            "searchable": "timetable"
         },
         {
             "aliases": [],
-            "name": "toggle-switch"
+            "name": "toggle-switch",
+            "searchable": "toggle switch"
         },
         {
             "aliases": [],
-            "name": "toggle-switch-off"
+            "name": "toggle-switch-off",
+            "searchable": "toggle switch off"
         },
         {
             "aliases": [],
-            "name": "tooltip"
+            "name": "tooltip",
+            "searchable": "tooltip"
         },
         {
             "aliases": [],
-            "name": "tooltip-edit"
+            "name": "tooltip-edit",
+            "searchable": "tooltip edit"
         },
         {
             "aliases": [],
-            "name": "tooltip-image"
+            "name": "tooltip-image",
+            "searchable": "tooltip image"
         },
         {
             "aliases": [],
-            "name": "tooltip-outline"
+            "name": "tooltip-outline",
+            "searchable": "tooltip outline"
         },
         {
             "aliases": [],
-            "name": "tooltip-outline-plus"
+            "name": "tooltip-outline-plus",
+            "searchable": "tooltip outline plus"
         },
         {
             "aliases": [],
-            "name": "tooltip-text"
+            "name": "tooltip-text",
+            "searchable": "tooltip text"
         },
         {
             "aliases": [],
-            "name": "tooth"
+            "name": "tooth",
+            "searchable": "tooth"
         },
         {
             "aliases": [],
-            "name": "tor"
+            "name": "tor",
+            "searchable": "tor"
         },
         {
             "aliases": [],
-            "name": "traffic-light"
+            "name": "traffic-light",
+            "searchable": "traffic light"
         },
         {
             "aliases": [],
-            "name": "train"
+            "name": "train",
+            "searchable": "train"
         },
         {
             "aliases": [],
-            "name": "tram"
+            "name": "tram",
+            "searchable": "tram"
         },
         {
             "aliases": [],
-            "name": "transcribe"
+            "name": "transcribe",
+            "searchable": "transcribe"
         },
         {
             "aliases": [],
-            "name": "transcribe-close"
+            "name": "transcribe-close",
+            "searchable": "transcribe close"
         },
         {
             "aliases": [],
-            "name": "transfer"
+            "name": "transfer",
+            "searchable": "transfer"
         },
         {
             "aliases": [],
-            "name": "translate"
+            "name": "translate",
+            "searchable": "translate"
         },
         {
             "aliases": [],
-            "name": "tree"
+            "name": "tree",
+            "searchable": "tree"
         },
         {
             "aliases": [],
-            "name": "trello"
+            "name": "trello",
+            "searchable": "trello"
         },
         {
             "aliases": [],
-            "name": "trending-down"
+            "name": "trending-down",
+            "searchable": "trending down"
         },
         {
             "aliases": [],
-            "name": "trending-neutral"
+            "name": "trending-neutral",
+            "searchable": "trending neutral"
         },
         {
             "aliases": [],
-            "name": "trending-up"
+            "name": "trending-up",
+            "searchable": "trending up"
         },
         {
             "aliases": [],
-            "name": "triangle"
+            "name": "triangle",
+            "searchable": "triangle"
         },
         {
             "aliases": [],
-            "name": "triangle-outline"
+            "name": "triangle-outline",
+            "searchable": "triangle outline"
         },
         {
             "aliases": [],
-            "name": "trophy"
+            "name": "trophy",
+            "searchable": "trophy"
         },
         {
             "aliases": [],
-            "name": "trophy-award"
+            "name": "trophy-award",
+            "searchable": "trophy award"
         },
         {
             "aliases": [],
-            "name": "trophy-outline"
+            "name": "trophy-outline",
+            "searchable": "trophy outline"
         },
         {
             "aliases": [],
-            "name": "trophy-variant"
+            "name": "trophy-variant",
+            "searchable": "trophy variant"
         },
         {
             "aliases": [],
-            "name": "trophy-variant-outline"
+            "name": "trophy-variant-outline",
+            "searchable": "trophy variant outline"
         },
         {
             "aliases": [],
-            "name": "truck"
+            "name": "truck",
+            "searchable": "truck"
         },
         {
             "aliases": [],
-            "name": "truck-delivery"
+            "name": "truck-delivery",
+            "searchable": "truck delivery"
         },
         {
             "aliases": [],
-            "name": "tshirt-crew"
+            "name": "tshirt-crew",
+            "searchable": "tshirt crew"
         },
         {
             "aliases": [],
-            "name": "tshirt-v"
+            "name": "tshirt-v",
+            "searchable": "tshirt v"
         },
         {
             "aliases": [],
-            "name": "tumblr"
+            "name": "tumblr",
+            "searchable": "tumblr"
         },
         {
             "aliases": [],
-            "name": "tumblr-reblog"
+            "name": "tumblr-reblog",
+            "searchable": "tumblr reblog"
         },
         {
             "aliases": [],
-            "name": "tune"
+            "name": "tune",
+            "searchable": "tune"
         },
         {
             "aliases": [],
-            "name": "tune-vertical"
+            "name": "tune-vertical",
+            "searchable": "tune vertical"
         },
         {
             "aliases": [],
-            "name": "twitch"
+            "name": "twitch",
+            "searchable": "twitch"
         },
         {
             "aliases": [],
-            "name": "twitter"
+            "name": "twitter",
+            "searchable": "twitter"
         },
         {
             "aliases": [],
-            "name": "twitter-box"
+            "name": "twitter-box",
+            "searchable": "twitter box"
         },
         {
             "aliases": [],
-            "name": "twitter-circle"
+            "name": "twitter-circle",
+            "searchable": "twitter circle"
         },
         {
             "aliases": [],
-            "name": "twitter-retweet"
+            "name": "twitter-retweet",
+            "searchable": "twitter retweet"
         },
         {
             "aliases": [],
-            "name": "ubuntu"
+            "name": "ubuntu",
+            "searchable": "ubuntu"
         },
         {
             "aliases": [],
-            "name": "umbraco"
+            "name": "umbraco",
+            "searchable": "umbraco"
         },
         {
             "aliases": [],
-            "name": "umbrella"
+            "name": "umbrella",
+            "searchable": "umbrella"
         },
         {
             "aliases": [],
-            "name": "umbrella-outline"
+            "name": "umbrella-outline",
+            "searchable": "umbrella outline"
         },
         {
             "aliases": [],
-            "name": "undo"
+            "name": "undo",
+            "searchable": "undo"
         },
         {
             "aliases": [],
-            "name": "undo-variant"
+            "name": "undo-variant",
+            "searchable": "undo variant"
         },
         {
             "aliases": [],
-            "name": "unfold-less"
+            "name": "unfold-less",
+            "searchable": "unfold less"
         },
         {
             "aliases": [],
-            "name": "unfold-more"
+            "name": "unfold-more",
+            "searchable": "unfold more"
         },
         {
             "aliases": [],
-            "name": "ungroup"
+            "name": "ungroup",
+            "searchable": "ungroup"
         },
         {
             "aliases": [],
-            "name": "untappd"
+            "name": "untappd",
+            "searchable": "untappd"
         },
         {
             "aliases": [],
-            "name": "upload"
+            "name": "upload",
+            "searchable": "upload"
         },
         {
             "aliases": [],
-            "name": "usb"
+            "name": "usb",
+            "searchable": "usb"
         },
         {
             "aliases": [],
-            "name": "vector-arrange-above"
+            "name": "vector-arrange-above",
+            "searchable": "vector arrange above"
         },
         {
             "aliases": [],
-            "name": "vector-arrange-below"
+            "name": "vector-arrange-below",
+            "searchable": "vector arrange below"
         },
         {
             "aliases": [],
-            "name": "vector-circle"
+            "name": "vector-circle",
+            "searchable": "vector circle"
         },
         {
             "aliases": [],
-            "name": "vector-circle-variant"
+            "name": "vector-circle-variant",
+            "searchable": "vector circle variant"
         },
         {
             "aliases": [],
-            "name": "vector-combine"
+            "name": "vector-combine",
+            "searchable": "vector combine"
         },
         {
             "aliases": [],
-            "name": "vector-curve"
+            "name": "vector-curve",
+            "searchable": "vector curve"
         },
         {
             "aliases": [],
-            "name": "vector-difference"
+            "name": "vector-difference",
+            "searchable": "vector difference"
         },
         {
             "aliases": [],
-            "name": "vector-difference-ab"
+            "name": "vector-difference-ab",
+            "searchable": "vector difference ab"
         },
         {
             "aliases": [],
-            "name": "vector-difference-ba"
+            "name": "vector-difference-ba",
+            "searchable": "vector difference ba"
         },
         {
             "aliases": [],
-            "name": "vector-intersection"
+            "name": "vector-intersection",
+            "searchable": "vector intersection"
         },
         {
             "aliases": [],
-            "name": "vector-line"
+            "name": "vector-line",
+            "searchable": "vector line"
         },
         {
             "aliases": [],
-            "name": "vector-point"
+            "name": "vector-point",
+            "searchable": "vector point"
         },
         {
             "aliases": [],
-            "name": "vector-polygon"
+            "name": "vector-polygon",
+            "searchable": "vector polygon"
         },
         {
             "aliases": [],
-            "name": "vector-polyline"
+            "name": "vector-polyline",
+            "searchable": "vector polyline"
         },
         {
             "aliases": [],
-            "name": "vector-rectangle"
+            "name": "vector-rectangle",
+            "searchable": "vector rectangle"
         },
         {
             "aliases": [],
-            "name": "vector-selection"
+            "name": "vector-selection",
+            "searchable": "vector selection"
         },
         {
             "aliases": [],
-            "name": "vector-square"
+            "name": "vector-square",
+            "searchable": "vector square"
         },
         {
             "aliases": [],
-            "name": "vector-triangle"
+            "name": "vector-triangle",
+            "searchable": "vector triangle"
         },
         {
             "aliases": [],
-            "name": "vector-union"
+            "name": "vector-union",
+            "searchable": "vector union"
         },
         {
             "aliases": [],
-            "name": "verified"
+            "name": "verified",
+            "searchable": "verified"
         },
         {
             "aliases": [],
-            "name": "vibrate"
+            "name": "vibrate",
+            "searchable": "vibrate"
         },
         {
             "aliases": [],
-            "name": "video"
+            "name": "video",
+            "searchable": "video"
         },
         {
             "aliases": [],
-            "name": "video-off"
+            "name": "video-off",
+            "searchable": "video off"
         },
         {
             "aliases": [],
-            "name": "video-switch"
+            "name": "video-switch",
+            "searchable": "video switch"
         },
         {
             "aliases": [],
-            "name": "view-agenda"
+            "name": "view-agenda",
+            "searchable": "view agenda"
         },
         {
             "aliases": [],
-            "name": "view-array"
+            "name": "view-array",
+            "searchable": "view array"
         },
         {
             "aliases": [],
-            "name": "view-carousel"
+            "name": "view-carousel",
+            "searchable": "view carousel"
         },
         {
             "aliases": [],
-            "name": "view-column"
+            "name": "view-column",
+            "searchable": "view column"
         },
         {
             "aliases": [],
-            "name": "view-dashboard"
+            "name": "view-dashboard",
+            "searchable": "view dashboard"
         },
         {
             "aliases": [],
-            "name": "view-day"
+            "name": "view-day",
+            "searchable": "view day"
         },
         {
             "aliases": [],
-            "name": "view-grid"
+            "name": "view-grid",
+            "searchable": "view grid"
         },
         {
             "aliases": [],
-            "name": "view-headline"
+            "name": "view-headline",
+            "searchable": "view headline"
         },
         {
             "aliases": [],
-            "name": "view-list"
+            "name": "view-list",
+            "searchable": "view list"
         },
         {
             "aliases": [],
-            "name": "view-module"
+            "name": "view-module",
+            "searchable": "view module"
         },
         {
             "aliases": [],
-            "name": "view-quilt"
+            "name": "view-quilt",
+            "searchable": "view quilt"
         },
         {
             "aliases": [],
-            "name": "view-stream"
+            "name": "view-stream",
+            "searchable": "view stream"
         },
         {
             "aliases": [],
-            "name": "view-week"
+            "name": "view-week",
+            "searchable": "view week"
         },
         {
             "aliases": [],
-            "name": "vimeo"
+            "name": "vimeo",
+            "searchable": "vimeo"
         },
         {
             "aliases": [],
-            "name": "vine"
+            "name": "vine",
+            "searchable": "vine"
         },
         {
             "aliases": [],
-            "name": "violin"
+            "name": "violin",
+            "searchable": "violin"
         },
         {
             "aliases": [],
-            "name": "visualstudio"
+            "name": "visualstudio",
+            "searchable": "visualstudio"
         },
         {
             "aliases": [],
-            "name": "vk"
+            "name": "vk",
+            "searchable": "vk"
         },
         {
             "aliases": [],
-            "name": "vk-box"
+            "name": "vk-box",
+            "searchable": "vk box"
         },
         {
             "aliases": [],
-            "name": "vk-circle"
+            "name": "vk-circle",
+            "searchable": "vk circle"
         },
         {
             "aliases": [],
-            "name": "vlc"
+            "name": "vlc",
+            "searchable": "vlc"
         },
         {
             "aliases": [],
-            "name": "voice"
+            "name": "voice",
+            "searchable": "voice"
         },
         {
             "aliases": [],
-            "name": "voicemail"
+            "name": "voicemail",
+            "searchable": "voicemail"
         },
         {
             "aliases": [],
-            "name": "volume-high"
+            "name": "volume-high",
+            "searchable": "volume high"
         },
         {
             "aliases": [],
-            "name": "volume-low"
+            "name": "volume-low",
+            "searchable": "volume low"
         },
         {
             "aliases": [],
-            "name": "volume-medium"
+            "name": "volume-medium",
+            "searchable": "volume medium"
         },
         {
             "aliases": [],
-            "name": "volume-off"
+            "name": "volume-off",
+            "searchable": "volume off"
         },
         {
             "aliases": [],
-            "name": "vpn"
+            "name": "vpn",
+            "searchable": "vpn"
         },
         {
             "aliases": [],
-            "name": "walk"
+            "name": "walk",
+            "searchable": "walk"
         },
         {
             "aliases": [],
-            "name": "wallet"
+            "name": "wallet",
+            "searchable": "wallet"
         },
         {
             "aliases": [],
-            "name": "wallet-giftcard"
+            "name": "wallet-giftcard",
+            "searchable": "wallet giftcard"
         },
         {
             "aliases": [],
-            "name": "wallet-membership"
+            "name": "wallet-membership",
+            "searchable": "wallet membership"
         },
         {
             "aliases": [],
-            "name": "wallet-travel"
+            "name": "wallet-travel",
+            "searchable": "wallet travel"
         },
         {
             "aliases": [],
-            "name": "wan"
+            "name": "wan",
+            "searchable": "wan"
         },
         {
             "aliases": [],
-            "name": "watch"
+            "name": "watch",
+            "searchable": "watch"
         },
         {
             "aliases": [],
-            "name": "watch-export"
+            "name": "watch-export",
+            "searchable": "watch export"
         },
         {
             "aliases": [],
-            "name": "watch-import"
+            "name": "watch-import",
+            "searchable": "watch import"
         },
         {
             "aliases": [],
-            "name": "water"
+            "name": "water",
+            "searchable": "water"
         },
         {
             "aliases": [],
-            "name": "water-off"
+            "name": "water-off",
+            "searchable": "water off"
         },
         {
             "aliases": [],
-            "name": "water-percent"
+            "name": "water-percent",
+            "searchable": "water percent"
         },
         {
             "aliases": [],
-            "name": "water-pump"
+            "name": "water-pump",
+            "searchable": "water pump"
         },
         {
             "aliases": [],
-            "name": "watermark"
+            "name": "watermark",
+            "searchable": "watermark"
         },
         {
             "aliases": [],
-            "name": "weather-cloudy"
+            "name": "weather-cloudy",
+            "searchable": "weather cloudy"
         },
         {
             "aliases": [],
-            "name": "weather-fog"
+            "name": "weather-fog",
+            "searchable": "weather fog"
         },
         {
             "aliases": [],
-            "name": "weather-hail"
+            "name": "weather-hail",
+            "searchable": "weather hail"
         },
         {
             "aliases": [],
-            "name": "weather-lightning"
+            "name": "weather-lightning",
+            "searchable": "weather lightning"
         },
         {
             "aliases": [],
-            "name": "weather-night"
+            "name": "weather-night",
+            "searchable": "weather night"
         },
         {
             "aliases": [],
-            "name": "weather-partlycloudy"
+            "name": "weather-partlycloudy",
+            "searchable": "weather partlycloudy"
         },
         {
             "aliases": [],
-            "name": "weather-pouring"
+            "name": "weather-pouring",
+            "searchable": "weather pouring"
         },
         {
             "aliases": [],
-            "name": "weather-rainy"
+            "name": "weather-rainy",
+            "searchable": "weather rainy"
         },
         {
             "aliases": [],
-            "name": "weather-snowy"
+            "name": "weather-snowy",
+            "searchable": "weather snowy"
         },
         {
             "aliases": [],
-            "name": "weather-sunny"
+            "name": "weather-sunny",
+            "searchable": "weather sunny"
         },
         {
             "aliases": [],
-            "name": "weather-sunset"
+            "name": "weather-sunset",
+            "searchable": "weather sunset"
         },
         {
             "aliases": [],
-            "name": "weather-sunset-down"
+            "name": "weather-sunset-down",
+            "searchable": "weather sunset down"
         },
         {
             "aliases": [],
-            "name": "weather-sunset-up"
+            "name": "weather-sunset-up",
+            "searchable": "weather sunset up"
         },
         {
             "aliases": [],
-            "name": "weather-windy"
+            "name": "weather-windy",
+            "searchable": "weather windy"
         },
         {
             "aliases": [],
-            "name": "weather-windy-variant"
+            "name": "weather-windy-variant",
+            "searchable": "weather windy variant"
         },
         {
             "aliases": [],
-            "name": "web"
+            "name": "web",
+            "searchable": "web"
         },
         {
             "aliases": [],
-            "name": "webcam"
+            "name": "webcam",
+            "searchable": "webcam"
         },
         {
             "aliases": [],
-            "name": "webhook"
+            "name": "webhook",
+            "searchable": "webhook"
         },
         {
             "aliases": [],
-            "name": "wechat"
+            "name": "wechat",
+            "searchable": "wechat"
         },
         {
             "aliases": [],
-            "name": "weight"
+            "name": "weight",
+            "searchable": "weight"
         },
         {
             "aliases": [],
-            "name": "weight-kilogram"
+            "name": "weight-kilogram",
+            "searchable": "weight kilogram"
         },
         {
             "aliases": [],
-            "name": "whatsapp"
+            "name": "whatsapp",
+            "searchable": "whatsapp"
         },
         {
             "aliases": [],
-            "name": "wheelchair-accessibility"
+            "name": "wheelchair-accessibility",
+            "searchable": "wheelchair accessibility"
         },
         {
             "aliases": [],
-            "name": "white-balance-auto"
+            "name": "white-balance-auto",
+            "searchable": "white balance auto"
         },
         {
             "aliases": [],
-            "name": "white-balance-incandescent"
+            "name": "white-balance-incandescent",
+            "searchable": "white balance incandescent"
         },
         {
             "aliases": [],
-            "name": "white-balance-iridescent"
+            "name": "white-balance-iridescent",
+            "searchable": "white balance iridescent"
         },
         {
             "aliases": [],
-            "name": "white-balance-sunny"
+            "name": "white-balance-sunny",
+            "searchable": "white balance sunny"
         },
         {
             "aliases": [],
-            "name": "wifi"
+            "name": "wifi",
+            "searchable": "wifi"
         },
         {
             "aliases": [],
-            "name": "wifi-off"
+            "name": "wifi-off",
+            "searchable": "wifi off"
         },
         {
             "aliases": [],
-            "name": "wii"
+            "name": "wii",
+            "searchable": "wii"
         },
         {
             "aliases": [],
-            "name": "wikipedia"
+            "name": "wikipedia",
+            "searchable": "wikipedia"
         },
         {
             "aliases": [],
-            "name": "window-close"
+            "name": "window-close",
+            "searchable": "window close"
         },
         {
             "aliases": [],
-            "name": "window-closed"
+            "name": "window-closed",
+            "searchable": "window closed"
         },
         {
             "aliases": [],
-            "name": "window-maximize"
+            "name": "window-maximize",
+            "searchable": "window maximize"
         },
         {
             "aliases": [],
-            "name": "window-minimize"
+            "name": "window-minimize",
+            "searchable": "window minimize"
         },
         {
             "aliases": [],
-            "name": "window-open"
+            "name": "window-open",
+            "searchable": "window open"
         },
         {
             "aliases": [],
-            "name": "window-restore"
+            "name": "window-restore",
+            "searchable": "window restore"
         },
         {
             "aliases": [],
-            "name": "windows"
+            "name": "windows",
+            "searchable": "windows"
         },
         {
             "aliases": [],
-            "name": "wordpress"
+            "name": "wordpress",
+            "searchable": "wordpress"
         },
         {
             "aliases": [],
-            "name": "worker"
+            "name": "worker",
+            "searchable": "worker"
         },
         {
             "aliases": [],
-            "name": "wrap"
+            "name": "wrap",
+            "searchable": "wrap"
         },
         {
             "aliases": [],
-            "name": "wrench"
+            "name": "wrench",
+            "searchable": "wrench"
         },
         {
             "aliases": [],
-            "name": "wunderlist"
+            "name": "wunderlist",
+            "searchable": "wunderlist"
         },
         {
             "aliases": [],
-            "name": "xaml"
+            "name": "xaml",
+            "searchable": "xaml"
         },
         {
             "aliases": [],
-            "name": "xbox"
+            "name": "xbox",
+            "searchable": "xbox"
         },
         {
             "aliases": [],
-            "name": "xbox-controller"
+            "name": "xbox-controller",
+            "searchable": "xbox controller"
         },
         {
             "aliases": [],
-            "name": "xbox-controller-off"
+            "name": "xbox-controller-off",
+            "searchable": "xbox controller off"
         },
         {
             "aliases": [],
-            "name": "xda"
+            "name": "xda",
+            "searchable": "xda"
         },
         {
             "aliases": [],
-            "name": "xing"
+            "name": "xing",
+            "searchable": "xing"
         },
         {
             "aliases": [],
-            "name": "xing-box"
+            "name": "xing-box",
+            "searchable": "xing box"
         },
         {
             "aliases": [],
-            "name": "xing-circle"
+            "name": "xing-circle",
+            "searchable": "xing circle"
         },
         {
             "aliases": [],
-            "name": "xml"
+            "name": "xml",
+            "searchable": "xml"
         },
         {
             "aliases": [],
-            "name": "yeast"
+            "name": "yeast",
+            "searchable": "yeast"
         },
         {
             "aliases": [],
-            "name": "yelp"
+            "name": "yelp",
+            "searchable": "yelp"
         },
         {
             "aliases": [],
-            "name": "youtube-play"
+            "name": "youtube-play",
+            "searchable": "youtube play"
         },
         {
             "aliases": [],
-            "name": "zip-box"
+            "name": "zip-box",
+            "searchable": "zip box"
         }
     ],
     "version": "1.6.50"

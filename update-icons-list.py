@@ -46,10 +46,17 @@ data = {
 }
 for match in icons_matches:
     icon_name = match[0]
+    aliases = []
+
+    # Compute searchable attribute to enhance filter performances
+    searchable = icon_name.replace('-', ' ')
+    for alias in aliases:
+        searchable += ' ' + alias.replace('-', ' ')
 
     data['icons'].append({
         'name': icon_name,
-        'aliases': []
+        'aliases': aliases,
+        'searchable': searchable
     })
 
 write_to_file(output_file, True)

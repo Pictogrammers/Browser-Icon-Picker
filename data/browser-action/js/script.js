@@ -44,27 +44,22 @@
             this.inflateUI();
         },
 
-        filterMatches: function(icon, filterVal) {
-            if (icon.name.indexOf(filterVal) != -1)
-                return true;
-
-            for (var i=0; i<icon.aliases.length; i++) {
-                if (icon.aliases[i].indexOf(filterVal) != -1)
-                    return true;
-            }
-            return false;
-        },
-
         prepareUI: function() {
             var self = this;
 
             // Filter keyup event
+            var filterReplaceRegex = new RegExp('-', 'g');
             this.ui.header.filter.on('keyup', function() {
-                var value = $(this).val();
+                var value = $(this).val().replace(filterReplaceRegex, ' ');
+
+                if ($.trim(value).length == 0) {
+                    self.ui.icons.icons.show();
+                    return;
+                }
 
                 window.MaterialDesignIcons.icons.forEach(function(icon) {
                     icon.domElem.toggle(
-                        self.filterMatches(icon, value)
+                        icon.searchable.indexOf(value) != -1
                     );
                 });
             });
