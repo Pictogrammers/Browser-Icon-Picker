@@ -3,11 +3,6 @@
  * Browser action script
  */
 
-var params = {
-    upstreamSource: 'scss',
-    storage: 'chromeStorage'
-};
-
 (function($, window) {
     const cols = 6;
 
@@ -18,22 +13,6 @@ var params = {
     MaterialDesignIconsPicker.prototype = {
         ui: {},
         defaults: {
-            upstreamSource: 'scss', // json|scss
-            upstreamSources: {
-                json: {
-                    url: 'http://cdn.materialdesignicons.com/1.5.54/meta.json',
-                    dataType: 'json'
-                },
-                scss: {
-                    url: 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss',
-                    dataType: 'text'
-                }
-            },
-
-            jsonUpstreamIgnoredKeys: ['id', 'codepoint'],
-            cacheDuration: 5,
-
-            storage: 'chromeStorage' // html5LocalStorage|chromeStorage
         },
         materialDesignIcons: [],
 
@@ -54,14 +33,13 @@ var params = {
                 },
                 footer: {
                     openInMaterialdesignIcons: $('#action-open-in-materialdesignicons'),
-                    refresh: $('#action-refresh'),
                     author: $('#action-author'),
                     github: $('#action-github')
                 }
             };
 
             this.prepareUI();
-            this.retrieveIconsList();
+            this.inflateUI();
         },
 
         filterMatches: function(icon, filterVal) {
@@ -87,15 +65,6 @@ var params = {
                         self.filterMatches(icon, value)
                     );
                 });
-            });
-
-            // Refresh button
-            this.ui.footer.refresh.click(function(e) {
-                e.preventDefault();
-
-                // Clear localStorage
-                localStorage.clear();
-                location.reload();
             });
 
             // Bind arrow keys
@@ -150,119 +119,8 @@ var params = {
 
             // Footer tooltips
             this.ui.footer.openInMaterialdesignIcons.tooltip({text: 'Open in MaterialDesignIcons.com'});
-            this.ui.footer.refresh.tooltip({text: 'Refresh'});
             this.ui.footer.author.tooltip({text: 'Quentin S.'});
             this.ui.footer.github.tooltip({text: 'GitHub'});
-        },
-
-        retrieveIconsList: function() {
-            var that = this,
-                lastRetrieval = localStorage.lastRetrieval;
-
-            lastRetrieval = lastRetrieval || 0;
-            var cacheAge = Math.ceil(Math.abs(Date.now() - lastRetrieval) / (1000 * 3600 * 24));
-
-            if (cacheAge < this.settings.cacheDuration) {
-                this.retrieveLocalCache(function(icons) {
-                    that.materialDesignIcons = icons;
-                    that.inflateUI();
-                });
-            }
-            else
-                this.downloadIconsList();
-        },
-
-        /**
-         * Fetch icons list (ajax request) from upstream source
-         */
-        downloadIconsList: function() {
-            var upstreamSource = this.settings.upstreamSource,
-                upstreamSourceInfos = this.settings.upstreamSources[this.settings.upstreamSource],
-                self = this;
-
-            // Prepare parser
-            var parser = null;
-            switch (upstreamSource) {
-                case 'json':
-                    parser = function(result) {
-                        self.materialDesignIcons = result;
-
-                        // Ignore keys (avoid filling localStorage with unneeded information)
-                        self.settings.jsonUpstreamIgnoredKeys.forEach(function (key) {
-                            self.materialDesignIcons.forEach(function (icon) {
-                                delete icon[key];
-                            });
-                        });
-                    };
-                    break;
-                case 'scss':
-                    parser = function(result) {
-                        self.materialDesignIcons = [];
-                        var regex = /    "(.*)": (F[A-F0-9]*),?/g,
-                            match;
-
-                        while (match = regex.exec(result)) {
-                            var name = match[1];
-                            self.materialDesignIcons.push({
-                                name: name,
-                                aliases: []
-                            });
-                        }
-                    };
-                    break;
-                default:
-                    throw new Error('Unknown upstreamSource ' + upstreamSource);
-            }
-
-            // LET'S DO THIS
-            $.ajax({
-                url: upstreamSourceInfos.url,
-                dataType: upstreamSourceInfos.dataType,
-                success: function(result) {
-                    parser(result);
-
-                    self.writeToLocalCache();
-                    localStorage.lastRetrieval = Date.now();
-                    self.inflateUI();
-                },
-                error: function (result) {
-                    console.error(result);
-
-                    self.onIconsRetrievalError("Could not connect to MaterialDesignIcons's repository")
-                }
-            });
-        },
-
-        onIconsRetrievalError: function(humanReadableError) {
-            // TODO
-        },
-
-        writeToLocalCache: function() {
-            switch (this.settings.storage) {
-                case 'html5LocalStorage':
-                    localStorage['icons'] = JSON.stringify(this.materialDesignIcons);
-                    break;
-                case 'chromeStorage':
-                    chrome.storage.local.set({'icons': this.materialDesignIcons});
-                    break;
-                default:
-                    throw new Error('Unknown storage method ' + this.settings.storage);
-            }
-        },
-
-        retrieveLocalCache: function(callback) {
-            switch (this.settings.storage) {
-                case 'html5LocalStorage':
-                    callback(JSON.parse(localStorage['icons']));
-                    break;
-                case 'chromeStorage':
-                    chrome.storage.local.get('icons', function(storage) {
-                        callback(storage.icons);
-                    });
-                    break;
-                default:
-                    throw new Error('Unknown storage method ' + this.settings.storage);
-            }
         },
 
         inflateUI: function() {
@@ -272,7 +130,7 @@ var params = {
             var iconWrap = $('<div />').addClass('icon-wrap');
             var index = 0,
                 row = 1;
-            this.materialDesignIcons.forEach(function(icon) {
+            window.MaterialDesignIcons.icons.forEach(function(icon) {
                 var col = (index % cols)+1;
 
                 icon.domElem = iconWrap
@@ -349,7 +207,7 @@ var params = {
 })($, window);
 
 $(document).ready(function() {
-    window.picker = new MaterialDesignIconsPicker(params);
+    window.picker = new MaterialDesignIconsPicker();
     window.picker.init();
 });
 
