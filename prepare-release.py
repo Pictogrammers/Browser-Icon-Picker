@@ -19,7 +19,7 @@ files_generic = [
     'data/browser-action/css/materialdesignicons.min.css.map',
     'data/browser-action/fonts/*',
     'data/browser-action/js/component-tooltip.js',
-    'data/browser-action/js/icon.min.js',
+    'data/browser-action/js/icons.min.js',
     'data/browser-action/js/script.js',
     'data/browser-action/vendor/jquery-3.1.0.min.js',
     'data/browser-action/index.html',
