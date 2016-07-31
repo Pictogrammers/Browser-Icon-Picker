@@ -22,7 +22,8 @@ mdi_files = [
     'fonts/materialdesignicons-webfont.woff',
     'fonts/materialdesignicons-webfont.woff2'
 ]
-meta_upstream_uri = 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss'
+meta_variables_upstream_uri = 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss'
+meta_upstream_uri = 'http://cdn.materialdesignicons.com/1.5.54/meta.json'  # TODO: replace this with latest meta.json
 meta_output_file = 'data/browser-action/js/icons.js'
 meta_output_file_min = 'data/browser-action/js/icons.min.js'
 meta_output_header = "window.MaterialDesignIcons = "
@@ -53,38 +54,45 @@ def download_css_and_fonts():
     shutil.rmtree(mdi_workspace)
 
 
-def fetch_meta():
+def get_mdi_version():
     # Download & parse upstream meta file
-    response = urllib.request.urlopen(meta_upstream_uri)
+    response = urllib.request.urlopen(meta_variables_upstream_uri)
     _variables = response.read().decode('utf-8')
-
-    icons_regex = re.compile('    "(.*)": (F[A-F0-9]*),?')
-    icons_matches = icons_regex.findall(_variables)
 
     version_regex = re.compile('\$mdi-version:\s*"(.*)" *')
     version_matches = version_regex.findall(_variables)
-    version = version_matches[0]
+    return version_matches[0]
 
-    if len(icons_matches) == 0:
+
+def fetch_meta():
+    # Download & parse upstream meta file
+    response = urllib.request.urlopen(meta_upstream_uri)
+    icons = json.loads(response.read().decode('utf-8'))
+    mdi_version = get_mdi_version()
+
+    if len(icons) == 0:
         print('Could not find variables.')
         sys.exit(1)
 
     data = {
-        'version': version,
+        'version': mdi_version,
         'icons': []
     }
-    for match in icons_matches:
-        icon_name = match[0]
-        aliases = []
-
+    for icon in icons:
         # Compute searchable attribute to enhance filter performances
-        searchable = icon_name.replace('-', ' ')
-        for alias in aliases:
-            searchable += ' ' + alias.replace('-', ' ')
+        searchable = ''
+        for alias in [icon['name']] + icon['aliases']:
+            searchable += alias.replace('-', ' ') + ' '
+
+        # Remove last blank space from searchable
+        searchable = searchable[:-1]
 
         data['icons'].append({
-            'name': icon_name,
-            'aliases': aliases,
+            'name': icon['name'],
+            'aliases': icon['aliases'],
+            'codepoint': icon['codepoint'],
+            'version': mdi_version,
+            'author': 'unknown',  # icon['author'], TODO
             'searchable': searchable
         })
 
