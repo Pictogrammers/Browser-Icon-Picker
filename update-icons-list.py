@@ -23,10 +23,8 @@ mdi_files = [
     'fonts/materialdesignicons-webfont.woff2'
 ]
 meta_upstream_uri = 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss'
-meta_output_file = 'data/browser-action/js/icons.js'
-meta_output_file_min = 'data/browser-action/js/icons.min.js'
-meta_output_header = "window.MaterialDesignIcons = "
-meta_output_footer = ";\n"
+meta_output_file = 'data/icons.json'
+meta_output_file_min = 'data/icons.min.json'
 
 
 def download_css_and_fonts():
@@ -95,10 +93,9 @@ def write_meta_to_file(data, file, pretty):
     with open(file, 'w') as output:
         output.truncate()
 
-        output.writelines(meta_output_header)
         raw_json = json.dumps(data, sort_keys=True, indent=4 if pretty else None)
         output.writelines(raw_json)
-        output.writelines(meta_output_footer)
+        output.writelines("\n")
 
         print("Generated {} with {} variables".format(file, len(data['icons'])))
 

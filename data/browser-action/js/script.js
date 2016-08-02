@@ -41,7 +41,7 @@
             };
 
             this.prepareUI();
-            this.inflateUI();
+            this.fetchIcons();
         },
 
         prepareUI: function() {
@@ -118,6 +118,20 @@
             this.ui.footer.openInMaterialdesignIcons.tooltip({text: 'Open in MaterialDesignIcons.com'});
             this.ui.footer.author.tooltip({text: 'Quentin S.'});
             this.ui.footer.github.tooltip({text: 'GitHub'});
+        },
+
+        fetchIcons: function() {
+            var self = this;
+
+            $.ajax({
+                dataType: 'json',
+                url: chrome.extension.getURL('data/icons.min.json'),
+                success: function(data) {
+                    window.MaterialDesignIcons = data;
+
+                    self.inflateUI();
+                }
+            });
         },
 
         inflateUI: function() {

@@ -1,4 +1,4 @@
-window.MaterialDesignIcons = {
+{
     "icons": [
         {
             "aliases": [],
@@ -8252,4 +8252,4 @@ window.MaterialDesignIcons = {
         }
     ],
     "version": "1.6.50"
-};
+}
