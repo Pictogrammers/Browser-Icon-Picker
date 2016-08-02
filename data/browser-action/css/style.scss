@@ -178,10 +178,15 @@ footer {
             color: $icons-color-hover;
             line-height: $icon-size;
             font-size: 35px;
-            background-color: $color-accent;
             margin: 5px 20px 5px 5px;
             border-radius: 50%;
             @extend .elevation-lowest;
+
+            @each $color, $shades in $colors {
+                &[data-color="#{$color}"] {
+                    background-color: map-get($shades, 500);
+                }
+            }
         }
 
         .properties {

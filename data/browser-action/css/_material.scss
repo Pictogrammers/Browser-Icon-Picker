@@ -28,8 +28,36 @@ $color-brown: (         500: #795548, 600: #6D4C41, 700: #5D4037, 800: #4E342E, 
 $color-grey: (          500: #9E9E9E, 600: #757575, 700: #616161, 800: #424242, 900: #212121 );
 $color-blue-grey: (     500: #607D8B, 600: #546E7A, 700: #455A64, 800: #37474F, 900: #263238 );
 
+$colors: (
+    red: $color-red,
+    pink: $color-pink,
+    purple: $color-purple,
+    deep-purple: $color-deep-purple,
+    indigo: $color-indigo,
+    blue: $color-blue,
+    light-blue: $color-light-blue,
+    cyan: $color-cyan,
+    teal: $color-teal,
+    green: $color-green,
+    light-green: $color-light-green,
+    lime: $color-lime,
+    yellow: $color-yellow,
+    amber: $color-amber,
+    orange: $color-orange,
+    deep-orange: $color-deep-orange,
+    brown: $color-brown,
+    grey: $color-grey,
+    blue-grey: $color-blue-grey
+);
+
 @function material-color($color, $hue:500) {
     @return map-get($color, $hue);
+}
+
+@each $color, $shades in $colors {
+    .background-color-#{$color} {
+        background-color: map-get($shades, 500);
+    }
 }
 
 

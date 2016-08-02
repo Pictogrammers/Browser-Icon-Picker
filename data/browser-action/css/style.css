@@ -5,6 +5,63 @@
  * Material-Freebox-OS
  * Material variables & classes
  */
+.background-color-red {
+  background-color: #F44336; }
+
+.background-color-pink {
+  background-color: #E91E63; }
+
+.background-color-purple {
+  background-color: #9C27B0; }
+
+.background-color-deep-purple {
+  background-color: #673AB7; }
+
+.background-color-indigo {
+  background-color: #3F51B5; }
+
+.background-color-blue {
+  background-color: #2196F3; }
+
+.background-color-light-blue {
+  background-color: #03A9F4; }
+
+.background-color-cyan {
+  background-color: #00BCD4; }
+
+.background-color-teal {
+  background-color: #009688; }
+
+.background-color-green {
+  background-color: #4CAF50; }
+
+.background-color-light-green {
+  background-color: #8BC34A; }
+
+.background-color-lime {
+  background-color: #CDDC39; }
+
+.background-color-yellow {
+  background-color: #FFEB3B; }
+
+.background-color-amber {
+  background-color: #FFC107; }
+
+.background-color-orange {
+  background-color: #FF9800; }
+
+.background-color-deep-orange {
+  background-color: #FF5722; }
+
+.background-color-brown {
+  background-color: #795548; }
+
+.background-color-grey {
+  background-color: #9E9E9E; }
+
+.background-color-blue-grey {
+  background-color: #607D8B; }
+
 .elevation-tiny {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
@@ -139,9 +196,46 @@ footer #icon-properties {
     color: #fff;
     line-height: 1.6em;
     font-size: 35px;
-    background-color: #FF9800;
     margin: 5px 20px 5px 5px;
     border-radius: 50%; }
+    footer #icon-properties #icon-icon[data-color="red"] {
+      background-color: #F44336; }
+    footer #icon-properties #icon-icon[data-color="pink"] {
+      background-color: #E91E63; }
+    footer #icon-properties #icon-icon[data-color="purple"] {
+      background-color: #9C27B0; }
+    footer #icon-properties #icon-icon[data-color="deep-purple"] {
+      background-color: #673AB7; }
+    footer #icon-properties #icon-icon[data-color="indigo"] {
+      background-color: #3F51B5; }
+    footer #icon-properties #icon-icon[data-color="blue"] {
+      background-color: #2196F3; }
+    footer #icon-properties #icon-icon[data-color="light-blue"] {
+      background-color: #03A9F4; }
+    footer #icon-properties #icon-icon[data-color="cyan"] {
+      background-color: #00BCD4; }
+    footer #icon-properties #icon-icon[data-color="teal"] {
+      background-color: #009688; }
+    footer #icon-properties #icon-icon[data-color="green"] {
+      background-color: #4CAF50; }
+    footer #icon-properties #icon-icon[data-color="light-green"] {
+      background-color: #8BC34A; }
+    footer #icon-properties #icon-icon[data-color="lime"] {
+      background-color: #CDDC39; }
+    footer #icon-properties #icon-icon[data-color="yellow"] {
+      background-color: #FFEB3B; }
+    footer #icon-properties #icon-icon[data-color="amber"] {
+      background-color: #FFC107; }
+    footer #icon-properties #icon-icon[data-color="orange"] {
+      background-color: #FF9800; }
+    footer #icon-properties #icon-icon[data-color="deep-orange"] {
+      background-color: #FF5722; }
+    footer #icon-properties #icon-icon[data-color="brown"] {
+      background-color: #795548; }
+    footer #icon-properties #icon-icon[data-color="grey"] {
+      background-color: #9E9E9E; }
+    footer #icon-properties #icon-icon[data-color="blue-grey"] {
+      background-color: #607D8B; }
   footer #icon-properties .properties {
     margin-left: 80px; }
     footer #icon-properties .properties #icon-name {
