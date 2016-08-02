@@ -143,19 +143,22 @@
             var self = this;
 
             // Inflate icons list
-            var iconWrap = $('<i />').addClass('mdi');
+            var iModel = document.createElement('i');
+            iModel.classList.add('mdi');
+
             var index = 0,
                 col,
                 row = 1,
                 icon;
 
-            for (var i=0, l=window.MaterialDesignIcons.icons.length; i<l; i++) {
-                icon = window.MaterialDesignIcons.icons[i];
+            for (var y=0, l=window.MaterialDesignIcons.icons.length; y<l; y++) {
+                icon = window.MaterialDesignIcons.icons[y];
                 col = (index % cols)+1;
 
-                icon.domElem = iconWrap
-                    .clone()
-                    .addClass('mdi-' + icon.name)
+                var i = iModel.cloneNode(false);
+                i.classList.add('mdi-' + icon.name);
+
+                icon.domElem = $(i)
                     .data('icon', icon)
                     .data('col', col)
                     .data('row', row)
