@@ -132,7 +132,7 @@ header {
 
     background: $background;
 
-    .icon-wrap {
+    .mdi {
         display: inline-block;
         margin: $icon-margin;
         padding: $icon-padding;
@@ -140,22 +140,14 @@ header {
         border-radius: 2px;
         transition-duration: $timing-short;
 
-        .mdi {
-            color: $icons-color;
-            font-size: $icon-size;
-            width: $icon-size;
-            height: $icon-size;
-            overflow: hidden;
-            transition-duration: $timing-short;
-        }
+        color: $icons-color;
+        font-size: $icon-size;
+        overflow: hidden;
 
         &:hover, &.active {
+            color: $icons-color-hover;
             border-color: rgba(#000, 0.1);
             background-color: $color-accent;
-
-            .mdi {
-                color: $icons-color-hover;
-            }
         }
 
         &.active {

@@ -8,7 +8,7 @@
 .elevation-tiny {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
-.elevation-1, .elevation-lowest, .icons .icon-wrap.active, footer, footer #icon-properties #icon-icon {
+.elevation-1, .elevation-lowest, .icons .mdi.active, footer, footer #icon-properties #icon-icon {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 .elevation-2, .elevation-low, header {
@@ -109,25 +109,20 @@ header {
   overflow-y: scroll;
   height: 330px;
   background: #fafafa; }
-  .icons .icon-wrap {
+  .icons .mdi {
     display: inline-block;
     margin: 5px;
     padding: 12px;
     border: 1px solid transparent;
     border-radius: 2px;
-    transition-duration: 150ms; }
-    .icons .icon-wrap .mdi {
-      color: #565656;
-      font-size: 24px;
-      width: 24px;
-      height: 24px;
-      overflow: hidden;
-      transition-duration: 150ms; }
-    .icons .icon-wrap:hover, .icons .icon-wrap.active {
+    transition-duration: 150ms;
+    color: #565656;
+    font-size: 24px;
+    overflow: hidden; }
+    .icons .mdi:hover, .icons .mdi.active {
+      color: #fff;
       border-color: rgba(0, 0, 0, 0.1);
       background-color: #FF9800; }
-      .icons .icon-wrap:hover .mdi, .icons .icon-wrap.active .mdi {
-        color: #fff; }
 
 footer #icon-properties {
   padding: 5px 10px;

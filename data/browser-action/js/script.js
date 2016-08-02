@@ -143,7 +143,7 @@
             var self = this;
 
             // Inflate icons list
-            var iconWrap = $('<div />').addClass('icon-wrap');
+            var iconWrap = $('<i />').addClass('mdi');
             var index = 0,
                 col,
                 row = 1,
@@ -155,16 +155,10 @@
 
                 icon.domElem = iconWrap
                     .clone()
+                    .addClass('mdi-' + icon.name)
                     .data('icon', icon)
                     .data('col', col)
                     .data('row', row)
-                    .append(
-                        $('<i />')
-                            .addClass('mdi mdi-' + icon.name)
-                    )
-                    .click(function() {
-                        self.setActiveIcon($(this));
-                    })
                     .appendTo(self.ui.icons.list);
 
                 if (col == cols)
@@ -172,6 +166,9 @@
                 index++;
             }
             self.ui.icons.icons = self.ui.icons.list.children();
+            self.ui.icons.list.on('click', '.mdi', function() {
+                self.setActiveIcon($(this));
+            });
 
             // Add tooltips
             self.ui.icons.icons.tooltip({
@@ -209,15 +206,15 @@
                 'https://materialdesignicons.com/icon/' + className);
 
             if (ensureVisible) {
-                var offset = iconElem.offset().top - iconElem.parent().position().top;
+                var offset = iconElem.offset().top - iconElem.parent().offset().top;
                 var iconElemHeight = iconElem.outerHeight(true);
 
                 var scrollTop = iconElem.parent().scrollTop(),
                     initialScrollTop = scrollTop;
                 if (offset - 5 < 0)
-                    scrollTop = iconElem.parent().scrollTop() + offset - 5;
+                    scrollTop += offset - 5;
                 else if (offset + iconElemHeight > iconElem.parent().height())
-                    scrollTop = scrollTop + offset + iconElem.outerHeight(true) - iconElem.parent().height();
+                    scrollTop += offset + iconElemHeight - iconElem.parent().height();
 
                 if (scrollTop != initialScrollTop)
                     iconElem.parent().scrollTop(scrollTop);
