@@ -4,10 +4,10 @@
 import os
 import sys
 import urllib.request
-import re
 import json
 import zipfile
 import shutil
+from upstream_parser import mdi_upstream
 
 mdi_upstream_uri = 'https://github.com/Templarian/MaterialDesign-Webfont/archive/master.zip'
 mdi_workspace = 'temp'
@@ -22,7 +22,7 @@ mdi_files = [
     'fonts/materialdesignicons-webfont.woff',
     'fonts/materialdesignicons-webfont.woff2'
 ]
-meta_upstream_uri = 'https://raw.githubusercontent.com/Templarian/MaterialDesign-Webfont/master/scss/_variables.scss'
+
 meta_output_file = 'data/icons.json'
 meta_output_file_min = 'data/icons.min.json'
 
@@ -51,28 +51,20 @@ def download_css_and_fonts():
     shutil.rmtree(mdi_workspace)
 
 
-def fetch_meta():
+def fetch_icons_list():
     # Download & parse upstream meta file
-    response = urllib.request.urlopen(meta_upstream_uri)
-    _variables = response.read().decode('utf-8')
+    meta = mdi_upstream.fetch_meta()
 
-    icons_regex = re.compile('    "(.*)": (F[A-F0-9]*),?')
-    icons_matches = icons_regex.findall(_variables)
-
-    version_regex = re.compile('\$mdi-version:\s*"(.*)" *')
-    version_matches = version_regex.findall(_variables)
-    version = version_matches[0]
-
-    if len(icons_matches) == 0:
+    if meta is None or len(meta['icons']) == 0:
         print('Could not find variables.')
         sys.exit(1)
 
     data = {
-        'version': version,
+        'version': meta['version'],
         'icons': []
     }
-    for match in icons_matches:
-        icon_name = match[0]
+    for icon in meta['icons']:
+        icon_name = icon['name']
         aliases = []
 
         # Compute searchable attribute to enhance filter performances
@@ -106,6 +98,6 @@ download_css_and_fonts()
 print('')
 
 # Download & write meta data to files
-meta = fetch_meta()
+meta = fetch_icons_list()
 write_meta_to_file(meta, meta_output_file, True)
 write_meta_to_file(meta, meta_output_file_min, False)
