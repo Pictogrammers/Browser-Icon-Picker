@@ -67,7 +67,9 @@
 
             // Bind arrow keys
             $(document).keydown(function(e) {
-                if (self.ui.header.filter.is(':focus'))
+                if (self.ui.header.filter.is(':focus')  // Filter has focus
+                    || self.ui.icons.icons == null      // Icons not loaded yet
+                    || e.which < 37 || e.which > 40)    // Not an arrow key
                     return;
 
                 var iconWrap = self.ui.icons.icons.filter('.active'),
@@ -123,7 +125,7 @@
 
         fetchIcons: function() {
             var self = this,
-                url = chrome.extension !== undefined
+                url = typeof(chrome) !== 'undefined' && chrome.extension !== undefined
                     ? chrome.extension.getURL('data/icons.min.json')
                     : '../icons.min.json'; // <- when debugging extension directly from index.html
 
