@@ -25,6 +25,7 @@
                 },
                 icons: {
                     list: $('#icons-list'),
+                    loading: $('#loading'),
                     icons: null
                 },
                 properties: {
@@ -121,13 +122,17 @@
         },
 
         fetchIcons: function() {
-            var self = this;
+            var self = this,
+                url = chrome.extension !== undefined
+                    ? chrome.extension.getURL('data/icons.min.json')
+                    : '../icons.min.json'; // <- when debugging extension directly from index.html
 
             $.ajax({
                 dataType: 'json',
-                url: chrome.extension.getURL('data/icons.min.json'),
+                url: url,
                 success: function(data) {
                     window.MaterialDesignIcons = data;
+                    self.ui.icons.loading.remove();
 
                     self.inflateUI();
                 }
