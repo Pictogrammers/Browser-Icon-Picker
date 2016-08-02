@@ -145,9 +145,13 @@
             // Inflate icons list
             var iconWrap = $('<div />').addClass('icon-wrap');
             var index = 0,
-                row = 1;
-            window.MaterialDesignIcons.icons.forEach(function(icon) {
-                var col = (index % cols)+1;
+                col,
+                row = 1,
+                icon;
+
+            for (var i=0, l=window.MaterialDesignIcons.icons.length; i<l; i++) {
+                icon = window.MaterialDesignIcons.icons[i];
+                col = (index % cols)+1;
 
                 icon.domElem = iconWrap
                     .clone()
@@ -166,7 +170,7 @@
                 if (col == cols)
                     row++;
                 index++;
-            });
+            }
             self.ui.icons.icons = self.ui.icons.list.children();
 
             // Add tooltips
