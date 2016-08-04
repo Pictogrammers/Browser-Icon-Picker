@@ -250,6 +250,13 @@ footer #icon-properties {
       background: #2b2b2b; }
     footer #icon-properties .properties #icon-name, footer #icon-properties .properties #icon-class span {
       -webkit-user-select: text; }
+    footer #icon-properties .properties .icon-more {
+      margin: 0;
+      opacity: 0.5; }
+      footer #icon-properties .properties .icon-more #icon-codepoint {
+        font-family: monospace; }
+      footer #icon-properties .properties .icon-more #icon-codepoint, footer #icon-properties .properties .icon-more #icon-version, footer #icon-properties .properties .icon-more #icon-author {
+        -webkit-user-select: text; }
 footer .bar {
   margin-top: 5px;
   padding: 5px 10px;

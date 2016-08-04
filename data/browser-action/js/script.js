@@ -32,7 +32,12 @@
                     wrap: $('#icon-properties'),
                     icon: $('#icon-icon'),
                     name: $('#icon-name'),
-                    className: $('#icon-class').find('span')
+                    className: $('#icon-class').find('span'),
+                    version: $('#icon-version'),
+                    versionWrap: $('#icon-version-wrap'),
+                    author: $('#icon-author'),
+                    authorWrap: $('#icon-author-wrap'),
+                    codepoint: $('#icon-codepoint')
                 },
                 footer: {
                     openInMaterialdesignIcons: $('#action-open-in-materialdesignicons'),
@@ -206,7 +211,8 @@
             fake = fake || false;
             ensureVisible = ensureVisible || false;
 
-            var className = iconElem.data('icon').name;
+            var iconMeta = iconElem.data('icon'),
+                className = iconMeta.name;
             this.ui.icons.icons.filter('.active').removeClass('active');
 
             if (!fake) {
@@ -216,6 +222,11 @@
             this.ui.properties.name.text(className);
             this.ui.properties.className.text('mdi-' + className);
             this.ui.properties.icon[0].classList = 'mdi mdi-' + className;
+            this.ui.properties.version.text(iconMeta.version);
+            this.ui.properties.versionWrap.toggle(iconMeta.version !== null);
+            this.ui.properties.author.text(iconMeta.author);
+            this.ui.properties.authorWrap.toggle(iconMeta.version !== null);
+            this.ui.properties.codepoint.text(iconMeta.codepoint);
             this.ui.footer.openInMaterialdesignIcons.attr('href',
                 'https://materialdesignicons.com/icon/' + className);
 

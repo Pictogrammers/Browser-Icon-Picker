@@ -209,6 +209,19 @@ footer {
             #icon-name, #icon-class span {
                 -webkit-user-select: text;
             }
+
+            .icon-more {
+                margin: 0;
+                opacity: 0.5;
+
+                #icon-codepoint {
+                    font-family: monospace;
+                }
+
+                #icon-codepoint, #icon-version, #icon-author {
+                    -webkit-user-select: text;
+                }
+            }
         }
     }
 

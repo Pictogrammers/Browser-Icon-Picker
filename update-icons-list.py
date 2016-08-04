@@ -51,34 +51,28 @@ def download_css_and_fonts():
     shutil.rmtree(mdi_workspace)
 
 
-def fetch_icons_list():
-    # Download & parse upstream meta file
-    meta = mdi_upstream.fetch_meta()
+def fetch_meta():
+    upstream_meta = mdi_upstream.fetch_meta()
 
-    if meta is None or len(meta['icons']) == 0:
+    if upstream_meta is None or len(upstream_meta['icons']) == 0:
         print('Could not find variables.')
         sys.exit(1)
 
-    data = {
-        'version': meta['version'],
-        'icons': []
-    }
-    for icon in meta['icons']:
-        icon_name = icon['name']
-        aliases = []
-
+    for icon in upstream_meta['icons']:
         # Compute searchable attribute to enhance filter performances
-        searchable = icon_name.replace('-', ' ')
-        for alias in aliases:
-            searchable += ' ' + alias.replace('-', ' ')
+        searchable = ''
+        for alias in [icon['name']] + icon['aliases']:
+            searchable += alias.replace('-', ' ') + ' '
 
-        data['icons'].append({
-            'name': icon_name,
-            'aliases': aliases,
-            'searchable': searchable
-        })
+        # Remove last blank space from searchable
+        searchable = searchable[:-1]
 
-    return data
+        icon['searchable'] = searchable
+
+        # Remove unused information
+        icon.pop('id')
+
+    return upstream_meta
 
 
 def write_meta_to_file(data, file, pretty):
@@ -98,6 +92,6 @@ download_css_and_fonts()
 print('')
 
 # Download & write meta data to files
-meta = fetch_icons_list()
+meta = fetch_meta()
 write_meta_to_file(meta, meta_output_file, True)
 write_meta_to_file(meta, meta_output_file_min, False)
