@@ -19,6 +19,7 @@
             this.settings = $.extend({}, this.defaults, this.options);
 
             this.ui = {
+                body: $('body'),
                 header: {
                     filter: $('#filter'),
                     version: $('#version')
@@ -127,14 +128,24 @@
             this.ui.footer.author.tooltip({text: 'Quentin S.'});
             this.ui.footer.github.tooltip({text: 'GitHub'});
 
+            // Change accent color on properties icon click
             var colors = [
                 'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green',
                 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange', 'brown', 'grey', 'blue-grey'
             ];
             this.ui.properties.icon.click(function() {
-                var i = colors.indexOf($(this).attr('data-color'))+1;
-                $(this).attr('data-color', colors[i > colors.length-1 ? 0 : i]);
+                if (self.ui.properties.wrap.is('.inactive'))
+                    return;
+
+                var i = colors.indexOf(self.ui.body.attr('data-accent'))+1;
+                var accentColor = colors[i > colors.length-1 ? 0 : i];
+                self.ui.body.attr('data-accent', accentColor);
+
+                localStorage.setItem('color-accent', accentColor);
             });
+            var accentColor = localStorage.getItem('color-accent');
+            accentColor = accentColor || 'orange';
+            this.ui.body.attr('data-accent', accentColor)
         },
 
         fetchIcons: function() {

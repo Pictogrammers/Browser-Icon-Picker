@@ -6,7 +6,6 @@
 
 $roboto: Roboto, Arial, sans-serif;
 $color-primary: material-color($color-blue, 500);
-$color-accent: material-color($color-orange, 500);
 $icons-color: #565656;
 $icons-color-hover: #fff;
 $background: #fafafa;
@@ -147,11 +146,26 @@ header {
         &:hover, &.active {
             color: $icons-color-hover;
             border-color: rgba(#000, 0.1);
-            background-color: $color-accent;
         }
 
         &.active {
             @extend .elevation-lowest;
+        }
+    }
+}
+
+// Accent color change on footer #icon-icon click
+@each $color, $shades in $colors {
+    body[data-accent="#{$color}"] {
+        .icons .mdi:hover,
+        .icons .mdi.active,
+        footer #icon-properties #icon-icon {
+            background-color: map-get($shades, 500);
+        }
+
+        footer #icon-properties:not(.inactive) #icon-icon:hover {
+            background-color: darken(map-get($shades, 500), 5);
+            @extend .elevation-2;
         }
     }
 }
@@ -180,13 +194,12 @@ footer {
             font-size: 35px;
             margin: 5px 20px 5px 5px;
             border-radius: 50%;
+            transition-duration: $timing-short;
             @extend .elevation-lowest;
+        }
 
-            @each $color, $shades in $colors {
-                &[data-color="#{$color}"] {
-                    background-color: map-get($shades, 500);
-                }
-            }
+        &:not(.inactive) #icon-icon {
+            cursor: pointer;
         }
 
         .properties {
