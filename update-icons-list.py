@@ -3,6 +3,7 @@
 
 import os
 import sys
+import re
 import urllib.request
 import json
 import zipfile
@@ -51,6 +52,13 @@ def download_css_and_fonts():
     shutil.rmtree(mdi_workspace)
 
 
+def scan_css_selectors():
+    with open('data/browser-action/css/materialdesignicons.css', 'r') as fh:
+        raw_css = fh.read().replace('\n', '')
+
+    return re.findall('\.mdi-([a-z-\d]*):before', raw_css)
+
+
 def fetch_meta():
     upstream_meta = mdi_upstream.fetch_meta()
 
@@ -95,3 +103,22 @@ print('')
 meta = fetch_meta()
 write_meta_to_file(meta, meta_output_file, True)
 write_meta_to_file(meta, meta_output_file_min, False)
+
+# Check if there are differences between css file & metadata file
+css_selectors = scan_css_selectors()
+meta_icons = [icon['name'] for icon in meta['icons']]
+not_in_css = set(meta_icons).difference(css_selectors)
+not_in_meta = set(css_selectors).difference(meta_icons)
+
+if len(not_in_css) > 0 or len(not_in_meta) > 0:
+    print('')
+
+if len(not_in_css) > 0:
+    print('Warning: these icons are missing from materialdesignicons.css:')
+    for icon in sorted(not_in_css):
+        print('  - {}'.format(icon))
+
+if len(not_in_meta) > 0:
+    print('Warning: these icons are missing from metadata:')
+    for icon in sorted(not_in_meta):
+        print('  - {}'.format(icon))
