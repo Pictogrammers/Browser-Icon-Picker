@@ -42,6 +42,7 @@
                 },
                 footer: {
                     openInMaterialdesignIcons: $('#action-open-in-materialdesignicons'),
+                    random: $('#action-random'),
                     author: $('#action-author'),
                     github: $('#action-github')
                 }
@@ -125,8 +126,14 @@
 
             // Footer tooltips
             this.ui.footer.openInMaterialdesignIcons.tooltip({text: 'Open in MaterialDesignIcons.com'});
+            this.ui.footer.random.tooltip({text: 'Random icon'});
             this.ui.footer.author.tooltip({text: 'Quentin S.'});
             this.ui.footer.github.tooltip({text: 'GitHub'});
+
+            // Footer actions
+            this.ui.footer.random.click(function() {
+                self.setActiveIcon(self.getRandomIcon(), false, true);
+            });
 
             // Change accent color on properties icon click
             var colors = [
@@ -210,12 +217,16 @@
             this.ui.header.version.text('v' + window.MaterialDesignIcons.version);
 
             // Set random icon as selected
-            this.setActiveIcon($(this.ui.icons.icons.get(
-                randomInt(0, this.ui.icons.icons.length-1)
-            )), true);
+            this.setActiveIcon(this.getRandomIcon(), true);
             this.ui.icons.icons.filter('.active').removeClass('active');
 
             this.ui.header.filter.focus();
+        },
+
+        getRandomIcon: function() {
+            return $(this.ui.icons.icons.get(
+                randomInt(0, this.ui.icons.icons.length-1)
+            ));
         },
 
         setActiveIcon: function(iconElem, fake, ensureVisible) {
