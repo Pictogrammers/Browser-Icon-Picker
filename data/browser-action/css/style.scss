@@ -69,35 +69,61 @@ header {
         opacity: 0.7;
     }
 
-    #filter {
-        $left-margin: 45px;
-        width: calc(100% - #{$left-margin});
-        margin: 5px 0 5px $left-margin;
-        padding: 6px 2px;
-        font-family: $roboto;
-        font-size: 15px;
-        color: #fff;
-        outline: none;
-        border: 0;
-        background: transparent;
-        transition-duration: $timing-medium;
-        box-shadow: 0 1px rgba(#ffffff, 0.7);
+    .filter-wrap {
+        position: relative;
 
-        &:active, &:focus {
-            box-shadow: 0 2px rgba(#ffffff, 0.9);
+        #filter {
+            $left-margin: 45px;
+            width: calc(100% - #{$left-margin});
+            margin: 5px 0 5px $left-margin;
+            padding: 6px 2px;
+            font-family: $roboto;
+            font-size: 15px;
+            color: #fff;
+            outline: none;
+            border: 0;
+            background: transparent;
+            transition-duration: $timing-medium;
+            box-shadow: 0 1px rgba(#ffffff, 0.7);
+
+            &:active, &:focus {
+                box-shadow: 0 2px rgba(#ffffff, 0.9);
+            }
         }
-    }
-    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-        color: #fff;
-        opacity: 0.7;
-    }
-    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-        color: #fff;
-        opacity: 0.7;
-    }
-    ::-moz-placeholder { /* Mozilla Firefox 19+ */
-        color: #fff;
-        opacity: 0.7;
+        ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            color: #fff;
+            opacity: 0.7;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: #fff;
+            opacity: 0.7;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: #fff;
+            opacity: 0.7;
+        }
+
+        i.mdi-close {
+            $size: 16px;
+            position: absolute;
+            z-index: 1;
+            right: $size/2;
+            top: 50%;
+            margin-top: -$size/2;
+            opacity: 0.8;
+            transition-duration: $timing-short;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &.hidden {
+                opacity: 0;
+            }
+
+            &:before { font-size: $size; }
+        }
     }
 }
 

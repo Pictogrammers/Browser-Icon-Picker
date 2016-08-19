@@ -22,6 +22,7 @@
                 body: $('body'),
                 header: {
                     filter: $('#filter'),
+                    filterClear: $('#filter-clear'),
                     version: $('#version')
                 },
                 icons: {
@@ -62,14 +63,21 @@
 
                 if ($.trim(value).length == 0) {
                     self.ui.icons.icons.show();
+                    self.ui.header.filterClear.addClass('hidden');
                     return;
                 }
+                self.ui.header.filterClear.removeClass('hidden');
 
                 window.MaterialDesignIcons.icons.forEach(function(icon) {
                     icon.domElem.toggle(
                         icon.searchable.indexOf(value) != -1
                     );
                 });
+            });
+            this.ui.header.filterClear.click(function() {
+                self.ui.header.filter
+                    .val('')
+                    .trigger('keyup');
             });
 
             // Bind arrow keys

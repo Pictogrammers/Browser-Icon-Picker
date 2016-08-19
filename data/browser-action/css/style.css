@@ -116,32 +116,49 @@ header {
   header #version {
     margin-left: 5px;
     opacity: 0.7; }
-  header #filter {
-    width: calc(100% - 45px);
-    margin: 5px 0 5px 45px;
-    padding: 6px 2px;
-    font-family: Roboto, Arial, sans-serif;
-    font-size: 15px;
-    color: #fff;
-    outline: none;
-    border: 0;
-    background: transparent;
-    transition-duration: 250ms;
-    box-shadow: 0 1px rgba(255, 255, 255, 0.7); }
-    header #filter:active, header #filter:focus {
-      box-shadow: 0 2px rgba(255, 255, 255, 0.9); }
-  header ::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge */
-    color: #fff;
-    opacity: 0.7; }
-  header :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #fff;
-    opacity: 0.7; }
-  header ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #fff;
-    opacity: 0.7; }
+  header .filter-wrap {
+    position: relative; }
+    header .filter-wrap #filter {
+      width: calc(100% - 45px);
+      margin: 5px 0 5px 45px;
+      padding: 6px 2px;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      color: #fff;
+      outline: none;
+      border: 0;
+      background: transparent;
+      transition-duration: 250ms;
+      box-shadow: 0 1px rgba(255, 255, 255, 0.7); }
+      header .filter-wrap #filter:active, header .filter-wrap #filter:focus {
+        box-shadow: 0 2px rgba(255, 255, 255, 0.9); }
+    header .filter-wrap ::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #fff;
+      opacity: 0.7; }
+    header .filter-wrap :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #fff;
+      opacity: 0.7; }
+    header .filter-wrap ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #fff;
+      opacity: 0.7; }
+    header .filter-wrap i.mdi-close {
+      position: absolute;
+      z-index: 1;
+      right: 8px;
+      top: 50%;
+      margin-top: -8px;
+      opacity: 0.8;
+      transition-duration: 150ms;
+      cursor: pointer; }
+      header .filter-wrap i.mdi-close:hover {
+        opacity: 1; }
+      header .filter-wrap i.mdi-close.hidden {
+        opacity: 0; }
+      header .filter-wrap i.mdi-close:before {
+        font-size: 16px; }
 
 .content {
   position: relative; }
