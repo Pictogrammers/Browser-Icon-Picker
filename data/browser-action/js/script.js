@@ -80,15 +80,18 @@
                     return;
 
                 var iconWrap = self.ui.icons.icons.filter('.active'),
-                    rows = Math.floor(self.ui.icons.icons.length/cols),
-                    index = iconWrap.index();
+                    visibleIcons = self.ui.icons.icons.filter(':visible'),
+                    rows = Math.ceil(visibleIcons.length/cols),
+                    index = visibleIcons.index(iconWrap);
 
                 // Nothing's selected
                 if (index == -1)
                     return;
 
-                var row = iconWrap.data('row'),
-                    col = iconWrap.data('col');
+                var row = Math.floor(index/cols)+1,
+                    col = (index % cols)+1;
+
+                //var _row = row, _col = col;
 
                 switch(e.which) {
                     case 37: // left
@@ -118,8 +121,15 @@
                     || col == 0 || col > cols)
                     return;
 
-                var newIndex = (row-1) * cols + col - 1;
-                self.setActiveIcon($(self.ui.icons.icons[newIndex]), false, true);
+                //console.log('[' + _row + ', ' + _col + '] => [' + row + ', ' + col + ']');
+
+                var newIndex = (row-1) * cols + col - 1,
+                    newIcon = $(visibleIcons[newIndex]);
+
+                if (!newIcon.length)
+                    return;
+
+                self.setActiveIcon(newIcon, false, true);
 
                 e.preventDefault();
             });
@@ -181,25 +191,18 @@
             iModel.classList.add('mdi');
 
             var index = 0,
-                col,
-                row = 1,
                 icon;
 
             for (var y=0, l=window.MaterialDesignIcons.icons.length; y<l; y++) {
                 icon = window.MaterialDesignIcons.icons[y];
-                col = (index % cols)+1;
 
                 var i = iModel.cloneNode(false);
                 i.classList.add('mdi-' + icon.name);
 
                 icon.domElem = $(i)
                     .data('icon', icon)
-                    .data('col', col)
-                    .data('row', row)
                     .appendTo(self.ui.icons.list);
 
-                if (col == cols)
-                    row++;
                 index++;
             }
             self.ui.icons.icons = self.ui.icons.list.children();
