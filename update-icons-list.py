@@ -60,7 +60,7 @@ def scan_css_selectors():
 
 
 def fetch_meta():
-    upstream_meta = mdi_upstream.fetch_meta()
+    upstream_meta = mdi_upstream.fetch_meta(None, True)
 
     if upstream_meta is None or len(upstream_meta['icons']) == 0:
         print('Could not find variables.')
