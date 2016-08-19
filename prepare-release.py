@@ -23,7 +23,7 @@ files_generic = [
     'data/browser-action/vendor/jquery-3.1.0.min.js',
     'data/browser-action/index.html',
 
-    'data/icons.min.js',
+    'data/icons.min.json',
 
     'data/img/icon-*x*.png',
 
