@@ -254,7 +254,7 @@
             }
             this.ui.properties.name.text(className);
             this.ui.properties.className.text('mdi-' + className);
-            this.ui.properties.icon[0].classList = 'mdi mdi-' + className;
+            this.ui.properties.icon[0].classList = 'mdi-set mdi-' + className;
             this.ui.properties.version.text(iconMeta.version);
             this.ui.properties.versionWrap.toggle(iconMeta.version !== null);
             this.ui.properties.author.text(iconMeta.author);
