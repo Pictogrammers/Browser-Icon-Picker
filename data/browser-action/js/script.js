@@ -143,7 +143,16 @@
             });
 
             // Footer tooltips
-            this.ui.footer.openInMaterialdesignIcons.tooltip({text: 'Open in MaterialDesignIcons.com'});
+            this.ui.footer.openInMaterialdesignIcons.tooltip({
+                text: function() {
+                    var activeIcon = self.ui.icons.icons.filter('.active'),
+                        activeIconName = activeIcon.length > 0
+                        ? ' ' + activeIcon.data('icon').name + ' '
+                        : ' ';
+
+                    return 'Open' + activeIconName + 'in MaterialDesignIcons.com';
+                }
+            });
             this.ui.footer.random.tooltip({text: 'Random icon'});
             this.ui.footer.author.tooltip({text: 'Quentin S.'});
             this.ui.footer.github.tooltip({text: 'GitHub'});

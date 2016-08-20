@@ -28,15 +28,15 @@
                     .appendTo(this.body);
             }
 
-            if (typeof this.settings.text != 'string')
-                this.settings.text = this.settings.text(this.elem);
-
             this.elem.mouseenter(function() {
                 var tooltip = self.tooltip,
                     elem = self.elem,
                     body = self.body;
 
-                self.tooltip.text(self.settings.text);
+                var text = typeof self.settings.text != 'string'
+                    ? self.settings.text(self.elem)
+                    : self.settings.text;
+                self.tooltip.text(text);
 
                 // Show tooltip so we can get its width
                 tooltip.show();
