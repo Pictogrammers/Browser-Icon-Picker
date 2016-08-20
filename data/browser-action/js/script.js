@@ -44,9 +44,14 @@
                 footer: {
                     openInMaterialdesignIcons: $('#action-open-in-materialdesignicons'),
                     random: $('#action-random'),
+                    randomColors: $('#action-random-colors'),
                     author: $('#action-author'),
                     github: $('#action-github')
-                }
+                },
+                colors: [
+                    'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green',
+                    'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange', 'brown', 'grey', 'blue-grey'
+                ]
             };
 
             this.prepareUI();
@@ -154,6 +159,7 @@
                 }
             });
             this.ui.footer.random.tooltip({text: 'Random icon'});
+            this.ui.footer.randomColors.tooltip({text: 'Random colors'});
             this.ui.footer.author.tooltip({text: 'Quentin S.'});
             this.ui.footer.github.tooltip({text: 'GitHub'});
 
@@ -162,17 +168,29 @@
                 self.setActiveIcon(self.getRandomIcon(), false, true);
             });
 
+            this.ui.footer.randomColors.click(function() {
+                if ($(this).is('.active')) {
+                    // Remove custom colors
+                    self.ui.icons.icons.removeAttr('data-color');
+                } else {
+                    // Choose a random color for each icon
+                    for (var i=0, l=self.ui.icons.icons.length; i<l; i++) {
+                        $(self.ui.icons.icons[i]).attr(
+                            'data-color', self.ui.colors[randomInt(0, self.ui.colors.length-1)]
+                        );
+                    }
+                }
+
+                $(this).toggleClass('active');
+            });
+
             // Change accent color on properties icon click
-            var colors = [
-                'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green',
-                'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange', 'brown', 'grey', 'blue-grey'
-            ];
             this.ui.properties.icon.click(function() {
                 if (self.ui.properties.wrap.is('.inactive'))
                     return;
 
-                var i = colors.indexOf(self.ui.body.attr('data-accent'))+1;
-                var accentColor = colors[i > colors.length-1 ? 0 : i];
+                var i = self.ui.colors.indexOf(self.ui.body.attr('data-accent'))+1;
+                var accentColor = self.ui.colors[i > self.ui.colors.length-1 ? 0 : i];
                 self.ui.body.attr('data-accent', accentColor);
 
                 localStorage.setItem('color-accent', accentColor);

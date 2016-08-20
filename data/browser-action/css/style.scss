@@ -172,12 +172,19 @@ header {
         overflow: hidden;
 
         &:hover, &.active {
-            color: $icons-color-hover;
+            color: $icons-color-hover!important;
             border-color: rgba(#000, 0.1);
         }
 
         &.active {
             @extend .elevation-lowest;
+        }
+
+        // Random colors
+        @each $color, $shades in $colors {
+            &[data-color="#{$color}"] {
+                color: map-get($shades, 500);
+            }
         }
     }
 }
@@ -289,9 +296,13 @@ footer {
             margin-right: 2px;
             padding: 7px;
 
-            &:hover {
+            &:hover, &.active {
                 color: $color-primary;
                 background-color: rgba(#fff, 0.95);
+
+                &.active {
+                    @extend .elevation-tiny;
+                }
             }
         }
     }

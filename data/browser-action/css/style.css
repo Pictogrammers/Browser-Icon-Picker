@@ -62,7 +62,7 @@
 .background-color-blue-grey {
   background-color: #607D8B; }
 
-.elevation-tiny {
+.elevation-tiny, footer .bar .btn-sm-round.active:hover, footer .bar .btn-sm-round.active {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
 .elevation-1, .elevation-lowest, .icons .mdi.active, footer, footer #icon-properties #icon-icon {
@@ -196,8 +196,46 @@ header {
     font-size: 24px;
     overflow: hidden; }
     .icons .mdi:hover, .icons .mdi.active {
-      color: #fff;
+      color: #fff !important;
       border-color: rgba(0, 0, 0, 0.1); }
+    .icons .mdi[data-color="red"] {
+      color: #F44336; }
+    .icons .mdi[data-color="pink"] {
+      color: #E91E63; }
+    .icons .mdi[data-color="purple"] {
+      color: #9C27B0; }
+    .icons .mdi[data-color="deep-purple"] {
+      color: #673AB7; }
+    .icons .mdi[data-color="indigo"] {
+      color: #3F51B5; }
+    .icons .mdi[data-color="blue"] {
+      color: #2196F3; }
+    .icons .mdi[data-color="light-blue"] {
+      color: #03A9F4; }
+    .icons .mdi[data-color="cyan"] {
+      color: #00BCD4; }
+    .icons .mdi[data-color="teal"] {
+      color: #009688; }
+    .icons .mdi[data-color="green"] {
+      color: #4CAF50; }
+    .icons .mdi[data-color="light-green"] {
+      color: #8BC34A; }
+    .icons .mdi[data-color="lime"] {
+      color: #CDDC39; }
+    .icons .mdi[data-color="yellow"] {
+      color: #FFEB3B; }
+    .icons .mdi[data-color="amber"] {
+      color: #FFC107; }
+    .icons .mdi[data-color="orange"] {
+      color: #FF9800; }
+    .icons .mdi[data-color="deep-orange"] {
+      color: #FF5722; }
+    .icons .mdi[data-color="brown"] {
+      color: #795548; }
+    .icons .mdi[data-color="grey"] {
+      color: #9E9E9E; }
+    .icons .mdi[data-color="blue-grey"] {
+      color: #607D8B; }
 
 body[data-accent="red"] .icons .mdi:hover,
 body[data-accent="red"] .icons .mdi.active,
@@ -393,7 +431,7 @@ footer .bar {
     border-radius: 50%;
     margin-right: 2px;
     padding: 7px; }
-    footer .bar .btn-sm-round:hover {
+    footer .bar .btn-sm-round:hover, footer .bar .btn-sm-round.active {
       color: #2196F3;
       background-color: rgba(255, 255, 255, 0.95); }
 
