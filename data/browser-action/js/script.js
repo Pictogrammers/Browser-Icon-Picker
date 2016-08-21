@@ -83,6 +83,8 @@
                 self.ui.header.filter
                     .val('')
                     .trigger('keyup');
+
+                self.ui.header.filter.focus();
             });
 
             // Bind arrow keys
