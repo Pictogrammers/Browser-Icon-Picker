@@ -185,6 +185,7 @@
                 }
 
                 $(this).toggleClass('active');
+                localStorage.setItem('random-colors', $(this).is('.active'));
             });
 
             // Change accent color on properties icon click
@@ -259,6 +260,10 @@
             });
 
             this.ui.header.version.text('v' + window.MaterialDesignIcons.version);
+
+            // Restore "random colors" state
+            if ((localStorage.getItem('random-colors') || "false") == "true")
+                this.ui.footer.randomColors.click();
 
             this.ui.header.filter.focus();
         },
