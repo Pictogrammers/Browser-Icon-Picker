@@ -46,7 +46,7 @@
                     elemOuterWidth = elem.outerWidth(true),
                     tooltipOuterWidth = tooltip.outerWidth(true),
                     tooltipOuterHeight = tooltip.outerHeight(true),
-                    top = elem.position().top + elemOuterHeight,
+                    top = elem.offset().top + elemOuterHeight,
                     left = elem.position().left + elemOuterWidth/2 - tooltipOuterWidth / 2;
 
                 tooltip
@@ -60,7 +60,7 @@
                     tooltip.css('left', body.width() - tooltipOuterWidth - 15);
 
                 if (top + tooltipOuterHeight > body.height())
-                    tooltip.css('top', elem.position().top - tooltipOuterHeight - 3);
+                    tooltip.css('top', elem.offset().top - tooltipOuterHeight - 3);
             }).mouseleave(function() {
                 self.tooltip.hide();
             })

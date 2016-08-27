@@ -153,17 +153,17 @@
             // Footer tooltips
             this.ui.footer.openInMaterialdesignIcons.tooltip({
                 text: function() {
-                    var activeIcon = self.ui.icons.icons.filter('.active'),
-                        activeIconName = activeIcon.length > 0
-                        ? ' ' + activeIcon.data('icon').name + ' '
-                        : ' ';
+                    var activeIcon = self.ui.icons.icons.filter('.active');
 
-                    return 'Open' + activeIconName + 'in MaterialDesignIcons.com';
+                    if (!activeIcon.length)
+                        return 'Open MaterialDesignIcons.com';
+                    else
+                        return 'Open ' + activeIcon.data('icon').name + ' in MaterialDesignIcons.com';
                 }
             });
             this.ui.footer.random.tooltip({text: 'Random icon'});
             this.ui.footer.randomColors.tooltip({text: 'Random colors'});
-            this.ui.footer.author.tooltip({text: 'Quentin S.'});
+            this.ui.footer.author.tooltip({text: 'Made with <3 by Quentin S.'});
             this.ui.footer.github.tooltip({text: 'GitHub'});
 
             // Footer actions

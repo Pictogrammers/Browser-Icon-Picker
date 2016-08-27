@@ -281,7 +281,8 @@ header {
       border-radius: 2px;
       color: #a5c25c;
       background: #2b2b2b;
-      overflow-x: hidden; }
+      overflow-x: hidden;
+      text-overflow: ellipsis; }
     #icon-properties .properties #icon-name, #icon-properties .properties #icon-class span {
       -webkit-user-select: text; }
     #icon-properties .properties .icon-more {
