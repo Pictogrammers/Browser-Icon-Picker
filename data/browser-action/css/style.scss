@@ -186,12 +186,14 @@ header {
         &.active {
             @extend .elevation-lowest;
         }
+    }
+}
 
-        // Random colors
-        @each $color, $shades in $colors {
-            &[data-color="#{$color}"] {
-                color: map-get($shades, 500);
-            }
+// Random icons colors
+body.random-icon-colors {
+    @for $i from 1 through length($colors) {
+        .icons .mdi:nth-child(#{$i}n) {
+            color: map-get(nth(map-values($colors), $i), 500);
         }
     }
 }
@@ -277,7 +279,7 @@ header {
             background-color: map-get($shades, 500);
         }
 
-        #icon-properties:not(.inactive) #icon-icon:hover {
+        #icon-properties #icon-icon:hover {
             background-color: darken(map-get($shades, 500), 5);
             @extend .elevation-2;
         }

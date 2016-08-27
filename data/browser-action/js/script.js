@@ -172,20 +172,9 @@
             });
 
             this.ui.footer.randomColors.click(function() {
-                if ($(this).is('.active')) {
-                    // Remove custom colors
-                    self.ui.icons.icons.removeAttr('data-color');
-                } else {
-                    // Choose a random color for each icon
-                    for (var i=0, l=self.ui.icons.icons.length; i<l; i++) {
-                        $(self.ui.icons.icons[i]).attr(
-                            'data-color', self.ui.colors[randomInt(0, self.ui.colors.length-1)]
-                        );
-                    }
-                }
-
-                $(this).toggleClass('active');
-                localStorage.setItem('random-colors', $(this).is('.active'));
+                var randomColors = !$(this).is('.active');
+                self.setRandomIconsColors(randomColors);
+                localStorage.setItem('random-colors', randomColors);
             });
 
             // Change accent color on properties icon click
@@ -200,7 +189,15 @@
             accentColor = accentColor || 'orange';
             this.ui.body.attr('data-accent', accentColor);
 
+            // Restore "random colors" state
+            this.setRandomIconsColors((localStorage.getItem('random-colors') || 'false') == 'true');
+
             this.iconsListInitialHeight = this.ui.icons.list.height();
+        },
+
+        setRandomIconsColors: function(state) {
+            this.ui.body.toggleClass('random-icon-colors', state);
+            this.ui.footer.randomColors.toggleClass('active', state);
         },
 
         fetchIcons: function() {
@@ -260,10 +257,6 @@
             });
 
             this.ui.header.version.text('v' + window.MaterialDesignIcons.version);
-
-            // Restore "random colors" state
-            if ((localStorage.getItem('random-colors') || "false") == "true")
-                this.ui.footer.randomColors.click();
 
             this.ui.header.filter.focus();
         },
