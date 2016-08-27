@@ -12,8 +12,7 @@
 
     MaterialDesignIconsPicker.prototype = {
         ui: {},
-        defaults: {
-        },
+        defaults: {},
 
         init: function() {
             this.settings = $.extend({}, this.defaults, this.options);
@@ -25,13 +24,15 @@
                     filterClear: $('#filter-clear'),
                     version: $('#version')
                 },
+                content: $('.content'),
                 icons: {
                     list: $('#icons-list'),
                     loading: $('#loading'),
                     icons: null
                 },
                 properties: {
-                    wrap: $('#icon-properties'),
+                    wrap: $('.icon-properties-wrap'),
+                    elem: $('#icon-properties'),
                     icon: $('#icon-icon'),
                     name: $('#icon-name'),
                     className: $('#icon-class').find('span'),
@@ -144,7 +145,7 @@
                 if (!newIcon.length)
                     return;
 
-                self.setActiveIcon(newIcon, false, true);
+                self.setActiveIcon(newIcon, true);
 
                 e.preventDefault();
             });
@@ -167,7 +168,7 @@
 
             // Footer actions
             this.ui.footer.random.click(function() {
-                self.setActiveIcon(self.getRandomIcon(), false, true);
+                self.setActiveIcon(self.getRandomIcon(), true);
             });
 
             this.ui.footer.randomColors.click(function() {
@@ -188,9 +189,6 @@
 
             // Change accent color on properties icon click
             this.ui.properties.icon.click(function() {
-                if (self.ui.properties.wrap.is('.inactive'))
-                    return;
-
                 var i = self.ui.colors.indexOf(self.ui.body.attr('data-accent'))+1;
                 var accentColor = self.ui.colors[i > self.ui.colors.length-1 ? 0 : i];
                 self.ui.body.attr('data-accent', accentColor);
@@ -199,7 +197,9 @@
             });
             var accentColor = localStorage.getItem('color-accent');
             accentColor = accentColor || 'orange';
-            this.ui.body.attr('data-accent', accentColor)
+            this.ui.body.attr('data-accent', accentColor);
+
+            this.iconsListInitialHeight = this.ui.icons.list.height();
         },
 
         fetchIcons: function() {
@@ -243,8 +243,12 @@
                 index++;
             }
             self.ui.icons.icons = self.ui.icons.list.children();
-            self.ui.icons.list.on('click', '.mdi', function() {
+            this.ui.icons.list.click(function() {
+                self.setActiveIcon(null);
+            });
+            self.ui.icons.list.on('click', '.mdi', function(e) {
                 self.setActiveIcon($(this));
+                e.stopPropagation();
             });
 
             // Add tooltips
@@ -256,10 +260,6 @@
 
             this.ui.header.version.text('v' + window.MaterialDesignIcons.version);
 
-            // Set random icon as selected
-            this.setActiveIcon(this.getRandomIcon(), true);
-            this.ui.icons.icons.filter('.active').removeClass('active');
-
             this.ui.header.filter.focus();
         },
 
@@ -269,43 +269,51 @@
             ));
         },
 
-        setActiveIcon: function(iconElem, fake, ensureVisible) {
-            fake = fake || false;
+        setActiveIcon: function(iconElem, ensureVisible) {
             ensureVisible = ensureVisible || false;
 
-            var iconMeta = iconElem.data('icon'),
-                className = iconMeta.name;
             this.ui.icons.icons.filter('.active').removeClass('active');
 
-            if (!fake) {
+            // We unselected current icon, let's finish here
+            if (iconElem != null) {
+                var iconMeta = iconElem.data('icon'),
+                    className = iconMeta.name;
                 iconElem.addClass('active');
-                this.ui.properties.wrap.removeClass('inactive');
+
+                this.ui.properties.name.text(className);
+                this.ui.properties.className.text('mdi-' + className);
+                this.ui.properties.icon[0].classList = 'mdi-set mdi-' + className;
+                this.ui.properties.version.text(iconMeta.version);
+                this.ui.properties.versionWrap.toggle(iconMeta.version !== null);
+                this.ui.properties.author.text(iconMeta.author);
+                this.ui.properties.authorWrap.toggle(iconMeta.version !== null);
+                this.ui.properties.codepoint.text(iconMeta.codepoint);
+                this.ui.footer.openInMaterialdesignIcons.attr('href',
+                    'https://materialdesignicons.com/icon/' + className);
+
+                if (ensureVisible) {
+                    var offset = iconElem.offset().top - iconElem.parent().offset().top;
+                    var iconElemHeight = iconElem.outerHeight(true);
+
+                    var scrollTop = iconElem.parent().scrollTop(),
+                        initialScrollTop = scrollTop;
+                    if (offset - 5 < 0)
+                        scrollTop += offset - 5;
+                    else if (offset + iconElemHeight > iconElem.parent().height())
+                        scrollTop += offset + iconElemHeight - iconElem.parent().height();
+
+                    if (scrollTop != initialScrollTop)
+                        iconElem.parent().scrollTop(scrollTop);
+                }
             }
-            this.ui.properties.name.text(className);
-            this.ui.properties.className.text('mdi-' + className);
-            this.ui.properties.icon[0].classList = 'mdi-set mdi-' + className;
-            this.ui.properties.version.text(iconMeta.version);
-            this.ui.properties.versionWrap.toggle(iconMeta.version !== null);
-            this.ui.properties.author.text(iconMeta.author);
-            this.ui.properties.authorWrap.toggle(iconMeta.version !== null);
-            this.ui.properties.codepoint.text(iconMeta.codepoint);
-            this.ui.footer.openInMaterialdesignIcons.attr('href',
-                'https://materialdesignicons.com/icon/' + className);
 
-            if (ensureVisible) {
-                var offset = iconElem.offset().top - iconElem.parent().offset().top;
-                var iconElemHeight = iconElem.outerHeight(true);
-
-                var scrollTop = iconElem.parent().scrollTop(),
-                    initialScrollTop = scrollTop;
-                if (offset - 5 < 0)
-                    scrollTop += offset - 5;
-                else if (offset + iconElemHeight > iconElem.parent().height())
-                    scrollTop += offset + iconElemHeight - iconElem.parent().height();
-
-                if (scrollTop != initialScrollTop)
-                    iconElem.parent().scrollTop(scrollTop);
-            }
+            // Update properties height
+            var autoHeight = iconElem != null
+                ? this.ui.properties.elem[0].scrollHeight
+                : 0;
+            this.ui.properties.wrap.css('height', autoHeight);
+            this.ui.content.css('padding-bottom', autoHeight);
+            this.ui.icons.list.css('height', this.iconsListInitialHeight-autoHeight);
         }
     };
 
