@@ -486,6 +486,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6B1",
+            "name": "angular",
+            "searchable": "angular",
+            "version": "1.7.22"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F5D8",
             "name": "animation",
@@ -4397,6 +4405,14 @@
             "version": "1.7.12"
         },
         {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6B2",
+            "name": "dolby",
+            "searchable": "dolby",
+            "version": "1.7.22"
+        },
+        {
             "aliases": [
                 "building",
                 "company"
@@ -4640,6 +4656,14 @@
             "name": "email-variant",
             "searchable": "email variant",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Christopher Schreiner",
+            "codepoint": "F6B3",
+            "name": "emby",
+            "searchable": "emby",
+            "version": "1.7.22"
         },
         {
             "aliases": [],
@@ -7453,6 +7477,14 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F6B4",
+            "name": "lamp",
+            "searchable": "lamp",
+            "version": "1.7.22"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F317",
             "name": "lan",
@@ -8106,6 +8138,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F6B5",
+            "name": "menu-down-outline",
+            "searchable": "menu down outline",
+            "version": "1.7.22"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F35E",
             "name": "menu-left",
             "searchable": "menu left",
@@ -8126,6 +8166,14 @@
             "name": "menu-up",
             "searchable": "menu up",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6B6",
+            "name": "menu-up-outline",
+            "searchable": "menu up outline",
+            "version": "1.7.22"
         },
         {
             "aliases": [],
@@ -8685,6 +8733,22 @@
             "name": "note",
             "searchable": "note",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6B7",
+            "name": "note-multiple",
+            "searchable": "note multiple",
+            "version": "1.7.22"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6B8",
+            "name": "note-multiple-outline",
+            "searchable": "note multiple outline",
+            "version": "1.7.22"
         },
         {
             "aliases": [],
@@ -9650,6 +9714,14 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F6BA",
+            "name": "plane-shield",
+            "searchable": "plane shield",
+            "version": "1.7.22"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F40A",
             "name": "play",
@@ -9745,6 +9817,14 @@
             "name": "playstation",
             "searchable": "playstation",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Christopher Schreiner",
+            "codepoint": "F6B9",
+            "name": "plex",
+            "searchable": "plex",
+            "version": "1.7.22"
         },
         {
             "aliases": [
@@ -13795,5 +13875,5 @@
             "version": "1.7.12"
         }
     ],
-    "version": "1.7.12"
+    "version": "1.7.22"
 }
