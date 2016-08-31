@@ -1,3 +1,4 @@
 .idea
 release/
+bower_components/
 data/browser-action/css/style.css*

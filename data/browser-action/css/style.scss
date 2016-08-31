@@ -3,9 +3,10 @@
  */
 
 @import 'material';
+@import '../../../bower_components/material-scss-colors/dist/material-colors';
 
 $roboto: Roboto, Arial, sans-serif;
-$color-primary: material-color($color-blue, 500);
+$color-primary: $color-blue;
 $icons-color: #565656;
 $icons-color-hover: #fff;
 $background: #fafafa;
@@ -193,7 +194,7 @@ header {
 body.random-icon-colors {
     @for $i from 1 through length($colors) {
         .icons .mdi:nth-child(#{$i}n) {
-            color: map-get(nth(map-values($colors), $i), 500);
+            color: map-get(nth(map-values($colors), $i), "500");
         }
     }
 }
@@ -276,11 +277,11 @@ body.random-icon-colors {
         .icons .mdi:hover,
         .icons .mdi.active,
         #icon-properties #icon-icon {
-            background-color: map-get($shades, 500);
+            background-color: map-get($shades, "500");
         }
 
         #icon-properties #icon-icon:hover {
-            background-color: darken(map-get($shades, 500), 5);
+            background-color: darken(map-get($shades, "500"), 5);
             @extend .elevation-2;
         }
     }
