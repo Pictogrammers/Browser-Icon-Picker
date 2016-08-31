@@ -435,6 +435,7 @@ footer {
   background-color: #2196F3; }
   footer i {
     font-size: 20px;
+    line-height: 20px;
     transition-duration: 150ms; }
   footer .left {
     float: left; }
