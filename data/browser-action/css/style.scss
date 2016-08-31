@@ -17,6 +17,10 @@ $icon-border: 1px;
 $iconsList-height: 7.5 * ($icon-size + 2*($icon-margin+$icon-border+$icon-padding));
 $transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); // According to material guidelines
 
+// Remove "yellow" from colors list
+$colors: map-remove($colors, "yellow");
+
+
 // Chrome popup default font style
 body {
     font-family: $roboto;
