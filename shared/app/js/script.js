@@ -203,8 +203,8 @@
         fetchIcons: function() {
             var self = this,
                 url = typeof(chrome) !== 'undefined' && chrome.extension !== undefined
-                    ? chrome.extension.getURL('data/icons.min.json')
-                    : '../icons.min.json'; // <- when debugging extension directly from index.html
+                    ? chrome.extension.getURL('shared/data/icons.min.json')
+                    : '../data/icons.min.json'; // <- when debugging extension directly from index.html
 
             $.ajax({
                 dataType: 'json',
