@@ -5,13 +5,10 @@
 @import 'material';
 @import '../../../bower_components/material-scss-colors/dist/material-colors';
 
-// Flavors
-@import 'flavor-electron';
-@import 'flavor-webExtension';
-
 
 $roboto: Roboto, Arial, sans-serif;
 $color-primary: $color-blue;
+$color-primary-dark: $color-blue-700;
 $icons-color: #565656;
 $icons-color-hover: #fff;
 $background: #fafafa;
@@ -23,6 +20,10 @@ $transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); // According to mat
 
 // Remove "yellow" from colors list
 $colors: map-remove($colors, "yellow");
+
+// Flavors
+@import 'flavor-electron';
+@import 'flavor-webExtension';
 
 
 // Chrome popup default font style
@@ -53,14 +54,16 @@ body {
     clear: both;
 }
 
+
 // Global layout
+header.titlebar { display: none; }
 body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
 }
-header, footer {
+header.header, footer {
     flex-shrink: 0;
 }
 .content {
@@ -80,7 +83,7 @@ header, footer {
 }
 
 
-header {
+header.header {
     color: #fff;
     padding: 5px 10px;
     background-color: $color-primary;

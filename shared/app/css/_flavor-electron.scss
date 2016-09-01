@@ -3,4 +3,63 @@ html[data-flavor="electron"] {
         width: 100%;
         height: 100%;
     }
+
+    // Window radius
+    header.window-titlebar {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    footer {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+
+    // Make window draggable
+    header.window-titlebar {
+        -webkit-app-region: drag;
+        -webkit-user-select: none;
+
+        // ...but not buttons
+        i.mdi {
+            -webkit-app-region: no-drag;
+        }
+    }
+
+    header.window-titlebar {
+        font-size: 0;
+        background-color: $color-primary-dark;
+        flex-shrink: 0;
+        text-align: right;
+
+        i.mdi {
+            display: inline-block;
+            height: 30px;
+            padding: 6px;
+            font-size: 18px;
+            color: rgba(#fff, 0.95);
+            overflow: hidden;
+            transition-duration: $timing-short;
+            transition-property: color;
+
+            &:hover {
+                color: rgba(#fff, 1);
+                background-color: rgba(0, 0, 0, 0.06);
+            }
+            &:active {
+                color: rgba(#fff, 0.95);
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+
+            &.mdi-window-minimize {
+                padding-top: 8px;
+            }
+        }
+    }
+    .window-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        height: 100%;
+    }
 }
