@@ -12,24 +12,43 @@ import zipfile
 
 release_dir = 'release/'
 base_dir = os.path.dirname(os.path.realpath(__file__))
-flavours = ['Chrome', 'Firefox']
+flavours = ['Chrome', 'Firefox', 'Electron']
 files_generic = [
-    'data/browser-action/css/style.css',
-    'data/browser-action/css/materialdesignicons.min.css',
-    'data/browser-action/css/materialdesignicons.min.css.map',
-    'data/browser-action/fonts/*',
-    'data/browser-action/js/component-tooltip.js',
-    'data/browser-action/js/script.js',
-    'data/browser-action/vendor/jquery-3.1.0.min.js',
-    'data/browser-action/index.html',
+    'shared/app/css/style.css',
+    'shared/app/css/materialdesignicons.min.css',
+    'shared/app/css/materialdesignicons.min.css.map',
+    'shared/app/img/icon-*x*.png',
+    'shared/app/fonts/*',
+    'shared/app/js/component-tooltip.js',
+    'shared/app/js/script.js',
+    'shared/app/vendor/jquery-3.1.0.min.js',
+    'shared/app/index.html',
 
-    'data/icons.min.json',
+    'shared/data/icons.min.json',
 
-    'data/img/icon-*x*.png',
-
-    'manifest.json'
 ]
+files_flavours = {
+    'Chrome': [
+        'manifest.json'
+    ],
+    'Firefox': [
+        'manifest.json'
+    ],
+    'Electron': [
+        'electron/electron-specific.js',
+        'electron/main.js',
+        'package.json'
+    ]
+}
 manifest = 'manifest.json'
+
+files_diff_rm = {
+    'Chrome': {
+        'shared/app/index.html': ['<!-- [ELECTRON] -->']
+    },
+    'Electron': []
+}
+files_diff_rm['Firefox'] = files_diff_rm['Chrome']
 
 
 def do_release(flavour):
@@ -73,6 +92,27 @@ def do_release(flavour):
         with open(os.path.join(output_dir, manifest), 'w') as output_manifest_file:
             del manifest_json['applications']
             json.dump(manifest_json, output_manifest_file)
+
+    # Apply diffs
+    diffs = files_diff_rm[flavour]
+    for file, exclude_patterns in diffs.items():
+        lines = []
+        with open(os.path.join(output_dir, file), 'r') as fh:
+            for file_line in fh.readlines():
+                exclude = False
+                for pattern in exclude_patterns:
+                    if pattern in file_line:
+                        exclude = True
+                        break
+
+                if not exclude:
+                    lines.append(file_line)
+
+        with open(os.path.join(output_dir, file), 'w') as fh:
+            fh.truncate()
+            fh.writelines(lines)
+
+        print('Updated {} with {} pattern(s)'.format(file, len(exclude_patterns)))
 
     # Create final ZIP package
     zip_extension = 'xpi' if flavour == 'Firefox' else 'zip'
