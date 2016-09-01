@@ -6,6 +6,12 @@
 (function($, window) {
     const cols = 6;
 
+    var Flavor = {
+        WebExtension: 'webExtension',
+        Electron: 'electron',
+        Debug: 'debug'
+    };
+
     var MaterialDesignIconsPicker = function(options) {
         this.options = options;
     };
@@ -316,13 +322,14 @@
     };
 
     window.MaterialDesignIconsPicker = MaterialDesignIconsPicker;
+
+    $(document).ready(function() {
+        window.picker = new MaterialDesignIconsPicker();
+        window.picker.init();
+    });
+
+    function randomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
 })($, window);
-
-$(document).ready(function() {
-    window.picker = new MaterialDesignIconsPicker();
-    window.picker.init();
-});
-
-function randomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}

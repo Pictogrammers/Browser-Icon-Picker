@@ -1,0 +1,26 @@
+{
+    "name": "materialdesignicons-picker",
+    "version": "1.0.0",
+    "description": "Quick & easy icon picker",
+    "main": "electron/main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chteuchteu/MaterialDesignIcons-Picker.git"
+    },
+    "keywords": [
+        "MaterialDesignIcons",
+        "Picker"
+    ],
+    "author": "Quentin S.",
+    "license": "GPL-2.0",
+    "bugs": {
+        "url": "https://github.com/chteuchteu/MaterialDesignIcons-Picker/issues"
+    },
+    "homepage": "https://github.com/chteuchteu/MaterialDesignIcons-Picker/",
+    "devDependencies": {
+        "electron": "^1.3.4"
+    }
+}
