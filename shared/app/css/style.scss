@@ -5,6 +5,11 @@
 @import 'material';
 @import '../../../bower_components/material-scss-colors/dist/material-colors';
 
+// Flavors
+@import 'flavor-electron';
+@import 'flavor-webExtension';
+
+
 $roboto: Roboto, Arial, sans-serif;
 $color-primary: $color-blue;
 $icons-color: #565656;
@@ -14,7 +19,6 @@ $icon-size: 24px;
 $icon-margin: 5px;
 $icon-padding: 12px;
 $icon-border: 1px;
-$iconsList-height: 7.5 * ($icon-size + 2*($icon-margin+$icon-border+$icon-padding));
 $transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); // According to material guidelines
 
 // Remove "yellow" from colors list
@@ -30,9 +34,7 @@ body {
 html, body {
     margin: 0;
     padding: 0;
-    width: 380px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 body {
@@ -50,6 +52,33 @@ body {
 .clearfix {
     clear: both;
 }
+
+// Global layout
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+header, footer {
+    flex-shrink: 0;
+}
+.content {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+    .icons {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .icon-properties-wrap {
+    }
+}
+
 
 header {
     color: #fff;
@@ -162,11 +191,7 @@ header {
 .icons {
     font-size: 0;
     overflow-y: scroll;
-    height: $iconsList-height;
-    transition-duration: $timing-medium;
-    transition-property: height, margin-bottom;
-    transition-timing-function: $transition-timing-function;
-
+    text-align: center;
     background: $background;
 
     .mdi {
@@ -204,12 +229,8 @@ body.random-icon-colors {
 }
 
 .icon-properties-wrap {
-    position: absolute;
     @extend .elevation-low;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    overflow: hidden;
     background: #ffffff;
     height: 0;
     transition-duration: $timing-medium;
