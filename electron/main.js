@@ -16,7 +16,8 @@ function createWindow () {
         minWidth: 380,
         minHeight: 300,
         frame: false,
-        icon: nativeImage.createFromPath(`${__dirname}/../shared/app/img/icon-256x256.png`)
+        icon: nativeImage.createFromPath(`${__dirname}/../shared/app/img/icon-256x256.png`),
+        nodeIntegration: false
     });
 
     mainWindow.loadURL(`file://${__dirname}/../shared/app/index.html`);

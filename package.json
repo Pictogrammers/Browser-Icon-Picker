@@ -20,7 +20,7 @@
         "url": "https://github.com/chteuchteu/MaterialDesignIcons-Picker/issues"
     },
     "homepage": "https://github.com/chteuchteu/MaterialDesignIcons-Picker/",
-    "devDependencies": {
+    "dependencies": {
         "electron": "^1.3.4"
     }
 }

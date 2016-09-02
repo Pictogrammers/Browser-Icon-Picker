@@ -35,7 +35,10 @@ files_exclude_electron = [
 
     'bower_components',
     'upstream_parser',
-    'doc'
+    'doc',
+    'release'
+
+    'node_modules'
 ]
 manifest_webExtensions = 'manifest.json'
 manifest_electron = 'package.json'
@@ -140,7 +143,7 @@ def do_electron_release():
     ignore = '|'.join(files_exclude_electron)
 
     for platform in ['linux', 'win32']:
-        packager_command = 'electron-packager {} --ignore="{}" --platform={} --arch={} --out {}'.format(
+        packager_command = 'electron-packager {} --prune --ignore="{}" --platform={} --arch={} --out {}'.format(
             '.',
             ignore,
             platform,
