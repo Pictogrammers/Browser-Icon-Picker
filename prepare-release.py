@@ -13,7 +13,7 @@ import zipfile
 release_dir = 'release/'
 base_dir = os.path.dirname(os.path.realpath(__file__))
 flavours = ['Chrome', 'Firefox', 'Electron']
-files_generic = [
+files_include_webExtensions = [
     'shared/app/css/style.css',
     'shared/app/css/materialdesignicons.min.css',
     'shared/app/css/materialdesignicons.min.css.map',
@@ -25,43 +25,30 @@ files_generic = [
     'shared/app/index.html',
 
     'shared/data/icons.min.json',
-
+    'manifest.json'
 ]
-files_flavours = {
-    'Chrome': [
-        'manifest.json'
-    ],
-    'Firefox': [
-        'manifest.json'
-    ],
-    'Electron': [
-        'electron/electron-specific.js',
-        'electron/main.js',
-        'package.json'
-    ]
+files_exclude_electron = [
+    '\.git(ignore|attributes)',
+    '(bower|manifest)\.json',  # Manifest files
+    '(prepare-release|update-icons-list)\.py',  # Scripts
+    '(README|LICENSE)\.md',
+
+    'bower_components',
+    'upstream_parser',
+    'doc'
+]
+manifest_webExtensions = 'manifest.json'
+manifest_electron = 'package.json'
+
+files_diff_rm_webExtensions = {
+    'shared/app/index.html': ['<!-- [ELECTRON] -->']
 }
-manifest = 'manifest.json'
-
-files_diff_rm = {
-    'Chrome': {
-        'shared/app/index.html': ['<!-- [ELECTRON] -->']
-    },
-    'Electron': []
-}
-files_diff_rm['Firefox'] = files_diff_rm['Chrome']
 
 
-def do_release(flavour):
-    # Open manifest & read version name
-    with open(manifest) as manifest_file:
-        manifest_json = json.load(manifest_file)
-    version = manifest_json['version']
-    output_dir_name = 'MaterialDesignIcons-Picker-{}-{}'.format(flavour, version)
-    output_dir = os.path.join(release_dir, output_dir_name)
-
+def expand_files_list(files):
     # Expand files list (js/* => [js/content-script.js, js/injector.js]
     expanded_files = []
-    files = files_generic
+
     for file in files:
         if file.endswith('/*'):  # That's a directory: include all its elements
             real_name = file[:-1]
@@ -74,6 +61,19 @@ def do_release(flavour):
             )
         else:
             expanded_files.append(file)
+
+    return expanded_files
+
+
+def do_webextension_release(flavour):
+    # Open manifest & read version name
+    with open(manifest_webExtensions) as manifest_file:
+        manifest_json = json.load(manifest_file)
+    version = manifest_json['version']
+    output_dir_name = 'MaterialDesignIcons-Picker-{}-{}'.format(flavour, version)
+    output_dir = os.path.join(release_dir, output_dir_name)
+
+    expanded_files = expand_files_list(files_include_webExtensions)
 
     # Copy these!
     print('Copying resources in {}...'.format(output_dir))
@@ -89,12 +89,12 @@ def do_release(flavour):
 
     # With Chrome flavour: rewrite manifest to remove Firefox's specific nodes
     if flavour == 'Chrome':
-        with open(os.path.join(output_dir, manifest), 'w') as output_manifest_file:
+        with open(os.path.join(output_dir, manifest_webExtensions), 'w') as output_manifest_file:
             del manifest_json['applications']
             json.dump(manifest_json, output_manifest_file)
 
-    # Apply diffs
-    diffs = files_diff_rm[flavour]
+    # Apply diffs (remove electron-specific code)
+    diffs = files_diff_rm_webExtensions[flavour]
     for file, exclude_patterns in diffs.items():
         lines = []
         with open(os.path.join(output_dir, file), 'r') as fh:
@@ -114,7 +114,7 @@ def do_release(flavour):
 
         print('Updated {} with {} pattern(s)'.format(file, len(exclude_patterns)))
 
-    # Create final ZIP package
+    # Create final package
     zip_extension = 'xpi' if flavour == 'Firefox' else 'zip'
     zip_name = 'MaterialDesignIcons-Picker-{}-{}.{}'.format(flavour, version, zip_extension)
 
@@ -133,6 +133,30 @@ def do_release(flavour):
     print('Deleted working directory {}'.format(output_dir))
 
     print('Release file {} created for flavour {}'.format(zip_name, flavour))
+
+
+def do_electron_release():
+    # Compute "ignore" list
+    ignore = '|'.join(files_exclude_electron)
+
+    for platform in ['linux', 'win32']:
+        packager_command = 'electron-packager {} --ignore="{}" --platform={} --arch={} --out {}'.format(
+            '.',
+            ignore,
+            platform,
+            'all',
+            'release/'
+        )
+
+        print(packager_command)
+        os.system(packager_command)
+
+
+def do_release():
+    if flavour == 'Chrome' or flavour == 'Firefox':
+        do_webextension_release(flavour)
+    else:
+        do_electron_release()
 
 
 parser = argparse.ArgumentParser(description='Prepare release packages for different flavours')
@@ -154,6 +178,6 @@ if not os.path.isdir(release_dir):
 
 if flavour == 'all':
     for flavour in flavours:
-        do_release(flavour)
+        do_release()
 else:
-    do_release(flavour)
+    do_release()
