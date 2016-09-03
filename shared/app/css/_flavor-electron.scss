@@ -26,6 +26,7 @@ html[data-flavor="electron"] {
     }
 
     header.window-titlebar {
+        display: block;
         font-size: 0;
         background-color: $color-primary-dark;
         flex-shrink: 0;
@@ -54,12 +55,5 @@ html[data-flavor="electron"] {
                 padding-top: 8px;
             }
         }
-    }
-    .window-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        height: 100%;
     }
 }

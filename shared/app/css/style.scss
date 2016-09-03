@@ -56,13 +56,13 @@ body {
 
 
 // Global layout
-header.window-titlebar { display: none; }
 body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
 }
+header.window-titlebar { display: none; }
 header.header, footer {
     flex-shrink: 0;
 }
