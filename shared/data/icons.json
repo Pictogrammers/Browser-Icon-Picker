@@ -17,11 +17,13 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "person"
+            ],
             "author": "Google",
             "codepoint": "F004",
             "name": "account",
-            "searchable": "account",
+            "searchable": "account person",
             "version": "1.5.54"
         },
         {
@@ -86,6 +88,14 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6BB",
+            "name": "account-edit",
+            "searchable": "account edit",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "REJack",
             "codepoint": "F00B",
             "name": "account-key",
@@ -109,11 +119,13 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "people"
+            ],
             "author": "Google",
             "codepoint": "F00E",
             "name": "account-multiple",
-            "searchable": "account multiple",
+            "searchable": "account multiple people",
             "version": "1.5.54"
         },
         {
@@ -165,11 +177,13 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "register"
+            ],
             "author": "Google",
             "codepoint": "F014",
             "name": "account-plus",
-            "searchable": "account plus",
+            "searchable": "account plus register",
             "version": "1.5.54"
         },
         {
@@ -390,11 +404,27 @@
         },
         {
             "aliases": [],
+            "author": "Google",
+            "codepoint": "F6BC",
+            "name": "alert-octagram",
+            "searchable": "alert octagram",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F02A",
             "name": "alert-outline",
             "searchable": "alert outline",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F6BD",
+            "name": "all-inclusive",
+            "searchable": "all inclusive",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -494,6 +524,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6BE",
+            "name": "angularjs",
+            "searchable": "angularjs",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F5D8",
             "name": "animation",
@@ -587,14 +625,6 @@
             "name": "application",
             "searchable": "application",
             "version": "1.6.50"
-        },
-        {
-            "aliases": [],
-            "author": "Jay Zawrotny",
-            "codepoint": "F03A",
-            "name": "appnet",
-            "searchable": "appnet",
-            "version": "1.5.54"
         },
         {
             "aliases": [],
@@ -726,6 +756,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6BF",
+            "name": "arrow-down-box",
+            "searchable": "arrow down box",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F04A",
             "name": "arrow-down-drop-circle",
@@ -799,6 +837,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F6C0",
+            "name": "arrow-left-box",
+            "searchable": "arrow left box",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F052",
             "name": "arrow-left-drop-circle",
             "searchable": "arrow left drop circle",
@@ -851,6 +897,14 @@
             "name": "arrow-right-bold-hexagon-outline",
             "searchable": "arrow right bold hexagon outline",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6C1",
+            "name": "arrow-right-box",
+            "searchable": "arrow right box",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -927,6 +981,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F6C2",
+            "name": "arrow-up-box",
+            "searchable": "arrow up box",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F062",
             "name": "arrow-up-drop-circle",
             "searchable": "arrow up drop circle",
@@ -947,6 +1009,14 @@
             "name": "assistant",
             "searchable": "assistant",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F6C3",
+            "name": "asterisk",
+            "searchable": "asterisk",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -1626,6 +1696,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F6C4",
+            "name": "bomb-off",
+            "searchable": "bomb off",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F0B9",
             "name": "bone",
             "searchable": "bone",
@@ -1769,6 +1847,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6C5",
+            "name": "bootstrap",
+            "searchable": "bootstrap",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F0C7",
             "name": "border-all",
@@ -1865,7 +1951,7 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "Thomas Hunsaker",
             "codepoint": "F677",
             "name": "bow-tie",
             "searchable": "bow tie",
@@ -2467,6 +2553,14 @@
         },
         {
             "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F6C6",
+            "name": "cards-variant",
+            "searchable": "cards variant",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F10F",
             "name": "carrot",
@@ -3059,6 +3153,14 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6C7",
+            "name": "clipboard-flow",
+            "searchable": "clipboard flow",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F14D",
             "name": "clipboard-outline",
@@ -3202,6 +3304,14 @@
             "name": "close-octagon-outline",
             "searchable": "close octagon outline",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F6C8",
+            "name": "close-outline",
+            "searchable": "close outline",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -3421,6 +3531,14 @@
         },
         {
             "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F6C9",
+            "name": "coffee-outline",
+            "searchable": "coffee outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F177",
             "name": "coffee-to-go",
@@ -3626,6 +3744,14 @@
             "name": "contact-mail",
             "searchable": "contact mail",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F6CA",
+            "name": "contacts",
+            "searchable": "contacts",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -3919,11 +4045,13 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "bitcoin"
+            ],
             "author": "Austin Andrews",
             "codepoint": "F1AC",
             "name": "currency-btc",
-            "searchable": "currency btc",
+            "searchable": "currency btc bitcoin",
             "version": "1.5.54"
         },
         {
@@ -4113,6 +4241,14 @@
             "name": "delete-circle",
             "searchable": "delete circle",
             "version": "1.7.12"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6CB",
+            "name": "delete-empty",
+            "searchable": "delete empty",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -4563,6 +4699,22 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F6CC",
+            "name": "earth-box",
+            "searchable": "earth box",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F6CD",
+            "name": "earth-box-off",
+            "searchable": "earth box off",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F1E8",
             "name": "earth-off",
@@ -4616,6 +4768,14 @@
             "name": "email",
             "searchable": "email",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6CE",
+            "name": "email-alert",
+            "searchable": "email alert",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -4892,6 +5052,22 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F6CF",
+            "name": "eye-outline",
+            "searchable": "eye outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6D0",
+            "name": "eye-outline-off",
+            "searchable": "eye outline off",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F20A",
             "name": "eyedropper",
             "searchable": "eyedropper",
@@ -4973,11 +5149,27 @@
         },
         {
             "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F6D1",
+            "name": "fast-forward-outline",
+            "searchable": "fast forward outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F212",
             "name": "fax",
             "searchable": "fax",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F6D2",
+            "name": "feather",
+            "searchable": "feather",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -5296,6 +5488,14 @@
         {
             "aliases": [],
             "author": "Google",
+            "codepoint": "F6D3",
+            "name": "find-replace",
+            "searchable": "find replace",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
             "codepoint": "F237",
             "name": "fingerprint",
             "searchable": "fingerprint",
@@ -5398,6 +5598,14 @@
             "name": "flash-off",
             "searchable": "flash off",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F6D4",
+            "name": "flash-outline",
+            "searchable": "flash outline",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -5625,6 +5833,14 @@
         },
         {
             "aliases": [],
+            "author": "Jay Zawrotny",
+            "codepoint": "F03A",
+            "name": "font-awesome",
+            "searchable": "font awesome",
+            "version": "1.5.54"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F25A",
             "name": "food",
@@ -5790,6 +6006,14 @@
             "name": "format-float-right",
             "searchable": "format float right",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F6D5",
+            "name": "format-font",
+            "searchable": "format font",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -5970,6 +6194,14 @@
         {
             "aliases": [],
             "author": "Google",
+            "codepoint": "F6D6",
+            "name": "format-page-break",
+            "searchable": "format page break",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
             "codepoint": "F27C",
             "name": "format-paint",
             "searchable": "format paint",
@@ -5985,11 +6217,27 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6D7",
+            "name": "format-pilcrow",
+            "searchable": "format pilcrow",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F27E",
             "name": "format-quote",
             "searchable": "format quote",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F6A9",
+            "name": "format-rotate-90",
+            "searchable": "format rotate 90",
+            "version": "1.7.12"
         },
         {
             "aliases": [],
@@ -6233,6 +6481,22 @@
         },
         {
             "aliases": [],
+            "author": "Alex Efremo",
+            "codepoint": "F6D8",
+            "name": "garage",
+            "searchable": "garage",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Alex Efremo",
+            "codepoint": "F6D9",
+            "name": "garage-open",
+            "searchable": "garage open",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F647",
             "name": "gas-cylinder",
@@ -6344,6 +6608,14 @@
             "name": "github-circle",
             "searchable": "github circle",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6DA",
+            "name": "github-face",
+            "searchable": "github face",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -6516,6 +6788,14 @@
         {
             "aliases": [],
             "author": "Google",
+            "codepoint": "F6DB",
+            "name": "google-keep",
+            "searchable": "google keep",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
             "codepoint": "F5F5",
             "name": "google-maps",
             "searchable": "google maps",
@@ -6536,6 +6816,14 @@
             "name": "google-pages",
             "searchable": "google pages",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F6DC",
+            "name": "google-photos",
+            "searchable": "google photos",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -6779,6 +7067,30 @@
         },
         {
             "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F6DD",
+            "name": "heart-half-outline",
+            "searchable": "heart half outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6DE",
+            "name": "heart-half-part",
+            "searchable": "heart half part",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6DF",
+            "name": "heart-half-part-outline",
+            "searchable": "heart half part outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F2D5",
             "name": "heart-outline",
@@ -6828,6 +7140,14 @@
             "name": "hexagon",
             "searchable": "hexagon",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6E0",
+            "name": "hexagon-multiple",
+            "searchable": "hexagon multiple",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -6908,6 +7228,22 @@
             "name": "home-variant",
             "searchable": "home variant house variant",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6E1",
+            "name": "hook",
+            "searchable": "hook",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6E2",
+            "name": "hook-off",
+            "searchable": "hook off",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -7218,6 +7554,14 @@
             "name": "incognito",
             "searchable": "incognito",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6E3",
+            "name": "infinity",
+            "searchable": "infinity",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -7589,6 +7933,22 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F6E4",
+            "name": "language-swift",
+            "searchable": "language swift",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6E5",
+            "name": "language-typescript",
+            "searchable": "language typescript",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F322",
             "name": "laptop",
@@ -7610,6 +7970,14 @@
             "name": "laptop-mac",
             "searchable": "laptop mac",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6E6",
+            "name": "laptop-off",
+            "searchable": "laptop off",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -7758,6 +8126,22 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F6E7",
+            "name": "lightbulb-on",
+            "searchable": "lightbulb on",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6E8",
+            "name": "lightbulb-on-outline",
+            "searchable": "lightbulb on outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F336",
             "name": "lightbulb-outline",
             "searchable": "lightbulb outline",
@@ -7853,6 +8237,14 @@
         },
         {
             "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F6E9",
+            "name": "lock-pattern",
+            "searchable": "lock pattern",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F5FB",
             "name": "lock-plus",
@@ -7898,6 +8290,14 @@
             "name": "looks",
             "searchable": "looks",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F6EA",
+            "name": "loop",
+            "searchable": "loop",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -7951,6 +8351,14 @@
         },
         {
             "aliases": [],
+            "author": "Google",
+            "codepoint": "F6EB",
+            "name": "magnify-minus-outline",
+            "searchable": "magnify minus outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F34B",
             "name": "magnify-plus",
@@ -7959,11 +8367,27 @@
         },
         {
             "aliases": [],
+            "author": "Google",
+            "codepoint": "F6EC",
+            "name": "magnify-plus-outline",
+            "searchable": "magnify plus outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F34C",
             "name": "mail-ru",
             "searchable": "mail ru",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F6ED",
+            "name": "mailbox",
+            "searchable": "mailbox",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -8102,6 +8526,16 @@
             "name": "maxcdn",
             "searchable": "maxcdn",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [
+                "first-aid-kit"
+            ],
+            "author": "Thomas Hunsaker",
+            "codepoint": "F6EE",
+            "name": "medical-bag",
+            "searchable": "medical bag first aid kit",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -8269,6 +8703,22 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6EF",
+            "name": "message-settings",
+            "searchable": "message settings",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F6F0",
+            "name": "message-settings-variant",
+            "searchable": "message settings variant",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F369",
             "name": "message-text",
@@ -8386,6 +8836,14 @@
             "name": "minus-box",
             "searchable": "minus box",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F1",
+            "name": "minus-box-outline",
+            "searchable": "minus box outline",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -8680,6 +9138,38 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F2",
+            "name": "network",
+            "searchable": "network",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F3",
+            "name": "network-download",
+            "searchable": "network download",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F4",
+            "name": "network-question",
+            "searchable": "network question",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F5",
+            "name": "network-upload",
+            "searchable": "network upload",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F394",
             "name": "new-box",
@@ -8789,6 +9279,14 @@
             "name": "notification-clear-all",
             "searchable": "notification clear all",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F6F6",
+            "name": "npm",
+            "searchable": "npm",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -9072,6 +9570,14 @@
         },
         {
             "aliases": [],
+            "author": "Cody",
+            "codepoint": "F6F7",
+            "name": "nut",
+            "searchable": "nut",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F3C2",
             "name": "nutrition",
@@ -9080,7 +9586,7 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "Thomas Hunsaker",
             "codepoint": "F67B",
             "name": "oar",
             "searchable": "oar",
@@ -9101,6 +9607,14 @@
             "name": "octagon-outline",
             "searchable": "octagon outline",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F8",
+            "name": "octagram",
+            "searchable": "octagram",
+            "version": "1.8.36"
         },
         {
             "aliases": [
@@ -9271,6 +9785,46 @@
             "name": "page-last",
             "searchable": "page last",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F9",
+            "name": "page-layout-body",
+            "searchable": "page layout body",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6FA",
+            "name": "page-layout-footer",
+            "searchable": "page layout footer",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6FB",
+            "name": "page-layout-header",
+            "searchable": "page layout header",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6FC",
+            "name": "page-layout-sidebar-left",
+            "searchable": "page layout sidebar left",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6FD",
+            "name": "page-layout-sidebar-right",
+            "searchable": "page layout sidebar right",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -9458,6 +10012,14 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F6FE",
+            "name": "pencil-circle",
+            "searchable": "pencil circle",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F3EE",
             "name": "pencil-lock",
@@ -9471,6 +10033,22 @@
             "name": "pencil-off",
             "searchable": "pencil off",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F6FF",
+            "name": "pentagon",
+            "searchable": "pentagon",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F700",
+            "name": "pentagon-outline",
+            "searchable": "pentagon outline",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -9657,6 +10235,16 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [
+                "historic"
+            ],
+            "author": "Rowan",
+            "codepoint": "F701",
+            "name": "pillar",
+            "searchable": "pillar historic",
+            "version": "1.8.36"
+        },
+        {
             "aliases": [],
             "author": "Google",
             "codepoint": "F403",
@@ -9703,6 +10291,14 @@
             "name": "pinterest-box",
             "searchable": "pinterest box",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F702",
+            "name": "pistol",
+            "searchable": "pistol",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -9846,6 +10442,14 @@
         },
         {
             "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F703",
+            "name": "plus-box-outline",
+            "searchable": "plus box outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F417",
             "name": "plus-circle",
@@ -9883,6 +10487,14 @@
             "name": "plus-one",
             "searchable": "plus one",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F704",
+            "name": "plus-outline",
+            "searchable": "plus outline",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -10027,6 +10639,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F705",
+            "name": "prescription",
+            "searchable": "prescription",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F428",
             "name": "presentation",
             "searchable": "presentation",
@@ -10063,6 +10683,14 @@
             "name": "printer-alert",
             "searchable": "printer alert",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F706",
+            "name": "printer-settings",
+            "searchable": "printer settings",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -10307,6 +10935,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F707",
+            "name": "react",
+            "searchable": "react",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F447",
             "name": "read",
             "searchable": "read",
@@ -10515,6 +11151,14 @@
         {
             "aliases": [],
             "author": "Google",
+            "codepoint": "F708",
+            "name": "restart",
+            "searchable": "restart",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
             "codepoint": "F6A7",
             "name": "restore",
             "searchable": "restore",
@@ -10527,6 +11171,30 @@
             "name": "rewind",
             "searchable": "rewind",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F709",
+            "name": "rewind-outline",
+            "searchable": "rewind outline",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F70A",
+            "name": "rhombus",
+            "searchable": "rhombus",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F70B",
+            "name": "rhombus-outline",
+            "searchable": "rhombus outline",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -10571,18 +11239,18 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F70C",
+            "name": "roomba",
+            "searchable": "roomba",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F464",
             "name": "rotate-3d",
             "searchable": "rotate 3d",
             "version": "1.5.54"
-        },
-        {
-            "aliases": [],
-            "author": "Google",
-            "codepoint": "F6A9",
-            "name": "rotate-90",
-            "searchable": "rotate 90",
-            "version": "1.7.12"
         },
         {
             "aliases": [],
@@ -10674,18 +11342,28 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
-            "codepoint": "F46E",
+            "author": "Google",
+            "codepoint": "F70D",
             "name": "run",
             "searchable": "run",
-            "version": "1.5.54"
+            "version": "1.8.36"
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F46E",
+            "name": "run-fast",
+            "searchable": "run fast",
+            "version": "1.5.54"
+        },
+        {
+            "aliases": [
+                "discount"
+            ],
             "author": "Cody",
             "codepoint": "F46F",
             "name": "sale",
-            "searchable": "sale",
+            "searchable": "sale discount",
             "version": "1.5.54"
         },
         {
@@ -10801,6 +11479,14 @@
             "name": "seal",
             "searchable": "seal ribbon",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F70E",
+            "name": "search-web",
+            "searchable": "search web",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -11122,6 +11808,22 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F70F",
+            "name": "shovel",
+            "searchable": "shovel",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F710",
+            "name": "shovel-off",
+            "searchable": "shovel off",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F49C",
             "name": "shredder",
@@ -11185,6 +11887,46 @@
             "name": "signal",
             "searchable": "signal",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F711",
+            "name": "signal-2g",
+            "searchable": "signal 2g",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F712",
+            "name": "signal-3g",
+            "searchable": "signal 3g",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F713",
+            "name": "signal-4g",
+            "searchable": "signal 4g",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F714",
+            "name": "signal-hspa",
+            "searchable": "signal hspa",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F715",
+            "name": "signal-hspa-plus",
+            "searchable": "signal hspa plus",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -11396,6 +12138,14 @@
         },
         {
             "aliases": [],
+            "author": "Google",
+            "codepoint": "F716",
+            "name": "snowflake",
+            "searchable": "snowflake",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F4B7",
             "name": "snowman",
@@ -11492,6 +12242,62 @@
         },
         {
             "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F717",
+            "name": "source-commit",
+            "searchable": "source commit",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F718",
+            "name": "source-commit-end",
+            "searchable": "source commit end",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F719",
+            "name": "source-commit-end-local",
+            "searchable": "source commit end local",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F71A",
+            "name": "source-commit-local",
+            "searchable": "source commit local",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F71B",
+            "name": "source-commit-next-local",
+            "searchable": "source commit next local",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F71C",
+            "name": "source-commit-start",
+            "searchable": "source commit start",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F71D",
+            "name": "source-commit-start-next-local",
+            "searchable": "source commit start next local",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F4C1",
             "name": "source-fork",
@@ -11529,6 +12335,14 @@
             "name": "speaker-off",
             "searchable": "speaker off",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F71E",
+            "name": "speaker-wireless",
+            "searchable": "speaker wireless",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -11609,6 +12423,14 @@
             "name": "stackoverflow",
             "searchable": "stackoverflow",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Alex Efremo",
+            "codepoint": "F71F",
+            "name": "stadium",
+            "searchable": "stadium",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -11825,6 +12647,14 @@
             "name": "surround-sound",
             "searchable": "surround sound",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F720",
+            "name": "svg",
+            "searchable": "svg",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -12057,6 +12887,22 @@
             "name": "tag-outline",
             "searchable": "tag outline",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F721",
+            "name": "tag-plus",
+            "searchable": "tag plus",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F722",
+            "name": "tag-remove",
+            "searchable": "tag remove",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -12307,12 +13153,30 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [
+                "coupon"
+            ],
+            "author": "Rowan",
+            "codepoint": "F723",
+            "name": "ticket-percent",
+            "searchable": "ticket percent coupon",
+            "version": "1.8.36"
+        },
+        {
             "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F519",
             "name": "tie",
             "searchable": "tie",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F724",
+            "name": "tilde",
+            "searchable": "tilde",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -12355,19 +13219,23 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "hourglass"
+            ],
             "author": "Austin Andrews",
             "codepoint": "F51F",
             "name": "timer-sand",
-            "searchable": "timer sand",
+            "searchable": "timer sand hourglass",
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "hourglass-empty"
+            ],
             "author": "Austin Andrews",
             "codepoint": "F6AC",
             "name": "timer-sand-empty",
-            "searchable": "timer sand empty",
+            "searchable": "timer sand empty hourglass empty",
             "version": "1.7.12"
         },
         {
@@ -12460,7 +13328,7 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "Thomas Hunsaker",
             "codepoint": "F680",
             "name": "tower-beach",
             "searchable": "tower beach",
@@ -12468,7 +13336,7 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "Thomas Hunsaker",
             "codepoint": "F681",
             "name": "tower-fire",
             "searchable": "tower fire",
@@ -12542,6 +13410,14 @@
         },
         {
             "aliases": [],
+            "author": "Alex Efremo",
+            "codepoint": "F725",
+            "name": "treasure-chest",
+            "searchable": "treasure chest",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F531",
             "name": "tree",
@@ -12597,43 +13473,53 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "achievement"
+            ],
             "author": "Doug C. Hardester",
             "codepoint": "F538",
             "name": "trophy",
-            "searchable": "trophy",
+            "searchable": "trophy achievement",
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "achievement-award"
+            ],
             "author": "Doug C. Hardester",
             "codepoint": "F539",
             "name": "trophy-award",
-            "searchable": "trophy award",
+            "searchable": "trophy award achievement award",
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "achievement-outline"
+            ],
             "author": "Cody",
             "codepoint": "F53A",
             "name": "trophy-outline",
-            "searchable": "trophy outline",
+            "searchable": "trophy outline achievement outline",
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "achievement-variant"
+            ],
             "author": "Doug C. Hardester",
             "codepoint": "F53B",
             "name": "trophy-variant",
-            "searchable": "trophy variant",
+            "searchable": "trophy variant achievement variant",
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "achievement-variant-outline"
+            ],
             "author": "Cody",
             "codepoint": "F53C",
             "name": "trophy-variant-outline",
-            "searchable": "trophy variant outline",
+            "searchable": "trophy variant outline achievement variant outline",
             "version": "1.5.54"
         },
         {
@@ -12651,6 +13537,14 @@
             "name": "truck-delivery",
             "searchable": "truck delivery",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F726",
+            "name": "truck-trailer",
+            "searchable": "truck trailer",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -13126,11 +14020,27 @@
         },
         {
             "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F727",
+            "name": "view-parallel",
+            "searchable": "view parallel",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F574",
             "name": "view-quilt",
             "searchable": "view quilt",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Irigoyen",
+            "codepoint": "F728",
+            "name": "view-sequential",
+            "searchable": "view sequential",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -13319,6 +14229,14 @@
             "name": "wan",
             "searchable": "wan",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F729",
+            "name": "washing-machine",
+            "searchable": "washing machine",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -13556,6 +14474,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F72A",
+            "name": "webpack",
+            "searchable": "webpack",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Christopher Schreiner",
             "codepoint": "F611",
             "name": "wechat",
@@ -13628,6 +14554,14 @@
         },
         {
             "aliases": [],
+            "author": "Google",
+            "codepoint": "F72B",
+            "name": "widgets",
+            "searchable": "widgets",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F5A9",
             "name": "wifi",
@@ -13649,6 +14583,14 @@
             "name": "wii",
             "searchable": "wii",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F72C",
+            "name": "wiiu",
+            "searchable": "wiiu",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -13875,5 +14817,5 @@
             "version": "1.7.12"
         }
     ],
-    "version": "1.7.22"
+    "version": "1.8.36"
 }
