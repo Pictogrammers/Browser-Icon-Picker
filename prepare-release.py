@@ -97,7 +97,7 @@ def do_webextension_release(flavour):
             json.dump(manifest_json, output_manifest_file)
 
     # Apply diffs (remove electron-specific code)
-    diffs = files_diff_rm_webExtensions[flavour]
+    diffs = files_diff_rm_webExtensions
     for file, exclude_patterns in diffs.items():
         lines = []
         with open(os.path.join(output_dir, file), 'r') as fh:
