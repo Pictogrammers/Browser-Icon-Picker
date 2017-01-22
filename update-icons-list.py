@@ -24,8 +24,8 @@ mdi_files = [
     'fonts/materialdesignicons-webfont.woff2'
 ]
 
-meta_output_file = 'data/icons.json'
-meta_output_file_min = 'data/icons.min.json'
+meta_output_file = 'shared/data/icons.json'
+meta_output_file_min = 'shared/data/icons.min.json'
 
 
 def download_css_and_fonts():
@@ -43,7 +43,7 @@ def download_css_and_fonts():
 
     for file in mdi_files:
         zip_file = os.path.join(mdi_workspace, 'MaterialDesign-Webfont-master', file)
-        output_file = os.path.join('data/browser-action/', file)
+        output_file = os.path.join('shared/app/', file)
 
         shutil.copyfile(zip_file, output_file)
 
@@ -53,7 +53,7 @@ def download_css_and_fonts():
 
 
 def scan_css_selectors():
-    with open('data/browser-action/css/materialdesignicons.css', 'r') as fh:
+    with open('shared/app/css/materialdesignicons.css', 'r') as fh:
         raw_css = fh.read().replace('\n', '')
 
     return re.findall('\.mdi-([a-z-\d]*):before', raw_css)
