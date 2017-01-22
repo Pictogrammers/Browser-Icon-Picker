@@ -89,7 +89,7 @@ header.header {
     background-color: $color-primary;
     position: relative;
     z-index: 1;
-    @extend .elevation-low;
+    @extend .elevation-lowest;
 
     h1 {
         font-weight: normal;
@@ -315,13 +315,13 @@ body.random-icon-colors {
     }
 }
 
+// Bottom toolbar https://material.io/guidelines/layout/structure.html#structure-toolbars
 footer {
     position: relative;
     z-index: 2;
     padding: 5px 10px;
     text-align: right;
-    background-color: $color-primary;
-    @extend .elevation-low;
+    background-color: #757575;
 
     i {
         font-size: 20px;
@@ -340,14 +340,17 @@ footer {
         border-radius: 50%;
         margin-right: 2px;
         padding: 7px;
+        transition-duration: $timing-short;
+        transition-property: background;
 
-        &:hover, &.active {
-            color: $color-primary;
+        &:hover {
+            background-color: rgba(#fff, 0.1);
+        }
+
+        &.active {
+            color: #757575;
             background-color: rgba(#fff, 0.95);
-
-            &.active {
-                @extend .elevation-tiny;
-            }
+            @extend .elevation-tiny;
         }
     }
 }
