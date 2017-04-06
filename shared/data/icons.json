@@ -23,7 +23,7 @@
             "author": "Google",
             "codepoint": "F004",
             "name": "account",
-            "searchable": "account person",
+            "searchable": "account person user",
             "version": "1.5.54"
         },
         {
@@ -41,7 +41,7 @@
             "author": "Google",
             "codepoint": "F006",
             "name": "account-box",
-            "searchable": "account box selfie",
+            "searchable": "account box selfie user",
             "version": "1.5.54"
         },
         {
@@ -59,7 +59,7 @@
             "author": "Christopher Schreiner",
             "codepoint": "F5D2",
             "name": "account-card-details",
-            "searchable": "account card details identification card",
+            "searchable": "account card details identification-card",
             "version": "1.5.54"
         },
         {
@@ -75,7 +75,7 @@
             "author": "Google",
             "codepoint": "F009",
             "name": "account-circle",
-            "searchable": "account circle",
+            "searchable": "account circle user",
             "version": "1.5.54"
         },
         {
@@ -228,14 +228,6 @@
         },
         {
             "aliases": [],
-            "author": "REJack",
-            "codepoint": "F018",
-            "name": "account-star-variant",
-            "searchable": "account star variant",
-            "version": "1.5.54"
-        },
-        {
-            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F019",
             "name": "account-switch",
@@ -271,7 +263,7 @@
             "author": "Google",
             "codepoint": "F01D",
             "name": "airplane",
-            "searchable": "airplane",
+            "searchable": "airplane action",
             "version": "1.5.54"
         },
         {
@@ -287,7 +279,7 @@
             "author": "Google",
             "codepoint": "F01E",
             "name": "airplane-off",
-            "searchable": "airplane off",
+            "searchable": "airplane off action",
             "version": "1.5.54"
         },
         {
@@ -367,7 +359,7 @@
             "author": "Google",
             "codepoint": "F026",
             "name": "alert",
-            "searchable": "alert",
+            "searchable": "alert error",
             "version": "1.5.54"
         },
         {
@@ -397,6 +389,14 @@
         {
             "aliases": [],
             "author": "Google",
+            "codepoint": "F6BC",
+            "name": "alert-decagram",
+            "searchable": "alert decagram",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
             "codepoint": "F029",
             "name": "alert-octagon",
             "searchable": "alert octagon",
@@ -404,11 +404,11 @@
         },
         {
             "aliases": [],
-            "author": "Google",
-            "codepoint": "F6BC",
+            "author": "Austin Andrews",
+            "codepoint": "F766",
             "name": "alert-octagram",
             "searchable": "alert octagram",
-            "version": "1.8.36"
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -455,7 +455,7 @@
             "author": "Austin Andrews",
             "codepoint": "F02D",
             "name": "amazon",
-            "searchable": "amazon",
+            "searchable": "amazon logo",
             "version": "1.5.54"
         },
         {
@@ -463,7 +463,7 @@
             "author": "Austin Andrews",
             "codepoint": "F02E",
             "name": "amazon-clouddrive",
-            "searchable": "amazon clouddrive",
+            "searchable": "amazon clouddrive logo",
             "version": "1.5.54"
         },
         {
@@ -471,7 +471,7 @@
             "author": "Austin Andrews",
             "codepoint": "F02F",
             "name": "ambulance",
-            "searchable": "ambulance",
+            "searchable": "ambulance medical",
             "version": "1.5.54"
         },
         {
@@ -495,7 +495,7 @@
             "author": "Google",
             "codepoint": "F032",
             "name": "android",
-            "searchable": "android",
+            "searchable": "android logo operating system",
             "version": "1.5.54"
         },
         {
@@ -647,7 +647,7 @@
             "author": "Austin Andrews",
             "codepoint": "F03D",
             "name": "arrange-bring-forward",
-            "searchable": "arrange bring forward",
+            "searchable": "arrange bring forward action",
             "version": "1.5.54"
         },
         {
@@ -655,7 +655,7 @@
             "author": "Austin Andrews",
             "codepoint": "F03E",
             "name": "arrange-bring-to-front",
-            "searchable": "arrange bring to front",
+            "searchable": "arrange bring to front action",
             "version": "1.5.54"
         },
         {
@@ -663,7 +663,7 @@
             "author": "Austin Andrews",
             "codepoint": "F03F",
             "name": "arrange-send-backward",
-            "searchable": "arrange send backward",
+            "searchable": "arrange send backward action",
             "version": "1.5.54"
         },
         {
@@ -671,7 +671,7 @@
             "author": "Austin Andrews",
             "codepoint": "F040",
             "name": "arrange-send-to-back",
-            "searchable": "arrange send to back",
+            "searchable": "arrange send to back action",
             "version": "1.5.54"
         },
         {
@@ -719,16 +719,32 @@
             "author": "Austin Andrews",
             "codepoint": "F045",
             "name": "arrow-down",
-            "searchable": "arrow down",
+            "searchable": "arrow down action",
             "version": "1.5.54"
         },
         {
             "aliases": [],
             "author": "Austin Andrews",
-            "codepoint": "F046",
+            "codepoint": "F72D",
             "name": "arrow-down-bold",
             "searchable": "arrow down bold",
-            "version": "1.5.54"
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F72E",
+            "name": "arrow-down-bold-box",
+            "searchable": "arrow down bold box",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F72F",
+            "name": "arrow-down-bold-box-outline",
+            "searchable": "arrow down bold box outline",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -781,6 +797,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F046",
+            "name": "arrow-down-thick",
+            "searchable": "arrow down thick",
+            "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F616",
             "name": "arrow-expand",
             "searchable": "arrow expand",
@@ -799,16 +823,32 @@
             "author": "Google",
             "codepoint": "F04D",
             "name": "arrow-left",
-            "searchable": "arrow left",
+            "searchable": "arrow left action",
             "version": "1.5.54"
         },
         {
             "aliases": [],
             "author": "Austin Andrews",
-            "codepoint": "F04E",
+            "codepoint": "F730",
             "name": "arrow-left-bold",
             "searchable": "arrow left bold",
-            "version": "1.5.54"
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F731",
+            "name": "arrow-left-bold-box",
+            "searchable": "arrow left bold box",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F732",
+            "name": "arrow-left-bold-box-outline",
+            "searchable": "arrow left bold box outline",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -860,19 +900,43 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F04E",
+            "name": "arrow-left-thick",
+            "searchable": "arrow left thick",
+            "version": "1.5.54"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F054",
             "name": "arrow-right",
-            "searchable": "arrow right",
+            "searchable": "arrow right action",
             "version": "1.5.54"
         },
         {
             "aliases": [],
             "author": "Austin Andrews",
-            "codepoint": "F055",
+            "codepoint": "F733",
             "name": "arrow-right-bold",
             "searchable": "arrow right bold",
-            "version": "1.5.54"
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F734",
+            "name": "arrow-right-bold-box",
+            "searchable": "arrow right bold box",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F735",
+            "name": "arrow-right-bold-box-outline",
+            "searchable": "arrow right bold box outline",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -925,6 +989,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F055",
+            "name": "arrow-right-thick",
+            "searchable": "arrow right thick",
+            "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F05B",
             "name": "arrow-top-left",
             "searchable": "arrow top left",
@@ -943,16 +1015,32 @@
             "author": "Austin Andrews",
             "codepoint": "F05D",
             "name": "arrow-up",
-            "searchable": "arrow up",
+            "searchable": "arrow up action",
             "version": "1.5.54"
         },
         {
             "aliases": [],
             "author": "Austin Andrews",
-            "codepoint": "F05E",
+            "codepoint": "F736",
             "name": "arrow-up-bold",
             "searchable": "arrow up bold",
-            "version": "1.5.54"
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F737",
+            "name": "arrow-up-bold-box",
+            "searchable": "arrow up bold box",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F738",
+            "name": "arrow-up-bold-box-outline",
+            "searchable": "arrow up bold box outline",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -1004,6 +1092,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F05E",
+            "name": "arrow-up-thick",
+            "searchable": "arrow up thick",
+            "version": "1.5.54"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F064",
             "name": "assistant",
@@ -1025,6 +1121,14 @@
             "name": "at",
             "searchable": "at",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Roberto Graham",
+            "codepoint": "F767",
+            "name": "atom",
+            "searchable": "atom",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -1170,7 +1274,7 @@
             "author": "Austin Andrews",
             "codepoint": "F075",
             "name": "basecamp",
-            "searchable": "basecamp",
+            "searchable": "basecamp logo",
             "version": "1.5.54"
         },
         {
@@ -1178,7 +1282,7 @@
             "author": "Google",
             "codepoint": "F076",
             "name": "basket",
-            "searchable": "basket",
+            "searchable": "basket cart",
             "version": "1.5.54"
         },
         {
@@ -1434,7 +1538,7 @@
             "author": "Austin Andrews",
             "codepoint": "F099",
             "name": "behance",
-            "searchable": "behance",
+            "searchable": "behance logo",
             "version": "1.5.54"
         },
         {
@@ -1514,7 +1618,7 @@
             "author": "Google",
             "codepoint": "F0A3",
             "name": "bike",
-            "searchable": "bike",
+            "searchable": "bike transportation",
             "version": "1.5.54"
         },
         {
@@ -1602,7 +1706,7 @@
             "author": "Google",
             "codepoint": "F0AE",
             "name": "blogger",
-            "searchable": "blogger",
+            "searchable": "blogger logo social box",
             "version": "1.5.54"
         },
         {
@@ -1695,7 +1799,7 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "Roberto Graham",
             "codepoint": "F6C4",
             "name": "bomb-off",
             "searchable": "bomb off",
@@ -1786,7 +1890,7 @@
             "author": "Google",
             "codepoint": "F0C0",
             "name": "bookmark",
-            "searchable": "bookmark",
+            "searchable": "bookmark action",
             "version": "1.5.54"
         },
         {
@@ -1810,7 +1914,7 @@
             "author": "Google",
             "codepoint": "F0C3",
             "name": "bookmark-outline",
-            "searchable": "bookmark outline",
+            "searchable": "bookmark outline action",
             "version": "1.5.54"
         },
         {
@@ -1858,7 +1962,7 @@
             "author": "Google",
             "codepoint": "F0C7",
             "name": "border-all",
-            "searchable": "border all",
+            "searchable": "border all action",
             "version": "1.5.54"
         },
         {
@@ -1866,7 +1970,7 @@
             "author": "Google",
             "codepoint": "F0C8",
             "name": "border-bottom",
-            "searchable": "border bottom",
+            "searchable": "border bottom action",
             "version": "1.5.54"
         },
         {
@@ -1874,7 +1978,7 @@
             "author": "Google",
             "codepoint": "F0C9",
             "name": "border-color",
-            "searchable": "border color",
+            "searchable": "border color action",
             "version": "1.5.54"
         },
         {
@@ -1882,7 +1986,7 @@
             "author": "Google",
             "codepoint": "F0CA",
             "name": "border-horizontal",
-            "searchable": "border horizontal",
+            "searchable": "border horizontal action",
             "version": "1.5.54"
         },
         {
@@ -1890,7 +1994,7 @@
             "author": "Google",
             "codepoint": "F0CB",
             "name": "border-inside",
-            "searchable": "border inside",
+            "searchable": "border inside action",
             "version": "1.5.54"
         },
         {
@@ -1898,7 +2002,7 @@
             "author": "Google",
             "codepoint": "F0CC",
             "name": "border-left",
-            "searchable": "border left",
+            "searchable": "border left action",
             "version": "1.5.54"
         },
         {
@@ -1906,7 +2010,7 @@
             "author": "Google",
             "codepoint": "F0CD",
             "name": "border-none",
-            "searchable": "border none",
+            "searchable": "border none action",
             "version": "1.5.54"
         },
         {
@@ -1914,7 +2018,7 @@
             "author": "Google",
             "codepoint": "F0CE",
             "name": "border-outside",
-            "searchable": "border outside",
+            "searchable": "border outside action",
             "version": "1.5.54"
         },
         {
@@ -1922,7 +2026,7 @@
             "author": "Google",
             "codepoint": "F0CF",
             "name": "border-right",
-            "searchable": "border right",
+            "searchable": "border right action",
             "version": "1.5.54"
         },
         {
@@ -1938,7 +2042,7 @@
             "author": "Google",
             "codepoint": "F0D1",
             "name": "border-top",
-            "searchable": "border top",
+            "searchable": "border top action",
             "version": "1.5.54"
         },
         {
@@ -1946,7 +2050,7 @@
             "author": "Google",
             "codepoint": "F0D2",
             "name": "border-vertical",
-            "searchable": "border vertical",
+            "searchable": "border vertical action",
             "version": "1.5.54"
         },
         {
@@ -1978,7 +2082,7 @@
             "author": "Austin Andrews",
             "codepoint": "F0D4",
             "name": "box",
-            "searchable": "box",
+            "searchable": "box logo",
             "version": "1.5.54"
         },
         {
@@ -2010,7 +2114,7 @@
             "author": "Google",
             "codepoint": "F0D6",
             "name": "briefcase",
-            "searchable": "briefcase",
+            "searchable": "briefcase action",
             "version": "1.5.54"
         },
         {
@@ -2170,7 +2274,7 @@
             "author": "Google",
             "codepoint": "F0E7",
             "name": "bus",
-            "searchable": "bus",
+            "searchable": "bus transportation",
             "version": "1.5.54"
         },
         {
@@ -2276,7 +2380,7 @@
             "author": "Cody",
             "codepoint": "F691",
             "name": "calendar-question",
-            "searchable": "calendar question calendar rsvp",
+            "searchable": "calendar question calendar-rsvp",
             "version": "1.7.12"
         },
         {
@@ -2356,7 +2460,7 @@
             "author": "Google",
             "codepoint": "F0FC",
             "name": "camcorder",
-            "searchable": "camcorder",
+            "searchable": "camcorder action video",
             "version": "1.5.54"
         },
         {
@@ -2364,7 +2468,7 @@
             "author": "Google",
             "codepoint": "F0FD",
             "name": "camcorder-box",
-            "searchable": "camcorder box",
+            "searchable": "camcorder box action",
             "version": "1.5.54"
         },
         {
@@ -2372,7 +2476,7 @@
             "author": "Google",
             "codepoint": "F0FE",
             "name": "camcorder-box-off",
-            "searchable": "camcorder box off",
+            "searchable": "camcorder box off action",
             "version": "1.5.54"
         },
         {
@@ -2380,7 +2484,7 @@
             "author": "Google",
             "codepoint": "F0FF",
             "name": "camcorder-off",
-            "searchable": "camcorder off",
+            "searchable": "camcorder off action video",
             "version": "1.5.54"
         },
         {
@@ -2388,7 +2492,7 @@
             "author": "Google",
             "codepoint": "F100",
             "name": "camera",
-            "searchable": "camera",
+            "searchable": "camera av",
             "version": "1.5.54"
         },
         {
@@ -2444,7 +2548,7 @@
             "author": "Google",
             "codepoint": "F105",
             "name": "camera-party-mode",
-            "searchable": "camera party mode",
+            "searchable": "camera party mode av",
             "version": "1.5.54"
         },
         {
@@ -2476,8 +2580,16 @@
             "author": "Austin Andrews",
             "codepoint": "F109",
             "name": "camera-timer",
-            "searchable": "camera timer",
+            "searchable": "camera timer time",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F739",
+            "name": "cancel",
+            "searchable": "cancel",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -2492,7 +2604,7 @@
             "author": "Austin Andrews",
             "codepoint": "F10A",
             "name": "candycane",
-            "searchable": "candycane",
+            "searchable": "candycane holiday",
             "version": "1.5.54"
         },
         {
@@ -2500,7 +2612,7 @@
             "author": "Google",
             "codepoint": "F10B",
             "name": "car",
-            "searchable": "car",
+            "searchable": "car transportation",
             "version": "1.5.54"
         },
         {
@@ -2524,7 +2636,7 @@
             "author": "Google",
             "codepoint": "F10E",
             "name": "car-wash",
-            "searchable": "car wash",
+            "searchable": "car wash local",
             "version": "1.5.54"
         },
         {
@@ -2657,6 +2769,14 @@
         },
         {
             "aliases": [],
+            "author": "Cody",
+            "codepoint": "F789",
+            "name": "cast-off",
+            "searchable": "cast off",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F11A",
             "name": "castle",
@@ -2673,10 +2793,18 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F768",
+            "name": "ceiling-light",
+            "searchable": "ceiling light",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F11C",
             "name": "cellphone",
-            "searchable": "cellphone",
+            "searchable": "cellphone hardware",
             "version": "1.5.54"
         },
         {
@@ -2700,7 +2828,7 @@
             "author": "Google",
             "codepoint": "F11F",
             "name": "cellphone-dock",
-            "searchable": "cellphone dock",
+            "searchable": "cellphone dock hardware",
             "version": "1.5.54"
         },
         {
@@ -2777,6 +2905,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F769",
+            "name": "chart-bar-stacked",
+            "searchable": "chart bar stacked",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F5E3",
             "name": "chart-bubble",
@@ -2809,6 +2945,14 @@
         },
         {
             "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F76A",
+            "name": "chart-line-stacked",
+            "searchable": "chart line stacked",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F12B",
             "name": "chart-pie",
@@ -2836,7 +2980,7 @@
             "author": "Google",
             "codepoint": "F12C",
             "name": "check",
-            "searchable": "check",
+            "searchable": "check action form",
             "version": "1.5.54"
         },
         {
@@ -2844,7 +2988,7 @@
             "author": "Google",
             "codepoint": "F12D",
             "name": "check-all",
-            "searchable": "check all",
+            "searchable": "check all action form",
             "version": "1.5.54"
         },
         {
@@ -2868,7 +3012,7 @@
             "author": "Google",
             "codepoint": "F12E",
             "name": "checkbox-blank",
-            "searchable": "checkbox blank",
+            "searchable": "checkbox blank form",
             "version": "1.5.54"
         },
         {
@@ -2876,7 +3020,7 @@
             "author": "Google",
             "codepoint": "F12F",
             "name": "checkbox-blank-circle",
-            "searchable": "checkbox blank circle",
+            "searchable": "checkbox blank circle form",
             "version": "1.5.54"
         },
         {
@@ -2884,7 +3028,7 @@
             "author": "Google",
             "codepoint": "F130",
             "name": "checkbox-blank-circle-outline",
-            "searchable": "checkbox blank circle outline",
+            "searchable": "checkbox blank circle outline form",
             "version": "1.5.54"
         },
         {
@@ -2892,7 +3036,7 @@
             "author": "Google",
             "codepoint": "F131",
             "name": "checkbox-blank-outline",
-            "searchable": "checkbox blank outline",
+            "searchable": "checkbox blank outline form",
             "version": "1.5.54"
         },
         {
@@ -2900,7 +3044,7 @@
             "author": "Google",
             "codepoint": "F132",
             "name": "checkbox-marked",
-            "searchable": "checkbox marked",
+            "searchable": "checkbox marked form",
             "version": "1.5.54"
         },
         {
@@ -2908,7 +3052,7 @@
             "author": "Google",
             "codepoint": "F133",
             "name": "checkbox-marked-circle",
-            "searchable": "checkbox marked circle",
+            "searchable": "checkbox marked circle form",
             "version": "1.5.54"
         },
         {
@@ -2916,7 +3060,7 @@
             "author": "Google",
             "codepoint": "F134",
             "name": "checkbox-marked-circle-outline",
-            "searchable": "checkbox marked circle outline",
+            "searchable": "checkbox marked circle outline form",
             "version": "1.5.54"
         },
         {
@@ -2924,7 +3068,7 @@
             "author": "Google",
             "codepoint": "F135",
             "name": "checkbox-marked-outline",
-            "searchable": "checkbox marked outline",
+            "searchable": "checkbox marked outline form",
             "version": "1.5.54"
         },
         {
@@ -3090,6 +3234,22 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F764",
+            "name": "circle",
+            "searchable": "circle",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F765",
+            "name": "circle-outline",
+            "searchable": "circle outline",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F145",
             "name": "cisco-webex",
             "searchable": "cisco webex",
@@ -3100,7 +3260,7 @@
             "author": "Google",
             "codepoint": "F146",
             "name": "city",
-            "searchable": "city",
+            "searchable": "city local",
             "version": "1.5.54"
         },
         {
@@ -3169,6 +3329,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F750",
+            "name": "clipboard-plus",
+            "searchable": "clipboard plus",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F14E",
             "name": "clipboard-text",
@@ -3188,7 +3356,7 @@
             "author": "Google",
             "codepoint": "F150",
             "name": "clock",
-            "searchable": "clock",
+            "searchable": "clock time",
             "version": "1.5.54"
         },
         {
@@ -3270,7 +3438,7 @@
             "author": "Austin Andrews",
             "codepoint": "F159",
             "name": "close-circle",
-            "searchable": "close circle remove circle",
+            "searchable": "close circle remove-circle",
             "version": "1.5.54"
         },
         {
@@ -3318,7 +3486,7 @@
             "author": "Google",
             "codepoint": "F15E",
             "name": "closed-caption",
-            "searchable": "closed caption",
+            "searchable": "closed caption action video",
             "version": "1.5.54"
         },
         {
@@ -3326,7 +3494,7 @@
             "author": "Google",
             "codepoint": "F15F",
             "name": "cloud",
-            "searchable": "cloud",
+            "searchable": "cloud camera weather",
             "version": "1.5.54"
         },
         {
@@ -3356,17 +3524,17 @@
         {
             "aliases": [],
             "author": "Google",
-            "codepoint": "F163",
-            "name": "cloud-outline",
-            "searchable": "cloud outline",
+            "codepoint": "F164",
+            "name": "cloud-off-outline",
+            "searchable": "cloud off outline",
             "version": "1.5.54"
         },
         {
             "aliases": [],
             "author": "Google",
-            "codepoint": "F164",
-            "name": "cloud-outline-off",
-            "searchable": "cloud outline off",
+            "codepoint": "F163",
+            "name": "cloud-outline",
+            "searchable": "cloud outline",
             "version": "1.5.54"
         },
         {
@@ -3574,7 +3742,7 @@
             "author": "Google",
             "codepoint": "F179",
             "name": "color-helper",
-            "searchable": "color helper",
+            "searchable": "color helper format",
             "version": "1.5.54"
         },
         {
@@ -3718,7 +3886,7 @@
             "author": "Google",
             "codepoint": "F18B",
             "name": "compass",
-            "searchable": "compass",
+            "searchable": "compass action",
             "version": "1.5.54"
         },
         {
@@ -3825,7 +3993,7 @@
             "author": "Google",
             "codepoint": "F196",
             "name": "contrast-box",
-            "searchable": "contrast box",
+            "searchable": "contrast box color camera",
             "version": "1.5.54"
         },
         {
@@ -3833,7 +4001,7 @@
             "author": "Google",
             "codepoint": "F197",
             "name": "contrast-circle",
-            "searchable": "contrast circle",
+            "searchable": "contrast circle color camera",
             "version": "1.5.54"
         },
         {
@@ -3865,7 +4033,7 @@
             "author": "Austin Andrews",
             "codepoint": "F19A",
             "name": "cow",
-            "searchable": "cow",
+            "searchable": "cow agriculture",
             "version": "1.5.54"
         },
         {
@@ -3881,7 +4049,7 @@
             "author": "Google",
             "codepoint": "F19B",
             "name": "credit-card",
-            "searchable": "credit card",
+            "searchable": "credit card action",
             "version": "1.5.54"
         },
         {
@@ -3969,7 +4137,7 @@
             "author": "Google",
             "codepoint": "F1A3",
             "name": "crosshairs",
-            "searchable": "crosshairs",
+            "searchable": "crosshairs av map local",
             "version": "1.5.54"
         },
         {
@@ -3977,7 +4145,7 @@
             "author": "Google",
             "codepoint": "F1A4",
             "name": "crosshairs-gps",
-            "searchable": "crosshairs gps",
+            "searchable": "crosshairs gps av local map",
             "version": "1.5.54"
         },
         {
@@ -4210,6 +4378,22 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F76B",
+            "name": "decagram",
+            "searchable": "decagram",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F76C",
+            "name": "decagram-outline",
+            "searchable": "decagram outline",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F1BE",
             "name": "decimal-decrease",
@@ -4273,7 +4457,7 @@
             "author": "Austin Andrews",
             "codepoint": "F1C1",
             "name": "delete-variant",
-            "searchable": "delete variant trash variant",
+            "searchable": "delete variant trash-variant",
             "version": "1.5.54"
         },
         {
@@ -4329,7 +4513,7 @@
             "author": "Austin Andrews",
             "codepoint": "F1C7",
             "name": "deviantart",
-            "searchable": "deviantart",
+            "searchable": "deviantart logo",
             "version": "1.5.54"
         },
         {
@@ -4399,6 +4583,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F76E",
+            "name": "dice-d10",
+            "searchable": "dice d10",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F5EA",
             "name": "dice-d20",
             "searchable": "dice d20",
@@ -4427,6 +4619,14 @@
             "name": "dice-d8",
             "searchable": "dice d8",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F76D",
+            "name": "dice-multiple",
+            "searchable": "dice multiple",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -4481,7 +4681,7 @@
             "author": "Austin Andrews",
             "codepoint": "F1D2",
             "name": "disqus",
-            "searchable": "disqus",
+            "searchable": "disqus logo social",
             "version": "1.5.54"
         },
         {
@@ -4590,8 +4790,16 @@
             "author": "Google",
             "codepoint": "F1DA",
             "name": "download",
-            "searchable": "download",
+            "searchable": "download action",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F3",
+            "name": "download-network",
+            "searchable": "download network",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -4638,7 +4846,7 @@
             "author": "Austin Andrews",
             "codepoint": "F1E0",
             "name": "dribbble",
-            "searchable": "dribbble",
+            "searchable": "dribbble logo social",
             "version": "1.5.54"
         },
         {
@@ -4678,7 +4886,7 @@
             "author": "Austin Andrews",
             "codepoint": "F1E5",
             "name": "duck",
-            "searchable": "duck",
+            "searchable": "duck agriculture",
             "version": "1.5.54"
         },
         {
@@ -4990,7 +5198,7 @@
             "author": "Austin Andrews",
             "codepoint": "F203",
             "name": "etsy",
-            "searchable": "etsy",
+            "searchable": "etsy logo",
             "version": "1.5.54"
         },
         {
@@ -5006,7 +5214,7 @@
             "author": "Austin Andrews",
             "codepoint": "F204",
             "name": "evernote",
-            "searchable": "evernote",
+            "searchable": "evernote logo",
             "version": "1.5.54"
         },
         {
@@ -5022,7 +5230,7 @@
             "author": "Google",
             "codepoint": "F206",
             "name": "exit-to-app",
-            "searchable": "exit to app",
+            "searchable": "exit to app action",
             "version": "1.5.54"
         },
         {
@@ -5038,7 +5246,7 @@
             "author": "Google",
             "codepoint": "F208",
             "name": "eye",
-            "searchable": "eye",
+            "searchable": "eye action",
             "version": "1.5.54"
         },
         {
@@ -5046,8 +5254,16 @@
             "author": "Google",
             "codepoint": "F209",
             "name": "eye-off",
-            "searchable": "eye off",
+            "searchable": "eye off action",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6D0",
+            "name": "eye-off-outline",
+            "searchable": "eye off outline",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -5055,14 +5271,6 @@
             "codepoint": "F6CF",
             "name": "eye-outline",
             "searchable": "eye outline",
-            "version": "1.8.36"
-        },
-        {
-            "aliases": [],
-            "author": "Austin Andrews",
-            "codepoint": "F6D0",
-            "name": "eye-outline-off",
-            "searchable": "eye outline off",
             "version": "1.8.36"
         },
         {
@@ -5102,7 +5310,7 @@
             "author": "Austin Andrews",
             "codepoint": "F20C",
             "name": "facebook",
-            "searchable": "facebook",
+            "searchable": "facebook social logo",
             "version": "1.5.54"
         },
         {
@@ -5110,7 +5318,7 @@
             "author": "Google",
             "codepoint": "F20D",
             "name": "facebook-box",
-            "searchable": "facebook box",
+            "searchable": "facebook box social logo",
             "version": "1.5.54"
         },
         {
@@ -5144,7 +5352,7 @@
             "author": "Google",
             "codepoint": "F211",
             "name": "fast-forward",
-            "searchable": "fast forward",
+            "searchable": "fast forward action video audio",
             "version": "1.5.54"
         },
         {
@@ -5176,7 +5384,7 @@
             "author": "Google",
             "codepoint": "F213",
             "name": "ferry",
-            "searchable": "ferry",
+            "searchable": "ferry transportation",
             "version": "1.5.54"
         },
         {
@@ -5188,13 +5396,21 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F73A",
+            "name": "file-account",
+            "searchable": "file account",
+            "version": "1.9.32"
+        },
+        {
             "aliases": [
                 "file-report"
             ],
             "author": "Cody",
             "codepoint": "F215",
             "name": "file-chart",
-            "searchable": "file chart file report",
+            "searchable": "file chart file-report",
             "version": "1.5.54"
         },
         {
@@ -5314,7 +5530,7 @@
             "author": "Austin Andrews",
             "codepoint": "F223",
             "name": "file-music",
-            "searchable": "file music",
+            "searchable": "file music av",
             "version": "1.5.54"
         },
         {
@@ -5340,6 +5556,14 @@
             "name": "file-pdf-box",
             "searchable": "file pdf box",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F751",
+            "name": "file-plus",
+            "searchable": "file plus",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -5426,7 +5650,7 @@
             "author": "Google",
             "codepoint": "F22F",
             "name": "film",
-            "searchable": "film",
+            "searchable": "film action movie",
             "version": "1.5.54"
         },
         {
@@ -5434,7 +5658,7 @@
             "author": "Google",
             "codepoint": "F230",
             "name": "filmstrip",
-            "searchable": "filmstrip",
+            "searchable": "filmstrip action movie",
             "version": "1.5.54"
         },
         {
@@ -5450,7 +5674,7 @@
             "author": "Austin Andrews",
             "codepoint": "F232",
             "name": "filter",
-            "searchable": "filter",
+            "searchable": "filter action",
             "version": "1.5.54"
         },
         {
@@ -5458,7 +5682,7 @@
             "author": "Austin Andrews",
             "codepoint": "F233",
             "name": "filter-outline",
-            "searchable": "filter outline",
+            "searchable": "filter outline action",
             "version": "1.5.54"
         },
         {
@@ -5466,7 +5690,7 @@
             "author": "Austin Andrews",
             "codepoint": "F234",
             "name": "filter-remove",
-            "searchable": "filter remove",
+            "searchable": "filter remove action",
             "version": "1.5.54"
         },
         {
@@ -5474,7 +5698,7 @@
             "author": "Austin Andrews",
             "codepoint": "F235",
             "name": "filter-remove-outline",
-            "searchable": "filter remove outline",
+            "searchable": "filter remove outline action",
             "version": "1.5.54"
         },
         {
@@ -5514,7 +5738,7 @@
             "author": "Chris Litherland",
             "codepoint": "F239",
             "name": "firefox",
-            "searchable": "firefox",
+            "searchable": "firefox circle logo",
             "version": "1.5.54"
         },
         {
@@ -5580,7 +5804,7 @@
             "author": "Google",
             "codepoint": "F241",
             "name": "flash",
-            "searchable": "flash lightning bolt",
+            "searchable": "flash lightning-bolt av camera",
             "version": "1.5.54"
         },
         {
@@ -5588,7 +5812,7 @@
             "author": "Google",
             "codepoint": "F242",
             "name": "flash-auto",
-            "searchable": "flash auto",
+            "searchable": "flash auto av camera",
             "version": "1.5.54"
         },
         {
@@ -5596,7 +5820,7 @@
             "author": "Google",
             "codepoint": "F243",
             "name": "flash-off",
-            "searchable": "flash off",
+            "searchable": "flash off av camera",
             "version": "1.5.54"
         },
         {
@@ -5636,7 +5860,7 @@
             "author": "Austin Andrews",
             "codepoint": "F093",
             "name": "flask",
-            "searchable": "flask",
+            "searchable": "flask medical",
             "version": "1.5.54"
         },
         {
@@ -5644,7 +5868,7 @@
             "author": "Austin Andrews",
             "codepoint": "F094",
             "name": "flask-empty",
-            "searchable": "flask empty",
+            "searchable": "flask empty medical",
             "version": "1.5.54"
         },
         {
@@ -5652,7 +5876,7 @@
             "author": "Austin Andrews",
             "codepoint": "F095",
             "name": "flask-empty-outline",
-            "searchable": "flask empty outline",
+            "searchable": "flask empty outline medical",
             "version": "1.5.54"
         },
         {
@@ -5660,7 +5884,7 @@
             "author": "Austin Andrews",
             "codepoint": "F096",
             "name": "flask-outline",
-            "searchable": "flask outline",
+            "searchable": "flask outline medical",
             "version": "1.5.54"
         },
         {
@@ -5676,7 +5900,7 @@
             "author": "Google",
             "codepoint": "F247",
             "name": "flip-to-back",
-            "searchable": "flip to back",
+            "searchable": "flip to back action arrange",
             "version": "1.5.54"
         },
         {
@@ -5684,7 +5908,7 @@
             "author": "Google",
             "codepoint": "F248",
             "name": "flip-to-front",
-            "searchable": "flip to front",
+            "searchable": "flip to front action arrange",
             "version": "1.5.54"
         },
         {
@@ -5793,6 +6017,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F76F",
+            "name": "folder-open",
+            "searchable": "folder open",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F256",
             "name": "folder-outline",
@@ -5833,7 +6065,7 @@
         },
         {
             "aliases": [],
-            "author": "Jay Zawrotny",
+            "author": "Austin Andrews",
             "codepoint": "F03A",
             "name": "font-awesome",
             "searchable": "font awesome",
@@ -5905,6 +6137,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F752",
+            "name": "format-align-bottom",
+            "searchable": "format align bottom",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F260",
             "name": "format-align-center",
@@ -5929,11 +6169,27 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F753",
+            "name": "format-align-middle",
+            "searchable": "format align middle",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F263",
             "name": "format-align-right",
             "searchable": "format align right",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F754",
+            "name": "format-align-top",
+            "searchable": "format align top",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -5964,7 +6220,7 @@
             "author": "Google",
             "codepoint": "F266",
             "name": "format-color-fill",
-            "searchable": "format color fill",
+            "searchable": "format color fill action",
             "version": "1.5.54"
         },
         {
@@ -6020,7 +6276,7 @@
             "author": "Austin Andrews",
             "codepoint": "F26B",
             "name": "format-header-1",
-            "searchable": "format header 1",
+            "searchable": "format header 1 markdown",
             "version": "1.5.54"
         },
         {
@@ -6028,7 +6284,7 @@
             "author": "Austin Andrews",
             "codepoint": "F26C",
             "name": "format-header-2",
-            "searchable": "format header 2",
+            "searchable": "format header 2 markdown",
             "version": "1.5.54"
         },
         {
@@ -6036,7 +6292,7 @@
             "author": "Austin Andrews",
             "codepoint": "F26D",
             "name": "format-header-3",
-            "searchable": "format header 3",
+            "searchable": "format header 3 markdown",
             "version": "1.5.54"
         },
         {
@@ -6044,7 +6300,7 @@
             "author": "Austin Andrews",
             "codepoint": "F26E",
             "name": "format-header-4",
-            "searchable": "format header 4",
+            "searchable": "format header 4 markdown",
             "version": "1.5.54"
         },
         {
@@ -6052,7 +6308,7 @@
             "author": "Austin Andrews",
             "codepoint": "F26F",
             "name": "format-header-5",
-            "searchable": "format header 5",
+            "searchable": "format header 5 markdown",
             "version": "1.5.54"
         },
         {
@@ -6060,7 +6316,7 @@
             "author": "Austin Andrews",
             "codepoint": "F270",
             "name": "format-header-6",
-            "searchable": "format header 6",
+            "searchable": "format header 6 markdown",
             "version": "1.5.54"
         },
         {
@@ -6092,7 +6348,7 @@
             "author": "Austin Andrews",
             "codepoint": "F274",
             "name": "format-header-pound",
-            "searchable": "format header pound",
+            "searchable": "format header pound markdown",
             "version": "1.5.54"
         },
         {
@@ -6185,6 +6441,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F755",
+            "name": "format-list-checks",
+            "searchable": "format list checks",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F27B",
             "name": "format-list-numbers",
@@ -6212,7 +6476,7 @@
             "author": "Austin Andrews",
             "codepoint": "F27D",
             "name": "format-paragraph",
-            "searchable": "format paragraph",
+            "searchable": "format paragraph markdown",
             "version": "1.5.54"
         },
         {
@@ -6227,9 +6491,17 @@
             "aliases": [],
             "author": "Google",
             "codepoint": "F27E",
-            "name": "format-quote",
-            "searchable": "format quote",
+            "name": "format-quote-close",
+            "searchable": "format quote close",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F756",
+            "name": "format-quote-open",
+            "searchable": "format quote open",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -6276,15 +6548,17 @@
             "author": "Austin Andrews",
             "codepoint": "F282",
             "name": "format-subscript",
-            "searchable": "format subscript",
+            "searchable": "format subscript markdown",
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "exponent"
+            ],
             "author": "Austin Andrews",
             "codepoint": "F283",
             "name": "format-superscript",
-            "searchable": "format superscript",
+            "searchable": "format superscript exponent markdown",
             "version": "1.5.54"
         },
         {
@@ -6508,7 +6782,7 @@
             "author": "Google",
             "codepoint": "F298",
             "name": "gas-station",
-            "searchable": "gas station",
+            "searchable": "gas station local",
             "version": "1.5.54"
         },
         {
@@ -6569,6 +6843,70 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F73B",
+            "name": "gesture-double-tap",
+            "searchable": "gesture double tap",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F73C",
+            "name": "gesture-swipe-down",
+            "searchable": "gesture swipe down",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F73D",
+            "name": "gesture-swipe-left",
+            "searchable": "gesture swipe left",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F73E",
+            "name": "gesture-swipe-right",
+            "searchable": "gesture swipe right",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F73F",
+            "name": "gesture-swipe-up",
+            "searchable": "gesture swipe up",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F740",
+            "name": "gesture-tap",
+            "searchable": "gesture tap",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F741",
+            "name": "gesture-two-double-tap",
+            "searchable": "gesture two double tap",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F742",
+            "name": "gesture-two-tap",
+            "searchable": "gesture two tap",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F2A0",
             "name": "ghost",
@@ -6582,7 +6920,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2A1",
             "name": "gift",
-            "searchable": "gift donate",
+            "searchable": "gift donate holiday",
             "version": "1.5.54"
         },
         {
@@ -6598,7 +6936,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2A3",
             "name": "github-box",
-            "searchable": "github box",
+            "searchable": "github box social logo",
             "version": "1.5.54"
         },
         {
@@ -6606,7 +6944,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2A4",
             "name": "github-circle",
-            "searchable": "github circle",
+            "searchable": "github circle social logo",
             "version": "1.5.54"
         },
         {
@@ -6670,7 +7008,7 @@
             "author": "Google",
             "codepoint": "F2AB",
             "name": "gmail",
-            "searchable": "gmail",
+            "searchable": "gmail logo",
             "version": "1.5.54"
         },
         {
@@ -6694,7 +7032,7 @@
             "author": "Google",
             "codepoint": "F2AD",
             "name": "google",
-            "searchable": "google",
+            "searchable": "google action logo",
             "version": "1.5.54"
         },
         {
@@ -6846,7 +7184,7 @@
             "author": "Google",
             "codepoint": "F2BD",
             "name": "google-plus",
-            "searchable": "google plus",
+            "searchable": "google plus action social logo",
             "version": "1.5.54"
         },
         {
@@ -6854,7 +7192,7 @@
             "author": "Google",
             "codepoint": "F2BE",
             "name": "google-plus-box",
-            "searchable": "google plus box",
+            "searchable": "google plus box social logo",
             "version": "1.5.54"
         },
         {
@@ -6870,7 +7208,7 @@
             "author": "Google",
             "codepoint": "F2C0",
             "name": "google-wallet",
-            "searchable": "google wallet",
+            "searchable": "google wallet logo",
             "version": "1.5.54"
         },
         {
@@ -6899,6 +7237,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F757",
+            "name": "grid-large",
+            "searchable": "grid large",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F2C2",
             "name": "grid-off",
@@ -6915,7 +7261,15 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "JapanYoshi",
+            "codepoint": "F770",
+            "name": "guitar-acoustic",
+            "searchable": "guitar acoustic",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "JapanYoshi",
             "codepoint": "F2C4",
             "name": "guitar-electric",
             "searchable": "guitar electric",
@@ -6974,7 +7328,7 @@
             "author": "Google",
             "codepoint": "F2C9",
             "name": "hangouts",
-            "searchable": "hangouts",
+            "searchable": "hangouts logo",
             "version": "1.5.54"
         },
         {
@@ -6982,7 +7336,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2CA",
             "name": "harddisk",
-            "searchable": "harddisk",
+            "searchable": "harddisk hardware",
             "version": "1.5.54"
         },
         {
@@ -6990,7 +7344,7 @@
             "author": "Google",
             "codepoint": "F2CB",
             "name": "headphones",
-            "searchable": "headphones",
+            "searchable": "headphones hardware",
             "version": "1.5.54"
         },
         {
@@ -6998,7 +7352,7 @@
             "author": "Google",
             "codepoint": "F2CC",
             "name": "headphones-box",
-            "searchable": "headphones box",
+            "searchable": "headphones box hardware",
             "version": "1.5.54"
         },
         {
@@ -7014,7 +7368,7 @@
             "author": "Google",
             "codepoint": "F2CE",
             "name": "headset",
-            "searchable": "headset",
+            "searchable": "headset hardware",
             "version": "1.5.54"
         },
         {
@@ -7038,7 +7392,7 @@
             "author": "Google",
             "codepoint": "F2D1",
             "name": "heart",
-            "searchable": "heart",
+            "searchable": "heart action vote",
             "version": "1.5.54"
         },
         {
@@ -7046,7 +7400,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2D2",
             "name": "heart-box",
-            "searchable": "heart box",
+            "searchable": "heart box action",
             "version": "1.5.54"
         },
         {
@@ -7067,8 +7421,24 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6DE",
+            "name": "heart-half",
+            "searchable": "heart half",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
             "author": "Case Sandberg",
             "codepoint": "F6DD",
+            "name": "heart-half-full",
+            "searchable": "heart half full",
+            "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6DF",
             "name": "heart-half-outline",
             "searchable": "heart half outline",
             "version": "1.8.36"
@@ -7076,25 +7446,17 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
-            "codepoint": "F6DE",
-            "name": "heart-half-part",
-            "searchable": "heart half part",
-            "version": "1.8.36"
-        },
-        {
-            "aliases": [],
-            "author": "Austin Andrews",
-            "codepoint": "F6DF",
-            "name": "heart-half-part-outline",
-            "searchable": "heart half part outline",
-            "version": "1.8.36"
+            "codepoint": "F758",
+            "name": "heart-off",
+            "searchable": "heart off",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
             "author": "Google",
             "codepoint": "F2D5",
             "name": "heart-outline",
-            "searchable": "heart outline",
+            "searchable": "heart outline action vote",
             "version": "1.5.54"
         },
         {
@@ -7112,8 +7474,16 @@
             "author": "Austin Andrews",
             "codepoint": "F2D6",
             "name": "help",
-            "searchable": "help question mark",
+            "searchable": "help question-mark",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F78A",
+            "name": "help-box",
+            "searchable": "help box",
+            "version": "1.9.32"
         },
         {
             "aliases": [
@@ -7122,7 +7492,7 @@
             "author": "Google",
             "codepoint": "F2D7",
             "name": "help-circle",
-            "searchable": "help circle question mark circle",
+            "searchable": "help circle question-mark-circle",
             "version": "1.5.54"
         },
         {
@@ -7132,6 +7502,14 @@
             "name": "help-circle-outline",
             "searchable": "help circle outline",
             "version": "1.6.50"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F4",
+            "name": "help-network",
+            "searchable": "help network",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -7172,7 +7550,7 @@
             "author": "Google",
             "codepoint": "F2DA",
             "name": "history",
-            "searchable": "history",
+            "searchable": "history action",
             "version": "1.5.54"
         },
         {
@@ -7190,7 +7568,7 @@
             "author": "Google",
             "codepoint": "F2DC",
             "name": "home",
-            "searchable": "home house",
+            "searchable": "home house action local",
             "version": "1.5.54"
         },
         {
@@ -7208,7 +7586,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2DD",
             "name": "home-modern",
-            "searchable": "home modern house modern",
+            "searchable": "home modern house-modern",
             "version": "1.5.54"
         },
         {
@@ -7226,7 +7604,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2DE",
             "name": "home-variant",
-            "searchable": "home variant house variant",
+            "searchable": "home variant house-variant",
             "version": "1.5.54"
         },
         {
@@ -7258,7 +7636,7 @@
             "author": "Google",
             "codepoint": "F2E0",
             "name": "hospital",
-            "searchable": "hospital",
+            "searchable": "hospital local medical",
             "version": "1.5.54"
         },
         {
@@ -7266,7 +7644,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2E1",
             "name": "hospital-building",
-            "searchable": "hospital building",
+            "searchable": "hospital building medical",
             "version": "1.5.54"
         },
         {
@@ -7274,7 +7652,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2E2",
             "name": "hospital-marker",
-            "searchable": "hospital marker",
+            "searchable": "hospital marker medical",
             "version": "1.5.54"
         },
         {
@@ -7284,7 +7662,7 @@
             "author": "Google",
             "codepoint": "F2E3",
             "name": "hotel",
-            "searchable": "hotel bed",
+            "searchable": "hotel bed local",
             "version": "1.5.54"
         },
         {
@@ -7292,7 +7670,7 @@
             "author": "Gabriel",
             "codepoint": "F2E4",
             "name": "houzz",
-            "searchable": "houzz",
+            "searchable": "houzz logo",
             "version": "1.5.54"
         },
         {
@@ -7300,7 +7678,7 @@
             "author": "Gabriel",
             "codepoint": "F2E5",
             "name": "houzz-box",
-            "searchable": "houzz box",
+            "searchable": "houzz box square",
             "version": "1.5.54"
         },
         {
@@ -7308,7 +7686,7 @@
             "author": "Google",
             "codepoint": "F2E6",
             "name": "human",
-            "searchable": "human",
+            "searchable": "human action",
             "version": "1.5.54"
         },
         {
@@ -7379,10 +7757,18 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F743",
+            "name": "humble-bundle",
+            "searchable": "humble bundle",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F2E9",
             "name": "image",
-            "searchable": "image",
+            "searchable": "image box",
             "version": "1.5.54"
         },
         {
@@ -7568,7 +7954,7 @@
             "author": "Google",
             "codepoint": "F2FC",
             "name": "information",
-            "searchable": "information",
+            "searchable": "information action circle",
             "version": "1.5.54"
         },
         {
@@ -7576,7 +7962,7 @@
             "author": "Google",
             "codepoint": "F2FD",
             "name": "information-outline",
-            "searchable": "information outline",
+            "searchable": "information outline action circle",
             "version": "1.5.54"
         },
         {
@@ -7592,7 +7978,7 @@
             "author": "Google",
             "codepoint": "F2FE",
             "name": "instagram",
-            "searchable": "instagram",
+            "searchable": "instagram social logo box",
             "version": "1.5.54"
         },
         {
@@ -7600,7 +7986,7 @@
             "author": "Austin Andrews",
             "codepoint": "F2FF",
             "name": "instapaper",
-            "searchable": "instapaper",
+            "searchable": "instapaper logo social",
             "version": "1.5.54"
         },
         {
@@ -7616,7 +8002,7 @@
             "author": "Google",
             "codepoint": "F301",
             "name": "invert-colors",
-            "searchable": "invert colors",
+            "searchable": "invert colors action",
             "version": "1.5.54"
         },
         {
@@ -7640,7 +8026,7 @@
             "author": "Austin Andrews",
             "codepoint": "F303",
             "name": "jira",
-            "searchable": "jira",
+            "searchable": "jira logo",
             "version": "1.5.54"
         },
         {
@@ -7648,7 +8034,7 @@
             "author": "Austin Andrews",
             "codepoint": "F304",
             "name": "jsfiddle",
-            "searchable": "jsfiddle",
+            "searchable": "jsfiddle logo",
             "version": "1.5.54"
         },
         {
@@ -7728,7 +8114,7 @@
             "author": "Google",
             "codepoint": "F30C",
             "name": "keyboard",
-            "searchable": "keyboard",
+            "searchable": "keyboard hardware",
             "version": "1.5.54"
         },
         {
@@ -7752,7 +8138,7 @@
             "author": "Google",
             "codepoint": "F30F",
             "name": "keyboard-close",
-            "searchable": "keyboard close",
+            "searchable": "keyboard close hardware",
             "version": "1.5.54"
         },
         {
@@ -7789,6 +8175,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F744",
+            "name": "kickstarter",
+            "searchable": "kickstarter",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Christopher Schreiner",
             "codepoint": "F314",
             "name": "kodi",
@@ -7800,7 +8194,7 @@
             "author": "Google",
             "codepoint": "F315",
             "name": "label",
-            "searchable": "label",
+            "searchable": "label action",
             "version": "1.5.54"
         },
         {
@@ -7808,7 +8202,7 @@
             "author": "Google",
             "codepoint": "F316",
             "name": "label-outline",
-            "searchable": "label outline",
+            "searchable": "label outline action",
             "version": "1.5.54"
         },
         {
@@ -7952,7 +8346,7 @@
             "author": "Google",
             "codepoint": "F322",
             "name": "laptop",
-            "searchable": "laptop",
+            "searchable": "laptop hardware",
             "version": "1.5.54"
         },
         {
@@ -7960,7 +8354,7 @@
             "author": "Google",
             "codepoint": "F323",
             "name": "laptop-chromebook",
-            "searchable": "laptop chromebook",
+            "searchable": "laptop chromebook hardware",
             "version": "1.5.54"
         },
         {
@@ -7968,7 +8362,7 @@
             "author": "Google",
             "codepoint": "F324",
             "name": "laptop-mac",
-            "searchable": "laptop mac",
+            "searchable": "laptop mac hardware",
             "version": "1.5.54"
         },
         {
@@ -8000,7 +8394,7 @@
             "author": "Google",
             "codepoint": "F327",
             "name": "launch",
-            "searchable": "launch",
+            "searchable": "launch action",
             "version": "1.5.54"
         },
         {
@@ -8104,7 +8498,7 @@
             "author": "Google",
             "codepoint": "F333",
             "name": "library-music",
-            "searchable": "library music",
+            "searchable": "library music av",
             "version": "1.5.54"
         },
         {
@@ -8152,7 +8546,7 @@
             "author": "Google",
             "codepoint": "F337",
             "name": "link",
-            "searchable": "link",
+            "searchable": "link action",
             "version": "1.5.54"
         },
         {
@@ -8192,7 +8586,7 @@
             "author": "Google",
             "codepoint": "F33C",
             "name": "linkedin-box",
-            "searchable": "linkedin box",
+            "searchable": "linkedin box logo social",
             "version": "1.5.54"
         },
         {
@@ -8200,15 +8594,23 @@
             "author": "Austin Andrews",
             "codepoint": "F33D",
             "name": "linux",
-            "searchable": "linux",
+            "searchable": "linux operating system",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Kateryna Porshnieva",
+            "codepoint": "F771",
+            "name": "loading",
+            "searchable": "loading",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
             "author": "Google",
             "codepoint": "F33E",
             "name": "lock",
-            "searchable": "lock",
+            "searchable": "lock action",
             "version": "1.5.54"
         },
         {
@@ -8216,7 +8618,7 @@
             "author": "Google",
             "codepoint": "F33F",
             "name": "lock-open",
-            "searchable": "lock open",
+            "searchable": "lock open action",
             "version": "1.5.54"
         },
         {
@@ -8224,7 +8626,7 @@
             "author": "Google",
             "codepoint": "F340",
             "name": "lock-open-outline",
-            "searchable": "lock open outline",
+            "searchable": "lock open outline action",
             "version": "1.5.54"
         },
         {
@@ -8232,7 +8634,7 @@
             "author": "Google",
             "codepoint": "F341",
             "name": "lock-outline",
-            "searchable": "lock outline",
+            "searchable": "lock outline action",
             "version": "1.5.54"
         },
         {
@@ -8252,11 +8654,21 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [
+                "password-reset"
+            ],
+            "author": "Google",
+            "codepoint": "F772",
+            "name": "lock-reset",
+            "searchable": "lock reset password-reset",
+            "version": "1.9.32"
+        },
+        {
             "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F342",
             "name": "login",
-            "searchable": "login",
+            "searchable": "login authentication",
             "version": "1.5.54"
         },
         {
@@ -8312,7 +8724,7 @@
             "author": "Austin Andrews",
             "codepoint": "F346",
             "name": "lumx",
-            "searchable": "lumx",
+            "searchable": "lumx logo",
             "version": "1.5.54"
         },
         {
@@ -8338,7 +8750,7 @@
             "author": "Google",
             "codepoint": "F349",
             "name": "magnify",
-            "searchable": "magnify search",
+            "searchable": "magnify search action",
             "version": "1.5.54"
         },
         {
@@ -8346,7 +8758,7 @@
             "author": "Austin Andrews",
             "codepoint": "F34A",
             "name": "magnify-minus",
-            "searchable": "magnify minus",
+            "searchable": "magnify minus action",
             "version": "1.5.54"
         },
         {
@@ -8362,7 +8774,7 @@
             "author": "Austin Andrews",
             "codepoint": "F34B",
             "name": "magnify-plus",
-            "searchable": "magnify plus",
+            "searchable": "magnify plus action",
             "version": "1.5.54"
         },
         {
@@ -8394,7 +8806,7 @@
             "author": "Google",
             "codepoint": "F34D",
             "name": "map",
-            "searchable": "map",
+            "searchable": "map local",
             "version": "1.5.54"
         },
         {
@@ -8404,7 +8816,7 @@
             "author": "Google",
             "codepoint": "F34E",
             "name": "map-marker",
-            "searchable": "map marker location",
+            "searchable": "map marker location action pin",
             "version": "1.5.54"
         },
         {
@@ -8436,7 +8848,7 @@
             "author": "Austin Andrews",
             "codepoint": "F351",
             "name": "map-marker-off",
-            "searchable": "map marker off",
+            "searchable": "map marker off action pin",
             "version": "1.5.54"
         },
         {
@@ -8492,7 +8904,7 @@
             "author": "Google",
             "codepoint": "F356",
             "name": "martini",
-            "searchable": "martini",
+            "searchable": "martini local",
             "version": "1.5.54"
         },
         {
@@ -8534,7 +8946,7 @@
             "author": "Thomas Hunsaker",
             "codepoint": "F6EE",
             "name": "medical-bag",
-            "searchable": "medical bag first aid kit",
+            "searchable": "medical bag first-aid-kit",
             "version": "1.8.36"
         },
         {
@@ -8632,7 +9044,7 @@
             "author": "Google",
             "codepoint": "F6A1",
             "name": "message-bulleted",
-            "searchable": "message bulleted speaker notes",
+            "searchable": "message bulleted speaker-notes",
             "version": "1.7.12"
         },
         {
@@ -8642,7 +9054,7 @@
             "author": "Google",
             "codepoint": "F6A2",
             "name": "message-bulleted-off",
-            "searchable": "message bulleted off speaker notes off",
+            "searchable": "message bulleted off speaker-notes-off",
             "version": "1.7.12"
         },
         {
@@ -8754,7 +9166,7 @@
             "author": "Google",
             "codepoint": "F36C",
             "name": "microphone",
-            "searchable": "microphone",
+            "searchable": "microphone action",
             "version": "1.5.54"
         },
         {
@@ -8762,7 +9174,7 @@
             "author": "Google",
             "codepoint": "F36D",
             "name": "microphone-off",
-            "searchable": "microphone off",
+            "searchable": "microphone off action",
             "version": "1.5.54"
         },
         {
@@ -8770,7 +9182,7 @@
             "author": "Google",
             "codepoint": "F36E",
             "name": "microphone-outline",
-            "searchable": "microphone outline",
+            "searchable": "microphone outline action",
             "version": "1.5.54"
         },
         {
@@ -8778,7 +9190,7 @@
             "author": "Google",
             "codepoint": "F36F",
             "name": "microphone-settings",
-            "searchable": "microphone settings",
+            "searchable": "microphone settings action",
             "version": "1.5.54"
         },
         {
@@ -8826,7 +9238,7 @@
             "author": "Google",
             "codepoint": "F374",
             "name": "minus",
-            "searchable": "minus",
+            "searchable": "minus action",
             "version": "1.5.54"
         },
         {
@@ -8834,7 +9246,7 @@
             "author": "Google",
             "codepoint": "F375",
             "name": "minus-box",
-            "searchable": "minus box",
+            "searchable": "minus box action",
             "version": "1.5.54"
         },
         {
@@ -8850,7 +9262,7 @@
             "author": "Google",
             "codepoint": "F376",
             "name": "minus-circle",
-            "searchable": "minus circle",
+            "searchable": "minus circle action",
             "version": "1.5.54"
         },
         {
@@ -8858,7 +9270,7 @@
             "author": "Google",
             "codepoint": "F377",
             "name": "minus-circle-outline",
-            "searchable": "minus circle outline",
+            "searchable": "minus circle outline action",
             "version": "1.5.54"
         },
         {
@@ -8906,7 +9318,7 @@
             "author": "Chris Litherland",
             "codepoint": "F37C",
             "name": "motorbike",
-            "searchable": "motorbike",
+            "searchable": "motorbike transportation",
             "version": "1.5.54"
         },
         {
@@ -8914,7 +9326,7 @@
             "author": "Google",
             "codepoint": "F37D",
             "name": "mouse",
-            "searchable": "mouse",
+            "searchable": "mouse hardware",
             "version": "1.5.54"
         },
         {
@@ -8987,9 +9399,17 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F759",
+            "name": "music",
+            "searchable": "music",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F384",
             "name": "music-box",
-            "searchable": "music box",
+            "searchable": "music box av",
             "version": "1.5.54"
         },
         {
@@ -8997,7 +9417,7 @@
             "author": "Austin Andrews",
             "codepoint": "F385",
             "name": "music-box-outline",
-            "searchable": "music box outline",
+            "searchable": "music box outline av",
             "version": "1.5.54"
         },
         {
@@ -9082,6 +9502,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F75A",
+            "name": "music-off",
+            "searchable": "music off",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F38E",
             "name": "nature",
@@ -9117,7 +9545,7 @@
             "author": "Austin Andrews",
             "codepoint": "F391",
             "name": "needle",
-            "searchable": "needle",
+            "searchable": "needle medical",
             "version": "1.5.54"
         },
         {
@@ -9125,7 +9553,7 @@
             "author": "Google",
             "codepoint": "F392",
             "name": "nest-protect",
-            "searchable": "nest protect",
+            "searchable": "nest protect hardware",
             "version": "1.5.54"
         },
         {
@@ -9133,8 +9561,16 @@
             "author": "Google",
             "codepoint": "F393",
             "name": "nest-thermostat",
-            "searchable": "nest thermostat",
+            "searchable": "nest thermostat hardware",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F745",
+            "name": "netflix",
+            "searchable": "netflix",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -9142,30 +9578,6 @@
             "codepoint": "F6F2",
             "name": "network",
             "searchable": "network",
-            "version": "1.8.36"
-        },
-        {
-            "aliases": [],
-            "author": "Austin Andrews",
-            "codepoint": "F6F3",
-            "name": "network-download",
-            "searchable": "network download",
-            "version": "1.8.36"
-        },
-        {
-            "aliases": [],
-            "author": "Austin Andrews",
-            "codepoint": "F6F4",
-            "name": "network-question",
-            "searchable": "network question",
-            "version": "1.8.36"
-        },
-        {
-            "aliases": [],
-            "author": "Austin Andrews",
-            "codepoint": "F6F5",
-            "name": "network-upload",
-            "searchable": "network upload",
             "version": "1.8.36"
         },
         {
@@ -9181,7 +9593,7 @@
             "author": "Google",
             "codepoint": "F395",
             "name": "newspaper",
-            "searchable": "newspaper",
+            "searchable": "newspaper action",
             "version": "1.5.54"
         },
         {
@@ -9189,7 +9601,7 @@
             "author": "Austin Andrews",
             "codepoint": "F396",
             "name": "nfc",
-            "searchable": "nfc",
+            "searchable": "nfc logo",
             "version": "1.5.54"
         },
         {
@@ -9207,6 +9619,14 @@
             "name": "nfc-variant",
             "searchable": "nfc variant",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F773",
+            "name": "ninja",
+            "searchable": "ninja",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -9341,7 +9761,7 @@
             "author": "Google",
             "codepoint": "F3A5",
             "name": "numeric-1-box-multiple-outline",
-            "searchable": "numeric 1 box multiple outline",
+            "searchable": "numeric 1 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9365,7 +9785,7 @@
             "author": "Google",
             "codepoint": "F3A8",
             "name": "numeric-2-box-multiple-outline",
-            "searchable": "numeric 2 box multiple outline",
+            "searchable": "numeric 2 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9389,7 +9809,7 @@
             "author": "Google",
             "codepoint": "F3AB",
             "name": "numeric-3-box-multiple-outline",
-            "searchable": "numeric 3 box multiple outline",
+            "searchable": "numeric 3 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9413,7 +9833,7 @@
             "author": "Google",
             "codepoint": "F3AE",
             "name": "numeric-4-box-multiple-outline",
-            "searchable": "numeric 4 box multiple outline",
+            "searchable": "numeric 4 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9437,7 +9857,7 @@
             "author": "Google",
             "codepoint": "F3B1",
             "name": "numeric-5-box-multiple-outline",
-            "searchable": "numeric 5 box multiple outline",
+            "searchable": "numeric 5 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9461,7 +9881,7 @@
             "author": "Google",
             "codepoint": "F3B4",
             "name": "numeric-6-box-multiple-outline",
-            "searchable": "numeric 6 box multiple outline",
+            "searchable": "numeric 6 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9485,7 +9905,7 @@
             "author": "Google",
             "codepoint": "F3B7",
             "name": "numeric-7-box-multiple-outline",
-            "searchable": "numeric 7 box multiple outline",
+            "searchable": "numeric 7 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9509,7 +9929,7 @@
             "author": "Google",
             "codepoint": "F3BA",
             "name": "numeric-8-box-multiple-outline",
-            "searchable": "numeric 8 box multiple outline",
+            "searchable": "numeric 8 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9533,7 +9953,7 @@
             "author": "Google",
             "codepoint": "F3BD",
             "name": "numeric-9-box-multiple-outline",
-            "searchable": "numeric 9 box multiple outline",
+            "searchable": "numeric 9 box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9557,7 +9977,7 @@
             "author": "Google",
             "codepoint": "F3C0",
             "name": "numeric-9-plus-box-multiple-outline",
-            "searchable": "numeric 9 plus box multiple outline",
+            "searchable": "numeric 9 plus box multiple outline image",
             "version": "1.5.54"
         },
         {
@@ -9617,13 +10037,21 @@
             "version": "1.8.36"
         },
         {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F774",
+            "name": "octagram-outline",
+            "searchable": "octagram outline",
+            "version": "1.9.32"
+        },
+        {
             "aliases": [
                 "ok-ru"
             ],
             "author": "Austin Andrews",
             "codepoint": "F3C5",
             "name": "odnoklassniki",
-            "searchable": "odnoklassniki ok ru",
+            "searchable": "odnoklassniki ok-ru",
             "version": "1.5.54"
         },
         {
@@ -9663,8 +10091,16 @@
             "author": "Austin Andrews",
             "codepoint": "F3CA",
             "name": "onedrive",
-            "searchable": "onedrive",
+            "searchable": "onedrive logo",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F746",
+            "name": "onenote",
+            "searchable": "onenote",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -9708,10 +10144,18 @@
         },
         {
             "aliases": [],
+            "author": "Roberto Graham",
+            "codepoint": "F018",
+            "name": "orbit",
+            "searchable": "orbit account",
+            "version": "1.5.54"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F3CF",
             "name": "ornament",
-            "searchable": "ornament",
+            "searchable": "ornament holiday",
             "version": "1.5.54"
         },
         {
@@ -9719,7 +10163,7 @@
             "author": "Austin Andrews",
             "codepoint": "F3D0",
             "name": "ornament-variant",
-            "searchable": "ornament variant",
+            "searchable": "ornament variant holiday",
             "version": "1.5.54"
         },
         {
@@ -9927,7 +10371,7 @@
             "author": "Google",
             "codepoint": "F3E4",
             "name": "pause",
-            "searchable": "pause",
+            "searchable": "pause action video audio",
             "version": "1.5.54"
         },
         {
@@ -9935,7 +10379,7 @@
             "author": "Google",
             "codepoint": "F3E5",
             "name": "pause-circle",
-            "searchable": "pause circle",
+            "searchable": "pause circle action video audio",
             "version": "1.5.54"
         },
         {
@@ -9943,7 +10387,7 @@
             "author": "Google",
             "codepoint": "F3E6",
             "name": "pause-circle-outline",
-            "searchable": "pause circle outline",
+            "searchable": "pause circle outline action video audio",
             "version": "1.5.54"
         },
         {
@@ -9951,7 +10395,7 @@
             "author": "Austin Andrews",
             "codepoint": "F3E7",
             "name": "pause-octagon",
-            "searchable": "pause octagon",
+            "searchable": "pause octagon debug",
             "version": "1.5.54"
         },
         {
@@ -9959,7 +10403,7 @@
             "author": "Austin Andrews",
             "codepoint": "F3E8",
             "name": "pause-octagon-outline",
-            "searchable": "pause octagon outline",
+            "searchable": "pause octagon outline debug",
             "version": "1.5.54"
         },
         {
@@ -9991,7 +10435,7 @@
             "author": "Google",
             "codepoint": "F3EB",
             "name": "pencil",
-            "searchable": "pencil",
+            "searchable": "pencil action drawing",
             "version": "1.5.54"
         },
         {
@@ -10017,6 +10461,14 @@
             "name": "pencil-circle",
             "searchable": "pencil circle",
             "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F775",
+            "name": "pencil-circle-outline",
+            "searchable": "pencil circle outline",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -10060,10 +10512,18 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F747",
+            "name": "periscope",
+            "searchable": "periscope",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F3F1",
             "name": "pharmacy",
-            "searchable": "pharmacy",
+            "searchable": "pharmacy local medical",
             "version": "1.5.54"
         },
         {
@@ -10223,7 +10683,7 @@
             "author": "Austin Andrews",
             "codepoint": "F401",
             "name": "pig",
-            "searchable": "pig",
+            "searchable": "pig agriculture",
             "version": "1.5.54"
         },
         {
@@ -10231,7 +10691,7 @@
             "author": "Austin Andrews",
             "codepoint": "F402",
             "name": "pill",
-            "searchable": "pill",
+            "searchable": "pill medical",
             "version": "1.5.54"
         },
         {
@@ -10249,7 +10709,7 @@
             "author": "Google",
             "codepoint": "F403",
             "name": "pin",
-            "searchable": "pin",
+            "searchable": "pin action",
             "version": "1.5.54"
         },
         {
@@ -10265,7 +10725,7 @@
             "author": "Austin Andrews",
             "codepoint": "F405",
             "name": "pine-tree",
-            "searchable": "pine tree",
+            "searchable": "pine tree holiday",
             "version": "1.5.54"
         },
         {
@@ -10273,7 +10733,7 @@
             "author": "Austin Andrews",
             "codepoint": "F406",
             "name": "pine-tree-box",
-            "searchable": "pine tree box",
+            "searchable": "pine tree box holiday",
             "version": "1.5.54"
         },
         {
@@ -10289,7 +10749,7 @@
             "author": "Google",
             "codepoint": "F408",
             "name": "pinterest-box",
-            "searchable": "pinterest box",
+            "searchable": "pinterest box logo social",
             "version": "1.5.54"
         },
         {
@@ -10321,7 +10781,7 @@
             "author": "Google",
             "codepoint": "F40A",
             "name": "play",
-            "searchable": "play",
+            "searchable": "play action video audio",
             "version": "1.5.54"
         },
         {
@@ -10337,7 +10797,7 @@
             "author": "Google",
             "codepoint": "F40C",
             "name": "play-circle",
-            "searchable": "play circle",
+            "searchable": "play circle action video audio",
             "version": "1.5.54"
         },
         {
@@ -10345,7 +10805,7 @@
             "author": "Google",
             "codepoint": "F40D",
             "name": "play-circle-outline",
-            "searchable": "play circle outline",
+            "searchable": "play circle outline action video audio",
             "version": "1.5.54"
         },
         {
@@ -10429,7 +10889,7 @@
             "author": "Google",
             "codepoint": "F415",
             "name": "plus",
-            "searchable": "plus add",
+            "searchable": "plus add action",
             "version": "1.5.54"
         },
         {
@@ -10437,7 +10897,7 @@
             "author": "Google",
             "codepoint": "F416",
             "name": "plus-box",
-            "searchable": "plus box",
+            "searchable": "plus box action",
             "version": "1.5.54"
         },
         {
@@ -10453,7 +10913,7 @@
             "author": "Google",
             "codepoint": "F417",
             "name": "plus-circle",
-            "searchable": "plus circle",
+            "searchable": "plus circle action",
             "version": "1.5.54"
         },
         {
@@ -10469,7 +10929,7 @@
             "author": "Google",
             "codepoint": "F419",
             "name": "plus-circle-outline",
-            "searchable": "plus circle outline",
+            "searchable": "plus circle outline action",
             "version": "1.5.54"
         },
         {
@@ -10501,7 +10961,7 @@
             "author": "Austin Andrews",
             "codepoint": "F41C",
             "name": "pocket",
-            "searchable": "pocket",
+            "searchable": "pocket logo social",
             "version": "1.5.54"
         },
         {
@@ -10541,7 +11001,7 @@
             "author": "Google",
             "codepoint": "F421",
             "name": "polymer",
-            "searchable": "polymer",
+            "searchable": "polymer logo",
             "version": "1.5.54"
         },
         {
@@ -10593,7 +11053,7 @@
             "author": "Austin Andrews",
             "codepoint": "F424",
             "name": "pound-box",
-            "searchable": "pound box hashtag box",
+            "searchable": "pound box hashtag-box",
             "version": "1.5.54"
         },
         {
@@ -10638,7 +11098,7 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "Roberto Graham",
             "codepoint": "F705",
             "name": "prescription",
             "searchable": "prescription",
@@ -10665,7 +11125,7 @@
             "author": "Google",
             "codepoint": "F42A",
             "name": "printer",
-            "searchable": "printer",
+            "searchable": "printer hardware",
             "version": "1.5.54"
         },
         {
@@ -10753,7 +11213,7 @@
             "author": "Google",
             "codepoint": "F431",
             "name": "puzzle",
-            "searchable": "puzzle",
+            "searchable": "puzzle action",
             "version": "1.5.54"
         },
         {
@@ -10793,7 +11253,7 @@
             "author": "Google",
             "codepoint": "F435",
             "name": "quality-high",
-            "searchable": "quality high",
+            "searchable": "quality high action audio video",
             "version": "1.5.54"
         },
         {
@@ -10857,7 +11317,7 @@
             "author": "Google",
             "codepoint": "F43D",
             "name": "radiobox-blank",
-            "searchable": "radiobox blank",
+            "searchable": "radiobox blank form",
             "version": "1.5.54"
         },
         {
@@ -10865,7 +11325,7 @@
             "author": "Google",
             "codepoint": "F43E",
             "name": "radiobox-marked",
-            "searchable": "radiobox marked",
+            "searchable": "radiobox marked form",
             "version": "1.5.54"
         },
         {
@@ -10953,7 +11413,7 @@
             "author": "Austin Andrews",
             "codepoint": "F448",
             "name": "readability",
-            "searchable": "readability",
+            "searchable": "readability logo social",
             "version": "1.5.54"
         },
         {
@@ -10961,7 +11421,7 @@
             "author": "Google",
             "codepoint": "F449",
             "name": "receipt",
-            "searchable": "receipt",
+            "searchable": "receipt action store",
             "version": "1.5.54"
         },
         {
@@ -10993,7 +11453,7 @@
             "author": "Austin Andrews",
             "codepoint": "F44D",
             "name": "reddit",
-            "searchable": "reddit",
+            "searchable": "reddit logo",
             "version": "1.5.54"
         },
         {
@@ -11017,7 +11477,7 @@
             "author": "Google",
             "codepoint": "F450",
             "name": "refresh",
-            "searchable": "refresh",
+            "searchable": "refresh action",
             "version": "1.5.54"
         },
         {
@@ -11169,7 +11629,7 @@
             "author": "Google",
             "codepoint": "F45F",
             "name": "rewind",
-            "searchable": "rewind",
+            "searchable": "rewind action video audio",
             "version": "1.5.54"
         },
         {
@@ -11238,7 +11698,7 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "Roberto Graham",
             "codepoint": "F70C",
             "name": "roomba",
             "searchable": "roomba",
@@ -11265,7 +11725,7 @@
             "author": "Austin Andrews",
             "codepoint": "F466",
             "name": "rotate-left-variant",
-            "searchable": "rotate left variant",
+            "searchable": "rotate left variant transform",
             "version": "1.5.54"
         },
         {
@@ -11281,7 +11741,7 @@
             "author": "Austin Andrews",
             "codepoint": "F468",
             "name": "rotate-right-variant",
-            "searchable": "rotate right variant",
+            "searchable": "rotate right variant transform",
             "version": "1.5.54"
         },
         {
@@ -11301,11 +11761,13 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "sign-routes"
+            ],
             "author": "Austin Andrews",
             "codepoint": "F46A",
             "name": "routes",
-            "searchable": "routes",
+            "searchable": "routes sign-routes",
             "version": "1.5.54"
         },
         {
@@ -11329,7 +11791,7 @@
             "author": "Gabriel",
             "codepoint": "F46C",
             "name": "rss-box",
-            "searchable": "rss box",
+            "searchable": "rss box square logo social",
             "version": "1.5.54"
         },
         {
@@ -11467,7 +11929,7 @@
             "author": "Google",
             "codepoint": "F479",
             "name": "sd",
-            "searchable": "sd",
+            "searchable": "sd hardware",
             "version": "1.5.54"
         },
         {
@@ -11618,6 +12080,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F776",
+            "name": "selection-off",
+            "searchable": "selection off",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F48A",
             "name": "send",
@@ -11637,7 +12107,7 @@
             "author": "Austin Andrews",
             "codepoint": "F48B",
             "name": "server",
-            "searchable": "server",
+            "searchable": "server hardware",
             "version": "1.5.54"
         },
         {
@@ -11653,7 +12123,7 @@
             "author": "Austin Andrews",
             "codepoint": "F48D",
             "name": "server-network",
-            "searchable": "server network",
+            "searchable": "server network hardware",
             "version": "1.5.54"
         },
         {
@@ -11661,7 +12131,7 @@
             "author": "Austin Andrews",
             "codepoint": "F48E",
             "name": "server-network-off",
-            "searchable": "server network off",
+            "searchable": "server network off hardware",
             "version": "1.5.54"
         },
         {
@@ -11669,7 +12139,7 @@
             "author": "Austin Andrews",
             "codepoint": "F48F",
             "name": "server-off",
-            "searchable": "server off",
+            "searchable": "server off hardware",
             "version": "1.5.54"
         },
         {
@@ -11697,6 +12167,70 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F777",
+            "name": "set-all",
+            "searchable": "set all",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F778",
+            "name": "set-center",
+            "searchable": "set center",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F779",
+            "name": "set-center-right",
+            "searchable": "set center right",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F77A",
+            "name": "set-left",
+            "searchable": "set left",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F77B",
+            "name": "set-left-center",
+            "searchable": "set left center",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F77C",
+            "name": "set-left-right",
+            "searchable": "set left right",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F77D",
+            "name": "set-none",
+            "searchable": "set none",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F77E",
+            "name": "set-right",
+            "searchable": "set right",
+            "version": "1.9.32"
+        },
+        {
             "aliases": [
                 "cog",
                 "gear"
@@ -11704,7 +12238,7 @@
             "author": "Google",
             "codepoint": "F493",
             "name": "settings",
-            "searchable": "settings cog gear",
+            "searchable": "settings cog gear action",
             "version": "1.5.54"
         },
         {
@@ -11715,7 +12249,7 @@
             "author": "Google",
             "codepoint": "F494",
             "name": "settings-box",
-            "searchable": "settings box gear box cog box",
+            "searchable": "settings box gear-box cog-box action",
             "version": "1.5.54"
         },
         {
@@ -11781,6 +12315,14 @@
             "name": "shield",
             "searchable": "shield",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F77F",
+            "name": "shield-half-full",
+            "searchable": "shield half full",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -11882,6 +12424,22 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F780",
+            "name": "sign-direction",
+            "searchable": "sign direction",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F781",
+            "name": "sign-text",
+            "searchable": "sign text",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F4A2",
             "name": "signal",
@@ -11927,6 +12485,14 @@
             "name": "signal-hspa-plus",
             "searchable": "signal hspa plus",
             "version": "1.8.36"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F782",
+            "name": "signal-off",
+            "searchable": "signal off",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -11981,7 +12547,7 @@
             "author": "Google",
             "codepoint": "F4A8",
             "name": "sim-alert",
-            "searchable": "sim alert",
+            "searchable": "sim alert hardware",
             "version": "1.5.54"
         },
         {
@@ -12021,7 +12587,7 @@
             "author": "Google",
             "codepoint": "F4AD",
             "name": "skip-next",
-            "searchable": "skip next",
+            "searchable": "skip next action video audio",
             "version": "1.5.54"
         },
         {
@@ -12045,7 +12611,7 @@
             "author": "Google",
             "codepoint": "F4AE",
             "name": "skip-previous",
-            "searchable": "skip previous",
+            "searchable": "skip previous action video audio",
             "version": "1.5.54"
         },
         {
@@ -12114,7 +12680,7 @@
         },
         {
             "aliases": [],
-            "author": "Cody",
+            "author": "Google",
             "codepoint": "F4B4",
             "name": "smoking",
             "searchable": "smoking",
@@ -12122,7 +12688,7 @@
         },
         {
             "aliases": [],
-            "author": "Cody",
+            "author": "Google",
             "codepoint": "F4B5",
             "name": "smoking-off",
             "searchable": "smoking off",
@@ -12149,7 +12715,7 @@
             "author": "Austin Andrews",
             "codepoint": "F4B7",
             "name": "snowman",
-            "searchable": "snowman",
+            "searchable": "snowman holiday",
             "version": "1.5.54"
         },
         {
@@ -12325,7 +12891,7 @@
             "author": "Google",
             "codepoint": "F4C3",
             "name": "speaker",
-            "searchable": "speaker",
+            "searchable": "speaker hardware",
             "version": "1.5.54"
         },
         {
@@ -12333,7 +12899,7 @@
             "author": "Austin Andrews",
             "codepoint": "F4C4",
             "name": "speaker-off",
-            "searchable": "speaker off",
+            "searchable": "speaker off hardware",
             "version": "1.5.54"
         },
         {
@@ -12395,6 +12961,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F763",
+            "name": "square",
+            "searchable": "square",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F4CA",
             "name": "square-inc",
             "searchable": "square inc",
@@ -12407,6 +12981,22 @@
             "name": "square-inc-cash",
             "searchable": "square inc cash",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F762",
+            "name": "square-outline",
+            "searchable": "square outline",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F783",
+            "name": "square-root",
+            "searchable": "square root",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -12445,7 +13035,7 @@
             "author": "Google",
             "codepoint": "F4CE",
             "name": "star",
-            "searchable": "star",
+            "searchable": "star vote",
             "version": "1.5.54"
         },
         {
@@ -12461,7 +13051,7 @@
             "author": "Google",
             "codepoint": "F4D0",
             "name": "star-half",
-            "searchable": "star half",
+            "searchable": "star half vote",
             "version": "1.5.54"
         },
         {
@@ -12477,7 +13067,7 @@
             "author": "Google",
             "codepoint": "F4D2",
             "name": "star-outline",
-            "searchable": "star outline",
+            "searchable": "star outline vote",
             "version": "1.5.54"
         },
         {
@@ -12546,10 +13136,18 @@
         },
         {
             "aliases": [],
+            "author": "Google",
+            "codepoint": "F784",
+            "name": "sticker-emoji",
+            "searchable": "sticker emoji",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F4DA",
             "name": "stocking",
-            "searchable": "stocking",
+            "searchable": "stocking holiday",
             "version": "1.5.54"
         },
         {
@@ -12557,7 +13155,7 @@
             "author": "Google",
             "codepoint": "F4DB",
             "name": "stop",
-            "searchable": "stop",
+            "searchable": "stop action video audio",
             "version": "1.5.54"
         },
         {
@@ -12581,7 +13179,7 @@
             "author": "Google",
             "codepoint": "F4DC",
             "name": "store",
-            "searchable": "store",
+            "searchable": "store action local",
             "version": "1.5.54"
         },
         {
@@ -12589,7 +13187,7 @@
             "author": "Google",
             "codepoint": "F4DD",
             "name": "store-24-hour",
-            "searchable": "store 24 hour",
+            "searchable": "store 24 hour local",
             "version": "1.5.54"
         },
         {
@@ -12629,8 +13227,16 @@
             "author": "Google",
             "codepoint": "F4DF",
             "name": "subway-variant",
-            "searchable": "subway variant",
+            "searchable": "subway variant transportation",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F785",
+            "name": "summit",
+            "searchable": "summit",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -12661,7 +13267,7 @@
             "author": "Google",
             "codepoint": "F4E1",
             "name": "swap-horizontal",
-            "searchable": "swap horizontal",
+            "searchable": "swap horizontal action arrow",
             "version": "1.5.54"
         },
         {
@@ -12669,7 +13275,7 @@
             "author": "Google",
             "codepoint": "F4E2",
             "name": "swap-vertical",
-            "searchable": "swap vertical",
+            "searchable": "swap vertical action arrow",
             "version": "1.5.54"
         },
         {
@@ -12695,6 +13301,14 @@
             "name": "sword",
             "searchable": "sword",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F786",
+            "name": "sword-cross",
+            "searchable": "sword cross",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -12725,15 +13339,23 @@
             "author": "Google",
             "codepoint": "F4E9",
             "name": "tab",
-            "searchable": "tab",
+            "searchable": "tab action",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F75B",
+            "name": "tab-plus",
+            "searchable": "tab plus",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
             "author": "Google",
             "codepoint": "F4EA",
             "name": "tab-unselected",
-            "searchable": "tab unselected",
+            "searchable": "tab unselected action",
             "version": "1.5.54"
         },
         {
@@ -12829,7 +13451,7 @@
             "author": "Google",
             "codepoint": "F4F6",
             "name": "tablet",
-            "searchable": "tablet",
+            "searchable": "tablet hardware",
             "version": "1.5.54"
         },
         {
@@ -12850,10 +13472,18 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F761",
+            "name": "taco",
+            "searchable": "taco",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F4F9",
             "name": "tag",
-            "searchable": "tag",
+            "searchable": "tag action",
             "version": "1.5.54"
         },
         {
@@ -12861,7 +13491,7 @@
             "author": "Google",
             "codepoint": "F4FA",
             "name": "tag-faces",
-            "searchable": "tag faces",
+            "searchable": "tag faces camera",
             "version": "1.5.54"
         },
         {
@@ -12925,7 +13555,7 @@
             "author": "Google",
             "codepoint": "F4FF",
             "name": "taxi",
-            "searchable": "taxi",
+            "searchable": "taxi transportation",
             "version": "1.5.54"
         },
         {
@@ -12965,7 +13595,7 @@
             "author": "Austin Andrews",
             "codepoint": "F504",
             "name": "temperature-celsius",
-            "searchable": "temperature celsius",
+            "searchable": "temperature celsius weather",
             "version": "1.5.54"
         },
         {
@@ -12973,7 +13603,7 @@
             "author": "Austin Andrews",
             "codepoint": "F505",
             "name": "temperature-fahrenheit",
-            "searchable": "temperature fahrenheit",
+            "searchable": "temperature fahrenheit weather",
             "version": "1.5.54"
         },
         {
@@ -12981,7 +13611,7 @@
             "author": "Austin Andrews",
             "codepoint": "F506",
             "name": "temperature-kelvin",
-            "searchable": "temperature kelvin",
+            "searchable": "temperature kelvin weather",
             "version": "1.5.54"
         },
         {
@@ -13077,7 +13707,7 @@
             "author": "Austin Andrews",
             "codepoint": "F50F",
             "name": "thermometer",
-            "searchable": "thermometer",
+            "searchable": "thermometer weather",
             "version": "1.5.54"
         },
         {
@@ -13085,7 +13715,7 @@
             "author": "Austin Andrews",
             "codepoint": "F510",
             "name": "thermometer-lines",
-            "searchable": "thermometer lines",
+            "searchable": "thermometer lines weather",
             "version": "1.5.54"
         },
         {
@@ -13093,7 +13723,7 @@
             "author": "Google",
             "codepoint": "F511",
             "name": "thumb-down",
-            "searchable": "thumb down",
+            "searchable": "thumb down vote action",
             "version": "1.5.54"
         },
         {
@@ -13109,7 +13739,7 @@
             "author": "Google",
             "codepoint": "F513",
             "name": "thumb-up",
-            "searchable": "thumb up",
+            "searchable": "thumb up vote action",
             "version": "1.5.54"
         },
         {
@@ -13167,7 +13797,7 @@
             "author": "Austin Andrews",
             "codepoint": "F519",
             "name": "tie",
-            "searchable": "tie",
+            "searchable": "tie clothing",
             "version": "1.5.54"
         },
         {
@@ -13183,7 +13813,7 @@
             "author": "Google",
             "codepoint": "F51A",
             "name": "timelapse",
-            "searchable": "timelapse",
+            "searchable": "timelapse time camera",
             "version": "1.5.54"
         },
         {
@@ -13225,18 +13855,26 @@
             "author": "Austin Andrews",
             "codepoint": "F51F",
             "name": "timer-sand",
-            "searchable": "timer sand hourglass",
+            "searchable": "timer sand hourglass time",
             "version": "1.5.54"
         },
         {
             "aliases": [
                 "hourglass-empty"
             ],
-            "author": "Austin Andrews",
+            "author": "Google",
             "codepoint": "F6AC",
             "name": "timer-sand-empty",
-            "searchable": "timer sand empty hourglass empty",
+            "searchable": "timer sand empty hourglass-empty",
             "version": "1.7.12"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F78B",
+            "name": "timer-sand-full",
+            "searchable": "timer sand full",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -13355,15 +13993,15 @@
             "author": "Google",
             "codepoint": "F52C",
             "name": "train",
-            "searchable": "train",
+            "searchable": "train transportation",
             "version": "1.5.54"
         },
         {
             "aliases": [],
-            "author": "Doug C. Hardester",
+            "author": "Google",
             "codepoint": "F52D",
             "name": "tram",
-            "searchable": "tram",
+            "searchable": "tram transportation",
             "version": "1.5.54"
         },
         {
@@ -13429,7 +14067,7 @@
             "author": "Austin Andrews",
             "codepoint": "F532",
             "name": "trello",
-            "searchable": "trello",
+            "searchable": "trello logo",
             "version": "1.5.54"
         },
         {
@@ -13489,7 +14127,7 @@
             "author": "Doug C. Hardester",
             "codepoint": "F539",
             "name": "trophy-award",
-            "searchable": "trophy award achievement award",
+            "searchable": "trophy award achievement-award",
             "version": "1.5.54"
         },
         {
@@ -13499,7 +14137,7 @@
             "author": "Cody",
             "codepoint": "F53A",
             "name": "trophy-outline",
-            "searchable": "trophy outline achievement outline",
+            "searchable": "trophy outline achievement-outline",
             "version": "1.5.54"
         },
         {
@@ -13509,7 +14147,7 @@
             "author": "Doug C. Hardester",
             "codepoint": "F53B",
             "name": "trophy-variant",
-            "searchable": "trophy variant achievement variant",
+            "searchable": "trophy variant achievement-variant",
             "version": "1.5.54"
         },
         {
@@ -13519,7 +14157,7 @@
             "author": "Cody",
             "codepoint": "F53C",
             "name": "trophy-variant-outline",
-            "searchable": "trophy variant outline achievement variant outline",
+            "searchable": "trophy variant outline achievement-variant-outline",
             "version": "1.5.54"
         },
         {
@@ -13527,7 +14165,7 @@
             "author": "Google",
             "codepoint": "F53D",
             "name": "truck",
-            "searchable": "truck",
+            "searchable": "truck transportation",
             "version": "1.5.54"
         },
         {
@@ -13537,6 +14175,14 @@
             "name": "truck-delivery",
             "searchable": "truck delivery",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F787",
+            "name": "truck-fast",
+            "searchable": "truck fast",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -13551,7 +14197,7 @@
             "author": "Austin Andrews",
             "codepoint": "F53F",
             "name": "tshirt-crew",
-            "searchable": "tshirt crew",
+            "searchable": "tshirt crew clothing",
             "version": "1.5.54"
         },
         {
@@ -13559,7 +14205,7 @@
             "author": "Austin Andrews",
             "codepoint": "F540",
             "name": "tshirt-v",
-            "searchable": "tshirt v",
+            "searchable": "tshirt v clothing",
             "version": "1.5.54"
         },
         {
@@ -13567,7 +14213,7 @@
             "author": "Google",
             "codepoint": "F541",
             "name": "tumblr",
-            "searchable": "tumblr",
+            "searchable": "tumblr logo social box",
             "version": "1.5.54"
         },
         {
@@ -13599,7 +14245,7 @@
             "author": "Austin Andrews",
             "codepoint": "F543",
             "name": "twitch",
-            "searchable": "twitch",
+            "searchable": "twitch logo social",
             "version": "1.5.54"
         },
         {
@@ -13607,7 +14253,7 @@
             "author": "Austin Andrews",
             "codepoint": "F544",
             "name": "twitter",
-            "searchable": "twitter",
+            "searchable": "twitter social logo",
             "version": "1.5.54"
         },
         {
@@ -13615,7 +14261,7 @@
             "author": "Google",
             "codepoint": "F545",
             "name": "twitter-box",
-            "searchable": "twitter box",
+            "searchable": "twitter box social",
             "version": "1.5.54"
         },
         {
@@ -13636,10 +14282,18 @@
         },
         {
             "aliases": [],
+            "author": "Case Sandberg",
+            "codepoint": "F748",
+            "name": "uber",
+            "searchable": "uber",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F548",
             "name": "ubuntu",
-            "searchable": "ubuntu",
+            "searchable": "ubuntu operating system",
             "version": "1.5.54"
         },
         {
@@ -13686,17 +14340,33 @@
             "aliases": [],
             "author": "Google",
             "codepoint": "F54E",
-            "name": "unfold-less",
-            "searchable": "unfold less",
+            "name": "unfold-less-horizontal",
+            "searchable": "unfold less horizontal",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F75F",
+            "name": "unfold-less-vertical",
+            "searchable": "unfold less vertical",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
             "author": "Google",
             "codepoint": "F54F",
-            "name": "unfold-more",
-            "searchable": "unfold more",
+            "name": "unfold-more-horizontal",
+            "searchable": "unfold more horizontal",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F760",
+            "name": "unfold-more-vertical",
+            "searchable": "unfold more vertical",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -13735,8 +14405,16 @@
             "author": "Google",
             "codepoint": "F552",
             "name": "upload",
-            "searchable": "upload",
+            "searchable": "upload action",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F6F5",
+            "name": "upload-network",
+            "searchable": "upload network",
+            "version": "1.8.36"
         },
         {
             "aliases": [],
@@ -13861,6 +14539,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F749",
+            "name": "vector-radius",
+            "searchable": "vector radius",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F5C6",
             "name": "vector-rectangle",
             "searchable": "vector rectangle",
@@ -13879,7 +14565,7 @@
             "author": "Austin Andrews",
             "codepoint": "F001",
             "name": "vector-square",
-            "searchable": "vector square",
+            "searchable": "vector square shape",
             "version": "1.5.54"
         },
         {
@@ -14137,7 +14823,7 @@
             "author": "Google",
             "codepoint": "F57D",
             "name": "voicemail",
-            "searchable": "voicemail",
+            "searchable": "voicemail action",
             "version": "1.5.54"
         },
         {
@@ -14165,6 +14851,22 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F75D",
+            "name": "volume-minus",
+            "searchable": "volume minus",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F75E",
+            "name": "volume-mute",
+            "searchable": "volume mute",
+            "version": "1.9.32"
+        },
+        {
             "aliases": [
                 "mute"
             ],
@@ -14173,6 +14875,14 @@
             "name": "volume-off",
             "searchable": "volume off mute",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F75C",
+            "name": "volume-plus",
+            "searchable": "volume plus",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -14243,7 +14953,7 @@
             "author": "Google",
             "codepoint": "F589",
             "name": "watch",
-            "searchable": "watch",
+            "searchable": "watch hardware",
             "version": "1.5.54"
         },
         {
@@ -14311,6 +15021,14 @@
             "name": "watermark",
             "searchable": "watermark",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Cody",
+            "codepoint": "F78C",
+            "name": "waves",
+            "searchable": "waves",
+            "version": "1.9.32"
         },
         {
             "aliases": [],
@@ -14453,7 +15171,7 @@
             "author": "Google",
             "codepoint": "F59F",
             "name": "web",
-            "searchable": "web",
+            "searchable": "web action circle",
             "version": "1.5.54"
         },
         {
@@ -14509,7 +15227,7 @@
             "author": "Austin Andrews",
             "codepoint": "F5A3",
             "name": "whatsapp",
-            "searchable": "whatsapp",
+            "searchable": "whatsapp logo social",
             "version": "1.5.54"
         },
         {
@@ -14525,7 +15243,7 @@
             "author": "Google",
             "codepoint": "F5A5",
             "name": "white-balance-auto",
-            "searchable": "white balance auto",
+            "searchable": "white balance auto camera",
             "version": "1.5.54"
         },
         {
@@ -14533,7 +15251,7 @@
             "author": "Google",
             "codepoint": "F5A6",
             "name": "white-balance-incandescent",
-            "searchable": "white balance incandescent",
+            "searchable": "white balance incandescent camera",
             "version": "1.5.54"
         },
         {
@@ -14541,7 +15259,7 @@
             "author": "Google",
             "codepoint": "F5A7",
             "name": "white-balance-iridescent",
-            "searchable": "white balance iridescent",
+            "searchable": "white balance iridescent camera",
             "version": "1.5.54"
         },
         {
@@ -14549,7 +15267,7 @@
             "author": "Google",
             "codepoint": "F5A8",
             "name": "white-balance-sunny",
-            "searchable": "white balance sunny",
+            "searchable": "white balance sunny camera",
             "version": "1.5.54"
         },
         {
@@ -14653,7 +15371,7 @@
             "author": "Austin Andrews",
             "codepoint": "F5B3",
             "name": "windows",
-            "searchable": "windows",
+            "searchable": "windows logo operating system",
             "version": "1.5.54"
         },
         {
@@ -14723,6 +15441,54 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F74A",
+            "name": "xbox-controller-battery-alert",
+            "searchable": "xbox controller battery alert",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F74B",
+            "name": "xbox-controller-battery-empty",
+            "searchable": "xbox controller battery empty",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F74C",
+            "name": "xbox-controller-battery-full",
+            "searchable": "xbox controller battery full",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F74D",
+            "name": "xbox-controller-battery-low",
+            "searchable": "xbox controller battery low",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F74E",
+            "name": "xbox-controller-battery-medium",
+            "searchable": "xbox controller battery medium",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F74F",
+            "name": "xbox-controller-battery-unknown",
+            "searchable": "xbox controller battery unknown",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F5BB",
             "name": "xbox-controller-off",
             "searchable": "xbox controller off",
@@ -14770,6 +15536,14 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F788",
+            "name": "yammer",
+            "searchable": "yammer",
+            "version": "1.9.32"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F5C1",
             "name": "yeast",
@@ -14797,7 +15571,7 @@
             "author": "Google",
             "codepoint": "F5C3",
             "name": "youtube-play",
-            "searchable": "youtube play",
+            "searchable": "youtube play action",
             "version": "1.5.54"
         },
         {
@@ -14813,9 +15587,9 @@
             "author": "Austin Andrews",
             "codepoint": "F68C",
             "name": "blank",
-            "searchable": "blank",
+            "searchable": "blank empty transparent",
             "version": "1.7.12"
         }
     ],
-    "version": "1.8.36"
+    "version": "1.9.32"
 }

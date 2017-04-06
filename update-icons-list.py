@@ -68,17 +68,16 @@ def fetch_meta():
 
     for icon in upstream_meta['icons']:
         # Compute searchable attribute to enhance filter performances
-        searchable = ''
-        for alias in [icon['name']] + icon['aliases']:
-            searchable += alias.replace('-', ' ') + ' '
+        searchable = []
+        for expr in icon['name'].split('-') + icon['aliases'] + icon['tags']:
+            if expr not in searchable:
+                searchable.append(expr)
 
-        # Remove last blank space from searchable
-        searchable = searchable[:-1]
-
-        icon['searchable'] = searchable
+        icon['searchable'] = ' '.join(searchable)
 
         # Remove unused information
         icon.pop('id')
+        icon.pop('tags')
 
     return upstream_meta
 
