@@ -219,6 +219,11 @@ header.header {
         &.active {
             color: $icons-color-hover!important;
         }
+
+        &.mdi-blank {
+            border-color: rgba(#000, 0.3);
+            border-style: dashed;
+        }
     }
 }
 
