@@ -89,12 +89,13 @@ header.header {
     background-color: $color-primary;
     position: relative;
     z-index: 1;
-    @extend .elevation-lowest;
+    @extend .elevation-tiny;
 
     h1 {
         font-weight: normal;
         margin: 5px 0;
         display: inline-block;
+        text-shadow: 1px 1px 0 $color-primary, 2px 2px 0 rgba(0,0,0,0.15);
 
         i.mdi {
             vertical-align: baseline;
@@ -211,13 +212,12 @@ header.header {
         font-size: $icon-size;
         overflow: hidden;
 
-        &:hover, &.active {
-            color: $icons-color-hover!important;
+        &:hover {
             border-color: rgba(#000, 0.1);
         }
 
         &.active {
-            @extend .elevation-lowest;
+            color: $icons-color-hover!important;
         }
     }
 }
@@ -242,12 +242,14 @@ body.random-icon-colors {
 }
 #icon-properties {
     padding: 5px 10px;
+    display: flex;
+    align-items: center;
 
     #icon-icon {
         $icon-size: 1.6em;
-        float: left;
         width: $icon-size;
         height: $icon-size;
+        flex-shrink: 0;
         text-align: center;
         color: $icons-color-hover;
         line-height: $icon-size;
@@ -255,15 +257,16 @@ body.random-icon-colors {
         margin: 5px 20px 5px 5px;
         border-radius: 50%;
         transition-duration: $timing-short;
-        @extend .elevation-lowest;
+        @extend .elevation-tiny;
     }
 
     &:not(.inactive) #icon-icon {
         cursor: pointer;
+        @extend .elevation-1;
     }
 
     .properties {
-        margin-left: 80px;
+        flex-grow: 1;
 
         #icon-name {
             font-size: 20px;
@@ -302,7 +305,6 @@ body.random-icon-colors {
 // Accent color change on footer #icon-icon click
 @each $color, $shades in $colors {
     body[data-accent="#{$color}"] {
-        .icons .mdi:hover,
         .icons .mdi.active,
         #icon-properties #icon-icon {
             background-color: map-get($shades, "500");
@@ -310,7 +312,6 @@ body.random-icon-colors {
 
         #icon-properties #icon-icon:hover {
             background-color: darken(map-get($shades, "500"), 5);
-            @extend .elevation-2;
         }
     }
 }
