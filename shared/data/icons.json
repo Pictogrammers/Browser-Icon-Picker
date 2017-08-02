@@ -308,11 +308,27 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F78D",
+            "name": "alarm-bell",
+            "searchable": "alarm bell",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F021",
             "name": "alarm-check",
             "searchable": "alarm check",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F78E",
+            "name": "alarm-light",
+            "searchable": "alarm light",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -508,6 +524,14 @@
         },
         {
             "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F78F",
+            "name": "android-head",
+            "searchable": "android head",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F034",
             "name": "android-studio",
@@ -628,6 +652,14 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F790",
+            "name": "approval",
+            "searchable": "approval",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F03B",
             "name": "apps",
@@ -702,17 +734,49 @@
             "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F615",
-            "name": "arrow-compress",
-            "searchable": "arrow compress",
+            "name": "arrow-collapse",
+            "searchable": "arrow collapse",
             "version": "1.6.50"
         },
         {
             "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F044",
-            "name": "arrow-compress-all",
-            "searchable": "arrow compress all",
+            "name": "arrow-collapse-all",
+            "searchable": "arrow collapse all",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F791",
+            "name": "arrow-collapse-down",
+            "searchable": "arrow collapse down",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F792",
+            "name": "arrow-collapse-left",
+            "searchable": "arrow collapse left",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F793",
+            "name": "arrow-collapse-right",
+            "searchable": "arrow collapse right",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F794",
+            "name": "arrow-collapse-up",
+            "searchable": "arrow collapse up",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -817,6 +881,38 @@
             "name": "arrow-expand-all",
             "searchable": "arrow expand all",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F795",
+            "name": "arrow-expand-down",
+            "searchable": "arrow expand down",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F796",
+            "name": "arrow-expand-left",
+            "searchable": "arrow expand left",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F797",
+            "name": "arrow-expand-right",
+            "searchable": "arrow expand right",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F798",
+            "name": "arrow-expand-up",
+            "searchable": "arrow expand up",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -1879,6 +1975,22 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F799",
+            "name": "book-secure",
+            "searchable": "book secure",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F79A",
+            "name": "book-unsecure",
+            "searchable": "book unsecure",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F0BF",
             "name": "book-variant",
@@ -2246,11 +2358,13 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "announcement"
+            ],
             "author": "Austin Andrews",
             "codepoint": "F0E6",
             "name": "bullhorn",
-            "searchable": "bullhorn",
+            "searchable": "bullhorn announcement",
             "version": "1.5.54"
         },
         {
@@ -2276,6 +2390,46 @@
             "name": "bus",
             "searchable": "bus transportation",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F79B",
+            "name": "bus-articulated-end",
+            "searchable": "bus articulated end",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F79C",
+            "name": "bus-articulated-front",
+            "searchable": "bus articulated front",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F79D",
+            "name": "bus-double-decker",
+            "searchable": "bus double decker",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F79E",
+            "name": "bus-school",
+            "searchable": "bus school",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F79F",
+            "name": "bus-side",
+            "searchable": "bus side",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -2529,11 +2683,51 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F7A0",
+            "name": "camera-gopro",
+            "searchable": "camera gopro",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F104",
             "name": "camera-iris",
             "searchable": "camera iris",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7A1",
+            "name": "camera-metering-center",
+            "searchable": "camera metering center",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7A2",
+            "name": "camera-metering-matrix",
+            "searchable": "camera metering matrix",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7A3",
+            "name": "camera-metering-partial",
+            "searchable": "camera metering partial",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7A4",
+            "name": "camera-metering-spot",
+            "searchable": "camera metering spot",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -2609,6 +2803,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7A5",
+            "name": "cannabis",
+            "searchable": "cannabis",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F10B",
             "name": "car",
@@ -2633,11 +2835,67 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7A6",
+            "name": "car-convertable",
+            "searchable": "car convertable",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7A7",
+            "name": "car-estate",
+            "searchable": "car estate",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7A8",
+            "name": "car-hatchback",
+            "searchable": "car hatchback",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7A9",
+            "name": "car-pickup",
+            "searchable": "car pickup",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7AA",
+            "name": "car-side",
+            "searchable": "car side",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7AB",
+            "name": "car-sports",
+            "searchable": "car sports",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F10E",
             "name": "car-wash",
             "searchable": "car wash local",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7AC",
+            "name": "caravan",
+            "searchable": "caravan",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -2793,6 +3051,14 @@
         },
         {
             "aliases": [],
+            "author": "Roberto Graham",
+            "codepoint": "F7AD",
+            "name": "cctv",
+            "searchable": "cctv",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Rowan",
             "codepoint": "F768",
             "name": "ceiling-light",
@@ -2920,6 +3186,27 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [
+                "chart-doughnut",
+                "data-usage"
+            ],
+            "author": "Google",
+            "codepoint": "F7AE",
+            "name": "chart-donut",
+            "searchable": "chart donut chart-doughnut data-usage",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [
+                "chart-doughnut-variant"
+            ],
+            "author": "Austin Andrews",
+            "codepoint": "F7AF",
+            "name": "chart-donut-variant",
+            "searchable": "chart donut variant chart-doughnut-variant",
+            "version": "2.0.46"
+        },
+        {
             "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F66C",
@@ -2950,6 +3237,14 @@
             "name": "chart-line-stacked",
             "searchable": "chart line stacked",
             "version": "1.9.32"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F7B0",
+            "name": "chart-line-variant",
+            "searchable": "chart line variant",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -3214,6 +3509,30 @@
             "name": "chevron-up",
             "searchable": "chevron up",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7B1",
+            "name": "chili-hot",
+            "searchable": "chili hot",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7B2",
+            "name": "chili-medium",
+            "searchable": "chili medium",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7B3",
+            "name": "chili-mild",
+            "searchable": "chili mild",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -3498,6 +3817,16 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [
+                "cloud-json"
+            ],
+            "author": "Contributors",
+            "codepoint": "F7B4",
+            "name": "cloud-braces",
+            "searchable": "cloud braces cloud-json",
+            "version": "2.0.46"
+        },
+        {
             "aliases": [],
             "author": "Google",
             "codepoint": "F160",
@@ -3560,6 +3889,16 @@
             "name": "cloud-sync",
             "searchable": "cloud sync",
             "version": "1.6.50"
+        },
+        {
+            "aliases": [
+                "cloud-xml"
+            ],
+            "author": "Contributors",
+            "codepoint": "F7B5",
+            "name": "cloud-tags",
+            "searchable": "cloud tags cloud-xml",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -3907,6 +4246,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7B6",
+            "name": "console-line",
+            "searchable": "console line",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F18E",
             "name": "contact-mail",
@@ -4019,6 +4366,14 @@
             "name": "copyright",
             "searchable": "copyright",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Thomas Hunsaker",
+            "codepoint": "F7B7",
+            "name": "corn",
+            "searchable": "corn",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -4224,6 +4579,30 @@
         },
         {
             "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F7B8",
+            "name": "currency-chf",
+            "searchable": "currency chf",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F7B9",
+            "name": "currency-cny",
+            "searchable": "currency cny",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7BA",
+            "name": "currency-eth",
+            "searchable": "currency eth",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F1AD",
             "name": "currency-eur",
@@ -4250,6 +4629,22 @@
         },
         {
             "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F7BB",
+            "name": "currency-jpy",
+            "searchable": "currency jpy",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F7BC",
+            "name": "currency-krw",
+            "searchable": "currency krw",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F1B0",
             "name": "currency-ngn",
@@ -4265,12 +4660,30 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [
+                "currency-scarab"
+            ],
+            "author": "Michael Richins",
+            "codepoint": "F7BD",
+            "name": "currency-sign",
+            "searchable": "currency sign currency-scarab",
+            "version": "2.0.46"
+        },
+        {
             "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F1B2",
             "name": "currency-try",
             "searchable": "currency try",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F7BE",
+            "name": "currency-twd",
+            "searchable": "currency twd",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -4477,6 +4890,16 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [
+                "computer-classic"
+            ],
+            "author": "Rowan",
+            "codepoint": "F7BF",
+            "name": "desktop-classic",
+            "searchable": "desktop classic computer-classic",
+            "version": "2.0.46"
+        },
+        {
             "aliases": [],
             "author": "Google",
             "codepoint": "F1C4",
@@ -4638,6 +5061,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7C0",
+            "name": "dip-switch",
+            "searchable": "dip switch",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F1D0",
             "name": "directions",
@@ -4760,6 +5191,14 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7C1",
+            "name": "donkey",
+            "searchable": "donkey",
+            "version": "2.0.46"
+        },
+        {
             "aliases": [
                 "more"
             ],
@@ -4771,6 +5210,14 @@
         },
         {
             "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7C2",
+            "name": "dots-horizontal-circle",
+            "searchable": "dots horizontal circle",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F1D9",
             "name": "dots-vertical",
@@ -4779,7 +5226,15 @@
         },
         {
             "aliases": [],
-            "author": "Cody",
+            "author": "Contributors",
+            "codepoint": "F7C3",
+            "name": "dots-vertical-circle",
+            "searchable": "dots vertical circle",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
             "codepoint": "F699",
             "name": "douban",
             "searchable": "douban",
@@ -4900,6 +5355,14 @@
         {
             "aliases": [],
             "author": "Google",
+            "codepoint": "F7C4",
+            "name": "ear-hearing",
+            "searchable": "ear hearing",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
             "codepoint": "F1E7",
             "name": "earth",
             "searchable": "earth",
@@ -4944,6 +5407,14 @@
             "name": "eject",
             "searchable": "eject",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7C5",
+            "name": "elephant",
+            "searchable": "elephant",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -5208,6 +5679,14 @@
             "name": "ev-station",
             "searchable": "ev station",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F7C6",
+            "name": "eventbrite",
+            "searchable": "eventbrite",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -6089,6 +6568,14 @@
         },
         {
             "aliases": [],
+            "author": "Alex Efremo",
+            "codepoint": "F7C7",
+            "name": "food-croissant",
+            "searchable": "food croissant",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F5F2",
             "name": "food-fork-drink",
@@ -6134,6 +6621,14 @@
             "name": "football-helmet",
             "searchable": "football helmet",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7C8",
+            "name": "forklift",
+            "searchable": "forklift",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -6513,7 +7008,7 @@
         },
         {
             "aliases": [],
-            "author": "Austin Andrews",
+            "author": "Michael Richins",
             "codepoint": "F69E",
             "name": "format-section",
             "searchable": "format section",
@@ -6715,6 +7210,14 @@
         },
         {
             "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F7C9",
+            "name": "fuel",
+            "searchable": "fuel",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F293",
             "name": "fullscreen",
@@ -6840,6 +7343,14 @@
             "name": "gender-transgender",
             "searchable": "gender transgender",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F7CA",
+            "name": "gesture",
+            "searchable": "gesture",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -7037,6 +7548,22 @@
         },
         {
             "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7CB",
+            "name": "google-analytics",
+            "searchable": "google analytics",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Google",
+            "codepoint": "F7CC",
+            "name": "google-assistant",
+            "searchable": "google assistant",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F2AE",
             "name": "google-cardboard",
@@ -7141,7 +7668,7 @@
         },
         {
             "aliases": [],
-            "author": "Cody",
+            "author": "Google",
             "codepoint": "F2B9",
             "name": "google-nearby",
             "searchable": "google nearby",
@@ -7357,6 +7884,14 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7CD",
+            "name": "headphones-off",
+            "searchable": "headphones off",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F2CD",
             "name": "headphones-settings",
@@ -7536,6 +8071,14 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7CE",
+            "name": "high-definition",
+            "searchable": "high definition",
+            "version": "2.0.46"
+        },
+        {
             "aliases": [
                 "autobahn"
             ],
@@ -7570,6 +8113,30 @@
             "name": "home",
             "searchable": "home house action local",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7CF",
+            "name": "home-assistant",
+            "searchable": "home assistant",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7D0",
+            "name": "home-automation",
+            "searchable": "home automation",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7D1",
+            "name": "home-circle",
+            "searchable": "home circle",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -8288,6 +8855,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F7D2",
+            "name": "language-go",
+            "searchable": "language go",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F31D",
             "name": "language-html5",
             "searchable": "language html5",
@@ -8324,6 +8899,14 @@
             "name": "language-python-text",
             "searchable": "language python text",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7D3",
+            "name": "language-r",
+            "searchable": "language r",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -8399,6 +8982,14 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7D4",
+            "name": "lava-lamp",
+            "searchable": "lava lamp",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F328",
             "name": "layers",
@@ -8452,6 +9043,14 @@
             "name": "led-outline",
             "searchable": "led outline",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7D5",
+            "name": "led-strip",
+            "searchable": "led strip",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -8665,6 +9264,22 @@
         },
         {
             "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7D6",
+            "name": "locker",
+            "searchable": "locker",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7D7",
+            "name": "locker-multiple",
+            "searchable": "locker multiple",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F342",
             "name": "login",
@@ -8850,6 +9465,14 @@
             "name": "map-marker-off",
             "searchable": "map marker off action pin",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7D8",
+            "name": "map-marker-outline",
+            "searchable": "map marker outline",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -9163,6 +9786,30 @@
         },
         {
             "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F7D9",
+            "name": "metronome",
+            "searchable": "metronome",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "JapanYoshi",
+            "codepoint": "F7DA",
+            "name": "metronome-tick",
+            "searchable": "metronome tick",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7DB",
+            "name": "micro-sd",
+            "searchable": "micro sd",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F36C",
             "name": "microphone",
@@ -9291,6 +9938,14 @@
         },
         {
             "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7DC",
+            "name": "mixer",
+            "searchable": "mixer",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F379",
             "name": "monitor",
@@ -9381,6 +10036,16 @@
             "version": "1.5.54"
         },
         {
+            "aliases": [
+                "film-reel"
+            ],
+            "author": "Contributors",
+            "codepoint": "F7DD",
+            "name": "movie-roll",
+            "searchable": "movie roll film-reel",
+            "version": "2.0.46"
+        },
+        {
             "aliases": [],
             "author": "Austin Andrews",
             "codepoint": "F382",
@@ -9395,6 +10060,22 @@
             "name": "multiplication-box",
             "searchable": "multiplication box",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7DE",
+            "name": "mushroom",
+            "searchable": "mushroom",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7DF",
+            "name": "mushroom-outline",
+            "searchable": "mushroom outline",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -9630,6 +10311,14 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7E0",
+            "name": "nintendo-switch",
+            "searchable": "nintendo switch",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F399",
             "name": "nodejs",
@@ -9715,6 +10404,14 @@
             "name": "nuke",
             "searchable": "nuke",
             "version": "1.7.12"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7E1",
+            "name": "null",
+            "searchable": "null",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -10119,11 +10816,13 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "external-link"
+            ],
             "author": "Google",
             "codepoint": "F3CC",
             "name": "open-in-new",
-            "searchable": "open in new",
+            "searchable": "open in new external-link",
             "version": "1.5.54"
         },
         {
@@ -10368,6 +11067,14 @@
         },
         {
             "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7E2",
+            "name": "passport",
+            "searchable": "passport",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F3E4",
             "name": "pause",
@@ -10509,6 +11216,14 @@
             "name": "percent",
             "searchable": "percent",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7E3",
+            "name": "periodic-table-co2",
+            "searchable": "periodic table co2",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -10751,6 +11466,22 @@
             "name": "pinterest-box",
             "searchable": "pinterest box logo social",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F7E4",
+            "name": "pipe",
+            "searchable": "pipe",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F7E5",
+            "name": "pipe-disconnected",
+            "searchable": "pipe disconnected",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -11095,6 +11826,30 @@
             "name": "power-socket",
             "searchable": "power socket",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7E6",
+            "name": "power-socket-eu",
+            "searchable": "power socket eu",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7E7",
+            "name": "power-socket-uk",
+            "searchable": "power socket uk",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7E8",
+            "name": "power-socket-us",
+            "searchable": "power socket us",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -11666,6 +12421,22 @@
         },
         {
             "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7E9",
+            "name": "rice",
+            "searchable": "rice",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7EA",
+            "name": "ring",
+            "searchable": "ring",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Cody",
             "codepoint": "F461",
             "name": "road",
@@ -11830,6 +12601,14 @@
         },
         {
             "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7EB",
+            "name": "sass",
+            "searchable": "sass",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F470",
             "name": "satellite",
@@ -11885,11 +12664,13 @@
             "version": "1.7.12"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "graduation-cap"
+            ],
             "author": "Google",
             "codepoint": "F474",
             "name": "school",
-            "searchable": "school",
+            "searchable": "school graduation-cap",
             "version": "1.5.54"
         },
         {
@@ -12093,6 +12874,14 @@
             "name": "send",
             "searchable": "send",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F7EC",
+            "name": "send-secure",
+            "searchable": "send secure",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -12888,6 +13677,14 @@
         },
         {
             "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7ED",
+            "name": "soy-sauce",
+            "searchable": "soy sauce",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F4C3",
             "name": "speaker",
@@ -13029,6 +13826,14 @@
             "name": "stairs",
             "searchable": "stairs",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7EE",
+            "name": "standard-definition",
+            "searchable": "standard definition",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -13253,6 +14058,38 @@
             "name": "surround-sound",
             "searchable": "surround sound",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7EF",
+            "name": "surround-sound-2-0",
+            "searchable": "surround sound 2 0",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7F0",
+            "name": "surround-sound-3-1",
+            "searchable": "surround sound 3 1",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7F1",
+            "name": "surround-sound-5-1",
+            "searchable": "surround sound 5 1",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7F2",
+            "name": "surround-sound-7-1",
+            "searchable": "surround sound 7 1",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -13575,12 +14412,24 @@
             "version": "1.5.54"
         },
         {
-            "aliases": [],
+            "aliases": [
+                "tv"
+            ],
             "author": "Google",
             "codepoint": "F502",
             "name": "television",
-            "searchable": "television",
+            "searchable": "television tv",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [
+                "tv-classic"
+            ],
+            "author": "Rowan",
+            "codepoint": "F7F3",
+            "name": "television-classic",
+            "searchable": "television classic tv-classic",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -13680,6 +14529,14 @@
         },
         {
             "aliases": [],
+            "author": "Michael Richins",
+            "codepoint": "F7F4",
+            "name": "textbox-password",
+            "searchable": "textbox password",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Google",
             "codepoint": "F50C",
             "name": "texture",
@@ -13717,6 +14574,22 @@
             "name": "thermometer-lines",
             "searchable": "thermometer lines weather",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7F5",
+            "name": "thought-bubble",
+            "searchable": "thought bubble",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7F6",
+            "name": "thought-bubble-outline",
+            "searchable": "thought bubble outline",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -13979,6 +14852,14 @@
             "name": "tower-fire",
             "searchable": "tower fire",
             "version": "1.7.12"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7F7",
+            "name": "trackpad",
+            "searchable": "trackpad",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -14299,6 +15180,14 @@
         {
             "aliases": [],
             "author": "Austin Andrews",
+            "codepoint": "F7F8",
+            "name": "ultra-high-definition",
+            "searchable": "ultra high definition",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
             "codepoint": "F549",
             "name": "umbraco",
             "searchable": "umbraco",
@@ -14423,6 +15312,32 @@
             "name": "usb",
             "searchable": "usb",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Rowan",
+            "codepoint": "F7F9",
+            "name": "van-passenger",
+            "searchable": "van passenger",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [
+                "van-candy"
+            ],
+            "author": "Rowan",
+            "codepoint": "F7FA",
+            "name": "van-utility",
+            "searchable": "van utility van-candy",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7FB",
+            "name": "vanish",
+            "searchable": "vanish",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -14607,6 +15522,14 @@
             "name": "video",
             "searchable": "video",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7FC",
+            "name": "video-3d",
+            "searchable": "video 3d",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -14899,6 +15822,14 @@
             "name": "walk",
             "searchable": "walk",
             "version": "1.5.54"
+        },
+        {
+            "aliases": [],
+            "author": "Austin Andrews",
+            "codepoint": "F7FD",
+            "name": "wall",
+            "searchable": "wall",
+            "version": "2.0.46"
         },
         {
             "aliases": [],
@@ -15536,6 +16467,14 @@
         },
         {
             "aliases": [],
+            "author": "Contributors",
+            "codepoint": "F7FE",
+            "name": "xmpp",
+            "searchable": "xmpp",
+            "version": "2.0.46"
+        },
+        {
+            "aliases": [],
             "author": "Michael Richins",
             "codepoint": "F788",
             "name": "yammer",
@@ -15591,5 +16530,5 @@
             "version": "1.7.12"
         }
     ],
-    "version": "1.9.32"
+    "version": "2.0.46"
 }
