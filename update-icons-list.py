@@ -11,6 +11,7 @@ import shutil
 from upstream_parser import mdi_upstream
 
 mdi_upstream_uri = 'https://github.com/Templarian/MaterialDesign-Webfont/archive/master.zip'
+mdi_svg_upstream_uri = 'https://github.com/Templarian/MaterialDesign-SVG/archive/master.zip'
 mdi_workspace = 'temp'
 mdi_files = [
     'css/materialdesignicons.css',
@@ -26,21 +27,29 @@ mdi_files = [
 
 meta_output_file = 'shared/data/icons.json'
 meta_output_file_min = 'shared/data/icons.min.json'
+svg_output_file = 'shared/data/icons-svg.json'
+svg_output_file_min = 'shared/data/icons-svg.min.json'
 
 
-def download_css_and_fonts():
+def download_and_extract(url):
     if not os.path.isdir(mdi_workspace):
         os.makedirs(mdi_workspace)
 
     master_filename = os.path.join(mdi_workspace, 'master.zip')
-    print('Downloading {} into {}'.format(mdi_upstream_uri, master_filename))
+    print('Downloading {} into {}'.format(url, master_filename))
 
-    urllib.request.urlretrieve(mdi_upstream_uri, master_filename)
+    urllib.request.urlretrieve(url, master_filename)
 
     with open(master_filename, 'rb') as file_handle:
         master_zip = zipfile.ZipFile(file_handle)
         master_zip.extractall(mdi_workspace)
 
+
+def download_css_and_fonts():
+    # download main repo content
+    download_and_extract(mdi_upstream_uri)
+
+    # copy only certain files
     for file in mdi_files:
         zip_file = os.path.join(mdi_workspace, 'MaterialDesign-Webfont-master', file)
         output_file = os.path.join('shared/app/', file)
@@ -49,6 +58,33 @@ def download_css_and_fonts():
 
         print('Extracted {}'.format(file))
 
+    # cleanup
+    shutil.rmtree(mdi_workspace)
+
+
+def download_svg():
+    icons_svg = {}
+
+    download_and_extract(mdi_svg_upstream_uri)
+
+    # read each svg file
+    svg_files_path = os.path.join(mdi_workspace, 'MaterialDesign-SVG-master', 'svg')
+    for file in os.listdir(svg_files_path):
+        icon_svg = open(os.path.join(svg_files_path, file), 'r').read()
+
+        # fine-tune SVG:
+        # remove xml header
+        icon_svg = icon_svg.replace('<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">', '')
+        # remove xmlns & xmlns:xlink & version attributes
+        icon_svg = icon_svg.replace(' xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"', '')
+
+        icons_svg[file.replace('.svg', '')] = icon_svg
+
+    # write icons to file
+    write_json_to_file(icons_svg, svg_output_file, True)
+    write_json_to_file(icons_svg, svg_output_file_min, False)
+
+    # cleanup
     shutil.rmtree(mdi_workspace)
 
 
@@ -82,7 +118,7 @@ def fetch_meta():
     return upstream_meta
 
 
-def write_meta_to_file(data, file, pretty):
+def write_json_to_file(data, file, pretty):
     with open(file, 'w') as output:
         output.truncate()
 
@@ -90,18 +126,22 @@ def write_meta_to_file(data, file, pretty):
         output.writelines(raw_json)
         output.writelines("\n")
 
-        print("Generated {} with {} variables".format(file, len(data['icons'])))
+        print("Written {}".format(file))
 
 
 # Download CSS & fonts
 download_css_and_fonts()
 
+# Download & read SVG
+download_svg()
+
 print('')
 
 # Download & write meta data to files
 meta = fetch_meta()
-write_meta_to_file(meta, meta_output_file, True)
-write_meta_to_file(meta, meta_output_file_min, False)
+print("Found {} icons".format(len(meta['icons'])))
+write_json_to_file(meta, meta_output_file, True)
+write_json_to_file(meta, meta_output_file_min, False)
 
 # Check if there are differences between css file & metadata file
 css_selectors = scan_css_selectors()
