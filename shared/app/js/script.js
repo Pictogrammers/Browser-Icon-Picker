@@ -6,11 +6,6 @@
 (function($, window) {
     const cols = 6;
 
-    var Flavor = {
-        WebExtension: 'webExtension',
-        Electron: 'electron'
-    };
-
     var MaterialDesignIconsPicker = function(options) {
         this.options = options;
     };
@@ -62,7 +57,6 @@
                 copyInput: $('#input-copy')
             };
 
-            this.detectFlavor();
             this.prepareUI();
             this.fetchIcons();
         },
@@ -349,19 +343,10 @@
                 : 0;
             this.ui.properties.wrap.css('height', autoHeight);
             this.ui.icons.list.css('height', this.iconsListInitialHeight-autoHeight);
-        },
-
-        detectFlavor: function() {
-            this.flavor = typeof(process) !== 'undefined'
-                ? Flavor.Electron
-                : Flavor.WebExtension;
-
-            $('html').attr('data-flavor', this.flavor);
         }
     };
 
     window.MaterialDesignIconsPicker = MaterialDesignIconsPicker;
-    window.Flavor = Flavor;
 
     $(document).ready(function() {
         window.picker = new MaterialDesignIconsPicker();

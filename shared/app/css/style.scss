@@ -21,11 +21,6 @@ $transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); // According to mat
 // Remove "yellow" from colors list
 $colors: map-remove($colors, "yellow");
 
-// Flavors
-@import 'flavor-electron';
-@import 'flavor-webExtension';
-
-
 // Chrome popup default font style
 body {
     font-family: $roboto;
@@ -36,6 +31,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 380px;
+    height: 580px;
 }
 
 body {

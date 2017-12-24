@@ -12,7 +12,7 @@ import zipfile
 
 release_dir = 'release/'
 base_dir = os.path.dirname(os.path.realpath(__file__))
-flavours = ['Chrome', 'Firefox', 'Electron']
+flavours = ['Chrome', 'Firefox']
 files_include_webExtensions = [
     'shared/app/css/style.css',
     'shared/app/css/materialdesignicons.min.css',
@@ -28,25 +28,7 @@ files_include_webExtensions = [
     'shared/data/icons-svg.min.json',
     'manifest.json'
 ]
-files_exclude_electron = [
-    '\.git(ignore|attributes)',
-    '(bower|manifest)\.json',  # Manifest files
-    '(prepare-release|update-icons-list)\.py',  # Scripts
-    '(README|LICENSE)\.md',
-
-    'bower_components',
-    'upstream_parser',
-    'doc',
-    'release'
-
-    'node_modules'
-]
 manifest_webExtensions = 'manifest.json'
-manifest_electron = 'package.json'
-
-files_diff_rm_webExtensions = {
-    'shared/app/index.html': ['<!-- [ELECTRON] -->']
-}
 
 
 def expand_files_list(files):
@@ -69,7 +51,7 @@ def expand_files_list(files):
     return expanded_files
 
 
-def do_webextension_release(flavour):
+def do_release():
     # Open manifest & read version name
     with open(manifest_webExtensions) as manifest_file:
         manifest_json = json.load(manifest_file)
@@ -97,27 +79,6 @@ def do_webextension_release(flavour):
             del manifest_json['applications']
             json.dump(manifest_json, output_manifest_file)
 
-    # Apply diffs (remove electron-specific code)
-    diffs = files_diff_rm_webExtensions
-    for file, exclude_patterns in diffs.items():
-        lines = []
-        with open(os.path.join(output_dir, file), 'r') as fh:
-            for file_line in fh.readlines():
-                exclude = False
-                for pattern in exclude_patterns:
-                    if pattern in file_line:
-                        exclude = True
-                        break
-
-                if not exclude:
-                    lines.append(file_line)
-
-        with open(os.path.join(output_dir, file), 'w') as fh:
-            fh.truncate()
-            fh.writelines(lines)
-
-        print('Updated {} with {} pattern(s)'.format(file, len(exclude_patterns)))
-
     # Create final package
     zip_extension = 'xpi' if flavour == 'Firefox' else 'zip'
     zip_name = 'MaterialDesignIcons-Picker-{}-{}.{}'.format(flavour, version, zip_extension)
@@ -137,30 +98,6 @@ def do_webextension_release(flavour):
     print('Deleted working directory {}'.format(output_dir))
 
     print('Release file {} created for flavour {}'.format(zip_name, flavour))
-
-
-def do_electron_release():
-    # Compute "ignore" list
-    ignore = '|'.join(files_exclude_electron)
-
-    for platform in ['linux', 'win32']:
-        packager_command = 'electron-packager {} --prune --ignore="{}" --platform={} --arch={} --out {}'.format(
-            '.',
-            ignore,
-            platform,
-            'all',
-            'release/'
-        )
-
-        print(packager_command)
-        os.system(packager_command)
-
-
-def do_release():
-    if flavour == 'Chrome' or flavour == 'Firefox':
-        do_webextension_release(flavour)
-    else:
-        do_electron_release()
 
 
 parser = argparse.ArgumentParser(description='Prepare release packages for different flavours')
