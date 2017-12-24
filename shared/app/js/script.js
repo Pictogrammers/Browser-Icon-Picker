@@ -51,13 +51,15 @@
                     openInMaterialdesignIcons: $('#action-open-in-materialdesignicons'),
                     random: $('#action-random'),
                     randomColors: $('#action-random-colors'),
+                    copySvg: $('#action-copy-svg'),
                     author: $('#action-author'),
                     github: $('#action-github')
                 },
                 colors: [
                     'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green',
                     'light-green', 'lime', 'amber', 'orange', 'deep-orange', 'brown', 'grey', 'blue-grey'
-                ]
+                ],
+                copyInput: $('#input-copy')
             };
 
             this.detectFlavor();
@@ -169,6 +171,7 @@
             });
             this.ui.footer.random.tooltip({text: 'Random icon'});
             this.ui.footer.randomColors.tooltip({text: 'Random colors'});
+            this.ui.footer.copySvg.tooltip({text: 'Copy SVG'});
             this.ui.footer.author.tooltip({text: 'Made with <3 by Quentin S.'});
             this.ui.footer.github.tooltip({text: 'GitHub'});
 
@@ -181,6 +184,34 @@
                 var randomColors = !$(this).is('.active');
                 self.setRandomIconsColors(randomColors);
                 localStorage.setItem('random-colors', randomColors);
+            });
+
+            this.ui.footer.copySvg.click(function() {
+                const activeIcon = self.ui.icons.icons.filter('.active');
+                const name = activeIcon.data('icon').name;
+
+                // Then, read svg file
+                const url = typeof(chrome) !== 'undefined' && chrome.extension !== undefined
+                    ? chrome.extension.getURL('shared/data/icons-svg.min.json')
+                    : '../data/icons-svg.min.json'; // <- when debugging extension directly from index.html
+
+                $.ajax({
+                    dataType: 'json',
+                    url: url,
+                    success: function(data) {
+                        // Finally, copy!
+                        const svg = data[name];
+
+                        self.ui.copyInput.val(svg);
+                        self.ui.copyInput.select();
+
+                        document.oncopy = function(event) {
+                            event.clipboardData.setData('text/plain', svg);
+                            event.preventDefault();
+                        };
+                        document.execCommand("Copy", false, null);
+                    }
+                });
             });
 
             // Change accent color on properties icon click
@@ -277,6 +308,7 @@
             ensureVisible = ensureVisible || false;
 
             this.ui.icons.icons.filter('.active').removeClass('active');
+            this.ui.footer.copySvg.toggle(iconElem !== null);
 
             // We unselected current icon, let's finish here
             if (iconElem != null) {

@@ -25,6 +25,7 @@ files_include_webExtensions = [
     'shared/app/index.html',
 
     'shared/data/icons.min.json',
+    'shared/data/icons-svg.min.json',
     'manifest.json'
 ]
 files_exclude_electron = [
