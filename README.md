@@ -5,3 +5,15 @@
 [![Download for Firefox](doc/download-firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/materialdesignicons-picker/)
 
 ![MaterialDesignIcons-Picker](doc/screenshot.png)
+
+## Development
+
+```bash
+# Install dependencies
+yarn install
+
+# Run
+yarn run start
+```
+
+Once started, open your browser on `http://127.0.0.1:8080`!

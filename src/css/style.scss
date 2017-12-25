@@ -3,7 +3,7 @@
  */
 
 @import 'material';
-@import '../../../bower_components/material-scss-colors/dist/material-colors';
+@import '../../bower_components/material-scss-colors/dist/material-colors';
 
 
 $roboto: Roboto, Arial, sans-serif;
@@ -55,11 +55,14 @@ body {
 // Global layout
 body {
     display: flex;
+}
+.app {
+    display: flex;
+    width: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
 }
-header.window-titlebar { display: none; }
 header.header, footer {
     flex-shrink: 0;
 }
@@ -74,8 +77,6 @@ header.header, footer {
     .icons {
         flex-grow: 1;
         flex-shrink: 1;
-    }
-    .icon-properties-wrap {
     }
 }
 
@@ -100,7 +101,7 @@ header.header {
         }
     }
 
-    #version {
+    .version {
         margin-left: 5px;
         opacity: 0.7;
     }
@@ -108,7 +109,7 @@ header.header {
     .filter-wrap {
         position: relative;
 
-        #filter {
+        .filter {
             $left-margin: 45px;
             width: calc(100% - #{$left-margin});
             margin: 5px 0 5px $left-margin;
@@ -169,7 +170,7 @@ header.header {
     transition-property: padding-bottom;
     transition-timing-function: $transition-timing-function;
 
-    #loading {
+    .loading {
         display: block;
         position: absolute;
         top: 50%;
@@ -225,7 +226,7 @@ header.header {
 }
 
 // Random icons colors
-body.random-icon-colors {
+.random-icon-colors {
     @for $i from 1 through length($colors) {
         .icons .mdi:nth-child(#{$i}n) {
             color: map-get(nth(map-values($colors), $i), "500");
@@ -233,21 +234,24 @@ body.random-icon-colors {
     }
 }
 
-.icon-properties-wrap {
-    @extend .elevation-low;
-    width: 100%;
-    background: #ffffff;
-    height: 0;
-    transition-duration: $timing-medium;
-    transition-property: height;
-    transition-timing-function: $transition-timing-function;
+.properties-enter-active {
+    transition: margin-bottom 100ms $curve-deceleration;
 }
-#icon-properties {
+.properties-leave-active {
+    transition: margin-bottom 100ms $curve-sharp;
+}
+.properties-enter, .properties-leave-to {
+    margin-bottom: -80px;
+}
+.icon-properties {
+    @extend .elevation-low;
+    background: #ffffff;
     padding: 5px 10px;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 
-    #icon-icon {
+    .icon-icon {
         $icon-size: 1.6em;
         width: $icon-size;
         height: $icon-size;
@@ -262,7 +266,7 @@ body.random-icon-colors {
         @extend .elevation-tiny;
     }
 
-    &:not(.inactive) #icon-icon {
+    &:not(.inactive) .icon-icon {
         cursor: pointer;
         @extend .elevation-1;
     }
@@ -270,11 +274,11 @@ body.random-icon-colors {
     .properties {
         flex-grow: 1;
 
-        #icon-name {
+        .icon-name {
             font-size: 20px;
             margin-top: 5px;
         }
-        #icon-class {
+        .icon-class {
             margin: 5px 0;
             padding: 5px 8px;
             border-radius: 2px;
@@ -285,7 +289,7 @@ body.random-icon-colors {
             @extend .elevation-negative;
         }
 
-        #icon-name, #icon-class span {
+        .icon-name, .icon-class span {
             -webkit-user-select: text;
         }
 
@@ -293,11 +297,11 @@ body.random-icon-colors {
             margin: 0;
             opacity: 0.5;
 
-            #icon-codepoint {
+            .icon-codepoint {
                 font-family: monospace;
             }
 
-            #icon-codepoint, #icon-version, #icon-author {
+            .icon-codepoint, .icon-version, .icon-author {
                 -webkit-user-select: text;
             }
         }
@@ -306,13 +310,13 @@ body.random-icon-colors {
 
 // Accent color change on footer #icon-icon click
 @each $color, $shades in $colors {
-    body[data-accent="#{$color}"] {
+    .accent-color--#{$color} {
         .icons .mdi.active,
-        #icon-properties #icon-icon {
+        .icon-properties .icon-icon {
             background-color: map-get($shades, "500");
         }
 
-        #icon-properties #icon-icon:hover {
+        .icon-properties .icon-icon:hover {
             background-color: darken(map-get($shades, "500"), 5);
         }
     }

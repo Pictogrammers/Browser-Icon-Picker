@@ -1,0 +1,31 @@
+{
+    "name": "MaterialDesignIcons-Picker",
+    "version": "1.11.0",
+    "description": "Quick & easy icon picker",
+    "main": "src/index.js",
+    "repository": "git@github.com:chteuchteu/MaterialDesignIcons-Picker.git",
+    "author": "Quentin Stoeckel <stoeckel.quentin@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "webpack-dev-server"
+    },
+    "dependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-3": "^6.24.1",
+        "babel-runtime": "^6.26.0",
+        "css-loader": "^0.28.7",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "node-sass": "^4.7.2",
+        "path": "^0.12.7",
+        "sass-loader": "^6.0.6",
+        "style-loader": "^0.19.1",
+        "vue": "^2.5.13",
+        "vue-loader": "^13.6.1",
+        "vue-template-compiler": "^2.5.13",
+        "webpack": "^3.10.0",
+        "webpack-dev-server": "^2.9.7"
+    }
+}
