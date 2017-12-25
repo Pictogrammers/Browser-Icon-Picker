@@ -28,10 +28,6 @@
         </header>
 
         <div class="content">
-            <div v-if="loading" class="loading">
-                <i class="mdi mdi-cached"></i> Loading&hellip;
-            </div>
-
             <div
                 class="icons"
                 ref="icons"
@@ -140,6 +136,8 @@
     import { request } from '../js/Ajax';
     import { randomInt } from '../js/Math';
     import { computeOffset, outerHeight } from '../js/jQuery';
+    import icons from '../data/icons';
+    import svgIcons from '../data/icons-svg';
 
     const ACCENT_COLOR_KEY = 'color-accent';
     const RANDOM_COLORS_KEY = 'random-colors';
@@ -150,18 +148,13 @@
 
     const filterReplaceRegex = new RegExp('-', 'g');
 
-    const getResourceUrl = (filename) => typeof(chrome) !== 'undefined' && chrome.extension !== undefined
-        ? chrome.extension.getURL('shared/data/' + filename)
-        : '../data/' + filename; // <- when debugging extension directly from index.html
-
     export default {
         name: 'app',
         data: () => ({
-            loading: true,
             filter: '',
-            icons: [],
-            version: null,
-            svg: [],
+            icons: icons.icons,
+            version: icons.version,
+            svg: svgIcons,
 
             accentColor: null,
             randomColors: false,
@@ -181,24 +174,6 @@
             // Load accent color settings
             this.accentColor = localStorage.getItem(ACCENT_COLOR_KEY) || 'orange';
             this.randomColors = JSON.parse(localStorage.getItem(RANDOM_COLORS_KEY)) || false;
-
-            // Load icons
-            request(getResourceUrl('icons.min.json'))
-                .then(JSON.parse)
-                .then((response) => {
-                    this.loading = false;
-                    this.icons = response.icons;
-                    this.version = response.version;
-                });
-
-            this.loading = false;
-
-            // Load svg
-            request(getResourceUrl('icons-svg.min.json'))
-                .then(JSON.parse)
-                .then((response) => {
-                    this.svg = response;
-                });
         },
         methods: {
             setActiveIcon(icon, ensureVisible=false) {

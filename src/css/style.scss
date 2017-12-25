@@ -169,25 +169,6 @@ header.header {
     transition-duration: $timing-medium;
     transition-property: padding-bottom;
     transition-timing-function: $transition-timing-function;
-
-    .loading {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 19px;
-        cursor: default;
-        -webkit-user-select: none;
-        opacity: 0.6;
-
-        i.mdi {
-            font-size: 25px;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-    }
 }
 
 .icons {
