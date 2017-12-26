@@ -18,10 +18,6 @@ mdi_files = [
     'css/materialdesignicons.css.map',
     'css/materialdesignicons.min.css',
     'css/materialdesignicons.min.css.map',
-    'fonts/materialdesignicons-webfont.eot',
-    'fonts/materialdesignicons-webfont.svg',
-    'fonts/materialdesignicons-webfont.ttf',
-    'fonts/materialdesignicons-webfont.woff',
     'fonts/materialdesignicons-webfont.woff2'
 ]
 
