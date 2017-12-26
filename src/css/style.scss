@@ -169,7 +169,7 @@ header.header {
     transition-duration: $timing-medium;
     transition-property: padding-bottom;
     transition-timing-function: $transition-timing-function;
-    overflow: auto;
+    overflow: hidden;
 
     .loading {
         display: block;
@@ -280,6 +280,13 @@ header.header {
             margin-top: 5px;
         }
         .icon-class {
+            display: block;
+            font-family: monospace;
+            white-space: pre;
+            border: 0;
+            font-size: 1em;
+            width: 100%;
+            cursor: text;
             margin: 5px 0;
             padding: 5px 8px;
             border-radius: 2px;

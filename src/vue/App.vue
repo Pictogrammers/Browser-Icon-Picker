@@ -59,7 +59,12 @@
 
                     <div class="properties">
                         <span class="icon-name">{{ activeIcon && activeIcon.name }}</span>
-                        <pre class="icon-class">mdi <span>mdi-{{ activeIcon && activeIcon.name }}</span></pre>
+                        <input
+                            class="icon-class"
+                            placeholder="Class"
+                            :value="'mdi mdi-' + (activeIcon && activeIcon.name)"
+                            disabled
+                        />
                         <p class="icon-more">
                             <span class="icon-codepoint">{{ activeIcon && activeIcon.codepoint }}</span>
                             <span
