@@ -107,9 +107,15 @@ def fetch_meta():
         searchable = []
         for expr in icon['name'].split('-') + icon['aliases'] + icon['tags']:
             if expr not in searchable:
-                searchable.append(expr)
+                searchable.append(expr.lower())
 
-        icon['searchable'] = ' '.join(searchable)
+        str_searchable = ' '.join(searchable)
+
+        # Remove duplicates
+        searchable = str_searchable.split()
+        icon['searchable'] = ' '.join(sorted(set(searchable), key=searchable.index))
+
+        # Remove duplicate words
 
         # Remove unused information
         icon.pop('id')
