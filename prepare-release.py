@@ -13,22 +13,18 @@ import zipfile
 release_dir = 'release/'
 base_dir = os.path.dirname(os.path.realpath(__file__))
 flavours = ['Chrome', 'Firefox']
-files_include_webExtensions = [
-    'shared/app/css/style.css',
-    'shared/app/css/materialdesignicons.min.css',
-    'shared/app/css/materialdesignicons.min.css.map',
-    'shared/app/img/icon-*x*.png',
-    'shared/app/fonts/*',
-    'shared/app/js/component-tooltip.js',
-    'shared/app/js/script.js',
-    'shared/app/vendor/jquery-3.1.0.min.js',
-    'shared/app/index.html',
+files_include = [
+    'dist/app.js',
+    'dist/index.html',
+    'dist/main.css',
+    'dist/css/materialdesignicons.min.css',
+    'dist/css/materialdesignicons.min.css.map',
+    'dist/fonts/*',
+    'dist/img/icon-*x*.png',
 
-    'shared/data/icons.min.json',
-    'shared/data/icons-svg.min.json',
     'manifest.json'
 ]
-manifest_webExtensions = 'manifest.json'
+manifest = 'manifest.json'
 
 
 def expand_files_list(files):
@@ -53,13 +49,13 @@ def expand_files_list(files):
 
 def do_release():
     # Open manifest & read version name
-    with open(manifest_webExtensions) as manifest_file:
+    with open(manifest) as manifest_file:
         manifest_json = json.load(manifest_file)
     version = manifest_json['version']
     output_dir_name = 'MaterialDesignIcons-Picker-{}-{}'.format(flavour, version)
     output_dir = os.path.join(release_dir, output_dir_name)
 
-    expanded_files = expand_files_list(files_include_webExtensions)
+    expanded_files = expand_files_list(files_include)
 
     # Copy these!
     print('Copying resources in {}...'.format(output_dir))
@@ -75,7 +71,7 @@ def do_release():
 
     # With Chrome flavour: rewrite manifest to remove Firefox's specific nodes
     if flavour == 'Chrome':
-        with open(os.path.join(output_dir, manifest_webExtensions), 'w') as output_manifest_file:
+        with open(os.path.join(output_dir, manifest), 'w') as output_manifest_file:
             del manifest_json['applications']
             json.dump(manifest_json, output_manifest_file)
 
@@ -106,8 +102,7 @@ args = parser.parse_args()
 flavour = args.flavour
 
 if flavour is None:
-    print('Please specify a flavour using --flavour')
-    sys.exit(1)
+    flavour = 'all'
 elif flavour != 'all' and flavour not in flavours:
     print('Unknown flavour, exiting')
     sys.exit(1)
