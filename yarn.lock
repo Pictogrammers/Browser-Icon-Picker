@@ -2754,6 +2754,10 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
+material-scss-colors@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/material-scss-colors/-/material-scss-colors-1.1.2.tgz#956b0387476c284c17777235e34ebd07acb484c4"
+
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
@@ -4591,9 +4595,11 @@ vue-hot-reload-api@^2.2.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.2.4.tgz#683bd1d026c0d3b3c937d5875679e9a87ec6cd8f"
 
-vue-icons-picker@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/vue-icons-picker/-/vue-icons-picker-1.0.1.tgz#5d984918bc6f33e71f2f44ac44285c45b5eb2043"
+vue-icons-picker@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-icons-picker/-/vue-icons-picker-1.0.3.tgz#e26a39a7ba0d71fb47baf66c821c044f4cda911f"
+  dependencies:
+    material-scss-colors "^1.1.2"
 
 vue-loader@^13.6.1:
   version "13.6.1"

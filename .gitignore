@@ -1,6 +1,5 @@
 /.idea
 /release/
-/bower_components/
 /node_modules/
 /dist/app.js
 /dist/main.css
