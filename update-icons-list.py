@@ -25,10 +25,10 @@ mdi_files = [
     'fonts/materialdesignicons-webfont.woff2'
 ]
 
-meta_output_file = 'shared/data/icons.json'
-meta_output_file_min = 'shared/data/icons.min.json'
-svg_output_file = 'shared/data/icons-svg.json'
-svg_output_file_min = 'shared/data/icons-svg.min.json'
+meta_output_file = 'dist/data/icons.json'
+meta_output_file_min = 'dist/data/icons.min.json'
+svg_output_file = 'dist/data/icons-svg.json'
+svg_output_file_min = 'dist/data/icons-svg.min.json'
 
 
 def download_and_extract(url):
@@ -52,7 +52,7 @@ def download_css_and_fonts():
     # copy only certain files
     for file in mdi_files:
         zip_file = os.path.join(mdi_workspace, 'MaterialDesign-Webfont-master', file)
-        output_file = os.path.join('shared/app/', file)
+        output_file = os.path.join('dist/', file)
 
         shutil.copyfile(zip_file, output_file)
 
@@ -89,7 +89,7 @@ def download_svg():
 
 
 def scan_css_selectors():
-    with open('shared/app/css/materialdesignicons.css', 'r') as fh:
+    with open('dist/css/materialdesignicons.css', 'r') as fh:
         raw_css = fh.read().replace('\n', '')
 
     return re.findall('\.mdi-([a-z-\d]*):before', raw_css)
