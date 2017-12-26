@@ -169,6 +169,7 @@ header.header {
     transition-duration: $timing-medium;
     transition-property: padding-bottom;
     transition-timing-function: $transition-timing-function;
+    overflow: auto;
 
     .loading {
         display: block;
