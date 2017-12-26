@@ -105,7 +105,7 @@
                 <a
                     class="btn-sm-round"
                     href="#"
-                    v-show="activeIcon !== null"
+                    v-show="isIconActive"
                     @click.prevent="copySvg"
                     title="Copy SVG"
                 >
@@ -151,7 +151,7 @@
     const filterReplaceRegex = new RegExp('-', 'g');
 
     const getResourceUrl = (filename) => typeof(chrome) !== 'undefined' && chrome.extension !== undefined
-        ? chrome.extension.getURL('shared/data/' + filename)
+        ? chrome.extension.getURL('dist/data/' + filename)
         : '../data/' + filename; // <- when debugging extension directly from index.html
 
     export default {
