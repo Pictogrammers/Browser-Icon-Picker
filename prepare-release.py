@@ -8,6 +8,7 @@ import glob
 import shutil
 import json
 import zipfile
+import subprocess
 
 
 release_dir = 'release/'
@@ -106,6 +107,13 @@ if flavour is None:
 elif flavour != 'all' and flavour not in flavours:
     print('Unknown flavour, exiting')
     sys.exit(1)
+
+print('Building project using webpack...')
+p = subprocess.Popen('yarn run build', shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+for line in p.stdout.readlines():
+    print(line)
+retval = p.wait()
+print('Done.')
 
 # Create output dir if necessary
 if not os.path.isdir(release_dir):
