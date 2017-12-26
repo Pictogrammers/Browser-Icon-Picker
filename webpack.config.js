@@ -1,12 +1,15 @@
-const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path'),
+    UglifyJSPlugin = require('uglifyjs-webpack-plugin'),
+    ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+const isDev = process.env.NODE_ENV === "development";
 
 const extractSass = new ExtractTextPlugin({
     filename: "[name].css",
-    disable: process.env.NODE_ENV === "development"
+    disable: isDev
 });
 
-module.exports = {
+const webpack = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -51,3 +54,9 @@ module.exports = {
         contentBase: path.join(__dirname, 'dist')
     }
 };
+
+if (!isDev) {
+    webpack.plugins.push(new UglifyJSPlugin());
+}
+
+module.exports = webpack;
