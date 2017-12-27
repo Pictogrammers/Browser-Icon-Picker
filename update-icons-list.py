@@ -116,6 +116,7 @@ def fetch_meta():
         # Remove unused information
         icon.pop('id')
         icon.pop('tags')
+        icon.pop('aliases')
 
     return upstream_meta
 
