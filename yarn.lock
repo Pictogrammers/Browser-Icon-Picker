@@ -4820,9 +4820,9 @@ vue-hot-reload-api@^2.2.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.2.4.tgz#683bd1d026c0d3b3c937d5875679e9a87ec6cd8f"
 
-vue-icons-picker@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/vue-icons-picker/-/vue-icons-picker-1.0.3.tgz#e26a39a7ba0d71fb47baf66c821c044f4cda911f"
+vue-icons-picker@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/vue-icons-picker/-/vue-icons-picker-1.0.6.tgz#3935960defc7ed8079559927cecc4c86db682a38"
   dependencies:
     material-scss-colors "^1.1.2"
 

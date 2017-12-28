@@ -2,19 +2,9 @@
  * MaterialDesignIcons-Picker
  */
 
+$color-primary: #2196f3;
+
 @import '~vue-icons-picker/scss/vue-icons-picker';
-
-$color-primary: $color-blue;
-$color-primary-dark: $color-blue-700;
-
-// Style overrides
-header.header {
-    background-color: $color-primary;
-
-    h1 {
-        text-shadow: 1px 1px 0 $color-primary, 2px 2px 0 rgba(0,0,0,0.15);
-    }
-}
 
 .icons {
     i.mdi-blank {

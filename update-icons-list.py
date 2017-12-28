@@ -107,11 +107,9 @@ def fetch_meta():
 
         str_searchable = ' '.join(searchable)
 
-        # Remove duplicates
+        # Remove duplicate words
         searchable = str_searchable.split()
         icon['searchable'] = ' '.join(sorted(set(searchable), key=searchable.index))
-
-        # Remove duplicate words
 
         # Remove unused information
         icon.pop('id')
