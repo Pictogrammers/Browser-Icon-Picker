@@ -78,6 +78,13 @@
             "version": "1.8.36"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F848",
+            "name": "account-group",
+            "searchable": "account group / user",
+            "version": "2.1.99"
+        },
+        {
             "author": "REJack",
             "codepoint": "F00B",
             "name": "account-key",
@@ -211,6 +218,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F849",
+            "name": "accusoft",
+            "searchable": "accusoft brand / logo",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F01A",
             "name": "adjust",
@@ -228,7 +242,7 @@
             "author": "Austin Andrews",
             "codepoint": "F01C",
             "name": "airballoon",
-            "searchable": "airballoon transportation + other flying",
+            "searchable": "airballoon hot-air-balloon transportation + other flying",
             "version": "1.5.54"
         },
         {
@@ -265,6 +279,13 @@
             "name": "airplay",
             "searchable": "airplay home automation",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "F84A",
+            "name": "airport",
+            "searchable": "airport places transportation + flying",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -480,7 +501,7 @@
             "author": "Austin Andrews",
             "codepoint": "F034",
             "name": "android-studio",
-            "searchable": "android studio",
+            "searchable": "android studio math-compass-variant",
             "version": "1.5.54"
         },
         {
@@ -673,6 +694,13 @@
             "version": "2.0.46"
         },
         {
+            "author": "Google",
+            "codepoint": "F84B",
+            "name": "arrow-collapse-horizontal",
+            "searchable": "arrow collapse horizontal",
+            "version": "2.1.99"
+        },
+        {
             "author": "Michael Richins",
             "codepoint": "F792",
             "name": "arrow-collapse-left",
@@ -692,6 +720,13 @@
             "name": "arrow-collapse-up",
             "searchable": "arrow collapse up arrow-compress-up",
             "version": "2.0.46"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F84C",
+            "name": "arrow-collapse-vertical",
+            "searchable": "arrow collapse vertical",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -792,6 +827,13 @@
             "version": "2.0.46"
         },
         {
+            "author": "Google",
+            "codepoint": "F84D",
+            "name": "arrow-expand-horizontal",
+            "searchable": "arrow expand horizontal",
+            "version": "2.1.99"
+        },
+        {
             "author": "Michael Richins",
             "codepoint": "F796",
             "name": "arrow-expand-left",
@@ -811,6 +853,13 @@
             "name": "arrow-expand-up",
             "searchable": "arrow expand up",
             "version": "2.0.46"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F84E",
+            "name": "arrow-expand-vertical",
+            "searchable": "arrow expand vertical",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -1114,6 +1163,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F84F",
+            "name": "augmented-reality",
+            "searchable": "augmented reality",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F068",
             "name": "auto-fix",
@@ -1184,6 +1240,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F850",
+            "name": "badminton",
+            "searchable": "badminton shuttlecock sport",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F674",
             "name": "bandcamp",
@@ -1224,6 +1287,20 @@
             "name": "barrel",
             "searchable": "barrel",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F851",
+            "name": "baseball",
+            "searchable": "baseball sport",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F852",
+            "name": "baseball-bat",
+            "searchable": "baseball bat sport",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -2024,6 +2101,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "James Coyle",
+            "codepoint": "F853",
+            "name": "bottle-wine",
+            "searchable": "bottle wine",
+            "version": "2.1.99"
+        },
+        {
             "author": "Thomas Hunsaker",
             "codepoint": "F677",
             "name": "bow-tie",
@@ -2797,7 +2881,7 @@
             "author": "Roberto Graham",
             "codepoint": "F7AD",
             "name": "cctv",
-            "searchable": "cctv closed-circuit-television home automation",
+            "searchable": "cctv closed-circuit-television security-camera home automation",
             "version": "2.0.46"
         },
         {
@@ -3019,6 +3103,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "F854",
+            "name": "check-outline",
+            "searchable": "check outline done-outline tick-outline",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Google",
             "codepoint": "F12E",
             "name": "checkbox-blank",
             "searchable": "checkbox blank",
@@ -3044,6 +3135,13 @@
             "name": "checkbox-blank-outline",
             "searchable": "checkbox blank outline check-box-outline-blank",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F855",
+            "name": "checkbox-intermediate",
+            "searchable": "checkbox intermediate",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -3144,6 +3242,48 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F85B",
+            "name": "chess-bishop",
+            "searchable": "chess bishop",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F856",
+            "name": "chess-king",
+            "searchable": "chess king",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F857",
+            "name": "chess-knight",
+            "searchable": "chess knight chess-horse",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F858",
+            "name": "chess-pawn",
+            "searchable": "chess pawn",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F859",
+            "name": "chess-queen",
+            "searchable": "chess queen",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F85A",
+            "name": "chess-rook",
+            "searchable": "chess rook chess-castle",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F13C",
             "name": "chevron-double-down",
@@ -3203,21 +3343,21 @@
             "author": "Andy Martinez",
             "codepoint": "F7B1",
             "name": "chili-hot",
-            "searchable": "chili hot food / drink",
+            "searchable": "chili hot chilli-hot food / drink",
             "version": "2.0.46"
         },
         {
             "author": "Andy Martinez",
             "codepoint": "F7B2",
             "name": "chili-medium",
-            "searchable": "chili medium food / drink",
+            "searchable": "chili medium chilli-medium food / drink",
             "version": "2.0.46"
         },
         {
             "author": "Andy Martinez",
             "codepoint": "F7B3",
             "name": "chili-mild",
-            "searchable": "chili mild food / drink",
+            "searchable": "chili mild chilli-mild food / drink",
             "version": "2.0.46"
         },
         {
@@ -3324,6 +3464,20 @@
             "name": "clipboard-plus",
             "searchable": "clipboard plus",
             "version": "1.9.32"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F85C",
+            "name": "clipboard-pulse",
+            "searchable": "clipboard pulse medical / hospital",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F85D",
+            "name": "clipboard-pulse-outline",
+            "searchable": "clipboard pulse outline medical / hospital",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -3753,6 +3907,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F85E",
+            "name": "comment-multiple",
+            "searchable": "comment multiple",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F181",
             "name": "comment-multiple-outline",
@@ -3821,6 +3982,20 @@
             "name": "comment-text",
             "searchable": "comment text",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F85F",
+            "name": "comment-text-multiple",
+            "searchable": "comment text multiple",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F860",
+            "name": "comment-text-multiple-outline",
+            "searchable": "comment text multiple outline",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -3991,6 +4166,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "F861",
+            "name": "crane",
+            "searchable": "crane",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F1C9",
             "name": "creation",
@@ -4145,6 +4327,20 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F862",
+            "name": "curling",
+            "searchable": "curling sport",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F863",
+            "name": "currency-bdt",
+            "searchable": "currency bdt taka bangladeshi-taka banking",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F1AC",
             "name": "currency-btc",
@@ -4162,14 +4358,14 @@
             "author": "JapanYoshi",
             "codepoint": "F7B9",
             "name": "currency-cny",
-            "searchable": "currency cny yuan banking",
+            "searchable": "currency cny yuan renminbi banking",
             "version": "2.0.46"
         },
         {
-            "author": "Rowan",
+            "author": "Peter Noble",
             "codepoint": "F7BA",
             "name": "currency-eth",
-            "searchable": "currency eth ethereum brand / logo",
+            "searchable": "currency eth ethereum xi brand / logo",
             "version": "2.0.46"
         },
         {
@@ -4208,6 +4404,13 @@
             "version": "2.0.46"
         },
         {
+            "author": "Augustin Ursu",
+            "codepoint": "F864",
+            "name": "currency-kzt",
+            "searchable": "currency kzt kazakhstani-tenge banking",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F1B0",
             "name": "currency-ngn",
@@ -4225,7 +4428,7 @@
             "author": "Michael Richins",
             "codepoint": "F7BD",
             "name": "currency-sign",
-            "searchable": "currency sign currency-scarab",
+            "searchable": "currency sign currency-scarab banking",
             "version": "2.0.46"
         },
         {
@@ -4311,6 +4514,13 @@
             "name": "database-plus",
             "searchable": "database plus",
             "version": "1.5.54"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F865",
+            "name": "database-search",
+            "searchable": "database search",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -4530,6 +4740,13 @@
             "version": "1.9.32"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F866",
+            "name": "dice-d12",
+            "searchable": "dice d12",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F5EA",
             "name": "dice-d20",
@@ -4670,6 +4887,13 @@
             "version": "1.7.12"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F867",
+            "name": "docker",
+            "searchable": "docker brand / logo",
+            "version": "2.1.99"
+        },
+        {
             "author": "Michael Richins",
             "codepoint": "F6B2",
             "name": "dolby",
@@ -4710,6 +4934,13 @@
             "name": "door-open",
             "searchable": "door open home automation",
             "version": "2.1.19"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F868",
+            "name": "doorbell-video",
+            "searchable": "doorbell video home automation",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -5097,6 +5328,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F869",
+            "name": "ethereum",
+            "searchable": "ethereum brand / logo",
+            "version": "2.1.99"
+        },
+        {
             "author": "Cody",
             "codepoint": "F200",
             "name": "ethernet",
@@ -5193,6 +5431,34 @@
             "name": "eye-outline",
             "searchable": "eye outline show-outline visibility-outline",
             "version": "1.8.36"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F86A",
+            "name": "eye-plus",
+            "searchable": "eye plus",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F86B",
+            "name": "eye-plus-outline",
+            "searchable": "eye plus outline",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F86C",
+            "name": "eye-settings",
+            "searchable": "eye settings",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F86D",
+            "name": "eye-settings-outline",
+            "searchable": "eye settings outline",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -5338,7 +5604,7 @@
             "author": "Austin Andrews",
             "codepoint": "F218",
             "name": "file-delimited",
-            "searchable": "file delimited files / folders",
+            "searchable": "file delimited file-csv files / folders",
             "version": "1.5.54"
         },
         {
@@ -5482,6 +5748,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F86E",
+            "name": "file-question",
+            "searchable": "file question files / folders",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F670",
             "name": "file-restore",
@@ -5590,7 +5863,7 @@
             "author": "Google",
             "codepoint": "F81E",
             "name": "finance",
-            "searchable": "finance banking",
+            "searchable": "finance chart-finance banking",
             "version": "2.1.19"
         },
         {
@@ -5674,7 +5947,7 @@
             "author": "Google",
             "codepoint": "F241",
             "name": "flash",
-            "searchable": "flash lightning-bolt flash-on weather",
+            "searchable": "flash lightning-bolt flash-on electricity weather",
             "version": "1.5.54"
         },
         {
@@ -5872,6 +6145,13 @@
             "name": "folder-multiple-outline",
             "searchable": "folder multiple outline files / folders",
             "version": "1.5.54"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F86F",
+            "name": "folder-network",
+            "searchable": "folder network files / folders",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -6532,6 +6812,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F870",
+            "name": "function-variant",
+            "searchable": "function variant",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F296",
             "name": "gamepad",
@@ -6551,6 +6838,13 @@
             "name": "garage",
             "searchable": "garage home automation",
             "version": "1.8.36"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F871",
+            "name": "garage-alert",
+            "searchable": "garage alert garage-warning home automation",
+            "version": "2.1.99"
         },
         {
             "author": "Alex Efremo",
@@ -6577,7 +6871,7 @@
             "author": "Cody",
             "codepoint": "F299",
             "name": "gate",
-            "searchable": "gate",
+            "searchable": "gate home automation",
             "version": "1.5.54"
         },
         {
@@ -6586,6 +6880,27 @@
             "name": "gauge",
             "searchable": "gauge swap-driving-apps-wheel home automation",
             "version": "1.5.54"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F872",
+            "name": "gauge-empty",
+            "searchable": "gauge empty",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F873",
+            "name": "gauge-full",
+            "searchable": "gauge full",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F874",
+            "name": "gauge-low",
+            "searchable": "gauge low",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -6728,6 +7043,13 @@
             "version": "1.8.36"
         },
         {
+            "author": "Google",
+            "codepoint": "F356",
+            "name": "glass-cocktail",
+            "searchable": "glass cocktail local-bar martini food / drink",
+            "version": "1.5.54"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F2A5",
             "name": "glass-flute",
@@ -6754,6 +7076,13 @@
             "name": "glass-tulip",
             "searchable": "glass tulip food / drink",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F875",
+            "name": "glass-wine",
+            "searchable": "glass wine food / drink",
+            "version": "2.1.99"
         },
         {
             "author": "Christopher Schreiner",
@@ -6985,6 +7314,13 @@
             "name": "gradient",
             "searchable": "gradient",
             "version": "1.7.12"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F876",
+            "name": "graphql",
+            "searchable": "graphql brand / logo",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -7277,8 +7613,15 @@
             "author": "Austin Andrews",
             "codepoint": "F7CE",
             "name": "high-definition",
-            "searchable": "high definition video / movie",
+            "searchable": "high definition hd video / movie",
             "version": "2.0.46"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F877",
+            "name": "high-definition-box",
+            "searchable": "high definition box hd-box video / movie",
+            "version": "2.1.99"
         },
         {
             "author": "Christopher Schreiner",
@@ -7293,6 +7636,20 @@
             "name": "history",
             "searchable": "history recent latest",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F878",
+            "name": "hockey-puck",
+            "searchable": "hockey puck sport",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F879",
+            "name": "hockey-sticks",
+            "searchable": "hockey sticks sport",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -7314,6 +7671,13 @@
             "name": "home-account",
             "searchable": "home account home-user / user automation",
             "version": "2.1.19"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F87A",
+            "name": "home-alert",
+            "searchable": "home alert home-warning automation",
+            "version": "2.1.99"
         },
         {
             "author": "Contributors",
@@ -7466,7 +7830,7 @@
             "author": "Google",
             "codepoint": "F649",
             "name": "human-female",
-            "searchable": "human female",
+            "searchable": "human female woman",
             "version": "1.6.50"
         },
         {
@@ -7494,14 +7858,14 @@
             "author": "Google",
             "codepoint": "F64D",
             "name": "human-male",
-            "searchable": "human male",
+            "searchable": "human male man",
             "version": "1.6.50"
         },
         {
             "author": "Google",
             "codepoint": "F2E8",
             "name": "human-male-female",
-            "searchable": "human male female wc",
+            "searchable": "human male female wc man-woman",
             "version": "1.5.54"
         },
         {
@@ -7652,6 +8016,13 @@
             "version": "2.1.19"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F87B",
+            "name": "image-plus",
+            "searchable": "image plus",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F2FA",
             "name": "import",
@@ -7762,6 +8133,13 @@
             "name": "jira",
             "searchable": "jira brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F87C",
+            "name": "jquery",
+            "searchable": "jquery brand / logo",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -8233,6 +8611,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Cody",
+            "codepoint": "F87D",
+            "name": "lifebuoy",
+            "searchable": "lifebuoy life-preserver support help",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F335",
             "name": "lightbulb",
@@ -8590,13 +8975,6 @@
             "version": "1.5.54"
         },
         {
-            "author": "Google",
-            "codepoint": "F356",
-            "name": "martini",
-            "searchable": "martini local-bar cocktail food / drink",
-            "version": "1.5.54"
-        },
-        {
             "author": "Austin Andrews",
             "codepoint": "F357",
             "name": "material-ui",
@@ -8915,7 +9293,7 @@
             "author": "Austin Andrews",
             "codepoint": "F6F1",
             "name": "minus-box-outline",
-            "searchable": "minus box outline math",
+            "searchable": "minus box outline checkbox-indeterminate-outline math",
             "version": "1.8.36"
         },
         {
@@ -8945,6 +9323,13 @@
             "name": "mixcloud",
             "searchable": "mixcloud brand / logo",
             "version": "1.6.50"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F87E",
+            "name": "mixed-reality",
+            "searchable": "mixed reality",
+            "version": "2.1.99"
         },
         {
             "author": "Contributors",
@@ -9162,6 +9547,13 @@
             "name": "music-off",
             "searchable": "music off audio",
             "version": "1.9.32"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F87F",
+            "name": "nativescript",
+            "searchable": "nativescript brand / logo",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -9703,6 +10095,13 @@
             "version": "1.9.32"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F880",
+            "name": "onepassword",
+            "searchable": "onepassword 1password brand / logo",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F5CC",
             "name": "opacity",
@@ -9941,6 +10340,13 @@
             "version": "2.0.46"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F881",
+            "name": "patreon",
+            "searchable": "patreon brand / logo",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F3E4",
             "name": "pause",
@@ -9988,6 +10394,20 @@
             "name": "paw-off",
             "searchable": "paw off animal",
             "version": "1.6.50"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F882",
+            "name": "paypal",
+            "searchable": "paypal brand / logo",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F883",
+            "name": "peace",
+            "searchable": "peace",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -10193,6 +10613,20 @@
             "version": "2.1.19"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F884",
+            "name": "phone-rotate-landscape",
+            "searchable": "phone rotate landscape cellphone /",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F885",
+            "name": "phone-rotate-portrait",
+            "searchable": "phone rotate portrait cellphone /",
+            "version": "2.1.99"
+        },
+        {
             "author": "Google",
             "codepoint": "F3FD",
             "name": "phone-settings",
@@ -10228,6 +10662,20 @@
             "version": "1.7.12"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "F886",
+            "name": "pier",
+            "searchable": "pier places",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "F887",
+            "name": "pier-crane",
+            "searchable": "pier crane",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F401",
             "name": "pig",
@@ -10238,7 +10686,7 @@
             "author": "Austin Andrews",
             "codepoint": "F402",
             "name": "pill",
-            "searchable": "pill medical / hospital",
+            "searchable": "pill medicine capsule medical / hospital",
             "version": "1.5.54"
         },
         {
@@ -10305,11 +10753,25 @@
             "version": "2.0.46"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F888",
+            "name": "pipe-leak",
+            "searchable": "pipe leak home automation",
+            "version": "2.1.99"
+        },
+        {
             "author": "Michael Richins",
             "codepoint": "F702",
             "name": "pistol",
             "searchable": "pistol gun",
             "version": "1.8.36"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F889",
+            "name": "piston",
+            "searchable": "piston",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -10352,6 +10814,13 @@
             "name": "play-circle-outline",
             "searchable": "play circle outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F88A",
+            "name": "play-network",
+            "searchable": "play network media-network",
+            "version": "2.1.99"
         },
         {
             "author": "Cody",
@@ -10574,7 +11043,7 @@
             "author": "Google",
             "codepoint": "F425",
             "name": "power",
-            "searchable": "power power-settings-new home automation",
+            "searchable": "power power-settings-new shutdown home automation",
             "version": "1.5.54"
         },
         {
@@ -10971,6 +11440,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "F88B",
+            "name": "reminder",
+            "searchable": "reminder",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Google",
             "codepoint": "F454",
             "name": "remote",
             "searchable": "remote settings-remote home automation",
@@ -11152,6 +11628,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F88C",
+            "name": "room-service",
+            "searchable": "room service",
+            "version": "2.1.99"
+        },
+        {
             "author": "Roberto Graham",
             "codepoint": "F70C",
             "name": "roomba",
@@ -11262,6 +11745,13 @@
             "name": "sale",
             "searchable": "sale discount",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F88D",
+            "name": "salesforce",
+            "searchable": "salesforce brand / logo",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -11437,6 +11927,13 @@
             "name": "security",
             "searchable": "security",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F88E",
+            "name": "security-account",
+            "searchable": "security account / user",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -12289,7 +12786,7 @@
             "author": "Austin Andrews",
             "codepoint": "F665",
             "name": "spray",
-            "searchable": "spray",
+            "searchable": "spray paint aerosol",
             "version": "1.6.50"
         },
         {
@@ -12506,7 +13003,7 @@
             "author": "Austin Andrews",
             "codepoint": "F4DE",
             "name": "stove",
-            "searchable": "stove food / drink home automation",
+            "searchable": "stove cooker oven food / drink home automation",
             "version": "1.5.54"
         },
         {
@@ -12562,7 +13059,7 @@
             "author": "Austin Andrews",
             "codepoint": "F7EF",
             "name": "surround-sound-2-0",
-            "searchable": "surround sound 2 0 audio",
+            "searchable": "surround sound 2 0 stereo audio",
             "version": "2.0.46"
         },
         {
@@ -12881,6 +13378,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F88F",
+            "name": "teach",
+            "searchable": "teach teacher teaching",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F500",
             "name": "teamviewer",
@@ -13056,17 +13560,24 @@
             "version": "1.5.54"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F890",
+            "name": "thermostat-box",
+            "searchable": "thermostat box home automation",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F7F5",
             "name": "thought-bubble",
-            "searchable": "thought bubble",
+            "searchable": "thought bubble comic-bubble",
             "version": "2.0.46"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F7F6",
             "name": "thought-bubble-outline",
-            "searchable": "thought bubble outline",
+            "searchable": "thought bubble outline comic-thought-bubble-outline",
             "version": "2.0.46"
         },
         {
@@ -13306,6 +13817,13 @@
             "name": "trackpad",
             "searchable": "trackpad",
             "version": "2.0.46"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F891",
+            "name": "tractor",
+            "searchable": "tractor agriculture transportation + road",
+            "version": "2.1.99"
         },
         {
             "author": "Google",
@@ -13577,7 +14095,7 @@
             "author": "Austin Andrews",
             "codepoint": "F7F8",
             "name": "ultra-high-definition",
-            "searchable": "ultra high definition video / movie",
+            "searchable": "ultra high definition uhd video / movie",
             "version": "2.0.46"
         },
         {
@@ -13782,6 +14300,13 @@
             "name": "vector-difference-ba",
             "searchable": "vector difference ba",
             "version": "1.5.54"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "F892",
+            "name": "vector-ellipse",
+            "searchable": "vector ellipse",
+            "version": "2.1.99"
         },
         {
             "author": "Cody",
@@ -14071,6 +14596,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F893",
+            "name": "virtual-reality",
+            "searchable": "virtual reality vr",
+            "version": "2.1.99"
+        },
+        {
             "author": "Christopher Schreiner",
             "codepoint": "F610",
             "name": "visualstudio",
@@ -14253,11 +14785,32 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F894",
+            "name": "watch-export-variant",
+            "searchable": "watch export variant",
+            "version": "2.1.99"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F58B",
             "name": "watch-import",
             "searchable": "watch import",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F895",
+            "name": "watch-import-variant",
+            "searchable": "watch import variant",
+            "version": "2.1.99"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F896",
+            "name": "watch-variant",
+            "searchable": "watch variant device / tech",
+            "version": "2.1.99"
         },
         {
             "author": "Rowan",
@@ -14328,6 +14881,13 @@
             "name": "weather-hail",
             "searchable": "weather hail",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F897",
+            "name": "weather-hurricane",
+            "searchable": "weather hurricane",
+            "version": "2.1.99"
         },
         {
             "author": "Austin Andrews",
@@ -14648,14 +15208,14 @@
             "author": "Augustin Ursu",
             "codepoint": "F844",
             "name": "xamarin",
-            "searchable": "xamarin brand / logo",
+            "searchable": "xamarin microsoft-xamarin brand / logo",
             "version": "2.1.19"
         },
         {
             "author": "Augustin Ursu",
             "codepoint": "F845",
             "name": "xamarin-outline",
-            "searchable": "xamarin outline brand / logo",
+            "searchable": "xamarin outline microsoft-xamarin-outline brand / logo",
             "version": "2.1.19"
         },
         {
@@ -14841,5 +15401,5 @@
             "version": "1.7.12"
         }
     ],
-    "version": "2.1.19"
+    "version": "2.1.99"
 }
