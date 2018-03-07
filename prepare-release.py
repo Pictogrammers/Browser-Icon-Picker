@@ -22,6 +22,8 @@ files_include = [
     'dist/css/materialdesignicons.min.css.map',
     'dist/fonts/*',
     'dist/img/icon-*x*.png',
+    'dist/data/icons.min.json',
+    'dist/data/icons-svg.min.json',
 
     'manifest.json'
 ]
