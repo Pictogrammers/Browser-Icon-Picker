@@ -17,3 +17,13 @@ yarn run start
 ```
 
 Once started, open your browser on `http://127.0.0.1:8080`!
+
+## Release
+
+Update the version number in the manifest.json, and run
+
+̀```bash
+python3 prepare-release.py
+```
+
+Your generated artifacts will be outputed in a release/ subdirectory.
