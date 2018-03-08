@@ -26,7 +26,7 @@
         "style-loader": "^0.19.1",
         "uglifyjs-webpack-plugin": "^1.1.4",
         "vue": "^2.5.13",
-        "vue-icons-picker": "^1.0.6",
+        "vue-icons-picker": "^1.0.7",
         "vue-loader": "^13.6.1",
         "vue-template-compiler": "^2.5.13",
         "webpack": "^3.10.0",
