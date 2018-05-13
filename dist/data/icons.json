@@ -53,7 +53,7 @@
             "author": "Austin Andrews",
             "codepoint": "F008",
             "name": "account-check",
-            "searchable": "account check / user",
+            "searchable": "account check user-check / user",
             "version": "1.5.54"
         },
         {
@@ -85,6 +85,13 @@
             "version": "2.1.99"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "F898",
+            "name": "account-heart",
+            "searchable": "account heart",
+            "version": "2.2.43"
+        },
+        {
             "author": "REJack",
             "codepoint": "F00B",
             "name": "account-key",
@@ -111,6 +118,13 @@
             "name": "account-multiple",
             "searchable": "account multiple people user-multiple group / user",
             "version": "1.5.54"
+        },
+        {
+            "author": "Roberto Graham",
+            "codepoint": "F8C4",
+            "name": "account-multiple-check",
+            "searchable": "account multiple check user-multiple-check",
+            "version": "2.3.50"
         },
         {
             "author": "Austin Andrews",
@@ -407,18 +421,18 @@
             "version": "1.5.54"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "F899",
+            "name": "alien",
+            "searchable": "alien",
+            "version": "2.2.43"
+        },
+        {
             "author": "Google",
             "codepoint": "F6BD",
             "name": "all-inclusive",
             "searchable": "all inclusive",
             "version": "1.8.36"
-        },
-        {
-            "author": "Google",
-            "codepoint": "F801",
-            "name": "allo",
-            "searchable": "allo brand / logo",
-            "version": "2.1.19"
         },
         {
             "author": "Austin Andrews",
@@ -449,10 +463,17 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F8C5",
+            "name": "amazon-alexa",
+            "searchable": "amazon alexa brand / logo",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F02E",
-            "name": "amazon-clouddrive",
-            "searchable": "amazon clouddrive brand / logo",
+            "name": "amazon-drive",
+            "searchable": "amazon drive amazon-clouddrive brand / logo",
             "version": "1.5.54"
         },
         {
@@ -526,6 +547,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Nick",
+            "codepoint": "F89A",
+            "name": "anvil",
+            "searchable": "anvil",
+            "version": "2.2.43"
+        },
+        {
             "author": "Jay Zawrotny",
             "codepoint": "F035",
             "name": "apple",
@@ -537,6 +565,13 @@
             "codepoint": "F036",
             "name": "apple-finder",
             "searchable": "apple finder",
+            "version": "1.5.54"
+        },
+        {
+            "author": "Jay Zawrotny",
+            "codepoint": "F038",
+            "name": "apple-icloud",
+            "searchable": "apple icloud apple-mobileme brand / logo",
             "version": "1.5.54"
         },
         {
@@ -582,13 +617,6 @@
             "version": "1.6.50"
         },
         {
-            "author": "Jay Zawrotny",
-            "codepoint": "F038",
-            "name": "apple-mobileme",
-            "searchable": "apple mobileme brand / logo",
-            "version": "1.5.54"
-        },
-        {
             "author": "Austin Andrews",
             "codepoint": "F039",
             "name": "apple-safari",
@@ -615,6 +643,13 @@
             "name": "apps",
             "searchable": "apps view",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F8C6",
+            "name": "arch",
+            "searchable": "arch",
+            "version": "2.3.50"
         },
         {
             "author": "Austin Andrews",
@@ -1198,6 +1233,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Nick",
+            "codepoint": "F8C7",
+            "name": "axe",
+            "searchable": "axe hardware / tools",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F804",
             "name": "azure",
@@ -1240,7 +1282,7 @@
             "version": "1.5.54"
         },
         {
-            "author": "Contributors",
+            "author": "Nick",
             "codepoint": "F850",
             "name": "badminton",
             "searchable": "badminton shuttlecock sport",
@@ -1289,14 +1331,14 @@
             "version": "1.5.54"
         },
         {
-            "author": "Contributors",
+            "author": "Nick",
             "codepoint": "F851",
             "name": "baseball",
             "searchable": "baseball sport",
             "version": "2.1.99"
         },
         {
-            "author": "Contributors",
+            "author": "Nick",
             "codepoint": "F852",
             "name": "baseball-bat",
             "searchable": "baseball bat sport",
@@ -1341,7 +1383,7 @@
             "author": "Google",
             "codepoint": "F079",
             "name": "battery",
-            "searchable": "battery battery-full battery-std home automation",
+            "searchable": "battery battery-full battery-std battery-100 home automation",
             "version": "1.5.54"
         },
         {
@@ -1423,6 +1465,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "F89B",
+            "name": "battery-charging-10",
+            "searchable": "battery charging 10",
+            "version": "2.2.43"
+        },
+        {
+            "author": "Google",
             "codepoint": "F085",
             "name": "battery-charging-100",
             "searchable": "battery charging 100 home automation",
@@ -1451,10 +1500,24 @@
         },
         {
             "author": "Google",
+            "codepoint": "F89C",
+            "name": "battery-charging-50",
+            "searchable": "battery charging 50",
+            "version": "2.2.43"
+        },
+        {
+            "author": "Google",
             "codepoint": "F089",
             "name": "battery-charging-60",
             "searchable": "battery charging 60 home automation",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F89D",
+            "name": "battery-charging-70",
+            "searchable": "battery charging 70",
+            "version": "2.2.43"
         },
         {
             "author": "Google",
@@ -1471,10 +1534,17 @@
             "version": "1.5.54"
         },
         {
+            "author": "Google",
+            "codepoint": "F89E",
+            "name": "battery-charging-outline",
+            "searchable": "battery charging outline",
+            "version": "2.2.43"
+        },
+        {
             "author": "Michael Richins",
             "codepoint": "F806",
             "name": "battery-charging-wireless",
-            "searchable": "battery charging wireless home automation",
+            "searchable": "battery charging wireless battery-charging-wireless-full battery-charging-wireless-100 home automation",
             "version": "2.1.19"
         },
         {
@@ -1551,7 +1621,7 @@
             "author": "Michael Richins",
             "codepoint": "F811",
             "name": "battery-charging-wireless-outline",
-            "searchable": "battery charging wireless outline home automation",
+            "searchable": "battery charging wireless outline battery-charging-wireless-empty battery-charging-wireless-0 home automation",
             "version": "2.1.19"
         },
         {
@@ -1572,14 +1642,14 @@
             "author": "Google",
             "codepoint": "F08E",
             "name": "battery-outline",
-            "searchable": "battery outline home automation",
+            "searchable": "battery outline battery-0 battery-empty home automation",
             "version": "1.5.54"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F08F",
             "name": "battery-plus",
-            "searchable": "battery plus home automation",
+            "searchable": "battery plus battery-saver home automation",
             "version": "1.5.54"
         },
         {
@@ -1616,6 +1686,13 @@
             "name": "beats",
             "searchable": "beats brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F89F",
+            "name": "bed-empty",
+            "searchable": "bed empty home automation",
+            "version": "2.2.43"
         },
         {
             "author": "Austin Andrews",
@@ -2024,11 +2101,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "F8A0",
+            "name": "border-all-variant",
+            "searchable": "border all variant",
+            "version": "2.2.43"
+        },
+        {
             "author": "Google",
             "codepoint": "F0C8",
             "name": "border-bottom",
             "searchable": "border bottom text / content format",
             "version": "1.5.54"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "F8A1",
+            "name": "border-bottom-variant",
+            "searchable": "border bottom variant",
+            "version": "2.2.43"
         },
         {
             "author": "Google",
@@ -2059,11 +2150,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "F8A2",
+            "name": "border-left-variant",
+            "searchable": "border left variant",
+            "version": "2.2.43"
+        },
+        {
             "author": "Google",
             "codepoint": "F0CD",
             "name": "border-none",
             "searchable": "border none border-clear text / content format",
             "version": "1.5.54"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "F8A3",
+            "name": "border-none-variant",
+            "searchable": "border none variant",
+            "version": "2.2.43"
         },
         {
             "author": "Google",
@@ -2080,6 +2185,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "F8A4",
+            "name": "border-right-variant",
+            "searchable": "border right variant",
+            "version": "2.2.43"
+        },
+        {
             "author": "Google",
             "codepoint": "F0D0",
             "name": "border-style",
@@ -2092,6 +2204,13 @@
             "name": "border-top",
             "searchable": "border top text / content format",
             "version": "1.5.54"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "F8A5",
+            "name": "border-top-variant",
+            "searchable": "border top variant",
+            "version": "2.2.43"
         },
         {
             "author": "Google",
@@ -2297,6 +2416,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Cody",
+            "codepoint": "F8C8",
+            "name": "bullseye-arrow",
+            "searchable": "bullseye arrow target-arrow sport",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F0E7",
             "name": "bus",
@@ -2316,6 +2442,13 @@
             "name": "bus-articulated-front",
             "searchable": "bus articulated front transportation + road",
             "version": "2.0.46"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F8C9",
+            "name": "bus-clock",
+            "searchable": "bus clock departure-board",
+            "version": "2.3.50"
         },
         {
             "author": "Rowan",
@@ -2391,49 +2524,56 @@
             "author": "Google",
             "codepoint": "F0EF",
             "name": "calendar-check",
-            "searchable": "calendar check event-available date / time",
+            "searchable": "calendar check event-available calendar-task date / time",
             "version": "1.5.54"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F0F0",
             "name": "calendar-clock",
-            "searchable": "calendar clock date / time",
+            "searchable": "calendar clock event-clock event-time calendar-time date / time",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F8A6",
+            "name": "calendar-edit",
+            "searchable": "calendar edit event-edit",
+            "version": "2.2.43"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F0F1",
             "name": "calendar-multiple",
-            "searchable": "calendar multiple date / time",
+            "searchable": "calendar multiple event-multiple date / time",
             "version": "1.5.54"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F0F2",
             "name": "calendar-multiple-check",
-            "searchable": "calendar multiple check date / time",
+            "searchable": "calendar multiple check event-multiple-check date / time",
             "version": "1.5.54"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F0F3",
             "name": "calendar-plus",
-            "searchable": "calendar plus date / time",
+            "searchable": "calendar plus event-plus date / time",
             "version": "1.5.54"
         },
         {
             "author": "Cody",
             "codepoint": "F691",
             "name": "calendar-question",
-            "searchable": "calendar question calendar-rsvp date / time",
+            "searchable": "calendar question calendar-rsvp event-question date / time",
             "version": "1.7.12"
         },
         {
             "author": "Google",
             "codepoint": "F678",
             "name": "calendar-range",
-            "searchable": "calendar range date-range date / time",
+            "searchable": "calendar range date-range calendar-week event-range date / time",
             "version": "1.7.12"
         },
         {
@@ -2454,7 +2594,7 @@
             "author": "Google",
             "codepoint": "F0F6",
             "name": "calendar-today",
-            "searchable": "calendar today date / time",
+            "searchable": "calendar today calendar-day date / time",
             "version": "1.5.54"
         },
         {
@@ -2529,6 +2669,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "F8CA",
+            "name": "camera-account",
+            "searchable": "camera account camera-user",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Google",
             "codepoint": "F692",
             "name": "camera-burst",
             "searchable": "camera burst burst-mode photography",
@@ -2561,6 +2708,13 @@
             "name": "camera-gopro",
             "searchable": "camera gopro photography device / tech",
             "version": "2.0.46"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F8CB",
+            "name": "camera-image",
+            "searchable": "camera image",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -2711,6 +2865,13 @@
         },
         {
             "author": "Rowan",
+            "codepoint": "F8CC",
+            "name": "car-limousine",
+            "searchable": "car limousine transportation + road",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Rowan",
             "codepoint": "F7A9",
             "name": "car-pickup",
             "searchable": "car pickup transportation + road",
@@ -2752,6 +2913,27 @@
             "version": "1.6.50"
         },
         {
+            "author": "Nick",
+            "codepoint": "F8CD",
+            "name": "cards-club",
+            "searchable": "cards club suit-clubs",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8CE",
+            "name": "cards-diamond",
+            "searchable": "cards diamond suit-diamonds",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8CF",
+            "name": "cards-heart",
+            "searchable": "cards heart suit-hearts",
+            "version": "2.3.50"
+        },
+        {
             "author": "Cody",
             "codepoint": "F639",
             "name": "cards-outline",
@@ -2764,6 +2946,13 @@
             "name": "cards-playing-outline",
             "searchable": "cards playing outline",
             "version": "1.6.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8D0",
+            "name": "cards-spade",
+            "searchable": "cards spade suit-spades",
+            "version": "2.3.50"
         },
         {
             "author": "Case Sandberg",
@@ -2941,11 +3130,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "F8D2",
+            "name": "cellphone-message",
+            "searchable": "cellphone message mobile-phone-message smartphone-message / phone",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F123",
             "name": "cellphone-settings",
             "searchable": "cellphone settings mobile-phone-settings smartphone-settings settings-cell / phone",
             "version": "1.5.54"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "F8D1",
+            "name": "cellphone-text",
+            "searchable": "cellphone text mobile-phone-text smartphone-text / phone",
+            "version": "2.3.50"
         },
         {
             "author": "Contributors",
@@ -3051,6 +3254,13 @@
             "name": "chart-line-variant",
             "searchable": "chart line variant show-chart",
             "version": "2.0.46"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F8D3",
+            "name": "chart-multiline",
+            "searchable": "chart multiline",
+            "version": "2.3.50"
         },
         {
             "author": "Austin Andrews",
@@ -3382,6 +3592,13 @@
             "version": "1.9.32"
         },
         {
+            "author": "Google",
+            "codepoint": "F8D4",
+            "name": "circle-edit-outline",
+            "searchable": "circle edit outline",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F765",
             "name": "circle-outline",
@@ -3443,6 +3660,13 @@
             "name": "clipboard-check",
             "searchable": "clipboard check assignment-turned-in",
             "version": "1.5.54"
+        },
+        {
+            "author": "James Coyle",
+            "codepoint": "F8A7",
+            "name": "clipboard-check-outline",
+            "searchable": "clipboard check outline",
+            "version": "2.2.43"
         },
         {
             "author": "Michael Richins",
@@ -3830,6 +4054,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Peter Noble",
+            "codepoint": "F8D5",
+            "name": "cogs",
+            "searchable": "cogs manufacturing settings",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F178",
             "name": "coin",
@@ -4040,6 +4271,13 @@
             "version": "2.0.46"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F8A8",
+            "name": "console-network",
+            "searchable": "console network terminal-network",
+            "version": "2.2.43"
+        },
+        {
             "author": "Google",
             "codepoint": "F18E",
             "name": "contact-mail",
@@ -4215,6 +4453,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Peter Noble",
+            "codepoint": "F8D6",
+            "name": "credit-card-settings",
+            "searchable": "credit card settings payment-settings",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F19E",
             "name": "crop",
@@ -4327,7 +4572,7 @@
             "version": "1.5.54"
         },
         {
-            "author": "Contributors",
+            "author": "Nick",
             "codepoint": "F862",
             "name": "curling",
             "searchable": "curling sport",
@@ -4521,6 +4766,27 @@
             "name": "database-search",
             "searchable": "database search",
             "version": "2.1.99"
+        },
+        {
+            "author": "Colton Wiscombe",
+            "codepoint": "F8D7",
+            "name": "death-star",
+            "searchable": "death star",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Colton Wiscombe",
+            "codepoint": "F8D8",
+            "name": "death-star-variant",
+            "searchable": "death star variant",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F8D9",
+            "name": "debian",
+            "searchable": "debian",
+            "version": "2.3.50"
         },
         {
             "author": "Austin Andrews",
@@ -5072,7 +5338,7 @@
             "author": "Austin Andrews",
             "codepoint": "F1E6",
             "name": "dumbbell",
-            "searchable": "dumbbell",
+            "searchable": "dumbbell weights",
             "version": "1.5.54"
         },
         {
@@ -5559,6 +5825,13 @@
             "version": "1.8.36"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F8DA",
+            "name": "fedora",
+            "searchable": "fedora",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F213",
             "name": "ferry",
@@ -5599,6 +5872,13 @@
             "name": "file-cloud",
             "searchable": "file cloud files / folders",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "F8A9",
+            "name": "file-compare",
+            "searchable": "file compare files / folders",
+            "version": "2.2.43"
         },
         {
             "author": "Austin Andrews",
@@ -5776,6 +6056,13 @@
             "version": "1.6.50"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F8DB",
+            "name": "file-undo",
+            "searchable": "file undo file-revert file-discard",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F22B",
             "name": "file-video",
@@ -5886,6 +6173,13 @@
             "name": "fire",
             "searchable": "fire whatshot",
             "version": "1.5.54"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8AA",
+            "name": "fire-truck",
+            "searchable": "fire truck fire-engine",
+            "version": "2.2.43"
         },
         {
             "author": "Chris Litherland",
@@ -6049,6 +6343,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F8DC",
+            "name": "floor-lamp",
+            "searchable": "floor lamp home automation",
+            "version": "2.3.50"
+        },
+        {
             "author": "Contributors",
             "codepoint": "F820",
             "name": "floor-plan",
@@ -6091,6 +6392,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F8DD",
+            "name": "folder-edit",
+            "searchable": "folder edit files / folders",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F24E",
             "name": "folder-google-drive",
@@ -6103,6 +6411,20 @@
             "name": "folder-image",
             "searchable": "folder image files / folders",
             "version": "1.5.54"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8AB",
+            "name": "folder-key",
+            "searchable": "folder key files / folders",
+            "version": "2.2.43"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8AC",
+            "name": "folder-key-network",
+            "searchable": "folder key network files / folders",
+            "version": "2.2.43"
         },
         {
             "author": "Austin Andrews",
@@ -6355,6 +6677,13 @@
             "name": "format-color-text",
             "searchable": "format color text format-colour-text / content",
             "version": "1.7.12"
+        },
+        {
+            "author": "Peter Noble",
+            "codepoint": "F8DE",
+            "name": "format-columns",
+            "searchable": "format columns text / content",
+            "version": "2.3.50"
         },
         {
             "author": "Andreas Gohr",
@@ -6756,6 +7085,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F8DF",
+            "name": "freebsd",
+            "searchable": "freebsd",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F28F",
             "name": "fridge",
@@ -6875,6 +7211,55 @@
             "version": "1.5.54"
         },
         {
+            "author": "Nick",
+            "codepoint": "F8E0",
+            "name": "gate-and",
+            "searchable": "gate and logic-gate-and",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8E1",
+            "name": "gate-nand",
+            "searchable": "gate nand logic-gate-nand",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8E2",
+            "name": "gate-nor",
+            "searchable": "gate nor logic-gate-nor",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8E3",
+            "name": "gate-not",
+            "searchable": "gate not logic-gate-not",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8E4",
+            "name": "gate-or",
+            "searchable": "gate or logic-gate-or",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8E5",
+            "name": "gate-xnor",
+            "searchable": "gate xnor logic-gate-xnor",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8E6",
+            "name": "gate-xor",
+            "searchable": "gate xor logic-gate-xor",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F29A",
             "name": "gauge",
@@ -6936,6 +7321,13 @@
             "name": "gender-transgender",
             "searchable": "gender transgender",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F8E7",
+            "name": "gentoo",
+            "searchable": "gentoo",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -7099,6 +7491,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Cody",
+            "codepoint": "F8E8",
+            "name": "globe-model",
+            "searchable": "globe model",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F2AB",
             "name": "gmail",
@@ -7132,6 +7531,13 @@
             "name": "google",
             "searchable": "google brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F801",
+            "name": "google-allo",
+            "searchable": "google allo brand / logo",
+            "version": "2.1.19"
         },
         {
             "author": "Google",
@@ -7226,6 +7632,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "F2C9",
+            "name": "google-hangouts",
+            "searchable": "google hangouts brand / logo",
+            "version": "1.5.54"
+        },
+        {
+            "author": "Google",
             "codepoint": "F823",
             "name": "google-home",
             "searchable": "google home device / tech",
@@ -7307,6 +7720,13 @@
             "name": "google-wallet",
             "searchable": "google wallet wallet-product brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F8AD",
+            "name": "gpu",
+            "searchable": "gpu",
+            "version": "2.2.43"
         },
         {
             "author": "Google",
@@ -7407,6 +7827,13 @@
             "version": "1.7.12"
         },
         {
+            "author": "Nick",
+            "codepoint": "F8E9",
+            "name": "hammer",
+            "searchable": "hammer hardware / tools",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F2C7",
             "name": "hand-pointing-right",
@@ -7418,13 +7845,6 @@
             "codepoint": "F2C8",
             "name": "hanger",
             "searchable": "hanger",
-            "version": "1.5.54"
-        },
-        {
-            "author": "Google",
-            "codepoint": "F2C9",
-            "name": "hangouts",
-            "searchable": "hangouts brand / logo",
             "version": "1.5.54"
         },
         {
@@ -7634,18 +8054,18 @@
             "author": "Google",
             "codepoint": "F2DA",
             "name": "history",
-            "searchable": "history recent latest",
+            "searchable": "history recent latest clock-arrow counterclockwise",
             "version": "1.5.54"
         },
         {
-            "author": "Contributors",
+            "author": "Nick",
             "codepoint": "F878",
             "name": "hockey-puck",
             "searchable": "hockey puck sport",
             "version": "2.1.99"
         },
         {
-            "author": "Contributors",
+            "author": "Nick",
             "codepoint": "F879",
             "name": "hockey-sticks",
             "searchable": "hockey sticks sport",
@@ -7701,11 +8121,32 @@
             "version": "2.0.46"
         },
         {
+            "author": "Nick",
+            "codepoint": "F8AE",
+            "name": "home-currency-usd",
+            "searchable": "home currency usd",
+            "version": "2.2.43"
+        },
+        {
             "author": "Michael Richins",
             "codepoint": "F826",
             "name": "home-heart",
             "searchable": "home heart family automation",
             "version": "2.1.19"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8EA",
+            "name": "home-lock",
+            "searchable": "home lock automation",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8EB",
+            "name": "home-lock-open",
+            "searchable": "home lock open automation",
+            "version": "2.3.50"
         },
         {
             "author": "Cody",
@@ -8049,6 +8490,13 @@
             "name": "inbox-arrow-up",
             "searchable": "inbox arrow up",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F8AF",
+            "name": "inbox-multiple",
+            "searchable": "inbox multiple",
+            "version": "2.2.43"
         },
         {
             "author": "Christopher Schreiner",
@@ -8401,6 +8849,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Nick",
+            "codepoint": "F8B0",
+            "name": "language-lua",
+            "searchable": "language lua developer / languages",
+            "version": "2.2.43"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F31F",
             "name": "language-php",
@@ -8691,8 +9146,15 @@
             "author": "Austin Andrews",
             "codepoint": "F33D",
             "name": "linux",
-            "searchable": "linux animal brand / logo",
+            "searchable": "linux tux animal brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F8EC",
+            "name": "linux-mint",
+            "searchable": "linux mint",
+            "version": "2.3.50"
         },
         {
             "author": "Kateryna Porshnieva",
@@ -8707,6 +9169,13 @@
             "name": "lock",
             "searchable": "lock https home automation",
             "version": "1.5.54"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8ED",
+            "name": "lock-alert",
+            "searchable": "lock alert lock-warning",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -8744,11 +9213,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Cody",
+            "codepoint": "F8EE",
+            "name": "lock-question",
+            "searchable": "lock question forgot-password",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F772",
             "name": "lock-reset",
             "searchable": "lock reset password-reset",
             "version": "1.9.32"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F8B1",
+            "name": "lock-smart",
+            "searchable": "lock smart home automation",
+            "version": "2.2.43"
         },
         {
             "author": "Contributors",
@@ -8903,6 +9386,13 @@
             "name": "map-marker-circle",
             "searchable": "map marker circle explore-nearby",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F8EF",
+            "name": "map-marker-distance",
+            "searchable": "map marker distance",
+            "version": "2.3.50"
         },
         {
             "author": "Cody",
@@ -9188,7 +9678,7 @@
             "author": "Austin Andrews",
             "codepoint": "F629",
             "name": "meteor",
-            "searchable": "meteor",
+            "searchable": "meteor brand / logo",
             "version": "1.6.50"
         },
         {
@@ -9220,6 +9710,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F8B2",
+            "name": "microphone-minus",
+            "searchable": "microphone minus",
+            "version": "2.2.43"
+        },
+        {
             "author": "Google",
             "codepoint": "F36D",
             "name": "microphone-off",
@@ -9232,6 +9729,13 @@
             "name": "microphone-outline",
             "searchable": "microphone outline mic-none",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F8B3",
+            "name": "microphone-plus",
+            "searchable": "microphone plus",
+            "version": "2.2.43"
         },
         {
             "author": "Google",
@@ -9267,6 +9771,20 @@
             "name": "microsoft",
             "searchable": "microsoft brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F8F0",
+            "name": "midi",
+            "searchable": "midi brand / logo",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F8F1",
+            "name": "midi-port",
+            "searchable": "midi port",
+            "version": "2.3.50"
         },
         {
             "author": "Austin Andrews",
@@ -9549,6 +10067,13 @@
             "version": "1.9.32"
         },
         {
+            "author": "Cody",
+            "codepoint": "F8F2",
+            "name": "nas",
+            "searchable": "nas network-attached-storage",
+            "version": "2.3.50"
+        },
+        {
             "author": "Contributors",
             "codepoint": "F87F",
             "name": "nativescript",
@@ -9591,20 +10116,6 @@
             "version": "1.5.54"
         },
         {
-            "author": "Google",
-            "codepoint": "F392",
-            "name": "nest-protect",
-            "searchable": "nest protect device / tech home automation",
-            "version": "1.5.54"
-        },
-        {
-            "author": "Google",
-            "codepoint": "F393",
-            "name": "nest-thermostat",
-            "searchable": "nest thermostat device / tech home automation",
-            "version": "1.5.54"
-        },
-        {
             "author": "Austin Andrews",
             "codepoint": "F745",
             "name": "netflix",
@@ -9617,6 +10128,83 @@
             "name": "network",
             "searchable": "network",
             "version": "1.8.36"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8F3",
+            "name": "network-strength-1",
+            "searchable": "network strength 1",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8F4",
+            "name": "network-strength-1-alert",
+            "searchable": "network strength 1 alert network-strength-1-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8F5",
+            "name": "network-strength-2",
+            "searchable": "network strength 2",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8F6",
+            "name": "network-strength-2-alert",
+            "searchable": "network strength 2 alert network-strength-2-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8F7",
+            "name": "network-strength-3",
+            "searchable": "network strength 3",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8F8",
+            "name": "network-strength-3-alert",
+            "searchable": "network strength 3 alert network-strength-3-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8F9",
+            "name": "network-strength-4",
+            "searchable": "network strength 4",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8FA",
+            "name": "network-strength-4-alert",
+            "searchable": "network strength 4 alert network-strength-4-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8FB",
+            "name": "network-strength-off",
+            "searchable": "network strength off",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8FC",
+            "name": "network-strength-off-outline",
+            "searchable": "network strength off outline",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F8FD",
+            "name": "network-strength-outline",
+            "searchable": "network strength outline network-strength-0",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -10263,6 +10851,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Google",
+            "codepoint": "F8B4",
+            "name": "palette-swatch",
+            "searchable": "palette swatch style",
+            "version": "2.2.43"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F3DA",
             "name": "panda",
@@ -10487,6 +11082,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Cody",
+            "codepoint": "F8B5",
+            "name": "periodic-table",
+            "searchable": "periodic table",
+            "version": "2.2.43"
+        },
+        {
             "author": "Rowan",
             "codepoint": "F7E3",
             "name": "periodic-table-co2",
@@ -10511,14 +11113,14 @@
             "author": "Google",
             "codepoint": "F3F2",
             "name": "phone",
-            "searchable": "phone call local-phone cellphone /",
+            "searchable": "phone call local-phone telephone cellphone /",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3F3",
             "name": "phone-bluetooth",
-            "searchable": "phone bluetooth phone-bluetooth-speaker cellphone /",
+            "searchable": "phone bluetooth phone-bluetooth-speaker telephone-bluetooth cellphone /",
             "version": "1.5.54"
         },
         {
@@ -10532,35 +11134,35 @@
             "author": "Google",
             "codepoint": "F3F4",
             "name": "phone-forward",
-            "searchable": "phone forward phone-forwarded cellphone /",
+            "searchable": "phone forward phone-forwarded telephone-forward cellphone /",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3F5",
             "name": "phone-hangup",
-            "searchable": "phone hangup call-end cellphone /",
+            "searchable": "phone hangup call-end telephone-hangup cellphone /",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3F6",
             "name": "phone-in-talk",
-            "searchable": "phone in talk cellphone /",
+            "searchable": "phone in talk telephone-in-talk cellphone /",
             "version": "1.5.54"
         },
         {
             "author": "Cody",
             "codepoint": "F3F7",
             "name": "phone-incoming",
-            "searchable": "phone incoming cellphone /",
+            "searchable": "phone incoming telephone-incoming cellphone /",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3F8",
             "name": "phone-locked",
-            "searchable": "phone locked cellphone /",
+            "searchable": "phone locked telephone-locked cellphone /",
             "version": "1.5.54"
         },
         {
@@ -10662,6 +11264,13 @@
             "version": "1.7.12"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F8B6",
+            "name": "pickaxe",
+            "searchable": "pickaxe",
+            "version": "2.2.43"
+        },
+        {
             "author": "Michael Irigoyen",
             "codepoint": "F886",
             "name": "pier",
@@ -10711,6 +11320,20 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F92F",
+            "name": "pin-off-outline",
+            "searchable": "pin off outline",
+            "version": "2.3.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F930",
+            "name": "pin-outline",
+            "searchable": "pin outline",
+            "version": "2.3.54"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F405",
             "name": "pine-tree",
@@ -10742,14 +11365,14 @@
             "author": "Michael Richins",
             "codepoint": "F7E4",
             "name": "pipe",
-            "searchable": "pipe",
+            "searchable": "pipe home automation",
             "version": "2.0.46"
         },
         {
             "author": "Michael Richins",
             "codepoint": "F7E5",
             "name": "pipe-disconnected",
-            "searchable": "pipe disconnected",
+            "searchable": "pipe disconnected home automation",
             "version": "2.0.46"
         },
         {
@@ -10838,10 +11461,24 @@
         },
         {
             "author": "Google",
+            "codepoint": "F8FE",
+            "name": "play-speed",
+            "searchable": "play speed",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Google",
             "codepoint": "F5C7",
             "name": "playlist-check",
             "searchable": "playlist check subscriptions playlist-add-check",
             "version": "1.5.54"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F8FF",
+            "name": "playlist-edit",
+            "searchable": "playlist edit",
+            "version": "2.3.50"
         },
         {
             "author": "Austin Andrews",
@@ -11047,6 +11684,27 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F900",
+            "name": "power-cycle",
+            "searchable": "power cycle",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F901",
+            "name": "power-off",
+            "searchable": "power off",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F902",
+            "name": "power-on",
+            "searchable": "power on",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F6A4",
             "name": "power-plug",
@@ -11068,11 +11726,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F903",
+            "name": "power-sleep",
+            "searchable": "power sleep",
+            "version": "2.3.50"
+        },
+        {
             "author": "Cody",
             "codepoint": "F427",
             "name": "power-socket",
             "searchable": "power socket plug-socket home automation",
             "version": "1.5.54"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F904",
+            "name": "power-socket-au",
+            "searchable": "power socket au plug-socket-au power-socket-type-i power-socket-cn power-socket-ar power-socket-nz power-socket-pg",
+            "version": "2.3.50"
         },
         {
             "author": "Rowan",
@@ -11085,15 +11757,22 @@
             "author": "Rowan",
             "codepoint": "F7E7",
             "name": "power-socket-uk",
-            "searchable": "power socket uk plug-socket-uk home automation",
+            "searchable": "power socket uk plug-socket-uk power-socket-type-g power-socket-ie power-socket-hk power-socket-my power-socket-cy power-socket-mt power-socket-sg home automation",
             "version": "2.0.46"
         },
         {
             "author": "Rowan",
             "codepoint": "F7E8",
             "name": "power-socket-us",
-            "searchable": "power socket us plug-socket-us home automation",
+            "searchable": "power socket us plug-socket-us power-socket-jp power-socket-ca power-socket-mx power-socket-type-b home automation",
             "version": "2.0.46"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F905",
+            "name": "power-standby",
+            "searchable": "power standby",
+            "version": "2.3.50"
         },
         {
             "author": "Roberto Graham",
@@ -11215,6 +11894,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F8B7",
+            "name": "qrcode-edit",
+            "searchable": "qrcode edit",
+            "version": "2.2.43"
+        },
+        {
             "author": "Cody",
             "codepoint": "F433",
             "name": "qrcode-scan",
@@ -11241,6 +11927,13 @@
             "name": "quicktime",
             "searchable": "quicktime brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Augustin Ursu",
+            "codepoint": "F906",
+            "name": "rabbit",
+            "searchable": "rabbit bunny animal",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -11453,6 +12146,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Cody",
+            "codepoint": "F8B8",
+            "name": "remote-desktop",
+            "searchable": "remote desktop",
+            "version": "2.2.43"
+        },
+        {
             "author": "Google",
             "codepoint": "F455",
             "name": "rename-box",
@@ -11586,14 +12286,14 @@
             "version": "1.5.54"
         },
         {
-            "author": "Contributors",
+            "author": "Colton Wiscombe",
             "codepoint": "F7E9",
             "name": "rice",
             "searchable": "rice food / drink",
             "version": "2.0.46"
         },
         {
-            "author": "Contributors",
+            "author": "Colton Wiscombe",
             "codepoint": "F7EA",
             "name": "ring",
             "searchable": "ring",
@@ -11621,6 +12321,20 @@
             "version": "1.7.12"
         },
         {
+            "author": "Roberto Graham",
+            "codepoint": "F70C",
+            "name": "robot-vacuum",
+            "searchable": "robot vacuum roomba device / tech home automation",
+            "version": "1.8.36"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F907",
+            "name": "robot-vacuum-variant",
+            "searchable": "robot vacuum variant neato",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F463",
             "name": "rocket",
@@ -11635,13 +12349,6 @@
             "version": "2.1.99"
         },
         {
-            "author": "Roberto Graham",
-            "codepoint": "F70C",
-            "name": "roomba",
-            "searchable": "roomba device / tech home automation",
-            "version": "1.8.36"
-        },
-        {
             "author": "Austin Andrews",
             "codepoint": "F464",
             "name": "rotate-3d",
@@ -11652,7 +12359,7 @@
             "author": "Google",
             "codepoint": "F465",
             "name": "rotate-left",
-            "searchable": "rotate left",
+            "searchable": "rotate left arrow-rotate-left arrow",
             "version": "1.5.54"
         },
         {
@@ -11666,7 +12373,7 @@
             "author": "Google",
             "codepoint": "F467",
             "name": "rotate-right",
-            "searchable": "rotate right",
+            "searchable": "rotate right arrow-rotate-right arrow",
             "version": "1.5.54"
         },
         {
@@ -11768,11 +12475,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Cody",
+            "codepoint": "F908",
+            "name": "satellite-uplink",
+            "searchable": "satellite uplink",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F471",
             "name": "satellite-variant",
             "searchable": "satellite variant",
             "version": "1.5.54"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F8B9",
+            "name": "sausage",
+            "searchable": "sausage food / drink",
+            "version": "2.2.43"
         },
         {
             "author": "Google",
@@ -11806,8 +12527,15 @@
             "author": "Google",
             "codepoint": "F6AA",
             "name": "scanner",
-            "searchable": "scanner",
+            "searchable": "scanner device / tech",
             "version": "1.7.12"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F909",
+            "name": "scanner-off",
+            "searchable": "scanner off device / tech",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -12139,6 +12867,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "F8BA",
+            "name": "settings-outline",
+            "searchable": "settings outline cog-outline gear-outline",
+            "version": "2.2.43"
+        },
+        {
             "author": "Google",
             "codepoint": "F830",
             "name": "shape",
@@ -12193,6 +12928,13 @@
             "name": "share",
             "searchable": "share",
             "version": "1.5.54"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "F931",
+            "name": "share-outline",
+            "searchable": "share outline",
+            "version": "2.3.54"
         },
         {
             "author": "Google",
@@ -12349,6 +13091,34 @@
             "version": "1.8.36"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F8BB",
+            "name": "signal-cellular-1",
+            "searchable": "signal cellular 1",
+            "version": "2.2.43"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F8BC",
+            "name": "signal-cellular-2",
+            "searchable": "signal cellular 2",
+            "version": "2.2.43"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F8BD",
+            "name": "signal-cellular-3",
+            "searchable": "signal cellular 3",
+            "version": "2.2.43"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "F8BE",
+            "name": "signal-cellular-outline",
+            "searchable": "signal cellular outline signal-cellular-0",
+            "version": "2.2.43"
+        },
+        {
             "author": "Rowan",
             "codepoint": "F714",
             "name": "signal-hspa",
@@ -12429,21 +13199,21 @@
             "author": "Cody",
             "codepoint": "F4AA",
             "name": "sitemap",
-            "searchable": "sitemap",
+            "searchable": "sitemap workflow flowchart",
             "version": "1.5.54"
         },
         {
             "author": "Cody",
             "codepoint": "F4AB",
             "name": "skip-backward",
-            "searchable": "skip backward home automation",
+            "searchable": "skip backward title-backward previous-title home automation",
             "version": "1.5.54"
         },
         {
             "author": "Cody",
             "codepoint": "F4AC",
             "name": "skip-forward",
-            "searchable": "skip forward home automation",
+            "searchable": "skip forward title-forward next-title home automation",
             "version": "1.5.54"
         },
         {
@@ -12517,6 +13287,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F90A",
+            "name": "slackware",
+            "searchable": "slackware",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F4B2",
             "name": "sleep",
@@ -12528,6 +13305,13 @@
             "codepoint": "F4B3",
             "name": "sleep-off",
             "searchable": "sleep off",
+            "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F392",
+            "name": "smoke-detector",
+            "searchable": "smoke detector nest-protect device / tech home automation",
             "version": "1.5.54"
         },
         {
@@ -12720,7 +13504,7 @@
             "version": "1.5.54"
         },
         {
-            "author": "Contributors",
+            "author": "Colton Wiscombe",
             "codepoint": "F7ED",
             "name": "soy-sauce",
             "searchable": "soy sauce food / drink",
@@ -12797,6 +13581,13 @@
             "version": "1.9.32"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F90B",
+            "name": "square-edit-outline",
+            "searchable": "square edit outline",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F4CA",
             "name": "square-inc",
@@ -12825,17 +13616,24 @@
             "version": "1.9.32"
         },
         {
-            "author": "Austin Andrews",
-            "codepoint": "F4CC",
-            "name": "stack-overflow",
-            "searchable": "stack overflow stackoverflow brand / logo",
-            "version": "1.5.54"
+            "author": "Rowan",
+            "codepoint": "F8BF",
+            "name": "ssh",
+            "searchable": "ssh",
+            "version": "2.2.43"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F60B",
-            "name": "stackexchange",
-            "searchable": "stackexchange brand / logo",
+            "name": "stack-exchange",
+            "searchable": "stack exchange stackexchange brand / logo",
+            "version": "1.5.54"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "F4CC",
+            "name": "stack-overflow",
+            "searchable": "stack overflow stackoverflow brand / logo",
             "version": "1.5.54"
         },
         {
@@ -12902,11 +13700,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "F90C",
+            "name": "steam-box",
+            "searchable": "steam box brand / logo",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F4D4",
             "name": "steering",
-            "searchable": "steering",
+            "searchable": "steering search-hands-free",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "F90D",
+            "name": "steering-off",
+            "searchable": "steering off search-hands-free-off",
+            "version": "2.3.50"
         },
         {
             "author": "Cody",
@@ -12919,7 +13731,7 @@
             "author": "Cody",
             "codepoint": "F4D6",
             "name": "step-backward-2",
-            "searchable": "step backward 2",
+            "searchable": "step backward 2 frame-backward",
             "version": "1.5.54"
         },
         {
@@ -12933,7 +13745,7 @@
             "author": "Cody",
             "codepoint": "F4D8",
             "name": "step-forward-2",
-            "searchable": "step forward 2",
+            "searchable": "step forward 2 frame-forward",
             "version": "1.5.54"
         },
         {
@@ -13099,10 +13911,24 @@
         },
         {
             "author": "Google",
+            "codepoint": "F8C0",
+            "name": "swap-horizontal-variant",
+            "searchable": "swap horizontal variant",
+            "version": "2.2.43"
+        },
+        {
+            "author": "Google",
             "codepoint": "F4E2",
             "name": "swap-vertical",
             "searchable": "swap vertical import-export",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F8C1",
+            "name": "swap-vertical-variant",
+            "searchable": "swap vertical variant swap-calls",
+            "version": "2.2.43"
         },
         {
             "author": "Austin Andrews",
@@ -13273,6 +14099,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "F90E",
+            "name": "table-search",
+            "searchable": "table search",
+            "version": "2.3.50"
+        },
+        {
             "author": "Contributors",
             "codepoint": "F837",
             "name": "table-settings",
@@ -13327,6 +14160,13 @@
             "name": "tag-heart",
             "searchable": "tag heart loyalty",
             "version": "1.7.12"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F90F",
+            "name": "tag-minus",
+            "searchable": "tag minus",
+            "version": "2.3.50"
         },
         {
             "author": "Austin Andrews",
@@ -13486,8 +14326,22 @@
             "author": "Kai Faust",
             "codepoint": "F668",
             "name": "test-tube",
-            "searchable": "test tube",
+            "searchable": "test tube science",
             "version": "1.6.50"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "F910",
+            "name": "test-tube-empty",
+            "searchable": "test tube empty science",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "F911",
+            "name": "test-tube-off",
+            "searchable": "test tube off science",
+            "version": "2.3.50"
         },
         {
             "author": "Cody",
@@ -13560,6 +14414,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Google",
+            "codepoint": "F393",
+            "name": "thermostat",
+            "searchable": "thermostat nest device / tech home automation",
+            "version": "1.5.54"
+        },
+        {
             "author": "Rowan",
             "codepoint": "F890",
             "name": "thermostat-box",
@@ -13584,28 +14445,28 @@
             "author": "Google",
             "codepoint": "F511",
             "name": "thumb-down",
-            "searchable": "thumb down dislike",
+            "searchable": "thumb down dislike thumbs-down",
             "version": "1.5.54"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F512",
             "name": "thumb-down-outline",
-            "searchable": "thumb down outline dislike-outline",
+            "searchable": "thumb down outline dislike-outline thumbs-down-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F513",
             "name": "thumb-up",
-            "searchable": "thumb up like",
+            "searchable": "thumb up like thumbs-up",
             "version": "1.5.54"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F514",
             "name": "thumb-up-outline",
-            "searchable": "thumb up outline like-outline",
+            "searchable": "thumb up outline like-outline thumbs-up-outline",
             "version": "1.5.54"
         },
         {
@@ -13635,6 +14496,13 @@
             "name": "ticket-confirmation",
             "searchable": "ticket confirmation confirmation-number",
             "version": "1.5.54"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F912",
+            "name": "ticket-outline",
+            "searchable": "ticket outline",
+            "version": "2.3.50"
         },
         {
             "author": "Rowan",
@@ -13778,9 +14646,16 @@
         },
         {
             "author": "Christopher Schreiner",
-            "codepoint": "F529",
+            "codepoint": "F8C2",
             "name": "tooth",
             "searchable": "tooth",
+            "version": "2.2.43"
+        },
+        {
+            "author": "Christopher Schreiner",
+            "codepoint": "F529",
+            "name": "tooth-outline",
+            "searchable": "tooth outline",
             "version": "1.5.54"
         },
         {
@@ -13812,11 +14687,25 @@
             "version": "2.1.19"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F913",
+            "name": "track-light",
+            "searchable": "track light home automation",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F7F7",
             "name": "trackpad",
             "searchable": "trackpad",
             "version": "2.0.46"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F932",
+            "name": "trackpad-lock",
+            "searchable": "trackpad lock",
+            "version": "2.3.54"
         },
         {
             "author": "Rowan",
@@ -13838,6 +14727,13 @@
             "name": "train",
             "searchable": "train directions-railway navigation transportation + other",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F8C3",
+            "name": "train-variant",
+            "searchable": "train variant transportation + other",
+            "version": "2.2.43"
         },
         {
             "author": "Google",
@@ -13873,6 +14769,20 @@
             "name": "transit-transfer",
             "searchable": "transit transfer transfer-within-a-station",
             "version": "1.7.12"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F914",
+            "name": "transition",
+            "searchable": "transition animation motion translate",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F915",
+            "name": "transition-masked",
+            "searchable": "transition masked masked-transitions",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -14015,11 +14925,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Rowan",
+            "codepoint": "F916",
+            "name": "tumble-dryer",
+            "searchable": "tumble dryer home automation",
+            "version": "2.3.50"
+        },
+        {
             "author": "Google",
             "codepoint": "F541",
             "name": "tumblr",
             "searchable": "tumblr brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F917",
+            "name": "tumblr-box",
+            "searchable": "tumblr box brand / logo",
+            "version": "2.3.50"
         },
         {
             "author": "Austin Andrews",
@@ -14186,7 +15110,7 @@
             "author": "Google",
             "codepoint": "F6AF",
             "name": "update",
-            "searchable": "update",
+            "searchable": "update clockwise clock-arrow",
             "version": "1.7.12"
         },
         {
@@ -14429,6 +15353,20 @@
         },
         {
             "author": "Google",
+            "codepoint": "F918",
+            "name": "video-account",
+            "searchable": "video account video-user",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F919",
+            "name": "video-image",
+            "searchable": "video image",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Google",
             "codepoint": "F83E",
             "name": "video-input-antenna",
             "searchable": "video input antenna settings-input-antenna",
@@ -14461,6 +15399,13 @@
             "name": "video-off",
             "searchable": "video off videocam-off / movie home automation",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "F91A",
+            "name": "video-stabilization",
+            "searchable": "video stabilization video-stabilisation",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -14655,21 +15600,21 @@
             "author": "Google",
             "codepoint": "F57E",
             "name": "volume-high",
-            "searchable": "volume high audio home automation",
+            "searchable": "volume high audio speaker speakerphone home automation",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F57F",
             "name": "volume-low",
-            "searchable": "volume low audio home automation",
+            "searchable": "volume low audio speaker home automation",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F580",
             "name": "volume-medium",
-            "searchable": "volume medium audio home automation",
+            "searchable": "volume medium audio speaker home automation",
             "version": "1.5.54"
         },
         {
@@ -14690,7 +15635,7 @@
             "author": "Google",
             "codepoint": "F581",
             "name": "volume-off",
-            "searchable": "volume off mute audio home automation",
+            "searchable": "volume off mute audio-off speaker-off speakerphone-off audio home automation",
             "version": "1.5.54"
         },
         {
@@ -14727,6 +15672,27 @@
             "name": "wall",
             "searchable": "wall",
             "version": "2.0.46"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F91B",
+            "name": "wall-sconce",
+            "searchable": "wall sconce home automation",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F91C",
+            "name": "wall-sconce-flat",
+            "searchable": "wall sconce flat home automation",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Rowan",
+            "codepoint": "F91D",
+            "name": "wall-sconce-variant",
+            "searchable": "wall sconce variant home automation",
+            "version": "2.3.50"
         },
         {
             "author": "Google",
@@ -15100,6 +16066,125 @@
             "version": "1.5.54"
         },
         {
+            "author": "Cody",
+            "codepoint": "F91E",
+            "name": "wifi-strength-1",
+            "searchable": "wifi strength 1",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F91F",
+            "name": "wifi-strength-1-alert",
+            "searchable": "wifi strength 1 alert wifi-strength-1-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F920",
+            "name": "wifi-strength-1-lock",
+            "searchable": "wifi strength 1 lock",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F921",
+            "name": "wifi-strength-2",
+            "searchable": "wifi strength 2",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F922",
+            "name": "wifi-strength-2-alert",
+            "searchable": "wifi strength 2 alert wifi-strength-2-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F923",
+            "name": "wifi-strength-2-lock",
+            "searchable": "wifi strength 2 lock",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F924",
+            "name": "wifi-strength-3",
+            "searchable": "wifi strength 3",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F925",
+            "name": "wifi-strength-3-alert",
+            "searchable": "wifi strength 3 alert wifi-strength-3-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F926",
+            "name": "wifi-strength-3-lock",
+            "searchable": "wifi strength 3 lock",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F927",
+            "name": "wifi-strength-4",
+            "searchable": "wifi strength 4",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F928",
+            "name": "wifi-strength-4-alert",
+            "searchable": "wifi strength 4 alert wifi-strength-4-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F929",
+            "name": "wifi-strength-4-lock",
+            "searchable": "wifi strength 4 lock",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F92A",
+            "name": "wifi-strength-alert-outline",
+            "searchable": "wifi strength alert outline wifi-strength-warning-outline wifi-strength-0-alert wifi-strength-0-warning",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F92B",
+            "name": "wifi-strength-lock-outline",
+            "searchable": "wifi strength lock outline wifi-strength-0-lock",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F92C",
+            "name": "wifi-strength-off",
+            "searchable": "wifi strength off",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F92D",
+            "name": "wifi-strength-off-outline",
+            "searchable": "wifi strength off outline",
+            "version": "2.3.50"
+        },
+        {
+            "author": "Cody",
+            "codepoint": "F92E",
+            "name": "wifi-strength-outline",
+            "searchable": "wifi strength outline wifi-strength-0",
+            "version": "2.3.50"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F5AB",
             "name": "wii",
@@ -15360,6 +16445,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "F5C3",
+            "name": "youtube",
+            "searchable": "youtube video-youtube youtube-play brand / logo social media",
+            "version": "1.5.54"
+        },
+        {
+            "author": "Google",
             "codepoint": "F846",
             "name": "youtube-creator-studio",
             "searchable": "youtube creator studio brand / logo",
@@ -15371,13 +16463,6 @@
             "name": "youtube-gaming",
             "searchable": "youtube gaming brand / logo",
             "version": "2.1.19"
-        },
-        {
-            "author": "Google",
-            "codepoint": "F5C3",
-            "name": "youtube-play",
-            "searchable": "youtube play video-youtube brand / logo social media",
-            "version": "1.5.54"
         },
         {
             "author": "Google",
@@ -15401,5 +16486,5 @@
             "version": "1.7.12"
         }
     ],
-    "version": "2.1.99"
+    "version": "2.3.54"
 }
