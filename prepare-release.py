@@ -115,6 +115,11 @@ p = subprocess.Popen('yarn run build', shell=True, stdout=subprocess.PIPE, stder
 for line in p.stdout.readlines():
     print(line)
 retval = p.wait()
+
+if retval > 0:
+    print('Build error!')
+    sys.exit(1)
+
 print('Done.')
 
 # Create output dir if necessary
