@@ -141,6 +141,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Peter Noble",
+            "codepoint": "FAEB",
+            "name": "account-minus-outline",
+            "searchable": "account minus outline user-minus-outline",
+            "version": "2.8.94"
+        },
+        {
             "author": "Google",
             "codepoint": "F00E",
             "name": "account-multiple",
@@ -223,6 +230,13 @@
             "name": "account-remove",
             "searchable": "account remove user-remove / user",
             "version": "1.5.54"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FAEC",
+            "name": "account-remove-outline",
+            "searchable": "account remove outline user-remove-outline",
+            "version": "2.8.94"
         },
         {
             "author": "GreenTurtwig",
@@ -491,10 +505,374 @@
             "version": "1.5.54"
         },
         {
+            "author": "GreenTurtwig",
+            "codepoint": "0041",
+            "name": "alpha-a",
+            "searchable": "alpha a alphabet-a letter-a",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAED",
+            "name": "alpha-a-box",
+            "searchable": "alpha a box alphabet-a-box letter-a-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0042",
+            "name": "alpha-b",
+            "searchable": "alpha b alphabet-b letter-b",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAEE",
+            "name": "alpha-b-box",
+            "searchable": "alpha b box alphabet-b-box letter-b-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0043",
+            "name": "alpha-c",
+            "searchable": "alpha c alphabet-c letter-c",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAEF",
+            "name": "alpha-c-box",
+            "searchable": "alpha c box alphabet-c-box letter-c-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0044",
+            "name": "alpha-d",
+            "searchable": "alpha d alphabet-d letter-d",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF0",
+            "name": "alpha-d-box",
+            "searchable": "alpha d box alphabet-d-box letter-d-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0045",
+            "name": "alpha-e",
+            "searchable": "alpha e alphabet-e letter-e",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF1",
+            "name": "alpha-e-box",
+            "searchable": "alpha e box alphabet-e-box letter-e-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0046",
+            "name": "alpha-f",
+            "searchable": "alpha f alphabet-f letter-f",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF2",
+            "name": "alpha-f-box",
+            "searchable": "alpha f box alphabet-f-box letter-f-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0047",
+            "name": "alpha-g",
+            "searchable": "alpha g alphabet-g letter-g",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF3",
+            "name": "alpha-g-box",
+            "searchable": "alpha g box alphabet-g-box letter-g-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0048",
+            "name": "alpha-h",
+            "searchable": "alpha h alphabet-h letter-h",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF4",
+            "name": "alpha-h-box",
+            "searchable": "alpha h box alphabet-h-box letter-h-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0049",
+            "name": "alpha-i",
+            "searchable": "alpha i alphabet-i letter-i",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF5",
+            "name": "alpha-i-box",
+            "searchable": "alpha i box alphabet-i-box letter-i-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "004A",
+            "name": "alpha-j",
+            "searchable": "alpha j alphabet-j letter-j",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF6",
+            "name": "alpha-j-box",
+            "searchable": "alpha j box alphabet-j-box letter-j-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "004B",
+            "name": "alpha-k",
+            "searchable": "alpha k alphabet-k letter-k",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF7",
+            "name": "alpha-k-box",
+            "searchable": "alpha k box alphabet-k-box letter-k-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "004C",
+            "name": "alpha-l",
+            "searchable": "alpha l alphabet-l letter-l",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF8",
+            "name": "alpha-l-box",
+            "searchable": "alpha l box alphabet-l-box letter-l-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "004D",
+            "name": "alpha-m",
+            "searchable": "alpha m alphabet-m letter-m",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAF9",
+            "name": "alpha-m-box",
+            "searchable": "alpha m box alphabet-m-box letter-m-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "004E",
+            "name": "alpha-n",
+            "searchable": "alpha n alphabet-n letter-n",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAFA",
+            "name": "alpha-n-box",
+            "searchable": "alpha n box alphabet-n-box letter-n-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "004F",
+            "name": "alpha-o",
+            "searchable": "alpha o alphabet-o letter-o",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAFB",
+            "name": "alpha-o-box",
+            "searchable": "alpha o box alphabet-o-box letter-o-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0050",
+            "name": "alpha-p",
+            "searchable": "alpha p alphabet-p letter-p",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAFC",
+            "name": "alpha-p-box",
+            "searchable": "alpha p box alphabet-p-box letter-p-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0051",
+            "name": "alpha-q",
+            "searchable": "alpha q alphabet-q letter-q",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAFD",
+            "name": "alpha-q-box",
+            "searchable": "alpha q box alphabet-q-box letter-q-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0052",
+            "name": "alpha-r",
+            "searchable": "alpha r alphabet-r letter-r",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAFE",
+            "name": "alpha-r-box",
+            "searchable": "alpha r box alphabet-r-box letter-r-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0053",
+            "name": "alpha-s",
+            "searchable": "alpha s alphabet-s letter-s",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FAFF",
+            "name": "alpha-s-box",
+            "searchable": "alpha s box alphabet-s-box letter-s-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0054",
+            "name": "alpha-t",
+            "searchable": "alpha t alphabet-t letter-t",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FB00",
+            "name": "alpha-t-box",
+            "searchable": "alpha t box alphabet-t-box letter-t-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0055",
+            "name": "alpha-u",
+            "searchable": "alpha u alphabet-u letter-u",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FB01",
+            "name": "alpha-u-box",
+            "searchable": "alpha u box alphabet-u-box letter-u-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0056",
+            "name": "alpha-v",
+            "searchable": "alpha v alphabet-v letter-v",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FB02",
+            "name": "alpha-v-box",
+            "searchable": "alpha v box alphabet-v-box letter-v-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0057",
+            "name": "alpha-w",
+            "searchable": "alpha w alphabet-w letter-w",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FB03",
+            "name": "alpha-w-box",
+            "searchable": "alpha w box alphabet-w-box letter-w-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0058",
+            "name": "alpha-x",
+            "searchable": "alpha x alphabet-x letter-x",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FB04",
+            "name": "alpha-x-box",
+            "searchable": "alpha x box alphabet-x-box letter-x-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0059",
+            "name": "alpha-y",
+            "searchable": "alpha y alphabet-y letter-y",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FB05",
+            "name": "alpha-y-box",
+            "searchable": "alpha y box alphabet-y-box letter-y-box",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "005A",
+            "name": "alpha-z",
+            "searchable": "alpha z alphabet-z letter-z",
+            "version": "2.8.94"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FB06",
+            "name": "alpha-z-box",
+            "searchable": "alpha z box alphabet-z-box letter-z-box",
+            "version": "2.8.94"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F02C",
             "name": "alphabetical",
-            "searchable": "alphabetical",
+            "searchable": "alphabetical letters a-b-c abc",
             "version": "1.5.54"
         },
         {
@@ -592,35 +970,35 @@
             "author": "JapanYoshi",
             "codepoint": "F936",
             "name": "angle-acute",
-            "searchable": "angle acute",
+            "searchable": "angle acute math",
             "version": "2.4.85"
         },
         {
             "author": "JapanYoshi",
             "codepoint": "F937",
             "name": "angle-obtuse",
-            "searchable": "angle obtuse",
+            "searchable": "angle obtuse math",
             "version": "2.4.85"
         },
         {
             "author": "JapanYoshi",
             "codepoint": "F938",
             "name": "angle-right",
-            "searchable": "angle right",
+            "searchable": "angle right math",
             "version": "2.4.85"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F6B1",
             "name": "angular",
-            "searchable": "angular brand / logo",
+            "searchable": "angular brand / logo developer languages",
             "version": "1.7.22"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F6BE",
             "name": "angularjs",
-            "searchable": "angularjs brand / logo",
+            "searchable": "angularjs brand / logo developer languages",
             "version": "1.8.36"
         },
         {
@@ -2566,7 +2944,7 @@
             "author": "Austin Andrews",
             "codepoint": "F6C5",
             "name": "bootstrap",
-            "searchable": "bootstrap brand / logo",
+            "searchable": "bootstrap brand / logo developer languages",
             "version": "1.8.36"
         },
         {
@@ -2948,6 +3326,13 @@
             "version": "2.6.95"
         },
         {
+            "author": "Louistwee",
+            "codepoint": "FB07",
+            "name": "bulldozer",
+            "searchable": "bulldozer",
+            "version": "2.8.94"
+        },
+        {
             "author": "Cody",
             "codepoint": "F0E5",
             "name": "bulletin-board",
@@ -2955,11 +3340,18 @@
             "version": "1.5.54"
         },
         {
-            "author": "Austin Andrews",
+            "author": "Google",
             "codepoint": "F0E6",
             "name": "bullhorn",
             "searchable": "bullhorn announcement megaphone",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FB08",
+            "name": "bullhorn-outline",
+            "searchable": "bullhorn outline announcement-outline megaphone-outline",
+            "version": "2.8.94"
         },
         {
             "author": "Cody",
@@ -3070,7 +3462,7 @@
             "author": "Michael Richins",
             "codepoint": "FA99",
             "name": "calculator-variant",
-            "searchable": "calculator variant",
+            "searchable": "calculator variant math",
             "version": "2.7.94"
         },
         {
@@ -3116,11 +3508,25 @@
             "version": "2.2.43"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "FB09",
+            "name": "calendar-export",
+            "searchable": "calendar export",
+            "version": "2.8.94"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F9D1",
             "name": "calendar-heart",
             "searchable": "calendar heart event-heart",
             "version": "2.5.94"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "FB0A",
+            "name": "calendar-import",
+            "searchable": "calendar import",
+            "version": "2.8.94"
         },
         {
             "author": "Austin Andrews",
@@ -4250,6 +4656,20 @@
             "version": "2.5.94"
         },
         {
+            "author": "SarinManS",
+            "codepoint": "FB0B",
+            "name": "chevron-down-circle",
+            "searchable": "chevron down circle",
+            "version": "2.8.94"
+        },
+        {
+            "author": "SarinManS",
+            "codepoint": "FB0C",
+            "name": "chevron-down-circle-outline",
+            "searchable": "chevron down circle outline",
+            "version": "2.8.94"
+        },
+        {
             "author": "Google",
             "codepoint": "F141",
             "name": "chevron-left",
@@ -4269,6 +4689,20 @@
             "name": "chevron-left-box-outline",
             "searchable": "chevron left box outline",
             "version": "2.5.94"
+        },
+        {
+            "author": "SarinManS",
+            "codepoint": "FB0D",
+            "name": "chevron-left-circle",
+            "searchable": "chevron left circle",
+            "version": "2.8.94"
+        },
+        {
+            "author": "SarinManS",
+            "codepoint": "FB0E",
+            "name": "chevron-left-circle-outline",
+            "searchable": "chevron left circle outline",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
@@ -4292,6 +4726,20 @@
             "version": "2.5.94"
         },
         {
+            "author": "SarinManS",
+            "codepoint": "FB0F",
+            "name": "chevron-right-circle",
+            "searchable": "chevron right circle",
+            "version": "2.8.94"
+        },
+        {
+            "author": "SarinManS",
+            "codepoint": "FB10",
+            "name": "chevron-right-circle-outline",
+            "searchable": "chevron right circle outline",
+            "version": "2.8.94"
+        },
+        {
             "author": "Google",
             "codepoint": "F143",
             "name": "chevron-up",
@@ -4311,6 +4759,20 @@
             "name": "chevron-up-box-outline",
             "searchable": "chevron up box outline",
             "version": "2.5.94"
+        },
+        {
+            "author": "SarinManS",
+            "codepoint": "FB11",
+            "name": "chevron-up-circle",
+            "searchable": "chevron up circle",
+            "version": "2.8.94"
+        },
+        {
+            "author": "SarinManS",
+            "codepoint": "FB12",
+            "name": "chevron-up-circle-outline",
+            "searchable": "chevron up circle outline",
+            "version": "2.8.94"
         },
         {
             "author": "Andy Martinez",
@@ -5349,6 +5811,13 @@
             "version": "1.6.50"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FB13",
+            "name": "content-save-settings-outline",
+            "searchable": "content save settings outline",
+            "version": "2.8.94"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F195",
             "name": "contrast",
@@ -5543,6 +6012,13 @@
             "name": "cryengine",
             "searchable": "cryengine brand / logo",
             "version": "2.4.85"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FB14",
+            "name": "crystal-ball",
+            "searchable": "crystal ball",
+            "version": "2.8.94"
         },
         {
             "author": "Austin Andrews",
@@ -6367,7 +6843,7 @@
             "author": "Contributors",
             "codepoint": "FAAD",
             "name": "dot-net",
-            "searchable": "dot net",
+            "searchable": "dot net developer / languages",
             "version": "2.7.94"
         },
         {
@@ -6705,6 +7181,13 @@
             "name": "email-variant",
             "searchable": "email variant envelope-variant",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "FB15",
+            "name": "ember",
+            "searchable": "ember",
+            "version": "2.8.94"
         },
         {
             "author": "Christopher Schreiner",
@@ -7071,6 +7554,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FB16",
+            "name": "facebook-workplace",
+            "searchable": "facebook workplace",
+            "version": "2.8.94"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F20F",
             "name": "factory",
@@ -7412,6 +7902,20 @@
             "name": "file-question",
             "searchable": "file question files / folders",
             "version": "2.1.99"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "FB17",
+            "name": "file-replace",
+            "searchable": "file replace",
+            "version": "2.8.94"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "FB18",
+            "name": "file-replace-outline",
+            "searchable": "file replace outline",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
@@ -8310,6 +8814,27 @@
             "version": "1.5.54"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "FB19",
+            "name": "format-letter-case",
+            "searchable": "format letter case",
+            "version": "2.8.94"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FB1A",
+            "name": "format-letter-case-lower",
+            "searchable": "format letter case lower format-lowercase",
+            "version": "2.8.94"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FB1B",
+            "name": "format-letter-case-upper",
+            "searchable": "format letter case upper format-uppercase",
+            "version": "2.8.94"
+        },
+        {
             "author": "Google",
             "codepoint": "F278",
             "name": "format-line-spacing",
@@ -8544,14 +9069,14 @@
             "author": "Google",
             "codepoint": "F28C",
             "name": "forum",
-            "searchable": "forum message-group question-answer",
+            "searchable": "forum message-group question-answer chat",
             "version": "1.5.54"
         },
         {
             "author": "GreenTurtwig",
             "codepoint": "F821",
             "name": "forum-outline",
-            "searchable": "forum outline",
+            "searchable": "forum outline chat-outline",
             "version": "2.1.19"
         },
         {
@@ -10753,6 +11278,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "SarinManS",
+            "codepoint": "FB1C",
+            "name": "language-java",
+            "searchable": "language java",
+            "version": "2.8.94"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F31E",
             "name": "language-javascript",
@@ -10798,7 +11330,7 @@
             "author": "Contributors",
             "codepoint": "FACE",
             "name": "language-ruby-on-rails",
-            "searchable": "language ruby on rails",
+            "searchable": "language ruby on rails developer / languages",
             "version": "2.7.94"
         },
         {
@@ -11292,6 +11824,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FB1D",
+            "name": "lyft",
+            "searchable": "lyft",
+            "version": "2.8.94"
+        },
+        {
             "author": "Cody",
             "codepoint": "F347",
             "name": "magnet",
@@ -11519,14 +12058,14 @@
             "author": "Contributors",
             "codepoint": "FAD0",
             "name": "mastodon",
-            "searchable": "mastodon",
+            "searchable": "mastodon brand / logo",
             "version": "2.7.94"
         },
         {
             "author": "Contributors",
             "codepoint": "FAD1",
             "name": "mastodon-variant",
-            "searchable": "mastodon variant",
+            "searchable": "mastodon variant brand / logo",
             "version": "2.7.94"
         },
         {
@@ -11589,7 +12128,7 @@
             "author": "Contributors",
             "codepoint": "FAD2",
             "name": "meetup",
-            "searchable": "meetup",
+            "searchable": "meetup brand / logo",
             "version": "2.7.94"
         },
         {
@@ -12296,7 +12835,7 @@
             "author": "Austin Andrews",
             "codepoint": "F391",
             "name": "needle",
-            "searchable": "needle syringe medical / hospital",
+            "searchable": "needle syringe injection medical / hospital",
             "version": "1.5.54"
         },
         {
@@ -12436,7 +12975,7 @@
             "author": "GreenTurtwig",
             "codepoint": "F7E0",
             "name": "nintendo-switch",
-            "searchable": "nintendo switch brand / logo",
+            "searchable": "nintendo switch nintendo-switch-online brand / logo",
             "version": "2.0.46"
         },
         {
@@ -12562,238 +13101,308 @@
             "author": "Austin Andrews",
             "codepoint": "F3A0",
             "name": "numeric",
-            "searchable": "numeric",
+            "searchable": "numeric numbers 1-2-3 one-two-three 123",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0030",
+            "name": "numeric-0",
+            "searchable": "numeric 0 number-0 numeric-zero",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3A1",
             "name": "numeric-0-box",
-            "searchable": "numeric 0 box numeric-zero-box",
+            "searchable": "numeric 0 box numeric-zero-box number-0-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3A2",
             "name": "numeric-0-box-multiple-outline",
-            "searchable": "numeric 0 box multiple outline numeric-zero-box-multiple-outline numeric-0-boxes-outline",
+            "searchable": "numeric 0 box multiple outline numeric-zero-box-multiple-outline numeric-0-boxes-outline number-0-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3A3",
             "name": "numeric-0-box-outline",
-            "searchable": "numeric 0 box outline numeric-zero-box-outline",
+            "searchable": "numeric 0 box outline numeric-zero-box-outline number-0-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0031",
+            "name": "numeric-1",
+            "searchable": "numeric 1 number-1 numeric-one",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3A4",
             "name": "numeric-1-box",
-            "searchable": "numeric 1 box looks-one numeric-one-box",
+            "searchable": "numeric 1 box looks-one numeric-one-box number-1-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3A5",
             "name": "numeric-1-box-multiple-outline",
-            "searchable": "numeric 1 box multiple outline filter-1 numeric-one-box-multiple-outline numeric-1-boxes-outline",
+            "searchable": "numeric 1 box multiple outline filter-1 numeric-one-box-multiple-outline numeric-1-boxes-outline number-1-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3A6",
             "name": "numeric-1-box-outline",
-            "searchable": "numeric 1 box outline numeric-one-box-outline",
+            "searchable": "numeric 1 box outline numeric-one-box-outline number-1-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0032",
+            "name": "numeric-2",
+            "searchable": "numeric 2 number-2 numeric-two",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3A7",
             "name": "numeric-2-box",
-            "searchable": "numeric 2 box looks-two numeric-two-box",
+            "searchable": "numeric 2 box looks-two numeric-two-box number-2-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3A8",
             "name": "numeric-2-box-multiple-outline",
-            "searchable": "numeric 2 box multiple outline filter-2 numeric-two-box-multiple-outline numeric-2-boxes-outline",
+            "searchable": "numeric 2 box multiple outline filter-2 numeric-two-box-multiple-outline numeric-2-boxes-outline number-2-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3A9",
             "name": "numeric-2-box-outline",
-            "searchable": "numeric 2 box outline numeric-two-box-outline",
+            "searchable": "numeric 2 box outline numeric-two-box-outline number-2-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0033",
+            "name": "numeric-3",
+            "searchable": "numeric 3 number-3 numeric-three",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3AA",
             "name": "numeric-3-box",
-            "searchable": "numeric 3 box looks-3 numeric-three-box",
+            "searchable": "numeric 3 box looks-3 numeric-three-box number-3-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3AB",
             "name": "numeric-3-box-multiple-outline",
-            "searchable": "numeric 3 box multiple outline filter-3 numeric-three-box-multiple-outline numeric-3-boxes-outline",
+            "searchable": "numeric 3 box multiple outline filter-3 numeric-three-box-multiple-outline numeric-3-boxes-outline number-3-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3AC",
             "name": "numeric-3-box-outline",
-            "searchable": "numeric 3 box outline numeric-three-box-outline",
+            "searchable": "numeric 3 box outline numeric-three-box-outline number-3-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0034",
+            "name": "numeric-4",
+            "searchable": "numeric 4 number-4 numeric-four",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3AD",
             "name": "numeric-4-box",
-            "searchable": "numeric 4 box looks-4 numeric-four-box",
+            "searchable": "numeric 4 box looks-4 numeric-four-box number-4-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3AE",
             "name": "numeric-4-box-multiple-outline",
-            "searchable": "numeric 4 box multiple outline filter-4 numeric-four-box-multiple-outline numeric-4-boxes-outline",
+            "searchable": "numeric 4 box multiple outline filter-4 numeric-four-box-multiple-outline numeric-4-boxes-outline number-4-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3AF",
             "name": "numeric-4-box-outline",
-            "searchable": "numeric 4 box outline numeric-four-box-outline",
+            "searchable": "numeric 4 box outline numeric-four-box-outline number-4-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0035",
+            "name": "numeric-5",
+            "searchable": "numeric 5 number-5 numeric-five",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3B0",
             "name": "numeric-5-box",
-            "searchable": "numeric 5 box looks-5 numeric-five-box",
+            "searchable": "numeric 5 box looks-5 numeric-five-box number-5-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3B1",
             "name": "numeric-5-box-multiple-outline",
-            "searchable": "numeric 5 box multiple outline filter-5 numeric-five-box-multiple-outline numeric-5-boxes-outline",
+            "searchable": "numeric 5 box multiple outline filter-5 numeric-five-box-multiple-outline numeric-5-boxes-outline number-5-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3B2",
             "name": "numeric-5-box-outline",
-            "searchable": "numeric 5 box outline numeric-five-box-outline",
+            "searchable": "numeric 5 box outline numeric-five-box-outline number-5-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0036",
+            "name": "numeric-6",
+            "searchable": "numeric 6 number-6 numeric-six",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3B3",
             "name": "numeric-6-box",
-            "searchable": "numeric 6 box looks-6 numeric-six-box",
+            "searchable": "numeric 6 box looks-6 numeric-six-box number-6-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3B4",
             "name": "numeric-6-box-multiple-outline",
-            "searchable": "numeric 6 box multiple outline filter-6 numeric-six-box-multiple-outline numeric-6-boxes-outline",
+            "searchable": "numeric 6 box multiple outline filter-6 numeric-six-box-multiple-outline numeric-6-boxes-outline number-6-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3B5",
             "name": "numeric-6-box-outline",
-            "searchable": "numeric 6 box outline numeric-six-box-outline",
+            "searchable": "numeric 6 box outline numeric-six-box-outline number-6-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0037",
+            "name": "numeric-7",
+            "searchable": "numeric 7 number-7 numeric-seven",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3B6",
             "name": "numeric-7-box",
-            "searchable": "numeric 7 box numeric-seven-box",
+            "searchable": "numeric 7 box numeric-seven-box number-7-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3B7",
             "name": "numeric-7-box-multiple-outline",
-            "searchable": "numeric 7 box multiple outline filter-7 numeric-seven-box-multiple-outline numeric-7-boxes-outline",
+            "searchable": "numeric 7 box multiple outline filter-7 numeric-seven-box-multiple-outline numeric-7-boxes-outline number-7-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3B8",
             "name": "numeric-7-box-outline",
-            "searchable": "numeric 7 box outline numeric-seven-box-outline",
+            "searchable": "numeric 7 box outline numeric-seven-box-outline number-7-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0038",
+            "name": "numeric-8",
+            "searchable": "numeric 8 number-8 numeric-eight",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3B9",
             "name": "numeric-8-box",
-            "searchable": "numeric 8 box numeric-eight-box",
+            "searchable": "numeric 8 box numeric-eight-box number-8-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3BA",
             "name": "numeric-8-box-multiple-outline",
-            "searchable": "numeric 8 box multiple outline filter-8 numeric-eight-box-multiple-outline numeric-8-boxes-outline",
+            "searchable": "numeric 8 box multiple outline filter-8 numeric-eight-box-multiple-outline numeric-8-boxes-outline number-8-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3BB",
             "name": "numeric-8-box-outline",
-            "searchable": "numeric 8 box outline numeric-eight-box-outline",
+            "searchable": "numeric 8 box outline numeric-eight-box-outline number-8-box-outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "0039",
+            "name": "numeric-9",
+            "searchable": "numeric 9 number-9 numeric-nine",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
             "codepoint": "F3BC",
             "name": "numeric-9-box",
-            "searchable": "numeric 9 box numeric-nine-box",
+            "searchable": "numeric 9 box numeric-nine-box number-9-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3BD",
             "name": "numeric-9-box-multiple-outline",
-            "searchable": "numeric 9 box multiple outline filter-9 numeric-nine-box-multiple-outline numeric-9-boxes-outline",
+            "searchable": "numeric 9 box multiple outline filter-9 numeric-nine-box-multiple-outline numeric-9-boxes-outline number-9-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3BE",
             "name": "numeric-9-box-outline",
-            "searchable": "numeric 9 box outline numeric-nine-box-outline",
+            "searchable": "numeric 9 box outline numeric-nine-box-outline number-9-box-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3BF",
             "name": "numeric-9-plus-box",
-            "searchable": "numeric 9 plus box numeric-nine-plus-box",
+            "searchable": "numeric 9 plus box numeric-nine-plus-box number-9-plus-box",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3C0",
             "name": "numeric-9-plus-box-multiple-outline",
-            "searchable": "numeric 9 plus box multiple outline filter-9-plus numeric-nine-plus-box-multiple-outline numeric-9-plus-boxes-outline",
+            "searchable": "numeric 9 plus box multiple outline filter-9-plus numeric-nine-plus-box-multiple-outline numeric-9-plus-boxes-outline number-9-plus-box-multiple-outline",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F3C1",
             "name": "numeric-9-plus-box-outline",
-            "searchable": "numeric 9 plus box outline numeric-nine-plus-box-outline",
+            "searchable": "numeric 9 plus box outline numeric-nine-plus-box-outline number-9-plus-box-outline",
             "version": "1.5.54"
         },
         {
@@ -12949,6 +13558,13 @@
             "name": "orbit",
             "searchable": "orbit science",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "FB2B",
+            "name": "origin",
+            "searchable": "origin",
+            "version": "2.8.94"
         },
         {
             "author": "Austin Andrews",
@@ -13752,7 +14368,7 @@
             "author": "Austin Andrews",
             "codepoint": "F414",
             "name": "playstation",
-            "searchable": "playstation sony-playstation brand / logo",
+            "searchable": "playstation sony-playstation playstation-network brand / logo",
             "version": "1.5.54"
         },
         {
@@ -13899,7 +14515,7 @@
             "author": "Google",
             "codepoint": "F421",
             "name": "polymer",
-            "searchable": "polymer brand / logo",
+            "searchable": "polymer brand / logo developer languages",
             "version": "1.5.54"
         },
         {
@@ -14396,7 +15012,7 @@
             "author": "Austin Andrews",
             "codepoint": "F707",
             "name": "react",
-            "searchable": "react brand / logo",
+            "searchable": "react brand / logo developer languages",
             "version": "1.8.36"
         },
         {
@@ -14603,6 +15219,20 @@
             "version": "1.5.54"
         },
         {
+            "author": "Louistwee",
+            "codepoint": "FB1F",
+            "name": "resistor",
+            "searchable": "resistor",
+            "version": "2.8.94"
+        },
+        {
+            "author": "Louistwee",
+            "codepoint": "FB20",
+            "name": "resistor-nodes",
+            "searchable": "resistor nodes",
+            "version": "2.8.94"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "FA67",
             "name": "resize",
@@ -14727,6 +15357,13 @@
             "name": "robot",
             "searchable": "robot",
             "version": "1.7.12"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "FB21",
+            "name": "robot-industrial",
+            "searchable": "robot industrial",
+            "version": "2.8.94"
         },
         {
             "author": "Roberto Graham",
@@ -15492,10 +16129,24 @@
             "version": "2.1.19"
         },
         {
+            "author": "SarinManS",
+            "codepoint": "FB22",
+            "name": "shoe-formal",
+            "searchable": "shoe formal",
+            "version": "2.8.94"
+        },
+        {
+            "author": "SarinManS",
+            "codepoint": "FB23",
+            "name": "shoe-heel",
+            "searchable": "shoe heel",
+            "version": "2.8.94"
+        },
+        {
             "author": "Contributors",
             "codepoint": "FADD",
             "name": "shopify",
-            "searchable": "shopify",
+            "searchable": "shopify brand / logo",
             "version": "2.7.94"
         },
         {
@@ -15695,6 +16346,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FB24",
+            "name": "silo",
+            "searchable": "silo",
+            "version": "2.8.94"
+        },
+        {
             "author": "Google",
             "codepoint": "F4A3",
             "name": "silverware",
@@ -15754,7 +16412,7 @@
             "author": "Contributors",
             "codepoint": "FADE",
             "name": "sina-weibo",
-            "searchable": "sina weibo",
+            "searchable": "sina weibo brand / logo",
             "version": "2.7.94"
         },
         {
@@ -15964,7 +16622,7 @@
             "author": "Google",
             "codepoint": "F4BB",
             "name": "sort-alphabetical",
-            "searchable": "sort alphabetical sort-by-alpha",
+            "searchable": "sort alphabetical sort-by-alpha sort-alphabetically",
             "version": "1.5.54"
         },
         {
@@ -15985,7 +16643,7 @@
             "author": "Google",
             "codepoint": "F4BE",
             "name": "sort-numeric",
-            "searchable": "sort numeric",
+            "searchable": "sort numeric sort-numerically",
             "version": "1.5.54"
         },
         {
@@ -16500,6 +17158,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FB25",
+            "name": "strava",
+            "searchable": "strava brand / logo",
+            "version": "2.8.94"
+        },
+        {
             "author": "Google",
             "codepoint": "F60C",
             "name": "subdirectory-arrow-left",
@@ -16689,11 +17354,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "FB26",
+            "name": "tab-minus",
+            "searchable": "tab minus",
+            "version": "2.8.94"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F75B",
             "name": "tab-plus",
             "searchable": "tab plus",
             "version": "1.9.32"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "FB27",
+            "name": "tab-remove",
+            "searchable": "tab remove",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
@@ -16941,6 +17620,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "GreenTurtwig",
+            "codepoint": "FB28",
+            "name": "tape-measure",
+            "searchable": "tape measure measuring-tape",
+            "version": "2.8.94"
+        },
+        {
             "author": "Doug C. Hardester",
             "codepoint": "F4FE",
             "name": "target",
@@ -16981,6 +17667,13 @@
             "name": "telegram",
             "searchable": "telegram brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "SarinManS",
+            "codepoint": "FB29",
+            "name": "telescope",
+            "searchable": "telescope",
+            "version": "2.8.94"
         },
         {
             "author": "Google",
@@ -18505,7 +19198,7 @@
             "author": "Google",
             "codepoint": "F5CB",
             "name": "voice",
-            "searchable": "voice record-voice-over speak talk",
+            "searchable": "voice record-voice-over speak talk speaking talking",
             "version": "1.5.54"
         },
         {
@@ -18596,7 +19289,7 @@
             "author": "Austin Andrews",
             "codepoint": "F843",
             "name": "vuejs",
-            "searchable": "vuejs vue-js brand / logo",
+            "searchable": "vuejs vue-js brand / logo developer languages",
             "version": "2.1.19"
         },
         {
@@ -18918,7 +19611,7 @@
             "author": "Austin Andrews",
             "codepoint": "F72A",
             "name": "webpack",
-            "searchable": "webpack brand / logo",
+            "searchable": "webpack brand / logo developer languages",
             "version": "1.8.36"
         },
         {
@@ -19282,7 +19975,7 @@
             "author": "Austin Andrews",
             "codepoint": "F5B9",
             "name": "xbox",
-            "searchable": "xbox social media brand / logo",
+            "searchable": "xbox xbox-live social media brand / logo",
             "version": "1.5.54"
         },
         {
@@ -19391,6 +20084,13 @@
             "version": "2.0.46"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FB2A",
+            "name": "yahoo",
+            "searchable": "yahoo",
+            "version": "2.8.94"
+        },
+        {
             "author": "Michael Richins",
             "codepoint": "F788",
             "name": "yammer",
@@ -19457,7 +20157,7 @@
             "author": "Contributors",
             "codepoint": "FAEA",
             "name": "zend",
-            "searchable": "zend",
+            "searchable": "zend developer / languages",
             "version": "2.7.94"
         },
         {
@@ -19492,14 +20192,14 @@
             "author": "Michael Richins",
             "codepoint": "FA7E",
             "name": "zodiac-cancer",
-            "searchable": "zodiac cancer",
+            "searchable": "zodiac cancer horoscope-cancer",
             "version": "2.6.95"
         },
         {
             "author": "Michael Richins",
             "codepoint": "FA7F",
             "name": "zodiac-capricorn",
-            "searchable": "zodiac capricorn",
+            "searchable": "zodiac capricorn horoscope-capricorn",
             "version": "2.6.95"
         },
         {
@@ -19566,5 +20266,5 @@
             "version": "1.7.12"
         }
     ],
-    "version": "2.7.94"
+    "version": "2.8.94"
 }
