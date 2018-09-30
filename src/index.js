@@ -28,6 +28,7 @@ new Vue({
                     random: 'mdi mdi-shuffle',
                     randomColors: 'mdi mdi-invert-colors',
                     svg: 'mdi mdi-xml',
+                    download: 'mdi mdi-download',
                     madeBy: 'mdi mdi-heart',
                     gitHub: 'mdi mdi-github-circle'
                 },
@@ -37,7 +38,7 @@ new Vue({
                 openIconText: 'Open {icon} in MaterialDesignIcons.com',
                 openIconUrl: 'https://materialdesignicons.com/icon/{icon}',
 
-                canCopySvg: true,
+                enableSvgFeatures: true,
             }
         }
     })
