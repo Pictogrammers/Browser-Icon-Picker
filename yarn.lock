@@ -5585,9 +5585,9 @@ vue-hot-reload-api@^2.2.0:
   integrity sha512-e+ThJMYmZg4D9UnrLcr6LQxGu6YlcxkrmZGPCyIN4malcNhdeGGKxmFuM5y6ICMJJxQywLfT8MM1rYZr4LpeLw==
 
 vue-icons-picker@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/vue-icons-picker/-/vue-icons-picker-1.1.1.tgz#01cdad9dda563241b8ccd5f2e01a115c000c488e"
-  integrity sha512-j7sdrrBDEWvfc/in+h3yk9nW1KuY7Nzg+FrcMO5nUnXbHhJhVTzGQhMKOFOW6WtbqJ/753TkPIcOdaFeel9kMw==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/vue-icons-picker/-/vue-icons-picker-1.1.2.tgz#9d178a3a0f398efccd63db77664334d88656c621"
+  integrity sha512-NqSeBF2y56gC2YL0bhFI6yncDI7Enfx4Ug6LqWB1tlLNexlmLjoSoEEriS+5aKGuQCBMjCanFPcWJ9csK2h/bA==
   dependencies:
     material-scss-colors "^1.1.2"
 
