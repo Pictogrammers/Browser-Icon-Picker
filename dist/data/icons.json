@@ -414,6 +414,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCBF",
+            "name": "account-tie",
+            "searchable": "account tie person-tie user-tie",
+            "version": "3.3.92"
+        },
+        {
             "author": "Contributors",
             "codepoint": "F849",
             "name": "accusoft",
@@ -582,6 +589,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Peter Noble",
+            "codepoint": "FCC0",
+            "name": "alert-box-outline",
+            "searchable": "alert box outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Google",
             "codepoint": "F028",
             "name": "alert-circle",
@@ -603,6 +617,13 @@
             "version": "1.8.36"
         },
         {
+            "author": "Peter Noble",
+            "codepoint": "FCC1",
+            "name": "alert-decagram-outline",
+            "searchable": "alert decagram outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Google",
             "codepoint": "F029",
             "name": "alert-octagon",
@@ -610,11 +631,25 @@
             "version": "1.5.54"
         },
         {
+            "author": "Peter Noble",
+            "codepoint": "FCC2",
+            "name": "alert-octagon-outline",
+            "searchable": "alert octagon outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F766",
             "name": "alert-octagram",
             "searchable": "alert octagram warning-octagram / error",
             "version": "1.9.32"
+        },
+        {
+            "author": "Peter Noble",
+            "codepoint": "FCC3",
+            "name": "alert-octagram-outline",
+            "searchable": "alert octagram outline",
+            "version": "3.3.92"
         },
         {
             "author": "Cody",
@@ -1598,6 +1633,13 @@
         },
         {
             "author": "Michael Irigoyen",
+            "codepoint": "FCC4",
+            "name": "ammunition",
+            "searchable": "ammunition bullets",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
             "codepoint": "FA8C",
             "name": "ampersand",
             "searchable": "ampersand and",
@@ -2045,6 +2087,20 @@
             "version": "1.8.36"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "FCB7",
+            "name": "arrow-down-circle",
+            "searchable": "arrow down circle arrow-bottom-circle",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCB8",
+            "name": "arrow-down-circle-outline",
+            "searchable": "arrow down circle outline arrow-bottom-circle-outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Google",
             "codepoint": "F04A",
             "name": "arrow-down-drop-circle",
@@ -2186,6 +2242,20 @@
         },
         {
             "author": "Austin Andrews",
+            "codepoint": "FCB9",
+            "name": "arrow-left-circle",
+            "searchable": "arrow left circle arrow-back-circle",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCBA",
+            "name": "arrow-left-circle-outline",
+            "searchable": "arrow left circle outline",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Austin Andrews",
             "codepoint": "F052",
             "name": "arrow-left-drop-circle",
             "searchable": "arrow left drop circle",
@@ -2277,6 +2347,20 @@
         },
         {
             "author": "Austin Andrews",
+            "codepoint": "FCBB",
+            "name": "arrow-right-circle",
+            "searchable": "arrow right circle arrow-forward-circle",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCBC",
+            "name": "arrow-right-circle-outline",
+            "searchable": "arrow right circle outline",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Austin Andrews",
             "codepoint": "F059",
             "name": "arrow-right-drop-circle",
             "searchable": "arrow right drop circle",
@@ -2300,14 +2384,14 @@
             "author": "Michael Richins",
             "codepoint": "F93A",
             "name": "arrow-split-horizontal",
-            "searchable": "arrow split horizontal",
+            "searchable": "arrow split horizontal resize-vertical resize",
             "version": "2.4.85"
         },
         {
             "author": "Michael Richins",
             "codepoint": "F93B",
             "name": "arrow-split-vertical",
-            "searchable": "arrow split vertical",
+            "searchable": "arrow split vertical resize-horizontal resize",
             "version": "2.4.85"
         },
         {
@@ -2416,6 +2500,20 @@
             "version": "1.8.36"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "FCBD",
+            "name": "arrow-up-circle",
+            "searchable": "arrow up circle arrow-top-circle",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCBE",
+            "name": "arrow-up-circle-outline",
+            "searchable": "arrow up circle outline arrow-top-circle-outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Michael Irigoyen",
             "codepoint": "F9C7",
             "name": "arrow-up-down-bold-outline",
@@ -2449,6 +2547,13 @@
             "name": "artist",
             "searchable": "artist",
             "version": "2.1.19"
+        },
+        {
+            "author": "GreenTurtwig",
+            "codepoint": "FCC5",
+            "name": "artist-outline",
+            "searchable": "artist outline",
+            "version": "3.3.92"
         },
         {
             "author": "Contributors",
@@ -3200,10 +3305,17 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCC6",
+            "name": "beaker",
+            "searchable": "beaker",
+            "version": "3.3.92"
+        },
+        {
             "author": "Cody",
             "codepoint": "F68F",
-            "name": "beaker",
-            "searchable": "beaker science",
+            "name": "beaker-outline",
+            "searchable": "beaker outline science",
             "version": "1.7.12"
         },
         {
@@ -3403,10 +3515,17 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCC7",
+            "name": "blender",
+            "searchable": "blender",
+            "version": "3.3.92"
+        },
+        {
             "author": "Contributors",
             "codepoint": "F0AB",
-            "name": "blender",
-            "searchable": "blender brand / logo",
+            "name": "blender-software",
+            "searchable": "blender software brand / logo",
             "version": "1.5.54"
         },
         {
@@ -3429,6 +3548,13 @@
             "name": "blogger",
             "searchable": "blogger brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCC8",
+            "name": "blood-bag",
+            "searchable": "blood bag",
+            "version": "3.3.92"
         },
         {
             "author": "Contributors",
@@ -3499,6 +3625,13 @@
             "name": "blur-radial",
             "searchable": "blur radial blur-circular",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCC9",
+            "name": "bolnisi-cross",
+            "searchable": "bolnisi cross",
+            "version": "3.3.92"
         },
         {
             "author": "Austin Andrews",
@@ -3928,6 +4061,20 @@
             "version": "2.5.94"
         },
         {
+            "author": "Nick",
+            "codepoint": "FCCA",
+            "name": "bread-slice",
+            "searchable": "bread slice",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "FCCB",
+            "name": "bread-slice-outline",
+            "searchable": "bread slice outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F618",
             "name": "bridge",
@@ -3940,6 +4087,20 @@
             "name": "briefcase",
             "searchable": "briefcase work",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCCC",
+            "name": "briefcase-account",
+            "searchable": "briefcase account briefcase-person briefcase-user",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCCD",
+            "name": "briefcase-account-outline",
+            "searchable": "briefcase account outline briefcase-person-outline briefcase-user-outline",
+            "version": "3.3.92"
         },
         {
             "author": "Google",
@@ -4110,6 +4271,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "FCCE",
+            "name": "brightness-percent",
+            "searchable": "brightness percent",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F0E2",
             "name": "broom",
@@ -4171,6 +4339,13 @@
             "name": "bulldozer",
             "searchable": "bulldozer",
             "version": "2.8.94"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCCF",
+            "name": "bullet",
+            "searchable": "bullet",
+            "version": "3.3.92"
         },
         {
             "author": "Cody",
@@ -5111,6 +5286,13 @@
             "version": "2.7.94"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FCD0",
+            "name": "cash-register",
+            "searchable": "cash register",
+            "version": "3.3.92"
+        },
+        {
             "author": "Google",
             "codepoint": "F117",
             "name": "cash-usd",
@@ -5305,6 +5487,13 @@
             "name": "cellphone-wireless",
             "searchable": "cellphone wireless mobile-phone-wireless smartphone-wireless / phone",
             "version": "2.1.19"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCD1",
+            "name": "celtic-cross",
+            "searchable": "celtic cross",
+            "version": "3.3.92"
         },
         {
             "author": "Cody",
@@ -5930,6 +6119,13 @@
             "version": "2.4.85"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCD2",
+            "name": "christianity-outline",
+            "searchable": "christianity outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F144",
             "name": "church",
@@ -6084,6 +6280,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "James Coyle",
+            "codepoint": "FCD3",
+            "name": "clipboard-alert-outline",
+            "searchable": "clipboard alert outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Google",
             "codepoint": "F14A",
             "name": "clipboard-arrow-down",
@@ -6103,6 +6306,27 @@
             "name": "clipboard-arrow-left",
             "searchable": "clipboard arrow left assignment-return",
             "version": "1.5.54"
+        },
+        {
+            "author": "James Coyle",
+            "codepoint": "FCD4",
+            "name": "clipboard-arrow-left-outline",
+            "searchable": "clipboard arrow left outline",
+            "version": "3.3.92"
+        },
+        {
+            "author": "James Coyle",
+            "codepoint": "FCD5",
+            "name": "clipboard-arrow-right",
+            "searchable": "clipboard arrow right",
+            "version": "3.3.92"
+        },
+        {
+            "author": "James Coyle",
+            "codepoint": "FCD6",
+            "name": "clipboard-arrow-right-outline",
+            "searchable": "clipboard arrow right outline",
+            "version": "3.3.92"
         },
         {
             "author": "James Coyle",
@@ -7036,6 +7260,20 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCD7",
+            "name": "content-save-edit",
+            "searchable": "content save edit",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCD8",
+            "name": "content-save-edit-outline",
+            "searchable": "content save edit outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F817",
             "name": "content-save-outline",
@@ -7494,7 +7732,7 @@
             "author": "Nick",
             "codepoint": "F95A",
             "name": "current-ac",
-            "searchable": "current ac alternating-current",
+            "searchable": "current ac alternating-current sine-wave wave",
             "version": "2.4.85"
         },
         {
@@ -7510,6 +7748,20 @@
             "name": "cursor-default",
             "searchable": "cursor default",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCD9",
+            "name": "cursor-default-click",
+            "searchable": "cursor default click",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCDA",
+            "name": "cursor-default-click-outline",
+            "searchable": "cursor default click outline",
+            "version": "3.3.92"
         },
         {
             "author": "Austin Andrews",
@@ -7596,11 +7848,32 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "FCDB",
+            "name": "database-refresh",
+            "searchable": "database refresh",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCDC",
+            "name": "database-remove",
+            "searchable": "database remove",
+            "version": "3.3.92"
+        },
+        {
             "author": "GreenTurtwig",
             "codepoint": "F865",
             "name": "database-search",
             "searchable": "database search",
             "version": "2.1.99"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCDD",
+            "name": "database-settings",
+            "searchable": "database settings",
+            "version": "3.3.92"
         },
         {
             "author": "Colton Wiscombe",
@@ -8310,6 +8583,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Augustin Ursu",
+            "codepoint": "FCDE",
+            "name": "drama-masks",
+            "searchable": "drama masks comedy tragedy theatre",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F1DE",
             "name": "drawing",
@@ -8506,6 +8786,13 @@
             "version": "1.8.36"
         },
         {
+            "author": "GreenTurtwig",
+            "codepoint": "FCDF",
+            "name": "email-box",
+            "searchable": "email box envelope-box",
+            "version": "3.3.92"
+        },
+        {
             "author": "Contributors",
             "codepoint": "FAB0",
             "name": "email-check",
@@ -8607,7 +8894,7 @@
             "author": "Google",
             "codepoint": "FC44",
             "name": "emoticon",
-            "searchable": "emoticon",
+            "searchable": "emoticon smiley emoji",
             "version": "3.2.89"
         },
         {
@@ -8628,14 +8915,14 @@
             "author": "Michael Irigoyen",
             "codepoint": "FC47",
             "name": "emoticon-cool",
-            "searchable": "emoticon cool",
+            "searchable": "emoticon cool emoji",
             "version": "3.2.89"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F1F3",
             "name": "emoticon-cool-outline",
-            "searchable": "emoticon cool outline smiley-cool emoji",
+            "searchable": "emoticon cool outline smiley-cool-outline emoji",
             "version": "1.5.54"
         },
         {
@@ -8656,56 +8943,56 @@
             "author": "Google",
             "codepoint": "FC4A",
             "name": "emoticon-dead",
-            "searchable": "emoticon dead",
+            "searchable": "emoticon dead smiley-dead emoji",
             "version": "3.2.89"
         },
         {
             "author": "Google",
             "codepoint": "F69A",
             "name": "emoticon-dead-outline",
-            "searchable": "emoticon dead outline smiley-dead emoji",
+            "searchable": "emoticon dead outline smiley-dead-outline emoji",
             "version": "1.7.12"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "FC4B",
             "name": "emoticon-devil",
-            "searchable": "emoticon devil",
+            "searchable": "emoticon devil smiley-devil emoji",
             "version": "3.2.89"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F1F4",
             "name": "emoticon-devil-outline",
-            "searchable": "emoticon devil outline smiley-devil emoji",
+            "searchable": "emoticon devil outline smiley-devil-outline emoji",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "FC4C",
             "name": "emoticon-excited",
-            "searchable": "emoticon excited",
+            "searchable": "emoticon excited smiley-excited emoji",
             "version": "3.2.89"
         },
         {
             "author": "Google",
             "codepoint": "F69B",
             "name": "emoticon-excited-outline",
-            "searchable": "emoticon excited outline smiley-excited emoji",
+            "searchable": "emoticon excited outline smiley-excited-outline emoji",
             "version": "1.7.12"
         },
         {
             "author": "Michael Irigoyen",
             "codepoint": "FC4D",
             "name": "emoticon-happy",
-            "searchable": "emoticon happy",
+            "searchable": "emoticon happy smiley-happy emoji",
             "version": "3.2.89"
         },
         {
             "author": "Gabriel",
             "codepoint": "F1F5",
             "name": "emoticon-happy-outline",
-            "searchable": "emoticon happy outline smiley-happy emoji",
+            "searchable": "emoticon happy outline smiley-happy-outline emoji",
             "version": "1.5.54"
         },
         {
@@ -8726,21 +9013,21 @@
             "author": "Michael Irigoyen",
             "codepoint": "FC50",
             "name": "emoticon-neutral",
-            "searchable": "emoticon neutral",
+            "searchable": "emoticon neutral smiley-neutral emoji",
             "version": "3.2.89"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F1F6",
             "name": "emoticon-neutral-outline",
-            "searchable": "emoticon neutral outline smiley-neutral emoji",
+            "searchable": "emoticon neutral outline smiley-neutral-outline emoji",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F1F2",
             "name": "emoticon-outline",
-            "searchable": "emoticon outline smiley insert-emoticon mood sentiment-very-satisfied tag-faces emoji",
+            "searchable": "emoticon outline insert-emoticon mood sentiment-very-satisfied tag-faces smiley-outline emoji",
             "version": "1.5.54"
         },
         {
@@ -8754,21 +9041,21 @@
             "author": "Michael Irigoyen",
             "codepoint": "FC51",
             "name": "emoticon-poop-outline",
-            "searchable": "emoticon poop outline",
+            "searchable": "emoticon poop outline emoji",
             "version": "3.2.89"
         },
         {
             "author": "Michael Irigoyen",
             "codepoint": "FC52",
             "name": "emoticon-sad",
-            "searchable": "emoticon sad",
+            "searchable": "emoticon sad smiley-sad emoji",
             "version": "3.2.89"
         },
         {
             "author": "Gabriel",
             "codepoint": "F1F8",
             "name": "emoticon-sad-outline",
-            "searchable": "emoticon sad outline smiley-sad emoji",
+            "searchable": "emoticon sad outline smiley-sad-outline emoji",
             "version": "1.5.54"
         },
         {
@@ -9003,6 +9290,20 @@
             "version": "1.5.54"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "FCE0",
+            "name": "eye-check",
+            "searchable": "eye check eye-tick",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCE1",
+            "name": "eye-check-outline",
+            "searchable": "eye check outline eye-tick-outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Michael Richins",
             "codepoint": "FB70",
             "name": "eye-circle",
@@ -9104,7 +9405,7 @@
             "author": "Michael Richins",
             "codepoint": "FC57",
             "name": "face-recognition",
-            "searchable": "face recognition",
+            "searchable": "face recognition facial-recognition",
             "version": "3.2.89"
         },
         {
@@ -9162,6 +9463,13 @@
             "name": "fast-forward",
             "searchable": "fast forward",
             "version": "1.5.54"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCE2",
+            "name": "fast-forward-30",
+            "searchable": "fast forward 30",
+            "version": "3.3.92"
         },
         {
             "author": "Michael Irigoyen",
@@ -9871,6 +10179,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FCE3",
+            "name": "flickr",
+            "searchable": "flickr",
+            "version": "3.3.92"
+        },
+        {
             "author": "Google",
             "codepoint": "F247",
             "name": "flip-to-back",
@@ -9925,6 +10240,13 @@
             "name": "flower-outline",
             "searchable": "flower outline local-florist-outline",
             "version": "2.5.94"
+        },
+        {
+            "author": "Colton Wiscombe",
+            "codepoint": "FCE4",
+            "name": "flower-poppy",
+            "searchable": "flower poppy",
+            "version": "3.3.92"
         },
         {
             "author": "Michael Richins",
@@ -10109,6 +10431,20 @@
             "version": "3.0.39"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCE5",
+            "name": "folder-pound",
+            "searchable": "folder pound",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCE6",
+            "name": "folder-pound-outline",
+            "searchable": "folder pound outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F258",
             "name": "folder-remove",
@@ -10149,6 +10485,20 @@
             "name": "folder-star-outline",
             "searchable": "folder star outline folder-special-outline files / folders",
             "version": "3.0.39"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCE7",
+            "name": "folder-sync",
+            "searchable": "folder sync",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCE8",
+            "name": "folder-sync-outline",
+            "searchable": "folder sync outline",
+            "version": "3.3.92"
         },
         {
             "author": "Michael Richins",
@@ -10588,8 +10938,15 @@
             "author": "Google",
             "codepoint": "F27B",
             "name": "format-list-numbered",
-            "searchable": "format list numbered format-list-numbered format-list-numbers text / content",
+            "searchable": "format list numbered format-list-numbers text / content",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FCE9",
+            "name": "format-list-numbered-rtl",
+            "searchable": "format list numbered rtl format-list-numbered-right-to-left",
+            "version": "3.3.92"
         },
         {
             "author": "Google",
@@ -10688,6 +11045,34 @@
             "name": "format-text",
             "searchable": "format text / content",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FCEA",
+            "name": "format-text-wrapping-clip",
+            "searchable": "format text wrapping clip",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FCEB",
+            "name": "format-text-wrapping-overflow",
+            "searchable": "format text wrapping overflow",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FCEC",
+            "name": "format-text-wrapping-wrap",
+            "searchable": "format text wrapping wrap",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FCED",
+            "name": "format-textbox",
+            "searchable": "format textbox",
+            "version": "3.3.92"
         },
         {
             "author": "Google",
@@ -10795,6 +11180,20 @@
             "version": "2.4.85"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCEE",
+            "name": "fountain-pen",
+            "searchable": "fountain pen",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCEF",
+            "name": "fountain-pen-tip",
+            "searchable": "fountain pen tip",
+            "version": "3.3.92"
+        },
+        {
             "author": "Contributors",
             "codepoint": "F28E",
             "name": "foursquare",
@@ -10882,7 +11281,7 @@
             "author": "Michael Irigoyen",
             "codepoint": "FC62",
             "name": "fuse-blade",
-            "searchable": "fuse blade",
+            "searchable": "fuse blade automotive",
             "version": "3.2.89"
         },
         {
@@ -11316,7 +11715,7 @@
             "author": "Google",
             "codepoint": "FC63",
             "name": "google-adwords",
-            "searchable": "google adwords",
+            "searchable": "google adwords brand / logo",
             "version": "3.2.89"
         },
         {
@@ -11519,7 +11918,7 @@
             "author": "Google",
             "codepoint": "FC64",
             "name": "google-street-view",
-            "searchable": "google street view",
+            "searchable": "google street view pegman",
             "version": "3.2.89"
         },
         {
@@ -11859,6 +12258,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCF0",
+            "name": "heart-broken-outline",
+            "searchable": "heart broken outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "GreenTurtwig",
             "codepoint": "F970",
             "name": "heart-circle",
@@ -11974,7 +12380,7 @@
             "author": "Michael Irigoyen",
             "codepoint": "FC66",
             "name": "help-network-outline",
-            "searchable": "help network outline",
+            "searchable": "help network outline question-network-outline",
             "version": "3.2.89"
         },
         {
@@ -12167,6 +12573,20 @@
             "version": "2.0.46"
         },
         {
+            "author": "Google",
+            "codepoint": "FCF1",
+            "name": "home-city",
+            "searchable": "home city",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FCF2",
+            "name": "home-city-outline",
+            "searchable": "home city outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Nick",
             "codepoint": "F8AE",
             "name": "home-currency-usd",
@@ -12319,6 +12739,13 @@
             "name": "houzz-box",
             "searchable": "houzz box brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "FCF3",
+            "name": "hubspot",
+            "searchable": "hubspot",
+            "version": "3.3.92"
         },
         {
             "author": "Contributors",
@@ -13407,6 +13834,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "FCF4",
+            "name": "library-movie",
+            "searchable": "library movie",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Google",
             "codepoint": "F333",
             "name": "library-music",
             "searchable": "library music",
@@ -13425,6 +13859,13 @@
             "name": "library-shelves",
             "searchable": "library shelves",
             "version": "3.0.39"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FCF5",
+            "name": "library-video",
+            "searchable": "library video",
+            "version": "3.3.92"
         },
         {
             "author": "Cody",
@@ -13488,6 +13929,34 @@
             "name": "link",
             "searchable": "link insert-link",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCF6",
+            "name": "link-box",
+            "searchable": "link box",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCF7",
+            "name": "link-box-outline",
+            "searchable": "link box outline",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCF8",
+            "name": "link-box-variant",
+            "searchable": "link box variant",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCF9",
+            "name": "link-box-variant-outline",
+            "searchable": "link box variant outline",
+            "version": "3.3.92"
         },
         {
             "author": "Google",
@@ -13805,6 +14274,20 @@
             "version": "1.5.54"
         },
         {
+            "author": "Augustin Ursu",
+            "codepoint": "FCFA",
+            "name": "map-clock",
+            "searchable": "map clock",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Augustin Ursu",
+            "codepoint": "FCFB",
+            "name": "map-clock-outline",
+            "searchable": "map clock outline",
+            "version": "3.3.92"
+        },
+        {
             "author": "Contributors",
             "codepoint": "FA00",
             "name": "map-legend",
@@ -13866,6 +14349,13 @@
             "name": "map-marker-outline",
             "searchable": "map marker outline",
             "version": "2.0.46"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FCFC",
+            "name": "map-marker-path",
+            "searchable": "map marker path",
+            "version": "3.3.92"
         },
         {
             "author": "Cody",
@@ -14410,7 +14900,7 @@
             "author": "Google",
             "codepoint": "F374",
             "name": "minus",
-            "searchable": "minus remove math",
+            "searchable": "minus remove horizontal-line math",
             "version": "1.5.54"
         },
         {
@@ -14524,6 +15014,13 @@
             "name": "more",
             "searchable": "more",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCFD",
+            "name": "mother-nurse",
+            "searchable": "mother nurse",
+            "version": "3.3.92"
         },
         {
             "author": "Google",
@@ -14914,21 +15411,21 @@
             "author": "Austin Andrews",
             "codepoint": "F396",
             "name": "nfc",
-            "searchable": "nfc",
+            "searchable": "nfc near-field-communication",
             "version": "1.5.54"
         },
         {
             "author": "Austin Andrews",
             "codepoint": "F397",
             "name": "nfc-tap",
-            "searchable": "nfc tap",
+            "searchable": "nfc tap near-field-communication-tap",
             "version": "1.5.54"
         },
         {
             "author": "Google",
             "codepoint": "F398",
             "name": "nfc-variant",
-            "searchable": "nfc variant",
+            "searchable": "nfc variant near-field-communication-variant",
             "version": "1.5.54"
         },
         {
@@ -15054,7 +15551,7 @@
             "author": "GreenTurtwig",
             "codepoint": "F6A3",
             "name": "nuke",
-            "searchable": "nuke",
+            "searchable": "nuke nuclear atomic-bomb",
             "version": "1.7.12"
         },
         {
@@ -15716,6 +16213,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FCFE",
+            "name": "outlook",
+            "searchable": "outlook",
+            "version": "3.3.92"
+        },
+        {
             "author": "Cody",
             "codepoint": "F3D2",
             "name": "owl",
@@ -16204,6 +16708,20 @@
             "name": "periscope",
             "searchable": "periscope brand / logo",
             "version": "1.9.32"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FCFF",
+            "name": "perspective-less",
+            "searchable": "perspective less perspective-decrease",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD00",
+            "name": "perspective-more",
+            "searchable": "perspective more perspective-increase",
+            "version": "3.3.92"
         },
         {
             "author": "Google",
@@ -16759,6 +17277,34 @@
             "version": "2.4.85"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "FD01",
+            "name": "podium",
+            "searchable": "podium",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "FD02",
+            "name": "podium-bronze",
+            "searchable": "podium bronze podium-third",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "FD03",
+            "name": "podium-gold",
+            "searchable": "podium gold podium-first",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Richins",
+            "codepoint": "FD04",
+            "name": "podium-silver",
+            "searchable": "podium silver podium-second",
+            "version": "3.3.92"
+        },
+        {
             "author": "Contributors",
             "codepoint": "F41D",
             "name": "pokeball",
@@ -17200,6 +17746,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Contributors",
+            "codepoint": "FD05",
+            "name": "quora",
+            "searchable": "quora",
+            "version": "3.3.92"
+        },
+        {
             "author": "Augustin Ursu",
             "codepoint": "F906",
             "name": "rabbit",
@@ -17287,7 +17840,7 @@
             "author": "Google",
             "codepoint": "F43E",
             "name": "radiobox-marked",
-            "searchable": "radiobox marked radio-button-checked form",
+            "searchable": "radiobox marked radio-button-checked record form",
             "version": "1.5.54"
         },
         {
@@ -17627,6 +18180,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Austin Andrews",
+            "codepoint": "FD06",
+            "name": "rewind-10",
+            "searchable": "rewind 10",
+            "version": "3.3.92"
+        },
+        {
             "author": "Michael Irigoyen",
             "codepoint": "F709",
             "name": "rewind-outline",
@@ -17732,6 +18292,20 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD07",
+            "name": "roller-skate",
+            "searchable": "roller skate",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD08",
+            "name": "rollerblade",
+            "searchable": "rollerblade",
+            "version": "3.3.92"
+        },
+        {
             "author": "Contributors",
             "codepoint": "FB9C",
             "name": "rollupjs",
@@ -17826,8 +18400,15 @@
             "author": "Gabriel",
             "codepoint": "F46C",
             "name": "rss-box",
-            "searchable": "rss box",
+            "searchable": "rss box rss-feed-box",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "FD09",
+            "name": "ruby",
+            "searchable": "ruby",
+            "version": "3.3.92"
         },
         {
             "author": "Austin Andrews",
@@ -17858,11 +18439,32 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD0A",
+            "name": "sack",
+            "searchable": "sack",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD0B",
+            "name": "sack-percent",
+            "searchable": "sack percent",
+            "version": "3.3.92"
+        },
+        {
             "author": "GreenTurtwig",
             "codepoint": "FA69",
             "name": "safe",
             "searchable": "safe",
             "version": "2.6.95"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD0C",
+            "name": "safety-goggles",
+            "searchable": "safety goggles",
+            "version": "3.3.92"
         },
         {
             "author": "Cody",
@@ -18146,6 +18748,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "FD0D",
+            "name": "select-color",
+            "searchable": "select color select-colour",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Google",
             "codepoint": "FAD8",
             "name": "select-compare",
             "searchable": "select compare",
@@ -18185,6 +18794,13 @@
             "name": "selection-drag",
             "searchable": "selection drag",
             "version": "2.6.95"
+        },
+        {
+            "author": "Austin Andrews",
+            "codepoint": "FD0E",
+            "name": "selection-ellipse",
+            "searchable": "selection ellipse",
+            "version": "3.3.92"
         },
         {
             "author": "Austin Andrews",
@@ -18463,7 +19079,7 @@
             "author": "GreenTurtwig",
             "codepoint": "F6BA",
             "name": "shield-airplane",
-            "searchable": "shield airplane aeroplane-shield plane-shield transportation + flying",
+            "searchable": "shield airplane shield-aeroplane transportation + flying",
             "version": "1.7.22"
         },
         {
@@ -18535,6 +19151,20 @@
             "name": "shield-key-outline",
             "searchable": "shield key outline",
             "version": "3.0.39"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD0F",
+            "name": "shield-link-variant",
+            "searchable": "shield link variant",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD10",
+            "name": "shield-link-variant-outline",
+            "searchable": "shield link variant outline",
+            "version": "3.3.92"
         },
         {
             "author": "GreenTurtwig",
@@ -18698,7 +19328,7 @@
             "version": "1.5.54"
         },
         {
-            "author": "Austin Andrews",
+            "author": "Google",
             "codepoint": "F4A0",
             "name": "sigma",
             "searchable": "sigma summation math",
@@ -18899,6 +19529,27 @@
             "name": "sitemap",
             "searchable": "sitemap workflow flowchart",
             "version": "1.5.54"
+        },
+        {
+            "author": "Google",
+            "codepoint": "FD11",
+            "name": "skate",
+            "searchable": "skate",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD12",
+            "name": "skew-less",
+            "searchable": "skew less skew-decrease",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD13",
+            "name": "skew-more",
+            "searchable": "skew more skew-increase",
+            "version": "3.3.92"
         },
         {
             "author": "Cody",
@@ -19307,6 +19958,13 @@
             "version": "2.4.85"
         },
         {
+            "author": "Michael Richins",
+            "codepoint": "FD14",
+            "name": "speaker-multiple",
+            "searchable": "speaker multiple speakers",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F4C4",
             "name": "speaker-off",
@@ -19487,6 +20145,13 @@
             "name": "stairs",
             "searchable": "stairs",
             "version": "1.5.54"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "FD15",
+            "name": "stamper",
+            "searchable": "stamper",
+            "version": "3.3.92"
         },
         {
             "author": "Austin Andrews",
@@ -20014,7 +20679,7 @@
             "version": "1.5.54"
         },
         {
-            "author": "Michael Irigoyen",
+            "author": "Google",
             "codepoint": "F9A5",
             "name": "table-merge-cells",
             "searchable": "table merge cells",
@@ -20194,6 +20859,13 @@
             "name": "tag-text-outline",
             "searchable": "tag text outline",
             "version": "1.5.54"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "FD16",
+            "name": "tank",
+            "searchable": "tank",
+            "version": "3.3.92"
         },
         {
             "author": "GreenTurtwig",
@@ -20724,7 +21396,7 @@
             "author": "Google",
             "codepoint": "F00C",
             "name": "tooltip-account",
-            "searchable": "tooltip account tooltip-user tooltip-person / user",
+            "searchable": "tooltip account tooltip-user tooltip-person account-location / user",
             "version": "1.5.54"
         },
         {
@@ -20803,6 +21475,13 @@
             "name": "tor",
             "searchable": "tor brand / logo",
             "version": "1.5.54"
+        },
+        {
+            "author": "Nick",
+            "codepoint": "FD17",
+            "name": "tortoise",
+            "searchable": "tortoise",
+            "version": "3.3.92"
         },
         {
             "author": "GreenTurtwig",
@@ -20924,6 +21603,20 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD18",
+            "name": "transit-connection",
+            "searchable": "transit connection",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD19",
+            "name": "transit-connection-variant",
+            "searchable": "transit connection variant",
+            "version": "3.3.92"
+        },
+        {
             "author": "Google",
             "codepoint": "F6AD",
             "name": "transit-transfer",
@@ -20950,6 +21643,13 @@
             "name": "translate",
             "searchable": "translate language",
             "version": "1.5.54"
+        },
+        {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD1A",
+            "name": "transmission-tower",
+            "searchable": "transmission tower",
+            "version": "3.3.92"
         },
         {
             "author": "GreenTurtwig",
@@ -21186,7 +21886,7 @@
             "author": "Nick",
             "codepoint": "FCB3",
             "name": "turtle",
-            "searchable": "turtle",
+            "searchable": "turtle animal",
             "version": "3.2.89"
         },
         {
@@ -22380,6 +23080,13 @@
             "version": "1.5.54"
         },
         {
+            "author": "Michael Irigoyen",
+            "codepoint": "FD1B",
+            "name": "weight-gram",
+            "searchable": "weight gram",
+            "version": "3.3.92"
+        },
+        {
             "author": "Austin Andrews",
             "codepoint": "F5A2",
             "name": "weight-kilogram",
@@ -22906,6 +23613,13 @@
         },
         {
             "author": "Google",
+            "codepoint": "FD1C",
+            "name": "youtube-subscription",
+            "searchable": "youtube subscription",
+            "version": "3.3.92"
+        },
+        {
+            "author": "Google",
             "codepoint": "F448",
             "name": "youtube-tv",
             "searchable": "youtube tv brand / logo",
@@ -22924,6 +23638,13 @@
             "name": "zend",
             "searchable": "zend developer / languages",
             "version": "2.7.94"
+        },
+        {
+            "author": "Contributors",
+            "codepoint": "FD1D",
+            "name": "zigbee",
+            "searchable": "zigbee",
+            "version": "3.3.92"
         },
         {
             "author": "Google",
@@ -23031,5 +23752,5 @@
             "version": "1.7.12"
         }
     ],
-    "version": "3.2.89"
+    "version": "3.3.92"
 }
