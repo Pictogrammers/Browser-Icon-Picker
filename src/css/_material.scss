@@ -1,0 +1,33 @@
+/**
+ * Vue-IconsPicker
+ * Material variables & classes
+ */
+
+// Font
+$roboto:                Roboto, Arial, sans-serif;
+
+$color-dark:            #303030;
+$color-text-dark:       rgba(#000, 0.87);
+
+// Elevation
+$elevation-tiny: 0 1px 1px rgba(0,0,0,0.1);
+$elevation-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$elevation-2: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+$elevation-negative: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+.elevation-tiny                  { box-shadow: $elevation-tiny; }
+.elevation-1, .elevation-lowest  { box-shadow: $elevation-1; }
+.elevation-2, .elevation-low     { box-shadow: $elevation-2; }
+.elevation-negative              { box-shadow: $elevation-negative; }
+.elevation-none                  { box-shadow: none; }
+
+
+// Animations duration
+$timing-short:          150ms;
+$timing-medium:         250ms;
+$timing-long:           350ms;
+
+// https://material.io/guidelines/motion/movement.html#movement-movement-in-out-of-screen-bounds
+// https://material.io/guidelines/motion/duration-easing.html
+$curve-deceleration: cubic-bezier(0.0, 0.0, 0.2, 1);
+$curve-sharp: cubic-bezier(0.4, 0.0, 0.6, 1);
