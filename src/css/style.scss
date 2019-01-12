@@ -212,6 +212,7 @@ header.header {
         transition-duration: $timing-short;
         width: $icon-size + 2*($icon-padding) + 2*($icon-border);
         height: $icon-size + 2*($icon-padding) + 2*($icon-border);
+        line-height: $icon-size;
 
         color: $icons-color;
         font-size: $icon-size;
