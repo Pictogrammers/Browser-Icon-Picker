@@ -3,3 +3,6 @@
 /node_modules/
 /dist/app.js
 /dist/main.css
+/dist/css
+/dist/fonts
+/dist/data
