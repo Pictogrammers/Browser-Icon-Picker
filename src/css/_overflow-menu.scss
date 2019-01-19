@@ -1,0 +1,84 @@
+/**
+ * Overflow menu component
+ */
+
+.overflow-menu {
+    position: absolute;
+    right: 5px;
+    min-width: 220px;
+    z-index: 5;
+    box-shadow: $elevation-2;
+    background: #fff;
+    font-size: 13px;
+    border-radius: 2px;
+    transform-origin: top right;
+
+    &.attach-to-top {
+        top: 5px;
+    }
+    &.attach-to-bottom {
+        bottom: 5px;
+    }
+
+    @at-root .dark-theme & {
+        background-color: $color-dark-3;
+    }
+
+    > * {
+        display: flex;
+        align-items: center;
+        padding: 5px 8px;
+        color: $icons-color;
+        @at-root .dark-theme & {
+            color: rgba(#fff, 0.8);
+        }
+        transition: $timing-short background-color;
+
+        i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            background-color: rgba(#000, 0.05);
+        }
+
+        .switch {
+            margin-left: auto;
+        }
+    }
+
+    > a {
+        text-decoration: none;
+        cursor: default;
+    }
+
+    .overflow-footer {
+        display: block;
+        padding: 10px 12px;
+        border-top: 1px solid rgba(#000, 0.1);
+        font-size: 0.8em;
+        opacity: 0.8;
+
+        a {
+            color: inherit;
+        }
+    }
+}
+.overflow-menu-enter-active {
+    transition: transform 100ms $curve-deceleration;
+}
+.overflow-menu-leave-active {
+    transition: transform 100ms $curve-sharp;
+}
+.overflow-menu-enter, .overflow-menu-leave-to {
+    transform: scaleY(0);
+}
+.overflow-menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
