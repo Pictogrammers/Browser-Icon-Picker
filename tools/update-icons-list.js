@@ -1,7 +1,9 @@
 /**
  * MaterialDesignIcons
+ *
+ * Downloads latest MDI & MDI light releases and extracts the right resources
+ * in the right folder.
  */
-
 
 const fs = require('fs');
 const path = require('path');
