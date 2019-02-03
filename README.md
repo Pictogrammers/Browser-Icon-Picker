@@ -20,7 +20,7 @@ Once started, open your browser on `http://127.0.0.1:8080`!
 
 ## Release
 
-Update the version number in the manifest.json, and run
+Update the version number in both manifest.json & package.json files, and run
 
 ```bash
 nodejs tools/prepare-release.js
