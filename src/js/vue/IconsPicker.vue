@@ -118,9 +118,13 @@
                                 <i class="mdi mdi-open-in-new"></i>
                                 {{ isIconActive && 'Open {icon}'.replace('{icon}', activeIcon.name) }}
                             </a>
-                            <div @click="copySvg">
+                            <div @click="copySvg(false)">
                                 <i class="mdi mdi-xml"></i>
                                 Copy SVG
+                            </div>
+                            <div @click="copySvg(true)">
+                                <i class="mdi mdi-xml"></i>
+                                Copy SVG path
                             </div>
                             <div @click="downloadSvg">
                                 <i class="mdi mdi-download"></i>
@@ -269,19 +273,26 @@
                 const i = COLORS.indexOf(this.accentColor)+1;
                 this.accentColor = COLORS[i > COLORS.length-1 ? 0 : i];
             },
-            copySvg() {
+            copySvg(onlyPath) {
                 if (this.activeIcon === null) {
                     return;
                 }
 
                 let id = this.activeIcon.id;
 
+                // SVG should have been loaded when overflow menu opened
                 if (Object.keys(this.cachedSvgs).indexOf(id) === -1) {
                     return;
                 }
 
-                const svg = this.cachedSvgs[id],
-                    input = this.$refs['input-copy'];
+                let svg = this.cachedSvgs[id];
+
+                if (onlyPath) {
+                    // Take the "d" attribute from <path>
+                    svg = /d="([^"]+)"/.exec(svg)[1];
+                }
+
+                const input = this.$refs['input-copy'];
 
                 input.value = svg;
                 input.select();
