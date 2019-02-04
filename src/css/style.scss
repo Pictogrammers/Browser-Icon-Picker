@@ -296,11 +296,8 @@ header.header {
     position: absolute;
     bottom: 0;
     left: 0;
-
-    // Keep space for scrollbar
-    // Firefox:
-    width: calc(100% - 10px);
-    // TODO CHROME
+    // Width is computed from JS, since we don't know .icons scrollbar width
+    // width: calc(100% - 10px)
 
     @extend .elevation-low;
     background: #ffffff;

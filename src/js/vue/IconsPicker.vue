@@ -96,7 +96,11 @@
             </div>
 
             <transition name="properties">
-                <div class="icon-properties" v-show="isIconActive">
+                <div
+                    class="icon-properties"
+                    v-show="isIconActive"
+                    :style="'width: calc(100% - '+browserScrollbarWidth+'px)'"
+                >
                     <i
                         class="icon-icon"
                         :class="activeIcon && activeIcon.class"
@@ -203,6 +207,8 @@
             isIconActive: false,
 
             cachedSvgs: {},
+
+            browserScrollbarWidth: 0,
         }),
         computed: {
             filteredIcons() {
@@ -230,6 +236,10 @@
                     this.icons = response.icons;
                     this.version = response.version;
                 });
+
+            // Inspect browser's scrollbar width.
+            // It's used to adjust .icon-properties width
+            this.browserScrollbarWidth = this.$refs.icons.offsetWidth - this.$refs.icons.clientWidth;
         },
         methods: {
             setActiveIcon(icon, ensureVisible=false) {
