@@ -50,9 +50,21 @@
                     </div>
                     <div class="overflow-footer">
                         MDI v{{ version && version.default }} / MDI light v{{ version && version.light }}<br />
-                        <a href="https://github.com/chteuchteu/MaterialDesignIcons-Picker">Open on GitHub</a>
+                        <a href="https://github.com/chteuchteu/MaterialDesignIcons-Picker" target="_blank">Open on GitHub</a>
                     </div>
                 </overflow-menu>
+
+                <div class="window-controls" v-if="isElectron">
+                    <a href="#" @click.prevent="electronBus.window.minimize">
+                        <i class="mdi mdi-minus"></i>
+                    </a>
+                    <a href="#" @click.prevent="electronBus.window.maximize">
+                        <i class="mdi mdi-crop-square"></i>
+                    </a>
+                    <a href="#" @click.prevent="electronBus.window.close">
+                        <i class="mdi mdi-window-close"></i>
+                    </a>
+                </div>
             </div>
             <div class="search-wrap">
                 <input
@@ -184,11 +196,15 @@
 
     const getResourceUrl = (filename) => typeof(chrome) !== 'undefined' && chrome.extension !== undefined
         ? chrome.extension.getURL('dist/data/' + filename)
-        : '../data/' + filename; // <- when debugging extension directly from index.html
+        : './data/' + filename; // <- when debugging extension directly from index.html
 
     export default {
         name: 'icons-picker',
         components: {OverflowMenu, SettingSwitch},
+        props: {
+            isElectron: Boolean,
+            electronBus: Object,
+        },
         data: () => ({
             loading: true,
             darkTheme: JSON.parse(localStorage.getItem(SETTINGS.DARK)) === true,
@@ -227,7 +243,14 @@
                 );
             },
         },
+        created() {
+            if (this.isElectron) {
+                // Add "electron" class to body
+                document.getElementsByTagName('body')[0].classList.add('electron');
+            }
+        },
         mounted() {
+
             // Load icons
             request(getResourceUrl('icons.min.json'))
                 .then(JSON.parse)
@@ -372,7 +395,7 @@
             },
             'filters.outline'() {
                 localStorage.setItem(SETTINGS.OUTLINE, this.filters.outline);
-            }
+            },
         },
     };
 </script>
