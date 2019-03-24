@@ -130,6 +130,10 @@
                                 <i class="mdi mdi-xml"></i>
                                 Copy SVG path
                             </div>
+                            <div @click="copyName">
+                                <i class="mdi mdi-content-copy"></i>
+                                Copy name
+                            </div>
                             <div @click="downloadSvg">
                                 <i class="mdi mdi-download"></i>
                                 Download SVG
@@ -302,19 +306,32 @@
                     svg = /d="([^"]+)"/.exec(svg)[1];
                 }
 
-                const input = this.$refs['input-copy'];
-
-                input.value = svg;
-                input.select();
-
-                document.oncopy = function(event) {
-                    event.clipboardData.setData('text/plain', svg);
-                    event.preventDefault();
-                };
-                document.execCommand("Copy", false, null);
+                this.copy(svg);
 
                 // Close overflow menu once done
                 this.openOverflowMenu.close();
+            },
+            copyName() {
+                if (this.activeIcon === null) {
+                    return;
+                }
+
+                this.copy(this.activeIcon.name);
+
+                // Close overflow menu once done
+                this.openOverflowMenu.close();
+            },
+            copy(string) {
+                const input = this.$refs['input-copy'];
+
+                input.value = string;
+                input.select();
+
+                document.oncopy = function(event) {
+                    event.clipboardData.setData('text/plain', string);
+                    event.preventDefault();
+                };
+                document.execCommand("Copy", false, null);
             },
             downloadSvg() {
                 if (this.activeIcon === null) {

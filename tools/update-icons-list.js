@@ -87,6 +87,8 @@ const downloadLatestIcons = async () => {
             svg = svg.replace('<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">', '');
             // Remove xmlns & xmlns:xlink & version attributes
             svg = svg.replace(' xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\"', '');
+            // Remove id="{icon_name}" attribute
+            svg = svg.replace(` id=\"mdi-${icon.name}\"`, '');
 
             fs.writeFileSync(`${dist}/data/svg/${icon.id}.svg`, svg);
 
