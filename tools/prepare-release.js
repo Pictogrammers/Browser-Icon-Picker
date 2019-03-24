@@ -18,6 +18,7 @@ const root = path.resolve(__dirname, '..'),
 const BUILDS = {
     FIREFOX: 'Firefox',
     CHROME: 'Chrome',
+    ELECTRON: 'Electron',
 };
 
 const FILES = [
