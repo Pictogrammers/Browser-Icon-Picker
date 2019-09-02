@@ -190,12 +190,22 @@
         ? chrome.extension.getURL('dist/data/' + filename)
         : '../data/' + filename; // <- when debugging extension directly from index.html
 
+    const isDarkTheme = () => {
+        if (localStorage.getItem(SETTINGS.DARK) !== null) {
+            // Has a forced value in local storage
+            return JSON.parse(localStorage.getItem(SETTINGS.DARK)) === true;
+        }
+
+        // No value, auto-detect
+        return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    };
+
     export default {
         name: 'icons-picker',
         components: {OverflowMenu, SettingSwitch},
         data: () => ({
             loading: true,
-            darkTheme: JSON.parse(localStorage.getItem(SETTINGS.DARK)) === true,
+            darkTheme: isDarkTheme(),
             search: '',
             filters: {
                 flavour: localStorage.getItem(SETTINGS.FLAVOUR) || 'default', // "default" vs "light"
