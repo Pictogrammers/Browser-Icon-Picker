@@ -16,7 +16,11 @@ const workspace = path.resolve(__dirname, '../temp');
 const dist = path.resolve(__dirname, '../dist');
 
 const downloadLatestIcons = async () => {
-    log(chalk.blue.bold('MaterialDesignIcons icons parser 🔍'));
+    log(chalk.blue.bold('MaterialDesignIcons icons parser🔍'));
+
+    // Check current version
+    const iconsJsonPath = dist + '/data/icons.json';
+    const oldVersions = fs.existsSync(iconsJsonPath) ? JSON.parse(fs.readFileSync(iconsJsonPath)).version : null;
 
     // Create structure: temp directory & dist dir
     const dirs = [
@@ -46,7 +50,6 @@ const downloadLatestIcons = async () => {
             light: [],
         },
     };
-    let svg = {};
 
     for (let flavour of ['default', 'light']) {
         log(chalk.blue(`Handling flavour "${flavour}" 🔍`));
@@ -134,6 +137,14 @@ const downloadLatestIcons = async () => {
 
     // Clean
     rimraf.sync(workspace);
+
+    // Report
+    const newVersions = JSON.parse(fs.readFileSync(iconsJsonPath)).version;
+    if (oldVersions !== null && (oldVersions.default !== newVersions.default || oldVersions.light !== newVersions.light)) {
+        log(chalk.green.bold(`Icons has been updated, please prepare a release!`));
+    }
+    log(`Default flavour: ${oldVersions.default} -> ${newVersions.default}`);
+    log(`Light flavour: ${oldVersions.light} -> ${newVersions.light}`);
 };
 
 downloadLatestIcons();

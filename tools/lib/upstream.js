@@ -46,35 +46,29 @@ const getMeta = async (version, flavour = 'default') => {
     return await getJson(url);
 };
 
-/**
- * Downloads the SVG ZIP file for the specified flavour in the specified path.
- */
-const downloadSvgZip = async(destPath, flavour = 'default') => {
-    const url = `https://github.com/Templarian/${repo[flavour]}-SVG/archive/master.zip`;
-
+const download = async(url, destPath) => {
     return new Promise((resolve, reject) => {
         request(url)
             .on('response', (res) => {
                 res.pipe(fs.createWriteStream(destPath));
             })
             .on('end', () => {
-                resolve();
+                setTimeout(() => {
+                    resolve();
+                }, 500);
             })
     });
 };
 
-const downloadWebfontZip = async(destPath, flavour = 'default') => {
-    const url = `https://github.com/Templarian/${repo[flavour]}-Webfont/archive/master.zip`;
+/**
+ * Downloads the SVG ZIP file for the specified flavour in the specified path.
+ */
+const downloadSvgZip = async(destPath, flavour = 'default') => {
+    return download(`https://github.com/Templarian/${repo[flavour]}-SVG/archive/master.zip`, destPath);
+};
 
-    return new Promise((resolve, reject) => {
-        request(url)
-            .on('response', (res) => {
-                res.pipe(fs.createWriteStream(destPath));
-            })
-            .on('end', () => {
-                resolve();
-            })
-    });
+const downloadWebfontZip = async(destPath, flavour = 'default') => {
+    return download(`https://github.com/Templarian/${repo[flavour]}-Webfont/archive/master.zip`, destPath);
 };
 
 const extractZip = async(zipPath, destDir, filePattern) => {
