@@ -20,9 +20,10 @@ Once started, open your browser on `http://127.0.0.1:8080`!
 
 ## Release
 
-Update the version number in both manifest.json & package.json files, and run
+Run `update-icons-list.js` to get the latest icons, and `prepare-release.js` to build, tag & pack a new version.
 
 ```bash
+nodejs tools/update-icons-list.js
 nodejs tools/prepare-release.js
 ```
 
