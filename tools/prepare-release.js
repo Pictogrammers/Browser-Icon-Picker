@@ -127,8 +127,30 @@ const prepareFirefoxReviewZip = () => {
         });
 };
 
+const updateVersionNumbers = () => {
+    console.log(chalk.blue(`Updating version numbers`));
+
+    let version = readManifest().version;
+    const parts = version.split('.');
+    parts[1]++; // v2.9.0 -> v2.10.0
+    version = parts.join('.');
+
+    // We could decode, update and re-encode JSON, but it would mess up with current formatting: use sed instead
+    for (let file of ['manifest.json', 'package.json']) {
+        console.log('Updating '+file);
+        execSync(`sed -i -e "s/\\"version\\": \\".*\\",/\\"version\\": \\"${version}\\",/" ./${file}`);
+    }
+};
+
+const createVersionBumpCommit = () => {
+    console.log(chalk.blue(`Creating version bump commit`));
+    const version = readManifest().version;
+    execSync(`git commit -m "v${version} version bump"`);
+    console.log(`Don't forget to push!`);
+};
+
 /* DO THE THING */
-console.log(chalk.blue.bold('MaterialDesignIcons release bundler 🚀'));
+console.log(chalk.blue.bold('MaterialDesignIcons release bundler'));
 
 console.log(`Building project using webpack...`);
 try {
@@ -140,8 +162,19 @@ try {
 }
 console.log('');
 
+updateVersionNumbers();
+console.log('');
+
 for (const build of Object.keys(BUILDS)) {
     prepareRelease(BUILDS[build]);
 }
 
 prepareFirefoxReviewZip();
+
+createVersionBumpCommit();
+
+console.log(chalk.green(`Release is ready ✔`));
+console.log("Now let's publish this new version:");
+console.log(" - https://github.com/chteuchteu/MaterialDesignIcons-Picker/releases");
+console.log(" - https://addons.mozilla.org/en-US/developers/addon/materialdesignicons-picker/edit");
+console.log(" - https://chrome.google.com/webstore/devconsole/g17908162625851858745/edjaedpifkihpjkcgknfokmibkoafhme/edit");
