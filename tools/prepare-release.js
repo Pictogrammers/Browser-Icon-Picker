@@ -145,7 +145,7 @@ const updateVersionNumbers = () => {
 const createVersionBumpCommit = () => {
     console.log(chalk.blue(`Creating version bump commit`));
     const version = readManifest().version;
-    execSync(`git commit -m "v${version} version bump"`);
+    execSync(`git add manifest.json && git add package.json && git commit -m "v${version} version bump"`);
     console.log(`Don't forget to push!`);
 };
 
