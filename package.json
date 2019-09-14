@@ -39,5 +39,11 @@
         "webpack-dev-server": "^2.9.7",
         "yauzl": "^2.10.0",
         "yazl": "^2.5.1"
+    },
+    "materialdesignicons-picker": {
+        "version": {
+            "default": "4.3.95",
+            "light": "0.2.63"
+        }
     }
 }
