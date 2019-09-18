@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '0 0 * * *'
+  - cron: '0 * * * *'
 
 jobs:
   check_availability:
@@ -32,8 +32,8 @@ jobs:
         # Download & parse manifests
         mdi_default_version = get_package_json('Templarian/MaterialDesign-SVG')['version']
         mdi_light_version = get_package_json('Templarian/MaterialDesignLight-SVG')['version']
-        mdip_default_version = get_package_json('Templarian/MaterialDesign-SVG')['materialdesignicons-picker']['version']['default']
-        mdip_light_version = get_package_json('Templarian/MaterialDesignLight-SVG')['materialdesignicons-picker']['version']['light']
+        mdip_default_version = get_package_json('chteuchteu/MaterialDesignIcons-Picker')['materialdesignicons-picker']['version']['default']
+        mdip_light_version = get_package_json('chteuchteu/MaterialDesignIcons-Picker')['materialdesignicons-picker']['version']['light']
         
         set_output('mdi_default_version', mdi_default_version)
         set_output('mdi_light_version', mdi_light_version)
