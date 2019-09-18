@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '0 0 * * *'
+  - cron: '* * * * *'
 
 jobs:
   check_availability:
@@ -10,20 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/checkout@master
+
     # Get default & light libraries latest version
     - name: Get libraries latest version
       id: fetch_versions
-      outputs:
-      - mdi_default_version
-      - mdi_light_version
-      - mdip_default_version
-      - mdip_light_version
       shell: python
       run: |
-        import requests, json
+        import urllib2, json
         
         def get_package_json(name):
-          package_json_s = requests.get('https://raw.githubusercontent.com/'+name+'/master/package.json').content
+          package_json_s = urllib2.urlopen('https://raw.githubusercontent.com/'+name+'/master/package.json').read()
           return json.loads(package_json_s)
         
         def set_output(name, value):
@@ -32,16 +29,36 @@ jobs:
         # Download & parse manifests
         mdi_default_version = get_package_json('Templarian/MaterialDesign-SVG')['version']
         mdi_light_version = get_package_json('Templarian/MaterialDesignLight-SVG')['version']
-        mdip_default_version = get_package_json('Templarian/MaterialDesign-SVG')['materialdesignicons-picker']['version']['default']
-        mdip_light_version = get_package_json('Templarian/MaterialDesignLight-SVG')['materialdesignicons-picker']['version']['light']
+        package_json = get_package_json('chteuchteu/MaterialDesignIcons-Picker')
+        mdip_default_version = package_json['materialdesignicons-picker']['version']['default']
+        mdip_light_version = package_json['materialdesignicons-picker']['version']['light']
         
         set_output('mdi_default_version', mdi_default_version)
         set_output('mdi_light_version', mdi_light_version)
         set_output('mdip_default_version', mdip_default_version)
         set_output('mdip_light_version', mdip_light_version)
-   
     
-    # If they are different, open a PR
-    - name: Open a PR
+    # If they are different, update manifest
+    - name: Update manifest
+      id: update_manifest
       if: steps.fetch_versions.outputs.mdi_default_version != steps.fetch_versions.outputs.mdip_default_version || steps.fetch_versions.outputs.mdi_light_version != steps.fetch_versions.outputs.mdi_light_version
-      run: echo "TODO"
+      env:
+        MDI_DEFAULT_VERSION: ${{ steps.fetch_versions.outputs.mdi_default_version }}
+        MDI_LIGHT_VERSION: ${{ steps.fetch_versions.outputs.mdi_light_version }}
+        MDIP_DEFAULT_VERSION: ${{ steps.fetch_versions.outputs.mdip_default_version }}
+        MDIP_LIGHT_VERSION: ${{ steps.fetch_versions.outputs.mdip_light_version }}
+      run: |
+        sed -i -e 's/"default": ".*",/"default": "'"${MDI_DEFAULT_VERSION}"'",/' ./package.json
+        sed -i -e 's/"light": ".*",/"light": "'"${MDI_LIGHT_VERSION}"'",/' ./package.json
+
+    # Once manifest is updated, open a PR
+    - name: Open a PR
+      uses: peter-evans/create-pull-request@v1.1.3
+      id: open_pr
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+        PULL_REQUEST_BRANCH: "${{ format('auto-update-{0}', steps.fetch_versions.outputs.mdi_default_version) }}"
+        COMMIT_MESSAGE: "${{ format('package.json: update MDI versions (default: {0}, light: {1})', steps.fetch_versions.outputs.mdi_default_version, steps.fetch_versions.outputs.mdi_light_version) }}"
+        PULL_REQUEST_TITLE: "${{ format('Upgrade MDI version (default: {0}, light: {1})', steps.fetch_versions.outputs.mdi_default_version, steps.fetch_versions.outputs.mdi_light_version) }}"
+        PULL_REQUEST_BODY: "${{ format('Merge this PR to automatically release a new version of this extension, featuring up-to-date versions of the MaterialDesignIcons libraries (default: {0}, light: {1})', steps.fetch_versions.outputs.mdi_default_version, steps.fetch_versions.outputs.mdi_light_version) }}"
