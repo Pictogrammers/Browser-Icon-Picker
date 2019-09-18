@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '0 * * * *'
+  - cron: '35 * * * *'
 
 jobs:
   check_availability:
@@ -13,11 +13,6 @@ jobs:
     # Get default & light libraries latest version
     - name: Get libraries latest version
       id: fetch_versions
-      outputs:
-      - mdi_default_version
-      - mdi_light_version
-      - mdip_default_version
-      - mdip_light_version
       shell: python
       run: |
         import requests, json
