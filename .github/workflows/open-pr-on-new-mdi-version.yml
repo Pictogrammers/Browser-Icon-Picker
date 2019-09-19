@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '46 * * * *'
+  - cron: '21 * * * *'
 
 jobs:
   check_availability:
@@ -39,7 +39,7 @@ jobs:
         set_output('mdip_light_version', mdip_light_version)
     
     # If they are different, update manifest
-    - name: Open a PR
+    - name: Update manifest
       id: update_manifest
       if: steps.fetch_versions.outputs.mdi_default_version != steps.fetch_versions.outputs.mdip_default_version || steps.fetch_versions.outputs.mdi_light_version != steps.fetch_versions.outputs.mdi_light_version
       env:
@@ -48,8 +48,8 @@ jobs:
         MDIP_DEFAULT_VERSION: ${{ steps.fetch_versions.outputs.mdip_default_version }}
         MDIP_LIGHT_VERSION: ${{ steps.fetch_versions.outputs.mdip_light_version }}
       run: |
-        sed -i -e "s/\\"default\\": \\".*\\",/\\"default\\": \\"${MDI_DEFAULT_VERSION}\\",/" ./package.json
-        sed -i -e "s/\\"light\\": \\".*\\",/\\"light\\": \\"${MDI_LIGHT_VERSION}\\",/" ./package.json
+        sed -i -e 's/"default": ".*",/"default": "'"${MDI_DEFAULT_VERSION}"'",/' ./package.json
+        sed -i -e 's/"light": ".*",/"light": "'"${MDI_LIGHT_VERSION}"'",/' ./package.json
 
     # Once manifest is updated, open a PR
     - name: Open a PR
