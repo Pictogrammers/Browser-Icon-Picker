@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '35 * * * *'
+  - cron: '30 * * * *'
 
 jobs:
   check_availability:
@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/checkout@master
+
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+    
     # Get default & light libraries latest version
     - name: Get libraries latest version
       id: fetch_versions
@@ -27,14 +34,14 @@ jobs:
         # Download & parse manifests
         mdi_default_version = get_package_json('Templarian/MaterialDesign-SVG')['version']
         mdi_light_version = get_package_json('Templarian/MaterialDesignLight-SVG')['version']
-        mdip_default_version = get_package_json('chteuchteu/MaterialDesignIcons-Picker')['materialdesignicons-picker']['version']['default']
-        mdip_light_version = get_package_json('chteuchteu/MaterialDesignIcons-Picker')['materialdesignicons-picker']['version']['light']
+        package_json = get_package_json('chteuchteu/MaterialDesignIcons-Picker')
+        mdip_default_version = package_json['materialdesignicons-picker']['version']['default']
+        mdip_light_version = package_json['materialdesignicons-picker']['version']['light']
         
         set_output('mdi_default_version', mdi_default_version)
         set_output('mdi_light_version', mdi_light_version)
         set_output('mdip_default_version', mdip_default_version)
         set_output('mdip_light_version', mdip_light_version)
-   
     
     # If they are different, open a PR
     - name: Open a PR
