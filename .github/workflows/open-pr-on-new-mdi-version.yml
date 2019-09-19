@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '* * * * *'
+  - cron: '0 0 * * *'
 
 jobs:
   check_availability:
