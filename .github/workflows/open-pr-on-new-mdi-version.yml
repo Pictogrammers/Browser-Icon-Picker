@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '55 * * * *'
+  - cron: '32 * * * *'
 
 jobs:
   check_availability:
@@ -38,7 +38,29 @@ jobs:
         set_output('mdip_default_version', mdip_default_version)
         set_output('mdip_light_version', mdip_light_version)
     
-    # If they are different, open a PR
+    # If they are different, update manifest
     - name: Open a PR
+      id: update_manifest
+      needs: fetch_versions
       if: steps.fetch_versions.outputs.mdi_default_version != steps.fetch_versions.outputs.mdip_default_version || steps.fetch_versions.outputs.mdi_light_version != steps.fetch_versions.outputs.mdi_light_version
-      run: echo "TODO"
+      env:
+        MDI_DEFAULT_VERSION: ${{ steps.fetch_versions.outputs.mdi_default_version }}
+        MDI_LIGHT_VERSION: ${{ steps.fetch_versions.outputs.mdi_light_version }}
+        MDIP_DEFAULT_VERSION: ${{ steps.fetch_versions.outputs.mdip_default_version }}
+        MDIP_LIGHT_VERSION: ${{ steps.fetch_versions.outputs.mdip_light_version }}
+      run: |
+        sed -i -e "s/\\"default\\": \\".*\\",/\\"default\\": \\"${MDI_DEFAULT_VERSION}\\",/" ./package.json
+        sed -i -e "s/\\"light\\": \\".*\\",/\\"light\\": \\"${MDI_LIGHT_VERSION}\\",/" ./package.json
+
+    # Once manifest is updated, open a PR
+    - name: Open a PR
+      uses: peter-evans/create-pull-request@v1.1.3
+      id: open_pr
+      needs: update_manifest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+        PULL_REQUEST_BRANCH: ${{ format('auto-update-{0}', steps.fetch_versions.outputs.mdi_default_version) }}
+        COMMIT_MESSAGE: ${{ format('package.json: update MDI versions (default: {0}, light: {1})', steps.fetch_versions.outputs.mdi_default_version, steps.fetch_versions.outputs.mdi_light_version) }}
+        PULL_REQUEST_TITLE: ${{ format('Upgrade MDI version (default: {0}, light: {1})', steps.fetch_versions.outputs.mdi_default_version, steps.fetch_versions.outputs.mdi_light_version) }}
+        PULL_REQUEST_BODY: ${{ format('Merge this PR to automatically release a new version of this extension, featuring up-to-date versions of the MaterialDesignIcons libraries (default: {0}, light: {1})', steps.fetch_versions.outputs.mdi_default_version, steps.fetch_versions.outputs.mdi_light_version) }}
