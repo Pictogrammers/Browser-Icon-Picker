@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '52 * * * *'
+  - cron: '55 * * * *'
 
 jobs:
   check_availability:
@@ -20,7 +20,7 @@ jobs:
         import urllib2, json
         
         def get_package_json(name):
-          package_json_s = urllib2.urlopen('https://raw.githubusercontent.com/'+name+'/master/package.json')
+          package_json_s = urllib2.urlopen('https://raw.githubusercontent.com/'+name+'/master/package.json').read()
           return json.loads(package_json_s)
         
         def set_output(name, value):
