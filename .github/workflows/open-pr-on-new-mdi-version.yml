@@ -2,7 +2,7 @@ name: On a pull request on new MDI version
 
 on:
   schedule:
-  - cron: '30 * * * *'
+  - cron: '52 * * * *'
 
 jobs:
   check_availability:
@@ -12,20 +12,15 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - uses: actions/setup-python@v1
-      with:
-        python-version: '3.x'
-        architecture: 'x64'
-    
     # Get default & light libraries latest version
     - name: Get libraries latest version
       id: fetch_versions
       shell: python
       run: |
-        import requests, json
+        import urllib2, json
         
         def get_package_json(name):
-          package_json_s = requests.get('https://raw.githubusercontent.com/'+name+'/master/package.json').content
+          package_json_s = urllib2.urlopen('https://raw.githubusercontent.com/'+name+'/master/package.json')
           return json.loads(package_json_s)
         
         def set_output(name, value):
