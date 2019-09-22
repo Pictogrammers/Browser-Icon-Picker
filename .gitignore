@@ -1,6 +1,7 @@
 /.idea
 /release/
 /node_modules/
+/tools/github-actions/open-pr-on-new-mdi-version/node_modules/
 /dist/app.js
 /dist/main.css
 /dist/css
