@@ -15,12 +15,17 @@ const log = console.log;
 const workspace = path.resolve(__dirname, '../temp');
 const dist = path.resolve(__dirname, '../dist');
 
-const downloadLatestIcons = async () => {
+const readPackageJson = () => {
+    return JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf8'));
+};
+
+const pullIcons = async () => {
     log(chalk.blue.bold('MaterialDesignIcons icons parser🔍'));
 
-    // Check current version
-    const iconsJsonPath = dist + '/data/icons.json';
-    const oldVersions = fs.existsSync(iconsJsonPath) ? JSON.parse(fs.readFileSync(iconsJsonPath)).version : null;
+    // Check requested version
+    const packageJson = readPackageJson();
+    const versions = packageJson['materialdesignicons-picker'].version;
+    log(`Pulling versions default=${versions.default}, light=${versions.light}`);
 
     // Create structure: temp directory & dist dir
     const dirs = [
@@ -54,17 +59,18 @@ const downloadLatestIcons = async () => {
     for (let flavour of ['default', 'light']) {
         log(chalk.blue(`Handling flavour "${flavour}" 🔍`));
 
-        // Get the latest version available
-        const version = data.version[flavour] = await upstream.getLatestVersion(flavour);
-        log(`Latest version: ${chalk.underline(version)} ✔️`);
+        // Get requested version
+        const version = data.version[flavour] = versions[flavour];
+        log(`Requested version: ${chalk.underline(version)} ✔️`);
 
         // Download CSS file (in dist/css/), woff2 webfont (in dist/fonts/)
+        const escapedVersion = version.replace('.', `\\.`);
         const webfontZipPath = `${workspace}/${flavour}-webfont.zip`;
         const webfontExtractedZipPath = `${workspace}/${flavour}-webfont`;
         fs.mkdirSync(webfontExtractedZipPath);
-        await upstream.downloadWebfontZip(webfontZipPath, flavour);
+        await upstream.downloadWebfontZip(webfontZipPath, flavour, version);
         log(`Downloaded webfont ZIP ✔️`);
-        await upstream.extractZip(webfontZipPath, webfontExtractedZipPath, /^MaterialDesign(Light)?-Webfont-master\/(css\/materialdesignicons(-light)?\.min\.css|fonts\/materialdesignicons(-light)?-webfont\.woff2)$/);
+        await upstream.extractZip(webfontZipPath, webfontExtractedZipPath, `^MaterialDesign(Light)?-Webfont-${escapedVersion}\/(css\/materialdesignicons(-light)?\.min\.css|fonts\/materialdesignicons(-light)?-webfont\.woff2)$`);
         log(`Extracted webfont ZIP ✔️`);
         // Copy files
         fs.copyFileSync(`${webfontExtractedZipPath}/materialdesignicons${flavour === 'light' ? '-light': ''}.min.css`, `${dist}/css/materialdesignicons${flavour === 'light' ? '-light': ''}.min.css`);
@@ -74,9 +80,9 @@ const downloadLatestIcons = async () => {
         const svgZipPath = `${workspace}/${flavour}-svg.zip`;
         const svgExtractedZipPath = `${workspace}/${flavour}-svg`;
         fs.mkdirSync(svgExtractedZipPath);
-        await upstream.downloadSvgZip(svgZipPath, flavour);
+        await upstream.downloadSvgZip(svgZipPath, flavour, version);
         log(`Downloaded SVG ZIP ✔️`);
-        await upstream.extractZip(svgZipPath, svgExtractedZipPath, /^MaterialDesign(Light)?-SVG-master\/svg\/.+$/);
+        await upstream.extractZip(svgZipPath, svgExtractedZipPath, `^MaterialDesign(Light)?-SVG-${escapedVersion}\/svg\/.+$`);
         log(`Extracted SVG ZIP ✔️`);
 
         const iconsMetas = await upstream.getMeta(version, flavour);
@@ -139,12 +145,9 @@ const downloadLatestIcons = async () => {
     rimraf.sync(workspace);
 
     // Report
-    const newVersions = JSON.parse(fs.readFileSync(iconsJsonPath)).version;
-    if (oldVersions !== null && (oldVersions.default !== newVersions.default || oldVersions.light !== newVersions.light)) {
-        log(chalk.green.bold(`Icons has been updated, please prepare a release!`));
-    }
-    log(`Default flavour: ${oldVersions.default} -> ${newVersions.default}`);
-    log(`Light flavour: ${oldVersions.light} -> ${newVersions.light}`);
+    log('Download finished!');
+    log(`Default flavour: ${versions.default}`);
+    log(`Light flavour: ${versions.light}`);
 };
 
-downloadLatestIcons();
+pullIcons();

@@ -21,7 +21,7 @@ const projectRoot = path.resolve(__dirname, '../../..');
 
 const getPullRequestTitle = (upstreamVersions) => `Upgrade MDI version (default: ${upstreamVersions.default}, light: ${upstreamVersions.light})`;
 
-const preparePr = async function() {
+const preparePr = async () => {
     // Check latest versions
     const upstreamVersions = {
         default: await upstream.getLatestVersion('default'),

@@ -63,15 +63,19 @@ const download = async(url, destPath) => {
 /**
  * Downloads the SVG ZIP file for the specified flavour in the specified path.
  */
-const downloadSvgZip = async(destPath, flavour = 'default') => {
-    return download(`https://github.com/Templarian/${repo[flavour]}-SVG/archive/master.zip`, destPath);
+const downloadSvgZip = async(destPath, flavour, version) => {
+    return download(`https://github.com/Templarian/${repo[flavour]}-SVG/archive/v${version}.zip`, destPath);
 };
 
-const downloadWebfontZip = async(destPath, flavour = 'default') => {
-    return download(`https://github.com/Templarian/${repo[flavour]}-Webfont/archive/master.zip`, destPath);
+const downloadWebfontZip = async(destPath, flavour, version) => {
+    return download(`https://github.com/Templarian/${repo[flavour]}-Webfont/archive/v${version}.zip`, destPath);
 };
 
 const extractZip = async(zipPath, destDir, filePattern) => {
+    if (typeof filePattern === 'string') {
+        filePattern = new RegExp(filePattern);
+    }
+
     // Extract ZIP
     return new Promise((resolve, reject) => {
         yauzl.open(zipPath, (err, zipfile) => {

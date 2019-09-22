@@ -32,7 +32,11 @@ const FILES = [
 ];
 
 const readManifest = () => {
-    return JSON.parse(fs.readFileSync(root+'/manifest.json'));
+    return JSON.parse(fs.readFileSync(root+'/manifest.json', 'utf8'));
+};
+
+const readPackageJson = () => {
+    return JSON.parse(fs.readFileSync(root+'/package.json', 'utf8'));
 };
 
 const prepareRelease = (build) => {
