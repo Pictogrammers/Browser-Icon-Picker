@@ -395,7 +395,7 @@ header.header {
             background-color: darken(map-get($shades, "500"), 5);
         }
 
-        .switch.active {
+        .switch.boolean.active {
             background-color: rgba(map-get($shades, "500"), 0.3);
 
             .handle {

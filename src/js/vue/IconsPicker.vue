@@ -34,19 +34,25 @@
                         <i class="mdi mdi-account-multiple-outline"></i>
                         Outline only
 
-                        <setting-switch :value="filters.outline === 'outline'" />
+                        <setting-switch :value="filters.outline === 'outline'" boolean />
                     </div>
                     <div @click="randomColors = !randomColors">
                         <i class="mdi mdi-palette"></i>
                         Random colors
 
-                        <setting-switch :value="randomColors" />
+                        <setting-switch :value="randomColors" boolean />
                     </div>
                     <div @click="darkTheme = !darkTheme">
                         <i class="mdi mdi-theme-light-dark"></i>
                         Dark theme
 
-                        <setting-switch :value="darkTheme" />
+                        <setting-switch :value="darkTheme" boolean />
+                    </div>
+                    <div @click="usage = usage === 'js' ? 'webfont' : 'js'">
+                        <i class="mdi mdi-format-font"></i>
+                        JS / webfont
+
+                        <setting-switch :value="usage === 'webfont'" />
                     </div>
                     <div class="overflow-footer">
                         MDI v{{ version && version.default }} / MDI light v{{ version && version.light }}<br />
@@ -141,8 +147,8 @@
                         </overflow-menu>
 
                         <div class="icon-name">{{ activeIcon && activeIcon.name }}</div>
-                        <div class="icon-usage">{{ activeIcon && activeIcon.class }}</div>
-                        <div class="icon-usage">
+                        <div class="icon-usage" v-if="usage === 'webfont'">{{ activeIcon && activeIcon.class }}</div>
+                        <div class="icon-usage" v-else>
                             <span style="color: #c084ba">import</span>
                             <span style="color: #ffffff">{</span>
                             <span style="color: #9ddcfc">mdi{{ activeIcon && activeIcon.name.split('-').map((name) => name.charAt(0).toUpperCase() + name.slice(1)).join('') }}</span>
@@ -185,6 +191,7 @@
         FLAVOUR: 'flavour',
         OUTLINE: 'outline',
         DARK: 'dark',
+        USAGE: 'usage',
     };
 
     const COLORS = [
@@ -225,6 +232,7 @@
 
             accentColor: localStorage.getItem(SETTINGS.ACCENT_COLOR) || 'primary',
             randomColors: JSON.parse(localStorage.getItem(SETTINGS.RANDOM_COLORS)) === true,
+            usage: localStorage.getItem(SETTINGS.USAGE) || 'js',
             activeIcon: null,
             isIconActive: false,
 
@@ -407,7 +415,10 @@
             },
             'filters.outline'() {
                 localStorage.setItem(SETTINGS.OUTLINE, this.filters.outline);
-            }
+            },
+            usage() {
+                localStorage.setItem(SETTINGS.USAGE, this.usage);
+            },
         },
     };
 </script>

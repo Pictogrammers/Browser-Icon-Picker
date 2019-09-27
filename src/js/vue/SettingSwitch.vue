@@ -1,7 +1,7 @@
 <template>
     <div
         class="switch"
-        :class="{active: value}"
+        :class="{active: value, boolean}"
     >
         <div class="handle"></div>
     </div>
@@ -19,6 +19,11 @@
                 type: Function,
                 required: false,
             },
+            boolean: {
+                type: Boolean,
+                required: false,
+                default: false,
+            }
         },
     }
 </script>
