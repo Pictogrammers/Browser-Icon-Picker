@@ -141,7 +141,15 @@
                         </overflow-menu>
 
                         <div class="icon-name">{{ activeIcon && activeIcon.name }}</div>
-                        <div class="icon-class">{{ activeIcon && activeIcon.class }}</div>
+                        <div class="icon-usage">{{ activeIcon && activeIcon.class }}</div>
+                        <div class="icon-usage">
+                            <span style="color: #c084ba">import</span>
+                            <span style="color: #ffffff">{</span>
+                            <span style="color: #9ddcfc">mdi{{ activeIcon && activeIcon.name.split('-').map((name) => name.charAt(0).toUpperCase() + name.slice(1)).join('') }}</span>
+                            <span style="color: #ffffff">}</span>
+                            <span style="color: #c084ba">from</span>
+                            <span style="color: #cd917b">'@mdi/js'</span><span style="color: #ffffff">;</span>
+                        </div>
                         <div class="icon-more">
                             <span class="icon-codepoint">{{ activeIcon && activeIcon.codepoint }}</span>
                             <span

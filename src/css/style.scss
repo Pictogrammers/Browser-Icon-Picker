@@ -53,7 +53,7 @@ body {
     color: $color-text-dark;
 
     cursor: default;
-    -webkit-user-select: none;
+    user-select: none;
 }
 
 * {
@@ -215,7 +215,7 @@ header.header {
         text-align: center;
         font-size: 19px;
         cursor: default;
-        -webkit-user-select: none;
+        user-select: none;
         opacity: 0.6;
 
         i {
@@ -310,8 +310,11 @@ header.header {
     align-items: center;
     border-radius: 10px 10px 0 0;
 
+    $icon-size: 56px;
+    $icon-margin-l: 5px;
+    $icon-margin-r: 20px;
+
     .icon-icon {
-        $icon-size: 1.6em;
         width: $icon-size;
         height: $icon-size;
         flex-shrink: 0;
@@ -319,7 +322,7 @@ header.header {
         color: $icons-color-hover;
         line-height: $icon-size;
         font-size: 35px;
-        margin: 5px 20px 5px 5px;
+        margin: 5px $icon-margin-r 5px $icon-margin-l;
         border-radius: 50%;
         transition-duration: $timing-short;
     }
@@ -330,12 +333,13 @@ header.header {
 
     .properties {
         flex-grow: 1;
+        width: calc(100% - #{$icon-size + $icon-margin-l + $icon-margin-r});
 
         .icon-name {
             font-size: 20px;
             margin-top: 5px;
         }
-        .icon-class {
+        .icon-usage {
             display: block;
             font-family: monospace;
             white-space: pre;
@@ -353,8 +357,8 @@ header.header {
             @extend .elevation-negative;
         }
 
-        .icon-name, .icon-class {
-            -webkit-user-select: text;
+        .icon-name, .icon-usage {
+            user-select: text;
         }
 
         .icon-more {
@@ -363,7 +367,7 @@ header.header {
             margin-bottom: 8px;
 
             .icon-codepoint, .icon-version, .icon-author {
-                -webkit-user-select: text;
+                user-select: text;
             }
         }
     }
