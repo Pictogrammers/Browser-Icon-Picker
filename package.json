@@ -1,6 +1,6 @@
 {
     "name": "MaterialDesignIcons-Picker",
-    "version": "2.10.0",
+    "version": "2.11.0",
     "description": "Quick & easy icon picker",
     "main": "src/index.js",
     "repository": "git@github.com:chteuchteu/MaterialDesignIcons-Picker.git",
@@ -35,7 +35,7 @@
         "vue-loader": "^13.6.1",
         "vue-template-compiler": "^2.5.13",
         "webpack": "^3.10.0",
-        "webpack-dev-server": "^3.1.11",
+        "webpack-dev-server": "^2.9.7",
         "yauzl": "^2.10.0",
         "yazl": "^2.5.1"
     },
