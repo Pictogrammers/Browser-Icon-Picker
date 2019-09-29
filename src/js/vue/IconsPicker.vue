@@ -147,8 +147,8 @@
                         </overflow-menu>
 
                         <div class="icon-name">{{ activeIcon && activeIcon.name }}</div>
-                        <div class="icon-usage" v-if="usage === 'webfont'">{{ activeIcon && activeIcon.class }}</div>
-                        <div class="icon-usage" v-else>
+                        <div class="icon-usage" v-if="usage === 'webfont'" @click="selectText($event)">{{ activeIcon && activeIcon.class }}</div>
+                        <div class="icon-usage" v-else @click="selectText($event)">
                             <span style="color: #c084ba">import</span>
                             <span style="color: #ffffff">{</span>
                             <span style="color: #9ddcfc">mdi{{ activeIcon && activeIcon.name.split('-').map((name) => name.charAt(0).toUpperCase() + name.slice(1)).join('') }}</span>
@@ -393,6 +393,15 @@
                     .then((response) => {
                         this.cachedSvgs[id] = response;
                     });
+            },
+            selectText(e) {
+                // Find .icon-usage
+                const usage = e.target.closest('.icon-usage');
+                const selection = window.getSelection();
+                const range = document.createRange();
+                range.selectNodeContents(usage);
+                selection.removeAllRanges();
+                selection.addRange(range);
             },
         },
         watch: {
