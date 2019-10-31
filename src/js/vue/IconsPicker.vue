@@ -373,7 +373,7 @@
                 // Add namespace to <svg tag
                 const svg = this.cachedSvgs[id].replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
 
-                const blob = new Blob([svg], {type: "text/plain"});
+                const blob = new Blob([svg], {type: "image/svg+xml"});
                 const url = URL.createObjectURL(blob);
 
                 chrome.downloads.download({
