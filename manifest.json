@@ -3,7 +3,7 @@
 
     "name": "MaterialDesignIcons Picker",
     "description": "Quick & easy icon picker",
-    "version": "2.13.1",
+    "version": "2.14.1",
     "icons": {
         "16": "dist/img/icon-16x16.png",
         "32": "dist/img/icon-32x32.png",
