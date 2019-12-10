@@ -137,6 +137,7 @@ const updateVersionNumbers = () => {
     let version = readManifest().version;
     const parts = version.split('.');
     parts[1]++; // v2.9.0 -> v2.10.0
+    parts[2] = '0'; // v2.9.1 -> v2.10.0
     version = parts.join('.');
 
     // We could decode, update and re-encode JSON, but it would mess up with current formatting: use sed instead
