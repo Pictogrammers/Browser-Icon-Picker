@@ -68,9 +68,19 @@ const pullIcons = async () => {
         const webfontZipPath = `${workspace}/${flavour}-webfont.zip`;
         const webfontExtractedZipPath = `${workspace}/${flavour}-webfont`;
         fs.mkdirSync(webfontExtractedZipPath);
-        await upstream.downloadWebfontZip(webfontZipPath, flavour, version);
+        try {
+            await upstream.downloadWebfontZip(webfontZipPath, flavour, version);
+        } catch (e) {
+            log(chalk.red('Failed.'));
+            return;
+        }
         log(`Downloaded webfont ZIP ✔️`);
-        await upstream.extractZip(webfontZipPath, webfontExtractedZipPath, `^MaterialDesign(Light)?-Webfont-${escapedVersion}\/(css\/materialdesignicons(-light)?\.min\.css|fonts\/materialdesignicons(-light)?-webfont\.woff2)$`);
+        try {
+            await upstream.extractZip(webfontZipPath, webfontExtractedZipPath, `^MaterialDesign(Light)?-Webfont-${escapedVersion}\/(css\/materialdesignicons(-light)?\.min\.css|fonts\/materialdesignicons(-light)?-webfont\.woff2)$`);
+        } catch (e) {
+            log(chalk.red('Failed.'));
+            return;
+        }
         log(`Extracted webfont ZIP ✔️`);
         // Copy files
         fs.copyFileSync(`${webfontExtractedZipPath}/materialdesignicons${flavour === 'light' ? '-light': ''}.min.css`, `${dist}/css/materialdesignicons${flavour === 'light' ? '-light': ''}.min.css`);

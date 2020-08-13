@@ -49,7 +49,13 @@ const getMeta = async (version, flavour = 'default') => {
 const download = async(url, destPath) => {
     return new Promise((resolve, reject) => {
         request(url)
+            .on('error', () => reject())
             .on('response', (res) => {
+                if (res.statusCode !== 200) {
+                    reject(res.statusCode);
+                    return;
+                }
+
                 res.pipe(fs.createWriteStream(destPath));
             })
             .on('end', () => {
