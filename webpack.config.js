@@ -1,13 +1,8 @@
 const path = require('path'),
-    UglifyJSPlugin = require('uglifyjs-webpack-plugin'),
-    ExtractTextPlugin = require("extract-text-webpack-plugin");
+    TerserPlugin = require('terser-webpack-plugin'),
+    VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const isDev = process.env.NODE_ENV === "development";
-
-const extractSass = new ExtractTextPlugin({
-    filename: "[name].css",
-    disable: isDev
-});
 
 const webpack = {
     entry: './src/index.js',
@@ -15,40 +10,32 @@ const webpack = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.js'
     },
-    resolve: {
-        alias: {
-            vue: 'vue/dist/vue.js'
-        }
-    },
     module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
-            }
-        ],
         rules: [
             {
                 test: /\.vue$/,
                 loader: 'vue-loader'
             },
             {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/
+            },
+            {
                 test: /\.scss$/,
-                use: extractSass.extract({
-                    use: [{
-                        loader: "css-loader"
-                    }, {
-                        loader: "sass-loader"
-                    }],
-                    // use style-loader in development
-                    fallback: "style-loader"
-                })
-            }
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                    // Compiles Sass to CSS
+                    'sass-loader',
+                ]
+            },
         ]
     },
     plugins: [
-        extractSass
+        new VueLoaderPlugin(),
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist')
@@ -56,7 +43,10 @@ const webpack = {
 };
 
 if (!isDev) {
-    webpack.plugins.push(new UglifyJSPlugin());
+    webpack.optimization = {
+        minimize: true,
+        minimizer: [new TerserPlugin()],
+    };
 }
 
 module.exports = webpack;
