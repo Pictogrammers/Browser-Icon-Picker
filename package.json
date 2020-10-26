@@ -1,5 +1,5 @@
 {
-    "name": "MaterialDesignIcons-Picker",
+    "name": "materialdesignicons-picker",
     "version": "2.25.0",
     "description": "Quick & easy icon picker",
     "main": "src/index.js",
@@ -7,7 +7,7 @@
     "author": "Quentin Stoeckel <stoeckel.quentin@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "start": "webpack-dev-server",
+        "start": "webpack serve",
         "build": "cross-env NODE_ENV=production webpack"
     },
     "dependencies": {
@@ -36,6 +36,7 @@
         "vue-loader": "^15.9.3",
         "vue-template-compiler": "^2.6.12",
         "webpack": "^5.1.3",
+        "webpack-cli": "^4.1.0",
         "webpack-dev-server": "^3.11.0",
         "yauzl": "^2.10.0",
         "yazl": "^2.5.1"
@@ -49,7 +50,6 @@
     "devDependencies": {
         "@actions/core": "^1.1.1",
         "@actions/github": "^1.1.0",
-        "chalk": "^2.4.2",
-        "webpack-cli": "^4.1.0"
+        "chalk": "^2.4.2"
     }
 }
