@@ -11,6 +11,10 @@ const repo = {
     default: 'MaterialDesign',
     light: 'MaterialDesignLight',
 };
+const package = {
+    default: '@mdi/svg',
+    light: '@mdi/light-svg',
+}
 
 /**
  * Hits the specified URL, and returns the JSON-decoded response.
@@ -20,7 +24,7 @@ const getJson = (url) => {
         request({url, json: true}, (error, response, body) => {
             if (error) reject(error);
             if (response.statusCode !== 200) {
-                reject('Invalid status code <' + response.statusCode + '>');
+                reject('Invalid status code <' + response.statusCode + '> from URI ' + url);
             }
 
             resolve(body);
@@ -42,7 +46,7 @@ const getLatestVersion = async (flavour = 'default') => {
  * Downloads the meta.json file for the specified version and flavour.
  */
 const getMeta = async (version, flavour = 'default') => {
-    const url = `http://cdn.materialdesignicons.com/${flavour === 'light' ? 'light/' : ''}${version}/meta.json`;
+    const url = `https://cdn.jsdelivr.net/npm/${package[flavour]}@${version}/meta.json`;
     return await getJson(url);
 };
 

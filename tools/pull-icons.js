@@ -76,13 +76,22 @@ const pullIcons = async () => {
         }
         log(`Downloaded webfont ZIP ✔️`);
         try {
-            await upstream.extractZip(webfontZipPath, webfontExtractedZipPath, `^MaterialDesign(Light)?-Webfont-${escapedVersion}\/(css\/materialdesignicons(-light)?\.min\.css|fonts\/materialdesignicons(-light)?-webfont\.woff2)$`);
+            await upstream.extractZip(webfontZipPath, webfontExtractedZipPath, `^MaterialDesign(Light)?-Webfont-${escapedVersion}\/(css\/materialdesignicons(-light)?\.min\.css|fonts\/materialdesignicons(-light)?-webfont\.woff2?)$`);
         } catch (e) {
             log(chalk.red('Failed.'));
             return;
         }
         log(`Extracted webfont ZIP ✔️`);
         // Copy files
+        const webfontZipFiles = [
+            `css/materialdesignicons${flavour === 'light' ? '-light': ''}.min.css`,
+            `fonts/materialdesignicons${flavour === 'light' ? '-light': ''}-webfont.woff`,
+            `fonts/materialdesignicons${flavour === 'light' ? '-light': ''}-webfont.woff2`,
+        ];
+        for (const file of webfontZipFiles) {
+            const filename = file.split('/')[1]; // css/file.ext -> file.ext
+            fs.copyFileSync(`${webfontExtractedZipPath}/${filename}`, `${dist}/${file}`);
+        }
         fs.copyFileSync(`${webfontExtractedZipPath}/materialdesignicons${flavour === 'light' ? '-light': ''}.min.css`, `${dist}/css/materialdesignicons${flavour === 'light' ? '-light': ''}.min.css`);
         fs.copyFileSync(`${webfontExtractedZipPath}/materialdesignicons${flavour === 'light' ? '-light': ''}-webfont.woff2`, `${dist}/fonts/materialdesignicons${flavour === 'light' ? '-light': ''}-webfont.woff2`);
 
