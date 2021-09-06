@@ -20,11 +20,15 @@ Once started, open your browser on `http://127.0.0.1:8080`!
 
 ## Release
 
-Run `update-icons-list.js` to get the latest icons, and `prepare-release.js` to build, tag & pack a new version.
+1. Check latest published version [from npm registry](https://www.npmjs.com/package/@mdi/font)
+2. Update version in [package.json](./package.json): `materialdesignicons-picker.version.default`
+3. Pull the icons:
+    ```bash
+    node tools/pull-icons.js
+    ```
+4. Tag a release & pack a new version:
+    ```bash
+    node tools/prepare-release.js
+    ```
 
-```bash
-nodejs tools/update-icons-list.js
-nodejs tools/prepare-release.js
-```
-
-Your generated artifacts will be outputed in a release/ subdirectory.
+Your generated artifacts are ready in the `release/` subdirectory.
