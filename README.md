@@ -13,10 +13,16 @@
 yarn install
 
 # Run
-yarn run start
-```
+yarn serve
+# Once started, open your browser on `http://127.0.0.1:8080`!
 
-Once started, open your browser on `http://127.0.0.1:8080`!
+# Compiles and minifies for production
+yarn build
+
+# Lints and fixes files
+
+yarn lint
+```
 
 ## Release
 

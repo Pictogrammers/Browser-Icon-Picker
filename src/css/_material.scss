@@ -27,7 +27,6 @@ $timing-short:          150ms;
 $timing-medium:         250ms;
 $timing-long:           350ms;
 
-// https://material.io/guidelines/motion/movement.html#movement-movement-in-out-of-screen-bounds
-// https://material.io/guidelines/motion/duration-easing.html
-$curve-deceleration: cubic-bezier(0.0, 0.0, 0.2, 1);
-$curve-sharp: cubic-bezier(0.4, 0.0, 0.6, 1);
+// https://material.io/design/motion/the-motion-system.html#fade
+$timing-function-in: cubic-bezier(0.0, 0.0, 0.2, 1);
+$timing-function-out: cubic-bezier(0.4, 0.0, 1, 1);

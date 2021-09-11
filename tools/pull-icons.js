@@ -13,7 +13,7 @@ const upstream = require('./lib/upstream');
 
 const log = console.log;
 const workspace = path.resolve(__dirname, '../temp');
-const dist = path.resolve(__dirname, '../dist');
+const dist = path.resolve(__dirname, '../public');
 
 const readPackageJson = () => {
     return JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf8'));

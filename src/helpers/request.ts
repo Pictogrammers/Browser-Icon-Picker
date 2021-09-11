@@ -4,9 +4,9 @@
  */
 
 /**
- * Super simple ajax request
+ * Super simple xhr request
  */
-const request = (url, method='GET') => {
+const request = (url: string, method = 'GET'): Promise<string> => {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.open(method, url);

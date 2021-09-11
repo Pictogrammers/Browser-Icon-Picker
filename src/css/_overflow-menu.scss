@@ -66,13 +66,18 @@
     }
 }
 .overflow-menu-enter-active {
-    transition: transform 100ms $curve-deceleration;
+    transition-duration: 100ms;
+    transition-property: transform, opacity;
+    transition-timing-function: $timing-function-in;
 }
 .overflow-menu-leave-active {
-    transition: transform 100ms $curve-sharp;
+    transition-duration: 100ms;
+    transition-property: transform, opacity;
+    transition-timing-function: $timing-function-out;
 }
 .overflow-menu-enter, .overflow-menu-leave-to {
-    transform: scaleY(0);
+    transform: scale(0.98) translateY(10px);
+    opacity: 0;
 }
 .overflow-menu-overlay {
     position: absolute;

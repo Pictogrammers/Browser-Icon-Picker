@@ -1,20 +1,18 @@
 /**
  * MaterialDesignIcons-Picker
- *
- * jQuery-inspired functions
  */
 
-const computeOffset = (elem) => {
+const computeOffset = (elem: HTMLElement): {top: number, left: number} => {
     const rect = elem.getBoundingClientRect(),
         bodyElt = document.body;
 
     return {
-        top: rect.top + bodyElt .scrollTop,
-        left: rect.left + bodyElt .scrollLeft
+        top: rect.top + bodyElt.scrollTop,
+        left: rect.left + bodyElt.scrollLeft
     };
 };
 
-const outerHeight = (elem, includeMargin) => {
+const outerHeight = (elem: HTMLElement, includeMargin: boolean): number => {
     let height = elem.offsetHeight;
 
     if (!includeMargin) {

@@ -6,18 +6,18 @@
 @import '~material-scss-colors';
 
 
-$color-primary:     #2196f3;
-$icons-color:       #565656;
+$color-primary: #2196f3;
+$icons-color: #565656;
 $icons-color-hover: #ffffff;
-$background:        #fafafa;
-$color-dark-1:      #1f1f1f;
-$color-dark-2:      #323234;
-$color-dark-3:      #474749;
+$background: #fafafa;
+$color-dark-1: #1f1f1f;
+$color-dark-2: #323234;
+$color-dark-3: #474749;
 
-$icon-size:         24px;
-$icon-margin:       5px;
-$icon-padding:      12px;
-$icon-border:       1px;
+$icon-size: 24px;
+$icon-margin: 5px;
+$icon-padding: 12px;
+$icon-border: 1px;
 $properties-height: 100px;
 
 $transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); // According to material guidelines
@@ -27,403 +27,416 @@ $colors: map-remove($colors, "yellow");
 
 // Add primary color to colors map
 $colors: map-merge($colors, (
-    primary: (
-        "500": $color-primary
-    )
+  primary: (
+    "500": $color-primary
+  )
 ));
 
 @import 'overflow-menu';
 
 // Chrome popup default font style
 body {
-    font-family: $roboto;
-    font-size: 75%;
+  font-family: $roboto;
+  font-size: 75%;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 380px;
-    height: 580px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 380px;
+  height: 580px;
 }
 
 body {
-    font-family: $roboto;
-    color: $color-text-dark;
+  font-family: $roboto;
+  color: $color-text-dark;
 
-    cursor: default;
-    user-select: none;
+  cursor: default;
+  user-select: none;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
 
 // Global layout
 body {
-    display: flex;
+  display: flex;
 }
+
 .app {
-    position: relative;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
+
 header.header {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
+
 .content {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  position: relative;
+
+  .icons {
     flex-grow: 1;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    position: relative;
-
-    .icons {
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
+    flex-shrink: 1;
+  }
 }
 
 header.header {
-    padding: 5px 10px;
+  padding: 5px 10px;
 
-    color: #fff;
-    background-color: $color-primary;
-    @extend .elevation-tiny;
+  color: #fff;
+  background-color: $color-primary;
+  @extend .elevation-tiny;
 
-    @at-root .dark-theme & {
-        background-color: $color-dark-1;
-    }
+  @at-root .dark-theme & {
+    background-color: $color-dark-1;
+  }
 
-    h1 {
-        font-size: 22px;
-        font-weight: normal;
-        margin: 5px 0;
-        display: inline-block;
+  h1 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 5px 0;
+    display: inline-block;
 
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        i {
-            font-size: 24px;
-            vertical-align: baseline;
-            margin: 0 10px 0 5px;
-        }
-    }
-
-    .title {
-        display: flex;
-        align-items: center;
-
-        .mdi-dots-vertical {
-            cursor: pointer;
-            margin-left: auto;
-            font-size: 20px;
-        }
-    }
-
-    .search-wrap {
-        padding-left: 45px;
-        position: relative;
-
-        .search {
-            width: 100%;
-            margin: 5px 0;
-            padding: 6px 2px;
-            font-family: $roboto;
-            font-size: 15px;
-            color: #fff;
-            outline: none;
-            border: 0;
-            background: transparent;
-            transition-duration: $timing-medium;
-            box-shadow: 0 1px rgba(#ffffff, 0.7);
-
-            &:active, &:focus {
-                box-shadow: 0 2px rgba(#ffffff, 0.9);
-            }
-        }
-
-        ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-            color: #fff;
-            opacity: 0.7;
-        }
-
-        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-            color: #fff;
-            opacity: 0.7;
-        }
-
-        ::-moz-placeholder { /* Mozilla Firefox 19+ */
-            color: #fff;
-            opacity: 0.7;
-        }
-
-        .search-clear {
-            $size: 16px;
-            position: absolute;
-            z-index: 1;
-            right: $size/2;
-            top: 50%;
-            margin-top: -$size/2;
-            opacity: 0.8;
-            transition-duration: $timing-short;
-            cursor: pointer;
-
-            &:hover {
-                opacity: 1;
-            }
-
-            &.hidden {
-                opacity: 0;
-            }
-
-            &:before {
-                font-size: $size;
-            }
-        }
-    }
-
-    .overflow-menu-container {
-        margin-left: auto;
-    }
-}
-
-.content {
-    position: relative;
-    overflow: hidden;
-
-    .loading {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 19px;
-        cursor: default;
-        user-select: none;
-        opacity: 0.6;
-
-        i {
-            font-size: 25px;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-    }
-}
-
-.icons {
-    font-size: 0;
-    overflow-y: scroll;
-    text-align: center;
-    background: $background;
-
-    @at-root .dark-theme & {
-        background: $color-dark-2;
+    a {
+      color: #fff;
+      text-decoration: none;
     }
 
     i {
-        display: inline-block;
-        margin: $icon-margin;
-        padding: $icon-padding;
-        border: $icon-border solid transparent;
-        border-radius: 2px;
-        transition-duration: $timing-short;
-        width: $icon-size + 2*($icon-padding) + 2*($icon-border);
-        height: $icon-size + 2*($icon-padding) + 2*($icon-border);
-        line-height: $icon-size;
+      font-size: 24px;
+      vertical-align: baseline;
+      margin: 0 10px 0 5px;
+    }
+  }
 
-        color: $icons-color;
-        @at-root .dark-theme & {
-            color: rgba(#fff, 0.8);
-        }
-        font-size: $icon-size;
-        overflow: hidden;
+  .title {
+    display: flex;
+    align-items: center;
 
-        &:hover {
-            border-color: rgba(#000, 0.1);
-        }
+    .mdi-dots-vertical {
+      cursor: pointer;
+      margin-left: auto;
+      font-size: 20px;
+    }
+  }
 
-        &.active {
-            color: $icons-color-hover!important;
-        }
+  .search-wrap {
+    padding-left: 45px;
+    position: relative;
 
-        &.mdi-blank {
-            border-color: rgba(#000, 0.3);
-            border-style: dashed;
-        }
+    .search {
+      width: 100%;
+      margin: 5px 0;
+      padding: 6px 2px;
+      font-family: $roboto;
+      font-size: 15px;
+      color: #fff;
+      outline: none;
+      border: 0;
+      background: transparent;
+      transition-duration: $timing-medium;
+      box-shadow: 0 1px rgba(#ffffff, 0.7);
+
+      &:active, &:focus {
+        box-shadow: 0 2px rgba(#ffffff, 0.9);
+      }
     }
 
-    .properties-spacer {
-        width: 100%;
-        height: $properties-height;
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: #fff;
+      opacity: 0.7;
     }
+
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: #fff;
+      opacity: 0.7;
+    }
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: #fff;
+      opacity: 0.7;
+    }
+
+    .search-clear {
+      $size: 16px;
+      position: absolute;
+      z-index: 1;
+      right: $size/2;
+      top: 50%;
+      margin-top: -$size/2;
+      opacity: 0.8;
+      transition-duration: $timing-short;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.hidden {
+        opacity: 0;
+      }
+
+      &:before {
+        font-size: $size;
+      }
+    }
+  }
+
+  .overflow-menu-container {
+    margin-left: auto;
+  }
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+
+  .loading {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    cursor: default;
+    user-select: none;
+    opacity: 0.6;
+
+    i {
+      font-size: 25px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
+
+.icons {
+  font-size: 0;
+  overflow-y: scroll;
+  text-align: center;
+  background: $background;
+
+  @at-root .dark-theme & {
+    background: $color-dark-2;
+  }
+
+  i {
+    display: inline-block;
+    margin: $icon-margin;
+    padding: $icon-padding;
+    border: $icon-border solid transparent;
+    border-radius: 2px;
+    transition-duration: $timing-short;
+    width: $icon-size + 2*($icon-padding) + 2*($icon-border);
+    height: $icon-size + 2*($icon-padding) + 2*($icon-border);
+    line-height: $icon-size;
+
+    color: $icons-color;
+    @at-root .dark-theme & {
+      color: rgba(#fff, 0.8);
+    }
+    font-size: $icon-size;
+    overflow: hidden;
+
+    &:hover {
+      border-color: rgba(#000, 0.1);
+    }
+
+    &.active {
+      color: $icons-color-hover !important;
+    }
+
+    &.mdi-blank {
+      border-color: rgba(#000, 0.3);
+      border-style: dashed;
+    }
+  }
+
+  .properties-spacer {
+    width: 100%;
+    height: $properties-height;
+  }
 }
 
 // Random icons colors
 .random-icon-colors {
-    @for $i from 1 through length($colors) {
-        .icons i:nth-child(#{$i}n) {
-            color: map-get(nth(map-values($colors), $i), "500");
-        }
+  @for $i from 1 through length($colors) {
+    .icons i:nth-child(#{$i}n) {
+      color: map-get(nth(map-values($colors), $i), "500");
     }
+  }
 }
 
 .properties-enter-active {
-    transition: transform 100ms $curve-deceleration;
+  transition-duration: 100ms;
+  transition-property: transform, opacity;
+  transition-timing-function: $timing-function-in;
 }
+
 .properties-leave-active {
-    transition: transform 100ms $curve-sharp;
+  transition-duration: 100ms;
+  transition-property: transform, opacity;
+  transition-timing-function: $timing-function-out;
 }
+
 .properties-enter, .properties-leave-to {
-    transform: translateY($properties-height);
+  transform: scale(0.98) translateY(10px);
+  opacity: 0;
 }
+
 .icon-properties {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    // Width is computed from JS, since we don't know .icons scrollbar width
-    // width: calc(100% - 10px)
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  // Width is computed from JS, since we don't know .icons scrollbar width
+  // width: calc(100% - 10px)
 
-    @extend .elevation-low;
-    background: #ffffff;
-    @at-root .dark-theme & {
-        color: rgba(#fff, 0.8);
-        background: $color-dark-3;
-    }
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 10px 10px 0 0;
+  @extend .elevation-low;
+  background: #ffffff;
+  @at-root .dark-theme & {
+    color: rgba(#fff, 0.8);
+    background: $color-dark-3;
+  }
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
 
-    $icon-size: 56px;
-    $icon-margin-l: 5px;
-    $icon-margin-r: 20px;
+  $icon-size: 56px;
+  $icon-margin-l: 5px;
+  $icon-margin-r: 20px;
 
-    .icon-icon {
-        width: $icon-size;
-        height: $icon-size;
-        flex-shrink: 0;
-        text-align: center;
-        color: $icons-color-hover;
-        line-height: $icon-size;
-        font-size: 35px;
-        margin: 5px $icon-margin-r 5px $icon-margin-l;
-        border-radius: 50%;
-        transition-duration: $timing-short;
-    }
+  .icon-icon {
+    width: $icon-size;
+    height: $icon-size;
+    flex-shrink: 0;
+    text-align: center;
+    color: $icons-color-hover;
+    line-height: $icon-size;
+    font-size: 35px;
+    margin: 5px $icon-margin-r 5px $icon-margin-l;
+    border-radius: 50%;
+    transition-duration: $timing-short;
+  }
 
-    &:not(.inactive) .icon-icon {
-        cursor: pointer;
-    }
+  &:not(.inactive) .icon-icon {
+    cursor: pointer;
+  }
 
-    .properties {
-        flex-grow: 1;
-        width: calc(100% - #{$icon-size + $icon-margin-l + $icon-margin-r});
+  .properties {
+    flex-grow: 1;
+    width: calc(100% - #{$icon-size + $icon-margin-l + $icon-margin-r});
 
-        .icon-name {
-            font-size: 20px;
-            margin-top: 5px;
-        }
-        .icon-usage {
-            display: block;
-            font-family: monospace;
-            white-space: pre;
-            border: 0;
-            font-size: 1em;
-            width: 100%;
-            cursor: text;
-            margin: 5px 0;
-            padding: 5px 8px;
-            border-radius: 2px;
-            color: #a5c25c;
-            background: #2b2b2b;
-            overflow-x: hidden;
-            @extend .elevation-negative;
-        }
-
-        .icon-name, .icon-usage {
-            user-select: text;
-        }
-
-        .icon-more {
-            margin: 0;
-            opacity: 0.5;
-            margin-bottom: 8px;
-
-            .icon-codepoint, .icon-version, .icon-author {
-                user-select: text;
-            }
-        }
+    .icon-name {
+      font-size: 20px;
+      margin-top: 5px;
     }
 
-    .overflow-menu-container {
-        float: right;
-        margin-top: 5px;
-
-        i.mdi-dots-vertical {
-            font-size: 18px;
-            cursor: pointer;
-        }
+    .icon-usage {
+      display: block;
+      font-family: monospace;
+      white-space: pre;
+      border: 0;
+      font-size: 1em;
+      width: 100%;
+      cursor: text;
+      margin: 5px 0;
+      padding: 5px 8px;
+      border-radius: 2px;
+      color: #a5c25c;
+      background: #2b2b2b;
+      overflow-x: hidden;
+      @extend .elevation-negative;
     }
+
+    .icon-name, .icon-usage {
+      user-select: text;
+    }
+
+    .icon-more {
+      margin: 0;
+      opacity: 0.5;
+      margin-bottom: 8px;
+
+      .icon-codepoint, .icon-version, .icon-author {
+        user-select: text;
+      }
+    }
+  }
+
+  .overflow-menu-container {
+    float: right;
+    margin-top: 5px;
+
+    i.mdi-dots-vertical {
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
 }
 
 // Accent color change
 @each $color, $shades in $colors {
-    .accent-color--#{$color} {
-        .icons i.active,
-        .icon-properties .icon-icon {
-            background-color: map-get($shades, "500");
-        }
-
-        .icon-properties .icon-icon:hover {
-            background-color: darken(map-get($shades, "500"), 5);
-        }
-
-        .switch.boolean.active {
-            background-color: rgba(map-get($shades, "500"), 0.3);
-
-            .handle {
-                background-color: map-get($shades, "500");
-            }
-        }
+  .accent-color--#{$color} {
+    .icons i.active,
+    .icon-properties .icon-icon {
+      background-color: map-get($shades, "500");
     }
+
+    .icon-properties .icon-icon:hover {
+      background-color: darken(map-get($shades, "500"), 5);
+    }
+
+    .switch.boolean.active {
+      background-color: rgba(map-get($shades, "500"), 0.3);
+
+      .handle {
+        background-color: map-get($shades, "500");
+      }
+    }
+  }
 }
 
 .switch {
-    position: relative;
-    width: 30px;
-    height: 12px;
-    background: rgba(#000, 0.38);
-    border-radius: 7px;
-    transition: $timing-short background $transition-timing-function;
+  position: relative;
+  width: 30px;
+  height: 12px;
+  background: rgba(#000, 0.38);
+  border-radius: 7px;
+  transition: $timing-short background $transition-timing-function;
 
-    .handle {
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        margin-top: -2px;
-        background: #fff;
-        box-shadow: $elevation-1;
-        transition: $timing-short background $transition-timing-function, $timing-short transform $transition-timing-function;
-    }
+  .handle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-top: -2px;
+    background: #fff;
+    box-shadow: $elevation-1;
+    transition: $timing-short background $transition-timing-function, $timing-short transform $transition-timing-function;
+  }
 
-    &.active .handle {
-        transform: translateX(14px);
-    }
+  &.active .handle {
+    transform: translateX(14px);
+  }
 }
