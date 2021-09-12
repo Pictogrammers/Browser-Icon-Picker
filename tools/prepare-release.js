@@ -21,12 +21,11 @@ const BUILDS = {
 };
 
 const FILES = [
-    'dist/app.js',
     'dist/index.html',
-    'dist/main.css',
     'dist/css/*',
     'dist/fonts/*',
     'dist/img/*',
+    'dist/js/*',
     'dist/data/svg/*',
 ];
 
