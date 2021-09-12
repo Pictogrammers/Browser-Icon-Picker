@@ -280,7 +280,7 @@ header.header {
   transition-timing-function: $timing-function-out;
 }
 
-.properties-enter, .properties-leave-to {
+.properties-enter-from, .properties-leave-to {
   transform: scale(0.98) translateY(10px);
   opacity: 0;
 }
