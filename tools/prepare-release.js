@@ -2,6 +2,11 @@
  * MaterialDesignIcons
  *
  * Builds the project, and generates release artifacts.
+ * Usage:
+ * ```bash
+ * node tools/prepare-release.js
+ * node tools/prepare-release.js 1.2.3
+ * ```
  */
 
 const fs = require('fs');
@@ -129,14 +134,18 @@ const prepareFirefoxReviewZip = () => {
         });
 };
 
-const updateVersionNumbers = () => {
+const updateVersionNumbers = (version) => {
     console.log(chalk.blue(`Updating version numbers`));
 
-    let version = readManifest().version;
-    const parts = version.split('.');
-    parts[1]++; // v2.9.0 -> v2.10.0
-    parts[2] = '0'; // v2.9.1 -> v2.10.0
-    version = parts.join('.');
+    if (version) {
+      console.log(`Using provided version ${version}`)
+    } else {
+      version = readManifest().version;
+      const parts = version.split('.');
+      parts[1]++; // v2.9.0 -> v2.10.0
+      parts[2] = '0'; // v2.9.1 -> v2.10.0
+      version = parts.join('.');
+    }
 
     // We could decode, update and re-encode JSON, but it would mess up with current formatting: use sed instead
     for (let file of ['manifest.json', 'package.json']) {
@@ -165,7 +174,9 @@ try {
 }
 console.log('');
 
-updateVersionNumbers();
+// Parse cli args
+const nextVersion = process.argv.length > 2 ? process.argv[2] : null;
+updateVersionNumbers(nextVersion);
 console.log('');
 
 for (const build of Object.keys(BUILDS)) {
