@@ -27,7 +27,6 @@ const FILES = [
     'dist/css/*',
     'dist/fonts/*',
     'dist/img/*',
-    'dist/data/icons.min.json',
     'dist/data/svg/*',
 ];
 

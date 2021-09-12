@@ -77,10 +77,6 @@
     </header>
 
     <div class="content">
-      <div v-if="loading" class="loading">
-        <i class="mdi mdi-cached"></i> Loading&hellip;
-      </div>
-
       <div
         class="icons"
         ref="icons"
@@ -187,6 +183,7 @@ import {outerHeight, computeOffset} from '@/helpers/dom';
 import {Icon} from '@/types';
 import {randomInt} from '@/helpers/math';
 import {getBrowserInstance} from '@/helpers/extension';
+import * as icons from '../public/data/icons.json';
 
 const SETTINGS = {
   ACCENT_COLOR: 'color-accent',
@@ -222,15 +219,14 @@ export default defineComponent({
   name: 'icons-picker',
   components: {OverflowMenu, SettingSwitch},
   data: () => ({
-    loading: true,
     darkTheme: isDarkTheme(),
     search: '',
     filters: {
       flavour: (localStorage.getItem(SETTINGS.FLAVOUR) || 'default') as 'default'|'light', // "default" vs "light"
       outline: (localStorage.getItem(SETTINGS.OUTLINE) || 'both') as 'both'|'outline', // "both" vs "outline"
     },
-    icons: {} as {default: Icon[], light: Icon[]},
-    version: {} as {default: string, light: string}|Record<string, never>,
+    icons: icons.icons as {default: Icon[], light: Icon[]},
+    version: icons.version as {default: string, light: string}|Record<string, never>,
     openOverflowMenu: null as (typeof OverflowMenu)|null,
 
     accentColor: localStorage.getItem(SETTINGS.ACCENT_COLOR) || 'primary',
@@ -245,10 +241,6 @@ export default defineComponent({
   }),
   computed: {
     filteredIcons(): Icon[] {
-      if (this.loading) {
-        return [];
-      }
-
       const searchVal = this.search
         .replace(searchReplaceRegex, ' ')
         .toLowerCase();
@@ -261,15 +253,6 @@ export default defineComponent({
     },
   },
   mounted() {
-    // Load icons
-    request(getResourceUrl('icons.min.json'))
-      .then(JSON.parse)
-      .then((response) => {
-        this.loading = false;
-        this.icons = response.icons;
-        this.version = response.version;
-      });
-
     // Inspect browser's scrollbar width.
     // It's used to adjust .icon-properties width
     const iconsElement = this.$refs.icons as HTMLElement;

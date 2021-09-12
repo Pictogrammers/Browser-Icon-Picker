@@ -209,25 +209,6 @@ header.header {
 .content {
   position: relative;
   overflow: hidden;
-
-  .loading {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 19px;
-    cursor: default;
-    user-select: none;
-    opacity: 0.6;
-
-    i {
-      font-size: 25px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-  }
 }
 
 .icons {
