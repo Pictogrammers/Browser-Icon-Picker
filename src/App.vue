@@ -274,6 +274,8 @@ export default defineComponent({
     // It's used to adjust .icon-properties width
     const iconsElement = this.$refs.icons as HTMLElement;
     this.browserScrollbarWidth = iconsElement.offsetWidth - iconsElement.clientWidth;
+
+    document.dispatchEvent(new Event('prerender-ready'));
   },
   methods: {
     setActiveIcon(icon: Icon|null, ensureVisible=false): void {
