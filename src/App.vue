@@ -183,7 +183,7 @@ import {outerHeight, computeOffset} from '@/helpers/dom';
 import {Icon} from '@/types';
 import {randomInt} from '@/helpers/math';
 import {getBrowserInstance} from '@/helpers/extension';
-import * as icons from '../public/data/icons.json';
+import * as icons from '../public/data/icons.min2.json';
 
 const SETTINGS = {
   ACCENT_COLOR: 'color-accent',

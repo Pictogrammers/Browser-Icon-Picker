@@ -157,6 +157,7 @@ const pullIcons = async () => {
     // Dump to file
     log('Writing JSON files...');
     fs.writeFileSync(`${dist}/data/icons.json`, JSON.stringify(data, null, 4));
+    fs.writeFileSync(`${dist}/data/icons.min.json`, JSON.stringify(data));
     log(chalk.green(`Done! ✔`));
 
     // Clean
