@@ -190,7 +190,7 @@ import {request} from '@/helpers/request';
 import {getScrollbarWidth} from '@/helpers/dom';
 import {Icon} from '@/types';
 import {getBrowserInstance} from '@/helpers/extension';
-import * as icons from '../public/data/icons.min2.json';
+import * as icons from '../public/data/icons.min.json';
 import {objectChunk} from '@/helpers/array';
 
 const SETTINGS = {
