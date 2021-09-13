@@ -20,10 +20,6 @@
           :on-close="() => this.openOverflowMenu = null"
           attach-to="top"
         >
-          <div @click="setActiveIcon(getRandomIcon(), true)">
-            <i class="mdi mdi-shuffle"></i>
-            Random icon
-          </div>
           <div @click="filters.flavour = filters.flavour === 'light' ? 'default' : 'light'">
             <i class="mdil mdil-account"></i>
             Standard / light
@@ -191,9 +187,8 @@ import OverflowMenu from './components/OverflowMenu.vue';
 import SettingSwitch from './components/SettingSwitch.vue';
 import IconsRow from './components/IconsRow.vue';
 import {request} from '@/helpers/request';
-import {outerHeight, computeOffset, getScrollbarWidth} from '@/helpers/dom';
+import {getScrollbarWidth} from '@/helpers/dom';
 import {Icon} from '@/types';
-import {randomInt} from '@/helpers/math';
 import {getBrowserInstance} from '@/helpers/extension';
 import * as icons from '../public/data/icons.min2.json';
 import {objectChunk} from '@/helpers/array';
@@ -275,42 +270,12 @@ export default defineComponent({
     document.dispatchEvent(new Event('prerender-ready'));
   },
   methods: {
-    setActiveIcon(icon: Icon|null, ensureVisible=false): void {
-      const hasActiveIcon = this.isIconActive;
+    setActiveIcon(icon: Icon|null): void {
       this.isIconActive = icon !== null;
 
       if (icon !== null) {
         this.activeIcon = icon;
-
-        if (ensureVisible) {
-          // Wait for the UI to be updated for calculations
-          const iconElem = (document.querySelector('.mdi-'+icon.name) || document.querySelector('.mdil-'+icon.name)) as HTMLElement,
-            iconsList = this.$refs.icons as HTMLElement;
-
-          const offset = computeOffset(iconElem).top - computeOffset(iconsList).top,
-            iconElemHeight = outerHeight(iconElem, true);
-
-          // Take properties panel height into account when it appears
-          // (it's not shown yet)
-          let iconsListHeight = iconsList.clientHeight;
-          if (!hasActiveIcon) {
-            iconsListHeight -= 80;
-          }
-
-          let scrollTop = iconsList.scrollTop;
-          if (offset - 5 < 0) {
-            scrollTop += offset -5;
-          }
-          else if (offset + iconElemHeight > iconsListHeight) {
-            scrollTop += offset + iconElemHeight - iconsListHeight;
-          }
-
-          iconsList.scrollTop = scrollTop;
-        }
       }
-    },
-    getRandomIcon(): Icon {
-      return this.icons[this.filters.flavour][randomInt(0, this.icons[this.filters.flavour].length-1)];
     },
     changeAccentColor(): void {
       const i = COLORS.indexOf(this.accentColor)+1;
