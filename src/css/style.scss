@@ -238,7 +238,7 @@ header.header {
     margin: $icon-margin;
     padding: $icon-padding;
     border: $icon-border solid transparent;
-    border-radius: 2px;
+    border-radius: 4px;
     transition-duration: $timing-short;
     width: $icon-size + 2*($icon-padding) + 2*($icon-border);
     height: $icon-size + 2*($icon-padding) + 2*($icon-border);

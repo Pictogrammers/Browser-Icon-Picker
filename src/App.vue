@@ -337,6 +337,7 @@ export default defineComponent({
 
       let id = this.activeIcon.id;
 
+      // SVG should have been loaded when overflow menu opened
       if (Object.keys(this.cachedSvgs).indexOf(id) === -1) {
         return;
       }
@@ -351,6 +352,9 @@ export default defineComponent({
         url: url,
         filename: this.activeIcon.name+'.svg',
       });
+
+      // Close overflow menu once done
+      this.openOverflowMenu && this.openOverflowMenu.close();
     },
     onPropertiesOverflowMenuOpened(): void {
       if (!this.activeIcon) {
