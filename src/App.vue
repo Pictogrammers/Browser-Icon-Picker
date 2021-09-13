@@ -82,16 +82,13 @@
         ref="icons"
         @click="setActiveIcon(null)"
       >
-        <i
+        <IconItem
           v-for="icon in filteredIcons"
           :key="icon.id"
-          class="mdi"
-          :class="{
-            [icon.class]: true,
-            active: isIconActive && activeIcon === icon
-          }"
+          :name="icon.name"
+          :class-name="icon.class"
+          :is-active="isIconActive && activeIcon.id === icon.id"
           @click.stop="setActiveIcon(icon)"
-          :title="icon.name"
         />
 
         <div class="properties-spacer"></div>
@@ -178,6 +175,7 @@
 import { defineComponent } from 'vue';
 import OverflowMenu from './components/OverflowMenu.vue';
 import SettingSwitch from './components/SettingSwitch.vue';
+import IconItem from './components/IconItem.vue';
 import {request} from '@/helpers/request';
 import {outerHeight, computeOffset} from '@/helpers/dom';
 import {Icon} from '@/types';
@@ -217,7 +215,7 @@ const isDarkTheme = () => {
 
 export default defineComponent({
   name: 'icons-picker',
-  components: {OverflowMenu, SettingSwitch},
+  components: {OverflowMenu, SettingSwitch, IconItem},
   data: () => ({
     darkTheme: isDarkTheme(),
     search: '',
