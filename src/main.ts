@@ -8,4 +8,11 @@ import App from './App.vue'
 
 require('./css/style.scss');
 
-createApp(App).mount('#app', process.env.NODE_ENV === 'production')
+const init = () => createApp(App).mount('#app', process.env.NODE_ENV === 'production');
+if (window.requestIdleCallback) {
+  window.requestIdleCallback(init, {
+    timeout: 1000,
+  });
+} else {
+  init();
+}
