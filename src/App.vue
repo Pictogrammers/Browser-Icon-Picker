@@ -223,8 +223,8 @@ export default defineComponent({
       flavour: (localStorage.getItem(SETTINGS.FLAVOUR) || 'default') as 'default'|'light', // "default" vs "light"
       outline: (localStorage.getItem(SETTINGS.OUTLINE) || 'both') as 'both'|'outline', // "both" vs "outline"
     },
-    icons: icons.icons as {default: Icon[], light: Icon[]},
-    version: icons.version as {default: string, light: string}|Record<string, never>,
+    icons: Object.freeze(icons.icons) as {default: Icon[], light: Icon[]},
+    version: Object.freeze(icons.version) as {default: string, light: string}|Record<string, never>,
     openOverflowMenu: null as (typeof OverflowMenu)|null,
 
     accentColor: localStorage.getItem(SETTINGS.ACCENT_COLOR) || 'primary',
