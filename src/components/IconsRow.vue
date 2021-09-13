@@ -1,0 +1,39 @@
+<template>
+  <IconItem
+    v-for="icon in icons"
+    :key="icon.id"
+    :name="icon.name"
+    :class-name="icon.class"
+    :is-active="activeIcon && activeIcon.id === icon.id"
+    @click.stop="onClick(icon)"
+  />
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import {Icon} from '@/types';
+import IconItem from './IconItem.vue';
+
+export default defineComponent({
+  name: 'icon',
+  components: {
+    IconItem,
+  },
+  props: {
+    icons: {
+      type: Array as () => Icon[],
+      required: true,
+    },
+    activeIcon: {
+      type: Object as () => Icon|null,
+    },
+  },
+  emits: ['active'],
+  methods: {
+    onClick(iconProxy: Icon) {
+      const icon = {...iconProxy} as Icon;
+      this.$emit('active', icon);
+    }
+  }
+});
+</script>

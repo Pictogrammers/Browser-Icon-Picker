@@ -77,22 +77,35 @@
     </header>
 
     <div class="content">
-      <div
+      <!--
+      item-size is calculated as such:
+      height + padding*2 + border-width*2 + margin*2
+       ┌───────────┐
+       │    5      │
+       │ ┌──1────┐ │
+       │ │  12   │ │
+       │ │ 24x24 │ │
+       │ │  12   │ │
+       │ └──1────┘ │
+       │    5      │
+       └───────────┘
+
+      -->
+      <RecycleScroller
         class="icons"
         ref="icons"
         @click="setActiveIcon(null)"
+        :items="filteredIcons"
+        :item-size="60"
+        v-slot="{ item }"
+        :prerender="15"
       >
-        <IconItem
-          v-for="icon in filteredIcons"
-          :key="icon.id"
-          :name="icon.name"
-          :class-name="icon.class"
-          :is-active="isIconActive && activeIcon.id === icon.id"
-          @click.stop="setActiveIcon(icon)"
+        <IconsRow
+          :icons="item.items"
+          :active-icon="isIconActive ? activeIcon : null"
+          @active="setActiveIcon"
         />
-
-        <div class="properties-spacer"></div>
-      </div>
+      </RecycleScroller>
 
       <transition name="properties">
         <div
@@ -173,15 +186,17 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import OverflowMenu from './components/OverflowMenu.vue';
 import SettingSwitch from './components/SettingSwitch.vue';
-import IconItem from './components/IconItem.vue';
+import IconsRow from './components/IconsRow.vue';
 import {request} from '@/helpers/request';
-import {outerHeight, computeOffset} from '@/helpers/dom';
+import {outerHeight, computeOffset, getScrollbarWidth} from '@/helpers/dom';
 import {Icon} from '@/types';
 import {randomInt} from '@/helpers/math';
 import {getBrowserInstance} from '@/helpers/extension';
 import * as icons from '../public/data/icons.min2.json';
+import {objectChunk} from '@/helpers/array';
 
 const SETTINGS = {
   ACCENT_COLOR: 'color-accent',
@@ -215,7 +230,7 @@ const isDarkTheme = () => {
 
 export default defineComponent({
   name: 'icons-picker',
-  components: {OverflowMenu, SettingSwitch, IconItem},
+  components: {OverflowMenu, SettingSwitch, IconsRow},
   data: () => ({
     darkTheme: isDarkTheme(),
     search: '',
@@ -238,23 +253,24 @@ export default defineComponent({
     browserScrollbarWidth: 0,
   }),
   computed: {
-    filteredIcons(): Icon[] {
+    filteredIcons(): Array<{id: string, items: Icon[]}> {
       const searchVal = this.search
         .replace(searchReplaceRegex, ' ')
         .toLowerCase();
 
-      return this.icons[this.filters.flavour].filter(
+      const icons = this.icons[this.filters.flavour].filter(
         (icon: Icon) =>
           icon.searchable.indexOf(searchVal) !== -1
           && (this.filters.outline === 'both' || icon.styles.includes(this.filters.outline))
       );
+
+      return objectChunk(icons, 6);
     },
   },
   mounted() {
     // Inspect browser's scrollbar width.
     // It's used to adjust .icon-properties width
-    const iconsElement = this.$refs.icons as HTMLElement;
-    this.browserScrollbarWidth = iconsElement.offsetWidth - iconsElement.clientWidth;
+    this.browserScrollbarWidth = getScrollbarWidth();
 
     document.dispatchEvent(new Event('prerender-ready'));
   },
@@ -269,7 +285,7 @@ export default defineComponent({
         if (ensureVisible) {
           // Wait for the UI to be updated for calculations
           const iconElem = (document.querySelector('.mdi-'+icon.name) || document.querySelector('.mdil-'+icon.name)) as HTMLElement,
-            iconsList = this.$refs['icons'] as HTMLElement;
+            iconsList = this.$refs.icons as HTMLElement;
 
           const offset = computeOffset(iconElem).top - computeOffset(iconsList).top,
             iconElemHeight = outerHeight(iconElem, true);

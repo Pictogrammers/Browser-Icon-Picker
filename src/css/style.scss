@@ -122,9 +122,11 @@ header.header {
     }
 
     i {
+      display: inline-block;
       font-size: 24px;
       vertical-align: baseline;
       margin: 0 10px 0 5px;
+      width: 24px; // prevent layout shift
     }
   }
 
@@ -225,6 +227,7 @@ header.header {
   text-align: center;
   box-shadow: inset $elevation-tiny;
   background: $background;
+  padding-bottom: $properties-height;
 
   @at-root .dark-theme & {
     background: $color-dark-2;
@@ -260,11 +263,6 @@ header.header {
       border-color: rgba(#000, 0.3);
       border-style: dashed;
     }
-  }
-
-  .properties-spacer {
-    width: 100%;
-    height: $properties-height;
   }
 }
 
