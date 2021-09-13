@@ -5,7 +5,7 @@
 .overflow-menu {
   position: absolute;
   right: 5px;
-  min-width: 220px;
+  width: 220px;
   z-index: 5;
   box-shadow: $elevation-2;
   background: #fff;
@@ -48,6 +48,19 @@
 
     .switch {
       margin-left: auto;
+    }
+
+    // multi-line
+    > div {
+      min-width: 0;
+
+      small {
+        display: inline-block;
+        max-width: 100%;
+        opacity: 0.7;
+        min-width: 0;
+        @extend .ellipsis;
+      }
     }
   }
 

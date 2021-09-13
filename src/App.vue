@@ -128,23 +128,38 @@
                 target="_blank"
               >
                 <i class="mdi mdi-open-in-new"></i>
-                {{ isIconActive && 'Open {icon}'.replace('{icon}', activeIcon.name) }}
+                <div>
+                  {{ isIconActive && 'Open {icon}'.replace('{icon}', activeIcon.name) }}<br />
+                  <small>{{ isIconActive && 'materialdesignicons.com/icon/{icon}'.replace('{icon}', activeIcon.name) }}</small>
+                </div>
               </a>
               <div @click="copySvg(false)">
                 <i class="mdi mdi-xml"></i>
-                Copy SVG
+                <div>
+                  Copy SVG<br />
+                  <small>{{ activeIcon && activeIconSvg }}</small>
+                </div>
               </div>
               <div @click="copySvg(true)">
                 <i class="mdi mdi-xml"></i>
-                Copy SVG path
+                <div>
+                  Copy SVG path<br />
+                  <small>{{ activeIcon && activeIconSvgPath }}</small>
+                </div>
               </div>
               <div @click="copyName">
                 <i class="mdi mdi-content-copy"></i>
-                Copy name
+                <div>
+                  Copy name<br />
+                  <small>{{ activeIcon && activeIcon.name }}</small>
+                </div>
               </div>
               <div @click="downloadSvg">
                 <i class="mdi mdi-download"></i>
-                Download SVG
+                <div>
+                  Download SVG<br />
+                  <small>{{ activeIcon && activeIcon.name }}.svg</small>
+                </div>
               </div>
             </overflow-menu>
 
@@ -241,9 +256,9 @@ export default defineComponent({
     randomColors: JSON.parse(localStorage.getItem(SETTINGS.RANDOM_COLORS) || 'false') === true,
     usage: localStorage.getItem(SETTINGS.USAGE) || 'js',
     activeIcon: null as Icon|null,
+    activeIconSvg: null as string|null,
+    activeIconSvgPath: null as string|null,
     isIconActive: false,
-
-    cachedSvgs: {} as {[key: string]: string},
 
     browserScrollbarWidth: 0,
   }),
@@ -286,22 +301,13 @@ export default defineComponent({
         return;
       }
 
-      let id = this.activeIcon.id;
-
       // SVG should have been loaded when overflow menu opened
-      if (Object.keys(this.cachedSvgs).indexOf(id) === -1) {
+      const text = onlyPath ? this.activeIconSvgPath : this.activeIconSvg;
+      if (text === null) {
         return;
       }
 
-      let svg = this.cachedSvgs[id];
-
-      if (onlyPath) {
-        // Take the "d" attribute from <path>
-        const result = /d="([^"]+)"/.exec(svg);
-        svg = result && result[1] || '';
-      }
-
-      this.copy(svg);
+      this.copy(text);
 
       // Close overflow menu once done
       this.openOverflowMenu && this.openOverflowMenu.close();
@@ -335,15 +341,14 @@ export default defineComponent({
         return;
       }
 
-      let id = this.activeIcon.id;
-
       // SVG should have been loaded when overflow menu opened
-      if (Object.keys(this.cachedSvgs).indexOf(id) === -1) {
+      let svg = this.activeIconSvg;
+      if (svg === null) {
         return;
       }
 
       // Add namespace to <svg tag
-      const svg = this.cachedSvgs[id].replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
+      svg = svg.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
 
       const blob = new Blob([svg], {type: "image/svg+xml"});
       const url = URL.createObjectURL(blob);
@@ -362,15 +367,17 @@ export default defineComponent({
       }
 
       // Pre-fetch SVG
+      this.activeIconSvg = null;
+      this.activeIconSvgPath = null;
+
       let id = this.activeIcon.id;
-
-      if (Object.keys(this.cachedSvgs).indexOf(id) !== -1) {
-        return;
-      }
-
       request(getResourceUrl(`svg/${id}.svg`))
-        .then((response) => {
-          this.cachedSvgs[id] = response;
+        .then((svg) => {
+          this.activeIconSvg = svg;
+
+          // Take the "d" attribute from <path>
+          const result = /d="([^"]+)"/.exec(svg);
+          this.activeIconSvgPath = result && result[1] || '';
         });
     },
     selectText(e: Event): void {

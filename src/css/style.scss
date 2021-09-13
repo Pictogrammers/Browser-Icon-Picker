@@ -60,8 +60,11 @@ body {
   box-sizing: border-box;
 }
 
-.clearfix {
-  clear: both;
+// Utilities
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
