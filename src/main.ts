@@ -8,4 +8,4 @@ import App from './App.vue'
 
 require('./css/style.scss');
 
-createApp(App).mount('#app')
+createApp(App).mount('#app', process.env.NODE_ENV === 'production')
