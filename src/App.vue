@@ -63,7 +63,7 @@
       <div class="search-wrap">
         <input
           class="search" type="text"
-          placeholder="Search..." autofocus
+          placeholder="Search…" autofocus
           v-model="search"
         />
         <i

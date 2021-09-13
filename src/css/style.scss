@@ -69,7 +69,9 @@ body {
 body {
   display: flex;
 }
-
+#app {
+  width: 100%;
+}
 .app {
   position: relative;
   display: flex;
@@ -101,10 +103,8 @@ header.header {
 
 header.header {
   padding: 5px 10px;
-
   color: #fff;
   background-color: $color-primary;
-  @extend .elevation-tiny;
 
   @at-root .dark-theme & {
     background-color: $color-dark-1;
@@ -140,49 +140,56 @@ header.header {
   }
 
   .search-wrap {
-    padding-left: 45px;
     position: relative;
+    margin: 5px 0;
 
     .search {
       width: 100%;
-      margin: 5px 0;
-      padding: 6px 2px;
+      padding: 6px 8px;
       font-family: $roboto;
       font-size: 15px;
       color: #fff;
       outline: none;
       border: 0;
-      background: transparent;
+      border-radius: 4px;
       transition-duration: $timing-medium;
-      box-shadow: 0 1px rgba(#ffffff, 0.7);
+      transition-property: background;
+      background: rgba(#000, 0.1);
 
       &:active, &:focus {
-        box-shadow: 0 2px rgba(#ffffff, 0.9);
+        background: rgba(#000, 0.2);
+      }
+
+      @at-root .dark-theme & {
+        background: $color-dark-2;
+
+        &:active, &:focus {
+          background: lighten($color-dark-2, 2);
+        }
       }
     }
 
     ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
       color: #fff;
-      opacity: 0.7;
+      opacity: 0.8;
     }
-
     :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
       color: #fff;
-      opacity: 0.7;
+      opacity: 0.8;
     }
-
     ::-moz-placeholder { /* Mozilla Firefox 19+ */
       color: #fff;
-      opacity: 0.7;
+      opacity: 0.8;
     }
 
     .search-clear {
-      $size: 16px;
+      $size: 32px;
+      $padding: 8px;
       position: absolute;
       z-index: 1;
-      right: $size/2;
-      top: 50%;
-      margin-top: -$size/2;
+      right: 0;
+      top: 0;
+      padding: $padding;
       opacity: 0.8;
       transition-duration: $timing-short;
       cursor: pointer;
@@ -193,10 +200,11 @@ header.header {
 
       &.hidden {
         opacity: 0;
+        pointer-events: none;
       }
 
       &:before {
-        font-size: $size;
+        font-size: #{$size - $padding*2};
       }
     }
   }
@@ -215,6 +223,7 @@ header.header {
   font-size: 0;
   overflow-y: scroll;
   text-align: center;
+  box-shadow: inset $elevation-tiny;
   background: $background;
 
   @at-root .dark-theme & {
