@@ -117,7 +117,7 @@
         >
           <i
             class="icon-icon"
-            :class="activeIcon && activeIcon.class"
+            :class="isIconActive ? (activeIcon.family === 'default' ? `mdi mdi-${activeIcon.name}` : `mdil mdil-${activeIcon.name}`) : ''"
             @click="changeAccentColor"
           ></i>
 
@@ -129,7 +129,7 @@
               attach-to="bottom"
             >
               <a
-                v-show="isIconActive && !activeIcon.styles.includes('light')"
+                v-show="isIconActive && activeIcon.family === 'default'"
                 :href="isIconActive && 'https://materialdesignicons.com/icon/{icon}'.replace('{icon}', activeIcon.name)"
                 target="_blank"
               >
@@ -177,7 +177,7 @@
             </overflow-menu>
 
             <div class="icon-name">{{ activeIcon && activeIcon.name }}</div>
-            <div class="icon-usage" v-if="usage === 'webfont'" @click="selectText($event)">{{ activeIcon && activeIcon.class }}</div>
+            <div class="icon-usage" v-if="usage === 'webfont'" @click="selectText($event)">{{ activeIcon ? (activeIcon.family === 'default' ? `mdi mdi-${activeIcon.name}` : `mdil mdil-${activeIcon.name}`) : '' }}</div>
             <div class="icon-usage" v-else @click="selectText($event)">
               <span style="color: #c084ba">import </span>
               <span style="color: #ffffff">{</span>
@@ -288,8 +288,12 @@ export default defineComponent({
         .trim()
         .toLowerCase();
 
+      let icons = this.icons[this.filters.flavour];
+
       // Exclude non-matching filters
-      let icons = this.icons[this.filters.flavour].filter(icon => this.filters.outline === 'both' || icon.styles.includes(this.filters.outline));
+      if (this.filters.outline !== 'both') {
+        icons = icons.filter(icon => icon.family === 'light' || icon.name.includes('outline'));
+      }
 
       if (searchVal.length > 0) {
         const searchValWords = searchVal.split(' ');
@@ -403,11 +407,12 @@ export default defineComponent({
       this.openOverflowMenu && this.openOverflowMenu.close();
     },
     onPropertiesOverflowMenuOpened(): void {
-      if (!this.activeIcon) {
+      const icon = this.activeIcon;
+      if (!icon) {
         return;
       }
 
-      const {id, name} = this.activeIcon;
+      const {id, name} = icon;
 
       // Pre-fetch SVG
       this.activeIconSvg = null;

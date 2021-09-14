@@ -7,8 +7,7 @@ export interface Icon {
   keywords1: string,
   keywords2: string,
   version: string,
-  styles: string[],
-  class: string,
+  family: 'default'|'light',
 }
 
 // requestIdleCallback

@@ -145,13 +145,7 @@ const pullIcons = async () => {
         keywords1: p1,
         keywords2: p2,
         version: icon.version,
-        styles: [
-          flavour, // 'light' or 'default'
-          icon.name.includes('outline') || flavour === 'light' ? 'outline' : 'filled', // 'outline' or 'filled'
-        ],
-        class: flavour === 'default'
-          ? 'mdi mdi-' + icon.name
-          : 'mdil mdil-' + icon.name,
+        family: flavour,
       });
     }
 

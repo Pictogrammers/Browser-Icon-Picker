@@ -3,7 +3,7 @@
     v-for="icon in icons"
     :key="icon.id"
     :name="icon.name"
-    :class-name="icon.class"
+    :class-name="icon.family === 'default' ? `mdi mdi-${icon.name}` : `mdil mdil-${icon.name}`"
     :is-active="activeIcon && activeIcon.id === icon.id"
     @click.stop="onClick(icon)"
   />
