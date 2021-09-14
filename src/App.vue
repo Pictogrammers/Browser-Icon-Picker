@@ -50,6 +50,12 @@
 
             <setting-switch :value="usage === 'webfont'" />
           </div>
+          <div @click="devTools = !devTools">
+            <i class="mdi mdi-application-brackets"></i>
+            Developer tools
+
+            <setting-switch :value="devTools" boolean />
+          </div>
           <div class="overflow-footer">
             MDI v{{ version && version.default }} / MDI light v{{ version && version.light }}<br />
             <a href="https://github.com/chteuchteu/MaterialDesignIcons-Picker">Open on GitHub</a>
@@ -133,22 +139,22 @@
                   <small>{{ isIconActive && 'materialdesignicons.com/icon/{icon}'.replace('{icon}', activeIcon.name) }}</small>
                 </div>
               </a>
-              <div @click="copySvg(false)">
+              <div @click="copy('svg')">
                 <i class="mdi mdi-xml"></i>
                 <div>
                   Copy SVG<br />
                   <small>{{ activeIcon && activeIconSvg }}</small>
                 </div>
               </div>
-              <div @click="copySvg(true)">
+              <div @click="copy('svg-path')">
                 <i class="mdi mdi-xml"></i>
                 <div>
                   Copy SVG path<br />
                   <small>{{ activeIcon && activeIconSvgPath }}</small>
                 </div>
               </div>
-              <div @click="copyName">
-                <i class="mdi mdi-content-copy"></i>
+              <div @click="copy('name')">
+                <i class="mdi mdi-cursor-text"></i>
                 <div>
                   Copy name<br />
                   <small>{{ activeIcon && activeIcon.name }}</small>
@@ -159,6 +165,13 @@
                 <div>
                   Download SVG<br />
                   <small>{{ activeIcon && activeIcon.name }}.svg</small>
+                </div>
+              </div>
+              <div v-if="devTools" @click="copy('preview-image')">
+                <i class="mdi mdi-language-markdown-outline"></i>
+                <div>
+                  Copy preview image<br />
+                  <small>{{ activeIcon && activeIconPreviewImage }}</small>
                 </div>
               </div>
             </overflow-menu>
@@ -215,6 +228,7 @@ const SETTINGS = {
   OUTLINE: 'outline',
   DARK: 'dark',
   USAGE: 'usage',
+  DEV_TOOLS: 'dev-tools',
 };
 
 const COLORS = [
@@ -255,9 +269,12 @@ export default defineComponent({
     accentColor: localStorage.getItem(SETTINGS.ACCENT_COLOR) || 'primary',
     randomColors: JSON.parse(localStorage.getItem(SETTINGS.RANDOM_COLORS) || 'false') === true,
     usage: localStorage.getItem(SETTINGS.USAGE) || 'js',
+    devTools: JSON.parse(localStorage.getItem(SETTINGS.DEV_TOOLS) || 'false') === true,
+
     activeIcon: null as Icon|null,
     activeIconSvg: null as string|null,
     activeIconSvgPath: null as string|null,
+    activeIconPreviewImage: null as string|null,
     isIconActive: false,
 
     browserScrollbarWidth: 0,
@@ -296,33 +313,27 @@ export default defineComponent({
       const i = COLORS.indexOf(this.accentColor)+1;
       this.accentColor = COLORS[i > COLORS.length-1 ? 0 : i];
     },
-    copySvg(onlyPath: boolean): void {
+    copy(what: 'svg'|'svg-path'|'name'|'preview-image'): void {
       if (this.activeIcon === null) {
         return;
       }
-
-      // SVG should have been loaded when overflow menu opened
-      const text = onlyPath ? this.activeIconSvgPath : this.activeIconSvg;
-      if (text === null) {
+      
+      let text;
+      switch (what) {
+        case 'svg': text = this.activeIconSvg; break;
+        case 'svg-path': text = this.activeIconSvgPath; break;
+        case 'name': text = this.activeIcon.name; break;
+        case 'preview-image': text = this.activeIconPreviewImage; break;
+        default:
+          throw new Error();
+      }
+      this.copyAndClose(text);
+    },
+    copyAndClose(string: string|null): void {
+      if (string === null) {
         return;
       }
-
-      this.copy(text);
-
-      // Close overflow menu once done
-      this.openOverflowMenu && this.openOverflowMenu.close();
-    },
-    copyName(): void {
-      if (this.activeIcon === null) {
-        return;
-      }
-
-      this.copy(this.activeIcon.name);
-
-      // Close overflow menu once done
-      this.openOverflowMenu && this.openOverflowMenu.close();
-    },
-    copy(string: string): void {
+      
       const input = this.$refs['input-copy'] as HTMLInputElement;
 
       input.value = string;
@@ -335,6 +346,9 @@ export default defineComponent({
         event.preventDefault();
       };
       document.execCommand("Copy", false, undefined);
+
+      // Close overflow menu once done
+      this.openOverflowMenu && this.openOverflowMenu.close();
     },
     downloadSvg(): void {
       if (this.activeIcon === null) {
@@ -366,11 +380,13 @@ export default defineComponent({
         return;
       }
 
+      const {id, name} = this.activeIcon;
+
       // Pre-fetch SVG
       this.activeIconSvg = null;
       this.activeIconSvgPath = null;
+      this.activeIconPreviewImage = `[![${name}](https://materialdesignicons.com/icon/${name})](https://materialdesignicons.com/icon/${name})`;
 
-      let id = this.activeIcon.id;
       request(getResourceUrl(`svg/${id}.svg`))
         .then((svg) => {
           this.activeIconSvg = svg;
@@ -401,6 +417,9 @@ export default defineComponent({
     },
     darkTheme() {
       localStorage.setItem(SETTINGS.DARK, this.darkTheme.toString());
+    },
+    devTools() {
+      localStorage.setItem(SETTINGS.DEV_TOOLS, this.devTools.toString());
     },
     'filters.flavour'() {
       // When setting "flavour" to "light", force the "outline" one to "outline"
