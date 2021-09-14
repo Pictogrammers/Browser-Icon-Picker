@@ -3,6 +3,7 @@
 
 [![Download on Chrome Web Store](doc/download-chrome-web-store.png)](https://chrome.google.com/webstore/detail/materialdesignicons-picke/edjaedpifkihpjkcgknfokmibkoafhme)
 [![Download for Firefox](doc/download-firefox.png)](https://addons.mozilla.org/en-US/firefox/addon/materialdesignicons-picker/)
+[![Download for Edge](doc/download-edge.png)](https://microsoftedge.microsoft.com/addons/detail/materialdesignicons-picke/iinekiifciemnoaeehkaoplmopafhiba)
 
 | ![MaterialDesignIcons-Picker](doc/screenshot-dark.png) | ![MaterialDesignIcons-Picker](doc/screenshot-light.png) |
 |:---:|:---:|
@@ -38,3 +39,7 @@ yarn lint
     ```
 
 Your generated artifacts are ready in the `release/` subdirectory.
+
+<p align="center">
+<small>Chrome is a trademark of Google Inc. Edge's download button by Julien Muggli.</small>
+</p>

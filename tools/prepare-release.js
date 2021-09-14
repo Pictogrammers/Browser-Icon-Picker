@@ -192,3 +192,4 @@ console.log("Now let's publish this new version:");
 console.log(" - https://github.com/chteuchteu/MaterialDesignIcons-Picker/releases");
 console.log(" - https://addons.mozilla.org/en-US/developers/addon/materialdesignicons-picker/edit");
 console.log(" - https://chrome.google.com/webstore/devconsole/g17908162625851858745/edjaedpifkihpjkcgknfokmibkoafhme/edit");
+console.log(" - https://partner.microsoft.com/en-us/dashboard/microsoftedge/e03ef056-3e87-45a0-be3d-16b2cb699ae0/packages/dashboard")
