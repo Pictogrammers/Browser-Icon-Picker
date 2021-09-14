@@ -64,9 +64,11 @@
       </div>
       <div class="search-wrap">
         <input
-          class="search" type="text"
-          placeholder="Search…" autofocus
+          class="search"
+          type="text"
+          placeholder="Search…"
           v-model="search"
+          ref="search"
         />
         <i
           class="search-clear mdi mdi-close"
@@ -331,6 +333,10 @@ export default defineComponent({
     this.browserScrollbarWidth = getScrollbarWidth();
 
     document.dispatchEvent(new Event('prerender-ready'));
+
+    // Give focus to search field
+    const searchInput = this.$refs.search as HTMLInputElement;
+    searchInput.focus();
   },
   methods: {
     setActiveIcon(icon: Icon|null): void {
