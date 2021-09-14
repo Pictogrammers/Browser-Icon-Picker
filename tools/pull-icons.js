@@ -120,23 +120,30 @@ const pullIcons = async () => {
 
       fs.writeFileSync(`${dist}/data/svg/${icon.id}.svg`, svg);
 
-      // Compute "searchable" attribute
-      let searchable = '';
-      for (let part of [icon.name, ...icon.aliases, ...icon.tags]) {
-        searchable += part
+      // Compute 2 "searchable" attributes, to achieve weighted search
+      const buildSearchable = (strings) => {
+        strings = strings
+          .join(' ') // glue them together
           .split('/').join(' ') // remove "/"
           .split('-').join(' ') // remove "-"
-          .split('  ').join(' ') // replace multiple spaces
-          .toLowerCase()
+          .toLowerCase() // lowercase
+          .split(' ') // back to array
+          .filter(s => !!s) // exclude empty strings, caused by duplicate spaces
+
+        // remove duplicate words
+        return Array.from(new Set(strings)).join(' ');
       }
-      searchable = Array.from(new Set(searchable.split(' '))).join(' ');
+
+      const p1 = buildSearchable([icon.name, ...icon.aliases]);
+      const p2 = buildSearchable(icon.tags);
 
       data.icons[flavour].push({
         id: icon.id,
         name: icon.name,
         author: icon.author,
         codepoint: icon.codepoint,
-        searchable: searchable,
+        keywords1: p1,
+        keywords2: p2,
         version: icon.version,
         styles: [
           flavour, // 'light' or 'default'

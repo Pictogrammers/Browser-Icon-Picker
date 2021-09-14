@@ -1,19 +1,14 @@
 /**
+ * MaterialDesignIcons-Picker
  * Array utils
  */
 
-function arrayChunk<T>(array: Array<T>, size: number): Array<Array<T>> {
-  const chunks = [] as Array<Array<T>>;
-  let i = 0;
-  const n = array.length;
-
-  while (i < n) {
-    chunks.push(array.slice(i, i += size));
-  }
-
-  return chunks;
-}
-
+/**
+ * Splits the specified array by chunks of specified size.
+ * Each chunk will contain n objects with 2 keys:
+ *  - id, built by concatenating the "id" attribute of each chunk item
+ *  - items: the chunk items.
+ */
 function objectChunk<T extends {id: string}>(array: Array<T>, size: number): Array<{id: string, items: Array<T>}> {
   const chunks = [];
   let i = 0;
@@ -30,4 +25,11 @@ function objectChunk<T extends {id: string}>(array: Array<T>, size: number): Arr
   return chunks;
 }
 
-export {arrayChunk, objectChunk};
+/**
+ * Returns the intersection between two arrays.
+ */
+function intersect<T>(array1: Array<T>, array2: Array<T>): Array<T> {
+  return array1.filter((n) => array2.includes(n));
+}
+
+export {objectChunk, intersect};

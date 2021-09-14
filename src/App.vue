@@ -220,6 +220,7 @@ import {Icon} from '@/types';
 import {getBrowserInstance} from '@/helpers/extension';
 import * as icons from '../public/data/icons.min.json';
 import {objectChunk} from '@/helpers/array';
+import {getWeight} from '@/helpers/search';
 
 const SETTINGS = {
   ACCENT_COLOR: 'color-accent',
@@ -281,16 +282,42 @@ export default defineComponent({
   }),
   computed: {
     filteredIcons(): Array<{id: string, items: Icon[]}> {
+      // Sanitize search val
       const searchVal = this.search
         .replace(searchReplaceRegex, ' ')
+        .trim()
         .toLowerCase();
 
-      const icons = this.icons[this.filters.flavour].filter(
-        (icon: Icon) =>
-          icon.searchable.indexOf(searchVal) !== -1
-          && (this.filters.outline === 'both' || icon.styles.includes(this.filters.outline))
-      );
+      // Exclude non-matching filters
+      let icons = this.icons[this.filters.flavour].filter(icon => this.filters.outline === 'both' || icon.styles.includes(this.filters.outline));
 
+      if (searchVal.length > 0) {
+        const searchValWords = searchVal.split(' ');
+
+        // Build weighted result list
+        const results = icons
+          .map(icon => ({
+            weight: getWeight(icon, searchVal, searchValWords),
+            icon,
+          }))
+          // Filter-out non-matching results
+          .filter(icon => icon.weight > 0) as Array<{ weight: number, icon: Icon }>;
+
+        // Sort by weight & name
+        results.sort((r1, r2) => {
+          if (r1.weight < r2.weight) {
+            return 1;
+          }
+          if (r1.weight > r2.weight) {
+            return -1;
+          }
+          return r1.icon.name.localeCompare(r2.icon.name);
+        });
+
+        icons = results.map(r => r.icon);
+      }
+
+      // Chunk (by rows of 6)
       return objectChunk(icons, 6);
     },
   },
@@ -317,7 +344,7 @@ export default defineComponent({
       if (this.activeIcon === null) {
         return;
       }
-      
+
       let text;
       switch (what) {
         case 'svg': text = this.activeIconSvg; break;
@@ -333,7 +360,7 @@ export default defineComponent({
       if (string === null) {
         return;
       }
-      
+
       const input = this.$refs['input-copy'] as HTMLInputElement;
 
       input.value = string;
