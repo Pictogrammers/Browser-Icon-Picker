@@ -159,7 +159,7 @@
 
             <overflow-menu
               ref="overflow-properties"
-              :on-open="() => onPropertiesOverflowMenuOpened() || (this.openOverflowMenu = this.$refs['overflow-properties'])"
+              :on-open="() => this.openOverflowMenu = this.$refs['overflow-properties']"
               :on-close="() => this.openOverflowMenu = null"
               x="center"
               y="bottom"
@@ -214,7 +214,7 @@
               </template>
             </overflow-menu>
 
-            <button @click="downloadSvg" type="button">
+            <button @click="downloadSvg" type="button" :disabled="!activeIconSvg">
               <i class="mdi mdi-download"></i>
               Download SVG
             </button>
@@ -228,6 +228,7 @@
       class="overflow-menu-overlay"
       @click="openOverflowMenu.close()"
     ></div>
+    <toast ref="toaster" />
   </div>
 </template>
 
@@ -244,6 +245,7 @@ import {getBrowserInstance} from '@/helpers/extension';
 import * as icons from '../public/data/icons.min.json';
 import {objectChunk} from '@/helpers/array';
 import {getWeight} from '@/helpers/search';
+import Toast from '@/components/Toast.vue';
 
 const SETTINGS = {
   ACCENT_COLOR: 'color-accent',
@@ -262,9 +264,12 @@ const COLORS = [
 
 const searchReplaceRegex = new RegExp('-', 'g');
 
-const getResourceUrl = (filename: string) => typeof(chrome) !== 'undefined' && getBrowserInstance().extension !== undefined
-  ? getBrowserInstance().extension.getURL('dist/data/' + filename)
-  : '../data/' + filename; // <- when debugging extension directly from index.html
+const getResourceUrl = (filename: string) => {
+  const browserApi = getBrowserInstance();
+  return browserApi && browserApi.extension !== undefined
+    ? browserApi.extension.getURL('dist/data/' + filename)
+    : '../data/' + filename; // <- when debugging extension directly from index.html
+}
 
 const isDarkTheme = () => {
   if (localStorage.getItem(SETTINGS.DARK) !== null) {
@@ -278,7 +283,7 @@ const isDarkTheme = () => {
 
 export default defineComponent({
   name: 'icons-picker',
-  components: {OverflowMenu, SettingSwitch, IconsRow},
+  components: {Toast, OverflowMenu, SettingSwitch, IconsRow},
   data: () => ({
     darkTheme: isDarkTheme(),
     search: '',
@@ -371,6 +376,21 @@ export default defineComponent({
 
       if (icon !== null) {
         this.activeIcon = icon;
+        const {id, name} = icon;
+
+        // Pre-fetch SVG
+        this.activeIconSvg = null;
+        this.activeIconSvgPath = null;
+        this.activeIconPreviewImage = `[![${name}](https://materialdesignicons.com/icon/${name})](https://materialdesignicons.com/icon/${name})`;
+
+        request(getResourceUrl(`svg/${id}.svg`))
+          .then((svg) => {
+            this.activeIconSvg = svg;
+
+            // Take the "d" attribute from <path>
+            const result = /d="([^"]+)"/.exec(svg);
+            this.activeIconSvgPath = result && result[1] || '';
+          });
       }
     },
     changeAccentColor(): void {
@@ -415,13 +435,14 @@ export default defineComponent({
 
       // Close overflow menu once done
       this.openOverflowMenu && this.openOverflowMenu.close();
+
+      this.toast('Copied to clipboard');
     },
     downloadSvg(): void {
       if (this.activeIcon === null) {
         return;
       }
 
-      // SVG should have been loaded when overflow menu opened
       let svg = this.activeIconSvg;
       if (svg === null) {
         return;
@@ -432,36 +453,15 @@ export default defineComponent({
 
       const blob = new Blob([svg], {type: "image/svg+xml"});
       const url = URL.createObjectURL(blob);
+      const filename = this.activeIcon.name+'.svg';
 
-      getBrowserInstance().downloads.download({
-        url: url,
-        filename: this.activeIcon.name+'.svg',
+      const browserApi = getBrowserInstance();
+      browserApi && browserApi.downloads.download({
+        url,
+        filename,
       });
 
-      // Close overflow menu once done
-      this.openOverflowMenu && this.openOverflowMenu.close();
-    },
-    onPropertiesOverflowMenuOpened(): void {
-      const icon = this.activeIcon;
-      if (!icon) {
-        return;
-      }
-
-      const {id, name} = icon;
-
-      // Pre-fetch SVG
-      this.activeIconSvg = null;
-      this.activeIconSvgPath = null;
-      this.activeIconPreviewImage = `[![${name}](https://materialdesignicons.com/icon/${name})](https://materialdesignicons.com/icon/${name})`;
-
-      request(getResourceUrl(`svg/${id}.svg`))
-        .then((svg) => {
-          this.activeIconSvg = svg;
-
-          // Take the "d" attribute from <path>
-          const result = /d="([^"]+)"/.exec(svg);
-          this.activeIconSvgPath = result && result[1] || '';
-        });
+      this.toast(`Downloaded ${filename}`);
     },
     selectText(e: Event): void {
       // Find .icon-usage
@@ -474,6 +474,10 @@ export default defineComponent({
         selection.addRange(range);
       }
     },
+    toast(text: string): void {
+      const toaster = this.$refs.toaster as typeof Toast;
+      toaster.addToast(text);
+    }
   },
   watch: {
     accentColor() {

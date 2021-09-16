@@ -1,0 +1,53 @@
+/**
+ * MaterialDesignIcons
+ */
+
+.toast {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 50%;
+  max-width: 75%;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 3px;
+  background: green;
+  color: #fff;
+  font-weight: 500;
+  transition: all 300ms $timing-function-in;
+  transform: translateX(-50%) translateY(30px) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  cursor: default;
+  box-shadow:
+    0 0 1.7px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 7.5px rgba(0, 0, 0, 0.035),
+    0 7.6px 13.4px rgba(0, 0, 0, 0.04),
+    0 14.2px 25.1px rgba(0, 0, 0, 0.045),
+    0 34px 60px rgba(0, 0, 0, 0.05);
+
+  &.visible {
+    transform: translateX(-50%);
+    transition-timing-function: $timing-function-out;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .text {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  i {
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+}
