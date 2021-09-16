@@ -7,19 +7,23 @@
   right: 5px;
   width: 220px;
   z-index: 5;
-  box-shadow: $elevation-2;
+  box-shadow:
+    0 0 1.7px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 7.5px rgba(0, 0, 0, 0.035),
+    0 7.6px 13.4px rgba(0, 0, 0, 0.04),
+    0 14.2px 25.1px rgba(0, 0, 0, 0.045),
+    0 34px 60px rgba(0, 0, 0, 0.05);
   background: #fff;
   font-size: 13px;
   border-radius: 4px;
-  transform-origin: top right;
   transition-duration: 100ms;
   transition-property: transform, opacity;
 
-  &.attach-to-top {
+  &.pos-y-top {
     top: 5px;
   }
-
-  &.attach-to-bottom {
+  &.pos-y-bottom {
     bottom: 5px;
   }
 
@@ -33,7 +37,7 @@
     padding: 5px 8px;
     color: $icons-color;
     @at-root .dark-theme & {
-      color: rgba(#fff, 0.8);
+      color: rgba(#fff, 0.85);
     }
     transition: $timing-short background-color;
 
@@ -80,19 +84,34 @@
       color: inherit;
     }
   }
-}
 
-.overflow-menu-enter-active {
-  transition-timing-function: $timing-function-in;
-}
+  &.overflow-menu-enter-active {
+    transition-timing-function: $timing-function-in;
+  }
+  &.overflow-menu-leave-active {
+    transition-timing-function: $timing-function-out;
+  }
+  &.pos-x-right {
+    &.overflow-menu-enter-from, &.overflow-menu-leave-to {
+      transform: scale(0.98) translateY(-10px);
+      opacity: 0;
+    }
+  }
+  &.pos-x-center {
+    transform: translateX(-50%);
 
-.overflow-menu-leave-active {
-  transition-timing-function: $timing-function-out;
-}
+    &.overflow-menu-enter-from, &.overflow-menu-leave-to {
+      transform: scale(0.98) translateY(10px) translateX(-50%);
+      opacity: 0;
+    }
+  }
 
-.overflow-menu-enter-from, .overflow-menu-leave-to {
-  transform: scale(0.98) translateY(10px);
-  opacity: 0;
+  &.pos-x-center.pos-y-bottom {
+    transform-origin: bottom center;
+  }
+  &.pos-x-right.pos-y-top {
+    transform-origin: top right;
+  }
 }
 
 .overflow-menu-overlay {

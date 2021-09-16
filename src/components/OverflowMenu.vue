@@ -1,15 +1,17 @@
 <template>
   <div class="overflow-menu-container">
-    <i
-      @click="open = true"
-      class="mdi mdi-dots-vertical"
-    ></i>
+    <slot name="button" :set-open="setOpen">
+      <i
+        @click="setOpen()"
+        class="mdi mdi-dots-vertical"
+      ></i>
+    </slot>
 
     <transition name="overflow-menu">
       <div
         v-show="open"
         class="overflow-menu"
-        :class="'attach-to-'+attachTo"
+        :class="'pos-y-'+y+' pos-x-'+x"
       >
         <slot></slot>
       </div>
@@ -31,11 +33,16 @@ export default defineComponent({
       type: Function,
       required: true,
     },
-    attachTo: {
+    x: {
+      type: String,
+      required: true,
+      validator: (value: string) => ['center', 'right'].indexOf(value) !== -1,
+    },
+    y: {
       type: String,
       required: true,
       validator: (value: string) => ['top', 'bottom'].indexOf(value) !== -1,
-    }
+    },
   },
   data: () => ({
     open: false,
@@ -43,7 +50,10 @@ export default defineComponent({
   methods: {
     close() {
       this.open = false;
-    }
+    },
+    setOpen() {
+      this.open = true;
+    },
   },
   watch: {
     open(value) {

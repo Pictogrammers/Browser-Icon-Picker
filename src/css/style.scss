@@ -278,44 +278,123 @@ header.header {
   }
 }
 
-.properties-enter-active {
+.footer-enter-active {
   transition-duration: 100ms;
   transition-property: transform, opacity;
   transition-timing-function: $timing-function-in;
 }
 
-.properties-leave-active {
+.footer-leave-active {
   transition-duration: 100ms;
   transition-property: transform, opacity;
   transition-timing-function: $timing-function-out;
 }
 
-.properties-enter-from, .properties-leave-to {
+.footer-enter-from, .footer-leave-to {
   transform: scale(0.98) translateY(10px);
   opacity: 0;
 }
 
-.icon-properties {
+footer {
   position: absolute;
   bottom: 0;
   left: 0;
   // Width is computed from JS, since we don't know .icons scrollbar width
   // width: calc(100% - 10px)
 
-  @extend .elevation-low;
+  box-shadow: $elevation-1;
+
   background: #ffffff;
   @at-root .dark-theme & {
     color: rgba(#fff, 0.8);
     background: $color-dark-3;
   }
   padding: 5px 10px;
-  display: flex;
-  align-items: center;
   border-radius: 10px 10px 0 0;
 
   $icon-size: 56px;
   $icon-margin-l: 5px;
   $icon-margin-r: 20px;
+
+  .icon-properties {
+    display: flex;
+    align-items: center;
+  }
+  .icon-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    .desktop-font-icon-preview {
+      display: inline-block;
+      margin: -1px 0;
+      font-size: 17px;
+      line-height: 1em;
+    }
+
+    a, button {
+      font-size: .75rem;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      font-weight: 500;
+      white-space: nowrap;
+      vertical-align: middle;
+      user-select: none;
+      border: 0;
+      line-height: 1.5;
+      border-radius: .2rem;
+      padding: .4rem .5rem;
+      color: inherit;
+      text-decoration: none;
+      cursor: default;
+      transition: all 200ms ease-in-out;
+      box-shadow: 0 0 0 1px rgba(#000, .05);
+      background: rgba(#000, 0.02);
+      @at-root .dark-theme & {
+        background: rgba(#fff, 0.05);
+        box-shadow: 0 0 0 1px rgba(#000, .07);
+      }
+
+      i {
+        font-size: 16px;
+        margin-right: 4px;
+        line-height: 1em;
+        opacity: 0.9;
+      }
+
+      &:hover {
+        background-color: rgba(#000, 0.04);
+        color: #000;
+        filter: brightness(1.1);
+        @at-root .dark-theme & {
+          background: rgba(#fff, 0.1);
+        }
+
+        box-shadow:
+          0 0 0 1px rgba(#000, 0.05),
+          0 3px 9px 0 rgba(#000,.05),
+          0 1px 1.5px 0 rgba(#000,.05),
+          0 1px 2px 0 rgba(#000,.05);
+
+        @at-root .dark-theme & {
+          color: #fff;
+
+          box-shadow:
+            0 0 0 1px rgba(#000,.07),
+            0 2px 5px 0 rgba(#000,.12),
+            0 3px 9px 0 rgba(#000,.12),
+            0 1px 1.5px 0 rgba(#000,.12),
+            0 1px 2px 0 rgba(#000,.12);
+        }
+      }
+    }
+
+    .overflow-menu {
+      left: 50%;
+    }
+  }
 
   .icon-icon {
     width: $icon-size;
@@ -328,13 +407,10 @@ header.header {
     margin: 5px $icon-margin-r 5px $icon-margin-l;
     border-radius: 50%;
     transition-duration: $timing-short;
-  }
-
-  &:not(.inactive) .icon-icon {
     cursor: pointer;
   }
 
-  .properties {
+  .icon-info {
     flex-grow: 1;
     width: calc(100% - #{$icon-size + $icon-margin-l + $icon-margin-r});
 
@@ -357,7 +433,7 @@ header.header {
       color: #a5c25c;
       background: #2b2b2b;
       overflow-x: hidden;
-      @extend .elevation-negative;
+      box-shadow: $elevation-negative;
     }
 
     .icon-name, .icon-usage {
@@ -369,19 +445,9 @@ header.header {
       opacity: 0.5;
       margin-bottom: 8px;
 
-      .icon-codepoint, .icon-version, .icon-author {
+      .icon-version, .icon-author {
         user-select: text;
       }
-    }
-  }
-
-  .overflow-menu-container {
-    float: right;
-    margin-top: 5px;
-
-    i.mdi-dots-vertical {
-      font-size: 18px;
-      cursor: pointer;
     }
   }
 }

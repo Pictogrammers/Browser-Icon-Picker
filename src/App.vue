@@ -18,7 +18,8 @@
           ref="overflow-main"
           :on-open="() => this.openOverflowMenu = this.$refs['overflow-main']"
           :on-close="() => this.openOverflowMenu = null"
-          attach-to="top"
+          x="right"
+          y="top"
         >
           <div @click="filters.flavour = filters.flavour === 'light' ? 'default' : 'light'">
             <i class="mdil mdil-account"></i>
@@ -111,38 +112,81 @@
         />
       </RecycleScroller>
 
-      <transition name="properties">
-        <div
-          class="icon-properties"
+      <transition name="footer">
+        <footer
           v-show="isIconActive"
           :style="'width: calc(100% - '+browserScrollbarWidth+'px)'"
         >
-          <i
-            class="icon-icon"
-            :class="isIconActive ? (activeIcon.family === 'default' ? `mdi mdi-${activeIcon.name}` : `mdil mdil-${activeIcon.name}`) : ''"
-            @click="changeAccentColor"
-          ></i>
+          <div class="icon-properties">
+            <i
+              class="icon-icon"
+              :class="getIconClass(activeIcon)"
+              @click="changeAccentColor"
+            ></i>
 
-          <div class="properties">
+            <div class="icon-info">
+              <div class="icon-name">{{ activeIcon && activeIcon.name }}</div>
+              <div class="icon-usage" v-if="usage === 'webfont'" @click="selectText($event)">{{ getIconClass(activeIcon) }}</div>
+              <div class="icon-usage" v-else @click="selectText($event)">
+                <span style="color: #c084ba">import </span>
+                <span style="color: #ffffff">{ </span>
+                <span style="color: #9ddcfc">mdi{{ activeIcon && activeIcon.name.split('-').map((name) => name.charAt(0).toUpperCase() + name.slice(1)).join('') }} </span>
+                <span style="color: #ffffff"> } </span>
+                <span style="color: #c084ba">from </span>
+                <span style="color: #cd917b">'@mdi/js'</span><span style="color: #ffffff">;</span>
+              </div>
+              <div class="icon-more">
+                <span
+                  v-show="activeIcon && activeIcon.version"
+                >v<span class="icon-version">{{ activeIcon && activeIcon.version }}</span></span>
+                <span v-show="activeIcon && activeIcon.version && activeIcon.author"> &bullet; </span>
+                <span
+                  v-show="activeIcon && activeIcon.author"
+                >by <span class="icon-author">{{ activeIcon && activeIcon.author }}</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="icon-actions">
+            <a
+              v-show="isIconActive && activeIcon.family === 'default'"
+              :href="isIconActive && 'https://materialdesignicons.com/icon/{icon}'.replace('{icon}', activeIcon.name)"
+              target="_blank"
+            >
+              <i class="mdi mdi-open-in-new"></i>
+              View on MDI
+            </a>
+
             <overflow-menu
               ref="overflow-properties"
               :on-open="() => onPropertiesOverflowMenuOpened() || (this.openOverflowMenu = this.$refs['overflow-properties'])"
               :on-close="() => this.openOverflowMenu = null"
-              attach-to="bottom"
+              x="center"
+              y="bottom"
             >
-              <a
-                v-show="isIconActive && activeIcon.family === 'default'"
-                :href="isIconActive && 'https://materialdesignicons.com/icon/{icon}'.replace('{icon}', activeIcon.name)"
-                target="_blank"
-              >
-                <i class="mdi mdi-open-in-new"></i>
+              <div @click="copy('name')">
+                <i class="mdi mdi-form-textbox"></i>
                 <div>
-                  {{ isIconActive && 'Open {icon}'.replace('{icon}', activeIcon.name) }}<br />
-                  <small>{{ isIconActive && 'materialdesignicons.com/icon/{icon}'.replace('{icon}', activeIcon.name) }}</small>
+                  Copy name<br />
+                  <small>{{ activeIcon && activeIcon.name }}</small>
                 </div>
-              </a>
+              </div>
+              <div @click="copy('codepoint')">
+                <i class="mdi mdi-hexadecimal"></i>
+                <div>
+                  Copy codepoint<br />
+                  <small>{{ activeIcon && activeIcon.codepoint }}</small>
+                </div>
+              </div>
+              <div @click="copy('desktop-font-icon')">
+                <i class="mdi mdi-select-place"></i>
+                <div>
+                  Copy desktop font icon<br />
+                  <small><i :class="getIconClass(activeIcon)" class="desktop-font-icon-preview"></i></small>
+                </div>
+              </div>
               <div @click="copy('svg')">
-                <i class="mdi mdi-xml"></i>
+                <i class="mdi mdi-svg"></i>
                 <div>
                   Copy SVG<br />
                   <small>{{ activeIcon && activeIconSvg }}</small>
@@ -155,50 +199,27 @@
                   <small>{{ activeIcon && activeIconSvgPath }}</small>
                 </div>
               </div>
-              <div @click="copy('name')">
-                <i class="mdi mdi-cursor-text"></i>
-                <div>
-                  Copy name<br />
-                  <small>{{ activeIcon && activeIcon.name }}</small>
-                </div>
-              </div>
-              <div @click="downloadSvg">
-                <i class="mdi mdi-download"></i>
-                <div>
-                  Download SVG<br />
-                  <small>{{ activeIcon && activeIcon.name }}.svg</small>
-                </div>
-              </div>
-              <div v-if="devTools" @click="copy('preview-image')">
+              <div v-if="devTools" @click="copy('markdown-preview')">
                 <i class="mdi mdi-language-markdown-outline"></i>
                 <div>
-                  Copy preview image<br />
+                  Copy markdown preview<br />
                   <small>{{ activeIcon && activeIconPreviewImage }}</small>
                 </div>
               </div>
+              <template v-slot:button="slotProps">
+                <button type="button" @click="slotProps.setOpen()">
+                  <i class="mdi mdi-content-copy"></i>
+                  Copy&hellip;
+                </button>
+              </template>
             </overflow-menu>
 
-            <div class="icon-name">{{ activeIcon && activeIcon.name }}</div>
-            <div class="icon-usage" v-if="usage === 'webfont'" @click="selectText($event)">{{ activeIcon ? (activeIcon.family === 'default' ? `mdi mdi-${activeIcon.name}` : `mdil mdil-${activeIcon.name}`) : '' }}</div>
-            <div class="icon-usage" v-else @click="selectText($event)">
-              <span style="color: #c084ba">import </span>
-              <span style="color: #ffffff">{</span>
-              <span style="color: #9ddcfc">mdi{{ activeIcon && activeIcon.name.split('-').map((name) => name.charAt(0).toUpperCase() + name.slice(1)).join('') }} </span>
-              <span style="color: #ffffff">} </span>
-              <span style="color: #c084ba">from </span>
-              <span style="color: #cd917b">'@mdi/js'</span><span style="color: #ffffff">;</span>
-            </div>
-            <div class="icon-more">
-              <span class="icon-codepoint">{{ activeIcon && activeIcon.codepoint }}</span>
-              <span
-                v-show="activeIcon && activeIcon.version"
-              > &bullet; v<span class="icon-version">{{ activeIcon && activeIcon.version }}</span></span>
-              <span
-                v-show="activeIcon && activeIcon.author"
-              > &bullet; by <span class="icon-author">{{ activeIcon && activeIcon.author }}</span></span>
-            </div>
+            <button @click="downloadSvg" type="button">
+              <i class="mdi mdi-download"></i>
+              Download SVG
+            </button>
           </div>
-        </div>
+        </footer>
       </transition>
     </div>
     <input ref="input-copy" style="display: none" />
@@ -339,6 +360,12 @@ export default defineComponent({
     searchInput.focus();
   },
   methods: {
+    getIconClass(icon: Icon|null): string|null {
+      if (icon === null) {
+        return null;
+      }
+      return icon.family === 'default' ? `mdi mdi-${icon.name}` : `mdil mdil-${icon.name}`;
+    },
     setActiveIcon(icon: Icon|null): void {
       this.isIconActive = icon !== null;
 
@@ -350,7 +377,7 @@ export default defineComponent({
       const i = COLORS.indexOf(this.accentColor)+1;
       this.accentColor = COLORS[i > COLORS.length-1 ? 0 : i];
     },
-    copy(what: 'svg'|'svg-path'|'name'|'preview-image'): void {
+    copy(what: 'svg'|'svg-path'|'name'|'markdown-preview'|'desktop-font-icon'|'codepoint'): void {
       if (this.activeIcon === null) {
         return;
       }
@@ -360,7 +387,9 @@ export default defineComponent({
         case 'svg': text = this.activeIconSvg; break;
         case 'svg-path': text = this.activeIconSvgPath; break;
         case 'name': text = this.activeIcon.name; break;
-        case 'preview-image': text = this.activeIconPreviewImage; break;
+        case 'markdown-preview': text = this.activeIconPreviewImage; break;
+        case 'desktop-font-icon': text = String.fromCodePoint(parseInt(this.activeIcon.codepoint, 16)); break;
+        case 'codepoint': text = this.activeIcon.codepoint; break;
         default:
           throw new Error();
       }
