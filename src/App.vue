@@ -57,8 +57,20 @@
 
             <setting-switch :value="devTools" boolean />
           </div>
+          <div @click="changeAccentColor">
+            <i class="mdi mdi-palette-swatch"></i>
+            Accent color
+
+            <code>{{ accentColor }}</code>
+          </div>
+          <div @click="changeIconClickAction">
+            <i class="mdi mdi-cursor-default-click"></i>
+            Icon action
+
+            <code class="icon-click-action">{{ actionLabels[iconClickAction] }}</code>
+          </div>
           <div class="overflow-footer">
-            MDI v{{ version && version.default }} / MDI light v{{ version && version.light }}<br />
+            MDI v{{ version.default }} / MDI light v{{ version.light }}<br />
             <a href="https://github.com/chteuchteu/MaterialDesignIcons-Picker">Open on GitHub</a>
           </div>
         </overflow-menu>
@@ -121,7 +133,8 @@
             <i
               class="icon-icon"
               :class="getIconClass(activeIcon)"
-              @click="changeAccentColor"
+              @click="doAction(iconClickAction)"
+              :title="actionLabels[iconClickAction]"
             ></i>
 
             <div class="icon-info">
@@ -167,42 +180,42 @@
               <div @click="copy('name')">
                 <i class="mdi mdi-form-textbox"></i>
                 <div>
-                  Copy name<br />
+                  {{ actionLabels['name'] }}<br />
                   <small>{{ activeIcon && activeIcon.name }}</small>
                 </div>
               </div>
               <div @click="copy('codepoint')">
                 <i class="mdi mdi-hexadecimal"></i>
                 <div>
-                  Copy codepoint<br />
+                  {{ actionLabels['codepoint'] }}<br />
                   <small>{{ activeIcon && activeIcon.codepoint }}</small>
                 </div>
               </div>
               <div @click="copy('desktop-font-icon')">
                 <i class="mdi mdi-select-place"></i>
                 <div>
-                  Copy desktop font icon<br />
+                  {{ actionLabels['desktop-font-icon'] }}<br />
                   <small><i :class="getIconClass(activeIcon)" class="desktop-font-icon-preview"></i></small>
                 </div>
               </div>
               <div @click="copy('svg')">
                 <i class="mdi mdi-svg"></i>
                 <div>
-                  Copy SVG<br />
+                  {{ actionLabels['svg'] }}<br />
                   <small>{{ activeIcon && activeIconSvg }}</small>
                 </div>
               </div>
               <div @click="copy('svg-path')">
                 <i class="mdi mdi-xml"></i>
                 <div>
-                  Copy SVG path<br />
+                  {{ actionLabels['svg-path'] }}<br />
                   <small>{{ activeIcon && activeIconSvgPath }}</small>
                 </div>
               </div>
               <div v-if="devTools" @click="copy('markdown-preview')">
                 <i class="mdi mdi-language-markdown-outline"></i>
                 <div>
-                  Copy markdown preview<br />
+                  {{ actionLabels['markdown-preview'] }}<br />
                   <small>{{ activeIcon && activeIconPreviewImage }}</small>
                 </div>
               </div>
@@ -216,7 +229,7 @@
 
             <button @click="downloadSvg" type="button" :disabled="!activeIconSvg">
               <i class="mdi mdi-download"></i>
-              Download SVG
+              {{ actionLabels['download-svg'] }}
             </button>
           </div>
         </footer>
@@ -241,6 +254,7 @@ import IconsRow from './components/IconsRow.vue';
 import {request} from '@/helpers/request';
 import {getScrollbarWidth} from '@/helpers/dom';
 import {Icon} from '@/types';
+import {Action, Copy} from '@/enums';
 import {getBrowserInstance} from '@/helpers/extension';
 import * as icons from '../public/data/icons.min.json';
 import {objectChunk} from '@/helpers/array';
@@ -255,12 +269,23 @@ const SETTINGS = {
   DARK: 'dark',
   USAGE: 'usage',
   DEV_TOOLS: 'dev-tools',
+  ICON_CLICK_ACTION: 'icon-click-action',
 };
 
 const COLORS = [
   'red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green',
   'light-green', 'lime', 'amber', 'orange', 'deep-orange', 'brown', 'grey', 'blue-grey'
 ];
+
+const ACTIONS_LABELS = {
+  'name': 'Copy name',
+  'codepoint': 'Copy codepoint',
+  'desktop-font-icon': 'Copy desktop font icon',
+  'svg': 'Copy SVG',
+  'svg-path': 'Copy SVG path',
+  'markdown-preview': 'Copy markdown preview',
+  'download-svg': 'Download SVG',
+} as Record<Action, string>;
 
 const searchReplaceRegex = new RegExp('-', 'g');
 
@@ -299,6 +324,7 @@ export default defineComponent({
     randomColors: JSON.parse(localStorage.getItem(SETTINGS.RANDOM_COLORS) || 'false') === true,
     usage: localStorage.getItem(SETTINGS.USAGE) || 'js',
     devTools: JSON.parse(localStorage.getItem(SETTINGS.DEV_TOOLS) || 'false') === true,
+    iconClickAction: (localStorage.getItem(SETTINGS.ICON_CLICK_ACTION) || 'name') as Action,
 
     activeIcon: null as Icon|null,
     activeIconSvg: null as string|null,
@@ -352,6 +378,7 @@ export default defineComponent({
       // Chunk (by rows of 6)
       return objectChunk(icons, 6);
     },
+    actionLabels: () => ACTIONS_LABELS,
   },
   mounted() {
     // Inspect browser's scrollbar width.
@@ -397,7 +424,19 @@ export default defineComponent({
       const i = COLORS.indexOf(this.accentColor)+1;
       this.accentColor = COLORS[i > COLORS.length-1 ? 0 : i];
     },
-    copy(what: 'svg'|'svg-path'|'name'|'markdown-preview'|'desktop-font-icon'|'codepoint'): void {
+    changeIconClickAction(): void {
+      const actions = Object.keys(ACTIONS_LABELS);
+      const i = actions.indexOf(this.iconClickAction)+1;
+      this.iconClickAction = actions[i > actions.length-1 ? 0 : i] as Action;
+    },
+    doAction(action: Action): void {
+      if (action === 'download-svg') {
+        this.downloadSvg();
+      } else {
+        this.copy(action);
+      }
+    },
+    copy(what: Copy): void {
       if (this.activeIcon === null) {
         return;
       }
@@ -477,7 +516,7 @@ export default defineComponent({
     toast(text: string): void {
       const toaster = this.$refs.toaster as typeof Toast;
       toaster.addToast(text);
-    }
+    },
   },
   watch: {
     accentColor() {
@@ -488,9 +527,6 @@ export default defineComponent({
     },
     darkTheme() {
       localStorage.setItem(SETTINGS.DARK, this.darkTheme.toString());
-    },
-    devTools() {
-      localStorage.setItem(SETTINGS.DEV_TOOLS, this.devTools.toString());
     },
     'filters.flavour'() {
       // When setting "flavour" to "light", force the "outline" one to "outline"
@@ -506,6 +542,12 @@ export default defineComponent({
     usage() {
       localStorage.setItem(SETTINGS.USAGE, this.usage);
     },
+    devTools() {
+      localStorage.setItem(SETTINGS.DEV_TOOLS, this.devTools.toString());
+    },
+    iconClickAction() {
+      localStorage.setItem(SETTINGS.ICON_CLICK_ACTION, this.iconClickAction);
+    }
   },
 })
 

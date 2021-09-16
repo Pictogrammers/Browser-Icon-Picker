@@ -217,6 +217,15 @@ header.header {
 
   .overflow-menu-container {
     margin-left: auto;
+
+    .overflow-menu {
+      .icon-click-action {
+        text-align: right;
+        width: 50%;
+        line-height: 1em;
+        font-size: 0.8em;
+      }
+    }
   }
 }
 
