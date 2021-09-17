@@ -70,7 +70,7 @@
             <code class="icon-click-action">{{ actionLabels[iconClickAction] }}</code>
           </div>
           <div class="overflow-footer">
-            MDI v{{ version.default }} / MDI light v{{ version.light }}<br />
+            MDI v{{ version.default }} / MDI Light v{{ version.light }}<br />
             <a href="https://github.com/chteuchteu/MaterialDesignIcons-Picker" target="_blank">Open on GitHub</a>
           </div>
         </overflow-menu>
@@ -146,7 +146,7 @@
                 <span style="color: #9ddcfc">mdi{{ activeIcon && activeIcon.name.split('-').map((name) => name.charAt(0).toUpperCase() + name.slice(1)).join('') }} </span>
                 <span style="color: #ffffff"> } </span>
                 <span style="color: #c084ba">from </span>
-                <span style="color: #cd917b">'@mdi/js'</span><span style="color: #ffffff">;</span>
+                <span style="color: #cd917b">'{{ activeIcon && activeIcon.family === 'light' ? '@mdi/light-js' : '@mdi/js' }}'</span><span style="color: #ffffff">;</span>
               </div>
               <div class="icon-more">
                 <span
@@ -212,7 +212,7 @@
                   <small>{{ activeIcon && activeIconSvgPath }}</small>
                 </div>
               </div>
-              <div v-if="devTools" @click="copy('markdown-preview')">
+              <div v-if="devTools" v-show="!activeIcon || activeIcon.family === 'default'" @click="copy('markdown-preview')">
                 <i class="mdi mdi-language-markdown-outline"></i>
                 <div>
                   {{ actionLabels['markdown-preview'] }}<br />
@@ -437,7 +437,7 @@ export default defineComponent({
       }
     },
     copy(what: Copy): void {
-      if (this.activeIcon === null) {
+      if (this.activeIcon === null || this.activeIcon.family === 'light' && what === 'markdown-preview') {
         return;
       }
 

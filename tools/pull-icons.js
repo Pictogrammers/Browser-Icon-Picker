@@ -1,7 +1,7 @@
 /**
  * MaterialDesignIcons
  *
- * Downloads latest MDI & MDI light releases and extracts the right resources
+ * Downloads latest MDI & MDI Light releases and extracts the right resources
  * in the right folder.
  */
 
