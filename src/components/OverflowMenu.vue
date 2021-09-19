@@ -1,10 +1,9 @@
 <template>
   <div class="overflow-menu-container">
     <slot name="button" :set-open="setOpen">
-      <i
+      <button
         @click="setOpen()"
-        class="mdi mdi-dots-vertical"
-      ></i>
+        v-html="mdiDotsVertical" />
     </slot>
 
     <transition name="overflow-menu">
@@ -63,6 +62,9 @@ export default defineComponent({
         this.onOpen();
       }
     }
-  }
+  },
+  computed: {
+    mdiDotsVertical: () => require('!!svg-inline-loader!@mdi/svg/svg/dots-vertical.svg'),
+  },
 });
 </script>

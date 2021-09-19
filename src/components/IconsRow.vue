@@ -31,8 +31,7 @@ export default defineComponent({
   emits: ['active'],
   methods: {
     onClick(iconProxy: Icon) {
-      const icon = {...iconProxy} as Icon;
-      this.$emit('active', icon);
+      this.$emit('active', iconProxy);
     }
   }
 });

@@ -93,14 +93,21 @@ header.header {
     a {
       color: #fff;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
     }
 
-    i {
-      display: inline-block;
-      font-size: 24px;
-      vertical-align: baseline;
+    .logo {
       margin: 0 10px 0 5px;
-      width: 24px; // prevent layout shift
+
+      &, svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      svg {
+        fill: #fff;
+      }
     }
   }
 
@@ -108,10 +115,19 @@ header.header {
     display: flex;
     align-items: center;
 
-    .mdi-dots-vertical {
-      cursor: pointer;
+    button {
+      width: 24px;
+      height: 24px;
+      padding: 0;
       margin-left: auto;
-      font-size: 20px;
+      border: 0;
+      cursor: pointer;
+      background: transparent;
+      outline: none;
+
+      svg {
+        fill: #fff;
+      }
     }
   }
 

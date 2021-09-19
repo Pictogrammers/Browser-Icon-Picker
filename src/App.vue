@@ -12,7 +12,7 @@
       <div class="title">
         <h1>
           <a href="https://materialdesignicons.com" target="_blank">
-            <i class="mdi mdi-vector-square"></i> MaterialDesignIcons
+            <span class="logo" v-html="mdiVectorSquare"></span> MaterialDesignIcons
           </a>
         </h1>
         <overflow-menu
@@ -387,6 +387,7 @@ export default defineComponent({
       return !this.darkTheme && prefersDarkColorScheme();
     },
     actionLabels: () => ACTIONS_LABELS,
+    mdiVectorSquare: () => require('!!svg-inline-loader!@mdi/svg/svg/vector-square.svg'),
   },
   mounted() {
     // Inspect browser's scrollbar width.
