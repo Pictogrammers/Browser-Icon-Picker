@@ -2,37 +2,11 @@
  * Vue-IconsPicker
  */
 
-@import 'material';
-@import 'toast';
 @import '~material-scss-colors';
-
-
-$color-primary: #2196f3;
-$icons-color: #565656;
-$icons-color-hover: #ffffff;
-$background: #fafafa;
-$color-dark-1: #1f1f1f;
-$color-dark-2: #323234;
-$color-dark-3: #474749;
-
-$icon-size: 24px;
-$icon-margin: 5px;
-$icon-padding: 12px;
-$icon-border: 1px;
-$properties-height: 132px;
-
-$transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); // According to material guidelines
-
-// Remove "yellow" from colors list
-$colors: map-remove($colors, "yellow");
-
-// Add primary color to colors map
-$colors: map-merge($colors, (
-  primary: (
-    "500": $color-primary
-  )
-));
-
+@import 'material';
+@import 'vars';
+@import 'theme';
+@import 'toast';
 @import 'overflow-menu';
 
 // Chrome popup default font style
@@ -108,11 +82,7 @@ header.header {
 header.header {
   padding: 5px 10px;
   color: #fff;
-  background-color: $color-primary;
-
-  @at-root .dark-theme & {
-    background-color: $color-dark-1;
-  }
+  background-color: var(--background-header);
 
   h1 {
     font-size: 22px;
@@ -160,18 +130,10 @@ header.header {
       border-radius: 4px;
       transition-duration: $timing-medium;
       transition-property: background;
-      background: rgba(#000, 0.1);
+      background: var(--background-search);
 
       &:active, &:focus {
-        background: rgba(#000, 0.2);
-      }
-
-      @at-root .dark-theme & {
-        background: $color-dark-2;
-
-        &:active, &:focus {
-          background: lighten($color-dark-2, 2);
-        }
+        background: var(--background-search-focus);
       }
     }
 
@@ -239,12 +201,8 @@ header.header {
   overflow-y: scroll;
   text-align: center;
   box-shadow: inset $elevation-tiny;
-  background: $background;
+  background: var(--background);
   padding-bottom: $properties-height;
-
-  @at-root .dark-theme & {
-    background: $color-dark-2;
-  }
 
   i {
     display: inline-block;
@@ -256,11 +214,7 @@ header.header {
     width: $icon-size + 2*($icon-padding) + 2*($icon-border);
     height: $icon-size + 2*($icon-padding) + 2*($icon-border);
     line-height: $icon-size;
-
-    color: $icons-color;
-    @at-root .dark-theme & {
-      color: rgba(#fff, 0.8);
-    }
+    color: var(--color-icon);
     font-size: $icon-size;
     overflow: hidden;
 
@@ -311,14 +265,9 @@ footer {
   left: 0;
   // Width is computed from JS, since we don't know .icons scrollbar width
   // width: calc(100% - 10px)
-
   box-shadow: $elevation-1;
-
-  background: #ffffff;
-  @at-root .dark-theme & {
-    color: rgba(#fff, 0.8);
-    background: $color-dark-3;
-  }
+  background: var(--background-footer);
+  color: var(--color-footer);
   padding: 5px 10px;
   border-radius: 10px 10px 0 0;
 
@@ -360,12 +309,8 @@ footer {
       text-decoration: none;
       cursor: default;
       transition: all 200ms ease-in-out;
-      box-shadow: 0 0 0 1px rgba(#000, .05);
-      background: rgba(#000, 0.02);
-      @at-root .dark-theme & {
-        background: rgba(#fff, 0.05);
-        box-shadow: 0 0 0 1px rgba(#000, .07);
-      }
+      box-shadow: var(--shadow-button);
+      background: var(--background-button);
 
       i {
         font-size: 16px;
@@ -375,29 +320,10 @@ footer {
       }
 
       &:hover {
-        background-color: rgba(#000, 0.04);
-        color: #000;
+        background: var(--background-button-hover);
+        color: var(--color-button-hover);
         filter: brightness(1.1);
-        @at-root .dark-theme & {
-          background: rgba(#fff, 0.1);
-        }
-
-        box-shadow:
-          0 0 0 1px rgba(#000, 0.05),
-          0 3px 9px 0 rgba(#000,.05),
-          0 1px 1.5px 0 rgba(#000,.05),
-          0 1px 2px 0 rgba(#000,.05);
-
-        @at-root .dark-theme & {
-          color: #fff;
-
-          box-shadow:
-            0 0 0 1px rgba(#000,.07),
-            0 2px 5px 0 rgba(#000,.12),
-            0 3px 9px 0 rgba(#000,.12),
-            0 1px 1.5px 0 rgba(#000,.12),
-            0 1px 2px 0 rgba(#000,.12);
-        }
+        box-shadow: var(--shadow-button-hover);
       }
     }
 

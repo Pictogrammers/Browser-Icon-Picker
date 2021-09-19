@@ -1,0 +1,29 @@
+/**
+ * MaterialDesignIcons Picker
+ */
+
+$color-primary: #2196f3;
+$icons-color: #565656;
+$icons-color-hover: #ffffff;
+$background: #fafafa;
+$color-dark-1: #1f1f1f;
+$color-dark-2: #323234;
+$color-dark-3: #474749;
+
+$icon-size: 24px;
+$icon-margin: 5px;
+$icon-padding: 12px;
+$icon-border: 1px;
+$properties-height: 132px;
+
+$transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); // According to material guidelines
+
+// Remove "yellow" from colors list
+$colors: map-remove($colors, "yellow");
+
+// Add primary color to colors map
+$colors: map-merge($colors, (
+  primary: (
+    "500": $color-primary
+  )
+));

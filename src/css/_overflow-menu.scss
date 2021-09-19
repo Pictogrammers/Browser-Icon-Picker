@@ -14,7 +14,7 @@
     0 7.6px 13.4px rgba(0, 0, 0, 0.04),
     0 14.2px 25.1px rgba(0, 0, 0, 0.045),
     0 34px 60px rgba(0, 0, 0, 0.05);
-  background: #fff;
+  background: var(--background-overflow-menu);
   font-size: 13px;
   border-radius: 4px;
   transition-duration: 100ms;
@@ -27,18 +27,11 @@
     bottom: 5px;
   }
 
-  @at-root .dark-theme & {
-    background-color: $color-dark-3;
-  }
-
   > * {
     display: flex;
     align-items: center;
     padding: 5px 8px;
-    color: $icons-color;
-    @at-root .dark-theme & {
-      color: rgba(#fff, 0.85);
-    }
+    color: var(--color-overflow-menu);
     transition: $timing-short background-color;
 
     i {

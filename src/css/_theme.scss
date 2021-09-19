@@ -1,0 +1,70 @@
+/**
+ * MaterialDesignIcons Picker
+ */
+
+// Declare theme vars
+@mixin light() {
+  --background: #{$background};
+  --background-header: #{$color-primary};
+  --background-search: #{rgba(#000, .1)};
+  --background-search-focus: #{rgba(#000, .2)};
+  --color-icon: #{$icons-color};
+  --background-footer: #fff;
+  --color-footer: #{rgba(#000, .87)};
+  --background-overflow-menu: #fff;
+  --color-overflow-menu: #{$icons-color};
+  --background-button: #{rgba(#000, .02)};
+  --shadow-button: 0 0 0 1px #{rgba(#000, .05)};
+  --background-button-hover: #{rgba(#000, 0.04)};
+  --color-button-hover: #000;
+  --shadow-button-hover: #{
+    0 0 0 1px rgba(#000, 0.05),
+    0 3px 9px 0 rgba(#000,.05),
+    0 1px 1.5px 0 rgba(#000,.05),
+    0 1px 2px 0 rgba(#000,.05)
+  };
+}
+@mixin dark() {
+  --background: #{$color-dark-2};
+  --background-header: #{$color-dark-1};
+  --background-search: #{$color-dark-2};
+  --background-search-focus: #{lighten($color-dark-2, 2)};
+  --color-icon: #{rgba(#fff, .8)};
+  --background-footer: #{$color-dark-3};
+  --color-footer: #{rgba(#fff, .8)};
+  --background-overflow-menu: #{$color-dark-3};
+  --color-overflow-menu: #{rgba(#fff, 0.85)};
+  --background-button: #{rgba(#fff, .05)};
+  --shadow-button: 0 0 0 1px #{rgba(#000, .07)};
+  --background-button-hover: #{rgba(#fff, 0.1)};
+  --color-button-hover: #fff;
+  --shadow-button-hover: #{
+    0 0 0 1px rgba(#000,.07),
+    0 2px 5px 0 rgba(#000,.12),
+    0 3px 9px 0 rgba(#000,.12),
+    0 1px 1.5px 0 rgba(#000,.12),
+    0 1px 2px 0 rgba(#000,.12)
+  };
+}
+
+// Default, light
+:root {
+  @include light;
+}
+
+// Default, dark
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark;
+  }
+}
+
+// Force light
+.force-light-theme {
+  @include light;
+}
+
+// Force dark
+.force-dark-theme {
+  @include dark;
+}

@@ -3,7 +3,8 @@
     class="app"
     :class="{
       ['accent-color--'+accentColor]: true,
-      'dark-theme': darkTheme,
+      'force-light-theme': forceLightTheme,
+      'force-dark-theme': forceDarkTheme,
       'random-icon-colors': randomColors
     }"
   >
@@ -260,6 +261,7 @@ import * as icons from '../public/data/icons.min.json';
 import {objectChunk} from '@/helpers/array';
 import {getWeight} from '@/helpers/search';
 import Toast from '@/components/Toast.vue';
+import {prefersDarkColorScheme} from '@/helpers/theme';
 
 const SETTINGS = {
   ACCENT_COLOR: 'color-accent',
@@ -303,7 +305,7 @@ const isDarkTheme = () => {
   }
 
   // No value, auto-detect
-  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  return prefersDarkColorScheme();
 };
 
 export default defineComponent({
@@ -377,6 +379,12 @@ export default defineComponent({
 
       // Chunk (by rows of 6)
       return objectChunk(icons, 6);
+    },
+    forceDarkTheme() {
+      return this.darkTheme && !prefersDarkColorScheme();
+    },
+    forceLightTheme() {
+      return !this.darkTheme && prefersDarkColorScheme();
     },
     actionLabels: () => ACTIONS_LABELS,
   },
