@@ -99,7 +99,8 @@ const prepareFirefoxReviewZip = () => {
 
   const files = [
     '*',
-    'dist/**/*',
+    '.*',
+    'public/**/*',
     'doc/*',
     'src/**/*',
     'tools/**/*',
