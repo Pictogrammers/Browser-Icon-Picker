@@ -51,6 +51,7 @@ const getMeta = async (version, flavour = 'default') => {
 };
 
 const download = async (url, destPath) => {
+  console.log('Downloading ' + url + ' to ' + destPath);
   return new Promise((resolve, reject) => {
     request(url)
       .on('error', () => reject())
@@ -89,13 +90,17 @@ const extractZip = async (zipPath, destDir, filePattern) => {
   // Extract ZIP
   return new Promise((resolve, reject) => {
     yauzl.open(zipPath, (err, zipfile) => {
-      if (err) throw err;
+      if (err) {
+        reject(err);
+      }
 
       zipfile
         .on('entry', (entry) => {
           if (filePattern.test(entry.fileName)) {
             zipfile.openReadStream(entry, function (err, readStream) {
-              if (err) throw err;
+              if (err) {
+                reject(err);
+              }
 
               readStream.pipe(fs.createWriteStream(`${destDir}/${path.basename(entry.fileName)}`));
             });
