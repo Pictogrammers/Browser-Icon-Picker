@@ -3,7 +3,7 @@
   "version": "3.9.0",
   "description": "Quick & easy icon picker",
   "main": "src/index.js",
-  "repository": "git@github.com:chteuchteu/MaterialDesignIcons-Picker.git",
+  "repository": "git@github.com:Pictogrammers/Browser-Icon-Picker.git",
   "author": "Quentin Stoeckel <stoeckel.quentin@gmail.com>",
   "license": "MIT",
   "scripts": {

@@ -72,7 +72,7 @@
           </div>
           <div class="overflow-footer">
             MDI v{{ version.default }} / MDI Light v{{ version.light }}<br />
-            <a href="https://github.com/chteuchteu/MaterialDesignIcons-Picker" target="_blank">Open on GitHub</a>
+            <a href="https://github.com/Pictogrammers/Browser-Icon-Picker" target="_blank">Open on GitHub</a>
           </div>
         </overflow-menu>
       </div>
