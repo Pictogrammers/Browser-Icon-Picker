@@ -497,7 +497,10 @@ export default defineComponent({
       }
 
       // Add namespace to <svg tag
-      svg = svg.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
+      const namespace = 'xmlns="http://www.w3.org/2000/svg"';
+      if (svg.indexOf(namespace) === -1) {
+        svg = svg.replace('<svg ', `<svg ${namespace} `);
+      }
 
       const blob = new Blob([svg], {type: "image/svg+xml"});
       const url = URL.createObjectURL(blob);
