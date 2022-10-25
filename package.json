@@ -12,6 +12,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "canvg": "^4.0.1",
     "core-js": "^3.6.5",
     "material-scss-colors": "^1.1.2",
     "vue": "^3.0.0",

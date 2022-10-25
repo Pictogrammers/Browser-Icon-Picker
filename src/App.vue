@@ -228,10 +228,34 @@
               </template>
             </overflow-menu>
 
-            <button @click="downloadSvg" type="button" :disabled="!activeIconSvg">
-              <i class="mdi mdi-download"></i>
-              {{ actionLabels['download-svg'] }}
-            </button>
+            <overflow-menu
+              ref="overflow-download"
+              :on-open="() => this.openOverflowMenu = this.$refs['overflow-download']"
+              :on-close="() => this.openOverflowMenu = null"
+              x="right"
+              y="bottom"
+            >
+              <div @click="download('png')">
+                <i class="mdi mdi-file-png-box"></i>
+                <div>
+                  {{ actionLabels['download-png'] }}<br />
+                  <small>{{ activeIcon && activeIcon.name }}.png</small>
+                </div>
+              </div>
+              <div @click="download('svg')">
+                <i class="mdi mdi-file-xml-box"></i>
+                <div>
+                  {{ actionLabels['download-svg'] }}<br />
+                  <small>{{ activeIcon && activeIcon.name }}.png</small>
+                </div>
+              </div>
+              <template v-slot:button="slotProps">
+                <button type="button" @click="slotProps.setOpen()">
+                  <i class="mdi mdi-download"></i>
+                  Download&hellip;
+                </button>
+              </template>
+            </overflow-menu>
           </div>
         </footer>
       </transition>
@@ -262,6 +286,7 @@ import {objectChunk} from '@/helpers/array';
 import {getWeight} from '@/helpers/search';
 import Toast from '@/components/Toast.vue';
 import {prefersDarkColorScheme} from '@/helpers/theme';
+import {svgToPng} from '@/helpers/img';
 
 const SETTINGS = {
   ACCENT_COLOR: 'color-accent',
@@ -287,6 +312,7 @@ const ACTIONS_LABELS = {
   'svg-path': 'Copy SVG path',
   'markdown-preview': 'Copy markdown preview',
   'download-svg': 'Download SVG',
+  'download-png': 'Download PNG',
 } as Record<Action, string>;
 
 const searchReplaceRegex = new RegExp('-', 'g');
@@ -440,9 +466,11 @@ export default defineComponent({
     },
     doAction(action: Action): void {
       if (action === 'download-svg') {
-        this.downloadSvg();
-      } else {
-        this.copy(action);
+        this.download('svg');
+      } else if (action === 'download-png') {
+        this.download('png')
+      } {
+        this.copy(action as Copy);
       }
     },
     copy(what: Copy): void {
@@ -486,7 +514,7 @@ export default defineComponent({
 
       this.toast('Copied to clipboard');
     },
-    downloadSvg(): void {
+    async download(format: 'svg'|'png'): Promise<void> {
       if (this.activeIcon === null) {
         return;
       }
@@ -503,8 +531,15 @@ export default defineComponent({
       }
 
       const blob = new Blob([svg], {type: "image/svg+xml"});
-      const url = URL.createObjectURL(blob);
-      const filename = this.activeIcon.name+'.svg';
+
+      let url;
+      if (format === 'png') {
+        url = await svgToPng(svg);
+      } else {
+        url = URL.createObjectURL(blob);
+      }
+
+      const filename = `${this.activeIcon.name}.${format}`;
 
       const browserApi = getBrowserInstance();
       browserApi && browserApi.downloads.download({
@@ -513,6 +548,8 @@ export default defineComponent({
       });
 
       this.toast(`Downloaded ${filename}`);
+      // Close overflow menu once done
+      this.openOverflowMenu && this.openOverflowMenu.close();
     },
     selectText(e: Event): void {
       // Find .icon-usage
