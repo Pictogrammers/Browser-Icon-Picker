@@ -276,7 +276,7 @@ import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import OverflowMenu from './components/OverflowMenu.vue';
 import SettingSwitch from './components/SettingSwitch.vue';
 import IconsRow from './components/IconsRow.vue';
-import {request} from '@/helpers/request';
+import {download, request} from '@/helpers/request';
 import {getScrollbarWidth} from '@/helpers/dom';
 import {Icon} from '@/types';
 import {Action, Copy} from '@/enums';
@@ -542,10 +542,14 @@ export default defineComponent({
       const filename = `${this.activeIcon.name}.${format}`;
 
       const browserApi = getBrowserInstance();
-      browserApi && browserApi.downloads.download({
-        url,
-        filename,
-      });
+      if (browserApi) {
+        browserApi && browserApi.downloads.download({
+          url,
+          filename,
+        });
+      } else {
+        download(url, filename);
+      }
 
       this.toast(`Downloaded ${filename}`);
       // Close overflow menu once done

@@ -6,7 +6,7 @@
 /**
  * Super simple xhr request
  */
-const request = (url: string, method = 'GET'): Promise<string> => {
+export const request = (url: string, method = 'GET'): Promise<string> => {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.open(method, url);
@@ -27,4 +27,11 @@ const request = (url: string, method = 'GET'): Promise<string> => {
     });
 };
 
-export { request };
+export const download = (href: string, filename: string): void => {
+  const a = document.createElement('a')
+  a.href = href
+  a.download = filename;
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+}
