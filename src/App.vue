@@ -530,14 +530,17 @@ export default defineComponent({
         svg = svg.replace('<svg ', `<svg ${namespace} `);
       }
 
-      const blob = new Blob([svg], {type: "image/svg+xml"});
 
-      let url;
+      let blob;
       if (format === 'png') {
-        url = await svgToPng(svg);
+        // image/png
+        blob = await svgToPng(svg);
       } else {
-        url = URL.createObjectURL(blob);
+        // image/svg+xml
+        blob = new Blob([svg], {type: "image/svg+xml"});
       }
+
+      const url = URL.createObjectURL(blob);
 
       const filename = `${this.activeIcon.name}.${format}`;
 
