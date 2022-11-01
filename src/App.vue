@@ -246,7 +246,7 @@
                 <i class="mdi mdi-file-xml-box"></i>
                 <div>
                   {{ actionLabels['download-svg'] }}<br />
-                  <small>{{ activeIcon && activeIcon.name }}.png</small>
+                  <small>{{ activeIcon && activeIcon.name }}.svg</small>
                 </div>
               </div>
               <template v-slot:button="slotProps">
