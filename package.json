@@ -1,6 +1,6 @@
 {
   "name": "materialdesignicons-picker",
-  "version": "3.11.0",
+  "version": "3.11.1",
   "description": "Quick & easy icon picker",
   "main": "src/index.js",
   "repository": "git@github.com:Pictogrammers/Browser-Icon-Picker.git",
