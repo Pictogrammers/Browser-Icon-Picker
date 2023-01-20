@@ -164,8 +164,8 @@
 
           <div class="icon-actions">
             <a
-              v-show="isIconActive && activeIcon.family === 'default'"
-              :href="isIconActive && 'https://pictogrammers.com/library/mdi/icon/{icon}'.replace('{icon}', activeIcon.name)"
+              v-show="isIconActive"
+              :href="isIconActive && 'https://pictogrammers.com/library/{library}/icon/{icon}'.replace('{library}', this.filters.flavour === 'default' ? 'mdi' : 'mdil').replace('{icon}', activeIcon.name)"
               target="_blank"
             >
               <i class="mdi mdi-open-in-new"></i>
@@ -445,7 +445,8 @@ export default defineComponent({
         // Pre-fetch SVG
         this.activeIconSvg = null;
         this.activeIconSvgPath = null;
-        this.activeIconPreviewImage = `[![${name}](https://pictogrammers.com/library/mdi/icon/${name})](https://pictogrammers.com/library/mdi/icon/${name})`;
+        const uri = `https://pictogrammers.com/library/${this.filters.flavour === 'default' ? 'mdi' : 'mdil'}/icon/${name}`;
+        this.activeIconPreviewImage = `[![${name}](${uri})](${uri})`;
 
         request(getResourceUrl(`svg/${id}.svg`))
           .then((svg) => {
