@@ -11,8 +11,9 @@
     <header class="header">
       <div class="title">
         <h1>
-          <a href="https://materialdesignicons.com" target="_blank">
-            <span class="logo" v-html="mdiVectorSquare"></span> MaterialDesignIcons
+          <a href="https://pictogrammers.com/library/mdi" target="_blank">
+            <span class="logo" v-html="filters.flavour === 'default' ? mdiVectorSquare : mdilVectorCombine"></span>
+            Material Design Icons {{ filters.flavour === 'light' ? 'Light' : '' }}
           </a>
         </h1>
         <overflow-menu
@@ -164,7 +165,7 @@
           <div class="icon-actions">
             <a
               v-show="isIconActive && activeIcon.family === 'default'"
-              :href="isIconActive && 'https://materialdesignicons.com/icon/{icon}'.replace('{icon}', activeIcon.name)"
+              :href="isIconActive && 'https://pictogrammers.com/library/mdi/icon/{icon}'.replace('{icon}', activeIcon.name)"
               target="_blank"
             >
               <i class="mdi mdi-open-in-new"></i>
@@ -414,6 +415,7 @@ export default defineComponent({
     },
     actionLabels: () => ACTIONS_LABELS,
     mdiVectorSquare: () => require('!!svg-inline-loader!@mdi/svg/svg/vector-square.svg'),
+    mdilVectorCombine: () => require('!!svg-inline-loader!@mdi/light-svg/svg/vector-combine.svg'),
   },
   mounted() {
     // Inspect browser's scrollbar width.
@@ -443,7 +445,7 @@ export default defineComponent({
         // Pre-fetch SVG
         this.activeIconSvg = null;
         this.activeIconSvgPath = null;
-        this.activeIconPreviewImage = `[![${name}](https://materialdesignicons.com/icon/${name})](https://materialdesignicons.com/icon/${name})`;
+        this.activeIconPreviewImage = `[![${name}](https://pictogrammers.com/library/mdi/icon/${name})](https://pictogrammers.com/library/mdi/icon/${name})`;
 
         request(getResourceUrl(`svg/${id}.svg`))
           .then((svg) => {
