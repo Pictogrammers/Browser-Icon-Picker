@@ -18,6 +18,8 @@ $icon-border: 1px;
 $properties-height: 132px;
 
 $transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1); // According to material guidelines
+$timing-function-in: cubic-bezier(0.0, 0.0, 0.2, 1);
+$timing-function-out: cubic-bezier(0.4, 0.0, 1, 1);
 
 // Remove "yellow" from colors list
 $colors: map-remove($colors, "yellow");

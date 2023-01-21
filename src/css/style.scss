@@ -83,6 +83,7 @@ header.header {
   padding: 5px 10px;
   color: #fff;
   background-color: var(--background-header);
+  transition: background 0.25s ease;
 
   h1 {
     font-size: 22px;
@@ -97,16 +98,48 @@ header.header {
       align-items: center;
     }
 
-    .logo {
+    .logo-wrap {
+      display: inline-block;
       margin: 0 10px 0 5px;
+      position: relative;
 
-      &, svg {
+      &, .logo, .logo svg {
         width: 24px;
         height: 24px;
       }
 
-      svg {
-        fill: #fff;
+      .logo {
+        position: absolute;
+
+        svg {
+          fill: #fff;
+        }
+
+        // transition from one library to another
+        &.v-enter-active,
+        &.v-leave-active {
+          transition-duration: 0.25s;
+          transition-property: opacity, transform;
+
+          &.v-enter-active {
+            transition-timing-function: $timing-function-in;
+          }
+          &.v-leave-active {
+            transition-timing-function: $timing-function-out;
+          }
+        }
+
+        &.v-enter-from,
+        &.v-leave-to {
+          opacity: 0;
+
+          &.v-enter-from {
+            transform: translateY(-8px);
+          }
+          &.v-leave-to {
+            transform: translateY(8px);
+          }
+        }
       }
     }
   }

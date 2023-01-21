@@ -12,8 +12,13 @@
     <header class="header">
       <div class="title">
         <h1>
-          <a href="https://pictogrammers.com/library/mdi" target="_blank">
-            <span class="logo" v-html="filters.flavour === 'default' ? mdiVectorSquare : mdilVectorCombine"></span>
+          <a :href="getLink(null)" target="_blank">
+            <span class="logo-wrap">
+              <TransitionGroup>
+                <span key="default" v-if="filters.flavour === 'default'" class="logo" v-html="mdiVectorSquare"></span>
+                <span key="light" v-if="filters.flavour === 'light'" class="logo" v-html="mdilVectorCombine"></span>
+              </TransitionGroup>
+            </span>
             Material Design Icons {{ filters.flavour === 'light' ? 'Light' : '' }}
           </a>
         </h1>
@@ -166,7 +171,7 @@
           <div class="icon-actions">
             <a
               v-show="isIconActive"
-              :href="isIconActive && 'https://pictogrammers.com/library/{library}/icon/{icon}'.replace('{library}', this.filters.flavour === 'default' ? 'mdi' : 'mdil').replace('{icon}', activeIcon.name)"
+              :href="isIconActive && getLink(activeIcon)"
               target="_blank"
             >
               <i class="mdi mdi-open-in-new"></i>
@@ -430,6 +435,13 @@ export default defineComponent({
     searchInput.focus();
   },
   methods: {
+    getLink(icon: Icon|null): string {
+      let link = `https://pictogrammers.com/library/${this.filters.flavour === 'default' ? 'mdi' : 'mdil'}`;
+      if (icon !== null) {
+        link += `/icon/${icon.name}`;
+      }
+      return link;
+    },
     getIconClass(icon: Icon|null): string|null {
       if (icon === null) {
         return null;
@@ -446,7 +458,7 @@ export default defineComponent({
         // Pre-fetch SVG
         this.activeIconSvg = null;
         this.activeIconSvgPath = null;
-        const uri = `https://pictogrammers.com/library/${this.filters.flavour === 'default' ? 'mdi' : 'mdil'}/icon/${name}`;
+        const uri = this.getLink(icon);
         this.activeIconPreviewImage = `[![${name}](${uri})](${uri})`;
 
         request(getResourceUrl(`svg/${id}.svg`))
