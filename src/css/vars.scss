@@ -2,7 +2,8 @@
  * MaterialDesignIcons Picker
  */
 
-$color-primary: #2196f3;
+$color-primary-default: #2196f3;
+$color-primary-light: #5a88ad; // Light library
 $icons-color: #565656;
 $icons-color-hover: #ffffff;
 $background: #fafafa;
@@ -24,6 +25,6 @@ $colors: map-remove($colors, "yellow");
 // Add primary color to colors map
 $colors: map-merge($colors, (
   primary: (
-    "500": $color-primary
+    "500": $color-primary-default
   )
 ));

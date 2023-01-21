@@ -5,7 +5,12 @@
 // Declare theme vars
 @mixin light() {
   --background: #{$background};
-  --background-header: #{$color-primary};
+  &.library-default {
+    --background-header: #{$color-primary-default};
+  }
+  &.library-light {
+    --background-header: #{$color-primary-light};
+  }
   --background-search: #{rgba(#000, .1)};
   --background-search-focus: #{rgba(#000, .2)};
   --color-icon: #{$icons-color};

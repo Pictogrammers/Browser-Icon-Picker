@@ -5,7 +5,8 @@
       ['accent-color--'+accentColor]: true,
       'force-light-theme': forceLightTheme,
       'force-dark-theme': forceDarkTheme,
-      'random-icon-colors': randomColors
+      'random-icon-colors': randomColors,
+      ['library-'+filters.flavour]: true,
     }"
   >
     <header class="header">
