@@ -589,12 +589,19 @@ export default defineComponent({
       localStorage.setItem(SETTINGS.DARK, this.darkTheme.toString());
     },
     'filters.flavour'() {
-      // When setting "flavour" to "light", force the "outline" one to "outline"
+      // When setting "flavour" filter to "light", force the "outline" one to "outline"
       if (this.filters.flavour === 'light') {
         this.filters.outline = 'outline';
       }
 
       localStorage.setItem(SETTINGS.FLAVOUR, this.filters.flavour);
+
+      // Update active icon: attempt to find an icon with the same name as current one, default to null
+      if (this.isIconActive) {
+        const icons = this.icons[this.filters.flavour];
+
+        this.setActiveIcon(icons.find(icon => icon.name === this.activeIcon?.name) || null);
+      }
     },
     'filters.outline'() {
       localStorage.setItem(SETTINGS.OUTLINE, this.filters.outline);
