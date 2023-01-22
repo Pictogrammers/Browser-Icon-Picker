@@ -11,8 +11,17 @@
 ## Development
 
 ```bash
+# Clone the project
+git clone git@github.com:Pictogrammers/Browser-Icon-Picker.git && cd Browser-Icon-Picker
+
+# Switch to the right node & npm version
+nvm use
+
 # Install dependencies
 yarn install
+
+# Pull icons
+node ./tools/pull-icons.js
 
 # Run
 yarn serve
