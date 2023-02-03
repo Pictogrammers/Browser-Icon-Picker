@@ -9,7 +9,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'toast',
+  name: 'toast-item',
   data: () => ({
     text: null as string|null,
     visible: false as boolean,

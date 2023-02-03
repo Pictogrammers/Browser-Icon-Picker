@@ -15,7 +15,7 @@ import {Icon} from '@/types';
 import IconItem from './IconItem.vue';
 
 export default defineComponent({
-  name: 'icon',
+  name: 'icons-row',
   components: {
     IconItem,
   },

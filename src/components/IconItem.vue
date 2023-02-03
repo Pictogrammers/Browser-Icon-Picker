@@ -13,7 +13,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'icon',
+  name: 'icon-item',
   props: {
     name: {
       type: String,

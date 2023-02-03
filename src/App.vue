@@ -15,8 +15,8 @@
           <a :href="getLink(null)" target="_blank">
             <span class="logo-wrap">
               <TransitionGroup>
-                <span key="default" v-if="filters.flavour === 'default'" class="logo" v-html="mdiVectorSquare"></span>
-                <span key="light" v-if="filters.flavour === 'light'" class="logo" v-html="mdilVectorCombine"></span>
+                <i key="default" v-if="filters.flavour === 'default'" class="logo mdi mdi-vector-square"></i>
+                <i key="light" v-if="filters.flavour === 'light'" class="logo mdi mdi-vector-combine"></i>
               </TransitionGroup>
             </span>
             Material Design Icons {{ filters.flavour === 'light' ? 'Light' : '' }}
@@ -279,7 +279,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import OverflowMenu from './components/OverflowMenu.vue';
 import SettingSwitch from './components/SettingSwitch.vue';
 import IconsRow from './components/IconsRow.vue';
@@ -420,8 +419,6 @@ export default defineComponent({
       return !this.darkTheme && prefersDarkColorScheme();
     },
     actionLabels: () => ACTIONS_LABELS,
-    mdiVectorSquare: () => require('!!svg-inline-loader!@mdi/svg/svg/vector-square.svg'),
-    mdilVectorCombine: () => require('!!svg-inline-loader!@mdi/light-svg/svg/vector-combine.svg'),
   },
   mounted() {
     // Inspect browser's scrollbar width.

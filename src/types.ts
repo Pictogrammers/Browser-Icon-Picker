@@ -12,21 +12,9 @@ export interface Icon {
 
 // requestIdleCallback
 // @see https://github.com/microsoft/TypeScript/issues/21309#issuecomment-376338415
-type RequestIdleCallbackHandle = any;
-type RequestIdleCallbackOptions = {
-  timeout: number;
-};
-type RequestIdleCallbackDeadline = {
-  readonly didTimeout: boolean;
-  timeRemaining: (() => number);
-};
-
 declare global {
   interface Window {
-    requestIdleCallback: ((
-      callback: ((deadline: RequestIdleCallbackDeadline) => void),
-      opts?: RequestIdleCallbackOptions,
-    ) => RequestIdleCallbackHandle);
-    cancelIdleCallback: ((handle: RequestIdleCallbackHandle) => void);
+    requestIdleCallback: (callback: IdleRequestCallback, options?: IdleRequestOptions | undefined) => number;
+    cancelIdleCallback: (handle: number) => void,
   }
 }
