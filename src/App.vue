@@ -220,7 +220,7 @@
                   <small>{{ activeIcon && activeIconSvgPath }}</small>
                 </div>
               </div>
-              <div v-if="devTools" v-show="!activeIcon || activeIcon.family === 'default'" @click="copy('markdown-preview')">
+              <div v-if="devTools" @click="copy('markdown-preview')">
                 <i class="mdi mdi-language-markdown-outline"></i>
                 <div>
                   {{ actionLabels['markdown-preview'] }}<br />
@@ -487,7 +487,7 @@ export default defineComponent({
       }
     },
     copy(what: Copy): void {
-      if (this.activeIcon === null || this.activeIcon.family === 'light' && what === 'markdown-preview') {
+      if (this.activeIcon === null) {
         return;
       }
 
