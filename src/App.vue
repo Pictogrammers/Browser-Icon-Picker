@@ -287,7 +287,7 @@ import {getScrollbarWidth} from '@/helpers/dom';
 import {Icon} from '@/types';
 import {Action, Copy} from '@/enums';
 import {getBrowserInstance} from '@/helpers/extension';
-import * as icons from '../public/data/icons.min.json';
+import icons from '../public/data/icons.min.json';
 import {objectChunk} from '@/helpers/array';
 import {getWeight} from '@/helpers/search';
 import Toast from '@/components/Toast.vue';
