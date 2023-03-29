@@ -31,7 +31,6 @@
 }
 @mixin dark() {
   --background: #{$color-dark-2};
-  --background-header: #{$color-dark-1};
   --background-search: #{$color-dark-2};
   --background-search-focus: #{lighten($color-dark-2, 2)};
   --color-icon: #{rgba(#fff, .8)};
@@ -53,13 +52,13 @@
 }
 
 // Default, light
-:root {
+.app {
   @include light;
 }
 
 // Default, dark
 @media (prefers-color-scheme: dark) {
-  :root {
+  .app {
     @include dark;
   }
 }
