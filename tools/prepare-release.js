@@ -58,8 +58,8 @@ const prepareRelease = (build) => {
   const zip = new yazl.ZipFile();
 
   // Copy files
-  for (let pattern of FILES) {
-    for (let file of glob.sync(pattern)) {
+  for (const pattern of FILES) {
+    for (const file of glob.sync(pattern)) {
       const filePath = path.resolve(root, file);
 
       zip.addFile(filePath, file);
@@ -109,8 +109,8 @@ const prepareFirefoxReviewZip = () => {
   const zip = new yazl.ZipFile();
 
   // Copy files
-  for (let pattern of files) {
-    for (let file of glob.sync(pattern)) {
+  for (const pattern of files) {
+    for (const file of glob.sync(pattern)) {
       const filePath = path.resolve(root, file);
 
       // Check if it's really a file: '*' pattern matches directories too
@@ -149,7 +149,7 @@ const updateVersionNumbers = (version) => {
   }
 
   // We could decode, update and re-encode JSON, but it would mess up with current formatting: use sed instead
-  for (let file of ['manifest.json', 'package.json']) {
+  for (const file of ['manifest.json', 'package.json']) {
     console.log('Updating ' + file);
     execSync(`sed -i -e "s/\\"version\\": \\".*\\",/\\"version\\": \\"${version}\\",/" ./${file}`);
   }
@@ -167,11 +167,11 @@ console.log(chalk.blue.bold('MaterialDesignIcons release bundler'));
 
 console.log(`Building project using webpack...`);
 try {
-  execSync('yarn run build');
+  execSync('npm run build');
 } catch (error) {
   console.log(chalk.blue.red('Build failed:'));
   console.log(error);
-  return;
+  process.exit(1);
 }
 console.log('');
 

@@ -15,7 +15,10 @@ const init = () => {
   app.use(VueVirtualScroller);
   app.mount('#app', process.env.NODE_ENV === 'production')
 };
-if (window.requestIdleCallback) {
+
+if (navigator.webdriver) { // puppeteer
+  document.addEventListener('DOMContentLoaded', () => init());
+} else if (window.requestIdleCallback) {
   window.requestIdleCallback(init, {
     timeout: 1000,
   });

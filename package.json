@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "@mdi/svg": "^7.1.96",
+    "@prerenderer/renderer-puppeteer": "^1.2.4",
+    "@prerenderer/webpack-plugin": "^5.3.10",
     "@types/chrome": "^0.0.212",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
@@ -34,7 +36,7 @@
     "eslint": "^8.33.0",
     "eslint-plugin-vue": "^9.9.0",
     "glob": "^8.1.0",
-    "prerender-spa-plugin": "^3.4.0",
+    "puppeteer": "^24.4.0",
     "request": "^2.88.2",
     "rimraf": "^4.1.2",
     "sass": "^1.58.0",

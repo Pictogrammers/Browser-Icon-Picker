@@ -1,7 +1,6 @@
 module.exports = {publicPath: ''};
 const path = require('path')
-const PrerenderSpaPlugin = require('prerender-spa-plugin')
-const Renderer = PrerenderSpaPlugin.PuppeteerRenderer
+const PrerendererWebpackPlugin = require('@prerenderer/webpack-plugin');
 
 module.exports = {
   publicPath: '',
@@ -13,14 +12,16 @@ module.exports = {
 
     return {
       plugins: [
-        new PrerenderSpaPlugin({
+        new PrerendererWebpackPlugin({
           // Absolute path to compiled SPA
           staticDir: path.resolve(__dirname, 'dist'),
           // List of routes to prerender
           routes: ['/'],
-          renderer: new Renderer({
+          renderer: '@prerenderer/renderer-puppeteer',
+          rendererOptions: {
             renderAfterDocumentEvent: 'prerender-ready',
-          }),
+            headless: true,
+          },
           postProcess(renderedRoute) {
             // Tell Vue to treat page as an already-rendered app and update it rather than completely rerendering the whole tree
             renderedRoute.html = renderedRoute.html.replace('id="app"', 'id="app" data-server-rendered="true"');

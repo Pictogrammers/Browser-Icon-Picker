@@ -18,20 +18,20 @@ git clone git@github.com:Pictogrammers/Browser-Icon-Picker.git && cd Browser-Ico
 nvm use
 
 # Install dependencies
-yarn install
+npm install
 
 # Pull icons
 node ./tools/pull-icons.js
 
 # Run
-yarn serve
+npm serve
 # Once started, open your browser on `http://127.0.0.1:8080`!
 
 # Compiles and minifies for production
-yarn build
+npm build
 
 # Lints and fixes files
-yarn lint
+npm lint
 ```
 
 ## Release
