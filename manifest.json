@@ -18,10 +18,10 @@
         "downloads"
     ],
 
-    "applications": {
+    "browser_specific_settings": {
         "gecko": {
             "id": "materialdesignicons-picker@s-quent.in",
-            "strict_min_version": "45.0a1"
+            "strict_min_version": "58.0"
         }
     },
 

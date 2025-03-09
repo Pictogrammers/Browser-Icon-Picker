@@ -69,7 +69,7 @@ const prepareRelease = (build) => {
   // Add the manifest
   // Chrome build: rewrite manifest to remove Firefox's specific nodes
   if (build === BUILDS.CHROME) {
-    delete manifest.applications;
+    delete manifest.browser_specific_settings;
   }
 
   const manifestStream = new stream.Readable;
