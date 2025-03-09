@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
 
     "name": "MaterialDesignIcons Picker",
     "description": "Quick & easy icon picker",
@@ -25,7 +25,7 @@
         }
     },
 
-    "browser_action": {
+    "action": {
         "default_popup": "dist/index.html",
         "default_icon": {
             "18": "dist/img/icon-18x18.png",

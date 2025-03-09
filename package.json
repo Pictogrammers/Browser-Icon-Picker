@@ -35,6 +35,7 @@
     "eslint-plugin-vue": "^9.9.0",
     "glob": "^8.1.0",
     "prerender-spa-plugin": "^3.4.0",
+    "request": "^2.88.2",
     "rimraf": "^4.1.2",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",

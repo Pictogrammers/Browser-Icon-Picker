@@ -325,8 +325,8 @@ const searchReplaceRegex = new RegExp('-', 'g');
 
 const getResourceUrl = (filename: string) => {
   const browserApi = getBrowserInstance();
-  return browserApi && browserApi.extension !== undefined
-    ? browserApi.extension.getURL('dist/data/' + filename)
+  return browserApi && browserApi.runtime !== undefined
+    ? browserApi.runtime.getURL('dist/data/' + filename)
     : '../data/' + filename; // <- when debugging extension directly from index.html
 }
 
