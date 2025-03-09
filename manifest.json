@@ -35,7 +35,5 @@
             "38": "dist/img/icon-38x38.png",
             "64": "dist/img/icon-64x64.png"
         }
-    },
-
-    "content_security_policy": "script-src 'self' 'sha256-4i/UgFRq5GV5/zCG+l3zFewouX2lYeboafDGhFLhxvs=' 'sha256-ElK29RD3NLaU5hBAN/K5uzZjOlErtdlryb+CNRZVIPU='; object-src 'self'"
+    }
 }
